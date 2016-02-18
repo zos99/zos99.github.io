@@ -6,9 +6,11 @@ body {
     height: 989px;
     margin: 0 auto;
     background-color: #fff;
-    -webkit-box-shadow: 0px 6px 6px 1px rgb(3,29,40);
-    -moz-box-shadow: 0px 6px 6px 1px rgba(3,29,40);
-    box-shadow: 0px 6px 6px 1px rgba(3,29,40);
+    -webkit-box-shadow: 0px 0px 6px 1px rgb(3,29,40);
+    -moz-box-shadow: 0px 0px 6px 1px rgba(3,29,40);
+    box-shadow: 0px 0px 6px 1px rgba(3,29,40);
+    border-bottom: 3px solid #031d28;
+    overflow: hidden;
 }
 /**********************************************************************/
 .header_1 {
@@ -48,30 +50,139 @@ body {
 }
 /*-----------------------------Main menu-------------------------------------*/
 .main-menu {
+    height: 34px;
     margin-top: 1px;
+    margin-bottom: 2px;
     text-align: center;
-	background-color: #303030;
+    background-color: #303030;
 	background-image: -moz-linear-gradient(top, #373737, #303030);
 	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #373737),color-stop(1, #303030));
+    -webkit-box-shadow: 0px 2px 3px 0px rgba(15,14,15,0.67);
+    -moz-box-shadow: 0px 2px 3px 0px rgba(15,14,15,0.67);
+    box-shadow: 0px 2px 3px 0px rgba(15,14,15,0.67);
     border-bottom: 1px solid #000000;
-    box-shadow: 0 0 5px 2px rgba(0,0,0,0.5);
+    z-index: 8;
 }
-.main-menu ul {
-    height: 34px;
+.main-menu > ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
-.main-menu ul li {
-    display: inline;
+.main-menu > ul:after {
+    display: block;
+    content: ' ';
+    clear: both;
+    float: none;
 }
-.main-menu ul li a {
-    padding: 0 30px;
-    line-height: 34px;
-	color: #fff;
+.menu > li {
+    display: inline-block;
+    list-style: none;
+    text-decoration: inherit;
+    position: relative;
+}
+.dropdown {
+    background-image: url('../img/str.png');
+    background-position: right 0;
+    background-repeat: no-repeat;
+}
+.menu > li > a {
+    display: block;
+    text-align: left;
+    padding: 7px 40px 7px 10px;
+    color: white;
     text-decoration: none;
 }
-.main-menu ul li a:hover {
-    
+.submenu {
+    display: none;
+    position: absolute;
+    width: 140px;
+    top: 34px;
+    left: 0;
+    background-color: #303030;
+	background-image: -moz-linear-gradient(top, #373737, #303030);
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #373737),color-stop(1, #303030));
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(69,68,69,1);
+    -moz-box-shadow: 0px 3px 5px 0px rgba(69,68,69,1);
+    box-shadow: 0px 3px 5px 0px rgba(69,68,69,1);
+    border-top: 1px solid #000000;
+    z-index: 9;
+}
+.submenu > li {
+    display: block;
+    text-align: left;
+}
+.submenu > li > a {
+    display: block;
+    padding: 5px;
+    color: white;
+    text-decoration: none;
+}
+.submenu > li > a:hover {
+    text-decoration: underline;
+}
+.menu > li:hover > ul.submenu {
+    display: block;
 }
 /*-------------------------------Content-------------------------------*/
+.fon1 {  /* фон для левой колонки (синий) */
+    width: 100%;
+	background: #edeef0;
+    border-right: 1px solid #c7cacf;
+	float: left; /* делаем все обертки плавающими блоками чтобы избежать добавления блока с clear: both; */
+	position: relative; /* чтобы иметь возможность сместить фон */
+	right: 54%; /* обнажаем красный фон для центральной колонки. 30% - ширина центральной колонки */
+    z-index: 5;
+}
+.fon2 {/* фон для центральной колонки (красный) */
+    width: 100%;
+	background: #fff;
+    border-right: 1px solid #c7cacf;
+	float: left;
+	position: relative;
+	right: 23%; /* обнажаем желтый фон для правой колонки. 20% - ширина правой колонки */
+    z-index: 6;
+}
+.fon3 {/* фон для правой колонки (желтый) */
+	width: 100%;
+	background: #edeef0;
+	float: left;
+    z-index: 7;
+}
+.leftColumn {
+	width: 19%;
+	float: left;
+	overflow: hidden; /* страховка от ломки верстки объектами шире размера колонки-родителя */
+	position:relative;
+	left:79%; /* возвращаем колонки с контентом на свои позиции. 70% - сумма смещений оберток fon1 и fon2 */
+    z-index: 2;
+}
+.centerColumn {
+	width: 50%;
+	float: left;
+	overflow: hidden;
+	position:relative;
+	left:83%;
+    z-index: 3;
+}
+.rightColumn {
+	width: 19%;
+	float: left;
+	overflow: hidden;
+	position:relative;
+	left:87%;
+    z-index: 4;
+}
+.fon2 p {
+     line-height: 2;
+}
+.fon3 h1 {
+    text-align: center;
+    line-height: 2;
+    color: #424c43;
+    font-size: 18px;
+}
+/*--------------------------------Footer--------------------------------*/
 .footer {
     height: 33px;
     line-height: 33px;
