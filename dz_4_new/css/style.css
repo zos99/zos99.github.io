@@ -125,25 +125,25 @@ body {
     display: block;
 }
 /*-------------------------------Content-------------------------------*/
-.fon1 {  /* фон для левой колонки (синий) */
+.fon1 {  
     width: 100%;
 	background: #edeef0;
     border-right: 1px solid #c7cacf;
-	float: left; /* делаем все обертки плавающими блоками чтобы избежать добавления блока с clear: both; */
-	position: relative; /* чтобы иметь возможность сместить фон */
-	right: 54%; /* обнажаем красный фон для центральной колонки. 30% - ширина центральной колонки */
+	float: left; 
+	position: relative; 
+	right: 54%; 
     z-index: 5;
 }
-.fon2 {/* фон для центральной колонки (красный) */
+.fon2 {
     width: 100%;
 	background: #fff;
     border-right: 1px solid #c7cacf;
 	float: left;
 	position: relative;
-	right: 23%; /* обнажаем желтый фон для правой колонки. 20% - ширина правой колонки */
+	right: 23%; 
     z-index: 6;
 }
-.fon3 {/* фон для правой колонки (желтый) */
+.fon3 {
 	width: 100%;
 	background: #edeef0;
 	float: left;
@@ -152,9 +152,9 @@ body {
 .leftColumn {
 	width: 19%;
 	float: left;
-	overflow: hidden; /* страховка от ломки верстки объектами шире размера колонки-родителя */
+	overflow: hidden; 
 	position:relative;
-	left:79%; /* возвращаем колонки с контентом на свои позиции. 70% - сумма смещений оберток fon1 и fon2 */
+	left:79%; 
     z-index: 2;
 }
 .centerColumn {
