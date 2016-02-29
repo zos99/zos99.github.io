@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <header>
+          <div class="entrar">
+                Ola!
+                <a href="#">Entrar</a>
+                ou
+                <a href="#">Cadastre-se</a>
+          </div>
+          <div class="ofertas">
+                <img alt="" src="img/inv.png">
+                    Minhas Ofertas
+          </div>
+          <div class="separator"> </div>
+          <div class=main-menu>
+               <ul class="menu">
+                    <li><a href="#">Meu YouBike</a></li>
+                    <li><a href="#">Vender</a></li>
+                    <li><a href="#">Forum</a></li>
+                    <li><a href="#">Contato</a></li>    
+                    <li><a href="#">Ajuda</a></li>
+                </ul>
+          </div>
+    </header>
+    <div class="wrapper">
+        <div class=box>
+            <div class="box_head"> Cadastre-se </div>
+            <div class="box_form">
+                <div class="form_input">
+                    <form id="CreateAccount" method="post" action="#">
+                        <div>
+                            <a class="button-fb fb" href="">
+                                Log In
+                                <span>with</span>
+                                Facebook
+                            </a>
+                        </div>
+                        <span>OU</span>
+                        <input id="acpro_inp0" type="text" required="" placeholder="First Name" value="" name="name">
+                        <input id="acpro_inp1" type="text" placeholder="Last Name" value="" name="name">
+                        <input type="email" required="" placeholder="Email Address" value="" name="name">
+                        <input type="password" required="" placeholder="Choose Password" value="" name="name">
+                        <input type="password" required="" placeholder="Password Confirm" value="" name="name">
+                        <div class="check">
+                            <div class="option">
+                                <input id="send_updates" type="checkbox" value="" name="name">
+                                <label for="send_updates"></label>
+                            </div>
+                            Send me Youbike updates and tips
+                        </div>
+                        <button>Create My Account</button>
+                    </form>
+                    <p> By clicking the button above, you agree to the Terms of Service </p>
+                    <p> Xiew our Privacy Policy. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

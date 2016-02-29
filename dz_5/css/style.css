@@ -1,0 +1,257 @@
+body {
+    background-color: #282828;
+    
+}
+header, 
+.wrapper {
+    width: 1215px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*-----------------------------Main menu-------------------------------------*/
+header {
+    background: #074c89 url(../img/fon.png) center;
+    height: 36px;
+    line-height: 36px;
+    margin: 0 auto;
+    position: relative;
+}
+.entrar {
+    background: rgba(0, 0, 0, 0) linear-gradient(to top, #2e7ac4, #51b1dc) repeat scroll 0 0;
+    border: 1px solid #4299d2;
+    height: 36px;
+    margin-right: 20px;
+    text-align: center;
+    width: 191px;
+    float: right
+}
+.entrar a {
+    color: #fff;  
+}
+.ofertas {
+    float: right;
+    text-align: center;
+    width: 160px;
+}
+.ofertas img {
+    vertical-align: middle;
+}
+.separator {
+    border-right: 1px solid #60b5ed;
+    float: right;
+    height: 32px;
+    margin: 2px 0;
+    width: 1px;
+}
+.main-menu ul {
+    display: table;
+    text-align: center;
+    float: right;
+}
+.main-menu ul li {
+    position: relative; 
+    display: inline;
+}
+.main-menu ul li a {
+    display: block;
+    float: left;
+    color: #60b5ed;
+    padding: 0 15px;
+    text-decoration: none;
+}
+ 
+.main-menu ul li a:hover {
+    border: none;
+    color: #fff;
+	background-color: #4eabda;
+}
+/*-------------------------------Content-------------------------------*/
+.wrapper {
+    height: 1030px;
+    background: #fff url(../img/bg.png) center;
+    -webkit-box-shadow: 0px 5px 2px 0px rgba(29,29,29,1);
+    -moz-box-shadow: 0px 5px 2px 0px rgba(29,29,29,1);
+    box-shadow: 0px 5px 2px 0px rgba(29,29,29,1);
+    position: relative;
+}
+.box {
+    width: 560px;
+    height: 614px;
+    position: absolute;
+    top: 50%;
+    margin-top: -307px;
+    left: 50%;
+    margin-left: -280px;
+    text-align: center;
+        
+}
+.box_head {
+    background-color: rgba(0, 0, 0, 0.63);
+    color: #fff;
+    font-size: 24px;
+    height: 61px;
+    line-height: 61px;
+    margin-bottom: 2px;
+}
+
+.box_form {
+    background: rgba(0, 0, 0, 0.63) none repeat scroll 0 0;
+}
+
+.form_input {
+    color: #ccc;
+    font-size: 11px;
+    height: 550px;
+    line-height: 1.5;
+}
+form {
+    height: 90%;
+    margin: auto;
+    width: 278px;
+}
+form > span {
+    background: rgba(0, 0, 0, 0) url("../img/ou-line.png") no-repeat scroll 0 16px;
+    color: #999;
+    display: block;
+    font-size: 14px;
+    height: 32px;
+    line-height: 32px;
+}
+form img {
+    margin: 35px 0 15px;
+}
+form img:hover {
+    box-shadow: 0 0 15px 4px #4885ab;
+}
+input {
+    color: #ccc;
+    display: block;
+    font-size: 14px;
+    margin: auto;
+}
+input[type="text"], 
+input[type="email"], 
+input[type="password"] {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #000;
+    border-color: -moz-use-text-color -moz-use-text-color #484948;
+    border-image: none;
+    border-style: none none solid;
+    border-width: medium medium 1px;
+    height: 34px;
+    margin: 15px 0;
+    outline: medium none;
+    padding: 0 0 0 15px;
+    width: 261px;
+}
+input[type="text"]:hover, 
+input[type="email"]:hover, 
+input[type="password"]:hover, 
+input[type="text"]:focus, 
+input[type="email"]:focus, 
+input[type="password"]:focus {
+    background-color: #1b5288;
+    border-bottom: 1px solid #699bcd;
+    box-shadow: 0 0 15px 4px #4885ab;
+    color: #fffbfb;
+}
+.check {
+    font-size: 14px;
+    margin: 20px 0 5px;
+    position: relative;
+    text-align: center;
+    width: 95%;
+}
+.option {
+    background: rgba(0, 0, 0, 0) -moz-linear-gradient(center top , #fcfff4 0%, #dfe5d7 40%, #b3bead 100%) repeat scroll 0 0;
+    box-shadow: 0 1px 1px white inset, 0 1px 3px rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    height: 15px;
+    margin: 3px 10px 0 -20px;
+    position: absolute;
+    width: 15px;
+}
+.option input {
+    visibility: hidden;
+}
+.option label {
+    background: rgba(0, 0, 0, 0) linear-gradient(-45deg, #fff 25%, grey 100%) repeat scroll 0 0;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5) inset, 0 1px 0 rgba(255, 255, 255, 1);
+    cursor: pointer;
+    height: 13px;
+    left: 1px;
+    position: absolute;
+    top: 1px;
+    width: 13px;
+}
+.option label::after {
+    background: rgba(0, 0, 0, 0) linear-gradient(to top, #2e7ac4 0%, #50aedb 100%) repeat scroll 0 0;
+    box-shadow: 0 1px 1px white inset, 0 1px 3px rgba(0, 0, 0, 0.5);
+    content: "";
+    height: 11px;
+    left: 1px;
+    opacity: 0;
+    position: absolute;
+    top: 1px;
+    width: 11px;
+}
+.option label:hover::after {
+    opacity: 0.3;
+}
+.option input[type="checkbox"]:checked + label::after {
+    opacity: 1;
+}
+button {
+    background: rgba(0, 0, 0, 0) linear-gradient(to top, #2e7ac4, #50aedb) repeat scroll 0 0;
+    border: 1px solid #1b5288;
+    border-radius: 5px;
+    color: #fff;
+    height: 37px;
+    margin: 15px 0;
+    width: 151px;
+}
+button:hover {
+    box-shadow: 0 0 15px 4px #4885ab;
+}
+.button-fb {
+    background-color: #5b74a8;
+    background-image: -moz-linear-gradient(center top , #3e5696, #304272);
+    border-radius: 0.3em;
+    border-top: 1px solid #7789b7;
+    color: #fff;
+    display: inline-block;
+    font: bold 14px/32px Arial,Verdana,sans-serif;
+    height: 34px;
+    margin: 30px 0 15px;
+    padding: 0 1.5em;
+    text-decoration: none;
+    white-space: nowrap;
+    width: 234px;
+}
+.button-fb::before {
+    border-radius: 0.15em 0 0 0.15em;
+    box-shadow: 1px 0 0 #223c77, 2px 0 0 #4d68ab;
+    float: left;
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0 1em 0 -0.7em;
+    padding: 0 0.1em;
+    text-align: center;
+    width: 1em;
+}
+.button-fb > span {
+    font-weight: normal;
+}
+.button-fb:hover {
+    box-shadow: 0 0 15px 4px #4d68ab;
+}
+.fb::before {
+    content: "f";
+}
+.fb::after {
+    content: url("../img/quote.png");
+}
+
