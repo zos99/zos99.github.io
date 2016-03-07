@@ -2,12 +2,6 @@ body {
     background-color: #282828;
     
 }
-header, 
-.wrapper {
-    width: 1215px;
-    margin-left: auto;
-    margin-right: auto;
-}
 /*-----------------------------Main menu-------------------------------------*/
 header {
     background: #074c89 url(../img/fon.png) center;
