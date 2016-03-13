@@ -1,0 +1,70 @@
+@font-face {
+    font-family: 'lucida_sans';
+    src: url('fonts/lucida-sans-unicode_allfont.ru-webfont.eot');
+    src: url('fonts/lucida-sans-unicode_allfont.ru-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/lucida-sans-unicode_allfont.ru-webfont.woff2') format('woff2'),
+         url('fonts/lucida-sans-unicode_allfont.ru-webfont.woff') format('woff'),
+         url('fonts/lucida-sans-unicode_allfont.ru-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'lucida_sans';
+    src: url('fonts/lucida-sans-unicode_allfont.ru-webfont.eot');
+    src: url('fonts/lucida-sans-unicode_allfont.ru-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/lucida-sans-unicode_allfont.ru-webfont.woff2') format('woff2'),
+         url('fonts/lucida-sans-unicode_allfont.ru-webfont.woff') format('woff'),
+         url('fonts/lucida-sans-unicode_allfont.ru-webfont.ttf') format('truetype');
+    font-weight: bold;
+    font-style: bold;
+
+}
+/* --------------- reset.css --------------- */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video  {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;                               /* обнуляем отступы и убираем бордюры */
+	vertical-align: baseline;          /* приводим все к одной базовой линии */
+	background: transparent;      /* чтобы не проскакивали левые фоны, установленные по умолчанию */
+	font-size: 100%;                     /* размер шрифта всем одинаковый */
+}
+a {                                      	     /* ссылка не в общем списке чтобы не сбрасывать outline по умолчанию */
+	margin:0;
+	padding:0;
+	font-size:100%;
+	vertical-align:baseline;
+	background:transparent;
+}
+img {
+	vertical-align: top;			/* возвращаем привычное вертикальное выравнивание */
+} 
+header,
+nav,
+section,
+article,
+aside,
+footer {
+  display: block;
+}
+nav ul {
+	 list-style:none;   
+}
+/* --------------- /reset.css --------------- */
+
+/* --------------- базовые настройки ---------*/
+html {
+	overflow-y: scroll; /* всегда показываем вертикальную полосу прокрутки  */
+}
+html, body {
+	height: 100%; /* чтобы подвал книзу можно было прижать */
+}
+body {
+	line-height: 1;
+	background: #fff;
+	color: #465961;
+	text-align: left;
+	font: 14px lucida_sans, Arial, sans-serif /* используем безопасные шрифтовые CSS стеки */
+}
+/* --------------- /базовые настройки ---------*/
