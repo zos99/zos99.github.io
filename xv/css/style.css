@@ -10,7 +10,6 @@ body {
 }
 .box {
     width: 560px;
-    position: absolute;
     margin: 100px auto;
     text-align: center;
 }
