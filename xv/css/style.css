@@ -10,12 +10,8 @@ body {
 }
 .box {
     width: 560px;
-
     position: absolute;
-    top: 50%;
-    margin-top: -307px;
-    left: 50%;
-    margin-left: -280px;
+    margin: 100px auto;
     text-align: center;
 }
 .box_head {
