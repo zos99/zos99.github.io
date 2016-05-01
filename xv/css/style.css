@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: url('../img/hv.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.box {
+    width: 560px;
+    margin: 100px auto;
+    
+    text-align: center;
+}
+.box_head {
+    margin-bottom: 10px;
+
+    line-height: 61px;
+    color: #fff;
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+    font-size: 30px;
+    background-color: rgba(42, 83, 81, 0.7);
+}
+.box_head:hover {
+    color: yellow;
+    
+}
+
+.box_form {
+    background: rgba(78, 33, 33, 0.6) none repeat scroll 0 0;
+}
+
+.form_input {
+
+    line-height: 1.5;
+    color: #fff;
+    font-size: 25px;
+
+}
+form {
+    height: 100%;
+    margin: auto;
+    width: 450px;
+}
+form > span {
+    height: 32px;
+    line-height: 32px;
+    display: block;
+    color: #999;
+    font-size: 14px;
+}
+.img1 {
+  background: rgba(0, 0, 0, 0) url("../img/tort.jpg") no-repeat scroll 0 1px;
+  height: 500px;
+}
