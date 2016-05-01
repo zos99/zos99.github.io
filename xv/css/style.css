@@ -11,6 +11,7 @@ body {
 .box {
     width: 560px;
     margin: 100px auto;
+    
     text-align: center;
 }
 .box_head {
