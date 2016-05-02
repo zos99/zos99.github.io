@@ -1,0 +1,204 @@
+body {
+    background: #F0EFE7;
+    margin: 0;
+    padding: 0;
+    font: 15px/1.5 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #4E443C;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Arvo', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  text-align: center;
+  font-weight: normal;
+  text-rendering: optimizelegibility;
+}
+
+h1 {
+    color: #4E443C;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+h2, h2 a {
+    color: #F14E32;
+}
+
+h3, h3 a {
+  color: #0388A6;
+}
+
+a {
+  color: #0388A6;
+}
+
+pre {
+  border:1px solid #000;
+  overflow-x:auto;
+  background: #222;
+  color: #fff;
+  text-shadow: none;
+}
+
+.wrapper {
+    max-width: 620px;
+    padding: 0 20px 40px 20px;
+    margin: auto;
+}
+.slider {
+  width: 600px;
+  height: 400px;
+}
+.section {
+  margin: 15px 50px;
+  background: #fff none repeat scroll 0 0;
+  border: 1px solid #d8d7d6;
+  border-radius: 3px;
+  padding: 20px 25px 22px;
+}
+.jq-selectbox {
+    width: 250px;
+}
+
+/*---------------------------------------*/
+.checkbox {
+  vertical-align: top;
+  margin: 0 3px 0 0;
+  width: 17px;
+  height: 17px;
+}
+.checkbox + label {
+  cursor: pointer;
+}
+/* Прячем оригинальный чекбокс. */
+.checkbox:not(checked) {
+  position: absolute;
+  opacity: 0;
+}
+.checkbox:not(checked) + label {
+  position: relative;
+  padding: 0 0 0 60px;
+}
+/* Оформление первой части чекбокса в выключенном состоянии (фон). */
+.checkbox:not(checked) + label:before {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: 0;
+  width: 50px;
+  height: 20px;
+  border-radius: 13px;
+  background: #CDD1DA;
+  box-shadow: inset 0 2px 3px rgba(0,0,0,.2);
+}
+/* Оформление второй части чекбокса в выключенном состоянии (переключатель). */
+.checkbox:not(checked) + label:after {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  border-radius: 10px;
+  background: #FFF;
+  box-shadow: 0 2px 5px rgba(0,0,0,.3);
+  transition: all .2s; /* анимация, чтобы чекбокс переключался плавно */
+}
+/* Меняем фон чекбокса, когда он включен. */
+.checkbox:checked + label:before {
+  background: #9FD468;
+}
+/* Сдвигаем переключатель чекбокса, когда он включен. */
+.checkbox:checked + label:after {
+  left: 26px;
+}
+/* Показываем получение фокуса. */
+.checkbox:focus + label:before {
+  box-shadow: 0 0 0 3px rgba(255,255,0,.5);
+}
+/*Three-level menu with animation STARTS HERE*/
+nav {
+  background-color:rgb(255,100,100);
+  padding:10px 0;
+}
+nav ul {
+  list-style-type:none;
+  margin:0;
+  padding:0;
+}
+nav ul li {
+  display:inline-block;
+  position:relative;
+}
+nav li ul {
+  background-color:#FF6464;
+  position:absolute;
+  left:0;
+  top:40px;
+  width:200px;
+}
+nav li li {
+  position:relative;
+  margin:0;
+  display:block;
+}
+nav li li ul {
+  position:absolute;
+  top:0;
+  left:200px;
+  margin:0;
+}
+.sub-menu
+{
+  background-color: #FF6464;
+  transition: all 0.7s;
+}
+.sub-menu-animated
+{
+  background-color: #CA0030;
+}
+nav a {
+  line-height:40px;
+  padding:0 12px;
+  margin:0 12px;
+}
+nav a {
+  color:#fff;
+  text-decoration:none;
+  display:block;
+}
+nav a:hover,
+nav a:focus,
+nav a:active {
+  color:rgb(50,50,50);
+}
+.dropdown
+{
+  background-color: inherit;
+  transition: all 0.7s;
+}
+.dropdown-animated
+{
+  background-color: #CA0030;
+}
+nav li li a {
+  border-bottom:solid 1px rgb(200,50,50);
+  margin:0 10px;
+  padding:0;
+}
+nav li li:last-child a {
+  border-bottom:none;
+}
+ul.sub-menu {
+  display:none;
+}
+nav li.dropdown > a {
+  background-image:url('../img/arrow-down.png');
+  background-position:right 20px;
+  background-repeat:no-repeat;
+}
+nav li li.dropdown > a {
+  background-image:url('../img/arrow-right.png');
+  background-position:right 16px;
+  background-repeat:no-repeat;
+}
