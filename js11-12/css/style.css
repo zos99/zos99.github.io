@@ -1,0 +1,93 @@
+body {
+    background-color: #eeeeee;
+}
+
+h1 {
+    font-family: "Open Sans",Arial,Tahoma;
+    font-size: 25px;
+    text-align: center;
+}
+p,
+li,
+a {
+    font: 18px "Times New Roman serif";
+}
+.carousel-wrapper {
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: center;
+    width: 765px;
+}
+.carousel-hider {
+    float: left;
+    margin: 0 auto;
+    width: 600px;
+    overflow: hidden;
+    float: left;
+}
+.carousel-list {
+    list-style: none;
+    width: 10000px;
+    padding: 0px;
+    position: relative;
+}
+.carousel-element {
+    display: block;
+    margin-right: 25px;
+    float: left;
+}
+.carousel-element img {
+    max-width: 100px;
+}
+.carousel-arrow-left,
+.carousel-arrow-right {
+    float: left;
+    display: block;
+    border: 1px solid grey;
+    background-color: lightgrey;
+    padding: 5px;
+    margin-top: 50px;
+}
+.carousel-arrow-left:hover,
+.carousel-arrow-right:hover {
+    cursor: pointer;
+    background-color: grey;
+}
+.carousel-arrow-left {
+    margin-right: 25px;
+}
+.carousel-arrow-right {
+    margin-left: 25px;
+}
+/*----------------------------------------------*/
+.output-wrapper {
+	margin: 30px auto;
+	padding: 30px 0;
+	width: 40%;
+	background-color: #fff;
+  box-shadow: 0 0 1px 1px rgba(206, 206, 206, 1);
+}
+
+.image-output {
+	text-align: center;
+}
+
+.image-output > img {
+  height: 120px;
+  margin: 10px;
+}
+
+.content-output {
+	margin-left: 25px;
+}
+
+.box-line {
+	margin: 0 auto;
+	width: 90%;
+	border-bottom: 2px solid grey;
+}
+.line {
+    border-bottom: 1px solid #000;
+    width: 90%;
+    margin: 0 auto;
+}
