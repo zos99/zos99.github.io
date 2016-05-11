@@ -1,88 +1,171 @@
 
-.wrapper{
-	width: 960px;
-	margin:0 auto;
+body {
+	width: 100%;
+  height: 100%;
+  background: url("../img/bg.jpg") top center no-repeat;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+	/*overflow: hidden;*/
 }
-header{
-	position: relative;
-	background: url("../img/bg.jpg") top no-repeat;
-	background-size: cover;
-	padding-top: 67px;
+body::-webkit-scrollbar{
+  /*height: 16px;*/
+  /*overflow: visible;*/
+  /*width: 12px;*/
+  display: none;
 }
-/*----логотип---*/
-.wrapper__logo {
-	float: left;
+.content-wrap {
+  width: 100%;
+  height: 100%;
+  max-width: 960px;
+  min-width: 320px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  position: relative;
+	/*overflow: hidden;*/
 }
-.wrapper__logo a{
-	text-decoration: none;
-	font: 48px 'league_gothicregular';
-	text-transform: uppercase;
-	color: #ffffff;
+/*---------------------------------------logotype-----------------------------------------------*/
+.page-header {
+	height: 148px;
+  margin-top: 66px;
 }
-.wrapper__logo span{
-	color: #533b5e;
+
+.logo{
+  font-family: 'league_gothicregular', sans-serif;
+  font-size: 45px;
+  color: white;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  float: left;
+	  /*padding: 0 0 0 20px;*/
 }
-/*---верхнее меню---*/
-.mainmenu {
-	float: right;
+
+.logo__highlight{
+  color: #745083;
+  -webkit-text-fill-color: transparent;
+  background: -webkit-linear-gradient(#745083, #322539);
+  -webkit-background-clip: text;
+  text-shadow: none;
 }
-.mainmenu li{
-	display: inline-block;
-	line-height: 50px;
-	float: left;
-	margin-left: 53px;
+
+/*---------------------------------------main-menu-----------------------------------------*/
+.menu{
+  width: 70.9%;
+  margin-top: 4px;
+  float: right;
+  text-align: right;
+  z-index: 100500;
 }
-.mainmenu a{
-	text-decoration: none;
-	font-size: 24px;
-	color: #ffffff;
-	text-shadow: 4px 4px 2px rgba(150, 150, 150, 1);
-	text-transform: uppercase;
-	text-align: center;
+
+.menu__list-item{
+  /*margin-left: 41px;*/
+  margin-left: 5.9%;
+  float: left;
+  /*margin: 0 0 0 4%;*/
 }
-.mainmenu li:first-child{
-	margin-left: 0px;
+
+.menu__link{
+  font-size: 24px;
+  padding: 0 5px;
+  font-family: 'league_gothicregular', sans-serif;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 1.405;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
+  text-decoration: none;
 }
-.mainmenu a:hover{
-	border-bottom:2px solid #edbfff;
+
+.menu__link:hover,
+.menu__link--active{
+  border-bottom: 2px solid #edbfff;
 }
-.mainmenu__dropbox-inner{
-	display: none;
-}
-/*----слайдер---*/
+/*---------------------------------------------slider----------------------------------------------*/
 .slider{
-	position: relative;
-	margin-top: 160px;
-	background: rgba(40,40,40,0.4);
-}
-.slider__text{
-	margin-top: 80px;
-	width: 500px;
-	float: left;
-	clear:both;
-	margin-bottom: 82px;
-}
-.slider__text h1{
-	font: 60px 'league_gothicregular';
-	color:#ffffff;
-	line-height: 54px;
-}
- .slider__text h2{
-	font: 32px 'league_gothicregular';
-	color:#edbfff;
+  height: 400px;
+  background: url(../img/slider-transparent-bg.png); /* IE 8 FIX */
+  background: rgba(0, 0, 0, 0.2);
+  margin: 64px 0 168px;
+  position: relative;
 }
 
-.slider__text h3{
-	font: 18px 'open_sans';
-	color:#ffffff;
+.slide{
+  position: relative;
+  height: 100%;
 }
 
-.slider__img{
-	position: absolute;
-	right: 235px;
-    top: -20px;
+.slide__article,
+.blurb__article{
+  text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.4);
 }
-/*------переключатель слайдов----*/
+
+.slide__article{
+  width: 55%; /* IE 8 FIX */
+  width: calc(90% - 331px);
+  margin-top: 79px;
+  float: left;
+}
+
+.slide__title,
+.blurb__title,
+.blurb__link,
+.testimonial__title,
+.blog__title,
+.blog__link,
+.recent__title {
+  font-family: 'league_gothicregular', sans-serif;
+  font-size: 60px;
+  color: #fff;
+  height: 60px;
+  overflow: hidden;
+}
+
+.slide__subtitle {
+  font-family: 'league_gothicregular', sans-serif;
+  font-size: 32px;
+  color: #edbfff;
+  height: 30px;
+  overflow: hidden;
+}
+
+.slide__paragraph,
+.blurb__paragraph,
+.testimonial__paragraph,
+.blog-post__info,
+.recent__paragraph {
+  font-family: 'OpenSans', sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  margin-top: 4px;
+  color: #fff;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  height: 144px;
+  overflow: hidden;
+}
+
+.slide__img-container{
+  position: relative;
+  width: 28.5%;
+  height: 100%;
+  margin-right: 7.4%;
+  float: right;
+}
+
+.slide__img-iphone4-blured{
+  top: 60px;
+  left: 0;
+  position: absolute;
+}
+
+.slide__img-iphone4{
+  position: absolute;
+  margin-top: -17px;
+  right: 0;
+  /*position: relative;*/
+}
+
+/*---------------------------slide switch----------------------------*/
 .click ul{
 	float: right;
 	width: 247px;
@@ -92,41 +175,45 @@ header{
 .click li{
 	float: left;
 }
-.click a { 
+.click a {
 	display: block;
 	width: 20px;
-	height: 20px; 
+	height: 20px;
 	background: url("../img/sprite.png") no-repeat;
-    background-position: -29px -31px;
+  background-position: -29px -31px;
 }
 .click a:hover{
 	background-position: -52px -31px;
 }
-.slider:before{
-	content: "";
-    background: url("../img/sprite.png") no-repeat;
-   	background-position: 0px -65px;
-    display: block;
-    height: 45px;
-    width: 25px;
-    position: absolute;
-    left: 5%;
-    top: 50%; 
+.slider__prev-arrow, .slider__next-arrow{
+  width: 10%; /* IE 8 FIX */
+  width: calc(50% - 480px);
+  min-width: 22px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
 }
-.slider:after{
-	content: "";
-    background: url("../img/sprite.png") no-repeat;
-   	background-position: -26px -65px;
-    display: block;
-    height: 45px;
-    width: 25px;
-    position: absolute;
-    right: 5%;
-    top: 50%; 
+
+.slider__next-arrow{
+  left: auto;
+  right: 0;
 }
-/*----блок с фиолетовым градиентом---*/
+
+.slider__prev-arrow:before, .slider__next-arrow:before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url("../img/slider-arrow.png") center center no-repeat;
+}
+
+.slider__next-arrow:before{
+  transform: rotate(180deg);
+}
+
+/*----about company---*/
 .aboutcompany{
-/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#734f81+0,33263a+100 */
     background: rgb(115,79,129); /* Old browsers */
     background: -moz-linear-gradient(top,  rgba(115,79,129,1) 0%, rgba(51,38,58,1) 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(top,  rgba(115,79,129,1) 0%,rgba(51,38,58,1) 100%); /* Chrome10-25,Safari5.1-6 */
@@ -136,16 +223,16 @@ header{
     border-bottom: 1px solid  #000000;
 }
 .aboutcompany article{
-	width: 25%;
-    float: left;
-    margin: 77px 0px 65px 95px;
-    position: relative;
+	width: 24%;
+  float: left;
+  margin: 77px 35px 65px 45px;
+  position: relative;
 }
-article:first-child{
+.aboutcompany > article:first-child{
 	margin-left: 50px;
 }
 article p{
-	font: 16px 'open_sans';
+	font: 18px 'open_sans';
 	color: #ffffff;
 }
 .aboutcompany article span {
@@ -165,7 +252,7 @@ article a{
 article a:hover{
 	text-shadow: 1px 0px 10px rgba(255, 255, 255, 1);
 }
-.aboutcompany__first:before{
+.aboutcompany__left:before{
 	content: "";
     background: url("../img/sprite.png") no-repeat;
     background-position: -157px -71px;
@@ -174,7 +261,7 @@ article a:hover{
     position: absolute;
     left: -37px;
 }
-.aboutcompany__second:before{
+.aboutcompany__center:before{
 	content: "";
     background: url("../img/sprite.png") no-repeat;
     background-position: -113px -67px;
@@ -183,7 +270,7 @@ article a:hover{
     position: absolute;
     left: -37px;
 }
-.aboutcompany__third:before{
+.aboutcompany__right:before{
 	content: "";
     background: url("../img/sprite.png") no-repeat;
     background-position: -71px -65px;
@@ -192,7 +279,7 @@ article a:hover{
     position: absolute;
     left: -37px;
 }
-/*----блог----*/
+/*-----------------blog----------------------*/
 .blog{
 	background:#f9f9f9;
 	color: #454545;
@@ -211,9 +298,9 @@ article a:hover{
 .blog__left span {
 	color: #edbfff;
 }
-/*----блок слева---*/
+/*----------------------the block on the left------------------*/
 .blog__left{
-	width: 360px;
+	width: 35%;
 	float: left;
 	background: #ffffff;
 	margin: 97px 0px 110px 28px;
@@ -230,11 +317,11 @@ article a:hover{
     left: -30px;
     top: 15px;
 }
-/*---блок справа---*/
+/*-----------------------the block on the right----------------------*/
 .blog__right{
 	float: right;
 	margin-top: 127px;
-	width: 450px;
+	width: 45%;
 }
 .blog__right h4{
 	font-family: 'open_sans';
@@ -296,10 +383,10 @@ article a:hover{
 .blog__click li{
 	float: left;
 }
-.blog__click a { 
+.blog__click a {
 	display: block;
 	width: 20px;
-	height: 20px; 
+	height: 20px;
 	background: url("../img/sprite.png") no-repeat;
     background-position: -29px -31px;
 }
@@ -370,10 +457,10 @@ article a:hover{
 .comment_copyright{
 	font-family: Georgia;
 	font-style: italic;
-	color: #c5c5c5; 
+	color: #c5c5c5;
 	line-height: 50px;
 }
-.comment h3, 
+.comment h3,
 .comment span{
 	font-size: 48px;
 	text-transform: uppercase;
@@ -394,34 +481,45 @@ article a:hover{
 .comment_first{
 	display: none;
 }
-/*----Футер----*/
-.footer_menu {
-	background: url("../img/footer.jpg") top no-repeat;
-	background-size: cover;
+/*--------------------------footter-------------------------*/
+.page-footer{
+  position: relative;
+  height: 114px;
+  background: url("../img/footer.jpg") center 30% no-repeat;
+  overflow: hidden;
 }
-.footer_menu_nav li{
-	line-height: 114px;
-	float: left;
+
+.page-footer:before{
+  content: "";
+  display: block;
+  height: 16px;
+  background: url("../img/shadow.png") top center no-repeat;
 }
-.footer_menu_nav a{
-	text-decoration: none;
-	font-size: 19px;
-	color: #ffffff;
-	text-shadow: 4px 4px 2px rgba(150, 150, 150, 1);
-	text-transform: uppercase;
-	text-align: center;
-	margin-right: 45px;
+
+.menu--footer{
+  margin-top: 27px;
+  float: left;
 }
-.footer_menu_nav a:hover{
-	border-bottom:2px solid #edbfff;
+
+.menu__list-item--footer{
+  margin-left: -5px;
+  margin-right: 37px;
 }
-.design{
-	color: #ffffff;
-	float: right;
-	line-height: 114px;
-	font-family: 'open_sans';
-	font-size: 12px;
+
+.menu__link--footer{
+  font-size: 20px;
 }
-.design span{
-	font-weight: bold;
+
+.copyright{
+  margin-top: 37px;
+  float: right;
+	font-family: 'open_sans', sans-serif;
+  font-size: 11px;
+  color: #fff;
+}
+
+.copyright__link{
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
 }
