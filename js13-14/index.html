@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>DZ JS 13-14</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="js/tmpl.js"></script>
+    <script src="js/script.js"></script>
+  </head>
+  <body>
+    <script type="text/template" id="output-info">
+      <div class="wrapper">
+        <h1 class="test-name">Тест по программированию</h1>
+        <% for (var i = 0; i < data.length; ++i) { %>
+          <div class="article">
+            <h2 class="question-title"><%=(i+1)%>) <%= data[i].text %></h2>
+            <form action="" class="testForm">
+              <% for (var j = 0; j < data[i].answers.length; ++j) { %>
+                <label class="checkbox">
+                  <input id=<%= 'q'+i+j %> class="checkbox" type="checkbox" name=<%= 'name'+i %> >
+                  <%= data[i].answers[j] %>
+                </label>
+              <% }; %>
+            </form>
+          </div>
+        <% }; %>
+        <button class="button">Проверить результаты!</button>
+      </div>
+    </script>
+    <script type="text/html" id="modal_window">
+      <div class="overlay">
+        <div class="window">
+          <p>Из  <%= results.length %>  вопросов верных ответов: <%= you_res %>!</p>
+          <button class="button" id="closeModal">ok</button>
+        </div>
+      </div>
+    </script>
+  </div>
+</body>
+</html>
