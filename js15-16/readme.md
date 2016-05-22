@@ -1,1 +1,1 @@
-https://github.com/zos99/zos99.github.io
+http://zos99.github.io/js15-16/
