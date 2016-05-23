@@ -10,6 +10,7 @@ body {
 	margin:30px auto;
   width: 50%;
   text-align: center;
+	width: 70%;
 }
 .form-wrapper img {
   width: 300px;
@@ -67,4 +68,7 @@ a {
 }
 a:hover {
 	text-decoration: underline;
+}
+.output-items {
+	margin-bottom: 25px;
 }

@@ -17,7 +17,7 @@ $(function() {
                 $.each(data.items, function(i, val) {
                     var li = document.createElement('li');
                     li.classList.add('output-items');
-                    li.innerHTML = '№'+ (i+1) + ': ' +'<a href="'+val.link+'" title="'+val.link+'" target="_blank">'+val.title+ '</br>' +'<img class="image-output" src="'+val.pagemap.cse_thumbnail[0].src+'">'+"</a>"+val.htmlSnippet;
+                    li.innerHTML = '№'+ (i+1) + ': ' +'<a href="'+val.link+'" target="_blank">'+val.title+ '</br>'+"</a>"+val.snippet;
                     ul.appendChild(li);
                 });
                 $('#out-results').html(ul);
