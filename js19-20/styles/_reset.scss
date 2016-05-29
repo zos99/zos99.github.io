@@ -1,0 +1,87 @@
+@font-face {
+    font-family: 'Ubuntu Medium';
+    src: url('../fonts/UbuntuMedium.eot');
+    src: url('../fonts/UbuntuMedium.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/UbuntuMedium.woff2') format('woff2'),
+         url('../fonts/UbuntuMedium.woff') format('woff'),
+         url('../fonts/UbuntuMedium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ubuntu Light';
+    src: url('../fonts/UbuntuLight.eot');
+    src: url('../fonts/UbuntuLight.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/UbuntuLight.woff2') format('woff2'),
+         url('../fonts/UbuntuLight.woff') format('woff'),
+         url('../fonts/UbuntuLight.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ubuntu Condensed Regular';
+    src: url('../fonts/UbuntuCondensedRegular.eot');
+    src: url('../fonts/UbuntuCondensedRegular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/UbuntuCondensedRegular.woff2') format('woff2'),
+         url('../fonts/UbuntuCondensedRegular.woff') format('woff'),
+         url('../fonts/UbuntuCondensedRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+html, body, div, span, applet,
+object, iframe, h1, h2, h3, h4,
+h5, h6, p, blockquote, pre, a,
+abbr, acronym, address, big, cite,
+code, del, dfn, em, img, ins, kbd,
+q, s, samp, small, strike, strong,
+sub, sup, tt, var, b, u, i, center,
+dl, dt, dd, ol, ul, li, fieldset,
+form, label, legend, table, caption,
+tbody, tfoot, thead, tr, th, td, article,
+aside, canvas, details, embed, figure,
+figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section,
+summary, time, mark, audio, video {
+  	margin: 0;
+  	padding: 0;
+  	border: 0;
+  	outline: 0;
+  	vertical-align: baseline;
+  	background: transparent;
+  	font-size: 100%;
+}
+a {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+img {
+	vertical-align: top;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+nav,
+ul {
+	 list-style:none;
+}
+blockquote,
+q {
+	quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
