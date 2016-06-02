@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+	<title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+	<!-- <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script> -->
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.3.0/lodash.js"></script> -->
+	<!-- <script src="js/script.js"></script>-->
+  <script data-main="js/main" src="js/require.js"></script>
+</head>
+<body>
+  <script type="text/template" id="wrapper">
+    <div class="wrapper">
+      <ul class="list">
+      </ul>
+      <div class="controlls">
+        <input type="text" class="item-value">
+        <button class="item-add">Add</button>
+        <button class="item-change">Change</button>
+      </div>
+    </div>
+  </script>
+  <script type="text/template" id="list-template">
+    <% for (var i=0;i<data.length;i++){ %>
+      <li data-index="<%= i %>"class="list-item"><%= data[i] %><span data-index="<%= i %>" class="item-delete">X</span></li>
+      <% };%>
+  </script>
+</body>
+</html>

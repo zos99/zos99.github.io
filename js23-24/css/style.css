@@ -1,0 +1,68 @@
+* {
+	margin:0;
+	padding:0;
+}
+body {
+  background: url("../img/glass-building.jpg") center center no-repeat;
+  overflow: hidden;
+}
+.wrapper {
+    background-color: rgba(0, 0, 0, 0.63);
+    color: #fff;
+    border-color: grey;
+    border-radius: 35px;
+    border-style: solid;
+    border-width: 1px 2px;
+    box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.8);
+    left: 53%;
+    margin-left: -25%;
+    padding: 25px;
+    position: absolute;
+    top: 50px;
+    width: 40%;
+}
+.list {
+	list-style: none;
+}
+.list-item {
+  position: relative;
+	padding:10px 100px;
+	margin:20px auto;
+	background-color: #afb4b2;
+	cursor:pointer;
+}
+.item-value {
+    background: rgba(235, 235, 234, 1) none repeat scroll 0 0;
+    border-radius: 5px;
+    color: grey;
+    display: block;
+    font: italic 16px Arial;
+    height: 25px;
+    margin: 0 auto;
+    outline: medium none;
+    text-align: center;
+    width: 99%;
+    margin-bottom: 25px;
+}
+.item-add,
+.item-change {
+    background: rgba(133, 130, 239, 1) none repeat scroll 0 0;
+    border: 1px solid rgba(14, 12, 88, 1);
+    border-radius: 25px;
+    color: rgba(34, 85, 130, 1);
+    cursor: pointer;
+    display: block;
+    font: 16px Arial;
+    height: 30px;
+    margin: 25px auto 0;
+    outline: medium none;
+    width: 50%;
+}
+.item-delete {
+	color: red;
+	display: block;
+	position: absolute;
+	right: -20px;
+	top:30%;
+	cursor:pointer;
+}
