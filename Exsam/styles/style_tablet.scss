@@ -1,31 +1,223 @@
-@media (min-width: 321px) and (max-width: 768px) {
-
+@media (min-width: 321px) and (max-width: 940px) {
 	.header {
-		width: 100%;
+		width:100%;
 		height:700px;
-		background-image:url(../img/Tablet_people.jpg);
-		.header__buttonBox
-		{
-			position:absolute;
-			right:5%;
-		    top:5%;
-			.login-panel__btn
-			{
-			    margin-top:20px;
-				padding:10px 15px;
+		background-image:url(../img/Desktop_people.jpg);
+		position:relative;
+		font: 700 21px montserrat,Verdana,sans-serif;
+
+				.login-panel {
+					position:absolute;
+					margin-top: 35px;
+		    	right: 10%;
+
+								.login-panel__btn {
+									padding:10px 15px;
+								}
+
+								.login-panel__btn--login {
+						    	margin-left: 4px;
+						    	width: 80px;
+								}
+
+								.login-panel__btn--signup {
+								  margin-left: 1px;
+								  width: 90px;
+								}
+				}
+
+				.header__buttonBox {
+					position:absolute;
+					right:5%;
+				  top:5%;
+
+								.header__button--transparent {
+								  margin-top:20px;
+									padding:10px 15px;
+								}
+
+								.header__button--transparent--border {
+									margin-top:20px;
+									padding:10px 15px;
+									border:2px solid $headerHutton;
+									border-radius:25px;
+								}
+				}
+
+				.header__name {
+						position: absolute;
+						left: 10%;
+						top: 35px;
+				}
+
+				.header__slogan {
+							font-size: 52px;
+							font-weight: bold;
+				}
+
+				.header__textBox {
+					 font-size: 52px;
+					 line-height: 62px;
+				}
+
+				.header__description {
+					margin: 20px auto 0 auto;
+					font: 300 24px Roboto,Arial,sans-serif;
+				}
+			}
+
+	.main {
+
+		.carousel__container {
+		  display:block;
+		  width:100%;
+			height:400px;
+
+			.carousel {
+				float:left;
+				width:25%;
+
+				.carousel__font {
+					margin:0 auto;
+				}
+
+				.carousel-wrapper {
+
+						.carousel-block {
+				      width: 230px;
+				      height:400px;
+						}
+				}
+
+    .first {
+			background-image:url('../img/Tablet_car.jpg');
+		}
+
+		.second {
+			background-image:url('../img/Tablet_hands.jpg');
+	  }
+
+		.third {
+	  	background-image:url('../img/Tablet_foots.jpg');
+	  }
+	}
+
+		.carousel:nth-of-type(n+2) {
+				margin-left:20px;
 			}
 		}
-		.header__name
-		{
-	        position:absolute;
-			left:5%;
-			top:10%;
+
+		.main__text-center {
+			margin-top:100px;
 		}
-		.header__description:nth-of-type(1)
-		{
-			width:310px;
-			margin:8px auto 0 auto;
+
+		.personBlock__container {
+       width:100%;
+
+				 .personBlock {
+						float:left;
+						width:45%;
+						min-height:210px;
+
+							.personBlock__photo {
+
+							}
+						}
+					}
+
+		.masonry {
+			-webkit-column-count: 3; -moz-column-count: 3; column-count: 3;
+			-webkit-column-gap: 2em; -moz-column-gap: 2em; column-gap: 2em;
+			width:100%;
+			min-height:900px;
+			z-index:2;
+
+			.item {
+				position:relative;
+	      width: 32%;
+	      height:300px;
+	      background-size:cover;
+				margin-bottom: 1%;
+				margin-right: 1%;
+				border-radius:10px;
+
+				.item__text {
+					color:white;
+	        position:absolute;
+	        top:50%;
+	        left:50%;
+	        font-size:16px;
+				}
+
+			}
+
+			.item:nth-of-type(5) {
+	      width: 64%;
+			}
+
+			.item:nth-of-type(6) {
+	       width: 64%;
+			}
 		}
 	}
 
+	.footer {
+		margin-top:30px;
+
+		.footer__line {
+			float:left;
+		}
+
+		.footer__name {
+			float:left;
+		}
+
+		.footer__text {
+			float:left;
+		}
+
+    .footer__list {
+			height:140px;
+			width:110px;
+			float:left;
+
+			.footer__text {
+				color:$darkGgrey;
+				font-weight:bold;
+				font-family:'montserrat';
+				font-size:14px;
+				width:100%;
+			}
+
+			.footer__menu {
+				list-style:none;
+				min-width:100px;
+				margin:0 auto;
+
+				.footer__item {
+
+		        	.footer__link {
+		    			  font-family:'Roboto';
+						    font-weight:100;
+		        		margin:6px;
+		        		color:$lightGrey;
+		        		text-decoration:none;
+		        		font-size:14px;
+		        	}
+		        }
+			}
+
+	}
+
+		.footer__Partners {
+			color:$darkGgrey;
+			font-weight:bold;
+			font-family:'montserrat';
+			font-size:14px;
+		}
+
+		.footer__logo {
+			float:right;
+		}
+	}
 }

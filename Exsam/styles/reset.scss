@@ -21,7 +21,10 @@ summary, time, mark, audio, video {
   font-size: 100%;
 }
 
-a, a:hover, a:visited, a:focus, a:active {
+a, a:hover,
+a:visited,
+a:focus,
+a:active {
   margin: 0;
   padding: 0;
   font-size: 100%;
@@ -63,7 +66,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-/*----------------*/
+
 .clierfix::after {
 	content: '';
 	clear: both;

@@ -1,3 +1,78 @@
+@font-face {
+  font-family: 'montserrat';
+  src: url("../fonts/Montserrat-Bold.ttf");
+  font-weight: bold;
+  font-style: normal; }
+@font-face {
+  font-family: 'montserrat';
+  src: url("../fonts/Montserrat-Regular.ttf");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/Roboto-BlackItalic.ttf");
+  font-weight: Black;
+  font-style: italic; }
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/Roboto-Black.ttf");
+  font-weight: Black;
+  font-style: normal; }
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/Roboto-Bold.ttf");
+  font-weight: bold;
+  font-style: normal; }
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/Roboto-BoldItalic.ttf");
+  font-weight: bold;
+  font-style: italic; }
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/Roboto-Italic.ttf");
+  font-weight: normal;
+  font-style: italic; }
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/Roboto-Italic.ttf");
+  font-weight: normal;
+  font-style: italic; }
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/Roboto-Light.ttf");
+  font-weight: 100;
+  font-style: normal; }
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/Roboto-LightItalic.ttf");
+  font-weight: 100;
+  font-style: italic; }
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/Roboto-Medium.ttf");
+  font-weight: 500;
+  font-style: normal; }
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/Roboto-MediumItalic.ttf");
+  font-weight: 500;
+  font-style: italic; }
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/Roboto-Regular.ttf");
+  font-weight: 400;
+  font-style: normal; }
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/Roboto-Thin.ttf");
+  font-weight: 200;
+  font-style: normal; }
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/Roboto-ThinItalic.ttf");
+  font-weight: 200;
+  font-style: italic; }
 html, body, div, span, applet,
 object, iframe, h1, h2, h3, h4,
 h5, h6, p, blockquote, pre, a,
@@ -20,7 +95,10 @@ summary, time, mark, audio, video {
   background: transparent;
   font-size: 100%; }
 
-a, a:hover, a:visited, a:focus, a:active {
+a, a:hover,
+a:visited,
+a:focus,
+a:active {
   margin: 0;
   padding: 0;
   font-size: 100%;
@@ -56,23 +134,18 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/*----------------*/
 .clierfix::after {
   content: '';
   clear: both;
   display: block; }
 
-@media (min-width: 769px) {
+@media (min-width: 941px) {
   .header {
     width: 100%;
     height: 700px;
     background-image: url(../img/Desktop_people.jpg);
     position: relative;
     font: 700 21px montserrat,Verdana,sans-serif; }
-    .header .wrapper {
-      max-width: 940px;
-      margin: 0 auto;
-      height: 100%; }
     .header .login-panel {
       position: absolute;
       margin-top: 35px;
@@ -89,6 +162,9 @@ table {
       position: absolute;
       left: 17.2%;
       top: 6.5%; }
+    .header .header__slogan {
+      font-size: 52px;
+      font-weight: bold; }
     .header .header__textBox {
       font-size: 52px;
       line-height: 62px; }
@@ -106,9 +182,9 @@ table {
       margin: 35px auto; }
       .main .carousel__container .carousel {
         float: left;
-        width: 300px; }
+        width: 31%; }
         .main .carousel__container .carousel .carousel-block {
-          width: 300px;
+          width: 31%;
           height: 400px; }
         .main .carousel__container .carousel .first {
           background-image: url("../img/Desktop_car.jpg"); }
@@ -160,16 +236,58 @@ table {
     width: 260px;
     margin: 37px auto;
     padding: 10px;
-    border-radius: 5px; }
+    border-radius: 5px;
+    margin-left: 275px;
+    margin-right: 10px; }
+
+  .main__action {
+    display: block;
+    width: 260px;
+    margin: 37px auto; }
 
   /*------------------------------------------------------------------*/
-  .footer__name {
-    left: 250px; }
-    .footer__name .footer__name {
-      left: 250px; } }
+  .footer {
+    margin: 35px auto;
+    width: 940px; }
+    .footer .footer__name {
+      float: left;
+      width: 241px; }
+    .footer .footer__text {
+      float: left; }
+    .footer .footer__list {
+      height: 140px;
+      width: 80px;
+      float: left; }
+      .footer .footer__list .footer__text {
+        color: #333333;
+        font-weight: bold;
+        font-family: 'montserrat';
+        font-size: 14px;
+        display: block;
+        width: 100%; }
+      .footer .footer__list .footer__menu {
+        list-style: none;
+        min-width: 100px;
+        margin: 0 auto; }
+        .footer .footer__list .footer__menu .footer__item .footer__link {
+          font-family: 'Roboto';
+          font-weight: 100;
+          margin: 6px;
+          color: #cccccc;
+          text-decoration: none;
+          font-size: 14px; }
+    .footer .footer__Partners {
+      color: #333333;
+      font-weight: bold;
+      font-family: 'montserrat';
+      font-size: 14px;
+      margin-left: 85px;
+      display: inline-block; }
+    .footer .footer__logo {
+      float: right; } }
 @media (max-width: 320px) {
   .header {
-    min-width: 320px;
+    min-width: 300px;
     height: 540px;
     background-image: url(../img/Mobile_people.jpg); }
     .header .header__name {
@@ -177,46 +295,177 @@ table {
       left: 23%;
       top: 170px; }
     .header .login-panel {
-      position: absolute;
-      right: 30%;
-      top: 20px; }
+      margin: 0 auto; }
       .header .login-panel .login-panel__btn {
         margin-top: 20px;
         padding: 10px 15px; }
     .header .header__description:nth-of-type(1) {
       width: 220px;
-      margin: 8px auto 0 auto; }
+      margin: 8px auto 0 auto;
+      font: 300 18.01px Roboto, Arial, sans-serif; }
+    .header .header__slogan {
+      font-size: 30.01px; }
+
+  .main {
+    min-width: 300px; }
+    .main .carousel__container {
+      width: 90%;
+      height: 740px;
+      margin: 0 auto; }
+      .main .carousel__container .carousel {
+        margin: 10px auto;
+        width: 100%; }
+        .main .carousel__container .carousel .carousel-block {
+          width: 300px;
+          height: 240px; }
+        .main .carousel__container .carousel .first {
+          background-image: url("../img/Mobile_car.jpg"); }
+        .main .carousel__container .carousel .second {
+          background-image: url("../img/Mobile_hands.jpg"); }
+        .main .carousel__container .carousel .third {
+          background-image: url("../img/Mobile_foots.jpg"); }
+        .main .carousel__container .carousel .carousel-button-left {
+          display: none; }
+        .main .carousel__container .carousel .carousel-button-right {
+          display: none; }
+    .main .main__text-center {
+      margin-top: 40px; }
+    .main .masonry {
+      -webkit-column-count: 1;
+      -moz-column-count: 1;
+      column-count: 1;
+      -webkit-column-gap: 1em;
+      -moz-column-gap: 1em;
+      column-gap: 1em;
+      width: 100%;
+      min-height: 900px;
+      z-index: 2; }
+      .main .masonry .item {
+        position: relative;
+        width: 100%;
+        height: 119px;
+        background-size: cover;
+        margin-bottom: 1%;
+        margin-right: 1%;
+        border-radius: 10px; }
+        .main .masonry .item .item__text {
+          color: white;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          font-size: 22px; }
+    .main .main__input {
+      width: 300px;
+      margin: 24px  0 10px 0; }
+    .main .main__action {
+      width: 300px;
+      margin: 10px 0 40px 0; }
+
+  /*-----------------------------------------------*/
+  .footer {
+    min-width: 300px;
+    padding-bottom: 18px; }
+    .footer .footer__name {
+      text-align: center; }
+    .footer .footer__text {
+      text-align: center;
+      margin-top: 20px; }
+    .footer .footer__item {
+      display: inline-block;
+      text-align: center; }
+    .footer .footer__menu {
+      text-align: center; }
+    .footer .footer__Partners {
+      text-align: center;
+      color: #333;
+      font: 700 14px Montserrat, Verdana, sans-serif;
+      margin-bottom: 20px; } }
+@media (min-width: 321px) and (max-width: 940px) {
+  .header {
+    width: 100%;
+    height: 700px;
+    background-image: url(../img/Desktop_people.jpg);
+    position: relative;
+    font: 700 21px montserrat,Verdana,sans-serif; }
+    .header .login-panel {
+      position: absolute;
+      margin-top: 35px;
+      right: 10%; }
+      .header .login-panel .login-panel__btn {
+        padding: 10px 15px; }
+      .header .login-panel .login-panel__btn--login {
+        margin-left: 4px;
+        width: 80px; }
+      .header .login-panel .login-panel__btn--signup {
+        margin-left: 1px;
+        width: 90px; }
+    .header .header__buttonBox {
+      position: absolute;
+      right: 5%;
+      top: 5%; }
+      .header .header__buttonBox .header__button--transparent {
+        margin-top: 20px;
+        padding: 10px 15px; }
+      .header .header__buttonBox .header__button--transparent--border {
+        margin-top: 20px;
+        padding: 10px 15px;
+        border: 2px solid #fff;
+        border-radius: 25px; }
+    .header .header__name {
+      position: absolute;
+      left: 10%;
+      top: 35px; }
+    .header .header__slogan {
+      font-size: 52px;
+      font-weight: bold; }
+    .header .header__textBox {
+      font-size: 52px;
+      line-height: 62px; }
+    .header .header__description {
+      margin: 20px auto 0 auto;
+      font: 300 24px Roboto,Arial,sans-serif; }
 
   .main .carousel__container {
-    width: 87%;
-    height: 740px; }
+    display: block;
+    width: 100%;
+    height: 400px; }
     .main .carousel__container .carousel {
-      margin: 10px auto;
-      width: 100%; }
-      .main .carousel__container .carousel .carousel-block {
-        width: 300px;
-        height: 240px; }
+      float: left;
+      width: 25%; }
+      .main .carousel__container .carousel .carousel__font {
+        margin: 0 auto; }
+      .main .carousel__container .carousel .carousel-wrapper .carousel-block {
+        width: 230px;
+        height: 400px; }
       .main .carousel__container .carousel .first {
-        background-image: url("../img/Mobile_car.jpg"); }
+        background-image: url("../img/Tablet_car.jpg"); }
       .main .carousel__container .carousel .second {
-        background-image: url("../img/Mobile_hands.jpg"); }
+        background-image: url("../img/Tablet_hands.jpg"); }
       .main .carousel__container .carousel .third {
-        background-image: url("../img/Mobile_foots.jpg"); }
+        background-image: url("../img/Tablet_foots.jpg"); }
+    .main .carousel__container .carousel:nth-of-type(n+2) {
+      margin-left: 20px; }
   .main .main__text-center {
-    margin-top: 40px; }
+    margin-top: 100px; }
+  .main .personBlock__container {
+    width: 100%; }
+    .main .personBlock__container .personBlock {
+      float: left;
+      width: 45%;
+      min-height: 210px; }
   .main .masonry {
-    -webkit-column-count: 1;
-    -moz-column-count: 1;
-    column-count: 1;
-    -webkit-column-gap: 1em;
-    -moz-column-gap: 1em;
-    column-gap: 1em;
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-gap: 2em;
+    -moz-column-gap: 2em;
+    column-gap: 2em;
     width: 100%;
     min-height: 900px;
     z-index: 2; }
     .main .masonry .item {
       position: relative;
-      width: 100%;
+      width: 32%;
       height: 300px;
       background-size: cover;
       margin-bottom: 1%;
@@ -228,48 +477,47 @@ table {
         top: 50%;
         left: 50%;
         font-size: 16px; }
+    .main .masonry .item:nth-of-type(5) {
+      width: 64%; }
+    .main .masonry .item:nth-of-type(6) {
+      width: 64%; }
 
-  .footer .footer__text {
-    color: #333333;
-    font-weight: bold;
-    font-family: 'montserrat';
-    font-size: 14px;
-    margin: 0 auto;
-    width: 80px; }
-  .footer .footer__menu {
-    display: block;
-    margin: 0 auto;
-    width: 220px;
-    height: 20px; }
-    .footer .footer__menu .footer__item {
+  .footer {
+    margin-top: 30px; }
+    .footer .footer__line {
       float: left; }
-  .footer .footer__Partners {
-    color: #333333;
-    font-weight: bold;
-    font-family: 'montserrat';
-    font-size: 14px;
-    display: block;
-    margin: 0 auto;
-    width: 70px; } }
-@media (min-width: 321px) and (max-width: 768px) {
-  .header {
-    width: 100%;
-    height: 700px;
-    background-image: url(../img/Tablet_people.jpg); }
-    .header .header__buttonBox {
-      position: absolute;
-      right: 5%;
-      top: 5%; }
-      .header .header__buttonBox .login-panel__btn {
-        margin-top: 20px;
-        padding: 10px 15px; }
-    .header .header__name {
-      position: absolute;
-      left: 5%;
-      top: 10%; }
-    .header .header__description:nth-of-type(1) {
-      width: 310px;
-      margin: 8px auto 0 auto; } }
+    .footer .footer__name {
+      float: left; }
+    .footer .footer__text {
+      float: left; }
+    .footer .footer__list {
+      height: 140px;
+      width: 110px;
+      float: left; }
+      .footer .footer__list .footer__text {
+        color: #333333;
+        font-weight: bold;
+        font-family: 'montserrat';
+        font-size: 14px;
+        width: 100%; }
+      .footer .footer__list .footer__menu {
+        list-style: none;
+        min-width: 100px;
+        margin: 0 auto; }
+        .footer .footer__list .footer__menu .footer__item .footer__link {
+          font-family: 'Roboto';
+          font-weight: 100;
+          margin: 6px;
+          color: #cccccc;
+          text-decoration: none;
+          font-size: 14px; }
+    .footer .footer__Partners {
+      color: #333333;
+      font-weight: bold;
+      font-family: 'montserrat';
+      font-size: 14px; }
+    .footer .footer__logo {
+      float: right; } }
 .header {
   background-position: center 0;
   background-repeat: no-repeat; }
@@ -308,7 +556,8 @@ table {
     display: block;
     font-weight: bold;
     font-family: 'montserrat';
-    color: #fff; }
+    color: #fff;
+    text-transform: uppercase; }
   .header .header__description {
     display: block;
     color: #fff;
@@ -502,15 +751,12 @@ table {
     border-radius: 4px;
     border: 1px solid #999;
     height: 40px;
-    width: 240px;
     color: #999;
     font: 300 14px Roboto, Arial, sans-serif;
     float: left;
-    margin-left: 275px;
-    margin-right: 10px; }
+    padding-left: 15px; }
   .main .main__action {
     display: block;
-    width: 160px;
     color: #fff;
     background-color: #ff4e50;
     border-radius: 20px;
@@ -520,100 +766,48 @@ table {
     font-size: 15px;
     height: 40px;
     float: left;
-    position: relative;
-    margin: 37px auto; }
+    position: relative; }
 
+/*--------------------------------------*/
 .footer__line {
   background-color: #ff4e50;
   height: 4px;
   width: 100%;
   margin-top: -28px; }
 
-.footer {
-  width: inherit;
-  margin: 0 auto 18px;
-  border-top: 4px solid #ff4e50;
-  text-align: center; }
-  .footer .footer__name {
-    color: #ff4e50;
-    font: 700 16px Montserrat, Verdana, sans-serif;
-    margin: 15px 0 12px;
-    letter-spacing: 0.8px; }
-
-@font-face {
+.footer .footer__name {
+  color: #ff4e50;
+  margin: 0 auto;
+  font-weight: bold;
+  letter-spacing: 1px;
   font-family: 'montserrat';
-  src: url("../fonts/Montserrat-Bold.ttf");
+  font-size: 16px; }
+.footer .footer__list .footer__text {
   font-weight: bold;
-  font-style: normal; }
-@font-face {
   font-family: 'montserrat';
-  src: url("../fonts/Montserrat-Regular.ttf");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'Roboto';
-  src: url("../fonts/Roboto-BlackItalic.ttf");
-  font-weight: Black;
-  font-style: italic; }
-@font-face {
-  font-family: 'Roboto';
-  src: url("../fonts/Roboto-Black.ttf");
-  font-weight: Black;
-  font-style: normal; }
-@font-face {
-  font-family: 'Roboto';
-  src: url("../fonts/Roboto-Bold.ttf");
-  font-weight: bold;
-  font-style: normal; }
-@font-face {
-  font-family: 'Roboto';
-  src: url("../fonts/Roboto-BoldItalic.ttf");
-  font-weight: bold;
-  font-style: italic; }
-@font-face {
-  font-family: 'Roboto';
-  src: url("../fonts/Roboto-Italic.ttf");
-  font-weight: normal;
-  font-style: italic; }
-@font-face {
-  font-family: 'Roboto';
-  src: url("../fonts/Roboto-Italic.ttf");
-  font-weight: normal;
-  font-style: italic; }
-@font-face {
-  font-family: 'Roboto';
-  src: url("../fonts/Roboto-Light.ttf");
-  font-weight: 100;
-  font-style: normal; }
-@font-face {
-  font-family: 'Roboto';
-  src: url("../fonts/Roboto-LightItalic.ttf");
-  font-weight: 100;
-  font-style: italic; }
-@font-face {
-  font-family: 'Roboto';
-  src: url("../fonts/Roboto-Medium.ttf");
-  font-weight: 500;
-  font-style: normal; }
-@font-face {
-  font-family: 'Roboto';
-  src: url("../fonts/Roboto-MediumItalic.ttf");
-  font-weight: 500;
-  font-style: italic; }
-@font-face {
-  font-family: 'Roboto';
-  src: url("../fonts/Roboto-Regular.ttf");
-  font-weight: 400;
-  font-style: normal; }
-@font-face {
-  font-family: 'Roboto';
-  src: url("../fonts/Roboto-Thin.ttf");
-  font-weight: 200;
-  font-style: normal; }
-@font-face {
-  font-family: 'Roboto';
-  src: url("../fonts/Roboto-ThinItalic.ttf");
-  font-weight: 200;
-  font-style: italic; }
+  font-size: 14px; }
+.footer .footer__list .footer__menu {
+  list-style: none; }
+  .footer .footer__list .footer__menu .footer__item .footer__link {
+    font-family: 'Roboto';
+    font-weight: 100;
+    margin: 6px;
+    color: #cccccc;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 2; }
+.footer .footer__text:nth-of-type(2) {
+  width: 70px; }
+.footer .footer__text:nth-of-type(3) {
+  width: 60px;
+  margin: 30px auto 0 auto; }
+.footer .footer__text:nth-of-type(4) {
+  width: 95px;
+  color: #cccccc;
+  font-size: 10px;
+  letter-spacing: 2px; }
+.footer .footer__logo {
+  display: block;
+  margin: 0 auto; }
 
 /*# sourceMappingURL=main.css.map */

@@ -4,14 +4,14 @@ module.exports = function(grunt) {
     concat: {
       dist:
         {
-          src: ['styles/variables.scss','styles/mixins.scss','styles/reset.scss','styles/style_desctop.scss','styles/style_mobile.scss',
-          'styles/style_tablet.scss','styles/style_common.scss','styles/fonts.scss'],
+          src: ['styles/variables.scss','styles/fonts.scss','styles/mixins.scss','styles/reset.scss','styles/style_desctop.scss','styles/style_mobile.scss',
+          'style_mobile_landscape.scss','styles/style_tablet.scss','styles/style.scss'],
           dest: 'styles/main.scss'
         }
       },
     uglify: {
     dist: {
-      src: ['js/src/script.min.js'],
+      src: ['js/src/*.js'],
       dest: 'js/dist/script.min.js'
     }
   },

@@ -1,4 +1,4 @@
-@media (min-width: 769px) {
+@media (min-width: 941px) {
 
 	.header {
     width: 100%;
@@ -7,11 +7,7 @@
 		position:relative;
 		font: 700 21px montserrat,Verdana,sans-serif;
 
-			.wrapper {
-				max-width: 940px;
-				margin:0 auto;
-				height: 100%;
-			}
+
 
 			.login-panel {
 				position:absolute;
@@ -39,6 +35,11 @@
     				top: 6.5%;
 				}
 
+				.header__slogan {
+							font-size: 52px;
+							font-weight: bold;
+				}
+
 				.header__textBox {
 					 font-size: 52px;
     			 line-height: 62px;
@@ -59,10 +60,10 @@
 
 			.carousel {
 				float:left;
-				width:300px;
+				width:31%;
 
 				 .carousel-block  {
-	          width:300px;
+	          width:31%;
 	          height:400px;
 	        }
 
@@ -136,21 +137,82 @@
 	        }
 		}
 	}
+
 	.main__input {
 		display: inline-block;
 		width: 260px;
 		margin: 37px auto;
 		padding: 10px;
 		border-radius: 5px;
+		margin-left: 275px;
+		margin-right: 10px;
+	}
+
+	.main__action {
+	  display: block;
+    width: 260px;
+		margin: 37px auto;
 	}
 	/*------------------------------------------------------------------*/
-.footer__name {
-  left: 250px;
+.footer
+	{
+		margin: 35px auto;
+		width: 940px;
 
-		.footer__name {
-        left: 250px;
+		.footer__name	{
+			float:left;
+			width: 241px;
+		}
+		.footer__text
+		{
+			float:left;
+		}
+		.footer__list {
+			  height: 140px;
+		    width: 80px;
+		    float: left;
+
+				.footer__text {
+					color:$darkGgrey;
+					font-weight:bold;
+					font-family:'montserrat';
+					font-size:14px;
+					display:block;
+					width:100%;
+				}
+				.footer__menu {
+					list-style:none;
+					min-width:100px;
+					margin:0 auto;
+
+					.footer__item {
+
+			        	.footer__link {
+			    			  font-family:'Roboto';
+							    font-weight:100;
+			        		margin:6px;
+			        		color:$lightGrey;
+			        		text-decoration:none;
+			        		font-size:14px;
+			        	}
+			        }
+				}
+
 		}
 
-}
+		.footer__Partners {
+			color: #333333;
+	    font-weight: bold;
+	    font-family: 'montserrat';
+	    font-size: 14px;
+	    margin-left: 85px;
+	    display: inline-block;
+		}
+
+		.footer__logo {
+			float:right;
+		}
+	}
+
 
 }
