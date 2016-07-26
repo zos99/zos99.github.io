@@ -1,1 +1,1 @@
- http://zos99.github.io/js19-20/index.html
+https://github.com/zos99/zos99.github.io/blob/master/gigiena/index.html
