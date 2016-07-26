@@ -1,1 +1,1 @@
- zos99.github.io/gigiena/index.html
+ http://zos99.github.io/gigiena/index.html
