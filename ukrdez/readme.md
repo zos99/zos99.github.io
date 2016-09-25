@@ -1,1 +1,1 @@
-http://zos99.github.io/Exsam/index.html
+ zos99.github.io/ukrdez/index.html
