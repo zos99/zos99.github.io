@@ -205,7 +205,9 @@ a:focus {
     padding-left: 100px;
     text-align: center;
     vertical-align: middle;
-    width: 640px; }
+    width: 640px;
+    color: #333232;
+    font-weight: bold; }
     .header .header__description span {
       color: #2f8c7c;
       font-weight: bold;
