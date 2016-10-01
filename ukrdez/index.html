@@ -9,16 +9,13 @@
 	<link href='https://fonts.googleapis.com/css?family=Exo+2&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
   <!--[if lte IE 9]>   <link rel="stylesheet"   href="css/style_ie_8.css">  <![endif]-->
 	<![if gt IE 9]>
-  <link rel="stylesheet" href="css/jcarousel.responsive.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/style.css">
   <script type="text/javascript" src="js/jquery.js"></script>
   <script type="text/javascript" src="js/jcarousel.js"></script>
-  <script type="text/javascript" src="js/slider.js"></script>
-  <script src="js/jquery.jcarousel-core.min.js"></script>
-  <script src="js/jquery.jcarousel-control.min.js"></script>
-  <script src="js/jquery.jcarousel-pagination.min.js"></script>
-  <script src="js/jquery.jcarousel-autoscroll.min.js"></script>
-  <script type="text/javascript" src="js/jcarousel.responsive.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+  <script src="js/modernizr.custom.63321.js"></script>
+  <script src="js/jquery.catslider.js"></script>
 </head>
 <body>
 <header class="header">
@@ -186,59 +183,40 @@
     <div class="section-title section-title-green">
       <h2>Наша продукція</h2>
     </div>
-
-   				 <div class="jcarousel-wrapper">
-   					 <div class="jcarouselp">
-   						 <ul>
-   							 <li class=jcarousel__link>
-   								 <a href="">
-   									 <img src="img/slide1.jpg" alt="Image 1">
-   									 <p>Пена для рук <wbr>Eclean Derma</p>
-   									 <p><span class="jcarousel__info">Пена для рук с нежными ароматами идеально подойдет для всех членов семьи</span></p>
-   								 </a>
-   							 </li>
-   							 <li class=jcarousel__link>
-   								 <a href="">
-   								 	<img src="img/slide2.jpg" alt="Image 2">
-   									<p>Гель для посуды <wbr>и кухни</p>
-   									<p><span class="jcarousel__info">Активный гель для посуды с экстрактом горчицы</span></p>
-   								 </a>
-   							 </li>
-   							 <li class=jcarousel__link>
-   								 <a href="">
-   								 	<img src="img/slide3.jpg" alt="Image 3">
-   									<p>Шампунь с маслом <wbr>ореха макадами</p>
-   									<p><span class="jcarousel__info">Восстанавливает и укрепляет cтруктуру волоса</span></p>
-   								 </a>
-   							 </li>
-   							 <li class=jcarousel__link>
-   								 <a href="">
-   								 	<img src="img/slide4.jpg" alt="Image 4">
-   									<p>Пена для рук <wbr>Eclean Derma</p>
-   									<p><span class="jcarousel__info">Пена для рук с нежными ароматами идеально подойдет для всех членов семьи</span></p>
-   								 </a>
-   							 </li>
-   							 <li class=jcarousel__link>
-   								 <a href="">
-   								 	<img src="img/slide5.jpg" alt="Image 5">
-   									<p>Пена для рук <wbr>Eclean Derma</p>
-   									<p><span class="jcarousel__info">Активный гель для посуды с экстрактом горчицы</span></p>
-   								 </a>
-   							 </li>
-   							 <li class=jcarousel__link>
-   								 <a href="">
-   								 	<img src="img/slide6.jpg" alt="Image 6">
-   									<p>Пена для рук <wbr>Eclean Derma</p>
-   									<p><span class="jcarousel__info">Восстанавливает и укрепляет cтруктуру волоса</span></p>
-   								 </a>
-   							 </li>
-   						 </ul>
-   					 </div>
-   					 <a href="#" class="jcarousel-control-prev"></a>
-   					 <a href="#" class="jcarousel-control-next"></a>
-   					 <p class="jcarouselp-pagination"></p>
-   				 </div>
-
+    <div class="main">
+      <div id="mi-slider" class="mi-slider">
+        <ul>
+          <li><a href="#"><img src="img/1.jpg" alt="img01"><h4>Ботинки</h4></a></li>
+          <li><a href="#"><img src="img/2.jpg" alt="img02"><h4>Туфли</h4></a></li>
+          <li><a href="#"><img src="img/3.jpg" alt="img03"><h4>Мокасины</h4></a></li>
+          <li><a href="#"><img src="img/4.jpg" alt="img04"><h4>Кроссовки</h4></a></li>
+        </ul>
+        <ul>
+          <li><a href="#"><img src="img/5.jpg" alt="img05"><h4>Ремни</h4></a></li>
+          <li><a href="#"><img src="img/6.jpg" alt="img06"><h4>Шляпы</h4></a></li>
+          <li><a href="#"><img src="img/7.jpg" alt="img07"><h4>Очки</h4></a></li>
+          <li><a href="#"><img src="img/8.jpg" alt="img08"><h4>Шарфы</h4></a></li>
+        </ul>
+        <ul>
+          <li><a href="#"><img src="img/9.jpg" alt="img09"><h4>Туризм</h4></a></li>
+          <li><a href="#"><img src="img/10.jpg" alt="img10"><h4>Шикарные</h4></a></li>
+          <li><a href="#"><img src="img/11.jpg" alt="img11"><h4>Спорт</h4></a></li>
+          <li><a href="#"><img src="img/11.jpg" alt="img12"><h4>Спорт</h4></a></li>
+        </ul>
+        <ul>
+          <li><a href="#"><img src="img/12.jpg" alt="img13"><h4>Чемоданы</h4></a></li>
+          <li><a href="#"><img src="img/13.jpg" alt="img14"><h4>Для турне</h4></a></li>
+          <li><a href="#"><img src="img/14.jpg" alt="img15"><h4>Для ноутбуков</h4></a></li>
+          <li><a href="#"><img src="img/15.jpg" alt="img16"><h4>Портфели</h4></a></li>
+        </ul>
+        <nav>
+          <a href="#">Обувь</a>
+          <a href="#">Аксессуары</a>
+          <a href="#">Часы</a>
+          <a href="#">Сумки</a>
+        </nav>
+      </div>
+    </div>
   </div>
 </div>
 <div class="new-produkt">
