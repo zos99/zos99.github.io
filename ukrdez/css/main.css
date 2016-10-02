@@ -652,6 +652,10 @@ a:focus {
       height: 150px;
       vertical-align: middle;
       width: inherit; }
+      .section-why .why-item .thumb img:hover {
+        opacity: 0.8;
+        transform: scale(1.1);
+        transition-duration: 0.5s; }
     .section-why .why-item span {
       font: 20px Roboto,Arial,sans-serif;
       text-transform: uppercase; }
