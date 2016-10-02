@@ -16,6 +16,7 @@
   <script type="text/javascript" src="js/script.js"></script>
   <script src="js/modernizr.custom.63321.js"></script>
   <script src="js/jquery.catslider.js"></script>
+  <script src="js/masonry.pkgd.min.js"></script>
 </head>
 <body>
 <header class="header">
@@ -183,57 +184,274 @@
     <div class="section-title section-title-green">
       <h2>Наша продукція</h2>
     </div>
-    <div class="main">
-      <div id="mi-slider" class="mi-slider">
-        <ul>
-          <li><a href="#"><img src="img/1.jpg" alt="img01"><h4>КД</h4></a></li>
-          <li><a href="#"><img src="img/2.jpg" alt="img02"><h4>Гексадекон</h4></a></li>
-          <li><a href="#"><img src="img/3.jpg" alt="img03"><h4>Триацид</h4></a></li>
-          <li><a href="#"><img src="img/4.jpg" alt="img04"><h4>Полидез</h4></a></li>
-        </ul>
-        <ul>
-          <li><a href="#"><img src="img/5.jpg" alt="img05"><h4>Септосепт</h4></a></li>
-          <li><a href="#"><img src="img/6.jpg" alt="img06"><h4>Еклін-СЩ</h4></a></li>
-          <li><a href="#"><img src="img/7.jpg" alt="img07"><h4>Дермасол Актів</h4></a></li>
-          <li><a href="#"><img src="img/8.jpg" alt="img08"><h4>Еклін-Дерма</h4></a></li>
-        </ul>
-        <ul>
-          <li><a href="#"><img src="img/9.jpg" alt="img09"><h4>Еклін-Софт</h4></a></li>
-          <li><a href="#"><img src="img/10.jpg" alt="img10"><h4>Еклін-Н</h4></a></li>
-          <li><a href="#"><img src="img/11.jpg" alt="img11"><h4>Еклін-КП</h4></a></li>
-          <li><a href="#"><img src="img/12.jpg" alt="img12"><h4>Еклін-СК</h4></a></li>
-        </ul>
-        <ul>
-          <li><a href="#"><img src="img/13.jpg" alt="img13"><h4>Щітка</h4></a></li>
-          <li><a href="#"><img src="img/14.jpg" alt="img14"><h4>Совок</h4></a></li>
-          <li><a href="#"><img src="img/15.jpg" alt="img15"><h4>Шкребок</h4></a></li>
-          <li><a href="#"><img src="img/16.jpg" alt="img16"><h4>Рукоятки</h4></a></li>
-        </ul>
-        <nav>
-          <a href="#">Дезінфікуючі засоби</a>
-          <a href="#">Антисептики та мило</a>
-          <a href="#">Миючі засоби</a>
-          <a href="#">Vikan</a>
-        </nav>
+    <div id="mi-slider" class="mi-slider">
+      <ul>
+        <li><a href="#"><img src="img/1.jpg" alt="img01"><h4>КД</h4></a></li>
+        <li><a href="#"><img src="img/2.jpg" alt="img02"><h4>Гексадекон</h4></a></li>
+        <li><a href="#"><img src="img/3.jpg" alt="img03"><h4>Триацид</h4></a></li>
+        <li><a href="#"><img src="img/4.jpg" alt="img04"><h4>Полидез</h4></a></li>
+      </ul>
+      <ul>
+        <li><a href="#"><img src="img/5.jpg" alt="img05"><h4>Септосепт</h4></a></li>
+        <li><a href="#"><img src="img/6.jpg" alt="img06"><h4>Еклін-СЩ</h4></a></li>
+        <li><a href="#"><img src="img/7.jpg" alt="img07"><h4>Дермасол Актів</h4></a></li>
+        <li><a href="#"><img src="img/8.jpg" alt="img08"><h4>Еклін-Дерма</h4></a></li>
+      </ul>
+      <ul>
+        <li><a href="#"><img src="img/9.jpg" alt="img09"><h4>Еклін-Софт</h4></a></li>
+        <li><a href="#"><img src="img/10.jpg" alt="img10"><h4>Еклін-Н</h4></a></li>
+        <li><a href="#"><img src="img/11.jpg" alt="img11"><h4>Еклін-КП</h4></a></li>
+        <li><a href="#"><img src="img/12.jpg" alt="img12"><h4>Еклін-СК</h4></a></li>
+      </ul>
+      <ul>
+        <li><a href="#"><img src="img/13.jpg" alt="img13"><h4>Щітка</h4></a></li>
+        <li><a href="#"><img src="img/14.jpg" alt="img14"><h4>Совок</h4></a></li>
+        <li><a href="#"><img src="img/15.jpg" alt="img15"><h4>Шкребок</h4></a></li>
+        <li><a href="#"><img src="img/16.jpg" alt="img16"><h4>Рукоятки</h4></a></li>
+      </ul>
+      <nav>
+        <a href="#">Дезінфікуючі засоби</a>
+        <a href="#">Антисептики та мило</a>
+        <a href="#">Миючі засоби</a>
+        <a href="#">Vikan</a>
+      </nav>
+    </div>
+    <div class="katalog-btn">
+      <button class="button katalog-botton">Каталог товарів</button>
+    </div>
+  </div>
+</div>
+<div class="about-us">
+  <div class="container">
+    <div class="section-title">
+      <h2>Про компанію</h2>
+    </div>
+  </div>
+  <div class="section-text">
+    <div class="container">
+      <div class="about-us__block">
+        <div class="about-us__img vikan"></div>
+        <div class="about-us__text">
+          <p><span class="word">Компанія «УКРДЕЗ»</span> - провідний виробник миючих, дезинфікуючих та антисептичних засобів нового покоління на ринку України. Виробництво продукції європейської якості - запорука успіху діяльності нашої компанії. Саме тому <span class="word">"УКРДЕЗ"</span> є представником європейської <span class="word">компанії VIKAN</span> (Данія) - лідера з виробництва професійного інвентарю для клінінгу.</p>
+          <button class="button botton-about">Детальніше...</button>
+        </div>
+      </div>
+    </div>
+    <div class="block-center">
+      <div class="container">
+        <div class="about-us__block">
+          <div class="about-us__text">
+            <p>Наша компанія займається розробкою, виробництвом, реалізацією професійних миючих та дезінфікуючих засобів широкого антимікробного спектру дії. Розробку препаратів здійснюють професіонали найвищого рівня з багаторічним досвідом роботи у сфері дезінфекційної справи. <span class="word">ТОВ «УКРДЕЗ»</span> постійно вдосконалює технологію виробництва, забезпечуючи високу якість продукції.</p>
+            <button class="button botton-about">Детальніше...</button>
+          </div>
+          <div class="about-us__img ukrdez"></div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="about-us__block">
+        <div class="about-us__img belaseptika"></div>
+        <div class="about-us__text">
+          <p>Дезінфікуючі засоби виробництва <span class="word">ЗАТ «БелАсептіка»</span> (Республіка Білорусь) є синонімом найвищої якості продукції. Система менеджменту якості виробництва дезінфікуючих засобів відповідає вимогам ISO 9001-2001. Вже протягом 20 років <span class="word">«БелАсептіка»</span> піклується про те, щоб наші лікарні, медичні центри, харчові підприємства, школи, дитячі садки, кафе і ресторани були чистими, безпечними та комфортними! Адже з чистоти навколо починається чистота розуму і чистота душі.</p>
+          <button class="button botton-about">Детальніше...</button>
+        </div>
       </div>
     </div>
   </div>
 </div>
-<div class="new-produkt">
+<div class="category-view partners">
+  <div class="container">
+    <div class="section-title section-title-green">
+      <h2>Наші клієнти</h2>
+    </div>
+    <div class="grid">
+      <div class="grid-item logo-partners_1">
+        <img src="img/logo_1.png" alt="logo_1.png">
+      </div>
+      <div class="grid-item logo-partners_2">
+        <img src="img/logo_2.png" alt="logo_2.png">
+      </div>
+      <div class="grid-item logo-partners_3">
+        <img src="img/logo_3.png" alt="logo_3.png">
+      </div>
+      <div class="grid-item logo-partners_4">
+        <img src="img/logo_4.png" alt="logo_4.png">
+      </div>
+      <div class="grid-item logo-partners_5">
+        <img src="img/logo_5.png" alt="logo_5.png">
+      </div>
+      <div class="grid-item logo-partners_6">
+        <img src="img/logo_6.png" alt="logo_6.png">
+      </div>
+      <div class="grid-item logo-partners_7">
+        <img src="img/logo_7.png" alt="logo_7.png">
+      </div>
+      <div class="grid-item logo-partners_8">
+        <img src="img/logo_8.png" alt="logo_8.png">
+      </div>
+      <div class="grid-item logo-partners_9">
+        <img src="img/logo_9.png" alt="logo_9.png">
+      </div>
+      <div class="grid-item logo-partners_10">
+        <img src="img/logo_10.png" alt="logo_10.png">
+      </div>
+      <div class="grid-item logo-partners_11">
+        <img src="img/logo_11.png" alt="logo_11.png">
+      </div>
+      <div class="grid-item logo-partners_12">
+        <img src="img/logo_12.png" alt="logo_12.png">
+      </div>
+      <div class="grid-item logo-partners_13">
+        <img src="img/logo_13.png" alt="logo_13.png">
+      </div>
+      <div class="grid-item logo-partners_14">
+        <img src="img/logo_14.png" alt="logo_14.png">
+      </div>
+      <div class="grid-item logo-partners_15">
+        <img src="img/logo_15.png" alt="logo_15.png">
+      </div>
+      <div class="grid-item logo-partners_16">
+        <img src="img/logo_16.png" alt="logo_16.png">
+      </div>
+      <div class="grid-item logo-partners_17">
+        <img src="img/logo_17.png" alt="logo_17.png">
+      </div>
+      <div class="grid-item logo-partners_18">
+        <img src="img/logo_18.png" alt="logo_18.png">
+      </div>
+      <div class="grid-item logo-partners_19">
+        <img src="img/logo_19.png" alt="logo_19.png">
+      </div>
+      <div class="grid-item logo-partners_20">
+        <img src="img/logo_20.png" alt="logo_20.png">
+      </div>
+      <div class="grid-item logo-partners_21">
+        <img src="img/logo_21.png" alt="logo_21.png">
+      </div>
+      <div class="grid-item logo-partners_22">
+        <img src="img/logo_22.png" alt="logo_22.png">
+      </div>
+      <div class="grid-item logo-partners_23">
+        <img src="img/logo_23.png" alt="logo_23.png">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="block-video">
   <div class="container">
     <div class="section-title">
-      <h2>Новинки</h2>
+      <h2>Знайомство з нашою продукцією</h2>
     </div>
-    <div>
+    <div class="questionnaire">
+      <div class="voting-block">
+        <form id="voting" action="" method="POST">
+          <div class="voting-question">
+            Хотите ли Вы
+            <small>что бы у нас на сайте появился личный кабинет в котором можно скачать инструкции, рекламные листовки, брошюры и пр....?</small>
+          </div>
+          <div class="voting-answers">
+            <img class="blockbg" src="img/cloud-lg2.png" alt="">
+              <div class="inner">
+                <div class="form-group">
+                  <label>
+                    <div class="jq-radio" data-polling="3" unselectable="on" style="-moz-user-select: none; display: inline-block; position: relative;">
+                      <input name="polling[3]" data-polling="3" value="7" style="position: absolute; z-index: -1; opacity: 0; margin: 0px; padding: 0px;" type="radio">
+                      <div class="jq-radio__div"></div>
+                    </div>
+                    Да, было бы удобно
+                  </label>
+                  <label>
+                    <div class="jq-radio" data-polling="3" unselectable="on" style="-moz-user-select: none; display: inline-block; position: relative;">
+                      <input name="polling[3]" data-polling="3" value="8" style="position: absolute; z-index: -1; opacity: 0; margin: 0px; padding: 0px;" type="radio">
+                      <div class="jq-radio__div"></div>
+                    </div>
+                    Нет, не буду пользоваться
+                  </label>
+                  <label>
+                    <div class="jq-radio" data-polling="3" unselectable="on" style="-moz-user-select: none; display: inline-block; position: relative;">
+                      <input name="polling[3]" data-polling="3" value="9" style="position: absolute; z-index: -1; opacity: 0; margin: 0px; padding: 0px;" type="radio">
+                      <div class="jq-radio__div"></div>
+                    </div>
+                    Мне все равно
+                  </label>
+                </div>
+                <div class="form-group">
+                  <a class="btn btn-hovered" type="submit" href="javascript: void(0);" onclick="$.fn.polling.send(this);">
+                    <span>Отправить</span>
+                  </a>
+                </div>
+              </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="skrol-video">
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     </div>
   </div>
 </div>
-<footer class="page-footer greenline">
- 	<div class="container">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-   Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  </div>
-</footer>
+<footer class=page-footer>
+   	<div class="container">
+   		<section class="page-footer__block page-footer__block_menu">
+   			<header class="page-footer__heder">
+   				<h1>Меню</h1>
+   			</header>
+   			<ul class="page-footer__blok-nav">
+   				<li><a href="#">Главная</a></li>
+   				<li><a href="#">О компании</a></li>
+   				<li><a href="#">Контакты</a></li>
+   			</ul>
+   		</section>
+   		<section class="page-footer__block page-footer__block_products">
+   			<header class="page-footer__heder">
+   				<h1>Продукция</h1>
+   			</header>
+   			<ul class="page-footer__blok-nav">
+   				<li><a href="#">Дезинфектанты</a></li>
+   				<li><a href="#">Профессиональные моющие</a></li>
+   				<li><a href="#">Продукты для здоровья</a></li>
+   				<li><a href="#">Бытовая химия</a></li>
+   				<li><a href="#">Уход</a></li>
+   				<li><a href="#">Автомобильная серия</a></li>
+   				<li><a href="#">Товары для детей</a></li>
+   			</ul>
+   		</section>
+   		<section class="page-footer__block page-footer__block_contacts">
+   			<header class="page-footer__heder">
+   				<h1>Контакты</h1>
+   			</header>
+   			<ul class="page-footer__blok-nav">
+   				<li class="page-footer__blok-item page-footer__blok-item_telefon">
+   					<p>(063)773-55-47</p>
+   					<p>(099)104-55-37</p>
+   				</li>
+   				<li class="page-footer__blok-item page-footer__blok-item_adress">
+   					<p>83032, г. Донецк </p>
+   					<p>ул. Степногорская </p>
+   					<p>дом 19</p>
+   				</li>
+   				<li class="page-footer__blok-item page-footer__blok-item_email">
+   					<p>info@gigiena-center.com</p>
+   				</li>
+   			</ul>
+   		</section>
+   		<section class="page-footer__block page-footer__block_info">
+   			<header class="page-footer__heder">
+   				<h1>Полезная информация</h1>
+   			</header>
+   			<ul class="page-footer__blok-nav">
+   				<li><a href="#">Оплата</a></li>
+   				<li><a href="#">Новости</a></li>
+   				<li><a href="#">Материалы</a></li>
+   			</ul>
+   		</section>
+   	  </div>
+   		<div class="line line_footer"></div>
+   		<div class="container">
+   			<div class=copyright>
+   				<p>&copy; Компанія УКРДЕЗ. 2016 г.</p>
+   		  </div>
+   		</div>
+   </footer>
 </body>
 </html>

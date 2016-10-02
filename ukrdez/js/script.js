@@ -125,3 +125,10 @@ $(document).ready(function() {
 $(function() {
 				$( '#mi-slider' ).catslider();
 });
+
+jQuery(function ($) {
+	$('.grid').masonry({
+  		itemSelector: '.grid-item',
+  		columnWidth: 50,
+	});
+});

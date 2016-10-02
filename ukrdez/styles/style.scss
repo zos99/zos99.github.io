@@ -18,7 +18,7 @@ a:focus {
 }
 /**************************************************/
 .button {
-		margin: -7px auto 0;
+		margin: 10px auto 0;
 		text-align: center;
 		color: #5e615c;
 		background-color: transparent;
@@ -605,7 +605,8 @@ a:focus {
 	    height: 6px;
 	    width: 334px;
 	}
-	.section-title h2:before, .section-title h2:after {
+	.section-title h2:before,
+	.section-title h2:after {
 	    content: "";
 	    left: 50%;
 	    position: absolute;
@@ -638,7 +639,387 @@ a:focus {
 	padding-bottom: 35px;
 	color: #d9ddd9;
 }
-.new-produkt {
+.katalog-btn {
+	margin: 0 auto;
+	display: table;
+}
+.katalog-botton {
+	height: 40px;
+	width: 250px;
+	font-size: 17px;
+	color: #fff;
+	border-color: #fff;
+	&:hover {
+		background: rgba(255, 255, 255, 0.15) none repeat scroll 0 0;
+	}
+}
+.botton-about {
+	height: 30px;
+	width: 150px;
+	font-size: 14px;
+}
+.about-us {
 	background-image: url(../img/background.png);
 	background-attachment: fixed;
+	border-bottom: 5px solid #0f9476;
+  border-top: 5px solid #0f9476;
+	.section-text {
+		margin-bottom: 30px;
+		font: 100 20px Roboto,Arial,sans-serif;
+		.about-us__block {
+			padding: 20px 0;
+			display: table;
+			height: 300px;
+			.about-us__img {
+				display: table-cell;
+				width: 45%;
+			}
+			.vikan {
+				background-image: url("../img/vikan.png");
+				background-repeat: no-repeat;
+				background-position: center;
+				border-radius: 5px;
+			}
+			.ukrdez {
+				background-image: url("../img/product.png");
+				background-repeat: no-repeat;
+				background-position: center;
+				border-radius: 5px;
+			}
+			.belaseptika {
+				background-image: url("../img/belaseptika.png");
+				background-repeat: no-repeat;
+				background-position: center;
+				border-radius: 5px;
+			}
+			.about-us__text {
+				display: table-cell;
+    		height: 100%;
+    		vertical-align: middle;
+			}
+		}
+		.block-center {
+			border-top: 2px solid  rgba(153,153,153,0.3);
+			border-bottom: 2px solid  rgba(153,153,153,0.3);
+			background-color: rgba(153,153,153,0.3);
+		}
+	}
+}
+.word {
+	font-weight: bold;
+}
+.partners {
+	.grid-item {
+		padding:10px;
+		width:200px;
+		margin-bottom: 20px;
+		border-radius: 5px;
+
+	}
+	.grid {
+		margin: 0 auto;
+		width: 100%;
+		.grid-item img:hover {
+			opacity: 0.8;
+			transform: scale(1.1);
+			transition-duration: 0.5s;
+		}
+		.logo-partners_1 {
+			width: 150px;
+			height: 212px;
+		}
+		.logo-partners_2 {
+			width: 150px;
+			height: 92px;
+		}
+		.logo-partners_3 {
+			width: 150px;
+			height: 166px;
+		}
+		.logo-partners_4 {
+			width: 150px;
+			height: 101px;
+		}
+		.logo-partners_5 {
+			width: 150px;
+			height: 155px;
+		}
+		.logo-partners_6 {
+			width: 150px;
+			height: 91px;
+		}
+		.logo-partners_7 {
+			width: 150px;
+			height: 83px;
+		}
+		.logo-partners_8 {
+			width: 150px;
+			height: 101px;
+		}
+		.logo-partners_9 {
+			width: 150px;
+			height: 150px;
+		}
+		.logo-partners_10 {
+			width: 150px;
+			height: 82px;
+		}
+		.logo-partners_11 {
+			width: 150px;
+			height: 86px;
+		}
+		.logo-partners_12 {
+			width: 150px;
+			height: 150px;
+		}
+		.logo-partners_13 {
+			width: 150px;
+			height: 174px;
+		}
+		.logo-partners_14 {
+			width: 150px;
+			height: 56px;
+		}
+		.logo-partners_15 {
+			width: 150px;
+			height: 86px;
+		}
+		.logo-partners_16 {
+			width: 150px;
+			height: 114px;
+		}
+		.logo-partners_17 {
+			width: 150px;
+			height: 105px;
+		}
+		.logo-partners_18 {
+			width: 150px;
+			height: 122px;
+		}
+		.logo-partners_19 {
+			width: 150px;
+			height: 123px;
+		}
+		.logo-partners_20 {
+			width: 150px;
+			height: 95px;
+		}
+		.logo-partners_21 {
+			width: 150px;
+			height: 95px;
+		}
+		.logo-partners_22 {
+			width: 150px;
+			height: 80px;
+		}
+		.logo-partners_23 {
+			width: 150px;
+			height: 135px;
+		}
+	}
+}
+.block-video {
+	padding-bottom: 30px;
+	background-image: url(../img/background.png);
+	border-bottom: 5px solid #0f9476;
+  border-top: 5px solid #0f9476;
+	.questionnaire {
+		display: block;
+		float: left;
+		width: 30%;
+		margin-right: 5%;
+		.voting-block {
+		    background: rgba(0, 0, 0, 0) -webkit-linear-gradient(#fa8f31 0%, #e37b21 100%) repeat scroll 0 0;
+		    background: rgba(0, 0, 0, 0) -o-linear-gradient(#fa8f31 0%, #e37b21 100%) repeat scroll 0 0;
+		    background: rgba(0, 0, 0, 0) linear-gradient(#fa8f31 0%, #e37b21 100%) repeat scroll 0 0;
+		    border-radius: 10px;
+		    color: #ffffff;
+		    overflow: hidden;
+				.voting-question::after {
+				    bottom: -15px;
+				    content: "";
+				    display: block;
+				    height: 32px;
+				    position: absolute;
+				    right: 15px;
+				    width: 41px;
+				    z-index: 1;
+				}
+				.voting-question {
+				    border-bottom: 1px solid #fea558;
+				    font-size: 28px;
+				    font-weight: bold;
+				    line-height: 30px;
+				    padding: 10px 30px;
+				    position: relative;
+				}
+				.voting-question small {
+				    display: block;
+				    font-size: 14px;
+				    font-weight: normal;
+				    line-height: 18px;
+				}
+				.voting-answers {
+				    background: #33a857 none repeat scroll 0 0;
+				    position: relative;
+						.jq-radio {
+						    background: #999999 none repeat scroll 0 0;
+						    border: 2px solid #ffffff;
+						    height: 12px;
+						    margin-left: -26px;
+						    width: 12px;
+						}
+						.inner {
+					    background: rgba(51, 168, 87, 0.85) none repeat scroll 0 0;
+					    padding: 15px 30px 5px;
+					    position: relative;
+						}
+						label {
+						    color: #ffffff;
+						    font-weight: normal;
+						    margin-bottom: 10px;
+						    padding-left: 30px;
+						}
+				}
+				.blockbg {
+				  left: 0;
+				  max-width: 100%;
+				  position: absolute;
+				  top: 0;
+				  width: 100%;
+				}
+			}
+	}
+
+	.skrol-video {
+		display: block;
+		float: left;
+		width: 65%;
+	}
+}
+.form-group {
+    margin-bottom: 15px;
+    position: relative;
+		label {
+	    color: #489a50;
+	    cursor: pointer;
+	    display: block;
+	    font-weight: bold;
+	    margin-bottom: 5px;
+	}
+}
+.jq-radio {
+    background: #ffffff none repeat scroll 0 0;
+    border: 1px solid #c6c6c6;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 16px;
+    margin: 0 4px 0 0;
+    top: -1px;
+    vertical-align: middle;
+    width: 16px;
+
+}
+/*------------------footer-----------------------------*/
+.page-footer {
+	background: rgba(153, 153, 153, 0.6) none repeat scroll 0 0;
+	position: relative;
+
+      .page-footer__block {
+        float: left;
+        margin-right: 2%;
+        margin-left: 2%;
+      }
+
+      .page-footer__block:hover {
+        color: #919294;
+      }
+
+      .page-footer__heder {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border-left: 1px dashed #fff;
+        border-right: 1px dashed #fff;
+        border-bottom: 1px dashed #fff;
+        border-radius: 0 0 25px 25px;
+
+            h1 {
+              text-decoration: none;
+              font: 26px 'robotolight', 'open_sans', Tahoma, Georgia, sans-serif;
+              text-transform: uppercase;
+              text-align: center;
+            }
+      }
+
+      .page-footer__block_menu {
+        width: 13%;
+      }
+
+      .page-footer__block_products {
+        width: 22%;
+      }
+
+      .page-footer__block_contacts {
+        width: 22%;
+      }
+
+      .page-footer__block_info {
+        width: 26%;
+      }
+
+      .page-footer__blok-nav {
+        margin-top: 50px;
+        line-height: 1.5;
+        font: 24px 'robotolight', 'open_sans', Tahoma, Georgia;
+
+            a {
+              color: #fffcfc;
+              text-decoration: none;
+              &:hover {
+                color: #919294;
+              }
+            }
+      }
+
+      .page-footer__blok-item {
+        display: block;
+        padding-bottom: 20px;
+        padding-left: 63px;
+        color: #fffcfc;
+        background-position: left center;;
+        background-repeat: no-repeat;
+      }
+
+      .page-footer__blok-item_telefon {
+        background-image: url("../img/telefon.png");
+      }
+
+      .page-footer__blok-item_adress {
+        background-image: url("../img/pointer.png");
+        font-size: 20px;
+      }
+
+      .page-footer__blok-item_email {
+        background-image: url("../img/email_b.png");
+        font-size: 18px;
+      }
+}
+/*----------------copyright--------------------------*/
+.line_footer {
+ border-top: $borderWhite;
+ margin: 20px 0 20px 0;
+}
+
+.copyright {
+	width: 80%;
+	background-image:  url("../img/logo-mini.png");
+	background-position: left 50%;
+	background-repeat: no-repeat;
+	margin: 0 auto;
+
+      p {
+        padding-left: 10%;
+        text-align: center;
+        font: 24px 'robotolight', 'open_sans', Tahoma, Georgia;
+      }
 }
