@@ -9,14 +9,13 @@
 	<![if gt IE 9]>
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/jcarousel.responsive.css">
+  <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
   <script type="text/javascript" src="js/jquery.js"></script>
   <script type="text/javascript" src="js/jcarousel.js"></script>
   <script type="text/javascript" src="js/script.js"></script>
   <script src="js/modernizr.custom.63321.js"></script>
   <script src="js/jquery.catslider.js"></script>
   <script src="js/masonry.pkgd.min.js"></script>
-  <script type="text/javascript" src="js/jcarousel.responsive.js"></script>
 </head>
 <body>
 <header class="header">
@@ -384,67 +383,73 @@
         </div>
       </div>
       <div class="bx-wrapper">
-        <div class="wrapper-jk">
-        <div class="jcarousel-wrapper">
-          <div class="jcarouselp">
-            <ul>
-              <li class=jcarousel__link>
-                <a href="">
-                  <img src="img/1.jpg" alt="Image 1">
-                  <p>Пена для рук <wbr>Eclean Derma</p>
-                  <p><span class="jcarousel__info">Пена для рук с нежными ароматами идеально подойдет для всех членов семьи</span></p>
-                </a>
-              </li>
-              <li class=jcarousel__link>
-                <a href="">
-                 <img src="img/2.jpg" alt="Image 2">
-                 <p>Гель для посуды <wbr>и кухни</p>
-                 <p><span class="jcarousel__info">Активный гель для посуды с экстрактом горчицы</span></p>
-                </a>
-              </li>
-              <li class=jcarousel__link>
-                <a href="">
-                 <img src="img/3.jpg" alt="Image 3">
-                 <p>Шампунь с маслом <wbr>ореха макадами</p>
-                 <p><span class="jcarousel__info">Восстанавливает и укрепляет cтруктуру волоса</span></p>
-                </a>
-              </li>
-              <li class=jcarousel__link>
-                <a href="">
-                 <img src="img/4.jpg" alt="Image 4">
-                 <p>Пена для рук <wbr>Eclean Derma</p>
-                 <p><span class="jcarousel__info">Пена для рук с нежными ароматами идеально подойдет для всех членов семьи</span></p>
-                </a>
-              </li>
-              <li class=jcarousel__link>
-                <a href="">
-                 <img src="img/5.jpg" alt="Image 5">
-                 <p>Пена для рук <wbr>Eclean Derma</p>
-                 <p><span class="jcarousel__info">Активный гель для посуды с экстрактом горчицы</span></p>
-                </a>
-              </li>
-              <li class=jcarousel__link>
-                <a href="">
-                 <img src="img/6.jpg" alt="Image 6">
-                 <p>Пена для рук <wbr>Eclean Derma</p>
-                 <p><span class="jcarousel__info">Восстанавливает и укрепляет cтруктуру волоса</span></p>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <a href="#" class="jcarousel-control-prev"></a>
-          <a href="#" class="jcarousel-control-next"></a>
-          <p class="jcarouselp-pagination"></p>
+        <div class="flexslider">
+          <ul class="slides">
+            <li>
+              <iframe id="player_1" src="https://player.vimeo.com/video/39683393?api=1&player_id=player_1" width="400" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+            </li>
+            <li>
+              <object width="400" >
+                <param name="movie" value="https://www.youtube.com/v/lM0nRj4r2eM?version=3&modestbranding=1&autohide=1&fs=0"></param>
+                <param name="allowFullScreen" value="true"></param>
+                <param name="allowscriptaccess" value="always"></param>
+                <embed src="https://www.youtube.com/v/lM0nRj4r2eM?version=3&modestbranding=1&autohide=1&fs=0" type="application/x-shockwave-flash" width="500" height="281" allowscriptaccess="always" allowfullscreen="true"></embed>
+              </object>
+            </li>
+            <li>
+              <img src="slide3.jpg" />
+            </li>
+            <li>
+              <img src="slide4.jpg" />
+            </li>
+          </ul>
         </div>
-      </div>
       </div>
     </div>
   </div>
 </div>
-<footer class=page-footer>
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-</footer>
+<div class="wrapper-wide wrapper-wide--before-footer">
+  <div class="container-site">
+      <div class="wrapper main-box--before-footer">
+        <div class="before-footer">
+        <div class="before-footer-box">
+          <p class="before-footer-box__title">Соціальні мережі</p>
+          <a class="before-footer-box__link" href="#">Facebook</a>
+          <a class="before-footer-box__link" href="#">Youtube</a>
+        </div>
+        <div class="before-footer-box">
+          <p class="before-footer-box__title">Каталог</p>
+          <a class="before-footer-box__link" href="#">Дезинфікуючі засоби</a>
+          <a class="before-footer-box__link" href="#">Антисептики та мило</a>
+          <a class="before-footer-box__link" href="#">Миючи засоби</a>
+          <a class="before-footer-box__link" href="#">Vikan</a>
+        </div>
+        <div class="before-footer-box">
+          <p class="before-footer-box__title">Новини</p>
+          <a class="before-footer-box__link" href="#">Blogs Blog</a>
+          <a class="before-footer-box__link" href="#">Roll Up Roll Up</a>
+          <a class="before-footer-box__link" href="#">Blog Free</a>
+          <a class="before-footer-box__link" href="#">Wordpress Blog</a>
+        </div>
+        <div class="before-footer-box">
+          <p class="before-footer-box__title">Про нас</p>
+          <a class="before-footer-box__link" href="#">Компанія УкрДез</a>
+          <a class="before-footer-box__link" href="#">Новини компанії</a>
+          <a class="before-footer-box__link" href="#">ЗАТ «БелАсептіка»</a>
+          <a class="before-footer-box__link" href="#">Vikan</a>
+        </div>
+        </div>
+      </div>
+
+      <footer class="outer-wrapper">
+
+          <p class="footer-text footer-text-adress">ТОВ "УКРДЕЗ" Адреса: 04080, м.Київ, вул.Фрунзе 82</p>
+          <p class="footer-text footer-text-phone">+38(044) 33-99-035, +38(067) 622-91-17</p>
+          <p class="footer-text footer-text-email">info@ukrdez.com</p>
+          <p class="footer-text">&copy; 2016 Ukrdez.com</p>
+
+      </footer>
+    </div>
+    </div>
 </body>
 </html>
