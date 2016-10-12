@@ -20,40 +20,39 @@ summary, time, mark, audio, video {
   background: transparent;
   font-size: 100%;
 }
-
 a, a:hover,
 a:visited,
 a:focus,
 a:active {
-  margin: 0;
-  padding: 0;
   font-size: 100%;
   vertical-align: baseline;
-  background: transparent;
-  color: inherit;
   cursor: pointer;
-  text-decoration: none;
+  text-decoration: none !important;
 }
-
 img {
   vertical-align: top;
 }
-
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
-
 nav,
 ul {
   list-style: none;
 }
-
 blockquote,
 q {
   quotes: none;
 }
-
 blockquote:before,
 blockquote:after,
 q:before,
@@ -61,22 +60,39 @@ q:after {
   content: '';
   content: none;
 }
-
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-
-
 html, body {
-  font-size: 62.5%;
-  color: #626262;
+  font-size: 62.5% !important;
+  color: #626262 !important;
 }
-
 svg {
   display: block;
   overflow: visible;
 }
 body {
-	font: 14px Roboto,Arial,sans-serif;
+	font: 14px Roboto,Arial,sans-serif !important;
+}
+.container-site {
+	margin: 0 auto;
+	position: relative;
+	width: 1200px;
+	&::after {clear: both;}
+	&::before,
+	&::after {content: " "; display: table;}
+}
+b,
+strong {
+    font-weight: bold;
+}
+a,
+a:link,
+a:visited,
+a:focus {
+    color: #2c8647;
+}
+p {
+  margin: 0;
 }

@@ -99,20 +99,25 @@ a, a:hover,
 a:visited,
 a:focus,
 a:active {
-  margin: 0;
-  padding: 0;
   font-size: 100%;
   vertical-align: baseline;
-  background: transparent;
-  color: inherit;
   cursor: pointer;
-  text-decoration: none; }
+  text-decoration: none !important; }
 
 img {
   vertical-align: top; }
 
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block; }
 
 nav,
@@ -135,23 +140,23 @@ table {
   border-spacing: 0; }
 
 html, body {
-  font-size: 62.5%;
-  color: #626262; }
+  font-size: 62.5% !important;
+  color: #626262 !important; }
 
 svg {
   display: block;
   overflow: visible; }
 
 body {
-  font: 14px Roboto,Arial,sans-serif; }
+  font: 14px Roboto,Arial,sans-serif !important; }
 
-.container {
+.container-site {
   margin: 0 auto;
   position: relative;
   width: 1200px; }
-  .container::after {
+  .container-site::after {
     clear: both; }
-  .container::before, .container::after {
+  .container-site::before, .container-site::after {
     content: " ";
     display: table; }
 
@@ -164,6 +169,9 @@ a:link,
 a:visited,
 a:focus {
   color: #2c8647; }
+
+p {
+  margin: 0; }
 
 /**************************************************/
 .button {
@@ -208,6 +216,8 @@ a:focus {
     width: 640px;
     color: #356960;
     font-weight: bold; }
+    .header .header__description p {
+      margin: 0; }
     .header .header__description span {
       color: #2f8c7c;
       font-weight: bold;
@@ -655,6 +665,7 @@ a:focus {
       .section-why .why-item .thumb img:hover {
         opacity: 0.8;
         transform: scale(1.1);
+        transform: rotate(15deg);
         transition-duration: 0.5s; }
     .section-why .why-item span {
       font: 20px Roboto,Arial,sans-serif;
@@ -859,20 +870,24 @@ a:focus {
     width: 150px;
     height: 135px; }
 
+#voting {
+  margin: 0; }
+
 .block-video {
   padding-bottom: 30px;
   background-image: url(../img/background.png);
+  background-attachment: fixed;
   border-bottom: 5px solid #0f9476;
   border-top: 5px solid #0f9476; }
   .block-video .questionnaire {
     display: block;
     float: left;
     width: 30%;
-    margin-right: 5%; }
+    margin-right: 2%; }
     .block-video .questionnaire .voting-block {
-      background: transparent -webkit-linear-gradient(#fa8f31 0%, #e37b21 100%) repeat scroll 0 0;
-      background: transparent -o-linear-gradient(#fa8f31 0%, #e37b21 100%) repeat scroll 0 0;
-      background: transparent linear-gradient(#fa8f31 0%, #e37b21 100%) repeat scroll 0 0;
+      background: transparent -webkit-linear-gradient(#2F8C7C 0%, #356960 90%) repeat scroll 0 0;
+      background: transparent -o-linear-gradient(#2F8C7C 0%, #356960 90%) repeat scroll 0 0;
+      background: transparent linear-gradient(#2F8C7C 0%, #356960 90%) repeat scroll 0 0;
       border-radius: 10px;
       color: #ffffff;
       overflow: hidden; }
@@ -886,7 +901,7 @@ a:focus {
         width: 41px;
         z-index: 1; }
       .block-video .questionnaire .voting-block .voting-question {
-        border-bottom: 1px solid #fea558;
+        border-bottom: 1px solid #86A1C8;
         font-size: 28px;
         font-weight: bold;
         line-height: 30px;
@@ -898,7 +913,7 @@ a:focus {
         font-weight: normal;
         line-height: 18px; }
       .block-video .questionnaire .voting-block .voting-answers {
-        background: #33a857 none repeat scroll 0 0;
+        background: #6E91C9 none repeat scroll 0 0;
         position: relative; }
         .block-video .questionnaire .voting-block .voting-answers .jq-radio {
           background: #999999 none repeat scroll 0 0;
@@ -907,7 +922,7 @@ a:focus {
           margin-left: -26px;
           width: 12px; }
         .block-video .questionnaire .voting-block .voting-answers .inner {
-          background: rgba(51, 168, 87, 0.85) none repeat scroll 0 0;
+          background: rgba(110, 146, 200, 0.85) none repeat scroll 0 0;
           padding: 15px 30px 5px;
           position: relative; }
         .block-video .questionnaire .voting-block .voting-answers label {
@@ -921,10 +936,26 @@ a:focus {
         position: absolute;
         top: 0;
         width: 100%; }
-  .block-video .skrol-video {
+  .block-video .button-hovered {
+    border-color: #fff;
+    color: #fff;
+    font-size: 16px;
+    height: 30px;
+    width: 200px;
     display: block;
-    float: left;
-    width: 65%; }
+    margin: 0 auto;
+    line-height: 30px; }
+    .block-video .button-hovered:hover {
+      background: rgba(255, 255, 255, 0.15) none repeat scroll 0 0; }
+  .block-video .block-wrapper {
+    position: relative;
+    display: block;
+    height: 300px; }
+    .block-video .block-wrapper .bx-wrapper {
+      display: block;
+      float: left;
+      position: relative;
+      width: 68%; }
 
 .form-group {
   margin-bottom: 15px;
@@ -947,65 +978,21 @@ a:focus {
   vertical-align: middle;
   width: 16px; }
 
+.jcarousel__link a {
+  color: #006428;
+  text-transform: uppercase; }
+
+.jcarousel__link p {
+  padding: 10px 0 10px 0; }
+
+.jcarousel__info {
+  text-transform: none;
+  color: #474948; }
+
 /*------------------footer-----------------------------*/
 .page-footer {
   background: rgba(153, 153, 153, 0.6) none repeat scroll 0 0;
   position: relative; }
-  .page-footer .page-footer__block {
-    float: left;
-    margin-right: 2%;
-    margin-left: 2%; }
-  .page-footer .page-footer__block:hover {
-    color: #919294; }
-  .page-footer .page-footer__heder {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    border-left: 1px dashed #fff;
-    border-right: 1px dashed #fff;
-    border-bottom: 1px dashed #fff;
-    border-radius: 0 0 25px 25px; }
-    .page-footer .page-footer__heder h1 {
-      text-decoration: none;
-      font: 26px 'robotolight', 'open_sans', Tahoma, Georgia, sans-serif;
-      text-transform: uppercase;
-      text-align: center; }
-  .page-footer .page-footer__block_menu {
-    width: 13%; }
-  .page-footer .page-footer__block_products {
-    width: 22%; }
-  .page-footer .page-footer__block_contacts {
-    width: 22%; }
-  .page-footer .page-footer__block_info {
-    width: 26%; }
-  .page-footer .page-footer__blok-nav {
-    margin-top: 50px;
-    line-height: 1.5;
-    font: 24px 'robotolight', 'open_sans', Tahoma, Georgia; }
-    .page-footer .page-footer__blok-nav a {
-      color: #fffcfc;
-      text-decoration: none; }
-      .page-footer .page-footer__blok-nav a:hover {
-        color: #919294; }
-  .page-footer .page-footer__blok-item {
-    display: block;
-    padding-bottom: 20px;
-    padding-left: 63px;
-    color: #fffcfc;
-    background-position: left center;
-    background-repeat: no-repeat; }
-  .page-footer .page-footer__blok-item_telefon {
-    background-image: url("../img/telefon.png"); }
-  .page-footer .page-footer__blok-item_adress {
-    background-image: url("../img/pointer.png");
-    font-size: 20px; }
-  .page-footer .page-footer__blok-item_email {
-    background-image: url("../img/email_b.png");
-    font-size: 18px; }
-
-/*----------------copyright--------------------------*/
-.line_footer {
-  border-top: #fff;
-  margin: 20px 0 20px 0; }
 
 .copyright {
   width: 80%;

@@ -5,29 +5,28 @@
   <title>Укрдез</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Exo+2&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
   <!--[if lte IE 9]>   <link rel="stylesheet"   href="css/style_ie_8.css">  <![endif]-->
 	<![if gt IE 9]>
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/jcarousel.responsive.css">
   <script type="text/javascript" src="js/jquery.js"></script>
   <script type="text/javascript" src="js/jcarousel.js"></script>
   <script type="text/javascript" src="js/script.js"></script>
   <script src="js/modernizr.custom.63321.js"></script>
   <script src="js/jquery.catslider.js"></script>
   <script src="js/masonry.pkgd.min.js"></script>
+  <script type="text/javascript" src="js/jcarousel.responsive.js"></script>
 </head>
 <body>
 <header class="header">
-  <div class="container">
+  <div class="container-site">
     <div class="header__logo greenline">
       <a rel="home" href="/">Укрдез</a>
     </div>
     <div class="header__description greenline">
       <span><p>КОМПАНІЯ УКРДЕЗ</p></span>
-      <p>провідний виробник<small> миючих, дезинфікуючих та антисептичних засобів нового покоління на ринку України</small>
-      </p>
+      <p>провідний виробник миючих, дезинфікуючих та антисептичних засобів нового покоління на ринку України</p>
       <div class="partners__button-position">
             <button class="button  partners__button">Оформить заявку</button>
             <button class="button  partners__button">Подбор дезсредст</button>
@@ -67,7 +66,7 @@
   </div>
 </header>
 <nav class="navigate">
-  <div class="container">
+  <div class="container-site">
     <ul class="content">
       <li><a href="#">О компании</a></li>
       <li><a href="#">Новости</a></li>
@@ -152,7 +151,7 @@
     </div>
 </div>
 <div class="section-why">
-  <div class="container">
+  <div class="container-site">
     <div class="section-title">
       <h2>Чому варто вибрати нас?</h2>
     </div>
@@ -180,7 +179,7 @@
   </div>
 </div>
 <div class="category-view">
-  <div class="container">
+  <div class="container-site">
     <div class="section-title section-title-green">
       <h2>Наша продукція</h2>
     </div>
@@ -222,13 +221,13 @@
   </div>
 </div>
 <div class="about-us">
-  <div class="container">
+  <div class="container-site">
     <div class="section-title">
       <h2>Про компанію</h2>
     </div>
   </div>
   <div class="section-text">
-    <div class="container">
+    <div class="container-site">
       <div class="about-us__block">
         <div class="about-us__img vikan"></div>
         <div class="about-us__text">
@@ -238,7 +237,7 @@
       </div>
     </div>
     <div class="block-center">
-      <div class="container">
+      <div class="container-site">
         <div class="about-us__block">
           <div class="about-us__text">
             <p>Наша компанія займається розробкою, виробництвом, реалізацією професійних миючих та дезінфікуючих засобів широкого антимікробного спектру дії. Розробку препаратів здійснюють професіонали найвищого рівня з багаторічним досвідом роботи у сфері дезінфекційної справи. <span class="word">ТОВ «УКРДЕЗ»</span> постійно вдосконалює технологію виробництва, забезпечуючи високу якість продукції.</p>
@@ -248,7 +247,7 @@
         </div>
       </div>
     </div>
-    <div class="container">
+    <div class="container-site">
       <div class="about-us__block">
         <div class="about-us__img belaseptika"></div>
         <div class="about-us__text">
@@ -260,7 +259,7 @@
   </div>
 </div>
 <div class="category-view partners">
-  <div class="container">
+  <div class="container-site">
     <div class="section-title section-title-green">
       <h2>Наші клієнти</h2>
     </div>
@@ -338,19 +337,20 @@
   </div>
 </div>
 <div class="block-video">
-  <div class="container">
+  <div class="container-site">
     <div class="section-title">
       <h2>Знайомство з нашою продукцією</h2>
     </div>
-    <div class="questionnaire">
-      <div class="voting-block">
-        <form id="voting" action="" method="POST">
-          <div class="voting-question">
-            Хотите ли Вы
-            <small>что бы у нас на сайте появился личный кабинет в котором можно скачать инструкции, рекламные листовки, брошюры и пр....?</small>
-          </div>
-          <div class="voting-answers">
-            <img class="blockbg" src="img/cloud-lg2.png" alt="">
+    <div class="block-wrapper">
+      <div class="questionnaire">
+        <div class="voting-block">
+          <form id="voting" action="" method="POST">
+            <div class="voting-question">
+              Хотите ли Вы
+              <small>что бы у нас на сайте появился личный кабинет в котором можно скачать инструкции, рекламные листовки, брошюры и пр....?</small>
+            </div>
+            <div class="voting-answers">
+              <img class="blockbg" src="img/cloud-lg2.jpg" alt="">
               <div class="inner">
                 <div class="form-group">
                   <label>
@@ -376,82 +376,75 @@
                   </label>
                 </div>
                 <div class="form-group">
-                  <a class="btn btn-hovered" type="submit" href="javascript: void(0);" onclick="$.fn.polling.send(this);">
-                    <span>Отправить</span>
-                  </a>
+                  <a class="button button-hovered" type="submit" href="" onclick="">Отправить</a>
                 </div>
               </div>
-          </div>
-        </form>
+            </div>
+          </form>
+        </div>
       </div>
-    </div>
-    <div class="skrol-video">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      <div class="bx-wrapper">
+        <div class="wrapper-jk">
+        <div class="jcarousel-wrapper">
+          <div class="jcarouselp">
+            <ul>
+              <li class=jcarousel__link>
+                <a href="">
+                  <img src="img/1.jpg" alt="Image 1">
+                  <p>Пена для рук <wbr>Eclean Derma</p>
+                  <p><span class="jcarousel__info">Пена для рук с нежными ароматами идеально подойдет для всех членов семьи</span></p>
+                </a>
+              </li>
+              <li class=jcarousel__link>
+                <a href="">
+                 <img src="img/2.jpg" alt="Image 2">
+                 <p>Гель для посуды <wbr>и кухни</p>
+                 <p><span class="jcarousel__info">Активный гель для посуды с экстрактом горчицы</span></p>
+                </a>
+              </li>
+              <li class=jcarousel__link>
+                <a href="">
+                 <img src="img/3.jpg" alt="Image 3">
+                 <p>Шампунь с маслом <wbr>ореха макадами</p>
+                 <p><span class="jcarousel__info">Восстанавливает и укрепляет cтруктуру волоса</span></p>
+                </a>
+              </li>
+              <li class=jcarousel__link>
+                <a href="">
+                 <img src="img/4.jpg" alt="Image 4">
+                 <p>Пена для рук <wbr>Eclean Derma</p>
+                 <p><span class="jcarousel__info">Пена для рук с нежными ароматами идеально подойдет для всех членов семьи</span></p>
+                </a>
+              </li>
+              <li class=jcarousel__link>
+                <a href="">
+                 <img src="img/5.jpg" alt="Image 5">
+                 <p>Пена для рук <wbr>Eclean Derma</p>
+                 <p><span class="jcarousel__info">Активный гель для посуды с экстрактом горчицы</span></p>
+                </a>
+              </li>
+              <li class=jcarousel__link>
+                <a href="">
+                 <img src="img/6.jpg" alt="Image 6">
+                 <p>Пена для рук <wbr>Eclean Derma</p>
+                 <p><span class="jcarousel__info">Восстанавливает и укрепляет cтруктуру волоса</span></p>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <a href="#" class="jcarousel-control-prev"></a>
+          <a href="#" class="jcarousel-control-next"></a>
+          <p class="jcarouselp-pagination"></p>
+        </div>
+      </div>
+      </div>
     </div>
   </div>
 </div>
 <footer class=page-footer>
-   	<div class="container">
-   		<section class="page-footer__block page-footer__block_menu">
-   			<header class="page-footer__heder">
-   				<h1>Меню</h1>
-   			</header>
-   			<ul class="page-footer__blok-nav">
-   				<li><a href="#">Главная</a></li>
-   				<li><a href="#">О компании</a></li>
-   				<li><a href="#">Контакты</a></li>
-   			</ul>
-   		</section>
-   		<section class="page-footer__block page-footer__block_products">
-   			<header class="page-footer__heder">
-   				<h1>Продукция</h1>
-   			</header>
-   			<ul class="page-footer__blok-nav">
-   				<li><a href="#">Дезинфектанты</a></li>
-   				<li><a href="#">Профессиональные моющие</a></li>
-   				<li><a href="#">Продукты для здоровья</a></li>
-   				<li><a href="#">Бытовая химия</a></li>
-   				<li><a href="#">Уход</a></li>
-   				<li><a href="#">Автомобильная серия</a></li>
-   				<li><a href="#">Товары для детей</a></li>
-   			</ul>
-   		</section>
-   		<section class="page-footer__block page-footer__block_contacts">
-   			<header class="page-footer__heder">
-   				<h1>Контакты</h1>
-   			</header>
-   			<ul class="page-footer__blok-nav">
-   				<li class="page-footer__blok-item page-footer__blok-item_telefon">
-   					<p>(063)773-55-47</p>
-   					<p>(099)104-55-37</p>
-   				</li>
-   				<li class="page-footer__blok-item page-footer__blok-item_adress">
-   					<p>83032, г. Донецк </p>
-   					<p>ул. Степногорская </p>
-   					<p>дом 19</p>
-   				</li>
-   				<li class="page-footer__blok-item page-footer__blok-item_email">
-   					<p>info@gigiena-center.com</p>
-   				</li>
-   			</ul>
-   		</section>
-   		<section class="page-footer__block page-footer__block_info">
-   			<header class="page-footer__heder">
-   				<h1>Полезная информация</h1>
-   			</header>
-   			<ul class="page-footer__blok-nav">
-   				<li><a href="#">Оплата</a></li>
-   				<li><a href="#">Новости</a></li>
-   				<li><a href="#">Материалы</a></li>
-   			</ul>
-   		</section>
-   	  </div>
-   		<div class="line line_footer"></div>
-   		<div class="container">
-   			<div class=copyright>
-   				<p>&copy; Компанія УКРДЕЗ. 2016 г.</p>
-   		  </div>
-   		</div>
-   </footer>
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</footer>
 </body>
 </html>
