@@ -880,12 +880,12 @@ p {
     	height: 150px;
 	    vertical-align: middle;
 	    width: inherit;
-		//	img:hover {
-				//opacity: 0.8;
-				//transform: scale(1.1);
-				//transform: rotate(15deg);
-				//transition-duration: 0.5s;
-			//}//
+			img:hover {
+				opacity: 0.8;
+				transform: scale(1.1);
+				//transform: rotate(5deg);//
+				transition-duration: 0.5s;
+			}
 		}
 		span {
 			font: 20px Roboto,Arial,sans-serif;
@@ -904,7 +904,8 @@ p {
 	    top: 0;
 	    width: 334px;
 	}
-	.section-title h2:before, .section-title h2:after {
+	.section-title h2:before,
+	.section-title h2:after {
 	    content: "";
 	    left: 50%;
 	    position: absolute;
@@ -958,6 +959,9 @@ p {
 		top: 0;
 		width: 100%;
 	}
+}
+.section-title__article {
+	width: 100%;
 }
 .katalog-btn {
 	margin: 0 auto;
@@ -1298,6 +1302,7 @@ p {
 	overflow: hidden;
 	width: 280px;
 	position: relative;
+	height: 400px;
 	.news__item-img {
 		height: 150px;
 	 	margin-bottom: 15px;
@@ -1321,7 +1326,7 @@ p {
 		}
 	}
 	.date-label {
-		bottom: 210px;
+		bottom: 240px;
     left: 10%;
     margin-left: 0;
     position: absolute;
