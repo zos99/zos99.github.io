@@ -1,11 +1,12 @@
 {
   "name": "ukrvikan",
   "version": "1.0.0",
-  "description": "http://zos99.github.io/js19-20/index.html",
+  "description": "ukrvikan",
   "main": "gruntfile.js",
   "dependencies": {
     "grunt-contrib-sass": "^1.0.0",
-    "grunt": "^1.0.1"
+    "grunt": "^1.0.1",
+    "bootstrap-sass": "3.3.7"
   },
   "devDependencies": {
     "grunt": "^1.0.1",

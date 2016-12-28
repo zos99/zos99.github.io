@@ -8,31 +8,6 @@ $fontUbuntuL: "Ubuntu Light";
 $fontUbuntuC: "Ubuntu Condensed Regular";
 $fontAmesome:  "FontAwesome";
 
-
-$colorGrey: #8a8a8a;
-
-$colorBackgroundFooter: #35383c;
-
-$colorlightGrey: #e8e8e8;
-
-$colorDarkbrown: #2a2d32;
-
-$colorBrow: #35383c;
-
-$colorBlue: #5c54ef;
-
-$colorGolg: #f4b60d;
-
-$colorWhite: #ffffff;
-
-$colorNews: #f7f7f7;
-
-$colorBlack: #000;
-
-$borderBlack: 1px solid black;
-
-$maxwidth: 1160px;
-
 @font-face {
     font-family: 'montserrat';
     src:  url('../fonts/Montserrat-Bold.ttf');
@@ -189,6 +164,7 @@ $maxwidth: 1160px;
 
 }
 
+
 html, body, div, span, applet,
 object, iframe, h1, h2, h3, h4,
 h5, h6, p, blockquote, pre, a,
@@ -292,15 +268,6 @@ a:focus {
 }
 p {
   margin: 0;
-}
-
-@media (min-width: 941px) {
-}
-
-@media (max-width: 320px) {
-}
-
-@media (min-width: 321px) and (max-width: 940px) {
 }
 
 @import 'bootstrap-custom';
