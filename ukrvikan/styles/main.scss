@@ -1,0 +1,306 @@
+$font-stack:    Helvetica, sans-serif;
+$primaryMenu: #1F7B67;
+$borderWhite: #fff;
+
+$fontArial:   "Arial";
+$fontUbuntuM: "Ubuntu Medium";
+$fontUbuntuL: "Ubuntu Light";
+$fontUbuntuC: "Ubuntu Condensed Regular";
+$fontAmesome:  "FontAwesome";
+
+
+$colorGrey: #8a8a8a;
+
+$colorBackgroundFooter: #35383c;
+
+$colorlightGrey: #e8e8e8;
+
+$colorDarkbrown: #2a2d32;
+
+$colorBrow: #35383c;
+
+$colorBlue: #5c54ef;
+
+$colorGolg: #f4b60d;
+
+$colorWhite: #ffffff;
+
+$colorNews: #f7f7f7;
+
+$colorBlack: #000;
+
+$borderBlack: 1px solid black;
+
+$maxwidth: 1160px;
+
+@font-face {
+    font-family: 'montserrat';
+    src:  url('../fonts/Montserrat-Bold.ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'montserrat';
+
+
+       src:  url('../fonts/Montserrat-Regular.ttf');
+
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Roboto';
+
+
+       src:  url('../fonts/Roboto-BlackItalic.ttf');
+
+    font-weight: Black;
+    font-style: italic;
+
+
+}
+
+@font-face {
+    font-family: 'Roboto';
+
+
+       src:  url('../fonts/Roboto-Black.ttf');
+
+    font-weight: Black;
+    font-style: normal;
+
+
+}
+
+
+@font-face {
+    font-family: 'Roboto';
+
+
+       src:  url('../fonts/Roboto-Bold.ttf');
+
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Roboto';
+
+
+       src:  url('../fonts/Roboto-BoldItalic.ttf');
+
+    font-weight: bold;
+    font-style: italic;
+
+}
+@font-face {
+    font-family: 'Roboto';
+
+
+       src:  url('../fonts/Roboto-Italic.ttf');
+
+    font-weight: normal;
+    font-style: italic;
+
+}
+@font-face {
+    font-family: 'Roboto';
+
+
+       src:  url('../fonts/Roboto-Italic.ttf');
+
+    font-weight: normal;
+    font-style: italic;
+
+}
+@font-face {
+    font-family: 'Roboto';
+
+
+       src:  url('../fonts/Roboto-Light.ttf');
+
+    font-weight: 100;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Roboto';
+
+
+       src:  url('../fonts/Roboto-LightItalic.ttf');
+
+    font-weight: 100;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'Roboto';
+
+
+       src:  url('../fonts/Roboto-Medium.ttf');
+
+    font-weight: 500; ///?
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Roboto';
+
+
+       src:  url('../fonts/Roboto-MediumItalic.ttf');
+
+    font-weight: 500;
+    font-style: italic;
+
+}
+@font-face {
+    font-family: 'Roboto';
+
+
+       src:  url('../fonts/Roboto-Regular.ttf');
+
+    font-weight: 400;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Roboto';
+
+
+       src:  url('../fonts/Roboto-Thin.ttf');
+
+    font-weight: 200;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Roboto';
+
+
+       src:  url('../fonts/Roboto-ThinItalic.ttf');
+
+    font-weight: 200;
+    font-style: italic;
+
+}
+
+html, body, div, span, applet,
+object, iframe, h1, h2, h3, h4,
+h5, h6, p, blockquote, pre, a,
+abbr, acronym, address, big, cite,
+code, del, dfn, em, img, ins, kbd,
+q, s, samp, small, strike, strong,
+sub, sup, tt, var, b, u, i, center,
+dl, dt, dd, ol, ul, li, fieldset,
+form, label, legend, table, caption,
+tbody, tfoot, thead, tr, th, td, article,
+aside, canvas, details, embed, figure,
+figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section,
+summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  background: transparent;
+  font-size: 100%;
+}
+a, a:hover,
+a:visited,
+a:focus,
+a:active {
+  vertical-align: baseline;
+  cursor: pointer;
+  text-decoration: none !important;
+}
+img {
+  vertical-align: top;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+nav,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+html, body {
+  font-size: 62.5% !important;
+  color: #626262 !important;
+}
+svg {
+  display: block;
+  overflow: visible;
+}
+pre {
+  border:1px solid #000;
+  overflow-x:auto;
+  background: #222;
+  color: #fff;
+  text-shadow: none;
+}
+body {
+	font: 14px Roboto,Arial,sans-serif !important;
+}
+.container-site {
+	margin: 0 auto;
+	position: relative;
+	width: 1200px;
+	&::after {clear: both;}
+	&::before,
+	&::after {content: " "; display: table;}
+}
+b,
+strong {
+    font-weight: bold;
+}
+a,
+a:link,
+a:visited,
+a:focus {
+    color: #2c8647;
+}
+p {
+  margin: 0;
+}
+
+@media (min-width: 941px) {
+}
+
+@media (max-width: 320px) {
+}
+
+@media (min-width: 321px) and (max-width: 940px) {
+}
+
+@import 'bootstrap-custom';
