@@ -1,0 +1,122 @@
+html, body, div, span, applet,
+object, iframe, h1, h2, h3, h4,
+h5, h6, p, blockquote, pre, a,
+abbr, acronym, address, big, cite,
+code, del, dfn, em, img, ins, kbd,
+q, s, samp, small, strike, strong,
+sub, sup, tt, var, b, u, i, center,
+dl, dt, dd, ol, ul, li, fieldset,
+form, label, legend, table, caption,
+tbody, tfoot, thead, tr, th, td, article,
+aside, canvas, details, embed, figure,
+figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section,
+summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  background: transparent;
+  font-size: 100%; }
+
+a, a:hover,
+a:visited,
+a:focus,
+a:active {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none; }
+
+img {
+  vertical-align: top; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+nav,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.clierfix::after {
+  content: '';
+  clear: both;
+  display: block; }
+
+.content {
+  background: url("../img/bg_girl.jpg") center top no-repeat;
+  background-size: cover;
+  min-width: 768px;
+  max-width: 1920px;
+  height: 100vh;
+  position: relative; }
+  .content .media-block {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 86%;
+    height: 41%;
+    margin: auto;
+    background-color: #f0e0e0;
+    -webkit-transform: skewX(-12deg);
+    -moz-transform: skewX(-12deg);
+    -ms-transform: skewX(-12deg);
+    -o-transform: skewX(-12deg);
+    transform: skewX(-12deg); }
+    .content .media-block .media-block__item {
+      position: relative;
+      display: flex;
+      float: left;
+      margin: 0 auto;
+      width: 49%;
+      height: 100%;
+      background-size: cover;
+      font: 35px arial,sans-serif;
+      font-weight: bold;
+      text-transform: uppercase;
+      -webkit-box-align: center;
+      -moz-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -moz-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      color: #7e7e7e; }
+      .content .media-block .media-block__item:hover {
+        color: #efe70e; }
+    .content .media-block .left {
+      background: transparent url("../img/men_inactive.jpg") center center no-repeat; }
+      .content .media-block .left:hover {
+        background: transparent url("../img/men_active.jpg") center center no-repeat; }
+    .content .media-block .right {
+      background: transparent url("../img/girl_inactive.jpg") center center no-repeat; }
+      .content .media-block .right:hover {
+        background: transparent url("../img/girl_active.jpg") center center no-repeat; }
+
+/*# sourceMappingURL=main.css.map */

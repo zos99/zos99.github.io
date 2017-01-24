@@ -1,0 +1,49 @@
+.content {
+  background: url("../img/bg_girl.jpg") center top no-repeat ;
+  background-size: cover;
+  min-width: 768px;
+	max-width: 1920px;
+  height: 100vh;
+	position: relative;
+  .media-block {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 86%;
+    height: 41%;
+    margin: auto;
+    background-color: #f0e0e0;
+    @include tilt-angle(skewX(-12deg));
+    .media-block__item {
+      position: relative;
+      display: flex;
+      float: left;
+      margin: 0 auto;
+      width: 49%;
+      height: 100%;
+      background-size: cover;
+      font: 35px arial,sans-serif;
+      font-weight: bold;
+      text-transform: uppercase;
+      @include alight-center(center);
+      color: #7e7e7e;
+      &:hover {
+        color: #efe70e;
+      }
+    }
+    .left {
+      background: rgba(0, 0, 0, 0) url("../img/men_inactive.jpg") center center no-repeat;
+      &:hover {
+        background: rgba(0, 0, 0, 0) url("../img/men_active.jpg") center center no-repeat;
+      }
+    }
+    .right {
+      background: rgba(0, 0, 0, 0) url("../img/girl_inactive.jpg") center center no-repeat;
+      &:hover {
+        background: rgba(0, 0, 0, 0) url("../img/girl_active.jpg") center center no-repeat;
+      }
+    }
+  }
+}

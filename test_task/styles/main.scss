@@ -1,0 +1,146 @@
+$font-stack:    Helvetica, sans-serif;
+
+@mixin tilt-angle($angle) {
+  -webkit-transform: $angle;
+     -moz-transform: $angle;
+      -ms-transform: $angle;
+       -o-transform: $angle;
+          transform: $angle;
+}
+@mixin alight-center($alight) {
+      -webkit-box-align: $alight;
+         -moz-box-align: $alight;
+         -ms-flex-align: $alight;
+    -webkit-align-items: $alight;
+            align-items: $alight;
+       -webkit-box-pack: $alight;
+          -moz-box-pack: $alight;
+          -ms-flex-pack: $alight;
+-webkit-justify-content: $alight;
+        justify-content: $alight;
+}
+
+html, body, div, span, applet,
+object, iframe, h1, h2, h3, h4,
+h5, h6, p, blockquote, pre, a,
+abbr, acronym, address, big, cite,
+code, del, dfn, em, img, ins, kbd,
+q, s, samp, small, strike, strong,
+sub, sup, tt, var, b, u, i, center,
+dl, dt, dd, ol, ul, li, fieldset,
+form, label, legend, table, caption,
+tbody, tfoot, thead, tr, th, td, article,
+aside, canvas, details, embed, figure,
+figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section,
+summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  background: transparent;
+  font-size: 100%;
+}
+
+a, a:hover,
+a:visited,
+a:focus,
+a:active {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.clierfix::after {
+	content: '';
+	clear: both;
+	display: block;
+}
+
+.content {
+  background: url("../img/bg_girl.jpg") center top no-repeat ;
+  background-size: cover;
+  min-width: 768px;
+	max-width: 1920px;
+  height: 100vh;
+	position: relative;
+  .media-block {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 86%;
+    height: 41%;
+    margin: auto;
+    background-color: #f0e0e0;
+    @include tilt-angle(skewX(-12deg));
+    .media-block__item {
+      position: relative;
+      display: flex;
+      float: left;
+      margin: 0 auto;
+      width: 49%;
+      height: 100%;
+      background-size: cover;
+      font: 35px arial,sans-serif;
+      font-weight: bold;
+      text-transform: uppercase;
+      @include alight-center(center);
+      color: #7e7e7e;
+      &:hover {
+        color: #efe70e;
+      }
+    }
+    .left {
+      background: rgba(0, 0, 0, 0) url("../img/men_inactive.jpg") center center no-repeat;
+      &:hover {
+        background: rgba(0, 0, 0, 0) url("../img/men_active.jpg") center center no-repeat;
+      }
+    }
+    .right {
+      background: rgba(0, 0, 0, 0) url("../img/girl_inactive.jpg") center center no-repeat;
+      &:hover {
+        background: rgba(0, 0, 0, 0) url("../img/girl_active.jpg") center center no-repeat;
+      }
+    }
+  }
+}
