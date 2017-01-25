@@ -5,15 +5,3 @@
        -o-transform: $angle;
           transform: $angle;
 }
-@mixin alight-center($alight) {
-      -webkit-box-align: $alight;
-         -moz-box-align: $alight;
-         -ms-flex-align: $alight;
-    -webkit-align-items: $alight;
-            align-items: $alight;
-       -webkit-box-pack: $alight;
-          -moz-box-pack: $alight;
-          -ms-flex-pack: $alight;
--webkit-justify-content: $alight;
-        justify-content: $alight;
-}

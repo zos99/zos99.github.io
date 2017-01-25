@@ -1,4 +1,6 @@
-$font-stack:    Helvetica, sans-serif;
+$bg: #efe70e;
+$text: rgba(255,255,255,.7);
+$hover: darken($bg, 10%);
 
 @mixin tilt-angle($angle) {
   -webkit-transform: $angle;
@@ -6,18 +8,6 @@ $font-stack:    Helvetica, sans-serif;
       -ms-transform: $angle;
        -o-transform: $angle;
           transform: $angle;
-}
-@mixin alight-center($alight) {
-      -webkit-box-align: $alight;
-         -moz-box-align: $alight;
-         -ms-flex-align: $alight;
-    -webkit-align-items: $alight;
-            align-items: $alight;
-       -webkit-box-pack: $alight;
-          -moz-box-pack: $alight;
-          -ms-flex-pack: $alight;
--webkit-justify-content: $alight;
-        justify-content: $alight;
 }
 
 html, body, div, span, applet,
@@ -95,13 +85,25 @@ table {
 	display: block;
 }
 
+a, a > span {
+  position: relative;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  max-width: 30ex;
+  &:before, &:after {
+    content: '';
+    position: absolute;
+    transition: transform .5s ease;
+  }
+}
 .content {
   background: url("../img/bg_girl.jpg") center top no-repeat ;
   background-size: cover;
   min-width: 768px;
-	max-width: 1920px;
+  max-width: 1920px;
   height: 100vh;
-	position: relative;
+  position: relative;
   .media-block {
     position: absolute;
     top: 0;
@@ -112,35 +114,83 @@ table {
     height: 41%;
     margin: auto;
     background-color: #f0e0e0;
+    text-align: center;
     @include tilt-angle(skewX(-12deg));
     .media-block__item {
       position: relative;
-      display: flex;
       float: left;
-      margin: 0 auto;
       width: 49%;
       height: 100%;
       background-size: cover;
-      font: 35px arial,sans-serif;
+      font: 38px arial,sans-serif;
       font-weight: bold;
       text-transform: uppercase;
-      @include alight-center(center);
       color: #7e7e7e;
       &:hover {
-        color: #efe70e;
+        color: $bg;
       }
     }
     .left {
-      background: rgba(0, 0, 0, 0) url("../img/men_inactive.jpg") center center no-repeat;
+      background: url("../img/men_inactive.jpg") center center no-repeat;
       &:hover {
-        background: rgba(0, 0, 0, 0) url("../img/men_active.jpg") center center no-repeat;
+        background: url("../img/men_active.jpg") center center no-repeat;
       }
     }
     .right {
-      background: rgba(0, 0, 0, 0) url("../img/girl_inactive.jpg") center center no-repeat;
+      background: url("../img/girl_inactive.jpg") center center no-repeat;
       &:hover {
-        background: rgba(0, 0, 0, 0) url("../img/girl_active.jpg") center center no-repeat;
+        background: url("../img/girl_active.jpg") center center no-repeat;
       }
     }
+  }
+}
+.animated-effect {
+  display: inline-block;
+  overflow: hidden;
+  &:before, &:after {
+    right: 0;
+    bottom: 0;
+    background: $hover;
+  }
+  &:before {
+    width: 100%;
+    height: 10px;
+    transform:  translateX(100%);
+  }
+  &:after {
+    width: 10px;
+    height: 100%;
+    transform:  translateY(-100%);
+  }
+  > span {
+    display: block;
+    &:before,
+    &:after {
+      left: 0;
+      top: 0;
+      background: $hover;
+    }
+    &:before {
+      width: 100%;
+      height: 10px;
+      transform:  translateX(-100%);
+    }
+    &:after {
+      width: 10px;
+      height: 100%;
+      transform:  translateY(100%);
+    }
+    p {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  &:hover:before,
+  &:hover:after,
+  &:hover > span:before,
+  &:hover > span:after {
+    transform:  translate(0, 0);
   }
 }
