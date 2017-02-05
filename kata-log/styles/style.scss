@@ -1,0 +1,83 @@
+@import 'bootstrap-custom';
+.top {
+    overflow: hidden;
+    height: 100vh;
+}
+.wrapper::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.wrapper {
+    width: 100%;
+    position: relative;
+}
+.background-video {
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+		left: 50%;
+}
+.hero-content-style1 {
+    text-align: center;
+}
+.hero__content {
+    color: #fff;
+    font-size: 1.125rem;
+    font-weight: 300;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.4);
+}
+.hero-content-style1 h2 {
+    font-size: 75px;
+    letter-spacing: 4px;
+}
+.hero {
+    padding: 15% 0;
+    position: relative;
+    z-index: 80;
+}
+.hero-content-style1 p {
+    color: #ffffff;
+    font-size: 45px;
+    font-weight: bold;
+    letter-spacing: 0.4px;
+    margin-bottom: 1.875rem;
+    text-align: center;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.4);
+		text-transform: uppercase;
+		font-family: $fontRoboto;
+}
+.hero__content a.btn {
+    margin: 0.625rem 0.625rem 1.25rem 0rem;
+}
+input[type="reset"],
+input[type="submit"],
+input[type="submit"],
+.nav-links a:hover,
+.btn-theme-primary,
+.btn-theme-primary-outline:hover,
+.card-theme-primary,
+.woocommerce #respond input#submit,
+.woocommerce a.button,
+.woocommerce button.button,
+.woocommerce input.button,
+.woocommerce button.button.alt {
+    background: #7c93dd none repeat scroll 0 0;
+}
+.btn {
+    border-radius: 2px;
+    box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.1) inset;
+		font-weight: bold;
+		text-transform: uppercase;
+}
+.hero__content .btn-secondary-outline {
+    border-color: rgba(255, 255, 255, 0.9);
+    box-shadow: none;
+    color: rgba(255, 255, 255, 0.9);
+		&:hover {
+			color: #333;
+			background: #fff;
+			transition: .7s;}
+}
