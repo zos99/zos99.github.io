@@ -5970,7 +5970,8 @@ button.close {
     display: none !important; } }
 .top {
   height: 100vh;
-  border-bottom: 1px solid #666; }
+  border-bottom: 1px solid #666;
+  overflow: hidden; }
 
 .wrapper::after {
   content: "";
@@ -6085,41 +6086,6 @@ input[type="submit"],
   letter-spacing: 0.02em;
   padding: 0; }
 
-.panel {
-  height: 100vh;
-  border-bottom: 1px solid #666; }
-
-.home {
-  background: #65c2cf;
-  background: #2cc3ce;
-  text-align: center; }
-
-.overview {
-  background: #e14456;
-  background: #f73656; }
-
-.configuration {
-  background: #6dcb94;
-  background: #3ecc98; }
-
-.options {
-  background: #ec8200;
-  background: #ff7c0a; }
-
-.methods {
-  background: #64a0d4;
-  background: #47a3d1; }
-
-.inner {
-  width: 960px;
-  margin: 0 auto; }
-
-pre {
-  background: rgba(0, 0, 0, 0.2);
-  padding: 2em 0 2em 0;
-  font-size: 2.1em;
-  margin-top: 0.7em; }
-
 @-webkit-keyframes arrow {
   0%,100% {
     top: 50px; }
@@ -6137,17 +6103,18 @@ pre {
   h1, h2, h3, p, pre, dl {
     margin-left: 30px;
     margin-right: 30px; } }
-.grey-bg {
-  background-color: #ebebeb; }
-
-.section h2 {
-  font-size: 3em;
-  padding: 4.375rem 0rem; }
+.grey-bg p {
+  font: 100 20px Roboto,Arial,sans-serif;
+  text-align: justify; }
+.grey-bg span {
+  font-weight: bold; }
 
 .section2 {
   text-align: center;
-  padding: 2rem;
-  height: auto; }
+  padding: 2rem; }
+  .section2 h2 {
+    font-size: 3em;
+    padding: 4.375rem 0rem; }
 
 .caption-label {
   box-sizing: border-box;
@@ -6157,14 +6124,50 @@ pre {
   margin-bottom: 40px;
   padding: 0.375rem;
   text-align: center; }
+  .caption-label span {
+    color: #ec8200; }
+
+.reason_list {
+  -moz-box-align: start;
+  align-items: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 15px -15px 15px;
+  font: 100 20px Roboto,Arial,sans-serif; }
 
 *[class^="revealator"] {
   display: inline-block;
-  height: auto;
+  height: 180px;
   margin: 0 auto 15px;
-  width: 25%; }
+  width: 24%;
+  border: 1px solid #d6d6d6;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.58);
+  -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.58);
+  background-color: rgba(213, 217, 221, 0.8); }
 
-.revealator-slideup__img {
-  position: relative; }
+.reason_item_num {
+  color: #ec8200;
+  font: 66px/54px "Multicolore",sans-serif;
+  width: 100%;
+  margin-top: 15px; }
+
+.reason_item_des {
+  line-height: 25px;
+  margin: 0 15px; }
+
+#anchor_2 {
+  background-image: url("../img/daf_xf_2015.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.revealator1 {
+  display: block;
+  height: 100%;
+  margin: 0 auto 15px;
+  width: 100%;
+  border: none;
+  box-shadow: none;
+  background-color: transparent; }
 
 /*# sourceMappingURL=main.css.map */
