@@ -1,5 +1,11 @@
-@media (min-width: 360px){
+@media (min-width: 285px){
   .video-baner {
+    .site-header {
+      #header-meta {
+        display: none;
+        font-size: 0.5rem;
+      }
+    }
     .slogan {
       h2 {
         font-size: 1.5rem;
@@ -16,6 +22,12 @@
 
 @media (min-width: 480px){
   .video-baner {
+    .site-header {
+      #header-meta {
+        display: none;
+        font-size: 0.7rem;
+      }
+    }
     .slogan {
       h2 {
         font-size: 3rem;
@@ -29,6 +41,12 @@
 
 @media (min-width: 640px){
   .video-baner {
+    .site-header {
+      #header-meta {
+        display: none;
+        font-size: 1rem;
+      }
+    }
     .slogan {
       h2 {
         font-size: 4rem;
@@ -42,9 +60,39 @@
 
 @media (min-width: 720px){
   .video-baner {
+    .site-header {
+      #header-meta {
+        display: none;
+        font-size: 1.1rem;
+      }
+    }
     .slogan {
       h2 {
-        font-size: 6rem;
+        font-size: 5rem;
+      }
+      p {
+        font-size: 2rem;
+      }
+    }
+  }
+  .btn-lg {
+    font-size: 2rem;
+  }
+  .networks__icon {
+    display: none;
+  }
+}
+@media (min-width: 890px){
+  .video-baner {
+    .site-header {
+      #header-meta {
+        display: block;
+        font-size: 1.2rem;
+      }
+    }
+    .slogan {
+      h2 {
+        font-size: 5rem;
       }
       p {
         font-size: 3rem;
@@ -54,9 +102,18 @@
   .btn-lg {
     font-size: 2rem;
   }
+  .networks__icon {
+    display: none;
+  }
 }
-@media (min-width: 890px){
+@media (min-width: 993px){
   .video-baner {
+    .site-header {
+      #header-meta {
+        display: block;
+        font-size: 1.3rem;
+      }
+    }
     .slogan {
       h2 {
         font-size: 6rem;
@@ -68,5 +125,8 @@
   }
   .btn-lg {
     font-size: 2rem;
+  }
+  .networks__icon {
+    display: block;
   }
 }

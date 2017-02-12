@@ -143,6 +143,7 @@ pre {
   text-shadow: none; }
 
 body {
+  color: #000;
   font-size: 100%;
   font-family: Roboto,Arial,sans-serif !important; }
 
@@ -6001,6 +6002,61 @@ button.close {
 /*--top video-baner---*/
 .video-baner {
   position: relative; }
+  .video-baner .site-header #header-meta {
+    position: fixed;
+    background-color: #4f535d;
+    background-image: url(../img/menu-tab1.png);
+    color: #fff;
+    text-align: center;
+    font-family: "Roboto", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 1.4rem;
+    height: 24px;
+    left: 0;
+    letter-spacing: 0.1em;
+    line-height: 24px;
+    top: 0;
+    transform-style: preserve-3d;
+    width: 100%;
+    padding-left: 2%;
+    padding-right: 2%;
+    z-index: 666666; }
+    .video-baner .site-header #header-meta img {
+      max-height: 20px; }
+  .video-baner .navbar-default {
+    background-image: url("../img/feet.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 24px;
+    border-bottom: 2px solid #ec6913;
+    z-index: 100; }
+    .video-baner .navbar-default .navbar-header .navbar-brand {
+      padding: 0; }
+      .video-baner .navbar-default .navbar-header .navbar-brand img {
+        border: 4px solid #fff;
+        max-width: 100%;
+        height: auto; }
+    .video-baner .navbar-default .navbar-nav {
+      text-transform: uppercase;
+      float: right; }
+      .video-baner .navbar-default .navbar-nav #nav-social {
+        color: #ec6913;
+        display: block;
+        float: right;
+        font-size: 16px;
+        height: 56px;
+        line-height: 56px;
+        position: relative;
+        text-align: left;
+        text-indent: 25px;
+        text-transform: uppercase;
+        width: 90px; }
+      .video-baner .navbar-default .navbar-nav li > a {
+        color: #000; }
+    .video-baner .navbar-default a:hover, .video-baner .navbar-default a:focus {
+      background-color: #4f535d !important;
+      background-image: url("../img/menu-tab1.png");
+      background-position: center;
+      color: #fff !important; }
   .video-baner .video-background {
     position: relative;
     z-index: 0;
@@ -6028,13 +6084,40 @@ button.close {
       text-transform: uppercase;
       text-align: center; }
 
+.networks {
+  display: block;
+  float: right; }
+
+.networks__icon {
+  float: left;
+  padding-left: 20px; }
+
+.networks__icon:before {
+  color: #8a8a8a;
+  font-family: "FontAwesome";
+  font-size: 20px; }
+
+.networks__icon_facebook:before {
+  content: "\f09a"; }
+
+.networks__icon_twitter:before {
+  content: "\f099"; }
+
+.networks__icon:hover:before {
+  color: #248cec;
+  cursor: pointer; }
+
 /*--SECTION ALL---*/
 .section {
   text-align: center;
-  padding: 2rem; }
+  padding: 5rem; }
   .section h2 {
     font-size: 3em;
     padding: 4.375rem 0rem; }
+    .section h2::before {
+      border: 2px solid #4ba0cb; }
+    .section h2::after {
+      background: #4ba0cb; }
   .section p {
     font: 100 18px Roboto,Arial,sans-serif;
     text-align: justify; }
@@ -6043,6 +6126,12 @@ button.close {
     color: #ec8200; }
 
 /*About as*/
+#anchor_2 {
+  background-image: url("../img/bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
 #anchor_3 {
   background-image: url("../img/daf_xf_2015.jpg");
   background-position: center;
@@ -6072,7 +6161,38 @@ button.close {
   box-shadow: none;
   background-color: transparent; }
 
-@media (min-width: 360px) {
+#anchor_4 {
+  background-image: url("../img/bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  #anchor_4 .amenities {
+    height: 270px; }
+    #anchor_4 .amenities .amenities-block {
+      overflow: hidden; }
+      #anchor_4 .amenities .amenities-block .img-responsive:hover {
+        transform: scale(1.2);
+        transition-duration: 0.5s; }
+      #anchor_4 .amenities .amenities-block .amenities-item {
+        margin: 15px auto; }
+
+#anchor_5 {
+  background-color: #4f535d;
+  background-image: url(../img/menu-tab1.png);
+  background-repeat: repeat;
+  color: #fff;
+  font: 100 18px Roboto,Arial,sans-serif; }
+  #anchor_5 .kontackt {
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: left !important; }
+    #anchor_5 .kontackt p {
+      font-size: 15px; }
+
+@media (min-width: 285px) {
+  .video-baner .site-header #header-meta {
+    display: none;
+    font-size: 0.5rem; }
   .video-baner .slogan h2 {
     font-size: 1.5rem; }
   .video-baner .slogan p {
@@ -6081,30 +6201,62 @@ button.close {
   .btn-lg, .btn-group-lg > .btn {
     font-size: 1rem; } }
 @media (min-width: 480px) {
+  .video-baner .site-header #header-meta {
+    display: none;
+    font-size: 0.7rem; }
   .video-baner .slogan h2 {
     font-size: 3rem; }
   .video-baner .slogan p {
     font-size: 1.5rem; } }
 @media (min-width: 640px) {
+  .video-baner .site-header #header-meta {
+    display: none;
+    font-size: 1rem; }
   .video-baner .slogan h2 {
     font-size: 4rem; }
   .video-baner .slogan p {
     font-size: 2rem; } }
 @media (min-width: 720px) {
+  .video-baner .site-header #header-meta {
+    display: none;
+    font-size: 1.1rem; }
   .video-baner .slogan h2 {
-    font-size: 6rem; }
+    font-size: 5rem; }
+  .video-baner .slogan p {
+    font-size: 2rem; }
+
+  .btn-lg, .btn-group-lg > .btn {
+    font-size: 2rem; }
+
+  .networks__icon {
+    display: none; } }
+@media (min-width: 890px) {
+  .video-baner .site-header #header-meta {
+    display: block;
+    font-size: 1.2rem; }
+  .video-baner .slogan h2 {
+    font-size: 5rem; }
   .video-baner .slogan p {
     font-size: 3rem; }
 
   .btn-lg, .btn-group-lg > .btn {
-    font-size: 2rem; } }
-@media (min-width: 890px) {
+    font-size: 2rem; }
+
+  .networks__icon {
+    display: none; } }
+@media (min-width: 993px) {
+  .video-baner .site-header #header-meta {
+    display: block;
+    font-size: 1.3rem; }
   .video-baner .slogan h2 {
     font-size: 6rem; }
   .video-baner .slogan p {
     font-size: 4rem; }
 
   .btn-lg, .btn-group-lg > .btn {
-    font-size: 2rem; } }
+    font-size: 2rem; }
+
+  .networks__icon {
+    display: block; } }
 
 /*# sourceMappingURL=main.css.map */
