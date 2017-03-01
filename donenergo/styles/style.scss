@@ -28,7 +28,7 @@
         &:hover {
           border: 1px solid #fff;
           box-shadow: 0 0 5px rgba(0,0,0,0.15);
-          color: #065896; 
+          color: #065896;
         }
       }
       .active {
@@ -85,7 +85,67 @@
     }
   }
   .header-center {
-
+    margin: auto;
+    overflow: hidden;
+    .logo {
+      float: left;
+      line-height: 100px;
+      .logo1 {
+        margin: 0 38px 0 0;
+        .img {
+          vertical-align: middle;
+        }
+      }
+      .logo2 {
+        margin: 0 20px 0 0;
+      }
+    }
+    .slogan {
+      color: rgba(97, 97, 97, 0.8);
+      float: left;
+      font-size: 17px;
+      letter-spacing: 0.9px;
+      margin: 16px 0;
+      text-transform: uppercase;
+      width: 30%;
+    }
+    .phone-block {
+      float: right;
+      margin: 0;
+      overflow: hidden;
+      .phone-left {
+        float: left;
+        font-family: "Roboto",sans-serif;
+        margin: 14px 0 0;
+        padding: 0 38px 0 0;
+        position: relative;
+        &::after {
+          background: rgba(0, 0, 0, 0) url("../img/sprite.png") no-repeat scroll 0 -119px;
+          content: "";
+          height: 62px;
+          position: absolute;
+          right: 2px;
+          top: 5px;
+          width: 23px;
+        }
+      }
+      .line {
+        color: #caa157;
+        font-size: 17px;
+        letter-spacing: -0.4px;
+        margin: 0 0 5px;
+      }
+      .number {
+        color: #2d2d2d;
+        font-size: 25px;
+        font-weight: bold;
+        margin: 0 0 6px;
+      }
+      .info {
+        color: #9d9d9d;
+        font-size: 15px;
+      }
+    }
   }
 }
 .wrap-footer {

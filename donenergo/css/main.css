@@ -6036,6 +6036,57 @@ button.close {
       width: 27px; }
     .header-main .header-top .social .fb {
       background-position: 0 -74px; }
+.header-main .header-center {
+  margin: auto;
+  overflow: hidden; }
+  .header-main .header-center .logo {
+    float: left;
+    line-height: 100px; }
+    .header-main .header-center .logo .logo1 {
+      margin: 0 38px 0 0; }
+      .header-main .header-center .logo .logo1 .img {
+        vertical-align: middle; }
+    .header-main .header-center .logo .logo2 {
+      margin: 0 20px 0 0; }
+  .header-main .header-center .slogan {
+    color: rgba(97, 97, 97, 0.8);
+    float: left;
+    font-size: 17px;
+    letter-spacing: 0.9px;
+    margin: 16px 0;
+    text-transform: uppercase;
+    width: 30%; }
+  .header-main .header-center .phone-block {
+    float: right;
+    margin: 0;
+    overflow: hidden; }
+    .header-main .header-center .phone-block .phone-left {
+      float: left;
+      font-family: "Roboto",sans-serif;
+      margin: 14px 0 0;
+      padding: 0 38px 0 0;
+      position: relative; }
+      .header-main .header-center .phone-block .phone-left::after {
+        background: transparent url("../img/sprite.png") no-repeat scroll 0 -119px;
+        content: "";
+        height: 62px;
+        position: absolute;
+        right: 2px;
+        top: 5px;
+        width: 23px; }
+    .header-main .header-center .phone-block .line {
+      color: #caa157;
+      font-size: 17px;
+      letter-spacing: -0.4px;
+      margin: 0 0 5px; }
+    .header-main .header-center .phone-block .number {
+      color: #2d2d2d;
+      font-size: 25px;
+      font-weight: bold;
+      margin: 0 0 6px; }
+    .header-main .header-center .phone-block .info {
+      color: #9d9d9d;
+      font-size: 15px; }
 
 .wrap-footer {
   background-color: blue; }
