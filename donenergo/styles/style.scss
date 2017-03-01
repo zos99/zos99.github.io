@@ -1,0 +1,93 @@
+@import 'bootstrap-custom';
+.active {
+    color: #fff !important;
+    background-color: #d1ab66 !important;
+    border-color: #d1ab66 !important;
+    box-shadow: none !important;
+}
+.header-main {
+  .header-top {
+    border-bottom: 2px solid #e2e2e2;
+    .lang {
+      float: left;
+      margin: 0 45px 0 8px;
+      a {
+        display: inline-block;
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        color: #1286d0;
+        text-decoration: none;
+        width: 53px;
+        height: 36px;
+        text-align: center;
+        line-height: 36px;
+        box-sizing: border-box;
+        margin: 0 -4px 0 0;
+        border: 1px solid #fff;
+        &:hover {
+          border: 1px solid #fff;
+          box-shadow: 0 0 5px rgba(0,0,0,0.15);
+          color: #065896; 
+        }
+      }
+      .active {
+        background-color: #f0f0f0;
+        border: 1px solid #f0f0f0;
+        color: #888888;
+      }
+    }
+    .sait-control {
+      background-color: $fontDWhite;
+      float: left;
+      margin: 7px 106px 0 0;
+      a {
+        background: rgba(0, 0, 0, 0) url("../img/sprite.png") no-repeat scroll 0 0;
+        display: inline-block;
+        height: 20px;
+        margin: 0 23px 0 0;
+      }
+      .home {
+        background-position: 0 0;
+        width: 23px;
+      }
+      .mail {
+        background-position: -23px 0;
+        width: 19px;
+        &:hover {
+          background-position: -88px 0;
+        }
+      }
+      .map {
+        background-position: -42px 0;
+        width: 23px;
+        &:hover {
+          background-position: -107px 0;
+        }
+      }
+      .home-active {
+        background-position: -65px 0 !important;
+      }
+    }
+    .social {
+      float: right;
+      margin: 6px 2px 0 0;
+      a {
+        background: rgba(0, 0, 0, 0) url("../img/sprite.png") no-repeat scroll 0 -74px;
+        display: inline-block;
+        height: 26px;
+        margin: 0;
+        width: 27px;
+      }
+      .fb {
+        background-position: 0 -74px;
+      }
+    }
+  }
+  .header-center {
+
+  }
+}
+.wrap-footer {
+  background-color: blue;
+}
