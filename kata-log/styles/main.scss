@@ -455,7 +455,7 @@ p {
 .reason_list {
   *[class^="revealator"] {
     display: block;
-    height: 180px;
+    height: 200px;
     padding-bottom: 15px;
     padding-top: 15px;
   }
@@ -486,7 +486,7 @@ p {
   background-repeat: no-repeat;
   background-size: cover;
   .amenities {
-    height: 270px;
+    height: 300px;
     .amenities-block {
       overflow: hidden;
       .img-responsive {
@@ -512,7 +512,10 @@ p {
     padding-right: 5%;
     text-align: left !important;
     p {
-      font-size: 15px;
+      font-size: 17px;
+    }
+    img {
+      max-height: 30px;
     }
   }
 }
@@ -630,7 +633,7 @@ p {
     .site-header {
       #header-meta {
         display: block;
-        font-size: 1.3rem;
+        font-size: 1.5rem;
       }
     }
     .slogan {

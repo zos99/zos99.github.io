@@ -10,19 +10,18 @@
     <!-- Текст заголовка веб-страницы -->
     <title>КОМПАНИЯ «КАТА–ЛОГ»</title>
     <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/fm.revealator.jquery.css">
     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/bootstrap-sprockets.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
-  	<script type="text/javascript" src="js/fm.revealator.jquery.js"></script>
   </head>
   <body>
     <header class="header-main">
       <section class="header-top">
         <div class="container container--line">
           <div class="lang">
-            <a class="ru active" href="/">Рус</a>
+            <a class="ru active-top" href="/">Рус</a>
             <a class="eng" href="/en/">Eng</a>
           </div>
           <div class="sait-control">
@@ -83,11 +82,44 @@
               </button>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-ex1-collapse" id="menu">
+            <div class="collapse navbar-collapse navbar-ex1-collapse menu-def" id="menu">
               <ul class="nav navbar-nav">
-                <li class="has-sub"><a href="#">О компании</a></li>
-                <li class="has-sub"><a href="#">Акционеру, инвестору</a></li>
-                <li class="has-sub"><a href="#">Корпоративное управление</a></li>
+                <li class="has-sub">
+                  <a href="#">О компании</a>
+                  <ul class="drop">
+                    <li><a href="#">Структура</a></li>
+                    <li><a href="#">Руководство</a></li>
+                    <li><a href="#">Основные виды деятельности</a></li>
+                    <li><a href="#">Миссия</a></li>
+                    <li><a href="#">Гимн ПАО "МРСК Юга"</a></li>
+                    <li><a href="#">Реформирование</a></li>
+                    <li><a href="#">Стратегия</a></li>
+                  </ul>
+                </li>
+                <li class="has-sub">
+                  <a href="#">Акционеру, инвестору</a>
+                  <ul class="drop">
+                    <li><a href="#">Пункт 2_1</a></li>
+                    <li><a href="#">Пункт 2_2</a></li>
+                    <li><a href="#">Пункт 2_3</a></li>
+                    <li><a href="#">Пункт 2_4</a></li>
+                    <li><a href="#">Пункт 2_5"</a></li>
+                    <li><a href="#">Пункт 2_6</a></li>
+                    <li><a href="#">Пункт 2_7</a></li>
+                  </ul>
+                </li>
+                <li class="has-sub">
+                  <a href="#">Корпоративное управление</a>
+                  <ul class="drop">
+                    <li><a href="#">Пункт 3_1</a></li>
+                    <li><a href="#">Пункт 3_2</a></li>
+                    <li><a href="#">Пункт 3_3</a></li>
+                    <li><a href="#">Пункт 3_4</a></li>
+                    <li><a href="#">Пункт 3_5"</a></li>
+                    <li><a href="#">Пункт 3_6</a></li>
+                    <li><a href="#">Пункт 3_7</a></li>
+                  </ul>
+                </li>
                 <li class="has-sub"><a href="#">Производственная деятельность</a></li>
                 <li class="has-sub"><a href="#">Потребителям</a></li>
                 <li class="has-sub"><a href="#">Пресс-центр</a></li>
@@ -98,37 +130,320 @@
           </div>
         </nav>
       </section>
-      <section class="slider">
-
-      </section>
     </header>
-    <section>
+    <section class="slider">
+              <!-- Карусель -->
+      <div id="myCarousel" class="carousel slide" data-interval="3000" data-ride="carousel">
+        <!-- Индикаторы для карусели -->
+        <ol class="carousel-indicators">
+          <!-- Перейти к 0 слайду карусели с помощью соответствующего индекса data-slide-to="0" -->
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <!-- Перейти к 1 слайду карусели с помощью соответствующего индекса data-slide-to="1" -->
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <!-- Перейти к 2 слайду карусели с помощью соответствующего индекса data-slide-to="2" -->
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <!-- Слайды карусели -->
+        <div class="carousel-inner">
+          <!-- Слайды создаются с помощью контейнера с классом item, внутри которого помещается содержимое слайда -->
+          <div class="active item">
+            <img src="img/slider-1.png" alt="...">
+            <h2>Слайд №1</h2>
+            <div class="carousel-caption">
+              <h3>Заголовок 1 слайда</h3>
+              <p>Текст (описание) 1 слайда...</p>
+            </div>
+          </div>
+          <!-- Слайд №2 -->
+          <div class="item">
+            <img src="img/slider-2.png" alt="...">
+            <h2>Slide 2</h2>
+            <div class="carousel-caption">
+              <h3>Second slide label</h3>
+              <p>Aliquam sit amet gravida nibh, facilisis gravida odio.</p>
+            </div>
+          </div>
+          <!-- Слайд №3 -->
+          <div class="item">
+            <img src="img/slider-3.png" alt="...">
+            <h2>Slide 3</h2>
+            <div class="carousel-caption">
+              <h3>Third slide label</h3>
+              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Навигация для карусели -->
+        <!-- Кнопка, осуществляющая переход на предыдущий слайд с помощью атрибута data-slide="prev" -->
+        <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <!-- Кнопка, осуществляющая переход на следующий слайд с помощью атрибута data-slide="next" -->
+        <a class="carousel-control right" href="#myCarousel" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+      </div>
+    </section>
+    <section class="wrap-menu-tile">
+      <ul class="menu-tile center">
+        <li>
+          <a class="i1" href="#"> интернет-приёмная </a>
+        </li>
+        <li>
+          <a class="i2" href="#"> Заявка на подключение к электросети </a>
+        </li>
+        <li>
+          <a class="i3" href="#"> графики отключений </a>
+        </li>
+        <li>
+          <a class="i4" href="#"> питающие центры - интерактивная карта </a>
+        </li>
+        <li>
+          <a class="i5" href="#">Страница ПАО «МРСК Юга», предоставленная ООО «Интерфакс-ЦРКИ»</a>
+        </li>
+        <li>
+          <a class="i6" href="#"> день потребителя запись на прием </a>
+        </li>
+        <li>
+          <a class="i9" href="#"> Подать заявку на ТП через МФЦ</a>
+        </li>
+        <li>
+          <a class="i8" href="#"> заявка на урок по электробезопасности </a>
+        </li>
+      </ul>
+    </section>
+    <section class="info-block row">
       <div class="container">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        <div class="info-block__main col-md-7">
+          <div class="title">
+            <h2>Новости</h2>
+          </div>
+          <div class="row">
+            <div class="main__left col-md-6">
+              <a class="last-news" href="#">
+                <div class="img">
+                  <span class="date">23.03.2017</span>
+                  <img src="img/2-1.jpg" alt="">
+                </div>
+                <span class="desc">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </span>
+              </a>
+            </div>
+            <div class="main__right col-md-6">
+              <ul>
+                <li>
+                  <div class="date">22.03.2017</div>
+                  <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</a>
+                </li>
+                <li>
+                  <div class="date">21.03.2017</div>
+                  <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </a>
+                </li>
+                <li>
+                  <div class="date">20.03.2017</div>
+                  <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <a class="btn btn-primary" href="#">все новости</a>
+        </div>
+        <div class="info-block__additional  col-md-5">
+          <div class="title title_left">
+            <h2>Территория обслуживания "Спецсервисэнерго"</h2>
+          </div>
+          <div class="row">
+            <div class="additional__top col-md-12">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </div>
+            <div class="additional__bottom col-md-12">
+              <a href="#">
+                <img alt=" " src="img/banner_region_two.png">
+                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+              </a>
+            </div>
+            <div class="additional__bottom col-md-12">
+              <a href="#">
+                <img alt=" " src="img/banner_region.png">
+                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="line-carusel">
+      <div class="container">
+        <div class="title">
+          <h2>ОСНОВНЫЕ НАПРАВЛЕНИЯ</h2>
+        </div>
+        <!-- Карусель -->
+        <div id="Carousel_bottom" class="carousel slide" data-interval="6000" data-ride="carousel">
+          <!-- Слайды карусели -->
+          <div class="carousel-inner">
+            <!-- Слайды создаются с помощью контейнера с классом item, внутри которого помещается содержимое слайда -->
+            <div class="active item">
+              <ul class="row">
+                <li class="col-md-4 col-sm-6">
+                  <div class="thumbnail">
+                    <a href="#"><img src="img/sl1.jpg" alt=""></a>
+                  </div>
+                  <div class="caption">
+                    <h4>Электроснабжение</h4>
+                    <p>Выполнение полного комплекса работ по электроснабжению.</p>
+                    <a class="btn btn-primary" href="#">Подробнее..</a>
+                  </div>
+                </li>
+                <li class="col-md-4 col-sm-6">
+                  <div class="thumbnail">
+                    <a href="#"><img src="img/sl2.jpg" alt=""></a>
+                  </div>
+                  <div class="caption">
+                    <h4>Теплоснабжение </h4>
+                    <p>Разработка НТД, инструкций, методик, регламентов в сфере теплоснабжения</p>
+                    <a class="btn btn-primary" href="#">Подробнее..</a>
+                  </div>
+                </li>
+                <li class="col-md-4 col-sm-6">
+                  <div class="thumbnail">
+                    <a href="#"><img src="img/sl3.jpg" alt=""></a>
+                  </div>
+                  <div class="caption">
+                    <h4>Водоснабжение</h4>
+                    <p>Полный комплекс услуг в сфере водоснабжения</p>
+                    <a class="btn btn-primary" href="#">Подробнее..</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!-- Слайд №2 -->
+            <div class="item">
+              <ul class="row">
+                <li class="col-md-4 col-sm-6">
+                  <div class="thumbnail">
+                    <a href="#"><img src="img/sl4.jpg" alt=""></a>
+                  </div>
+                  <div class="caption">
+                    <h4>Очистка воды</h4>
+                    <p>Технологии для очистки сточных вод промышленных предприятий.</p>
+                    <a class="btn btn-primary" href="#">Подробнее..</a>
+                  </div>
+                </li>
+                <li class="col-md-4 col-sm-6">
+                  <div class="thumbnail">
+                    <a href="#"><img src="img/sl5.jpg" alt=""></a>
+                  </div>
+                  <div class="caption">
+                    <h4>Металлоконструкции</h4>
+                    <p>Изготовление и монтаж металлических изделий</p>
+                    <a class="btn btn-primary" href="#">Подробнее..</a>
+                  </div>
+                </li>
+                <li class="col-md-4 col-sm-6">
+                  <div class="thumbnail">
+                    <a href="#"><img src="img/sl6.jpg" alt=""></a>
+                  </div>
+                  <div class="caption">
+                    <h4>Автоматизация </h4>
+                    <p>АСКУЭ - Автоматизация технологических процессов на базе современных технологий</p>
+                    <a class="btn btn-primary" href="#">Подробнее..</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!-- Слайд №3 -->
+            <div class="item">
+              <ul class="row">
+                <li class="col-md-4 col-sm-6">
+                  <div class="thumbnail">
+                    <a href="#"><img src="img/sl7.jpg" alt=""></a>
+                  </div>
+                  <div class="caption">
+                    <h4>Строительство </h4>
+                    <p>Строительно-монтажные работы.</p>
+                    <a class="btn btn-primary" href="#">Подробнее..</a>
+                  </div>
+                </li>
+                <li class="col-md-4 col-sm-6">
+                  <div class="thumbnail">
+                    <a href="#"><img src="img/sl8.jpg" alt=""></a>
+                  </div>
+                  <div class="caption">
+                    <h4>Деревообработка </h4>
+                    <p>Столярные изделия, корпусная мебель.</p>
+                    <a class="btn btn-primary" href="#">Подробнее..</a>
+                  </div>
+                </li>
+                <li class="col-md-4 col-sm-6">
+                  <div class="thumbnail">
+                    <a href="#"><img src="img/sl9.jpg" alt=""></a>
+                  </div>
+                  <div class="caption">
+                    <h4>Водоотведение </h4>
+                    <p>Система отведения поверхностных и технологических сточных вод.</p>
+                    <a class="btn btn-primary" href="#">Подробнее..</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!-- Навигация для карусели -->
+            <!-- Кнопка, осуществляющая переход на предыдущий слайд с помощью атрибута data-slide="prev" -->
+            <a class="carousel-control left" href="#Carousel_bottom" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <!-- Кнопка, осуществляющая переход на следующий слайд с помощью атрибута data-slide="next" -->
+            <a class="carousel-control right" href="#Carousel_bottom" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+          </div>
+        </div>
       </div>
     </section>
     <footer class="wrap-footer">
       <div class="container">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        <nav class="foot-menu">
+          <ul>
+            <li>
+              <a href="#">О компании</a>
+            </li>
+            <li>
+              <a href="#">Акционеру, инвестору</a>
+            </li>
+            <li>
+              <a href="#">Корпоративное управление</a>
+            </li>
+            <li>
+              <a href="#">Производственная деятельность</a>
+            </li>
+            <li>
+              <a href="#">Потребителям</a>
+            </li>
+            <li>
+              <a href="#">Пресс-центр</a>
+            </li>
+            <li>
+              <a href="#">Закупки</a>
+            </li>
+            <li>
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="footer-kontacty">
+          <div class="copyright">
+            <span>2017</span>© СПЕЦСЕРВИСЭНЕРГО. Все права защищены.
+          </div>
+          <address class="address">
+            <span>Юридический/почтовый адрес:</span>
+            83000, г.Донецк, ул.Артёма
+          </address>
+          <div class="kontakty">
+            <span>Контакты:</span>
+            (093) 187-48-63; (071) 330-99-72;</br>
+            E-mail: ooo_cce@mail.ru
+          </div>
+        </div>
       </div>
     </footer>
   </body>
