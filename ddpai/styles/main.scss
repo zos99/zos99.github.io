@@ -1,0 +1,213 @@
+$fontColor: #313131;
+$fontDWhite: #fafafa;
+$fontBroun:  #d1ab66;
+$fontBlue:   #13609f;
+$fontFooter: #0a488a;
+$fontWhite:  #fff;
+$fontGrey: #a6a6a6;
+$fontArial:   "Arial";
+$fontRoboto: "Roboto",sans-serif;
+$fontAmesome: "FontAwesome";
+
+@font-face {
+    font-family: 'montserrat';
+    src:  url('../fonts/Montserrat-Bold.ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'montserrat';
+    src:  url('../fonts/Montserrat-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto';
+    src:  url('../fonts/Roboto-BlackItalic.ttf');
+    font-weight: Black;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Roboto';
+    src:  url('../fonts/Roboto-Black.ttf');
+    font-weight: Black;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto';
+    src:  url('../fonts/Roboto-Bold.ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto';
+    src:  url('../fonts/Roboto-BoldItalic.ttf');
+    font-weight: bold;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Roboto';
+    src:  url('../fonts/Roboto-Italic.ttf');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Roboto';
+    src:  url('../fonts/Roboto-Italic.ttf');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Roboto';
+    src:  url('../fonts/Roboto-Light.ttf');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto';
+    src:  url('../fonts/Roboto-LightItalic.ttf');
+    font-weight: 100;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Roboto';
+    src:  url('../fonts/Roboto-Medium.ttf');
+    font-weight: 500; ///?
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto';
+    src:  url('../fonts/Roboto-MediumItalic.ttf');
+    font-weight: 500;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Roboto';
+    src:  url('../fonts/Roboto-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto';
+    src:  url('../fonts/Roboto-Thin.ttf');
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto';
+    src:  url('../fonts/Roboto-ThinItalic.ttf');
+    font-weight: 200;
+    font-style: italic;
+}
+
+
+html, body, div, span, applet,
+object, iframe, h1, h2, h3, h4,
+h5, h6, p, blockquote, pre, a,
+abbr, acronym, address, big, cite,
+code, del, dfn, em, img, ins, kbd,
+q, s, samp, small, strike, strong,
+sub, sup, tt, var, b, u, i, center,
+dl, dt, dd, ol, ul, li, fieldset,
+form, legend, table, caption,
+tbody, tfoot, thead, tr, th, td, article,
+aside, canvas, details, embed, figure,
+figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section,
+summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  background: transparent;
+  font-size: 100%;
+}
+img {
+  vertical-align: top;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+nav,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+  &:before,
+  &:after {
+    content: '';
+    content: none;
+  }
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+svg {
+  display: block;
+  overflow: visible;
+}
+pre {
+  border:1px solid #000;
+  overflow-x:auto;
+  background: #222;
+  color: #fff;
+  text-shadow: none;
+}
+body {
+  color: $fontColor;
+  font-size: 100%;
+	font-family: $fontRoboto;
+}
+b,
+strong {
+    font-weight: bold;
+}
+a,
+a:link,
+a:visited,
+a:focus {
+    color: #fff;
+}
+p {
+  margin: 0;
+}
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+@import 'bootstrap-custom';
+.main-menu {
+  .navbar_modify {
+    background-color: #fff;
+    border-color: #fff;
+    .navbar-header_modif {
+
+      .navbar-brand_modif {
+        padding: 0;
+        height: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 1199px){
+
+}
+
+@media (max-width: 991px){
+
+}
