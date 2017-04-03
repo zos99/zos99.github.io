@@ -1,14 +1,292 @@
 @import 'bootstrap-custom';
 .main-menu {
   .navbar_modify {
-    background-color: #fff;
-    border-color: #fff;
+    background-color: $fontWhite;
+    border-color: $fontWhite;
     .navbar-header_modif {
-
+      margin: 4px 0 5px;
       .navbar-brand_modif {
         padding: 0;
         height: 100%;
       }
     }
+    .navbar-collapse_modif {
+      .navbar-nav {
+        padding-left: 50px;
+        li {
+          a {
+            text-transform: uppercase;
+            font-size: 16px;
+            font-family: $fontGothamPro;
+          }
+        }
+      }
+    }
   }
+}
+.soc {
+    overflow:hidden;
+    margin:0;
+    padding:9px 0;
+    list-style:none;
+}
+
+.soc li {
+    display:inline-block;
+    *display:inline;
+    zoom:1;
+}
+
+.soc li a {
+    font-family:si!important;
+    font-style:normal;
+    font-weight:400;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -ms-box-sizing:border-box;
+    -o-box-sizing:border-box;
+    box-sizing:border-box;
+
+    -o-transition:.1s;
+    -ms-transition:.1s;
+    -moz-transition:.1s;
+    -webkit-transition:.1s;
+    transition:.1s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+
+    overflow:hidden;
+    text-decoration:none;
+    text-align:center;
+    display:block;
+    position: relative;
+    z-index: 1;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    font-size: 18px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    margin-right: 15px;
+    color: #ffffff!important;
+    background-color: #a6a6a6;
+    padding: 0!important;
+}
+
+.soc a:hover {
+    z-index: 2;
+    background-color:#929292 !important;
+}
+
+.soc-icon-last{
+    margin:0 !important;
+}
+
+.soc-facebook:before {
+    content:'\e041';
+}
+.soc-vkontakte:before {
+    content:'\e01a';
+}
+.soc-instagram:before {
+    content:'\e057';
+}
+/*------------------------------------------------------*/
+.button {
+  background: $btnRed none repeat scroll 0 0;
+  border: 2px solid $btnRed;
+  border-radius: 2px;
+  color: $fontWhite;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 400;
+  height: 39px;
+  line-height: 17px;
+  padding: 9px 10px;
+  transition: all 300ms ease 0s;
+  &:hover {
+    background-color: transparent;
+    border: 2px solid $btnRed;
+    color: $btnRed;
+    text-decoration: none;
+  }
+}
+.button_descr {
+  color: $fontGreyB;
+  font-style: $fontGothamPro;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: none;
+}
+.bg-blue {
+  background-color: $fontDWhite;
+  font-size: 12px;
+}
+.siteslider {
+  position: relative;
+  .swiper-container {
+    .swiper-wrapper {
+      .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        height: 674px;
+        .position {
+          top: 50%;
+          left: 15%;
+          position: absolute;
+          transform: translate(-15%, -50%);
+          .title {
+            font-size: 41px;
+            font-weight: 300;
+            color: $fontWhite;
+            font-family: $fontGothamPro;
+          }
+          .subtitle {
+            font-size: 21px;
+            color: $fontWhite;
+            text-transform: uppercase;
+            font-family: $fontGothamPro;
+            margin-top: 35px;
+            margin-bottom: 35px;
+          }
+          .text {
+            font-size: 14px;
+            max-width: 400px;
+            line-height: 1.3;
+            color: $fontWhite;
+            font-family: $fontGothamPro;
+            a {
+              text-transform: uppercase;
+            }
+          }
+        }
+      }
+      .swiper-slide_left {
+        background-image: url(../img/banner_2.jpg);
+      }
+      .swiper-slide_center {
+        background-image: url(../img/banner_3.jpg);
+      }
+      .swiper-slide_right {
+        background-image: url(../img/banner_4.jpg);
+      }
+    }
+    .swiper-pagination {
+      .swiper-pagination-bullet {
+        border-radius: 0;
+        width: 72px;
+        height: 2px;
+        background-color: #5d5d5d;
+        border-color: #5d5d5d;
+        margin: 3px;
+      }
+    }
+  }
+}
+.parallax-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 130%;
+  height: 100%;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+}
+.about-product {
+  background-color: $fontDWhite;
+  padding: 50px 0;
+  .text-center {
+    h3 {
+      text-transform: uppercase;
+      color: $fontGreyD;
+      font-family: $fontGothamPro;
+      font-size: 22px;
+      margin-bottom: 30px;
+    }
+  }
+  .jcarousel-wrapper {
+    .jcarousel {
+      ul {
+        li {
+          margin-right: 20px;
+          background-image: url(../img/bgslaider.png);
+          background-repeat: repeat;
+          .video-box {
+            color: $fontGreyD;
+            font-family: $fontGothamPro;
+            font-size: 12px;
+            &:hover {
+              text-decoration: none;
+            }
+            .logo-box {
+              img {
+                cursor: pointer;
+              }
+              .fa-play {
+                font-size: 2em;
+                left: 50%;
+                margin-left: -11px;
+                margin-top: -11px;
+                position: absolute;
+                top: 50%;
+              }
+            }
+          }
+          .desc {
+            .video-box {
+              h3 {
+                color: $fontGreyD;
+                font-family: $fontGothamPro;
+                font-size: 18px;
+                text-align: center;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.product {
+  color: $fontGreyD;
+  font-family: $fontGothamPro;
+  .row {
+    padding: 150px 0;
+  }
+}
+.produkt_description {
+  padding-left: 50px;
+  h3 {
+    color: $fontGreyB;
+    font-family: $fontGothamPro;
+    font-size: 40px;
+    font-weight: bold;
+  }
+  p {
+    padding: 40px 0 60px;
+    color: $fontGreyB;
+    font-family: $fontGothamPro;
+    font-size: 20px;
+  }
+}
+.footer_contact {
+  a {
+    color: $fontGreyB;
+    font-size: 15px;
+    font-family: $fontGothamPro;
+    &:hover {
+      color:$fontGreyDD;
+      text-decoration: underline;
+    }
+  }
+}
+.footer_soc {
+    margin-bottom: 60px;
 }

@@ -10,10 +10,12 @@
     <!-- Текст заголовка веб-страницы -->
     <title>DDPai</title>
     <link rel="stylesheet" href="css/main.css" />
-    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/jcarousel.responsive.css">
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
+    <script type="text/javascript" src="js/jcarousel.responsive.js"></script>
   </head>
   <body>
     <header class="main-menu">
@@ -43,33 +45,226 @@
               <li><a href="#">Контакты</a></li>
             </ul>
             <!-- Список ссылок, расположенный справа -->
-            <ul class="nav navbar-nav navbar-right">
-                <li>
-                  <a class="btn btn-block btn-social btn-facebook" href="#">
-                    <span class="fa fa-facebook-square"></span>
-                  </a>
-                </li>
-                <li>
-                  <a class="btn btn-block btn-social btn-vk">
-                    <span class="fa fa-vk"></span>
-                  </a>
-                </li>
-                <li>
-                  <a class="btn btn-block btn-social btn-instagram">
-                    <span class="fa fa-instagram"></span>
-                  </a>
-                </li>
+            <ul class="nav navbar-nav navbar-right soc">
+              <li><a class="soc-facebook" href="#"></a></li>
+              <li><a class="soc-vkontakte" href="#"></a></li>
+              <li><a class="soc-instagram soc-icon-last" href="#"></a></li>
             </ul>
           </div>
         </nav>
 
       </div>
     </header>
-    <section>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    <section class="siteslider">
+      <!-- Swiper -->
+      <div class="swiper-container">
+        <div class="parallax-bg"></div>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide swiper-slide_left">
+              <div class="position">
+                <div class="title" data-swiper-parallax="-200">X2 Pro</div>
+                <div class="subtitle" data-swiper-parallax="-800">Яркий подарок для любого торжества</div>
+                <div class="text" data-swiper-parallax="-1200">
+                  <a class="button" href="#">узнать больше</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide swiper-slide_center">
+              <div class="position">
+                <div class="title" data-swiper-parallax="-200">M4 Plus</div>
+                <div class="subtitle" data-swiper-parallax="-800">EXTRAORDINARY RACING EXPERIENCE</div>
+                <div class="text" data-swiper-parallax="-1200">
+                  <a class="button" href="#">узнать больше</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide swiper-slide_right">
+              <div class="position">
+                <div class="title" data-swiper-parallax="-200">mini2</div>
+                <div class="subtitle" data-swiper-parallax="-800">начните дорожное приключение</div>
+                <div class="text" data-swiper-parallax="-1200">
+                  <a class="button" href="#">узнать больше</a>
+                </div>
+              </div>
+            </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination swiper-pagination-white"></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next swiper-button-white"></div>
+        <div class="swiper-button-prev swiper-button-white"></div>
+      </div>
     </section>
-    <footer>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    <section class="about-product">
+      <div class="container">
+        <div class="text-center">
+          <h3>Видео о продуктах</h3>
+        </div>
+        <div class="jcarousel-wrapper">
+            <div class="jcarousel">
+                <ul>
+                    <li>
+                      <a class="video-box" href="https://www.youtube.com/embed/XkQdRKvJKRQ?list=PL73sjHg5U5xSzR9Ci8dPJehjJAQWjlDnO" target="_blank" data-group="alpha" savefrom_lm_index="2">
+                        <p class="logo-box">
+                          <img src="img/01.jpg" alt="Tech Overview - Видеорегистратор DDPai mini - обзор">
+                          <i class="fa-play"></i>
+                        </p>
+                      </a>
+                      <div class="desc">
+                        <a class="video-box" href="https://www.youtube.com/embed/XkQdRKvJKRQ?list=PL73sjHg5U5xSzR9Ci8dPJehjJAQWjlDnO" data-group="alpha" title="Tech Overview - Видеорегистратор DDPai mini - обзор" target="_blank" savefrom_lm_index="0" savefrom_lm="1">
+                          <h3>Tech Overview - Видеорегистратор DDPai mini - обзор</h3>
+                        </a>
+                      </div>
+                    </li>
+                    <li>
+                      <a class="video-box" href="https://www.youtube.com/embed/XkQdRKvJKRQ?list=PL73sjHg5U5xSzR9Ci8dPJehjJAQWjlDnO" target="_blank" data-group="alpha" savefrom_lm_index="2">
+                        <p class="logo-box">
+                          <img src="img/02.jpg" alt="Tech Overview - Видеорегистратор DDPai mini - обзор">
+                          <i class="fa-play"></i>
+                        </p>
+                      </a>
+                      <div class="desc">
+                        <a class="fancybox-media fancybox video-box" href="https://www.youtube.com/embed/XkQdRKvJKRQ?list=PL73sjHg5U5xSzR9Ci8dPJehjJAQWjlDnO" data-group="alpha" title="Tech Overview - Видеорегистратор DDPai mini - обзор" target="_blank" savefrom_lm_index="0" savefrom_lm="1">
+                          <h3>Tech Overview - Видеорегистратор DDPai mini - обзор</h3>
+                        </a>
+                      </div>
+                    </li>
+                    <li>
+                      <a class="video-box" href="https://www.youtube.com/embed/XkQdRKvJKRQ?list=PL73sjHg5U5xSzR9Ci8dPJehjJAQWjlDnO" target="_blank" data-group="alpha" savefrom_lm_index="2">
+                        <p class="logo-box">
+                          <img src="img/03.jpg" alt="Tech Overview - Видеорегистратор DDPai mini - обзор">
+                          <i class="fa-play"></i>
+                        </p>
+                      </a>
+                      <div class="desc">
+                        <a class="fancybox-media fancybox video-box" href="https://www.youtube.com/embed/XkQdRKvJKRQ?list=PL73sjHg5U5xSzR9Ci8dPJehjJAQWjlDnO" data-group="alpha" title="Tech Overview - Видеорегистратор DDPai mini - обзор" target="_blank" savefrom_lm_index="0" savefrom_lm="1">
+                          <h3>Tech Overview - Видеорегистратор DDPai mini - обзор</h3>
+                        </a>
+                      </div>
+                    </li>
+                    <li>
+                      <a class="video-box" href="https://www.youtube.com/embed/XkQdRKvJKRQ?list=PL73sjHg5U5xSzR9Ci8dPJehjJAQWjlDnO" target="_blank" data-group="alpha" savefrom_lm_index="2">
+                        <p class="logo-box">
+                          <img src="img/04.jpg" alt="Tech Overview - Видеорегистратор DDPai mini - обзор">
+                          <i class="fa-play"></i>
+                        </p>
+                      </a>
+                      <div class="desc">
+                        <a class="video-box" href="https://www.youtube.com/embed/XkQdRKvJKRQ?list=PL73sjHg5U5xSzR9Ci8dPJehjJAQWjlDnO" data-group="alpha" title="Tech Overview - Видеорегистратор DDPai mini - обзор" target="_blank" savefrom_lm_index="0" savefrom_lm="1">
+                          <h3>Tech Overview - Видеорегистратор DDPai mini - обзор</h3>
+                        </a>
+                      </div>
+                    </li>
+                    <li>
+                      <a class="video-box" href="https://www.youtube.com/embed/XkQdRKvJKRQ?list=PL73sjHg5U5xSzR9Ci8dPJehjJAQWjlDnO" target="_blank" data-group="alpha" savefrom_lm_index="2">
+                        <p class="logo-box">
+                          <img src="img/05.jpg" alt="Tech Overview - Видеорегистратор DDPai mini - обзор">
+                          <i class="fa-play"></i>
+                        </p>
+                      </a>
+                      <div class="desc">
+                        <a class="fancybox-media fancybox video-box" href="https://www.youtube.com/embed/XkQdRKvJKRQ?list=PL73sjHg5U5xSzR9Ci8dPJehjJAQWjlDnO" data-group="alpha" title="Tech Overview - Видеорегистратор DDPai mini - обзор" target="_blank" savefrom_lm_index="0" savefrom_lm="1">
+                          <h3>Tech Overview - Видеорегистратор DDPai mini - обзор</h3>
+                        </a>
+                      </div>
+                    </li>
+                    <li>
+                      <a class="video-box" href="https://www.youtube.com/embed/XkQdRKvJKRQ?list=PL73sjHg5U5xSzR9Ci8dPJehjJAQWjlDnO" target="_blank" data-group="alpha" savefrom_lm_index="2">
+                        <p class="logo-box">
+                          <img src="img/06.jpg" alt="Tech Overview - Видеорегистратор DDPai mini - обзор">
+                          <i class="fa-play"></i>
+                        </p>
+                      </a>
+                      <div class="desc">
+                        <a class="video-box" href="https://www.youtube.com/embed/XkQdRKvJKRQ?list=PL73sjHg5U5xSzR9Ci8dPJehjJAQWjlDnO" data-group="alpha" title="Tech Overview - Видеорегистратор DDPai mini - обзор" target="_blank" savefrom_lm_index="0" savefrom_lm="1">
+                          <h3>Tech Overview - Видеорегистратор DDPai mini - обзор</h3>
+                        </a>
+                      </div>
+                    </li>
+                </ul>
+            </div>
+
+            <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+            <a href="#" class="jcarousel-control-next">&rsaquo;</a>
+        </div>
+      </div>
+    </section>
+    <section class="product">
+        <div class="row">
+          <div class="container">
+          <div class="col-md-6 col-xs-12 product_img">
+            <img class="img-responsive" src="img/mini.png" alt="">
+          </div>
+          <div class="col-md-6 col-xs-12 produkt_description">
+            <h3>Mini</h3>
+            <p>Mini  Авторегистратор нового поколения Качество изображения 10М</p>
+            <a class="button button_descr" href="#">подробнее</a>
+          </div>
+        </div>
+      </div>
+        <div class="row bg-blue">
+          <div class="container">
+          <div class="col-md-6 col-md-push-6 col-xs-12 product_img">
+            <img class="img-responsive" src="img/mini2.png" alt="">
+          </div>
+          <div class="col-md-6 col-md-pull-6 col-xs-12 produkt_description">
+            <h3>Mini2</h3>
+            <p>Mini2  Авторегистратор нового поколения Качество изображения 10М</p>
+            <a class="button button_descr" href="#">подробнее</a>
+          </div>
+        </div>
+      </div>
+        <div class="row">
+          <div class="container">
+          <div class="col-md-6 col-xs-12 product_img">
+            <img class="img-responsive" src="img/x2pro.png" alt="">
+          </div>
+          <div class="col-md-6 col-xs-12 produkt_description">
+            <h3>Mini2</h3>
+            <p>Mini  Авторегистратор нового поколения Качество изображения 10М</p>
+            <a class="button button_descr" href="#">подробнее</a>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <script type="text/javascript" src="js/swiper.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-xs-12">
+            <div class="row footer_contact">
+              <ul class="col-md-6 col-xs-12">
+                <li class="text-left"><a href="#">Продукты</a></li>
+                <li class="text-left"><a href="#">Mini</a></li>
+                <li class="text-left"><a href="#">Mini2</a></li>
+                <li class="text-left"><a href="#">X2Pro</a></li>
+              </ul>
+              <ul class="col-md-6 col-xs-12">
+                <li class="text-left"><a href="#">Приложение</a></li>
+                <li class="text-left"><a href="#">AppStore</a></li>
+                <li class="text-left"><a href="#">Google Play</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-xs-12 footer_contact">
+            <ul>
+              <li class="text-right"><a href="#">О компании</a></li>
+              <li class="text-right"><a href="#">Связаться с нами</a></li>
+              <li class="text-right"><a href="#">тел.8(495)777 77 77</a></li>
+              <li class="text-right"><a href="#">ddpi@gmail.com</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer_soc container">
+        <ul class="nav navbar-nav navbar-right soc">
+          <li><a class="soc-facebook" href="#"></a></li>
+          <li><a class="soc-vkontakte" href="#"></a></li>
+          <li><a class="soc-instagram soc-icon-last" href="#"></a></li>
+        </ul>
+      </div>
     </footer>
   </body>
 </html>
