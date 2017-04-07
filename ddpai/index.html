@@ -32,7 +32,7 @@
               <span class="icon-bar"></span>
             </button>
             <!-- Бренд или логотип фирмы (обычно содержит ссылку на главную страницу) -->
-            <a href="#" class="navbar-brand navbar-brand_modif"><img src="img/logo.png" alt=""></a>
+            <a href="#" class="navbar-brand navbar-brand_modif"><img class="img-logo" src="img/logo.png" alt=""></a>
           </div>
           <!-- Содержимое меню (коллекция навигационных ссылок, формы и др.) -->
           <div class="collapse navbar-collapse navbar-collapse_modif" id="main-menu" >
@@ -104,12 +104,14 @@
             <div class="jcarousel">
                 <ul>
                     <li>
-                      <a class="video-box" href="https://www.youtube.com/embed/XkQdRKvJKRQ?list=PL73sjHg5U5xSzR9Ci8dPJehjJAQWjlDnO" target="_blank" data-group="alpha" savefrom_lm_index="2">
-                        <p class="logo-box">
-                          <img src="img/01.jpg" alt="Tech Overview - Видеорегистратор DDPai mini - обзор">
-                          <i class="fa-play"></i>
-                        </p>
-                      </a>
+                      <div class="video-wrapper">
+                        <a class="video-box" href="https://www.youtube.com/embed/XkQdRKvJKRQ?list=PL73sjHg5U5xSzR9Ci8dPJehjJAQWjlDnO" target="_blank" data-group="alpha" savefrom_lm_index="2">
+                          <p class="logo-box">
+                            <img src="img/01.jpg" alt="Tech Overview - Видеорегистратор DDPai mini - обзор">
+                            <i class="fa-play"></i>
+                          </p>
+                        </a>
+                      </div>
                       <div class="desc">
                         <a class="video-box" href="https://www.youtube.com/embed/XkQdRKvJKRQ?list=PL73sjHg5U5xSzR9Ci8dPJehjJAQWjlDnO" data-group="alpha" title="Tech Overview - Видеорегистратор DDPai mini - обзор" target="_blank" savefrom_lm_index="0" savefrom_lm="1">
                           <h3>Tech Overview - Видеорегистратор DDPai mini - обзор</h3>
@@ -228,34 +230,26 @@
       </div>
       </div>
     </section>
-    <script type="text/javascript" src="js/swiper.min.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
-    <footer class="footer">
+    <footer class="footer bg-blue">
       <div class="container">
         <div class="row">
-          <div class="col-md-6 col-xs-12">
-            <div class="row footer_contact">
-              <ul class="col-md-6 col-xs-12">
-                <li class="text-left"><a href="#">Продукты</a></li>
-                <li class="text-left"><a href="#">Mini</a></li>
-                <li class="text-left"><a href="#">Mini2</a></li>
-                <li class="text-left"><a href="#">X2Pro</a></li>
-              </ul>
-              <ul class="col-md-6 col-xs-12">
-                <li class="text-left"><a href="#">Приложение</a></li>
-                <li class="text-left"><a href="#">AppStore</a></li>
-                <li class="text-left"><a href="#">Google Play</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md-6 col-xs-12 footer_contact">
-            <ul>
-              <li class="text-right"><a href="#">О компании</a></li>
-              <li class="text-right"><a href="#">Связаться с нами</a></li>
-              <li class="text-right"><a href="#">тел.8(495)777 77 77</a></li>
-              <li class="text-right"><a href="#">ddpi@gmail.com</a></li>
-            </ul>
-          </div>
+          <ul class="col-md-4 col-sm-4 col-xs-6 about_company">
+            <li class="text-left"><a href="#">Продукты</a></li>
+            <li class="text-left"><a href="#">Mini</a></li>
+            <li class="text-left"><a href="#">Mini2</a></li>
+            <li class="text-left"><a href="#">X2Pro</a></li>
+          </ul>
+          <ul class="col-md-4 col-sm-4 col-xs-6 about_company">
+            <li class="text-left"><a href="#">Приложение</a></li>
+            <li class="text-left"><a href="#">AppStore</a></li>
+            <li class="text-left"><a href="#">Google Play</a></li>
+          </ul>
+          <ul class="col-md-4 col-sm-4 col-xs-6 about_company">
+            <li class="text-left"><a href="#">О компании</a></li>
+            <li class="text-left"><a href="#">Связаться с нами</a></li>
+            <li class="text-left"><a href="#">тел.8(495)777 77 77</a></li>
+            <li class="text-left"><a href="#">ddpi@gmail.com</a></li>
+          </ul>
         </div>
       </div>
       <div class="footer_soc container">
@@ -266,5 +260,7 @@
         </ul>
       </div>
     </footer>
+    <script type="text/javascript" src="js/swiper.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
   </body>
 </html>

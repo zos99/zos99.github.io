@@ -6053,20 +6053,23 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
+body {
+  min-width: 320px; }
+
 .main-menu .navbar_modify {
   background-color: #fff;
   border-color: #fff; }
   .main-menu .navbar_modify .navbar-header_modif {
-    margin: 4px 0 5px; }
+    margin: 10px; }
     .main-menu .navbar_modify .navbar-header_modif .navbar-brand_modif {
       padding: 0;
       height: 100%; }
-  .main-menu .navbar_modify .navbar-collapse_modif .navbar-nav {
-    padding-left: 50px; }
-    .main-menu .navbar_modify .navbar-collapse_modif .navbar-nav li a {
-      text-transform: uppercase;
-      font-size: 16px;
-      font-family: "GothamProRegular", sans-serif; }
+      .main-menu .navbar_modify .navbar-header_modif .navbar-brand_modif .img-logo {
+        width: 70%; }
+  .main-menu .navbar_modify .navbar-collapse_modif .navbar-nav li a {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-family: "GothamProRegular", sans-serif; }
 
 .soc {
   overflow: hidden;
@@ -6161,7 +6164,7 @@ button.close {
   font-weight: none; }
 
 .bg-blue {
-  background-color: #f7f8fa;
+  background-color: #f0f2f6;
   font-size: 12px; }
 
 .siteslider {
@@ -6220,7 +6223,7 @@ button.close {
   background-position: center; }
 
 .about-product {
-  background-color: #f7f8fa;
+  background-color: #f0f2f6;
   padding: 50px 0; }
   .about-product .text-center h3 {
     text-transform: uppercase;
@@ -6229,24 +6232,27 @@ button.close {
     font-size: 22px;
     margin-bottom: 30px; }
   .about-product .jcarousel-wrapper .jcarousel ul li {
-    margin-right: 20px;
-    background-image: url(../img/bgslaider.png);
-    background-repeat: repeat; }
-    .about-product .jcarousel-wrapper .jcarousel ul li .video-box {
-      color: #707473;
-      font-family: "GothamProRegular", sans-serif;
-      font-size: 12px; }
-      .about-product .jcarousel-wrapper .jcarousel ul li .video-box:hover {
-        text-decoration: none; }
-      .about-product .jcarousel-wrapper .jcarousel ul li .video-box .logo-box img {
-        cursor: pointer; }
-      .about-product .jcarousel-wrapper .jcarousel ul li .video-box .logo-box .fa-play {
-        font-size: 2em;
-        left: 50%;
-        margin-left: -11px;
-        margin-top: -11px;
-        position: absolute;
-        top: 50%; }
+    margin-right: 20px; }
+    .about-product .jcarousel-wrapper .jcarousel ul li .video-wrapper {
+      background-image: url(../img/bgslaider.png);
+      background-repeat: repeat;
+      position: relative; }
+      .about-product .jcarousel-wrapper .jcarousel ul li .video-wrapper .video-box {
+        color: #707473;
+        font-family: "GothamProRegular", sans-serif;
+        font-size: 12px;
+        width: 60%; }
+        .about-product .jcarousel-wrapper .jcarousel ul li .video-wrapper .video-box:hover {
+          text-decoration: none; }
+        .about-product .jcarousel-wrapper .jcarousel ul li .video-wrapper .video-box .logo-box img {
+          cursor: pointer; }
+        .about-product .jcarousel-wrapper .jcarousel ul li .video-wrapper .video-box .logo-box .fa-play {
+          font-size: 2em;
+          left: 50%;
+          margin-left: -11px;
+          margin-top: -11px;
+          position: absolute;
+          top: 50%; }
     .about-product .jcarousel-wrapper .jcarousel ul li .desc .video-box h3 {
       color: #707473;
       font-family: "GothamProRegular", sans-serif;
@@ -6257,7 +6263,9 @@ button.close {
   color: #707473;
   font-family: "GothamProRegular", sans-serif; }
   .product .row {
-    padding: 150px 0; }
+    padding: 50px 0;
+    margin-left: 0 !important;
+    margin-right: 0 !important; }
 
 .produkt_description {
   padding-left: 50px; }
@@ -6272,16 +6280,18 @@ button.close {
     font-family: "GothamProRegular", sans-serif;
     font-size: 20px; }
 
-.footer_contact a {
-  color: #4c4b4b;
-  font-size: 15px;
-  font-family: "GothamProRegular", sans-serif; }
-  .footer_contact a:hover {
-    color: #2c2b2b;
-    text-decoration: underline; }
+.footer {
+  padding-bottom: 30px; }
+  .footer a {
+    color: #4c4b4b;
+    font-size: 15px;
+    font-family: "GothamProRegular", sans-serif; }
+    .footer a:hover {
+      color: #2c2b2b;
+      text-decoration: underline; }
 
-.footer_soc {
-  margin-bottom: 60px; }
+.about_company {
+  padding-top: 30px; }
 
 @media (max-width: 768px) {
   .siteslider .swiper-container .swiper-wrapper .swiper-slide .position {
@@ -6289,6 +6299,14 @@ button.close {
     left: 50%;
     position: absolute;
     transform: translate(-50%, -50%);
-    text-align: center; } }
+    text-align: center; }
+
+  .footer_contact a {
+    color: #4c4b4b;
+    font-size: 15px;
+    font-family: "GothamProRegular", sans-serif; }
+    .footer_contact a:hover {
+      color: #2c2b2b;
+      text-decoration: underline; } }
 
 /*# sourceMappingURL=main.css.map */

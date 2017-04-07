@@ -20,4 +20,16 @@
       }
     }
   }
+  .footer_contact {
+    a {
+      color: $fontGreyB;
+      font-size: 15px;
+      font-family: $fontGothamPro;
+      &:hover {
+        color:$fontGreyDD;
+        text-decoration: underline;
+        
+      }
+    }
+  }
 }

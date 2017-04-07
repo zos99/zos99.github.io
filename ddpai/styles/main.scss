@@ -1,5 +1,5 @@
 $fontColor: #313131;
-$fontDWhite: #f7f8fa;
+$fontDWhite: #f0f2f6;
 $fontBroun:  #d1ab66;
 $fontBlue:   #13609f;
 $fontFooter: #0a488a;
@@ -318,24 +318,29 @@ html, body {
 }
 
 @import 'bootstrap-custom';
+body {
+  min-width: 320px;
+}
 .main-menu {
   .navbar_modify {
     background-color: $fontWhite;
     border-color: $fontWhite;
     .navbar-header_modif {
-      margin: 4px 0 5px;
+      margin: 10px;
       .navbar-brand_modif {
         padding: 0;
         height: 100%;
+        .img-logo {
+          width: 70%;
+        }
       }
     }
     .navbar-collapse_modif {
       .navbar-nav {
-        padding-left: 50px;
         li {
           a {
             text-transform: uppercase;
-            font-size: 16px;
+            font-size: 12px;
             font-family: $fontGothamPro;
           }
         }
@@ -535,26 +540,30 @@ html, body {
       ul {
         li {
           margin-right: 20px;
-          background-image: url(../img/bgslaider.png);
-          background-repeat: repeat;
-          .video-box {
-            color: $fontGreyD;
-            font-family: $fontGothamPro;
-            font-size: 12px;
-            &:hover {
-              text-decoration: none;
-            }
-            .logo-box {
-              img {
-                cursor: pointer;
+          .video-wrapper {
+            background-image: url(../img/bgslaider.png);
+            background-repeat: repeat;
+            position: relative;
+            .video-box {
+              color: $fontGreyD;
+              font-family: $fontGothamPro;
+              font-size: 12px;
+              width: 60%;
+              &:hover {
+                text-decoration: none;
               }
-              .fa-play {
-                font-size: 2em;
-                left: 50%;
-                margin-left: -11px;
-                margin-top: -11px;
-                position: absolute;
-                top: 50%;
+              .logo-box {
+                img {
+                  cursor: pointer;
+                }
+                .fa-play {
+                  font-size: 2em;
+                  left: 50%;
+                  margin-left: -11px;
+                  margin-top: -11px;
+                  position: absolute;
+                  top: 50%;
+                }
               }
             }
           }
@@ -577,7 +586,9 @@ html, body {
   color: $fontGreyD;
   font-family: $fontGothamPro;
   .row {
-    padding: 150px 0;
+    padding: 50px 0;
+    margin-left: 0!important;
+    margin-right: 0!important;
   }
 }
 .produkt_description {
@@ -595,7 +606,8 @@ html, body {
     font-size: 20px;
   }
 }
-.footer_contact {
+.footer {
+  padding-bottom: 30px;
   a {
     color: $fontGreyB;
     font-size: 15px;
@@ -606,8 +618,8 @@ html, body {
     }
   }
 }
-.footer_soc {
-    margin-bottom: 60px;
+.about_company {
+  padding-top: 30px;
 }
 
 @media (max-width: 768px){
@@ -629,6 +641,18 @@ html, body {
             }
           }
         }
+      }
+    }
+  }
+  .footer_contact {
+    a {
+      color: $fontGreyB;
+      font-size: 15px;
+      font-family: $fontGothamPro;
+      &:hover {
+        color:$fontGreyDD;
+        text-decoration: underline;
+        
       }
     }
   }
