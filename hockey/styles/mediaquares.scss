@@ -1,0 +1,35 @@
+@media (max-width: 768px){
+  .siteslider {
+    .swiper-container {
+      .swiper-wrapper {
+        .swiper-slide {
+          .position {
+            top: 50%;
+            left: 50%;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            .title {
+            }
+            .subtitle {
+            }
+            .text {
+            }
+          }
+        }
+      }
+    }
+  }
+  .footer_contact {
+    a {
+      color: $fontGreyB;
+      font-size: 15px;
+      font-family: $fontGothamPro;
+      &:hover {
+        color:$fontGreyDD;
+        text-decoration: underline;
+        
+      }
+    }
+  }
+}

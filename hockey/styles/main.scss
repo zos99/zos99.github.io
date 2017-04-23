@@ -1,0 +1,659 @@
+$fontColor: #313131;
+$fontDWhite: #f0f2f6;
+$fontBroun:  #d1ab66;
+$fontBlue:   #13609f;
+$fontFooter: #0a488a;
+$fontWhite:  #fff;
+$fontGrey: #a6a6a6;
+$fontGreyD: #707473;
+$fontGreyB: #4c4b4b;
+$fontGreyDD: #2c2b2b;
+$btnRed: #7d0000;
+$fontArial:   "Arial";
+$fontRoboto: "Roboto",sans-serif;
+$fontAmesome: "FontAwesome";
+$fontGothamPro: "GothamProRegular",sans-serif;
+
+@font-face {
+    font-family: 'montserrat';
+    src:  url('../fonts/Montserrat-Bold.ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'montserrat';
+    src:  url('../fonts/Montserrat-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto';
+    src:  url('../fonts/Roboto-BlackItalic.ttf');
+    font-weight: Black;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Roboto';
+    src:  url('../fonts/Roboto-Black.ttf');
+    font-weight: Black;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto';
+    src:  url('../fonts/Roboto-Bold.ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto';
+    src:  url('../fonts/Roboto-BoldItalic.ttf');
+    font-weight: bold;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Roboto';
+    src:  url('../fonts/Roboto-Italic.ttf');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Roboto';
+    src:  url('../fonts/Roboto-Italic.ttf');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Roboto';
+    src:  url('../fonts/Roboto-Light.ttf');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto';
+    src:  url('../fonts/Roboto-LightItalic.ttf');
+    font-weight: 100;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Roboto';
+    src:  url('../fonts/Roboto-Medium.ttf');
+    font-weight: 500; ///?
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto';
+    src:  url('../fonts/Roboto-MediumItalic.ttf');
+    font-weight: 500;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Roboto';
+    src:  url('../fonts/Roboto-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto';
+    src:  url('../fonts/Roboto-Thin.ttf');
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto';
+    src:  url('../fonts/Roboto-ThinItalic.ttf');
+    font-weight: 200;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'si';
+    src: url('../fonts/socicon.eot');
+    src: url('../fonts/socicon.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/socicon.woff') format('woff'),
+         url('../fonts/socicon.ttf') format('truetype'),
+         url('../fonts/socicon.svg#icomoonregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    @font-face {
+        font-family:si;
+        src: url(../fonts/socicon.svg) format(svg);
+    }
+}
+/* font-family: "GothamProRegular"; */
+@font-face {
+    font-family: "GothamProRegular";
+    src: url("../fonts/GothamProRegular/GothamProRegular.eot");
+    src: url("../fonts/GothamProRegular/GothamProRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/GothamProRegular/GothamProRegular.woff") format("woff"),
+    url("../fonts/GothamProRegular/GothamProRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "GothamProBold"; */
+@font-face {
+    font-family: "GothamProBold";
+    src: url("../fonts/GothamProBold/GothamProBold.eot");
+    src: url("../fonts/GothamProBold/GothamProBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/GothamProBold/GothamProBold.woff") format("woff"),
+    url("../fonts/GothamProBold/GothamProBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "GothamProBlack"; */
+@font-face {
+    font-family: "GothamProBlack";
+    src: url("../fonts/GothamProBlack/GothamProBlack.eot");
+    src: url("../fonts/GothamProBlack/GothamProBlack.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/GothamProBlack/GothamProBlack.woff") format("woff"),
+    url("../fonts/GothamProBlack/GothamProBlack.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "GothamProItalic"; */
+@font-face {
+    font-family: "GothamProItalic";
+    src: url("../fonts/GothamProItalic/GothamProItalic.eot");
+    src: url("../fonts/GothamProItalic/GothamProItalic.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/GothamProItalic/GothamProItalic.woff") format("woff"),
+    url("../fonts/GothamProItalic/GothamProItalic.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "GothamProMedium"; */
+@font-face {
+    font-family: "GothamProMedium";
+    src: url("../fonts/GothamProMedium/GothamProMedium.eot");
+    src: url("../fonts/GothamProMedium/GothamProMedium.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/GothamProMedium/GothamProMedium.woff") format("woff"),
+    url("../fonts/GothamProMedium/GothamProMedium.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "GothamProLight"; */
+@font-face {
+    font-family: "GothamProLight";
+    src: url("../fonts/GothamProLight/GothamProLight.eot");
+    src: url("../fonts/GothamProLight/GothamProLight.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/GothamProLight/GothamProLight.woff") format("woff"),
+    url("../fonts/GothamProLight/GothamProLight.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "GothamProMediumItalic"; */
+@font-face {
+    font-family: "GothamProMediumItalic";
+    src: url("../fonts/GothamProMediumItalic/GothamProMediumItalic.eot");
+    src: url("../fonts/GothamProMediumItalic/GothamProMediumItalic.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/GothamProMediumItalic/GothamProMediumItalic.woff") format("woff"),
+    url("../fonts/GothamProMediumItalic/GothamProMediumItalic.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "GothamProLightItalic"; */
+@font-face {
+    font-family: "GothamProLightItalic";
+    src: url("../fonts/GothamProLightItalic/GothamProLightItalic.eot");
+    src: url("../fonts/GothamProLightItalic/GothamProLightItalic.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/GothamProLightItalic/GothamProLightItalic.woff") format("woff"),
+    url("../fonts/GothamProLightItalic/GothamProLightItalic.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "GothamProBoldItalic"; */
+@font-face {
+    font-family: "GothamProBoldItalic";
+    src: url("../fonts/GothamProBoldItalic/GothamProBoldItalic.eot");
+    src: url("../fonts/GothamProBoldItalic/GothamProBoldItalic.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/GothamProBoldItalic/GothamProBoldItalic.woff") format("woff"),
+    url("../fonts/GothamProBoldItalic/GothamProBoldItalic.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "GothamProBlackItalic"; */
+@font-face {
+    font-family: "GothamProBlackItalic";
+    src: url("../fonts/GothamProBlackItalic/GothamProBlackItalic.eot");
+    src: url("../fonts/GothamProBlackItalic/GothamProBlackItalic.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/GothamProBlackItalic/GothamProBlackItalic.woff") format("woff"),
+    url("../fonts/GothamProBlackItalic/GothamProBlackItalic.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+html, body, div, span, applet,
+object, iframe, h1, h2, h3, h4,
+h5, h6, p, blockquote, pre, a,
+abbr, acronym, address, big, cite,
+code, del, dfn, em, img, ins, kbd,
+q, s, samp, small, strike, strong,
+sub, sup, tt, var, b, u, i, center,
+dl, dt, dd, ol, ul, li, fieldset,
+form, legend, table, caption,
+tbody, tfoot, thead, tr, th, td, article,
+aside, canvas, details, embed, figure,
+figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section,
+summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  background: transparent;
+  font-size: 100%;
+}
+img {
+  vertical-align: top;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+nav,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+  &:before,
+  &:after {
+    content: '';
+    content: none;
+  }
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+svg {
+  display: block;
+  overflow: visible;
+}
+pre {
+  border:1px solid #000;
+  overflow-x:auto;
+  background: #222;
+  color: #fff;
+  text-shadow: none;
+}
+body {
+  color: $fontColor;
+  font-size: 100%;
+	font-family: $fontRoboto;
+}
+b,
+strong {
+    font-weight: bold;
+}
+a,
+a:link,
+a:visited,
+a:focus {
+    color: #fff;
+}
+p {
+  margin: 0;
+}
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+html, body {
+  height: 100%;
+  width: 100%;
+  color: $fontGreyD;
+}
+
+@import 'bootstrap-custom';
+body {
+  min-width: 320px;
+}
+.main-menu {
+  .navbar_modify {
+    background-color: $fontWhite;
+    border-color: $fontWhite;
+    .navbar-header_modif {
+      margin: 10px;
+      .navbar-brand_modif {
+        padding: 0;
+        height: 100%;
+        .img-logo {
+          width: 70%;
+        }
+      }
+    }
+    .navbar-collapse_modif {
+      .navbar-nav {
+        li {
+          a {
+            text-transform: uppercase;
+            font-size: 12px;
+            font-family: $fontGothamPro;
+          }
+        }
+      }
+    }
+  }
+}
+.soc {
+    overflow:hidden;
+    margin:0;
+    padding:9px 0;
+    list-style:none;
+}
+
+.soc li {
+    display:inline-block;
+    *display:inline;
+    zoom:1;
+}
+
+.soc li a {
+    font-family:si!important;
+    font-style:normal;
+    font-weight:400;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -ms-box-sizing:border-box;
+    -o-box-sizing:border-box;
+    box-sizing:border-box;
+
+    -o-transition:.1s;
+    -ms-transition:.1s;
+    -moz-transition:.1s;
+    -webkit-transition:.1s;
+    transition:.1s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+
+    overflow:hidden;
+    text-decoration:none;
+    text-align:center;
+    display:block;
+    position: relative;
+    z-index: 1;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    font-size: 18px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    margin-right: 15px;
+    color: #ffffff!important;
+    background-color: #a6a6a6;
+    padding: 0!important;
+}
+
+.soc a:hover {
+    z-index: 2;
+    background-color:#929292 !important;
+}
+
+.soc-icon-last{
+    margin:0 !important;
+}
+
+.soc-facebook:before {
+    content:'\e041';
+}
+.soc-vkontakte:before {
+    content:'\e01a';
+}
+.soc-instagram:before {
+    content:'\e057';
+}
+/*------------------------------------------------------*/
+.button {
+  background: $btnRed none repeat scroll 0 0;
+  border: 2px solid $btnRed;
+  border-radius: 2px;
+  color: $fontWhite;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 400;
+  height: 39px;
+  line-height: 17px;
+  padding: 9px 10px;
+  transition: all 300ms ease 0s;
+  &:hover {
+    background-color: transparent;
+    border: 2px solid $btnRed;
+    color: $btnRed;
+    text-decoration: none;
+  }
+}
+.button_descr {
+  color: $fontGreyB;
+  font-style: $fontGothamPro;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: none;
+}
+.bg-blue {
+  background-color: $fontDWhite;
+  font-size: 12px;
+}
+.siteslider {
+  position: relative;
+  .swiper-container {
+    .swiper-wrapper {
+      .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        height: 674px;
+        .position {
+          top: 50%;
+          left: 15%;
+          position: absolute;
+          transform: translate(-15%, -50%);
+          .title {
+            font-size: 41px;
+            font-weight: 300;
+            color: $fontWhite;
+            font-family: $fontGothamPro;
+          }
+          .subtitle {
+            font-size: 21px;
+            color: $fontWhite;
+            text-transform: uppercase;
+            font-family: $fontGothamPro;
+            margin-top: 35px;
+            margin-bottom: 35px;
+          }
+          .text {
+            font-size: 14px;
+            max-width: 400px;
+            line-height: 1.3;
+            color: $fontWhite;
+            font-family: $fontGothamPro;
+            a {
+              text-transform: uppercase;
+            }
+          }
+        }
+      }
+      .swiper-slide_left {
+        background-image: url(../img/banner_2.jpg);
+      }
+      .swiper-slide_center {
+        background-image: url(../img/banner_3.jpg);
+      }
+      .swiper-slide_right {
+        background-image: url(../img/banner_4.jpg);
+      }
+    }
+    .swiper-pagination {
+      .swiper-pagination-bullet {
+        border-radius: 0;
+        width: 72px;
+        height: 2px;
+        background-color: #5d5d5d;
+        border-color: #5d5d5d;
+        margin: 3px;
+      }
+    }
+  }
+}
+.parallax-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 130%;
+  height: 100%;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+}
+.about-product {
+  background-color: $fontDWhite;
+  padding: 50px 0;
+  .text-center {
+    h3 {
+      text-transform: uppercase;
+      color: $fontGreyD;
+      font-family: $fontGothamPro;
+      font-size: 22px;
+      margin-bottom: 30px;
+    }
+  }
+  .jcarousel-wrapper {
+    .jcarousel {
+      ul {
+        li {
+          margin-right: 20px;
+          .video-wrapper {
+            background-image: url(../img/bgslaider.png);
+            background-repeat: repeat;
+            position: relative;
+            .video-box {
+              color: $fontGreyD;
+              font-family: $fontGothamPro;
+              font-size: 12px;
+              width: 60%;
+              &:hover {
+                text-decoration: none;
+              }
+              .logo-box {
+                img {
+                  cursor: pointer;
+                }
+                .fa-play {
+                  font-size: 2em;
+                  left: 50%;
+                  margin-left: -11px;
+                  margin-top: -11px;
+                  position: absolute;
+                  top: 50%;
+                }
+              }
+            }
+          }
+          .desc {
+            .video-box {
+              h3 {
+                color: $fontGreyD;
+                font-family: $fontGothamPro;
+                font-size: 18px;
+                text-align: center;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.product {
+  color: $fontGreyD;
+  font-family: $fontGothamPro;
+  .row {
+    padding: 50px 0;
+    margin-left: 0!important;
+    margin-right: 0!important;
+  }
+}
+.produkt_description {
+  padding-left: 50px;
+  h3 {
+    color: $fontGreyB;
+    font-family: $fontGothamPro;
+    font-size: 40px;
+    font-weight: bold;
+  }
+  p {
+    padding: 40px 0 60px;
+    color: $fontGreyB;
+    font-family: $fontGothamPro;
+    font-size: 20px;
+  }
+}
+.footer {
+  padding-bottom: 30px;
+  a {
+    color: $fontGreyB;
+    font-size: 15px;
+    font-family: $fontGothamPro;
+    &:hover {
+      color:$fontGreyDD;
+      text-decoration: underline;
+    }
+  }
+}
+.about_company {
+  padding-top: 30px;
+}
+
+@media (max-width: 768px){
+  .siteslider {
+    .swiper-container {
+      .swiper-wrapper {
+        .swiper-slide {
+          .position {
+            top: 50%;
+            left: 50%;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            .title {
+            }
+            .subtitle {
+            }
+            .text {
+            }
+          }
+        }
+      }
+    }
+  }
+  .footer_contact {
+    a {
+      color: $fontGreyB;
+      font-size: 15px;
+      font-family: $fontGothamPro;
+      &:hover {
+        color:$fontGreyDD;
+        text-decoration: underline;
+        
+      }
+    }
+  }
+}

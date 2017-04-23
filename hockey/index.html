@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <!-- Предназначен для управления режимом отображением веб-страницы в браузерах
+    Internet Explorer -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Включает масштабирование на мобильных устройствах -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Текст заголовка веб-страницы -->
+    <title>DDPai</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/jcarousel.responsive.css">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
+    <script type="text/javascript" src="js/jcarousel.responsive.js"></script>
+  </head>
+  <body>
+    <header class="main-menu">
+      <div class="container">
+        <!-- Меню navbar -->
+        <nav class="navbar navbar-default navbar_modify">
+          <!-- Бренд и переключатель, который вызывает меню на мобильных устройствах -->
+          <div class="navbar-header navbar-header_modif">
+            <!-- Кнопка с полосочками, которая открывает меню на мобильных устройствах -->
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <!-- Бренд или логотип фирмы (обычно содержит ссылку на главную страницу) -->
+            <a href="#" class="navbar-brand navbar-brand_modif"><img class="img-logo" src="img/logo.png" alt=""></a>
+          </div>
+          <!-- Содержимое меню (коллекция навигационных ссылок, формы и др.) -->
+          <div class="collapse navbar-collapse navbar-collapse_modif" id="main-menu" >
+            <!-- Список ссылок, расположенных слева -->
+            <ul class="nav navbar-nav">
+              <!--Элемент с классом active отображает ссылку подсвеченной -->
+              <li><a href="#">Продукты</a></li>
+              <li><a href="#">Приложение</a></li>
+              <li><a href="#">О компании</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+            <!-- Список ссылок, расположенный справа -->
+            <ul class="nav navbar-nav navbar-right soc">
+              <li><a class="soc-facebook" href="#"></a></li>
+              <li><a class="soc-vkontakte" href="#"></a></li>
+              <li><a class="soc-instagram soc-icon-last" href="#"></a></li>
+            </ul>
+          </div>
+        </nav>
+
+      </div>
+    </header>
+    <section class="siteslider">
+      <!-- Swiper -->
+      <div class="swiper-container">
+        <div class="parallax-bg"></div>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide swiper-slide_left">
+              <div class="position">
+                <div class="title" data-swiper-parallax="-200">X2 Pro</div>
+                <div class="subtitle" data-swiper-parallax="-800">Яркий подарок для любого торжества</div>
+                <div class="text" data-swiper-parallax="-1200">
+                  <a class="button" href="#">узнать больше</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide swiper-slide_center">
+              <div class="position">
+                <div class="title" data-swiper-parallax="-200">M4 Plus</div>
+                <div class="subtitle" data-swiper-parallax="-800">EXTRAORDINARY RACING EXPERIENCE</div>
+                <div class="text" data-swiper-parallax="-1200">
+                  <a class="button" href="#">узнать больше</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide swiper-slide_right">
+              <div class="position">
+                <div class="title" data-swiper-parallax="-200">mini2</div>
+                <div class="subtitle" data-swiper-parallax="-800">начните дорожное приключение</div>
+                <div class="text" data-swiper-parallax="-1200">
+                  <a class="button" href="#">узнать больше</a>
+                </div>
+              </div>
+            </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination swiper-pagination-white"></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next swiper-button-white"></div>
+        <div class="swiper-button-prev swiper-button-white"></div>
+      </div>
+    </section>
+    <section class="about-product">
+      <div class="container">
+        <div class="text-center">
+          <h3>Видео о продуктах</h3>
+        </div>
+        <div class="jcarousel-wrapper">
+            <div class="jcarousel">
+                <ul>
+                    <li>
+                      <div class="video-wrapper">
+                        <a class="video-box" href="https://www.youtube.com/embed/XkQdRKvJKRQ?list=PL73sjHg5U5xSzR9Ci8dPJehjJAQWjlDnO" target="_blank" data-group="alpha" savefrom_lm_index="2">
+                          <p class="logo-box">
+                            <img src="img/01.jpg" alt="Tech Overview - Видеорегистратор DDPai mini - обзор">
+                            <i class="fa-play"></i>
+                          </p>
+                        </a>
+                      </div>
+                      <div class="desc">
+                        <a class="video-box" href="https://www.youtube.com/embed/XkQdRKvJKRQ?list=PL73sjHg5U5xSzR9Ci8dPJehjJAQWjlDnO" data-group="alpha" title="Tech Overview - Видеорегистратор DDPai mini - обзор" target="_blank" savefrom_lm_index="0" savefrom_lm="1">
+                          <h3>Tech Overview - Видеорегистратор DDPai mini - обзор</h3>
+                        </a>
+                      </div>
+                    </li>
+                    <li>
+                      <a class="video-box" href="https://www.youtube.com/embed/XkQdRKvJKRQ?list=PL73sjHg5U5xSzR9Ci8dPJehjJAQWjlDnO" target="_blank" data-group="alpha" savefrom_lm_index="2">
+                        <p class="logo-box">
+                          <img src="img/02.jpg" alt="Tech Overview - Видеорегистратор DDPai mini - обзор">
+                          <i class="fa-play"></i>
+                        </p>
+                      </a>
+                      <div class="desc">
+                        <a class="fancybox-media fancybox video-box" href="https://www.youtube.com/embed/XkQdRKvJKRQ?list=PL73sjHg5U5xSzR9Ci8dPJehjJAQWjlDnO" data-group="alpha" title="Tech Overview - Видеорегистратор DDPai mini - обзор" target="_blank" savefrom_lm_index="0" savefrom_lm="1">
+                          <h3>Tech Overview - Видеорегистратор DDPai mini - обзор</h3>
+                        </a>
+                      </div>
+                    </li>
+                    <li>
+                      <a class="video-box" href="https://www.youtube.com/embed/XkQdRKvJKRQ?list=PL73sjHg5U5xSzR9Ci8dPJehjJAQWjlDnO" target="_blank" data-group="alpha" savefrom_lm_index="2">
+                        <p class="logo-box">
+                          <img src="img/03.jpg" alt="Tech Overview - Видеорегистратор DDPai mini - обзор">
+                          <i class="fa-play"></i>
+                        </p>
+                      </a>
+                      <div class="desc">
+                        <a class="fancybox-media fancybox video-box" href="https://www.youtube.com/embed/XkQdRKvJKRQ?list=PL73sjHg5U5xSzR9Ci8dPJehjJAQWjlDnO" data-group="alpha" title="Tech Overview - Видеорегистратор DDPai mini - обзор" target="_blank" savefrom_lm_index="0" savefrom_lm="1">
+                          <h3>Tech Overview - Видеорегистратор DDPai mini - обзор</h3>
+                        </a>
+                      </div>
+                    </li>
+                    <li>
+                      <a class="video-box" href="https://www.youtube.com/embed/XkQdRKvJKRQ?list=PL73sjHg5U5xSzR9Ci8dPJehjJAQWjlDnO" target="_blank" data-group="alpha" savefrom_lm_index="2">
+                        <p class="logo-box">
+                          <img src="img/04.jpg" alt="Tech Overview - Видеорегистратор DDPai mini - обзор">
+                          <i class="fa-play"></i>
+                        </p>
+                      </a>
+                      <div class="desc">
+                        <a class="video-box" href="https://www.youtube.com/embed/XkQdRKvJKRQ?list=PL73sjHg5U5xSzR9Ci8dPJehjJAQWjlDnO" data-group="alpha" title="Tech Overview - Видеорегистратор DDPai mini - обзор" target="_blank" savefrom_lm_index="0" savefrom_lm="1">
+                          <h3>Tech Overview - Видеорегистратор DDPai mini - обзор</h3>
+                        </a>
+                      </div>
+                    </li>
+                    <li>
+                      <a class="video-box" href="https://www.youtube.com/embed/XkQdRKvJKRQ?list=PL73sjHg5U5xSzR9Ci8dPJehjJAQWjlDnO" target="_blank" data-group="alpha" savefrom_lm_index="2">
+                        <p class="logo-box">
+                          <img src="img/05.jpg" alt="Tech Overview - Видеорегистратор DDPai mini - обзор">
+                          <i class="fa-play"></i>
+                        </p>
+                      </a>
+                      <div class="desc">
+                        <a class="fancybox-media fancybox video-box" href="https://www.youtube.com/embed/XkQdRKvJKRQ?list=PL73sjHg5U5xSzR9Ci8dPJehjJAQWjlDnO" data-group="alpha" title="Tech Overview - Видеорегистратор DDPai mini - обзор" target="_blank" savefrom_lm_index="0" savefrom_lm="1">
+                          <h3>Tech Overview - Видеорегистратор DDPai mini - обзор</h3>
+                        </a>
+                      </div>
+                    </li>
+                    <li>
+                      <a class="video-box" href="https://www.youtube.com/embed/XkQdRKvJKRQ?list=PL73sjHg5U5xSzR9Ci8dPJehjJAQWjlDnO" target="_blank" data-group="alpha" savefrom_lm_index="2">
+                        <p class="logo-box">
+                          <img src="img/06.jpg" alt="Tech Overview - Видеорегистратор DDPai mini - обзор">
+                          <i class="fa-play"></i>
+                        </p>
+                      </a>
+                      <div class="desc">
+                        <a class="video-box" href="https://www.youtube.com/embed/XkQdRKvJKRQ?list=PL73sjHg5U5xSzR9Ci8dPJehjJAQWjlDnO" data-group="alpha" title="Tech Overview - Видеорегистратор DDPai mini - обзор" target="_blank" savefrom_lm_index="0" savefrom_lm="1">
+                          <h3>Tech Overview - Видеорегистратор DDPai mini - обзор</h3>
+                        </a>
+                      </div>
+                    </li>
+                </ul>
+            </div>
+
+            <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+            <a href="#" class="jcarousel-control-next">&rsaquo;</a>
+        </div>
+      </div>
+    </section>
+    <section class="product">
+        <div class="row">
+          <div class="container">
+          <div class="col-md-6 col-xs-12 product_img">
+            <img class="img-responsive" src="img/mini.png" alt="">
+          </div>
+          <div class="col-md-6 col-xs-12 produkt_description">
+            <h3>Mini</h3>
+            <p>Mini  Авторегистратор нового поколения Качество изображения 10М</p>
+            <a class="button button_descr" href="#">подробнее</a>
+          </div>
+        </div>
+      </div>
+        <div class="row bg-blue">
+          <div class="container">
+          <div class="col-md-6 col-md-push-6 col-xs-12 product_img">
+            <img class="img-responsive" src="img/mini2.png" alt="">
+          </div>
+          <div class="col-md-6 col-md-pull-6 col-xs-12 produkt_description">
+            <h3>Mini2</h3>
+            <p>Mini2  Авторегистратор нового поколения Качество изображения 10М</p>
+            <a class="button button_descr" href="#">подробнее</a>
+          </div>
+        </div>
+      </div>
+        <div class="row">
+          <div class="container">
+          <div class="col-md-6 col-xs-12 product_img">
+            <img class="img-responsive" src="img/x2pro.png" alt="">
+          </div>
+          <div class="col-md-6 col-xs-12 produkt_description">
+            <h3>Mini2</h3>
+            <p>Mini  Авторегистратор нового поколения Качество изображения 10М</p>
+            <a class="button button_descr" href="#">подробнее</a>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <footer class="footer bg-blue">
+      <div class="container">
+        <div class="row">
+          <ul class="col-md-4 col-sm-4 col-xs-6 about_company">
+            <li class="text-left"><a href="#">Продукты</a></li>
+            <li class="text-left"><a href="#">Mini</a></li>
+            <li class="text-left"><a href="#">Mini2</a></li>
+            <li class="text-left"><a href="#">X2Pro</a></li>
+          </ul>
+          <ul class="col-md-4 col-sm-4 col-xs-6 about_company">
+            <li class="text-left"><a href="#">Приложение</a></li>
+            <li class="text-left"><a href="#">AppStore</a></li>
+            <li class="text-left"><a href="#">Google Play</a></li>
+          </ul>
+          <ul class="col-md-4 col-sm-4 col-xs-6 about_company">
+            <li class="text-left"><a href="#">О компании</a></li>
+            <li class="text-left"><a href="#">Связаться с нами</a></li>
+            <li class="text-left"><a href="#">тел.8(495)777 77 77</a></li>
+            <li class="text-left"><a href="#">ddpi@gmail.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer_soc container">
+        <ul class="nav navbar-nav navbar-right soc">
+          <li><a class="soc-facebook" href="#"></a></li>
+          <li><a class="soc-vkontakte" href="#"></a></li>
+          <li><a class="soc-instagram soc-icon-last" href="#"></a></li>
+        </ul>
+      </div>
+    </footer>
+    <script type="text/javascript" src="js/swiper.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
+</html>
