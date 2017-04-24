@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <!-- Заголовок веб-страницы -->
   <head>
+    <!-- Кодировка веб-страницы -->
     <meta charset="utf-8">
     <!-- Предназначен для управления режимом отображением веб-страницы в браузерах
     Internet Explorer -->
@@ -8,259 +10,262 @@
     <!-- Включает масштабирование на мобильных устройствах -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Текст заголовка веб-страницы -->
-    <title>DDPai</title>
+    <title>ХК "Викинги"</title>
     <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/swiper.min.css">
-    <link rel="stylesheet" href="css/jcarousel.responsive.css">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
-    <script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
-    <script type="text/javascript" src="js/jcarousel.responsive.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
   </head>
+  <!-- Тело веб-страницы -->
   <body>
-    <header class="main-menu">
-      <div class="container">
-        <!-- Меню navbar -->
-        <nav class="navbar navbar-default navbar_modify">
-          <!-- Бренд и переключатель, который вызывает меню на мобильных устройствах -->
-          <div class="navbar-header navbar-header_modif">
-            <!-- Кнопка с полосочками, которая открывает меню на мобильных устройствах -->
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu" aria-expanded="false">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <!-- Бренд или логотип фирмы (обычно содержит ссылку на главную страницу) -->
-            <a href="#" class="navbar-brand navbar-brand_modif"><img class="img-logo" src="img/logo.png" alt=""></a>
-          </div>
-          <!-- Содержимое меню (коллекция навигационных ссылок, формы и др.) -->
-          <div class="collapse navbar-collapse navbar-collapse_modif" id="main-menu" >
-            <!-- Список ссылок, расположенных слева -->
-            <ul class="nav navbar-nav">
-              <!--Элемент с классом active отображает ссылку подсвеченной -->
-              <li><a href="#">Продукты</a></li>
-              <li><a href="#">Приложение</a></li>
-              <li><a href="#">О компании</a></li>
-              <li><a href="#">Контакты</a></li>
-            </ul>
-            <!-- Список ссылок, расположенный справа -->
-            <ul class="nav navbar-nav navbar-right soc">
-              <li><a class="soc-facebook" href="#"></a></li>
-              <li><a class="soc-vkontakte" href="#"></a></li>
-              <li><a class="soc-instagram soc-icon-last" href="#"></a></li>
-            </ul>
+    <section class="video-baner" id="anchor_1">
+      <div id="masthead" class="fixed site-header" role="banner">
+        <div id="header-meta">
+          <p>+38(062)333-77-44, <img class="whatsApp" src="img/WhatsApp-Viber.png" alt="WhatsApp,Viber"> +38(095)512-71-65,
+            <img class="whatsApp" src="img/WhatsApp-Viber.png" alt="WhatsApp,Viber"> +38(095)205-80-08, +38(063)300-00-44  <img src="img/email.png" alt="email"> office@kata-log.com.ua</p>
+        </div>
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+          <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#"><img class="img-responsive" src="img/katalog.gif" alt="КАТА-ЛОГ"></a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse" id="menu">
+              <ul class="nav navbar-nav">
+                <li><a href="#anchor_1">Главная</a></li>
+                <li><a href="#anchor_2">О компании</a></li>
+                <li><a href="#anchor_3">Преимущества</a></li>
+                <li><a href="#anchor_4">Услуги</a></li>
+                <li><a href="#anchor_5">Контакты</a></li>
+                <li><a class="networks__icon networks__icon_facebook" href="#"></a></li>
+                <li><a class="networks__icon networks__icon_twitter" href="#"></a></li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
           </div>
         </nav>
-
       </div>
-    </header>
-    <section class="siteslider">
-      <!-- Swiper -->
-      <div class="swiper-container">
-        <div class="parallax-bg"></div>
-          <div class="swiper-wrapper">
-            <div class="swiper-slide swiper-slide_left">
-              <div class="position">
-                <div class="title" data-swiper-parallax="-200">X2 Pro</div>
-                <div class="subtitle" data-swiper-parallax="-800">Яркий подарок для любого торжества</div>
-                <div class="text" data-swiper-parallax="-1200">
-                  <a class="button" href="#">узнать больше</a>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide swiper-slide_center">
-              <div class="position">
-                <div class="title" data-swiper-parallax="-200">M4 Plus</div>
-                <div class="subtitle" data-swiper-parallax="-800">EXTRAORDINARY RACING EXPERIENCE</div>
-                <div class="text" data-swiper-parallax="-1200">
-                  <a class="button" href="#">узнать больше</a>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide swiper-slide_right">
-              <div class="position">
-                <div class="title" data-swiper-parallax="-200">mini2</div>
-                <div class="subtitle" data-swiper-parallax="-800">начните дорожное приключение</div>
-                <div class="text" data-swiper-parallax="-1200">
-                  <a class="button" href="#">узнать больше</a>
-                </div>
-              </div>
-            </div>
-        </div>
-        <!-- Add Pagination -->
-        <div class="swiper-pagination swiper-pagination-white"></div>
-        <!-- Add Arrows -->
-        <div class="swiper-button-next swiper-button-white"></div>
-        <div class="swiper-button-prev swiper-button-white"></div>
+      <video poster="img/daf_xf_2015.jpg" class="video-background" id="video" autoplay="autoplay" loop="loop" muted="muted">
+        <source src="video/malaga.mp4" type="video/mp4">
+      </video>
+      <div class="slogan row">
+        <h2 class="hero-large-text hidden-phone">КОМПАНИЯ «КАТА–ЛОГ»</h2>
+        <p class="hero-small-text hidden-phone">лидер в сфере международных грузовых перевозок<p>
+        <p class="hero-small-text hidden-phone">доставим груз для Вашего бизнеса<p>
+        <a class="btn btn-theme-primary btn-lg" href="#anchor_5">Свяжитесь с нами</a>
+        <a class="btn btn-secondary-outline btn-lg" href="#anchor_2">О нашей компании</a>
       </div>
     </section>
-    <section class="about-product">
+    <section class="section" id="anchor_2">
+        <div class="container ">
+          <h2 class="caption-label">О НАС</h2>
+          <div >
+            <div class="revealator-slideup revealator-once revealator1">
+              <p><span>Компания «КАТА-ЛОГ»</span> - надежная, стабильная компания, работающая на рынке грузоперевозок с 2008 года. За это время мы сумели зарекомендовать себя как ответственного партнера, всегда выполняющего взятые на себя обязательства.</p>
+            </div>
+            <div class="revealator-slideup revealator-delay1 revealator-once revealator1">
+                <p>Миссия нашей компании состоит в том, чтобы создавать такие условия и такие услуги, при которых любой товар в самые оптимальные сроки и по лучшей цене будет надежно доставлен в любую точку мира. Разрабатывая качественные и необходимые обществу услуги, мы объединяем континенты прочными нитями деловых и личных коммуникаций. Приобретая опыт в международном пространстве, мы предлагаем Вам действительно лучший сервис. Мы участвуем в Вашем успехе, развиваясь и совершенствуясь вместе с Вами.</p>
+            </div>
+            <div class="revealator-slideup revealator-delay2 revealator-once revealator1">
+              <p>Мы дорожим нашими клиентами и поэтому в качестве своей цели видим своевременную и бережную доставку Ваших грузов. Постоянно анализируя рынок грузоперевозок, мы разрабатываем и совершенствуем новые услуги, чтобы Вы могли доверить нам все заботы по транспортировке.</p>
+            </div>
+            <div class="revealator-slideup revealator-delay3 revealator-once revealator1">
+                <p>Мы это команда профессионалов, которая готова применив весь свой опыт обеспечить надежность, бережность транспортировки груза в любую точку мира точно в указанные сроки.</p>
+            </div>
+            <div class="revealator-slideup revealator-delay4 revealator-once revealator1">
+              <p><span>С компанией «КАТА–ЛОГ»</span> вы забудете о моральных и материальных потерях связанных с доставкой груза, так как в нашей компании работают высококвалифицированные специалисты знающие свое дело, и ценящие доверие клиентов.</br>Обратившись к нам, Вы останетесь довольны индивидуальным подходом к решению проблем клиентов и ответственным отношением к общему делу.</br>Независимо от того, какой груз и куда Вам нужно доставить, в лице транспортной компании <span>«КАТА–ЛОГ»</span> Вы всегда найдете надежного партнера.</p>
+            </div>
+          </div>
+        </div>
+    </section>
+    <section class="section" id="anchor_3">
       <div class="container">
-        <div class="text-center">
-          <h3>Видео о продуктах</h3>
-        </div>
-        <div class="jcarousel-wrapper">
-            <div class="jcarousel">
-                <ul>
-                    <li>
-                      <div class="video-wrapper">
-                        <a class="video-box" href="https://www.youtube.com/embed/XkQdRKvJKRQ?list=PL73sjHg5U5xSzR9Ci8dPJehjJAQWjlDnO" target="_blank" data-group="alpha" savefrom_lm_index="2">
-                          <p class="logo-box">
-                            <img src="img/01.jpg" alt="Tech Overview - Видеорегистратор DDPai mini - обзор">
-                            <i class="fa-play"></i>
-                          </p>
-                        </a>
-                      </div>
-                      <div class="desc">
-                        <a class="video-box" href="https://www.youtube.com/embed/XkQdRKvJKRQ?list=PL73sjHg5U5xSzR9Ci8dPJehjJAQWjlDnO" data-group="alpha" title="Tech Overview - Видеорегистратор DDPai mini - обзор" target="_blank" savefrom_lm_index="0" savefrom_lm="1">
-                          <h3>Tech Overview - Видеорегистратор DDPai mini - обзор</h3>
-                        </a>
-                      </div>
-                    </li>
-                    <li>
-                      <a class="video-box" href="https://www.youtube.com/embed/XkQdRKvJKRQ?list=PL73sjHg5U5xSzR9Ci8dPJehjJAQWjlDnO" target="_blank" data-group="alpha" savefrom_lm_index="2">
-                        <p class="logo-box">
-                          <img src="img/02.jpg" alt="Tech Overview - Видеорегистратор DDPai mini - обзор">
-                          <i class="fa-play"></i>
-                        </p>
-                      </a>
-                      <div class="desc">
-                        <a class="fancybox-media fancybox video-box" href="https://www.youtube.com/embed/XkQdRKvJKRQ?list=PL73sjHg5U5xSzR9Ci8dPJehjJAQWjlDnO" data-group="alpha" title="Tech Overview - Видеорегистратор DDPai mini - обзор" target="_blank" savefrom_lm_index="0" savefrom_lm="1">
-                          <h3>Tech Overview - Видеорегистратор DDPai mini - обзор</h3>
-                        </a>
-                      </div>
-                    </li>
-                    <li>
-                      <a class="video-box" href="https://www.youtube.com/embed/XkQdRKvJKRQ?list=PL73sjHg5U5xSzR9Ci8dPJehjJAQWjlDnO" target="_blank" data-group="alpha" savefrom_lm_index="2">
-                        <p class="logo-box">
-                          <img src="img/03.jpg" alt="Tech Overview - Видеорегистратор DDPai mini - обзор">
-                          <i class="fa-play"></i>
-                        </p>
-                      </a>
-                      <div class="desc">
-                        <a class="fancybox-media fancybox video-box" href="https://www.youtube.com/embed/XkQdRKvJKRQ?list=PL73sjHg5U5xSzR9Ci8dPJehjJAQWjlDnO" data-group="alpha" title="Tech Overview - Видеорегистратор DDPai mini - обзор" target="_blank" savefrom_lm_index="0" savefrom_lm="1">
-                          <h3>Tech Overview - Видеорегистратор DDPai mini - обзор</h3>
-                        </a>
-                      </div>
-                    </li>
-                    <li>
-                      <a class="video-box" href="https://www.youtube.com/embed/XkQdRKvJKRQ?list=PL73sjHg5U5xSzR9Ci8dPJehjJAQWjlDnO" target="_blank" data-group="alpha" savefrom_lm_index="2">
-                        <p class="logo-box">
-                          <img src="img/04.jpg" alt="Tech Overview - Видеорегистратор DDPai mini - обзор">
-                          <i class="fa-play"></i>
-                        </p>
-                      </a>
-                      <div class="desc">
-                        <a class="video-box" href="https://www.youtube.com/embed/XkQdRKvJKRQ?list=PL73sjHg5U5xSzR9Ci8dPJehjJAQWjlDnO" data-group="alpha" title="Tech Overview - Видеорегистратор DDPai mini - обзор" target="_blank" savefrom_lm_index="0" savefrom_lm="1">
-                          <h3>Tech Overview - Видеорегистратор DDPai mini - обзор</h3>
-                        </a>
-                      </div>
-                    </li>
-                    <li>
-                      <a class="video-box" href="https://www.youtube.com/embed/XkQdRKvJKRQ?list=PL73sjHg5U5xSzR9Ci8dPJehjJAQWjlDnO" target="_blank" data-group="alpha" savefrom_lm_index="2">
-                        <p class="logo-box">
-                          <img src="img/05.jpg" alt="Tech Overview - Видеорегистратор DDPai mini - обзор">
-                          <i class="fa-play"></i>
-                        </p>
-                      </a>
-                      <div class="desc">
-                        <a class="fancybox-media fancybox video-box" href="https://www.youtube.com/embed/XkQdRKvJKRQ?list=PL73sjHg5U5xSzR9Ci8dPJehjJAQWjlDnO" data-group="alpha" title="Tech Overview - Видеорегистратор DDPai mini - обзор" target="_blank" savefrom_lm_index="0" savefrom_lm="1">
-                          <h3>Tech Overview - Видеорегистратор DDPai mini - обзор</h3>
-                        </a>
-                      </div>
-                    </li>
-                    <li>
-                      <a class="video-box" href="https://www.youtube.com/embed/XkQdRKvJKRQ?list=PL73sjHg5U5xSzR9Ci8dPJehjJAQWjlDnO" target="_blank" data-group="alpha" savefrom_lm_index="2">
-                        <p class="logo-box">
-                          <img src="img/06.jpg" alt="Tech Overview - Видеорегистратор DDPai mini - обзор">
-                          <i class="fa-play"></i>
-                        </p>
-                      </a>
-                      <div class="desc">
-                        <a class="video-box" href="https://www.youtube.com/embed/XkQdRKvJKRQ?list=PL73sjHg5U5xSzR9Ci8dPJehjJAQWjlDnO" data-group="alpha" title="Tech Overview - Видеорегистратор DDPai mini - обзор" target="_blank" savefrom_lm_index="0" savefrom_lm="1">
-                          <h3>Tech Overview - Видеорегистратор DDPai mini - обзор</h3>
-                        </a>
-                      </div>
-                    </li>
-                </ul>
+        <h2 class="caption-label"><span>Почему мы?</h2>
+        <ul class="reason_list row">
+          <li class="revealator-slideup revealator-once col-lg-3 col-md-4 col-sm-4 col-md-1">
+            <div class="wrapper-block">
+              <p class="reason_item_num">1 </p>
+              <p class="reason_item_des">Собственный автопарк</p>
             </div>
-
-            <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
-            <a href="#" class="jcarousel-control-next">&rsaquo;</a>
-        </div>
-      </div>
-    </section>
-    <section class="product">
-        <div class="row">
-          <div class="container">
-          <div class="col-md-6 col-xs-12 product_img">
-            <img class="img-responsive" src="img/mini.png" alt="">
-          </div>
-          <div class="col-md-6 col-xs-12 produkt_description">
-            <h3>Mini</h3>
-            <p>Mini  Авторегистратор нового поколения Качество изображения 10М</p>
-            <a class="button button_descr" href="#">подробнее</a>
-          </div>
-        </div>
-      </div>
-        <div class="row bg-blue">
-          <div class="container">
-          <div class="col-md-6 col-md-push-6 col-xs-12 product_img">
-            <img class="img-responsive" src="img/mini2.png" alt="">
-          </div>
-          <div class="col-md-6 col-md-pull-6 col-xs-12 produkt_description">
-            <h3>Mini2</h3>
-            <p>Mini2  Авторегистратор нового поколения Качество изображения 10М</p>
-            <a class="button button_descr" href="#">подробнее</a>
-          </div>
-        </div>
-      </div>
-        <div class="row">
-          <div class="container">
-          <div class="col-md-6 col-xs-12 product_img">
-            <img class="img-responsive" src="img/x2pro.png" alt="">
-          </div>
-          <div class="col-md-6 col-xs-12 produkt_description">
-            <h3>Mini2</h3>
-            <p>Mini  Авторегистратор нового поколения Качество изображения 10М</p>
-            <a class="button button_descr" href="#">подробнее</a>
-          </div>
-        </div>
-      </div>
-      </div>
-    </section>
-    <footer class="footer bg-blue">
-      <div class="container">
-        <div class="row">
-          <ul class="col-md-4 col-sm-4 col-xs-6 about_company">
-            <li class="text-left"><a href="#">Продукты</a></li>
-            <li class="text-left"><a href="#">Mini</a></li>
-            <li class="text-left"><a href="#">Mini2</a></li>
-            <li class="text-left"><a href="#">X2Pro</a></li>
-          </ul>
-          <ul class="col-md-4 col-sm-4 col-xs-6 about_company">
-            <li class="text-left"><a href="#">Приложение</a></li>
-            <li class="text-left"><a href="#">AppStore</a></li>
-            <li class="text-left"><a href="#">Google Play</a></li>
-          </ul>
-          <ul class="col-md-4 col-sm-4 col-xs-6 about_company">
-            <li class="text-left"><a href="#">О компании</a></li>
-            <li class="text-left"><a href="#">Связаться с нами</a></li>
-            <li class="text-left"><a href="#">тел.8(495)777 77 77</a></li>
-            <li class="text-left"><a href="#">ddpi@gmail.com</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer_soc container">
-        <ul class="nav navbar-nav navbar-right soc">
-          <li><a class="soc-facebook" href="#"></a></li>
-          <li><a class="soc-vkontakte" href="#"></a></li>
-          <li><a class="soc-instagram soc-icon-last" href="#"></a></li>
+          </li>
+          <li class="revealator-slideup revealator-delay1 revealator-once col-lg-3 col-md-4 col-sm-4 col-md-1">
+            <div class="wrapper-block">
+              <p class="reason_item_num">2 </p>
+              <p class="reason_item_des">Оптимальные цены на грузоперевозки</p>
+            </div>
+          </li>
+          <li class="revealator-slideup revealator-delay2 revealator-once col-lg-3 col-md-4 col-sm-4 col-md-1">
+            <div class="wrapper-block">
+              <p class="reason_item_num">3 </p>
+              <p class="reason_item_des">Грузоподъемность  транспорта - от 1,5 тонн до 20 и объемом от 9 до 92 м3</p>
+            </div>
+          </li>
+          <li class="revealator-slideup revealator-delay3 revealator-once col-lg-3 col-md-4 col-sm-4 col-md-1">
+            <div class="wrapper-block">
+              <p class="reason_item_num">4 </p>
+              <p class="reason_item_des">Опытный и квалифицированный персонал </p>
+            </div>
+          </li>
+          <li class="revealator-slideup revealator-delay4 revealator-once col-lg-3 col-md-4 col-sm-4 col-md-1">
+            <div class="wrapper-block">
+              <p class="reason_item_num">5 </p>
+              <p class="reason_item_des">Индивидуальный подход к клиенту</p>
+            </div>
+          </li>
+          <li class="revealator-slideup revealator-delay5 revealator-once col-lg-3 col-md-4 col-sm-4 col-md-1">
+            <div class="wrapper-block">
+              <p class="reason_item_num">6 </p>
+              <p class="reason_item_des">Удобные способы оплаты</p>
+            </div>
+          </li>
+          <li class="revealator-slideup revealator-delay6 revealator-once col-lg-3 col-md-4 col-sm-4 col-md-1">
+            <div class="wrapper-block">
+              <p class="reason_item_num">7 </p>
+              <p class="reason_item_des">100% материальная ответственность за вверенный нам груз</p>
+            </div>
+          </li>
+          <li class="revealator-slideup revealator-delay7 revealator-once col-lg-3 col-md-4 col-sm-4 col-md-1">
+            <div class="wrapper-block">
+              <p class="reason_item_num">8 </p>
+              <p class="reason_item_des">Автомобильный GPS-трекинг</p>
+            </div>
+          </li>
+          <li class="revealator-slideup revealator-delay8 revealator-once col-lg-3 col-md-4 col-sm-4 col-md-1">
+            <div class="wrapper-block">
+              <p class="reason_item_num">9 </p>
+              <p class="reason_item_des">Эксклюзивные логистические решения</p>
+            </div>
+          </li>
+          <li class="revealator-slideup revealator-delay9 revealator-once col-lg-3 col-md-4 col-sm-4 col-md-1">
+            <div class="wrapper-block">
+              <p class="reason_item_num">10 </p>
+              <p class="reason_item_des">Быстрый возврат документов после работы</p>
+            </div>
+          </li>
+          <li class="revealator-slideup revealator-delay10 revealator-once col-lg-3 col-md-4 col-sm-4 col-md-1">
+            <div class="wrapper-block">
+              <p class="reason_item_num">11 </p>
+              <p class="reason_item_des">Ответственность и гарантии качества</p>
+            </div>
+          </li>
+          <li class="revealator-slideup revealator-delay11 revealator-once col-lg-3 col-md-4 col-sm-4 col-md-1">
+            <div class="wrapper-block">
+              <p class="reason_item_num">12 </p>
+              <p class="reason_item_des">Высокий уровень сервиса на грузоперевозки</p>
+            </div>
+          </li>
+          <li class="revealator-slideup revealator-delay12 revealator-once col-lg-3 col-md-4 col-sm-4 col-md-1">
+            <div class="wrapper-block">
+              <p class="reason_item_num">13 </p>
+              <p class="reason_item_des">Срочная подача машины</p>
+            </div>
+          </li>
         </ul>
       </div>
-    </footer>
-    <script type="text/javascript" src="js/swiper.min.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
+    </section>
+    <section class="section" id="anchor_4">
+      <div class="container">
+        <h2 class="caption-label">Спектр наших услуг включает в себя:</h2>
+        <ul class="reason_list row">
+          <li class="revealator-slideup revealator-once amenities col-lg-3 col-md-4 col-sm-5 col-md-1">
+            <div class="wrapper-block amenities-block">
+              <img class="img-responsive" src="img/mp.jpg" alt="">
+              <p class="reason_item_des amenities-item">международные грузовые перевозки (Россия – ДНР; страны СНГ – ДНР; страны Европы – ДНР)</p>
+            </div>
+          </li>
+          <li class="revealator-slideup revealator-delay1 revealator-once amenities col-lg-3 col-md-4 col-sm-5 col-md-1">
+            <div class="wrapper-block amenities-block">
+              <img class="img-responsive" src="img/og.jpg" alt="">
+              <p class="reason_item_des amenities-item">перевозка опасных грузов (АДР);</p>
+            </div>
+          </li>
+          <li class="revealator-slideup revealator-delay2 revealator-once amenities col-lg-3 col-md-4 col-sm-5 col-md-1">
+            <div class="wrapper-block amenities-block">
+              <img class="img-responsive" src="img/ng.jpg" alt="">
+              <p class="reason_item_des amenities-item">перевозка негабаритных грузов</p>
+            </div>
+          </li>
+          <li class="revealator-slideup revealator-delay3 revealator-once amenities col-lg-3 col-md-4 col-sm-5 col-md-1">
+            <div class="wrapper-block amenities-block">
+              <img class="img-responsive" src="img/st.jpg" alt="">
+              <p class="reason_item_des amenities-item">перевозка спецтехники</p>
+            </div>
+          </li>
+          <li class="revealator-slideup revealator-delay4 revealator-once amenities col-lg-3 col-md-4 col-sm-5 col-md-1">
+            <div class="wrapper-block amenities-block">
+              <img class="img-responsive" src="img/st.jpg" alt="">
+              <p class="reason_item_des amenities-item">комплексные решения по доставке грузов</p>
+            </div>
+          </li>
+          <li class="revealator-slideup revealator-delay5 revealator-once amenities col-lg-3 col-md-4 col-sm-5 col-md-1">
+            <div class="wrapper-block amenities-block">
+              <img class="img-responsive" src="img/mt.jpg" alt="">
+              <p class="reason_item_des amenities-item">малотоннажные перевозки грузов</p>
+            </div>
+          </li>
+          <li class="revealator-slideup revealator-delay6 revealator-once amenities col-lg-3 col-md-4 col-sm-5 col-md-1">
+            <div class="wrapper-block amenities-block">
+              <img class="img-responsive" src="img/rf.jpg" alt="">
+              <p class="reason_item_des amenities-item">перевозки скоропортящихся грузов рефрижераторными полуприцепами</p>
+            </div>
+          </li>
+          <li class="revealator-slideup revealator-delay7 revealator-once amenities col-lg-3 col-md-4 col-sm-5 col-md-1">
+            <div class="wrapper-block amenities-block">
+              <img class="img-responsive" src="img/eu.jpg" alt="">
+              <p class="reason_item_des amenities-item">экспедиционные услуги</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="section" id="anchor_5">
+      <div class="container">
+        <h2 class="caption-label">КОНТАКТЫ и АДРЕС</h2>
+        <p>Мы всегда рады нашим клиентам, свяжитесь с нами через форму обратной связи или позвоните по одному из указанных телефонов</p>
+        <div class="row">
+          <div class="kontackt col-lg-6 col-md-6 col-sm-12 col-md-12">
+            <h4 class="kontackt-header">Наш адрес:</h4>
+            <p>г.Донецк, ул.Артема 138 "А", БЦ "Акула", офис 1109</p>
+            <h4 class="kontackt-header">Телефоны:</h4>
+            <p>
+              <img class="whatsApp" src="img/tel.png" alt="WhatsApp,Viber"> +38(062)333-77-44,</br>
+              <img class="whatsApp" src="img/WhatsApp-Viber.png" alt="WhatsApp,Viber"> +38(095)512-71-65,</br>
+              <img class="whatsApp" src="img/WhatsApp-Viber.png" alt="WhatsApp,Viber"> +38(095)205-80-08,</br>
+              +38(063)300-00-44</p>
+            <h4 class="kontackt-header">Е-майл:</h4>
+            <p>office@kata-log.com.ua</p>
+            <h4 class="kontackt-header">Мы в соцсетях:</h4>
+            <ul>
+              <li><a class="networks__icon networks__icon_facebook" href="#"></a></li>
+              <li><a class="networks__icon networks__icon_twitter" href="#"></a></li>
+            </ul>
+          </div>
+          <div class="feedbeck col-lg-6 col-md-6 col-sm-12 col-md-12">
+            <form id="main-contact-form" action="#" method="post" name="contact-form">
+              <div class="form-group">
+                <input class="form-control" required="" placeholder="Name" name="name" type="text">
+              </div>
+              <div class="form-group">
+                <input class="form-control" required="" placeholder="Email" name="email" type="email">
+              </div>
+              <div class="form-group">
+                <input class="form-control" required="" placeholder="Subject" name="subject" type="text">
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" required="" placeholder="Message" rows="8" name="message"></textarea>
+              </div>
+              <button class="btn btn-primary" type="submit">Отправить</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>

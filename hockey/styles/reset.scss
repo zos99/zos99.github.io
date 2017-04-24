@@ -43,11 +43,13 @@ ul {
 blockquote,
 q {
   quotes: none;
-  &:before,
-  &:after {
-    content: '';
-    content: none;
-  }
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
 }
 table {
   border-collapse: collapse;
@@ -65,9 +67,9 @@ pre {
   text-shadow: none;
 }
 body {
-  color: $fontColor;
+  color: #000;
   font-size: 100%;
-	font-family: $fontRoboto;
+	font-family: Roboto,Arial,sans-serif !important;
 }
 b,
 strong {
@@ -84,9 +86,4 @@ p {
 }
 *, *::after, *::before {
   box-sizing: border-box;
-}
-html, body {
-  height: 100%;
-  width: 100%;
-  color: $fontGreyD;
 }
