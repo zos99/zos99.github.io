@@ -6019,27 +6019,30 @@ button.close {
       background-position: left;
       background-repeat: no-repeat;
       background-size: contain; }
-      .video-baner .site-header #header-meta .dropdown-h:hover {
+      .video-baner .site-header #header-meta .dropdown-h:hover, .video-baner .site-header #header-meta .dropdown-h:focus {
         color: #fff; }
-        .video-baner .site-header #header-meta .dropdown-h:hover:after {
-          content: "▼"; }
+        .video-baner .site-header #header-meta .dropdown-h:hover:after, .video-baner .site-header #header-meta .dropdown-h:focus:after {
+          content: " ▲"; }
       .video-baner .site-header #header-meta .dropdown-h:after {
-        content: ' тЦ╢'; }
+        content: ' \25bc'; }
     .video-baner .site-header #header-meta nav ul {
       -webkit-font-smoothing: antialiased;
       text-shadow: 0 1px 0 #FFF;
       list-style: none;
       margin: 0;
       padding: 0;
-      width: 100%; }
-    .video-baner .site-header #header-meta nav li {
-      float: left;
-      margin: 0;
-      padding: 0;
-      position: relative;
-      min-width: 25%; }
-      .video-baner .site-header #header-meta nav li:hover a {
-        background: #161616; }
+      width: 100%;
+      background-color: #222;
+      background-repeat: no-repeat; }
+      .video-baner .site-header #header-meta nav ul li {
+        float: left;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        min-width: 25%; }
+        .video-baner .site-header #header-meta nav ul li:hover a {
+          text-decoration: none;
+          color: #fff; }
     .video-baner .site-header #header-meta nav a {
       -webkit-transition: all .25s ease;
       -moz-transition: all .25s ease;
@@ -6051,7 +6054,7 @@ button.close {
       left: 0;
       opacity: 0;
       position: absolute;
-      top: 35px;
+      top: 40px;
       visibility: hidden;
       z-index: 1;
       -webkit-transition: all .25s ease;
@@ -6061,7 +6064,7 @@ button.close {
       transition: all .25s ease; }
     .video-baner .site-header #header-meta nav li:hover ul {
       opacity: 1;
-      top: 50px;
+      top: 40px;
       visibility: visible; }
     .video-baner .site-header #header-meta nav li ul li {
       float: none;
@@ -6078,6 +6081,8 @@ button.close {
       margin: 0 !important; }
       .video-baner .site-header #header-meta p span {
         padding-left: 15px; }
+  .video-baner .dropdown-hs {
+    width: 100%; }
   .video-baner .navbar-default {
     background-repeat: no-repeat;
     background-size: cover;
@@ -6107,11 +6112,6 @@ button.close {
         width: 90px; }
       .video-baner .navbar-default .navbar-nav li > a {
         color: #000; }
-    .video-baner .navbar-default a:hover, .video-baner .navbar-default a:focus {
-      background-color: #4f535d !important;
-      background-image: url("../img/menu-tab1.png");
-      background-position: center;
-      color: #fff !important; }
   .video-baner .video-background {
     position: relative;
     z-index: 0;

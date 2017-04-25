@@ -6,6 +6,7 @@ $fontAmesome: "FontAwesome";
 $colorGrey: #8a8a8a;
 $colorBlue: #248cec;
 $colorDack: #161616;
+$colorDack1: #222;
 
 @font-face {
     font-family: 'montserrat';
@@ -306,14 +307,15 @@ p {
         background-position: left;
         background-repeat: no-repeat;
         background-size:contain;
-        &:hover {
+        &:hover,
+        &:focus {
           color: $borderWhite;
           &:after{
-            content:'\25bc'
+            content:' \25b2'
           }
         }
         &:after {
-          content: ' ▶';
+          content: ' \25bc';
         }
       }
       nav {
@@ -324,16 +326,19 @@ p {
           margin: 0;
           padding: 0;
           width: 100%;
-        }
-        li {
-          float: left;
-          margin: 0;
-          padding: 0;
-          position: relative;
-          min-width: 25%;
-          &:hover {
-            a {
-              background: $colorDack;
+          background-color: $colorDack1;
+          background-repeat: no-repeat;
+          li {
+            float: left;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            min-width: 25%;
+            &:hover {
+              a {
+                text-decoration: none;
+                color: $borderWhite;
+              }
             }
           }
         }
@@ -349,7 +354,7 @@ p {
             left: 0;
             opacity: 0;
             position: absolute;
-            top: 35px;
+            top: 40px;
             visibility: hidden;
             z-index: 1;
             -webkit-transition: all .25s ease;
@@ -360,7 +365,7 @@ p {
         }
         li:hover ul {
             opacity: 1;
-            top: 50px;
+            top: 40px;
             visibility: visible;
         }
         li ul li {
@@ -385,6 +390,9 @@ p {
         }
       }
     }
+  }
+  .dropdown-hs {
+    width: 100%;
   }
   .navbar-default {
     background-repeat: no-repeat;
@@ -423,15 +431,7 @@ p {
       }
     }
 
-    a {
-      &:hover,
-      &:focus {
-        background-color: #4f535d !important;
-        background-image: url("../img/menu-tab1.png");
-        background-position: center;
-        color: #fff !important;
-      }
-    }
+
   }
   .video-background {
     position: relative;;
