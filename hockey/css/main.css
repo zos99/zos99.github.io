@@ -6004,26 +6004,81 @@ button.close {
   position: relative; }
   .video-baner .site-header #header-meta {
     position: fixed;
-    background-color: #4f535d;
-    background-image: url(../img/menu-tab1.png);
+    background-color: #161616;
     color: #fff;
-    text-align: center;
     font-family: "Roboto", Helvetica, Arial, "Lucida Grande", sans-serif;
-    font-size: 1.4rem;
-    height: 24px;
-    left: 0;
-    letter-spacing: 0.1em;
-    line-height: 24px;
-    top: 0;
-    transform-style: preserve-3d;
+    font-size: 15px;
+    line-height: 30px;
     width: 100%;
-    padding-left: 2%;
-    padding-right: 2%;
     z-index: 666666; }
-    .video-baner .site-header #header-meta img {
-      max-height: 20px; }
+    .video-baner .site-header #header-meta .dropdown-h {
+      display: inline-block;
+      float: left;
+      padding: 5px 0 5px 40px;
+      background-image: url("../img/hokkey_1.png") !important;
+      background-position: left;
+      background-repeat: no-repeat;
+      background-size: contain; }
+      .video-baner .site-header #header-meta .dropdown-h:hover {
+        color: #fff; }
+        .video-baner .site-header #header-meta .dropdown-h:hover:after {
+          content: "▼"; }
+      .video-baner .site-header #header-meta .dropdown-h:after {
+        content: ' тЦ╢'; }
+    .video-baner .site-header #header-meta nav ul {
+      -webkit-font-smoothing: antialiased;
+      text-shadow: 0 1px 0 #FFF;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      width: 100%; }
+    .video-baner .site-header #header-meta nav li {
+      float: left;
+      margin: 0;
+      padding: 0;
+      position: relative;
+      min-width: 25%; }
+      .video-baner .site-header #header-meta nav li:hover a {
+        background: #161616; }
+    .video-baner .site-header #header-meta nav a {
+      -webkit-transition: all .25s ease;
+      -moz-transition: all .25s ease;
+      -ms-transition: all .25s ease;
+      -o-transition: all .25s ease;
+      transition: all .25s ease; }
+    .video-baner .site-header #header-meta nav li ul {
+      float: left;
+      left: 0;
+      opacity: 0;
+      position: absolute;
+      top: 35px;
+      visibility: hidden;
+      z-index: 1;
+      -webkit-transition: all .25s ease;
+      -moz-transition: all .25s ease;
+      -ms-transition: all .25s ease;
+      -o-transition: all .25s ease;
+      transition: all .25s ease; }
+    .video-baner .site-header #header-meta nav li:hover ul {
+      opacity: 1;
+      top: 50px;
+      visibility: visible; }
+    .video-baner .site-header #header-meta nav li ul li {
+      float: none;
+      width: 100%; }
+    .video-baner .site-header #header-meta nav .cf:after,
+    .video-baner .site-header #header-meta nav .cf:before {
+      content: ""; }
+    .video-baner .site-header #header-meta nav .cf:after {
+      clear: both; }
+    .video-baner .site-header #header-meta p {
+      display: inline-block;
+      float: right;
+      padding: 5px;
+      margin: 0 !important; }
+      .video-baner .site-header #header-meta p span {
+        padding-left: 15px; }
   .video-baner .navbar-default {
-    background-image: url("../img/feet.png");
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 24px;
