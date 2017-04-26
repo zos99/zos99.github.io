@@ -1,9 +1,11 @@
-@media (min-width: 285px){
+@media (min-width: 1px){
   .video-baner {
     .site-header {
       #header-meta {
-        display: none;
-        font-size: 0.5rem;
+        font-size: 1.5rem;
+        .contacty {
+          display: none;
+        }
       }
     }
     .slogan {
@@ -24,8 +26,10 @@
   .video-baner {
     .site-header {
       #header-meta {
-        display: none;
-        font-size: 0.7rem;
+        font-size: 1.5rem;
+        .contacty {
+          display: block;
+        }
       }
     }
     .slogan {
@@ -43,8 +47,10 @@
   .video-baner {
     .site-header {
       #header-meta {
-        display: none;
-        font-size: 1rem;
+        font-size: 1.5rem;
+        .contacty {
+          display: block;
+        }
       }
     }
     .slogan {
@@ -62,8 +68,10 @@
   .video-baner {
     .site-header {
       #header-meta {
-        display: none;
-        font-size: 1.1rem;
+        font-size: 1.5rem;
+        .contacty {
+          display: block;
+        }
       }
     }
     .slogan {
@@ -87,7 +95,10 @@
     .site-header {
       #header-meta {
         display: block;
-        font-size: 1.2rem;
+        font-size: 1.5rem;
+        .contacty {
+          display: block;
+        }
       }
     }
     .slogan {
@@ -112,6 +123,9 @@
       #header-meta {
         display: block;
         font-size: 1.5rem;
+        .contacty {
+          display: block;
+        }
       }
     }
     .slogan {
