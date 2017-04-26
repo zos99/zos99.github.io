@@ -1,12 +1,13 @@
 $primaryMenu: #1F7B67;
 $borderWhite: #fff;
 $fontArial:   "Arial";
-$fontRoboto: "Roboto";
+$fontRoboto: "Roboto",Helvetica,Arial,"Lucida Grande",sans-serif;
 $fontAmesome: "FontAwesome";
 $colorGrey: #8a8a8a;
 $colorBlue: #248cec;
 $colorDack: #161616;
 $colorDack1: #222;
+$colorYelou: #fedb17;
 
 @font-face {
     font-family: 'montserrat';
@@ -312,16 +313,23 @@ body {
         background-position: left;
         background-repeat: no-repeat;
         background-size:contain;
+        font-family: $fontRoboto;
         &:hover,
         &:focus {
           color: $borderWhite;
           text-decoration: none;
           &:after{
-            content:' \25b2'
+            content:' \f106';
+            font-family: $fontAmesome;
+            padding-right: 5px;
+            font-size: 25px;
           }
         }
         &:after {
-          content: ' \25bc';
+          content: ' \f107';
+          font-family: $fontAmesome;
+          padding-right: 5px;
+          font-size: 25px;
         }
       }
       p {
@@ -442,11 +450,11 @@ body {
       }
     }
   }
+  /*---------------------main-menu----------------------------*/
   .navbar-default {
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-top: 24px;
-    border-bottom: 2px solid #ec6913;
+    background-color: transparent;
+    border-color: transparent;
+    padding-top: 40px;
     z-index: 100;
     .navbar-header {
       .navbar-brand {
@@ -475,7 +483,26 @@ body {
         width: 90px;
       }
       li > a {
-        color: #000;
+        color: $borderWhite;
+        font-family: $fontRoboto;
+        font-size: 18px;
+        text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.4);
+        &:hover,
+        &:focus {
+          color: $borderWhite;
+          text-decoration: none;
+          &:after{
+            content:'  \f106';
+            font-family: $fontAmesome;
+            padding-right: 3px;
+
+          }
+        }
+        &:after {
+          content: '  \f107';
+          font-family: $fontAmesome;
+          padding-right: 3px;
+        }
       }
     }
 
@@ -520,9 +547,12 @@ body {
 .networks__icon {
   float: left;
   padding-left: 20px;
+  &:hover {
+    content: '';
+  }
 }
 .networks__icon:before {
-  color: $colorGrey;
+  color: $colorBlue;
   font-family: $fontAmesome;
   font-size: 20px;
 }
@@ -533,7 +563,7 @@ body {
   content: "\f099";
 }
 .networks__icon:hover:before {
-  color: $colorBlue;
+  color: $colorGrey;
   cursor: pointer;
 }
 /*--SECTION ALL---*/

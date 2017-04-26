@@ -6004,12 +6004,13 @@ body {
 
 /*--top video-baner---*/
 .video-baner {
-  position: relative; }
+  position: relative;
+  /*---------------------main-menu----------------------------*/ }
   .video-baner .site-header #header-meta {
     position: fixed;
     background-color: #161616;
     color: #fff;
-    font-family: "Roboto", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-family: "Roboto", Helvetica, Arial, "Lucida Grande", sans-serif, Helvetica, Arial, "Lucida Grande", sans-serif;
     font-size: 15px;
     line-height: 30px;
     width: 100%;
@@ -6023,14 +6024,21 @@ body {
       background-image: url("../img/hokkey_1.png") !important;
       background-position: left;
       background-repeat: no-repeat;
-      background-size: contain; }
+      background-size: contain;
+      font-family: "Roboto", Helvetica, Arial, "Lucida Grande", sans-serif; }
       .video-baner .site-header #header-meta .dropdown-h:hover, .video-baner .site-header #header-meta .dropdown-h:focus {
         color: #fff;
         text-decoration: none; }
         .video-baner .site-header #header-meta .dropdown-h:hover:after, .video-baner .site-header #header-meta .dropdown-h:focus:after {
-          content: " ▲"; }
+          content: ' \f106';
+          font-family: "FontAwesome";
+          padding-right: 5px;
+          font-size: 25px; }
       .video-baner .site-header #header-meta .dropdown-h:after {
-        content: ' \25bc'; }
+        content: ' \f107';
+        font-family: "FontAwesome";
+        padding-right: 5px;
+        font-size: 25px; }
     .video-baner .site-header #header-meta p {
       display: inline-block;
       float: right;
@@ -6123,10 +6131,9 @@ body {
       max-height: 100%;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25); }
   .video-baner .navbar-default {
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-top: 24px;
-    border-bottom: 2px solid #ec6913;
+    background-color: transparent;
+    border-color: transparent;
+    padding-top: 40px;
     z-index: 100; }
     .video-baner .navbar-default .navbar-header .navbar-brand {
       padding: 0; }
@@ -6150,7 +6157,21 @@ body {
         text-transform: uppercase;
         width: 90px; }
       .video-baner .navbar-default .navbar-nav li > a {
-        color: #000; }
+        color: #fff;
+        font-family: "Roboto", Helvetica, Arial, "Lucida Grande", sans-serif;
+        font-size: 18px;
+        text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.4); }
+        .video-baner .navbar-default .navbar-nav li > a:hover, .video-baner .navbar-default .navbar-nav li > a:focus {
+          color: #fff;
+          text-decoration: none; }
+          .video-baner .navbar-default .navbar-nav li > a:hover:after, .video-baner .navbar-default .navbar-nav li > a:focus:after {
+            content: '  \f106';
+            font-family: "FontAwesome";
+            padding-right: 3px; }
+        .video-baner .navbar-default .navbar-nav li > a:after {
+          content: '  \f107';
+          font-family: "FontAwesome";
+          padding-right: 3px; }
   .video-baner .video-background {
     position: relative;
     z-index: 0;
@@ -6171,7 +6192,7 @@ body {
       text-align: center; }
     .video-baner .slogan p {
       font-size: 4rem;
-      font-family: "Roboto";
+      font-family: "Roboto", Helvetica, Arial, "Lucida Grande", sans-serif;
       font-weight: bold;
       letter-spacing: 0.4px;
       text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.4);
@@ -6185,9 +6206,11 @@ body {
 .networks__icon {
   float: left;
   padding-left: 20px; }
+  .networks__icon:hover {
+    content: ''; }
 
 .networks__icon:before {
-  color: #8a8a8a;
+  color: #248cec;
   font-family: "FontAwesome";
   font-size: 20px; }
 
@@ -6198,7 +6221,7 @@ body {
   content: "\f099"; }
 
 .networks__icon:hover:before {
-  color: #248cec;
+  color: #8a8a8a;
   cursor: pointer; }
 
 /*--SECTION ALL---*/
