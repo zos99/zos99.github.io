@@ -103,14 +103,18 @@ main {
   color: #fff;
   font-family: "Roboto",Helvetica,Arial,"Lucida Grande",sans-serif;
   font-weight: bold;
+  margin-top: 60px;
 }
 .hero-large-text span {
   color: #3463BF;
   text-transform: uppercase;
 }
 /* Slide 2 */
-#slide-2 .bcg {background: none; background-color: #010101; height: 310px; text-align: center}
-
+#slide-2 .bcg {background: none; background-color: #000914; height: 600px; text-align: center}
+#slide-2 p {
+  padding: 30px 0 30px 0;
+  color: #939393;
+}
 /* Slide 3 */
 #slide-3 .bcg {background-image:url('../img/bcg_slide-3.jpg')}
 
@@ -121,13 +125,30 @@ main {
 .curtainContainer .copy {position: absolute; bottom: 30%; left: 0; width: 100%; text-align: center;}
 
 #slide-4 .bcg {background-image:url('../img/bcg_slide-4.jpg')}
+#slide-4 {
+  color: #fff;
+  font-size: 2rem;
+}
+#slide-4 h2 {
+  color: #fff;
+  font-size: 4rem;
+  text-transform: uppercase;
+}
 
 /* Slide 5 */
 #slide-5 {position: relative;}
 #slide-5 .bcg {background-image:url('../img/bcg_slide-5.jpg')}
 #slide-5 .bcg2 {background-image:url('../img/bcg_slide-5b.jpg'); position: fixed; bottom: 0; left: 0; opacity: 0; z-index: 1}
-#slide-5 .bcg3 {background: none; background-color: #010101; z-index: 2;  position: fixed; bottom: 0; left: 0; opacity: 0; z-index: 2}
-
+#slide-5 .bcg3 {background: none; background-color: #000002; z-index: 2;  position: fixed; bottom: 0; left: 0; opacity: 0; z-index: 2}
+#slide-5 h2 {
+  padding-top: 80px;
+}
+#slide-5 p {
+  color: #939393;
+}
+.footer-contakti {
+  background: transparent url("../img/hockey.png") no-repeat scroll 0 bottom;
+}
 .hsContainer {
 	display: table;
 	table-layout: fixed;
@@ -145,14 +166,18 @@ main {
 	padding: 0 8%;
 	text-align: center;
   color: #fff;
-  font-size: 4rem;
+  font-size: 2rem;
   letter-spacing: 2px;
   font-family: "Roboto",Helvetica,Arial,"Lucida Grande",sans-serif;
 }
+.hsContent h2 {
+  font-size: 4rem;
+  text-transform: uppercase;
+}
 
 	.bgBlack {
-		background-color: rgba(0,0,0,0.75);
-		padding: 3px 10px;
+		background-color: rgba(10,72,138,0.75);
+		padding: 15px 10px;
 	}
 
 

@@ -7,6 +7,7 @@ body {
   box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.1) inset;
   font-weight: bold;
   text-transform: uppercase;
+  z-index: 300;
 }
 .btn-lg {
   font-size: 2rem;
@@ -15,11 +16,12 @@ body {
     background: #7c93dd none repeat scroll 0 0;
 }
 .btn-secondary-outline {
-    border-color: rgba(255, 255, 255, 0.9);
+    border-color: rgba(228, 153, 21, 0.9);
     box-shadow: none;
-    color: rgba(255, 255, 255, 0.9);
+    color: rgba(228, 153, 21, 0.9)!important;
+
 		&:hover {
-			color: #333;
+			color: #333!important;
 			background: $borderWhite;
 			transition: .7s;}
 }
@@ -73,7 +75,7 @@ body {
       line-height: 30px;
       width: 100%;
       min-width: 360px;
-      z-index: 666666;
+      z-index: 150;
       .dropdown-h {
         display: inline-block;
         float: left;
@@ -100,15 +102,6 @@ body {
           font-family: $fontAmesome;
           padding-right: 5px;
           font-size: 25px;
-        }
-      }
-      p {
-        display: inline-block;
-        float: right;
-        padding: 5px;
-        margin: 0!important;
-        span {
-          padding-left: 15px;
         }
       }
     }
@@ -257,6 +250,7 @@ body {
             content:'  \f106';
             font-family: $fontAmesome;
             padding-right: 3px;
+            color: $colorBlue;
 
           }
         }
@@ -264,6 +258,7 @@ body {
           content: '  \f107';
           font-family: $fontAmesome;
           padding-right: 3px;
+          color: $colorBlue;
         }
       }
     }
@@ -272,6 +267,12 @@ body {
 .networks {
   display: block;
   float: right;
+  margin: 5px;
+  p {
+    float: left;
+    padding-right: 15px;
+    margin: 0px;
+  }
 
 }
 .networks__icon {
@@ -279,6 +280,7 @@ body {
   padding-left: 20px;
   &:hover {
     content: '';
+    text-decoration: none;
   }
 }
 .networks__icon:before {

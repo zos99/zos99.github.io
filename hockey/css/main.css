@@ -5977,7 +5977,8 @@ body {
   border-radius: 2px;
   box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.1) inset;
   font-weight: bold;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  z-index: 300; }
 
 .btn-lg, .btn-group-lg > .btn {
   font-size: 2rem; }
@@ -5986,11 +5987,11 @@ body {
   background: #7c93dd none repeat scroll 0 0; }
 
 .btn-secondary-outline {
-  border-color: rgba(255, 255, 255, 0.9);
+  border-color: rgba(228, 153, 21, 0.9);
   box-shadow: none;
-  color: rgba(255, 255, 255, 0.9); }
+  color: rgba(228, 153, 21, 0.9) !important; }
   .btn-secondary-outline:hover {
-    color: #333;
+    color: #333 !important;
     background: #fff;
     transition: .7s; }
 
@@ -6039,7 +6040,7 @@ body {
     line-height: 30px;
     width: 100%;
     min-width: 360px;
-    z-index: 666666; }
+    z-index: 150; }
     .video-baner .site-header #header-meta .dropdown-h {
       display: inline-block;
       float: left;
@@ -6063,13 +6064,6 @@ body {
         font-family: "FontAwesome";
         padding-right: 5px;
         font-size: 25px; }
-    .video-baner .site-header #header-meta p {
-      display: inline-block;
-      float: right;
-      padding: 5px;
-      margin: 0 !important; }
-      .video-baner .site-header #header-meta p span {
-        padding-left: 15px; }
   .video-baner .site-header .headen-block {
     background-color: #222;
     box-shadow: 0 0 20px 0 rgba(22, 22, 22, 0.5);
@@ -6185,21 +6179,29 @@ body {
           .video-baner .navbar-default .navbar-nav li > a:hover:after, .video-baner .navbar-default .navbar-nav li > a:focus:after {
             content: '  \f106';
             font-family: "FontAwesome";
-            padding-right: 3px; }
+            padding-right: 3px;
+            color: #248cec; }
         .video-baner .navbar-default .navbar-nav li > a:after {
           content: '  \f107';
           font-family: "FontAwesome";
-          padding-right: 3px; }
+          padding-right: 3px;
+          color: #248cec; }
 
 .networks {
   display: block;
-  float: right; }
+  float: right;
+  margin: 5px; }
+  .networks p {
+    float: left;
+    padding-right: 15px;
+    margin: 0px; }
 
 .networks__icon {
   float: left;
   padding-left: 20px; }
   .networks__icon:hover {
-    content: ''; }
+    content: '';
+    text-decoration: none; }
 
 .networks__icon:before {
   color: #248cec;
@@ -6219,8 +6221,6 @@ body {
 @media (min-width: 1px) {
   .video-baner .site-header #header-meta {
     font-size: 1.5rem; }
-    .video-baner .site-header #header-meta .contacty {
-      display: none; }
   .video-baner .slogan h2 {
     font-size: 1.5rem; }
   .video-baner .slogan p {
@@ -6231,8 +6231,6 @@ body {
 @media (min-width: 480px) {
   .video-baner .site-header #header-meta {
     font-size: 1.5rem; }
-    .video-baner .site-header #header-meta .contacty {
-      display: block; }
   .video-baner .slogan h2 {
     font-size: 3rem; }
   .video-baner .slogan p {
@@ -6240,8 +6238,6 @@ body {
 @media (min-width: 640px) {
   .video-baner .site-header #header-meta {
     font-size: 1.5rem; }
-    .video-baner .site-header #header-meta .contacty {
-      display: block; }
   .video-baner .slogan h2 {
     font-size: 4rem; }
   .video-baner .slogan p {
@@ -6249,8 +6245,6 @@ body {
 @media (min-width: 720px) {
   .video-baner .site-header #header-meta {
     font-size: 1.5rem; }
-    .video-baner .site-header #header-meta .contacty {
-      display: block; }
   .video-baner .slogan h2 {
     font-size: 5rem; }
   .video-baner .slogan p {
@@ -6265,8 +6259,6 @@ body {
   .video-baner .site-header #header-meta {
     display: block;
     font-size: 1.5rem; }
-    .video-baner .site-header #header-meta .contacty {
-      display: block; }
   .video-baner .slogan h2 {
     font-size: 5rem; }
   .video-baner .slogan p {
@@ -6281,8 +6273,6 @@ body {
   .video-baner .site-header #header-meta {
     display: block;
     font-size: 1.5rem; }
-    .video-baner .site-header #header-meta .contacty {
-      display: block; }
   .video-baner .slogan h2 {
     font-size: 6rem; }
   .video-baner .slogan p {
