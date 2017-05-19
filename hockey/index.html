@@ -12,29 +12,27 @@
     <!-- Текст заголовка веб-страницы -->
     <title>ХК "Викинги"</title>
     <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/parallax.css" />
     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/vendor/modernizr-2.7.1.min.js"></script>
-	<script src="js/imagesloaded.js"></script>
-    <script src="js/skrollr.js"></script>
-    <script src="js/_main.js"></script>
+    <script src="js/src/modernizr-2.7.1.min.js"></script>
+    <script src="js/fixed-menu.js"></script>
+    <script src="js/parallax.js"></script>
+    <script src="js/skrollefy.js"></script>
   </head>
   <body class="loading">
   <!--[if lt IE 7]>
     <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
   <![endif]-->
-  <header class="video-baner">
-    <div id="masthead" class="fixed site-header" role="banner">
-      <div id="header-meta">
+  <header class="header">
+    <div class="header-line">
+      <div class="header-line__inner">
         <div class="container-fluid">
           <a class="dropdown-h collapsed" href="#headenB" data-toggle="collapse" aria-expanded="false">Команда  "Викинги"</a>
           <div class="networks">
-            <p>+38(099)000-00-00,  <span>info@hc-vikingi.ru</span></P>
-            <a class="networks__icon networks__icon_facebook" href="#"></a>
-            <a class="networks__icon networks__icon_twitter" href="#"></a>
+            <p>+38(099)000-00-00,  <span>info@hc-vikings.ru</span></P>
+            <a class="networks__icon networks__icon--facebook" href="#"></a>
+            <a class="networks__icon networks__icon--twitter" href="#"></a>
           </div>
         </div>
       </div>
@@ -79,8 +77,8 @@
         </div>
       </div>
     </div>
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-      <div class="container">
+    <nav class="header_menu video-baner" id="main-menu">
+      <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -93,6 +91,7 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse navbar-ex1-collapse" id="menu">
           <ul class="nav navbar-nav">
+            <li><img class="img-responsive logo-img" src="img/ice-hockey.png" alt=""></li>
             <li><a href="#slide-1">Главная</a></li>
             <li><a href="#slide-2">Клуб</a></li>
             <li><a href="#slide-4">Расписание матчей</a></li>
@@ -106,7 +105,7 @@
     </nav>
   </header>
  	<main>
-  <section id="slide-1" class="homeSlide">
+  <section id="slide-1" class="homeSlide" data-section-name="home">
   	<div class="bcg" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -100px;" data-anchor-target="#slide-1">
       <video poster="img/baner.jpg" class="video-background" id="video" autoplay="autoplay" loop="loop" muted="muted">
         <source src="video/hockey.mp4" type="video/mp4">
@@ -117,6 +116,9 @@
           <img class="main-logo img-responsive" src="img/logo.png" alt="Викинги">
           <a class="btn btn-theme-primary btn-lg" href="#anchor_5">Свяжитесь с нами</a>
           <a class="btn btn-secondary-outline btn-lg" href="#anchor_2">О нашей команде</a>
+          <div class="inner">
+            <a href="#overview" class="scroll">Скроллировать, чтобы узнать больше</a>
+          </div>
     		</div>
     	</div>
   	</div>
@@ -188,8 +190,8 @@
                 <p>info@hc-vikingi.ru</p>
                 <h4 class="kontackt-header">Мы в соцсетях:</h4>
                 <div class="networks">
-                  <a class="networks__icon networks__icon_facebook" href="#"></a>
-                  <a class="networks__icon networks__icon_twitter" href="#"></a>
+                  <a class="networks__icon networks__icon--facebook" href="#"></a>
+                  <a class="networks__icon networks__icon--twitter" href="#"></a>
                 </div>
               </div>
               <div class="feedbeck col-lg-6 col-md-6 col-sm-12 col-md-12">
@@ -219,5 +221,7 @@
     <script src="js/imagesloaded.js"></script>
     <script src="js/skrollr.js"></script>
     <script src="js/_main.js"></script>
+    <script src="js/src/jquery.scrollify.min.js"></script>
+	  <script src="js/src/jquery.easing.min.js"></script>
   </body>
 </html>
