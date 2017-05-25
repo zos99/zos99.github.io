@@ -22,7 +22,7 @@
     <script src="js/imagesloaded.js"></script>
     <script src="js/main-js.js"></script>
   </head>
-  <body class="loading" id="touch-scroll">
+  <body class="loading">
   <!--[if lt IE 7]>
     <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
   <![endif]-->
@@ -122,20 +122,14 @@
   </header>
  	<main>
   <section id="slide-1" class="homeSlide wrapper" data-section-name="home">
-    <video class="video-background" id="bgvid" autoplay="autoplay" loop="loop" muted="muted">
-      <source src="video/3.mp4" type="video/mp4">
-    </video>
-    <div id="info-block" data-anchor-target="#slide-1">
-      <h2>Хоккейный клуб</h2>
-      <img class="main-logo img-responsive" src="img/logo.png" alt="Викинги">
-      <p>
-        <a class="btn btn-theme-primary btn-lg" href="#anchor_5">Свяжитесь с нами</a>
-        <a class="btn btn-secondary-outline btn-lg" href="#anchor_2">О нашей команде</a>
-      </p>
-      <div class="inner">
-        <a href="#slide-2" class="scroll">Скроллировать, чтобы узнать больше</a>
-      </div>
-   </div>
+    <div class="bcg" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -100px;" data-anchor-target="#slide-1">
+      <div class="hsContainer">
+        <div class="hsContent" data-center="opacity: 1" data-106-top="opacity: 0" data-anchor-target="#slide-1 h2">
+    			<h2>Fade out elements before<br />they leave viewport</h2>
+    				<p>This slide moves background image at a slower speed then the page scroll. Text is fading out to opacity 0 at 106 pixels from the top.</p>
+    		</div>
+    	</div>
+    </div>
   </section>
   <section id="slide-2">
   	<div class="bcg" data-0="background-color:rgb(1,27,59);" data-top="background-color:(0,0,0);"  data-anchor-target="#slide-2">
