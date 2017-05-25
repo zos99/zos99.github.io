@@ -1,4 +1,4 @@
-// fixed main-menu
+// fixed main-menu top
 $(document).ready(function(){
 
        var $menu = $(".video-baner");
