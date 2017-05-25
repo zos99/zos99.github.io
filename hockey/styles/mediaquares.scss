@@ -249,7 +249,14 @@
  @media (max-aspect-ratio: 16/9) {
      #slide-1 > video { width: 300%; left: -100%; }
  }
- 
+ /* Если есть поддержка object-fit (Chrome/Chrome для Android, Safari в iOS 8 и Opera), используем его: */
+ @supports (object-fit: cover) {
+     #slide-1 > video {
+         top: 0; left: 0;
+         width: 100%; height: 100%;
+         object-fit: cover;
+     }
+ }
 
 /*-landscape orientation-*/
 /* Landscape */
