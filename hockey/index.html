@@ -8,14 +8,14 @@
     Internet Explorer -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- Включает масштабирование на мобильных устройствах -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Текст заголовка веб-страницы -->
     <title>ХК "Викинги"</title>
     <link rel="stylesheet" href="css/main.css" />
     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
-    <script src="js/src/modernizr-2.7.1.min.js"></script>
+    <script src="js/modernizr-2.7.1.min.js"></script>
     <script src="js/fixed-menu.js"></script>
     <script src="js/parallax.js"></script>
     <script src="js/skrollefy.js"></script>
@@ -27,12 +27,19 @@
   <header class="header">
     <div class="header-line">
       <div class="header-line__inner">
-        <div class="container-fluid">
-          <a class="dropdown-h collapsed" href="#headenB" data-toggle="collapse" aria-expanded="false">Команда  "Викинги"</a>
-          <div class="networks">
-            <p>+38(099)000-00-00,  <span>info@hc-vikings.ru</span></P>
-            <a class="networks__icon networks__icon--facebook" href="#"></a>
-            <a class="networks__icon networks__icon--twitter" href="#"></a>
+        <div class="container">
+          <div class="row">
+            <div class="header-line__link col-md-4 col-sm-4">
+              <a class="dropdown-h collapsed" href="#headenB" data-toggle="collapse" aria-expanded="false">Команда  "Викинги"</a>
+            </div>
+            <div class="col-md-5 col-sm-5 hidden-xs">
+              <p><span>+38(099)000-00-00</span><span>info@hc-vikings.ru</span></p>
+            </div>
+              <div class="networks col-md-3 col-sm-3">
+                <a class="networks__icon networks__icon--facebook" href="#"></a>
+                <a class="networks__icon networks__icon--twitter" href="#"></a>
+                <a class="networks__icon networks__icon--instagram" href="#"></a>
+              </div>
           </div>
         </div>
       </div>
@@ -77,59 +84,65 @@
         </div>
       </div>
     </div>
-    <nav class="header_menu video-baner" id="main-menu">
+    <div class="video-baner">
       <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
+        <div class="row">
+          <div class="col-md-3 col-sm-3 col-xs-5">
+            <img class="img-responsive logo-img" src="img/ice-hockey.png" alt="">
+          </div>
+          <div class="col-md-9 col-sm-9 col-xs-7">
+            <nav class="header_menu" id="main-menu">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle navbar-toggle--color" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar icon-bar--color"></span>
+                  <span class="icon-bar icon-bar--color"></span>
+                  <span class="icon-bar icon-bar--color"></span>
+                </button>
+              </div>
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse  navbar-ex1-collapse" id="menu">
+                <ul class="nav navbar-nav">
+                  <li><a class="nav-scroll" href="#slide-1">Главная</a></li>
+                  <li><a class="nav-scroll" href="#slide-2">Клуб</a></li>
+                  <li><a class="nav-scroll" href="#slide-4">Расписание матчей</a></li>
+                  <li><a class="nav-scroll" href="#slide-5">Новости</a></li>
+                  <li><a class="nav-scroll" href="#slide-6">Галерея</a></li>
+                  <li><a class="nav-scroll" href="#slide-7">Контакты</a></li>
+                </ul>
+              </div><!-- /.navbar-collapse -->
+            </nav>
+          </div>
         </div>
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse navbar-ex1-collapse" id="menu">
-          <ul class="nav navbar-nav">
-            <li><img class="img-responsive logo-img" src="img/ice-hockey.png" alt=""></li>
-            <li><a href="#slide-1">Главная</a></li>
-            <li><a href="#slide-2">Клуб</a></li>
-            <li><a href="#slide-4">Расписание матчей</a></li>
-            <li><a href="#slide-5">Новости</a></li>
-            <li><a href="#slide-6">Галерея</a></li>
-            <li><a href="#slide-7">Контакты</a></li>
-            <li><a href="#slide-8">Обратная связь</a></li>
-          </ul>
-        </div><!-- /.navbar-collapse -->
       </div>
-    </nav>
+    </div>
   </header>
  	<main>
-  <section id="slide-1" class="homeSlide" data-section-name="home">
-  	<div class="bcg" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -100px;" data-anchor-target="#slide-1">
-      <video poster="img/baner.jpg" class="video-background" id="video" autoplay="autoplay" loop="loop" muted="muted">
-        <source src="video/hockey.mp4" type="video/mp4">
-      </video>
-    	<div class="hsContainer">
-    		<div class="hsContent"  data-anchor-target="#slide-1 h2">
-          <h2 class="hero-large-text">Хоккейный клуб <span>"Викинги"</span></h2>
-          <img class="main-logo img-responsive" src="img/logo.png" alt="Викинги">
-          <a class="btn btn-theme-primary btn-lg" href="#anchor_5">Свяжитесь с нами</a>
-          <a class="btn btn-secondary-outline btn-lg" href="#anchor_2">О нашей команде</a>
-          <div class="inner">
-            <a href="#overview" class="scroll">Скроллировать, чтобы узнать больше</a>
-          </div>
-    		</div>
-    	</div>
-  	</div>
+  <section id="slide-1" class="homeSlide wrapper" data-section-name="home">
+    <video class="video-background" id="bgvid" autoplay="autoplay" loop="loop" muted="muted">
+      <source src="video/3.mp4" type="video/mp4">
+    </video>
+    <div id="info-block" data-anchor-target="#slide-1">
+      <h2>Хоккейный клуб <span>"Викинги"</span></h2>
+      <img class="main-logo img-responsive" src="img/logo.png" alt="Викинги">
+      <p>
+        <a class="btn btn-theme-primary btn-lg" href="#anchor_5">Свяжитесь с нами</a>
+        <a class="btn btn-secondary-outline btn-lg" href="#anchor_2">О нашей команде</a>
+      </p>
+      <div class="inner">
+        <a href="#slide-2" class="scroll">Скроллировать, чтобы узнать больше</a>
+      </div>
+   </div>
   </section>
   <section id="slide-2">
   	<div class="bcg" data-0="background-color:rgb(1,27,59);" data-top="background-color:(0,0,0);"  data-anchor-target="#slide-2">
     	<div class="hsContainer">
-    		<div class="hsContent">
-	    		<h2 data-center="opacity: 1" data--200-bottom="opacity: 0.3" data-206-top="opacity: 1" data-106-top="opacity: 0.3" data-anchor-target="#slide-2 h2">О команде</h2>
-	    		<p data-center="opacity: 1" data--200-bottom="opacity: 0.3" data-206-top="opacity: 1" data-106-top="opacity: 0.3" data-anchor-target="#slide-2 h2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur</p>
-          <a data-center="opacity: 1" data--200-bottom="opacity: 0.3" data-206-top="opacity: 1" data-106-top="opacity: 0.3" data-anchor-target="#slide-2 h2" class="btn btn-secondary-outline btn-lg" href="#anchor_2">Состав команды</a>
+    		<div class="hsContent row">
+          <blockquote  col-md-12>
+            <h2 data-center="opacity: 1" data--200-bottom="opacity: 0.3" data-206-top="opacity: 1" data-106-top="opacity: 0.3" data-anchor-target="#slide-2 h2">Хоккей как стиль жизни</h2>
+            <p data-center="opacity: 1" data--200-bottom="opacity: 0.3" data-206-top="opacity: 1" data-106-top="opacity: 0.3" data-anchor-target="#slide-2 h2">Хоккей - это борьба. Испытание на прочность не только соперника, но и себя самого прежде всего. Хоккей - школа мужества, школа товарищества и, вместе с тем, арена самоутверждения.</p>
+          </blockquote>
     		</div>
     	</div>
   	</div>
@@ -138,11 +151,27 @@
 	  <div class="bcg" data-center="background-position: 0px 50%;" data-bottom-top="background-position: 0px 40%;" data-top-bottom="background-position: -40px 50%;" data-anchor-target="#slide-3">
       <div class="hsContainer">
         <div class="hsContent">
-          <div class="plaxEl" data-106-top="opacity: 0" data--30p-top="opacity: 1;" data--60p-top="opacity: 0;" data-bottom="opacity: 1; position: fixed; top: 206px; width: 100%; left: 0;"  data-anchor-target="#slide-3">
-
-	    		</div>
+        	<div class="plaxEl"  data-bottom="opacity: 1; position: relative; width: 100%; left: 0;"  data-anchor-target="#slide-3">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-xs-12 col-md-6">
+                  <a href="">
+                    <img class="img-thumbnail img-responsive" src="img/bcg_slide-1_.jpg" alt="">
+                  </a>
+                </div>
+                <div class="col-xs-12 col-md-6">
+                  <h2>Команда "Викинги"</h2>
+                  <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </span></p>
+                </div>
+                <div class="clearfix"></div>
+                <div class="btn-block col-md-12">
+                  <a class="btn btn-theme-primary btn-theme-primary--modif btn-lg" href="#anchor_2">О команде</a>
+                </div>
+              </div>
+            </div>
+      	 		</div>
+        	</div>
         </div>
-    	</div>
     </div>
   </section>
 	<section id="slide-4" class="homeSlide homeSlideTall">
@@ -221,7 +250,7 @@
     <script src="js/imagesloaded.js"></script>
     <script src="js/skrollr.js"></script>
     <script src="js/_main.js"></script>
-    <script src="js/src/jquery.scrollify.min.js"></script>
-	  <script src="js/src/jquery.easing.min.js"></script>
+    <script src="js/jquery.scrollify.min.js"></script>
+	  <script src="js/jquery.easing.min.js"></script>
   </body>
 </html>

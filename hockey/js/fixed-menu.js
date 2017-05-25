@@ -1,7 +1,7 @@
 // fixed main-menu
 $(document).ready(function(){
 
-       var $menu = $("#main-menu");
+       var $menu = $(".video-baner");
 
        $(window).scroll(function(){
            if ( $(this).scrollTop() > 50 && $menu.hasClass("video-baner") ){
@@ -9,10 +9,9 @@ $(document).ready(function(){
                    $(this).removeClass("video-baner")
                           .addClass("fixed transbg")
                           .fadeIn('fast');
-                   $(".headen-block").css('height', '0px');
-                   $(".headen-block").attr("aria-expanded","false");
-                   $(".headen-block").removeClass("in");
+                  
                    $(".logo-img").attr("src","img/ice-hockey-midy.png");
+                   $(".nav-scroll").css("font-size","17px");
                });
 
            } else if($(this).scrollTop() <= 50 && $menu.hasClass("fixed")) {
@@ -21,6 +20,7 @@ $(document).ready(function(){
                           .addClass("video-baner")
                           .fadeIn('fast');
                      $(".logo-img").attr("src","img/ice-hockey.png");
+                     $(".nav-scroll").css("font-size","18px");
                });
            }
        });//scroll

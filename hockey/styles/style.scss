@@ -8,13 +8,21 @@ body {
   box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.1) inset;
   font-weight: bold;
   text-transform: uppercase;
-  z-index: 300;
 }
 .btn-lg {
   font-size: 2rem;
 }
 .btn-theme-primary {
-    background: #7c93dd none repeat scroll 0 0;
+    background: rgba(124, 147, 221, 0.9) none repeat scroll 0 0;
+    color: #fff;
+    border-color: rgba(124, 147, 221, 0.9);
+    box-shadow: none;
+
+    &:hover {
+			color: #7c93dd!important;
+			background-color: transparent;;
+			transition: .7s;
+    }
 }
 .btn-secondary-outline {
     border-color: rgba(228, 153, 21, 0.9);
@@ -22,24 +30,20 @@ body {
     color: rgba(228, 153, 21, 0.9)!important;
 
 		&:hover {
-			color: #333!important;
-			background: $borderWhite;
-			transition: .7s;}
+			color: #fff!important;
+			background: rgba(228, 153, 21, 1);
+			transition: .7s;
+    }
 }
 /*--------network icons----------------*/
 .networks {
   display: block;
-  float: right;
-  margin: 11px;
-
-  p {
-    float: left;
-    padding-right: 15px;
-    margin: 0px;
-  }
+  padding-top: 10px;
+  padding-bottom: 10px;
 
   .networks__icon {
-    float: left;
+    display: block;
+    float: right;
     padding-left: 20px;
 
     &:hover {
@@ -72,6 +76,13 @@ body {
       content: "\f099";
     }
   }
+
+  .networks__icon--instagram {
+
+    &:before {
+      content: "\f16d";
+    }
+  }
 }
 /*---------header line-----------------------*/
 .header-line {
@@ -80,21 +91,25 @@ body {
     position: relative;
     background-color: $colorDack;
     color: $borderWhite;
-    font-family: $fontRoboto,Helvetica,Arial,"Lucida Grande",sans-serif;
+    font-family: $fontMain;
     font-size: 15px;
     line-height: 30px;
     width: 100%;
     min-width: 360px;
     z-index: 1101;
 
+    .header-line__link {
+      height: 100%;
+    }
+
     .dropdown-h {
       display: inline-block;
       float: left;
-      padding: 10px 10px 10px 50px;
+      padding: 10px 0 10px 50px;
       background-image: url("../img/hokkey_1.png")!important;
       background-position: left;
       background-repeat: no-repeat;
-      font-family: $fontRoboto;
+      font-family: $fontMain;
       color:  $colorGreyLitgh;
 
       &:hover,
@@ -115,6 +130,18 @@ body {
         font-family: $fontAmesome;
         padding-right: 5px;
         font-size: 25px;
+      }
+    }
+    .hidden-xs {
+      padding: 10px 0;
+      text-align: center;
+
+      p {
+        margin: 0;
+
+        span {
+          padding-right: 25px;
+        }
       }
     }
   }
@@ -194,7 +221,7 @@ body {
           -ms-flex-line-pack: start;
               align-content: flex-start;
       z-index: 0;
-      padding: 5%;
+      padding: 60px 5% 5% 5%;
       overflow: auto;
       background-color: #222;
       text-align: center;
@@ -240,6 +267,18 @@ body {
 }
 /*---------------------main-menu----------------------------*/
 .header_menu {
+
+  .navbar-header {
+
+    .navbar-toggle--color {
+      background-color: #5d5d63;
+
+      .icon-bar--color {
+        background-color: #fff;
+      }
+    }
+  }
+
   .navbar-nav {
     text-transform: uppercase;
 
@@ -251,9 +290,9 @@ body {
 
       a {
         color: $borderWhite;
-        font-family: $fontRoboto;
+        font-family: $fontMain;
         font-size: 18px;
-        text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.4);
+        text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.2);
 
         &:hover,
         &:focus {
@@ -287,9 +326,14 @@ body {
   z-index: 1099;
   position: absolute;
   left:50%;
-  top: 10%;
+  top: 55px;
   transform: translateX(-50%);
   width: 100%;
+}
+
+.logo-img {
+  padding: 10px 0;
+  margin: auto;
 }
 
 .fixed {
@@ -346,11 +390,15 @@ body {
 
 .inner {
 	margin:0 auto;
+  text-align: center;
+
   a {
     color: #8b8c8e;
-    font-family: $fontRoboto;
+    font-family: $fontMain;
+    text-decoration: none;
   }
 }
+
 pre {
 	background:rgba(0,0,0,0.2);
 	padding:2em 0 2em 0;
