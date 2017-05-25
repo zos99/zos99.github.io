@@ -57,6 +57,5 @@
 	    // Refresh Skrollr after resizing our sections
 	    s.refresh($('.homeSlide'));
 	    
-	}
-		
+	}	
 } )( jQuery );
