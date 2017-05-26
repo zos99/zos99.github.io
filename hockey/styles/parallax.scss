@@ -81,12 +81,13 @@ main {
 	background-size: cover;
 	height: 100%;
 	width: 100%;
-  overflow: hidden;
 }
+
 /* Slide 1 */
 #slide-1 .bcg {
-  overflow: hidden;
+  background-image:url('../img/bcg_slide-1.jpg');
 }
+
 /*--video in background----*/
 .stopfade {
   opacity: .5;
@@ -95,6 +96,7 @@ main {
 .wrapper {
   max-width: 1920px;
   margin: 0 auto;
+  overflow: hidden;
   position:relative;
 }
 
