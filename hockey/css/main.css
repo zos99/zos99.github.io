@@ -6062,7 +6062,7 @@ body {
     .header-line .header-line__inner .hidden-xs p {
       margin: 0; }
       .header-line .header-line__inner .hidden-xs p span {
-        padding-right: 25px; }
+        padding-right: 35px; }
 .header-line .headen-block {
   background-color: #222;
   box-shadow: 0 0 20px 0 rgba(22, 22, 22, 0.5);
@@ -6361,7 +6361,7 @@ video {
   color: white;
   position: absolute;
   height: auto;
-  width: 90%;
+  width: 100%;
   left: 50%;
   position: absolute;
   top: 50%;
@@ -6371,7 +6371,9 @@ video {
     font-size: 3em;
     font-weight: bold;
     margin-bottom: 20px;
-    text-align: center; }
+    text-align: center;
+    color: #0f2b79;
+    text-shadow: rgba(45, 45, 45, 0.5); }
   #info-block p {
     font-size: .9em;
     margin-bottom: 10px;
