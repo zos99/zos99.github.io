@@ -1,6 +1,7 @@
 .jcarousel-wrapper {
-    margin: 5px auto 40px;
+    margin:0 auto;
     position: relative;
+    z-index: 3;
 }
 
 /** Carousel **/
@@ -44,6 +45,8 @@
     text-align: center;
     color: #9d9999!important;
     font-size: 70px;
+    width: 60px;
+    font-family: "material-design";
 }
 
 .jcarousel-control-prev:hover,

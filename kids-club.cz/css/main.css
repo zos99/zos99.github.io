@@ -6451,11 +6451,12 @@ body {
   font-family: "MyriadProRegular", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 30px;
   font-weight: bold;
-  letter-spacing: 3px;
-  margin-bottom: 25px; }
+  letter-spacing: 3px; }
 
 .Production {
-  padding: 30px 0; }
+  padding-top: 50px;
+  padding-bottom: 150px;
+  position: relative; }
   .Production .services-box__hover-bg {
     background-color: #00bbd3; }
   .Production .services-box__hover-bg--green {
@@ -6534,7 +6535,7 @@ body {
 /*-----------------parallax effect--------------*/
 .parallax {
   width: 100%;
-  min-height: 400px;
+  min-height: 600px;
   height: 100%;
   position: relative;
   border-top: 3px solid #fff;
@@ -6561,7 +6562,10 @@ body {
   text-transform: uppercase;
   letter-spacing: normal;
   text-decoration: none;
-  font-family: "MyriadProRegular",Helvetica,Arial,"Lucida Grande",sans-serif; }
+  font-family: "MyriadProRegular",Helvetica,Arial,"Lucida Grande",sans-serif;
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 150px; }
 
 .jcarousel__link a {
   text-transform: uppercase;
@@ -6579,5 +6583,21 @@ body {
   margin: 10% 5%;
   border: 1px solid #d9d6d6;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.5); }
+
+.separator {
+  background-image: url("../img/sep.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 300px;
+  z-index: 10;
+  width: 100%;
+  position: absolute;
+  bottom: -150px; }
+
+.blog {
+  position: relative;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  background-color: red; }
 
 /*# sourceMappingURL=main.css.map */
