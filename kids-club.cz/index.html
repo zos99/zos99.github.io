@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <!-- Заголовок веб-страницы -->
+  <head>
+    <!-- Кодировка веб-страницы -->
+    <meta charset="utf-8">
+    <!-- Предназначен для управления режимом отображением веб-страницы в браузерах
+    Internet Explorer -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Включает масштабирование на мобильных устройствах -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Текст заголовка веб-страницы -->
+    <title>Kids Club</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/materialdesignicons.min.css" />
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/jcarousel.responsive.css">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
+    <script type="text/javascript" src="js/jcarousel.responsive.js"></script>
+
+    <script src="js/jquery.jcarousel-core.min.js"></script>
+    <script src="js/jquery.jcarousel-control.min.js"></script>
+    <script src="js/jquery.jcarousel-pagination.min.js"></script>
+    <script src="js/jquery.jcarousel-autoscroll.min.js"></script>
+
+  </head>
+  <body>
+    <header id="header" class="page-header">
+      <div class="header-row-background navbar navbar-default navbar-static-top" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div class="header-row navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li class="first">
+                <a href="#" title="Мой профиль" class="my-account-link">Мой профиль</a>
+              </li>
+              <li>
+                <a class="wishlist-link" href="#" title="Мой лист пожеланий">Мой лист пожеланий</a>
+              </li>
+              <li>
+                <a class="top-link-checkout" href="#" title="Оформить заказ">Оформить заказ</a>
+              </li>
+              <li>
+                <a class="log-in-link" href="#" title="Войти" onclick="return false;">Войти</a>
+              </li>
+              <li class="last">
+                <a href="#" title="Статьи и новости">Статьи и новости</a>
+              </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li class="dropdown">
+                <a class="dropdown-toggle" href="../navbar/">
+                  <span class="label">Валюта: </span>
+                  <span class="current">UAH </span>
+                </a>
+              </li>
+              <li><a href="./">Карта сайта</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-xs-12">
+              <a class="logo" href="">
+                <img class="img-responsive" src="img/logo.png" alt="">
+              </a>
+            </div>
+            <div class="col-lg-6 col-xs-12 text-center central-unit">
+              <div class="dropdown phone">
+                  <div class="listunstyled btn-lg dropdown-toggle" data-toggle="dropdown">
+                    <span class="tell_nav">+38 (099) 221-25-56</span>
+                    <b class="caret"></b>
+                    <span class="line">Ежедневно с 9:00 до 22:00</span>
+                  </div>
+                </div>
+              <div id="search" class="input-group input-group__modif">
+                <input class="form-control input-lg form-control_modif" name="search" value="" placeholder="Поиск товара по каталогу" minlength="1" livesearch="off" type="text">
+                <span class="input-group-btn">
+                  <button class="btn btn-default btn-lg btn-lg_modif" type="button">
+                    <i class="fa fa-search"></i>
+                  </button>
+                </span>
+              </div>
+          </div>
+          <div class="col-lg-2 col-xs-12">
+            <div class="row">
+              <div class="header-minicart col-ms-12">
+                <a class="skip-link skip-cart" href="">
+                  <span class="icon"></span>
+                  <span class="label">Корзина</span>
+                  <span class="count">0</span>
+                </a>
+              </div>
+              <div class="clearfix"></div>
+              <div class="social col-ms-12">
+                <ul class="soc text-center">
+                  <li><a class="soc-facebook" href="#"></a></li>
+                  <li><a class="soc-twitter" href="#"></a></li>
+                  <li><a class="soc-googleplus" href="#"></a></li>
+                  <li><a class="soc-instagram soc-icon-last" href="#"></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="menu" class="main-menu collapse navbar-collapse navbar-ex1-collapse menu-def">
+          <ul class="grid-full nav navbar-nav">
+            <li class="nav-1 first has-sub">
+              <a class="" style="background-color:" href="">
+                <span style="color:;">Menu 1</span>
+              </a>
+            </li>
+            <li class="nav-2 has-sub">
+              <a class="" style="background-color:" href="#">
+                <span style="color:;">Menu 2</span>
+              </a>
+            </li>
+            <li class="nav-3 has-sub">
+              <a class="" style="background-color:" href="#">
+                <span style="color:;">Menu 3</span>
+              </a>
+            </li>
+            <li class="nav-4 has-sub">
+              <a class="" style="background-color:" href="#">
+                <span style="color:;">Menu 4</span>
+              </a>
+            </li>
+            <li class="nav-5 has-sub">
+              <a class="" style="background-color:" href="#">
+                <span style="color:;">Menu 5</span>
+              </a>
+            </li>
+            <li class="nav has-sub">
+              <a class="" style="background-color:" href="#">
+                <span style="color:; ">Menu 6</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+  <div class="top-container">
+    <!-- Swiper -->
+    <div class="swiper-container">
+      <div class="parallax-bg"></div>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide swiper-slide_left">
+            <div class="position">
+              <div class="title" data-swiper-parallax="-200">Slaid 1</div>
+              <div class="subtitle" data-swiper-parallax="-800">Lorem ipsum dolor sit amet 1</div>
+              <div class="text" data-swiper-parallax="-1200">
+                <a class="button" href="#">узнать больше</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide swiper-slide_center">
+            <div class="position">
+              <div class="title" data-swiper-parallax="-200">Slaid 2</div>
+              <div class="subtitle" data-swiper-parallax="-800">Lorem ipsum dolor sit amet 2</div>
+              <div class="text" data-swiper-parallax="-1200">
+                <a class="button" href="#">узнать больше</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide swiper-slide_right">
+            <div class="position">
+             <div class="title" data-swiper-parallax="-200">Slaid 3</div>
+              <div class="subtitle" data-swiper-parallax="-800">Lorem ipsum dolor sit amet 3</div>
+              <div class="text" data-swiper-parallax="-1200">
+                <a class="button" href="#">узнать больше</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination swiper-pagination-white"></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next swiper-button-white"></div>
+        <div class="swiper-button-prev swiper-button-white"></div>
+      </div>
+    </div>
+    <div class="Production gradient-green">
+      <div class="container-fluid text-center">
+        <h2 class="header-block">Каталог товаров</h2>
+        <div class="banners row">
+          <div class="col-sm-4 box-shadow services-box__image-container">
+            <div class="services-box__hover-bg">
+              <div class="services-box__v-line">
+                <span class="s-desc">
+                  <span>
+                    <h2>Товары для детей и мам</h2>
+                  </span>
+                </span>
+              </div>
+              <a href="#">
+                <img class="services-box__image" src="img/ban-2.png" alt="">
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-4 box-shadow services-box__image-container">
+            <div class="services-box__hover-bg--green">
+              <div class="services-box__v-line">
+                <span class="s-desc">
+                  <span>
+                    <h2>Товары для взрослых</h2>
+                  </span>
+                </span>
+              </div>
+              <a href="#">
+                <img class="services-box__image" src="img/ban-3.png" alt="">
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-4 box-shadow services-box__image-container">
+            <div class="services-box__hover-bg--red">
+              <div class="services-box__v-line">
+                <span class="s-desc">
+                  <span>
+                    <h2>Товары для дома</h2>
+                  </span>
+                </span>
+              </div>
+              <a href="#">
+                <img class="services-box__image" src="img/ban-4.png" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--          parallax effect               -->
+    <section class="parallax" data-parallax="scroll" data-image-src="img/bg1.png">
+      <div class="parallax__inner">
+        <img class="img-responsive" src="img/logo-big.png" alt="">
+      </div>
+    </section>
+    <!--      slider    -->
+    <section class="inform-unit gradient-green">
+      <div class="container-fluid text-center">
+        <h2 class="header-block">Топ продаж</h2>
+        <div class="jcarousel-wrapper">
+          <div class="jcarousel">
+            <ul>
+              <li class=jcarousel__link>
+                <div class="link__wrapper">
+                  <a href="">
+                    <img class="img-responsive" src="img/slide1.jpg" alt="Image 1">
+                    <p>Lorem ipsum</p>
+                    <p><span class="jcarousel__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, </span></p>
+                  </a>
+                </div>
+                </li>
+                <li class=jcarousel__link>
+                  <div class="link__wrapper">
+                    <a href="">
+                      <img class="img-responsive" src="img/slide2.jpg" alt="Image 2">
+                      <p>Lorem ipsum</p>
+                      <p><span class="jcarousel__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, </span></p>
+                    </a>
+                  </div>
+                </li>
+                <li class=jcarousel__link>
+                  <div class="link__wrapper">
+                    <a href="">
+                      <img class="img-responsive" src="img/slide3.jpg" alt="Image 3">
+                      <p>Lorem ipsum</p>
+                      <p><span class="jcarousel__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, </span></p>
+                    </a>
+                  </div>
+                </li>
+                <li class=jcarousel__link>
+                  <div class="link__wrapper">
+                    <a href="">
+                      <img class="img-responsive" src="img/slide4.jpg" alt="Image 4">
+                      <p>Lorem ipsumи</p>
+                      <p><span class="jcarousel__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, </span></p>
+                    </a>
+                  </div>
+                </li>
+                <li class=jcarousel__link>
+                  <div class="link__wrapper">
+                    <a href="">
+                      <img class="img-responsive" src="img/slide5.jpg" alt="Image 5">
+                      <p>Lorem ipsum</p>
+                      <p><span class="jcarousel__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, </span></p>
+                    </a>
+                  </div>
+                </li>
+                <li class=jcarousel__link>
+                  <div class="link__wrapper">
+                    <a href="">
+                      <img class="img-responsive" src="img/slide6.jpg" alt="Image 6">
+                      <p>Lorem ipsum</p>
+                      <p><span class="jcarousel__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, </span></p>
+                    </a>
+                  </div>
+                </li>
+                <li class=jcarousel__link>
+                  <div class="link__wrapper">
+                    <a href="">
+                      <img class="img-responsive" src="img/slide1.jpg" alt="Image 6">
+                      <p>Lorem ipsum</p>
+                      <p><span class="jcarousel__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, </span></p>
+                    </a>
+                  </div>
+                </li>
+                <li class=jcarousel__link>
+                  <div class="link__wrapper">
+                    <a href="">
+                      <img class="img-responsive" src="img/slide2.jpg" alt="Image 6">
+                      <p>Lorem ipsum</p>
+                      <p><span class="jcarousel__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, </span></p>
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+            <a href="#" class="jcarousel-control-next">&rsaquo;</a>
+        </div>
+      </div>
+    </section>
+    <section>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </section>
+    <futter>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </futter>
+    <script type="text/javascript" src="js/swiper.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/parallax.min.js"></script>
+  </body>
+</html>
