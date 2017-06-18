@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 $primaryMenu: #1F7B67;
 $borderWhite: #fff;
 $fontArial:   "Arial";
@@ -306,6 +307,316 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ec6913', end
   height: 100vh;
 
 }
+=======
+$primaryMenu: #1F7B67;
+$borderWhite: #fff;
+$fontArial:   "Arial";
+$fontRoboto: "Roboto";
+$fontAmesome: "FontAwesome";
+
+$colorGrey: #8a8a8a;
+
+$colorBlue: #248cec;
+
+$color: #000;
+
+
+$amount: 0.4;
+
+@font-face {
+    font-family: 'montserrat';
+    src:  url('../fonts/Montserrat-Bold.ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'montserrat';
+
+
+       src:  url('../fonts/Montserrat-Regular.ttf');
+
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Roboto';
+
+
+       src:  url('../fonts/Roboto-BlackItalic.ttf');
+
+    font-weight: Black;
+    font-style: italic;
+
+
+}
+
+@font-face {
+    font-family: 'Roboto';
+
+
+       src:  url('../fonts/Roboto-Black.ttf');
+
+    font-weight: Black;
+    font-style: normal;
+
+
+}
+
+
+@font-face {
+    font-family: 'Roboto';
+
+
+       src:  url('../fonts/Roboto-Bold.ttf');
+
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Roboto';
+
+
+       src:  url('../fonts/Roboto-BoldItalic.ttf');
+
+    font-weight: bold;
+    font-style: italic;
+
+}
+@font-face {
+    font-family: 'Roboto';
+
+
+       src:  url('../fonts/Roboto-Italic.ttf');
+
+    font-weight: normal;
+    font-style: italic;
+
+}
+@font-face {
+    font-family: 'Roboto';
+
+
+       src:  url('../fonts/Roboto-Italic.ttf');
+
+    font-weight: normal;
+    font-style: italic;
+
+}
+@font-face {
+    font-family: 'Roboto';
+
+
+       src:  url('../fonts/Roboto-Light.ttf');
+
+    font-weight: 100;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Roboto';
+
+
+       src:  url('../fonts/Roboto-LightItalic.ttf');
+
+    font-weight: 100;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'Roboto';
+
+
+       src:  url('../fonts/Roboto-Medium.ttf');
+
+    font-weight: 500; ///?
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Roboto';
+
+
+       src:  url('../fonts/Roboto-MediumItalic.ttf');
+
+    font-weight: 500;
+    font-style: italic;
+
+}
+@font-face {
+    font-family: 'Roboto';
+
+
+       src:  url('../fonts/Roboto-Regular.ttf');
+
+    font-weight: 400;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Roboto';
+
+
+       src:  url('../fonts/Roboto-Thin.ttf');
+
+    font-weight: 200;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Roboto';
+
+
+       src:  url('../fonts/Roboto-ThinItalic.ttf');
+
+    font-weight: 200;
+    font-style: italic;
+
+}
+
+
+html, body, div, span, applet,
+object, iframe, h1, h2, h3, h4,
+h5, h6, p, blockquote, pre, a,
+abbr, acronym, address, big, cite,
+code, del, dfn, em, img, ins, kbd,
+q, s, samp, small, strike, strong,
+sub, sup, tt, var, b, u, i, center,
+dl, dt, dd, ol, ul, li, fieldset,
+form, legend, table, caption,
+tbody, tfoot, thead, tr, th, td, article,
+aside, canvas, details, embed, figure,
+figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section,
+summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  background: transparent;
+  font-size: 100%;
+}
+img {
+  vertical-align: top;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+nav,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+svg {
+  display: block;
+  overflow: visible;
+}
+pre {
+  border:1px solid #000;
+  overflow-x:auto;
+  background: #222;
+  color: #fff;
+  text-shadow: none;
+}
+body {
+  color: #000;
+  font-size: 100%;
+	font-family: Roboto,Arial,sans-serif !important;
+}
+b,
+strong {
+    font-weight: bold;
+}
+a,
+a:link,
+a:visited,
+a:focus {
+    color: #fff;
+}
+p {
+  margin: 0;
+}
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+@import 'bootstrap-custom';
+.btn {
+  border-radius: 2px;
+  box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.1) inset;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.btn-lg {
+  font-size: 2rem;
+}
+.btn-theme-primary {
+    background: #7c93dd none repeat scroll 0 0;
+}
+.btn-secondary-outline {
+    border-color: rgba(255, 255, 255, 0.9);
+    box-shadow: none;
+    color: rgba(255, 255, 255, 0.9);
+		&:hover {
+			color: #333;
+			background: #fff;
+			transition: .7s;}
+}
+.line {
+  height: 3px;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ec6913+0,f0bb98+100 */
+background: #ec6913; /* Old browsers */
+background: -moz-linear-gradient(left,  #ec6913 0%, #f0bb98 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  #ec6913 0%,#f0bb98 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  #ec6913 0%,#f0bb98 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ec6913', endColorstr='#f0bb98',GradientType=1 ); /* IE6-9 */
+
+}
+.wrapper-block {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #d6d6d6;
+  box-shadow:0px 0px 8px rgba(0, 0, 0, 0.58);
+  -webkit-box-shadow:0px 0px 8px rgba(0, 0, 0, 0.58);
+  background-color: transparentize($color, $amount);
+}
+/*--top video-baner---*/
+.video-baner {
+  position: relative;
+  height: 100vh;
+
+}
+>>>>>>> 920719a5a2e31d1fd6e787a4420375a89c8d6935
 
 .navbar-default {
   background-image: url("../img/feet.png");
@@ -413,6 +724,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ec6913', end
     max-height: 20px;
   }
 }
+<<<<<<< HEAD
 .networks {
   display: block;
   float: right;
@@ -708,3 +1020,300 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ec6913', end
         overflow: hidden!important;
     }
 }
+=======
+.networks {
+  display: block;
+  float: right;
+
+}
+.networks__icon {
+  float: left;
+  padding-left: 20px;
+}
+.networks__icon:before {
+  color: $colorGrey;
+  font-family: $fontAmesome;
+  font-size: 20px;
+}
+.networks__icon_facebook:before {
+  content: "\f09a";
+}
+.networks__icon_twitter:before {
+  content: "\f099";
+}
+.networks__icon:hover:before {
+  color: $colorBlue;
+  cursor: pointer;
+}
+/*--SECTION ALL---*/
+#anchor_2 {
+  background-color: transparentize($color, $amount);
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.section {
+	text-align: center;
+  color: #fff;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  h2 {
+    font-size: 3em;
+    padding: 4.375rem 0rem;
+    &::before {
+      border: 2px solid #4ba0cb;
+    }
+    &::after {
+      background: #4ba0cb;
+    }
+  }
+  p {
+    font: 100 18px Roboto,Arial,sans-serif;
+    text-align: justify;
+  }
+  span {
+    font-weight: bold;
+    color: #ec8200;
+  }
+}
+/*About as*/
+
+.reason_list {
+  *[class^="revealator"] {
+    display: block;
+    height: 200px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+  }
+  .reason_item_num {
+    color: #ec8200;
+    font: 66px/54px "Multicolore",sans-serif !important;
+    text-align: center !important;
+    margin-top: 2%;
+  }
+  .reason_item_des {
+    margin: 0 15px;
+    text-align: center !important;
+  }
+}
+
+.revealator1 {
+    display: block;
+    height: 100%;
+    margin: 0 auto 15px;
+    width: 100%;
+    border: none;
+    box-shadow:none;
+    background-color: transparent;
+}
+#anchor_4 {
+  .amenities {
+    height: 300px;
+    .amenities-block {
+      overflow: hidden;
+      .img-responsive {
+        &:hover {
+          transform: scale(1.2);
+          transition-duration: 0.5s;
+        }
+      }
+      .amenities-item {
+        margin: 15px auto;
+      }
+    }
+  }
+}
+.img-responsive {
+  margin: 5% auto;
+  border: 1px solid #d6d6d6;
+  box-shadow:0px 0px 8px rgba(0, 0, 0, 0.58);
+  -webkit-box-shadow:0px 0px 8px rgba(0, 0, 0, 0.58);
+}
+#anchor_5 {
+  color: #fff;
+  font: 100 18px Roboto,Arial,sans-serif;
+  background-color: transparentize($color, $amount);
+  .kontackt {
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: left !important;
+    p {
+      font-size: 17px;
+    }
+    img {
+      max-height: 30px;
+    }
+  }
+}
+
+@media (min-width: 285px){
+  .video-baner {
+    .site-header {
+      #header-meta {
+        display: none;
+        font-size: 0.5rem;
+      }
+    }
+    .slogan {
+      h2 {
+        font-size: 3rem;
+      }
+      .hero-small-text {
+        font-size: 0.8rem;
+      }
+    }
+  }
+  .btn-lg {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 480px){
+  .video-baner {
+    .site-header {
+      #header-meta {
+        display: none;
+        font-size: 0.7rem;
+      }
+    }
+    .slogan {
+      h2 {
+        font-size: 3rem;
+      }
+      .hero-small-text {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 640px){
+  .video-baner {
+    .site-header {
+      #header-meta {
+        display: none;
+        font-size: 1rem;
+      }
+    }
+    .slogan {
+      h2 {
+        font-size: 4rem;
+      }
+      .hero-small-text {
+        font-size: 2rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 720px){
+  .video-baner {
+    .site-header {
+      #header-meta {
+        display: none;
+        font-size: 1.1rem;
+      }
+    }
+    .slogan {
+      h2 {
+        font-size: 5rem;
+      }
+      .hero-small-text {
+        font-size: 2rem;
+      }
+    }
+  }
+  .btn-lg {
+    font-size: 2rem;
+  }
+  .networks__icon {
+    display: none;
+  }
+}
+@media (min-width: 890px){
+  .video-baner {
+    .site-header {
+      #header-meta {
+        display: block;
+        font-size: 1.2rem;
+      }
+    }
+    .slogan {
+      h2 {
+        font-size: 5rem;
+      }
+      .hero-small-text {
+        font-size: 3rem;
+      }
+    }
+  }
+  .btn-lg {
+    font-size: 2rem;
+  }
+  .networks__icon {
+    display: none;
+  }
+}
+@media (min-width: 993px){
+  .video-baner {
+    .site-header {
+      #header-meta {
+        display: block;
+        font-size: 1.5rem;
+      }
+    }
+    .slogan {
+      h2 {
+        font-size: 6rem;
+      }
+      .hero-small-text {
+        font-size: 4rem;
+      }
+    }
+  }
+  .btn-lg {
+    font-size: 2rem;
+  }
+  .networks__icon {
+    display: block;
+  }
+}
+
+@media (max-width: 992px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin: 7.5px -15px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .navbar-text {
+        float: none;
+        margin: 15px 0;
+    }
+    /* since 3.1.0 */
+    .navbar-collapse.collapse.in {
+        display: block!important;
+    }
+    .collapsing {
+        overflow: hidden!important;
+    }
+}
+>>>>>>> 920719a5a2e31d1fd6e787a4420375a89c8d6935
