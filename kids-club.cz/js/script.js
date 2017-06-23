@@ -73,3 +73,32 @@ $(document).ready(function(){
         $('.box-height ',this).height(highestBox);
     });
 });
+//-----menu-------------------------//
+$(document).ready(function(){
+
+    var $menu = $("#menu");
+
+    $(window).scroll(function(){
+        if ( $(this).scrollTop() > 100 && $menu.hasClass("default") ){
+            $menu.fadeOut('fast',function(){
+                $(this).removeClass("default")
+                       .addClass("fixed transbg")
+                       .fadeIn('fast');
+                       $(".logo-mini ").css("display","block");
+                       $(".main-menu ").css("background-color","transparent");
+
+            });
+        } else if($(this).scrollTop() <= 100 && $menu.hasClass("fixed")) {
+            $menu.fadeOut('fast',function(){
+                $(this).removeClass("fixed transbg")
+                       .addClass("default")
+                       .fadeIn('fast');
+                        $(".logo-mini ").css("display","none");
+                        $(".main-menu ").css("background-color","rgba(3, 87, 150, 0.9)");
+
+            });
+        }
+    });//scroll
+
+
+});//jQuery

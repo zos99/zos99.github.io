@@ -53,33 +53,35 @@
               <li>
                 <a class="log-in-link" href="#" title="Войти" onclick="return false;">Войти</a>
               </li>
-              <li class="last">
-                <a href="#" title="Статьи и новости">Статьи и новости</a>
-              </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-              <li class="dropdown">
-                <a class="dropdown-toggle" href="../navbar/">
-                  <span class="label">Валюта: </span>
-                  <span class="current">UAH </span>
-                </a>
+              <li>
+                <a class="sel-lang" href="/"><img class="img-responsive" src="img/cz.png" alt="český"></a>
               </li>
-              <li><a href="./">Карта сайта</a></li>
+              <li>
+                <a class="sel-lang" href="/"><img class="img-responsive" src="img/pl.png" alt="polski"></a>
+              </li>
+              <li>
+                <a class="sel-lang" href="/"><img class="img-responsive" src="img/ua.png" alt="українська"></a>
+              </li>
+              <li>
+                <a class="sel-lang" href="/"><img class="img-responsive" src="img/ru.png" alt="русский"></a>
+              </li>
             </ul>
           </div>
         </div>
       </div>
-      <div class="container ">
+      <div class="container central-block">
           <div class="row">
             <div class="col-lg-4 col-xs-12 box-height">
               <a class="logo" href="">
                 <img class="img-responsive" src="img/logo.png" alt="">
               </a>
             </div>
-            <div class="col-lg-6 col-xs-12 text-center central-unit box-height">
+            <div class="col-lg-5 col-xs-12 text-center central-unit box-height">
               <div class="search-block">
                 <div class="dropdown phone">
-                  <div class="listunstyled btn-lg dropdown-toggle" data-toggle="dropdown">
+                  <div class="listunstyled dropdown-toggle" data-toggle="dropdown">
                     <span class="tell_nav">+38 (099) 221-25-56</span>
                     <b class="caret"></b>
                     <span class="line">Ежедневно с 9:00 до 22:00</span>
@@ -95,9 +97,14 @@
                 </div>
               </div>
           </div>
-          <div class="col-lg-2 col-xs-12 box-height">
-            <div class="row">
-              <div class="header-minicart col-ms-12">
+          <div class="col-lg-3 col-xs-12 box-height">
+            <div class="left-block">
+
+              <div class="header-minicart">
+                <a class="dropdown-toggle" href="../navbar/">
+                  <span class="label">Валюта: </span>
+                  <span class="current">UAH </span>
+                </a>
                 <a class="skip-link skip-cart" href="">
                   <span class="icon"></span>
                   <span class="label">Корзина</span>
@@ -105,7 +112,7 @@
                 </a>
               </div>
               <div class="clearfix"></div>
-              <div class="social col-ms-12">
+              <div class="social">
                 <ul class="soc text-center">
                   <li><a class="soc-facebook" href="#"></a></li>
                   <li><a class="soc-twitter" href="#"></a></li>
@@ -116,36 +123,43 @@
             </div>
           </div>
         </div>
-        <div id="menu" class="main-menu collapse navbar-collapse navbar-ex1-collapse menu-def">
+      </div>
+      <div id="menu" class="main-menu default">
+        <div class="container">
           <ul class="grid-full nav navbar-nav">
-            <li class="nav-1 first has-sub">
+            <li>
+              <div class="logo-mini">
+                <img class="img-responsive logo-img" src="img/logo-miny.png" alt="">
+              </div>
+            </li>
+            <li >
               <a class="" style="background-color:" href="">
-                <span style="color:;">Menu 1</span>
+                <span>Главная</span>
               </a>
             </li>
-            <li class="nav-2 has-sub">
+            <li >
               <a class="" style="background-color:" href="#">
-                <span style="color:;">Menu 2</span>
+                <span class="dropdown">О магазине</span>
               </a>
             </li>
-            <li class="nav-3 has-sub">
+            <li >
               <a class="" style="background-color:" href="#">
-                <span style="color:;">Menu 3</span>
+                <span class="dropdown">Каталог</span>
               </a>
             </li>
-            <li class="nav-4 has-sub">
+            <li >
               <a class="" style="background-color:" href="#">
-                <span style="color:;">Menu 4</span>
+                <span class="dropdown">Новости</span>
               </a>
             </li>
-            <li class="nav-5 has-sub">
+            <li >
               <a class="" style="background-color:" href="#">
-                <span style="color:;">Menu 5</span>
+                <span class="dropdown">Акции</span>
               </a>
             </li>
-            <li class="nav has-sub">
+            <li >
               <a class="" style="background-color:" href="#">
-                <span style="color:; ">Menu 6</span>
+                <span>Контакты</span>
               </a>
             </li>
           </ul>
