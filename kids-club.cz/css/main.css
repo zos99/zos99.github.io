@@ -6204,6 +6204,9 @@ body {
   margin: 10px auto;
   width: 80%; }
 
+.search-block {
+  display: table-cell; }
+
 .form-control_modif,
 .btn-lg_modif {
   border-radius: 0px;

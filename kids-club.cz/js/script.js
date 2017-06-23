@@ -61,3 +61,15 @@ $('.jcarousel')
             .jcarouselPagination();
 
 });
+// -------------------------
+$(document).ready(function(){
+    $('.container').each(function(){
+        var highestBox = 0;
+        $('.box-height ', this).each(function(){
+            if($(this).height() > highestBox) {
+                highestBox = $(this).height();
+            }
+        });
+        $('.box-height ',this).height(highestBox);
+    });
+});
