@@ -85,6 +85,7 @@ $(document).ready(function(){
                        .addClass("fixed transbg")
                        .fadeIn('fast');
                        $(".logo-mini ").css("display","block");
+                       $(".first-logo ").css("display","block");
 
 
             });
@@ -94,6 +95,7 @@ $(document).ready(function(){
                        .addClass("default")
                        .fadeIn('fast');
                         $(".logo-mini ").css("display","none");
+                        $(".first-logo ").css("display","none");
 
 
             });

@@ -6,11 +6,54 @@
 /* Portrait tablets and medium desktops */
 @media (max-width: 1199px) and (min-width: 992px) {
 
+  .grid-full {
+
+    li {
+
+      a {
+
+        span {
+          font-size: 15px;
+        }
+
+        .dropdown {
+
+          &::after {
+            font-size: 17px;
+            line-height: 8px;
+            vertical-align: -2px;
+          }
+        }
+      }
+    }
+  }
+
 }
 
 /* Portrait tablets and small desktops */
 @media (max-width: 991px) and (min-width: 768px) {
 
+  .grid-full {
+
+    li {
+
+      a {
+
+        span {
+          font-size: 12px;
+        }
+
+        .dropdown {
+
+          &::after {
+            font-size: 10px;
+            line-height: 5px;
+            vertical-align: -1px;
+          }
+        }
+      }
+    }
+  }
 }
 
 /* Landscape phones and portrait tablets */

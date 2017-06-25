@@ -6157,6 +6157,11 @@ body {
     .header-row-background .header-row a {
       color: #fff !important;
       font-family: "MyriadProRegular", Helvetica, Arial, "Lucida Grande", sans-serif; }
+    .header-row-background .header-row .headen-menu {
+      display: inline-block; }
+    .header-row-background .header-row .headen-menu--main {
+      margin-left: 10%;
+      margin-right: 10%; }
 
 .label {
   border-radius: 0;
@@ -6299,7 +6304,13 @@ body {
   background-repeat: no-repeat;
   height: 150px;
   width: 100%;
-  padding: 10px 0; }
+  padding: 10px 0;
+  background-color: transparent;
+  border-bottom: none;
+  border-left: none;
+  border-right: none; }
+  .main-menu .first-logo {
+    display: none; }
 
 .grid-full {
   width: 100%;
@@ -6307,17 +6318,19 @@ body {
   .grid-full li {
     text-align: center;
     vertical-align: bottom;
-    width: 13%;
+    width: 16%;
     margin: 0 3px; }
     .grid-full li a {
       padding: 0;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      font-family: "MyriadProRegular", Helvetica, Arial, "Lucida Grande", sans-serif;
+      color: #fff !important; }
       .grid-full li a:hover, .grid-full li a:focus {
-        background: #035796;
-        color: #dfe564; }
+        background: #035796 !important;
+        color: #dfe564 !important; }
       .grid-full li a span {
         cursor: pointer;
-        padding: 15px;
+        padding: 8px;
         position: relative;
         white-space: normal;
         z-index: 2;
@@ -6538,7 +6551,21 @@ body {
 
 /* Large desktops and laptops */
 /* Portrait tablets and medium desktops */
+@media (max-width: 1199px) and (min-width: 992px) {
+  .grid-full li a span {
+    font-size: 15px; }
+  .grid-full li a .dropdown::after {
+    font-size: 17px;
+    line-height: 8px;
+    vertical-align: -2px; } }
 /* Portrait tablets and small desktops */
+@media (max-width: 991px) and (min-width: 768px) {
+  .grid-full li a span {
+    font-size: 12px; }
+  .grid-full li a .dropdown::after {
+    font-size: 10px;
+    line-height: 5px;
+    vertical-align: -1px; } }
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
   .listunstyled {
