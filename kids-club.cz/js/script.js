@@ -85,7 +85,7 @@ $(document).ready(function(){
                        .addClass("fixed transbg")
                        .fadeIn('fast');
                        $(".logo-mini ").css("display","block");
-                       $(".main-menu ").css("background-color","transparent");
+
 
             });
         } else if($(this).scrollTop() <= 100 && $menu.hasClass("fixed")) {
@@ -94,7 +94,7 @@ $(document).ready(function(){
                        .addClass("default")
                        .fadeIn('fast');
                         $(".logo-mini ").css("display","none");
-                        $(".main-menu ").css("background-color","rgba(3, 87, 150, 0.9)");
+
 
             });
         }

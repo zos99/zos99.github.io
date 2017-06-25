@@ -6228,7 +6228,7 @@ body {
   width: 90%; }
 
 .listunstyled {
-  font-size: 23px;
+  font-size: 22px;
   font-weight: bold; }
 
 .form-control_modif,
@@ -6275,11 +6275,10 @@ body {
 
 /*-------------------------main-menu-----------------------------*/
 .fixed {
-  position: fixed;
+  position: fixed !important;
   top: -2px;
   left: 0;
   width: 100%;
-  padding: 10px 0;
   margin-top: 0; }
 
 .transbg {
@@ -6292,9 +6291,15 @@ body {
   padding: 10px 5px !important; }
 
 .main-menu {
-  background: rgba(3, 87, 150, 0.9) none repeat scroll 0 0;
   z-index: 9999;
-  border-top: 2px solid #fff; }
+  border-top: 2px solid #fff;
+  position: absolute;
+  background-image: url("../img/fon.png") !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 150px;
+  width: 100%;
+  padding: 10px 0; }
 
 .grid-full {
   width: 100%;
@@ -6336,7 +6341,7 @@ body {
   .top-container .swiper-container .swiper-wrapper .swiper-slide {
     background-position: center;
     background-size: cover;
-    height: 674px; }
+    height: 600px; }
     .top-container .swiper-container .swiper-wrapper .swiper-slide .position {
       top: 50%;
       left: 15%;
@@ -6345,11 +6350,11 @@ body {
       .top-container .swiper-container .swiper-wrapper .swiper-slide .position .title {
         font-size: 70px;
         font-weight: 300;
-        color: #00bbd3;
+        color: #035796;
         font-family: "Roboto", Helvetica, Arial, "Lucida Grande", sans-serif; }
       .top-container .swiper-container .swiper-wrapper .swiper-slide .position .subtitle {
         font-size: 41px;
-        color: #00bbd3;
+        color: #035796;
         text-transform: uppercase;
         font-family: "Roboto", Helvetica, Arial, "Lucida Grande", sans-serif;
         margin-top: 35px;
@@ -6372,8 +6377,8 @@ body {
     border-radius: 0;
     width: 72px;
     height: 5px;
-    background-color: #5d5d5d;
-    border-color: #5d5d5d;
+    background-color: #0a679d;
+    border-color: #0a679d;
     margin: 3px; }
 
 /*---------------Production--------------------*/
@@ -6387,7 +6392,7 @@ body {
 
 .Production {
   padding-top: 50px;
-  padding-bottom: 150px;
+  padding-bottom: 50px;
   position: relative; }
   .Production .services-box__hover-bg {
     background-color: #00bbd3; }
@@ -6496,8 +6501,9 @@ body {
   text-decoration: none;
   font-family: "MyriadProRegular",Helvetica,Arial,"Lucida Grande",sans-serif;
   position: relative;
-  padding-top: 100px;
-  padding-bottom: 150px; }
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-bottom: 3px solid #fff; }
 
 .jcarousel__link a {
   text-transform: uppercase;
@@ -6516,21 +6522,11 @@ body {
   border: 1px solid #d9d6d6;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.5); }
 
-.separator {
-  background-image: url("../img/sep.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 300px;
-  z-index: 10;
-  width: 100%;
-  position: absolute;
-  bottom: -150px; }
-
 .blog {
   position: relative;
-  padding-top: 150px;
-  padding-bottom: 150px;
-  background-color: red; }
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-image: url("../img/bg.jpg"); }
 
 .footer-main {
   background-color: #272727;
