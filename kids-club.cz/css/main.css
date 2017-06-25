@@ -6157,11 +6157,8 @@ body {
     .header-row-background .header-row a {
       color: #fff !important;
       font-family: "MyriadProRegular", Helvetica, Arial, "Lucida Grande", sans-serif; }
-    .header-row-background .header-row .headen-menu {
-      display: inline-block; }
     .header-row-background .header-row .headen-menu--main {
-      margin-left: 10%;
-      margin-right: 10%; }
+      display: inline-block; }
 
 .label {
   border-radius: 0;
