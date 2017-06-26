@@ -15,8 +15,8 @@ body {
 }
 /*----------------button---------------------------------*/
 .button {
-  background: $btnRed none repeat scroll 0 0;
-  border: 2px solid $btnRed;
+  background: #26be5c none repeat scroll 0 0;
+  border: 2px solid #26be5c;
   border-radius: 2px;
   color: $White;
   cursor: pointer;
@@ -29,8 +29,8 @@ body {
   transition: all 300ms ease 0s;
   &:hover {
     background-color: transparent;
-    border: 2px solid $btnRed;
-    color: $btnRed;
+    border: 2px solid #26be5c;
+    color: #26be5c;
     text-decoration: none;
   }
 }
@@ -413,7 +413,6 @@ body {
 
             .title {
               font-size: 70px;
-              font-weight: 300;
               color:  #035796;
               font-family: $Roboto;
             }
@@ -475,6 +474,7 @@ body {
   font-size: 30px;
   font-weight: bold;
   letter-spacing: 3px;
+  margin: 0 auto;
 }
 .Production {
   padding-top: 50px;
@@ -626,18 +626,42 @@ body {
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
 }
 
+/*------blog------*/
 .blog {
   position: relative;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   background-image: url("../img/bg.jpg");
+
+  .img--blog {
+    border: 1px solid #d9d6d6;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+  }
+
+  h3 {
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #474948;
+  }
+
+  .block--news {
+    margin-top: 20px;
+  }
 }
+
+
 
 .footer-main {
   background-color: #272727;
   color: #fff;
-  font-family: $MyriadPro;
-  font-size: 15px;
+  font-family: $Roboto;
+  font-size: 14px;
   margin-top: 10px;
   padding-top: 30px;
+
+  h5 {
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #b4afaf;
+  }
 }
