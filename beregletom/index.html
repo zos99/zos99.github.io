@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <!-- Предназначен для управления режимом отображением веб-страницы в браузерах
+    Internet Explorer -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Включает масштабирование на мобильных устройствах -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Текст заголовка веб-страницы -->
+    <title>Акватика</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/jcarousel.responsive.css">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
+    <script type="text/javascript" src="js/jcarousel.responsive.js"></script>
+  </head>
+  <body>
+    <header id="header" class="page-header">
+      <div class="page-header__line">
+        <div class="container">
+          <div class="navbar-header">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div class="row">
+            <div class="sait-control col-xs-6 col-sm-4 col-md-3 col-lg-3">
+              <a class="home home-active" href="/"></a>
+              <a class="mail" href="/kontakty/"></a>
+              <a class="map" href="/karta-sayta/"></a>
+            </div>
+            <div class="online-services col-xs-12 col-sm-8 col-md-9 col-lg-9">
+              <a class="call-back" href="#">
+                <span class="icon"></span>
+                Заказать обратный звонок
+              </a>
+              <a  class="online-booking" href="#" >
+                <span class="icon"></span>
+                  Онлайн бронирование
+              </a>
+
+              <ul class="headen-menu  nav navbar-nav hidden-md hidden-lg hidden-sm">
+                <li >
+                  <a href="">
+                    <span>Главная</span>
+                  </a>
+                </li>
+                <li >
+                  <a href="#">
+                    <span class="dropdown">Новости</span>
+                  </a>
+                </li>
+                <li >
+                  <a href="#">
+                    <span class="dropdown">"Акватика</span>
+                  </a>
+                </li>
+                <li >
+                  <a href="#">
+                    <span class="dropdown">Услуги</span>
+                  </a>
+                </li>
+                <li >
+                  <a href="#">
+                    <span class="dropdown">Питание</span>
+                  </a>
+                </li>
+                <li >
+                  <a href="#">
+                    <span>Цены</span>
+                  </a>
+                </li>
+                <li >
+                  <a href="#">
+                    <span>Галерея</span>
+                  </a>
+                </li>
+                <li >
+                  <a href="#">
+                    <span>Отдых</span>
+                  </a>
+                </li>
+                <li >
+                  <a href="#">
+                    <span>Контакты</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="central-block">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-xs-12 nopadding box-height">
+              <a class="logo" href="">
+                <img class="img-responsive" src="img/logo.png" alt="">
+              </a>
+            </div>
+            <div class="col-lg-6 col-xs-12 text-center central-unit nopadding box-height">
+              <div class="search-block">
+                <div class="phone">
+                  <div class="listunstyled" data-toggle="dropdown">
+                    <span class="tell_nav">Отдых на берегу Азовского моря в Мелекино!</span></br>
+                    <span class="line">Наш адрес: с. Мелекино, 2-й спуск, ул. 1-я линия, д. 4/1</span>
+                  </div>
+                </div>
+                <div id="search" class="input-group input-group__modif">
+                  <input class="form-control input-lg form-control_modif" name="search" value="" placeholder="Поиск" minlength="1" livesearch="off" type="text">
+                  <span class="input-group-btn">
+                    <button class="btn btn-default btn-lg btn-lg_modif" type="button">
+                      <i class="fa fa-search"></i>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-xs-12 nopadding box-height">
+              <div class="left-block">
+                <div class="header-minicart">
+                  <span>
+                    (050) 422-44-31, (050) 474-15-13</br>
+                    (063) 249-76-64, (098) 638-07-13
+                  </span>
+                </div>
+                <div class="social">
+                  <ul class="soc text-center">
+                    <li><a class="soc-facebook" href="#"></a></li>
+                    <li><a class="soc-twitter" href="#"></a></li>
+                    <li><a class="soc-googleplus" href="#"></a></li>
+                    <li><a class="soc-instagram soc-icon-last" href="#"></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <nav id="menu" class="main-menu default hidden-xs">
+        <div class="container">
+          <ul class="grid-full nav navbar-nav">
+            <li >
+              <a href="">
+                <span>Главная</span>
+              </a>
+            </li>
+            <li >
+              <a href="#">
+                <span class="dropdown">Новости</span>
+              </a>
+            </li>
+            <li >
+              <a href="#">
+                <span class="dropdown">"Акватика</span>
+              </a>
+            </li>
+            <li >
+              <a href="#">
+                <span class="dropdown">Услуги</span>
+              </a>
+            </li>
+            <li >
+              <a href="#">
+                <span class="dropdown">Питание</span>
+              </a>
+            </li>
+            <li >
+              <a href="#">
+                <span>Цены</span>
+              </a>
+            </li>
+            <li >
+              <a href="#">
+                <span>Галерея</span>
+              </a>
+            </li>
+            <li >
+              <a href="#">
+                <span>Отдых</span>
+              </a>
+            </li>
+            <li >
+              <a href="#">
+                <span>Контакты</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <section class="siteslider">
+      <!-- Swiper -->
+      <div class="swiper-container">
+        <div class="parallax-bg"></div>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide swiper-slide_left">
+              <div class="position">
+                <div class="title" data-swiper-parallax="-200">Клуб семейного отдыха «Акватика»</div>
+                <div class="subtitle" data-swiper-parallax="-800">есть всё для уютного и безопасного отдыха с детьми</div>
+                <div class="text" data-swiper-parallax="-1200">
+                  <a class="button" href="#">узнать больше</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide swiper-slide_center">
+              <div class="position">
+                <div class="title" data-swiper-parallax="-200">Ресторан «Акватики»</div>
+                <div class="subtitle" data-swiper-parallax="-800">сочетает в себе превосходное меню и особенную атмосферу</div>
+                <div class="text" data-swiper-parallax="-1200">
+                  <a class="button" href="#">узнать больше</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide swiper-slide_right">
+              <div class="position">
+                <div class="title" data-swiper-parallax="-200">Гостиничный комплекс «Акватика</div>
+                <div class="subtitle" data-swiper-parallax="-800">предлагает услуги по организации и проведению мероприятий</div>
+                <div class="text" data-swiper-parallax="-1200">
+                  <a class="button" href="#">узнать больше</a>
+                </div>
+              </div>
+            </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination swiper-pagination-white"></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next swiper-button-white"></div>
+        <div class="swiper-button-prev swiper-button-white"></div>
+      </div>
+    </section>
+    <section class="hotel-info section-padding">
+      <div class="container ">
+        <h2 class="header-block">Добро пожаловать в клуб семейного досуга "Акватика"</h2>
+        <div class="row hotel-info__block-img">
+          <div class="col-sm-4 col-xs-12 text-center">
+            <a href="/">
+              <div class="picture">
+                <img class="img-responsive" src="img/01.jpg" alt="Размещение">
+                <span>Размещение</span>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm-4 col-xs-12 text-center">
+            <a href="/">
+              <div class="picture">
+                <img class="img-responsive" src="img/02.jpg" alt="Размещение">
+                <span>Питание</span>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm-4 col-xs-12 text-center">
+            <a href="/">
+              <div class="picture">
+                <img class="img-responsive" src="img/03.jpg" alt="Размещение">
+                <span>Услуги</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="hotel-info__description">
+        <div class="container">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="hotel-rooms section-padding">
+      <div class="container text-center">
+        <h2 class="header-block">Номерной фонд</h2>
+        <div class="banners row">
+          <div class="col-sm-4 box-shadow services-box__image-container">
+            <div class="services-box__hover-bg">
+              <div class="services-box__v-line">
+                <span class="s-desc">
+                  <span>
+                    <h2>1 комнатный 2-х местный «Люкс+»</h2>
+                    Однокомнатный номер включает в себя:
+                  </span>
+                  <ul>
+                    <li>оборудованную спальню,</li>
+                    <li>душевую кабину, фен,</li>
+                    <li>телевизор,</li>
+                    <li>кондиционер,</li>
+                    <li>холодильник,</li>
+                    <li>чайник, набор необходимой посуды</li>
+                  </ul>
+                </span>
+              </div>
+              <a href="#">
+                <img class="img-responsive services-box__image" src="img/nomer1.jpg" alt="">
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-4 box-shadow services-box__image-container">
+            <div class="services-box__hover-bg">
+              <div class="services-box__v-line">
+                <span class="s-desc">
+                  <h2>1 комнатный 2-х местный «Люкс+»</h2>
+                  Однокомнатный номер включает в себя:
+                  <ul>
+                    <li>оборудованную спальню,</li>
+                    <li>душевую кабину, фен,</li>
+                    <li>телевизор,</li>
+                    <li>кондиционер,</li>
+                    <li>холодильник,</li>
+                    <li>чайник, набор необходимой посуды</li>
+                  </ul>
+                </span>
+              </div>
+              <a href="#">
+                <img class="img-responsive services-box__image" src="img/nomer2.jpg" alt="">
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-4 box-shadow services-box__image-container">
+            <div class="services-box__hover-bg">
+              <div class="services-box__v-line">
+                <span class="s-desc">
+                  <span>
+                    <h2>1 комнатный 3-х местный «Люкс+»</h2>
+                  </span>
+                  <span>
+                    Однокомнатный номер включает в себя:
+                    <ul>
+                      <li>оборудованную спальню,</li>
+                      <li>душевую кабину, фен,</li>
+                      <li>телевизор,</li>
+                      <li>кондиционер,</li>
+                      <li>холодильник,</li>
+                      <li>чайник, набор необходимой посуды</li>
+                    </ul>
+                  </span>
+                </span>
+              </div>
+              <a href="#">
+                <img class="img-responsive services-box__image" src="img/nomer3.jpg" alt="">
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-4 box-shadow services-box__image-container">
+            <div class="services-box__hover-bg">
+              <div class="services-box__v-line">
+                <span class="s-desc">
+                  <span>
+                    <h2>1 комнатный 4-х местный «Люкс-студия+»</h2>
+                  </span>
+                  </span>
+                  <span>
+                    Однокомнатный номер включает в себя:
+                    <ul>
+                      <li>оборудованную спальню,</li>
+                      <li>душевую кабину, фен,</li>
+                      <li>телевизор,</li>
+                      <li>кондиционер,</li>
+                      <li>холодильник,</li>
+                      <li>чайник, набор необходимой посуды</li>
+                    </ul>
+                  </span>
+                </span>
+              </div>
+              <a href="#">
+                <img class="img-responsive services-box__image" src="img/nomer4.jpg" alt="">
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-4 box-shadow services-box__image-container">
+            <div class="services-box__hover-bg">
+              <div class="services-box__v-line">
+                <span class="s-desc">
+                  <span>
+                    <h2>2-х комнатный 4-х местный «Люкс+»</h2>
+                  </span>
+                </span>
+                <span>
+                  Двухкомнатный номер включает в себя:
+                  <ul>
+                    <li>оборудованную спальню,</li>
+                    <li>оборудованную детскую комнату,</li>
+                    <li>душевую кабину, фен,</li>
+                    <li>телевизор, кондиционер,</li>
+                    <li>холодильник, мини-кухню,</li>
+                    <li>чайник, необходимую посуду,</li>
+                    <li>шкаф для одежды, комод для белья</li>
+                    <li>комод для белья.</li>
+                  </ul>
+                </span>
+                </span>
+              </div>
+              <a href="#">
+                <img class="img-responsive services-box__image" src="img/nomer5.jpg" alt="">
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-4 box-shadow services-box__image-container">
+            <div class="services-box__hover-bg">
+              <div class="services-box__v-line">
+                <span class="s-desc">
+                  <span>
+                    <h2>3-х комнатный номер «Люкс»</h2>
+                  </span>
+                </span>
+                <span>
+                  Трехкомнатный номер включает в себя:
+                  <ul>
+                    <li>2 оборудованных спальни, гостиную, отдельную кухню,</li>
+                    <li>душевую кабину, фен,</li>
+                    <li>телевизор,</li>
+                    <li>кондиционер,</li>
+                    <li>холодильник,</li>
+                    <li>чайник, набор необходимой посуды</li>
+                  </ul>
+                </span>
+                </span>
+              </div>
+              <a href="#">
+                <img class="img-responsive services-box__image" src="img/nomer6.jpg" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-padding">
+      <div class="container text-center">
+        <h2 class="header-block">Фотогалерея</h2>
+        <div class="row">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </div>
+      </div>
+    </section>
+    <footer class="footer bg-blue">
+      <div class="container">
+        <div class="row">
+          <ul class="col-md-4 col-sm-4 col-xs-6 about_company">
+            <li class="text-left"><a href="#">Продукты</a></li>
+            <li class="text-left"><a href="#">Mini</a></li>
+            <li class="text-left"><a href="#">Mini2</a></li>
+            <li class="text-left"><a href="#">X2Pro</a></li>
+          </ul>
+          <ul class="col-md-4 col-sm-4 col-xs-6 about_company">
+            <li class="text-left"><a href="#">Приложение</a></li>
+            <li class="text-left"><a href="#">AppStore</a></li>
+            <li class="text-left"><a href="#">Google Play</a></li>
+          </ul>
+          <ul class="col-md-4 col-sm-4 col-xs-6 about_company">
+            <li class="text-left"><a href="#">О компании</a></li>
+            <li class="text-left"><a href="#">Связаться с нами</a></li>
+            <li class="text-left"><a href="#">тел.8(495)777 77 77</a></li>
+            <li class="text-left"><a href="#">ddpi@gmail.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer_soc container">
+        <ul class="nav navbar-nav navbar-right soc">
+          <li><a class="soc-facebook" href="#"></a></li>
+          <li><a class="soc-vkontakte" href="#"></a></li>
+          <li><a class="soc-instagram soc-icon-last" href="#"></a></li>
+        </ul>
+      </div>
+    </footer>
+    <script type="text/javascript" src="js/swiper.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
+</html>
