@@ -1,2 +1,2 @@
-http://zos99.github.io/ddpai/index.html
+http://zos99.github.io/beregletom/index.html
 
