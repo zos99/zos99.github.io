@@ -6156,6 +6156,12 @@ body {
     text-decoration: none; }
 
 /*-----------header--------------*/
+.logo-miny {
+  position: absolute;
+  top: 0;
+  left: 40px;
+  display: none; }
+
 .page-header {
   margin: 0 auto;
   font-family: "MyriadProRegular", Helvetica, Arial, "Lucida Grande", sans-serif;
@@ -6244,6 +6250,8 @@ body {
         .page-header .central-block .central-unit .search-block .listunstyled {
           font-size: 22px;
           font-weight: bold; }
+          .page-header .central-block .central-unit .search-block .listunstyled .line {
+            font-size: 20px; }
     .page-header .central-block .left-block {
       bottom: 0;
       position: absolute;
@@ -6265,43 +6273,40 @@ body {
     top: -2px;
     left: 0;
     width: 100%;
-    margin-top: 0; }
+    margin-top: 0;
+    z-index: 9999;
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.1); }
   .page-header .main-menu {
-    background-color: #006485; }
+    background-color: #006485;
+    position: relative;
+    border: none;
+    border-radius: 0; }
     .page-header .main-menu .grid-full {
       width: 100%;
       display: inline-flex; }
       .page-header .main-menu .grid-full li {
         text-align: center;
         vertical-align: bottom;
-        width: 16%;
-        margin: 0 3px; }
-        .page-header .main-menu .grid-full li a {
-          padding: 0;
-          text-transform: uppercase;
-          font-family: "MyriadProRegular", Helvetica, Arial, "Lucida Grande", sans-serif;
-          color: #fff !important; }
-          .page-header .main-menu .grid-full li a:hover, .page-header .main-menu .grid-full li a:focus {
-            background: #0099CC !important;
-            color: #cbc9ca !important; }
-          .page-header .main-menu .grid-full li a span {
-            cursor: pointer;
-            padding: 20px 0;
-            position: relative;
-            white-space: normal;
-            z-index: 2;
-            display: block; }
-          .page-header .main-menu .grid-full li a .dropdown::after {
-            border-radius: 20px;
-            color: #fff;
-            content: "\f140";
-            display: inline-block;
-            font-family: "material-design";
-            font-size: 28px;
-            line-height: 20px;
-            text-rendering: auto;
-            transform: translate(0px, 0px);
-            vertical-align: -4px; }
+        width: 17%; }
+
+#main-menu__linck {
+  padding: 0;
+  text-transform: uppercase;
+  font-family: "MyriadProRegular", Helvetica, Arial, "Lucida Grande", sans-serif;
+  color: #fff !important; }
+  #main-menu__linck:hover, #main-menu__linck:focus {
+    background: #0099CC !important;
+    color: #cbc9ca !important; }
+  #main-menu__linck span {
+    cursor: pointer;
+    padding: 20px 0;
+    position: relative;
+    white-space: normal;
+    z-index: 2;
+    display: block; }
+    #main-menu__linck span:hover, #main-menu__linck span:focus {
+      background: #0099CC !important;
+      color: #cbc9ca !important; }
 
 /*----------------slider-----------------------*/
 .button_descr {
@@ -6642,23 +6647,23 @@ body {
   font-size: 18px;
   font-family: "Roboto", Helvetica, Arial, "Lucida Grande", sans-serif; }
   .footer .footer-box {
-    border: 1px solid #cbc9ca;
+    border: 1px solid #07769a;
     box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.1);
     padding: 20px; }
     .footer .footer-box .f-box-title {
-      border-bottom: 1px solid #cbc9ca;
+      border-bottom: 1px solid #07769a;
       text-transform: uppercase;
       font-size: 20px;
       padding-bottom: 10px; }
     .footer .footer-box .f-box-desc {
       padding: 10px 0; }
     .footer .footer-box .button--footer {
-      border: 1px solid #cbc9ca;
+      border: 1px solid #07769a;
       color: #fff;
       width: 100%;
       text-align: center; }
       .footer .footer-box .button--footer:hover {
-        background-color: #004156;
+        background-color: #07769a;
         color: #f0f2f6 !important; }
       .footer .footer-box .button--footer p::before {
         font-size: 20px;
@@ -6666,12 +6671,12 @@ body {
         display: inline-block;
         font-family: "material-design"; }
     .footer .footer-box .button--online {
-      border: 1px solid #cbc9ca;
+      border: 1px solid #07769a;
       color: #fff;
       width: 100%;
       text-align: center; }
       .footer .footer-box .button--online:hover {
-        background-color: #004156;
+        background-color: #07769a;
         color: #f0f2f6 !important; }
       .footer .footer-box .button--online p::before {
         font-size: 20px;

@@ -129,6 +129,12 @@ body {
 }
 
 /*-----------header--------------*/
+.logo-miny {
+  position: absolute;
+  top: 0;
+  left: 40px;
+  display: none;
+}
 .page-header {
   margin: 0 auto;
   font-family: $MyriadPro;
@@ -261,6 +267,10 @@ body {
         .listunstyled {
           font-size: 22px;
           font-weight: bold;
+
+          .line {
+              font-size: 20px;
+          }
         }
       }
     }
@@ -295,10 +305,15 @@ body {
     left:0;
     width:100%;
     margin-top: 0;
+    z-index: 9999;
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.1);
   }
 
   .main-menu {
     background-color: $DBlue;
+    position: relative;
+    border: none;
+    border-radius: 0;
 
     .grid-full {
       width: 100%;
@@ -307,52 +322,41 @@ body {
       li {
         text-align: center;
         vertical-align: bottom;
-        width: 16%;
-        margin: 0 3px;
-
-
-        a {
-          padding: 0;
-          text-transform: uppercase;
-          font-family: $MyriadPro;
-          color: #fff!important;
-
-          &:hover,
-          &:focus {
-            background: $Blue!important;
-            color: $LGrey!important;
-          }
-
-          span {
-            cursor: pointer;
-            padding: 20px 0;
-            position: relative;
-
-            white-space: normal;
-            z-index: 2;
-            display: block;
-          }
-
-          .dropdown {
-
-            &::after {
-              border-radius: 20px;
-              color: $White;
-              content: "\f140";
-              display: inline-block;
-              font-family: "material-design";
-              font-size: 28px;
-              line-height: 20px;
-              text-rendering: auto;
-              transform: translate(0px, 0px);
-              vertical-align: -4px;
-            }
-          }
-        }
+        width: 17%;
       }
     }
   }
 }
+
+#main-menu__linck {
+  padding: 0;
+  text-transform: uppercase;
+  font-family: $MyriadPro;
+  color: #fff!important;
+
+  &:hover,
+  &:focus {
+    background: $Blue!important;
+    color: $LGrey!important;
+  }
+
+
+  span {
+    cursor: pointer;
+    padding: 20px 0;
+    position: relative;
+    white-space: normal;
+    z-index: 2;
+    display: block;
+
+    &:hover,
+    &:focus {
+      background: $Blue!important;
+      color: $LGrey!important;
+    }
+  }
+}
+
 /*----------------slider-----------------------*/
 .button_descr {
   color: $DGray;
@@ -752,7 +756,7 @@ body {
 
 /*-------------gallery-block---------------------------*/
 .gallery-block {
-  background-color: $LBlue;
+  background-color: $LLBlue;
 }
 /*-----------------official-site--------------*/
 .official-site {
@@ -813,12 +817,12 @@ body {
   font-family: $Roboto;
 
   .footer-box {
-    border: 1px solid $LGrey;
+    border: 1px solid $LBlue;
     box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.1);
     padding: 20px;
 
     .f-box-title {
-      border-bottom: 1px solid $LGrey;
+      border-bottom: 1px solid $LBlue;
       text-transform: uppercase;
       font-size: 20px;
       padding-bottom: 10px;
@@ -829,13 +833,13 @@ body {
     }
 
     .button--footer {
-      border: 1px solid $LGrey;
+      border: 1px solid $LBlue;
       color: $White;
       width: 100%;
       text-align: center;
 
       &:hover {
-        background-color: $DDBlue;
+        background-color: $LBlue;
         color: $DWhite!important;
       }
 
@@ -852,13 +856,13 @@ body {
     }
 
     .button--online {
-      border: 1px solid $LGrey;
+      border: 1px solid $LBlue;
       color: $White;
       width: 100%;
       text-align: center;
 
       &:hover {
-        background-color: $DDBlue;
+        background-color: $LBlue;
         color: $DWhite!important;
       }
       p {
