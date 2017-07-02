@@ -24,7 +24,7 @@ var swiper = new Swiper('.swiper-container', {
          $('.box-height ',this).height(highestBox);
      });
  });
-
+//-----------services-box-----------------
  /* Function for hover on services-box*/
 $(function() {
   function servicesBoxHover() {
@@ -40,4 +40,32 @@ $(function() {
     });
   }
   servicesBoxHover();
+});
+//--------masonry--------------
+$(document).ready(function() {
+
+  if($("div").is(".grid")) {
+
+   //Галерея masonry
+
+  $('.grid').masonry({
+  	  //options
+      itemSelector: '.grid-item',
+      columnWidth: 200
+  });
+
+  }
+
+});
+// ---------box height------------
+$(document).ready(function(){
+    $('.container').each(function(){
+        var highestBox = 0;
+        $('.box-height ', this).each(function(){
+            if($(this).height() > highestBox) {
+                highestBox = $(this).height();
+            }
+        });
+        $('.box-height ',this).height(highestBox);
+    });
 });

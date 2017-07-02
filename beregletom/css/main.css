@@ -227,7 +227,7 @@ pre {
   text-shadow: none; }
 
 body {
-  color: #676767;
+  color: #2a2a2a;
   font-size: 100%;
   font-family: "Roboto", Helvetica, Arial, "Lucida Grande", sans-serif; }
 
@@ -239,7 +239,7 @@ a,
 a:link,
 a:visited,
 a:focus {
-  color: #676767; }
+  color: #2a2a2a; }
 
 p {
   margin: 0; }
@@ -250,7 +250,7 @@ p {
 html, body {
   height: 100%;
   width: 100%;
-  color: #676767; }
+  color: #2a2a2a; }
 
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
@@ -6142,12 +6142,13 @@ body {
   color: #fff !important;
   cursor: pointer;
   display: inline-block;
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 400;
   height: 39px;
   line-height: 17px;
   padding: 9px 10px;
-  transition: all 300ms ease 0s; }
+  transition: all 300ms ease 0s;
+  text-transform: uppercase; }
   .button:hover {
     background-color: transparent;
     border: 2px solid #006485;
@@ -6304,7 +6305,7 @@ body {
 
 /*----------------slider-----------------------*/
 .button_descr {
-  color: #676767;
+  color: #2a2a2a;
   font-style: "GothamProRegular", sans-serif;
   font-size: 15px;
   text-transform: uppercase;
@@ -6414,8 +6415,25 @@ body {
 .header-block {
   font-size: 25px;
   font-weight: bold;
-  color: #dd905a;
-  text-align: center; }
+  color: #f49156;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative; }
+  .header-block::after {
+    content: "";
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%); }
+  .header-block::after {
+    background-image: url("../img/divider.png");
+    height: 6px;
+    bottom: -15px;
+    width: 334px; }
+
+.header-block--orange {
+  color: #fff;
+  font-size: 30px;
+  line-height: 45px; }
 
 .section-padding {
   padding: 30px 0;
@@ -6425,8 +6443,8 @@ body {
 .hotel-info {
   background-color: #f0f2f6;
   font-family: "Roboto", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-size: 16px;
-  color: #676767; }
+  font-size: 18px;
+  color: #2a2a2a; }
   .hotel-info .hotel-info__block-img {
     padding: 40px 0; }
     .hotel-info .hotel-info__block-img .picture {
@@ -6451,7 +6469,7 @@ body {
       .hotel-info .hotel-info__block-img .picture span {
         background-color: white;
         bottom: 0;
-        color: #dd905a;
+        color: #f49156;
         display: block;
         font-family: "Roboto", Helvetica, Arial, "Lucida Grande", sans-serif;
         font-size: 18px;
@@ -6472,7 +6490,7 @@ body {
 .hotel-rooms {
   position: relative; }
   .hotel-rooms .services-box__hover-bg {
-    background-color: #dd905a;
+    background-color: #f49156;
     max-width: 360px; }
     .hotel-rooms .services-box__hover-bg a {
       box-shadow: 0 25px 37px -25px rgba(0, 0, 0, 0.75); }
@@ -6537,19 +6555,133 @@ body {
           font-weight: 500;
           text-transform: uppercase; }
 
+/*------masonry-----------------------*/
+.grid {
+  margin: 40px auto;
+  text-align: center;
+  max-width: 1005px; }
+
+.grid-item {
+  width: 200px;
+  height: 200px;
+  padding: 5px;
+  overflow: hidden;
+  display: inline-block; }
+  .grid-item img {
+    height: 100% !important;
+    width: auto !important;
+    max-width: none !important;
+    transition: transform 3s;
+    -webkit-transition: transform 2.0s ease 0s; }
+    .grid-item img:hover {
+      transform: translateX(-100px); }
+
+.grid-item--width2 {
+  width: 400px;
+  height: 200px; }
+  .grid-item--width2 img {
+    height: auto !important;
+    width: 100% !important; }
+    .grid-item--width2 img:hover {
+      transform: scale(1.4); }
+
+.grid-item--height2 {
+  height: 400px;
+  width: 200px; }
+  .grid-item--height2 img {
+    height: 100% !important;
+    width: auto !important; }
+    .grid-item--height2 img:hover {
+      transform: scale(1.2) rotate(5deg); }
+
+/*-------------gallery-block---------------------------*/
+.gallery-block {
+  background-color: #dcf0f7; }
+
+/*-----------------official-site--------------*/
+.official-site {
+  background-image: url(../img/SEA.jpg);
+  background-repeat: repeat;
+  position: relative; }
+  .official-site p {
+    padding: 40px 0;
+    text-align: center;
+    color: #f0f2f6;
+    font-size: 25px; }
+
+/*-------------------------faq--------------*/
+.faq .faq-inner {
+  margin: 30px 0; }
+  .faq .faq-inner .faq-item {
+    padding: 20px; }
+    .faq .faq-inner .faq-item::before {
+      font-size: 60px;
+      color: #f49156;
+      content: "\f186";
+      display: inline-block;
+      font-family: "material-design"; }
+    .faq .faq-inner .faq-item p {
+      font-size: 18px;
+      font-family: "Roboto", Helvetica, Arial, "Lucida Grande", sans-serif;
+      font-weight: bold; }
+    .faq .faq-inner .faq-item .faq--button {
+      font-size: 15px;
+      text-transform: none; }
+
+/*--------------------map--------------------*/
+.maps {
+  height: 400px;
+  background-image: url(../img/maps.jpg);
+  background-repeat: repeat;
+  position: relative; }
+
 /*-------------------------------------------*/
 .footer {
-  padding-bottom: 30px; }
-  .footer a {
-    color: #f0f2f6;
-    font-size: 15px;
-    font-family: "GothamProRegular", sans-serif; }
-    .footer a:hover {
-      color: #f0f2f6;
-      text-decoration: underline; }
-
-.about_company {
-  padding-top: 30px; }
+  background-color: #006485;
+  color: #fff;
+  font-size: 18px;
+  font-family: "Roboto", Helvetica, Arial, "Lucida Grande", sans-serif; }
+  .footer .footer-box {
+    border: 1px solid #cbc9ca;
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.1);
+    padding: 20px; }
+    .footer .footer-box .f-box-title {
+      border-bottom: 1px solid #cbc9ca;
+      text-transform: uppercase;
+      font-size: 20px;
+      padding-bottom: 10px; }
+    .footer .footer-box .f-box-desc {
+      padding: 10px 0; }
+    .footer .footer-box .button--footer {
+      border: 1px solid #cbc9ca;
+      color: #fff;
+      width: 100%;
+      text-align: center; }
+      .footer .footer-box .button--footer:hover {
+        background-color: #004156;
+        color: #f0f2f6 !important; }
+      .footer .footer-box .button--footer p::before {
+        font-size: 20px;
+        content: "\F3fb";
+        display: inline-block;
+        font-family: "material-design"; }
+    .footer .footer-box .button--online {
+      border: 1px solid #cbc9ca;
+      color: #fff;
+      width: 100%;
+      text-align: center; }
+      .footer .footer-box .button--online:hover {
+        background-color: #004156;
+        color: #f0f2f6 !important; }
+      .footer .footer-box .button--online p::before {
+        font-size: 20px;
+        content: "\F678";
+        display: inline-block;
+        font-family: "material-design"; }
+  .footer .footer--bottom {
+    padding-top: 30px; }
+    .footer .footer--bottom p {
+      float: left; }
 
 @media (max-width: 768px) {
   .siteslider .swiper-container .swiper-wrapper .swiper-slide .position {

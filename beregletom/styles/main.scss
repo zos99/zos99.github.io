@@ -1,11 +1,16 @@
 $White: #fff;
 $DWhite: #f0f2f6;
 $Golg: #f4b60d;
+$LBlue: #dcf0f7;
 $Blue: #0099CC;
 $DBlue: #006485;
+$DDBlue: #004156;
 $DGray: #676767;
+$DGray: #2a2a2a;
 $LGrey: #cbc9ca;
-$Orange: #dd905a;
+$Orange: #f49156;
+$DOrange: #e35f10;
+$LOrange: #EAAB69;
 /*-------fonts---------*/
 $fontGothamPro: "GothamProRegular",sans-serif;
 $Arial:   "Arial";
@@ -442,12 +447,13 @@ body {
   color: $White!important;
   cursor: pointer;
   display: inline-block;
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 400;
   height: 39px;
   line-height: 17px;
   padding: 9px 10px;
   transition: all 300ms ease 0s;
+  text-transform: uppercase;
 
   &:hover {
     background-color: transparent;
@@ -835,6 +841,27 @@ body {
   font-weight: bold;
   color: $Orange;
   text-align: center;
+  text-transform: uppercase;
+  position: relative;
+
+  &::after {
+    content: "";
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%);
+  }
+  &::after {
+    background-image: url("../img/divider.png");
+    height: 6px;
+    bottom: -15px;
+    width: 334px;
+  }
+}
+
+.header-block--orange {
+  color: $White;
+  font-size: 30px;
+  line-height: 45px;
 }
 
 .section-padding {
@@ -845,7 +872,7 @@ body {
 .hotel-info {
   background-color: $DWhite;
   font-family: $Roboto;
-  font-size: 16px;
+  font-size: 18px;
   color: $DGray;
 
   .hotel-info__block-img {
@@ -1004,22 +1031,190 @@ body {
     }
   }
 }
+/*------masonry-----------------------*/
+.grid {
+  margin: 40px auto;
+  text-align: center;
+  max-width: 1005px;
+}
+.grid-item {
+  width: 200px;
+	height: 200px;
+  padding: 5px;
+  overflow: hidden;
+  display: inline-block;
 
-/*-------------------------------------------*/
-.footer {
-  padding-bottom: 30px;
-  a {
-    color: $DWhite;
-    font-size: 15px;
-    font-family: $fontGothamPro;
+  img {
+    height: 100% !important;
+    width: auto !important;
+    max-width: none !important;
+    transition: transform 3s;
+    -webkit-transition: transform 2.0s ease 0s;
+
     &:hover {
-      color:$DWhite;
-      text-decoration: underline;
+        transform: translateX(-100px);
     }
   }
 }
-.about_company {
-  padding-top: 30px;
+
+.grid-item--width2 {
+  width: 400px;
+  height: 200px;
+
+  img {
+    height: auto !important;
+    width: 100% !important;
+
+    &:hover {
+        transform: scale(1.4);
+    }
+  }
+}
+
+.grid-item--height2 {
+  height: 400px;
+  width: 200px;
+
+  img {
+    height: 100% !important;
+    width: auto !important;
+
+    &:hover {
+        transform: scale(1.2) rotate(5deg);
+    }
+  }
+}
+
+/*-------------gallery-block---------------------------*/
+.gallery-block {
+  background-color: $LBlue;
+}
+/*-----------------official-site--------------*/
+.official-site {
+  background-image: url(../img/SEA.jpg);
+  background-repeat: repeat;
+  position: relative;
+
+  p {
+    padding: 40px 0;
+    text-align: center;
+    color: $DWhite;
+    font-size: 25px;
+  }
+}
+/*-------------------------faq--------------*/
+.faq {
+
+  .faq-inner {
+    margin: 30px 0;
+
+    .faq-item {
+      padding: 20px;
+
+
+      &::before {
+        font-size: 60px;
+        color: $Orange;
+        content: "\f186";
+        display: inline-block;
+        font-family: "material-design";
+      }
+
+      p {
+        font-size: 18px;
+        font-family: $Roboto;
+        font-weight: bold;
+      }
+
+      .faq--button {
+        font-size: 15px;
+        text-transform: none;
+      }
+    }
+  }
+}
+/*--------------------map--------------------*/
+.maps {
+  height: 400px;
+  background-image: url(../img/maps.jpg);
+  background-repeat: repeat;
+  position: relative;
+}
+/*-------------------------------------------*/
+.footer {
+  background-color: $DBlue;
+  color: $White;
+  font-size: 18px;
+  font-family: $Roboto;
+
+  .footer-box {
+    border: 1px solid $LGrey;
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.1);
+    padding: 20px;
+
+    .f-box-title {
+      border-bottom: 1px solid $LGrey;
+      text-transform: uppercase;
+      font-size: 20px;
+      padding-bottom: 10px;
+    }
+
+    .f-box-desc {
+      padding: 10px 0;
+    }
+
+    .button--footer {
+      border: 1px solid $LGrey;
+      color: $White;
+      width: 100%;
+      text-align: center;
+
+      &:hover {
+        background-color: $DDBlue;
+        color: $DWhite!important;
+      }
+
+      p {
+
+        &::before {
+          font-size: 20px;
+          content: "\F3fb";
+          display: inline-block;
+          font-family: "material-design";
+        }
+
+      }
+    }
+
+    .button--online {
+      border: 1px solid $LGrey;
+      color: $White;
+      width: 100%;
+      text-align: center;
+
+      &:hover {
+        background-color: $DDBlue;
+        color: $DWhite!important;
+      }
+      p {
+
+        &::before {
+
+          font-size: 20px;
+          content: "\F678";
+          display: inline-block;
+          font-family: "material-design";
+        }
+      }
+    }
+  }
+  .footer--bottom {
+    padding-top: 30px;
+
+    p {
+      float: left;
+    }
+  }
 }
 
 @media (max-width: 768px){
