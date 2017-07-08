@@ -6156,11 +6156,17 @@ body {
     text-decoration: none; }
 
 /*-----------header--------------*/
-.logo-miny {
+.logo-miny,
+.logo-miny-header {
   position: absolute;
-  top: 0;
   left: 40px;
   display: none; }
+
+.logo-miny {
+  top: 0; }
+
+.logo-miny-header {
+  top: 20px; }
 
 .page-header {
   margin: 0 auto;
@@ -6170,51 +6176,75 @@ body {
   border-bottom: none;
   padding-bottom: 0;
   /*-------------------------main-menu-----------------------------*/ }
+  .page-header .online-services {
+    text-align: right; }
+    .page-header .online-services .call-back {
+      padding-right: 6%; }
+      .page-header .online-services .call-back::before {
+        font-size: 20px;
+        content: "\F3fb";
+        display: inline-block;
+        font-family: "material-design"; }
+    .page-header .online-services .online-booking {
+      color: #006485;
+      font-weight: bold; }
+      .page-header .online-services .online-booking::before {
+        color: #006485;
+        font-size: 20px;
+        content: "\F678";
+        display: inline-block;
+        font-family: "material-design"; }
+  .page-header .headen-menu li a {
+    padding-top: 0;
+    padding-bottom: 0; }
   .page-header .page-header__line {
-    padding: 5px 0;
     background-color: #f0f2f6;
     background: transparent none repeat scroll 0 0;
-    border-bottom: 1px solid #cbc9ca; }
-    .page-header .page-header__line .sait-control {
-      float: left; }
-      .page-header .page-header__line .sait-control a {
-        background: transparent url("../img/sprite.png") no-repeat scroll 0 0;
-        display: inline-block;
-        height: 20px;
-        margin: 0 23px 0 0; }
-      .page-header .page-header__line .sait-control .home {
-        background-position: 0 0;
-        width: 23px; }
-      .page-header .page-header__line .sait-control .mail {
-        background-position: -23px 0;
-        width: 19px; }
-        .page-header .page-header__line .sait-control .mail:hover {
-          background-position: -88px 0; }
-      .page-header .page-header__line .sait-control .map {
-        background-position: -42px 0;
-        width: 23px; }
-        .page-header .page-header__line .sait-control .map:hover {
-          background-position: -107px 0; }
-      .page-header .page-header__line .sait-control .home-active {
-        background-position: -65px 0 !important; }
-    .page-header .page-header__line .online-services {
-      text-align: right; }
-      .page-header .page-header__line .online-services .call-back {
-        padding-right: 6%; }
-        .page-header .page-header__line .online-services .call-back::before {
-          font-size: 20px;
-          content: "\F3fb";
-          display: inline-block;
-          font-family: "material-design"; }
-      .page-header .page-header__line .online-services .online-booking {
-        color: #006485;
-        font-weight: bold; }
-        .page-header .page-header__line .online-services .online-booking::before {
-          color: #006485;
-          font-size: 20px;
-          content: "\F678";
-          display: inline-block;
-          font-family: "material-design"; }
+    border-bottom: 1px solid #cbc9ca;
+    min-height: 100%;
+    padding: 10px 0; }
+    .page-header .page-header__line .navbar-toggle {
+      background-color: #0099CC; }
+      .page-header .page-header__line .navbar-toggle .icon-bar {
+        background-color: #07769a; }
+    .page-header .page-header__line .nav {
+      padding-left: 5%;
+      padding-right: 5%;
+      color: #2a2a2a; }
+    .page-header .page-header__line .nav-headen {
+      font-size: 16px;
+      background-color: #006485; }
+      .page-header .page-header__line .nav-headen li {
+        padding: 5px; }
+        .page-header .page-header__line .nav-headen li a {
+          text-decoration: none;
+          color: #fff;
+          padding: 5px; }
+          .page-header .page-header__line .nav-headen li a:hover {
+            background-color: #0099CC; }
+        .page-header .page-header__line .nav-headen li ul li {
+          text-align: center;
+          border-bottom: 1px solid #0099CC; }
+    .page-header .page-header__line .sait-control .home {
+      background-position: 0 0;
+      width: 23px; }
+    .page-header .page-header__line .sait-control .mail {
+      background-position: -23px 0;
+      width: 19px; }
+      .page-header .page-header__line .sait-control .mail:hover {
+        background-position: -88px 0; }
+    .page-header .page-header__line .sait-control .map {
+      background-position: -42px 0;
+      width: 23px; }
+      .page-header .page-header__line .sait-control .map:hover {
+        background-position: -107px 0; }
+    .page-header .page-header__line .sait-control .home-active {
+      background-position: -65px 0 !important; }
+    .page-header .page-header__line .sait-control li {
+      background: transparent url("../img/sprite.png") no-repeat scroll 0 0;
+      display: inline-block;
+      height: 20px;
+      margin: 0 23px 0 0; }
   .page-header .central-block {
     padding: 5px 0 15px; }
     .page-header .central-block .logo {
@@ -6278,35 +6308,58 @@ body {
     box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.1); }
   .page-header .main-menu {
     background-color: #006485;
-    position: relative;
-    border: none;
-    border-radius: 0; }
-    .page-header .main-menu .grid-full {
-      width: 100%;
-      display: inline-flex; }
-      .page-header .main-menu .grid-full li {
-        text-align: center;
-        vertical-align: bottom;
-        width: 17%; }
-
-#main-menu__linck {
-  padding: 0;
-  text-transform: uppercase;
-  font-family: "MyriadProRegular", Helvetica, Arial, "Lucida Grande", sans-serif;
-  color: #fff !important; }
-  #main-menu__linck:hover, #main-menu__linck:focus {
-    background: #0099CC !important;
-    color: #cbc9ca !important; }
-  #main-menu__linck span {
-    cursor: pointer;
-    padding: 20px 0;
-    position: relative;
-    white-space: normal;
-    z-index: 2;
-    display: block; }
-    #main-menu__linck span:hover, #main-menu__linck span:focus {
-      background: #0099CC !important;
-      color: #cbc9ca !important; }
+    padding: 10px 0;
+    /*------------------------------*/ }
+    .page-header .main-menu ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0; }
+      .page-header .main-menu ul li {
+        display: inline-block;
+        position: relative; }
+        .page-header .main-menu ul li ul {
+          background-color: #0099CC;
+          position: absolute;
+          left: 0;
+          top: 40px;
+          width: 200px; }
+        .page-header .main-menu ul li li {
+          position: relative;
+          margin: 0;
+          display: block; }
+          .page-header .main-menu ul li li a {
+            border-bottom: solid 1px #07769a;
+            margin: 0 10px;
+            padding: 0; }
+          .page-header .main-menu ul li li:last-child a {
+            border-bottom: none; }
+    .page-header .main-menu .sub-menu {
+      background-color: #006485;
+      transition: all 0.7s;
+      z-index: 9999;
+      display: none; }
+    .page-header .main-menu .sub-menu-animated {
+      background-color: #0099CC; }
+    .page-header .main-menu a {
+      line-height: 40px;
+      padding: 0 12px;
+      margin: 0 12px;
+      text-transform: uppercase;
+      font-family: "MyriadProRegular", Helvetica, Arial, "Lucida Grande", sans-serif;
+      color: #fff !important;
+      display: block;
+      text-decoration: none; }
+      .page-header .main-menu a:hover, .page-header .main-menu a:focus, .page-header .main-menu a:active {
+        color: #f4b60d !important; }
+    .page-header .main-menu .dropdown {
+      background-color: inherit;
+      transition: all 0.7s; }
+    .page-header .main-menu .dropdown-animated {
+      background-color: #0099CC; }
+    .page-header .main-menu .dropdown__linck {
+      background-image: url("../img/arrow-down.png");
+      background-position: right 20px;
+      background-repeat: no-repeat; }
 
 /*----------------slider-----------------------*/
 .button_descr {
@@ -6359,6 +6412,8 @@ body {
     background-image: url(../img/banner_2.jpg); }
   .siteslider .swiper-container .swiper-wrapper .swiper-slide_center {
     background-image: url(../img/banner_3.jpg); }
+  .siteslider .swiper-container .swiper-wrapper .swiper-slide_center1 {
+    background-image: url(../img/banner_51.jpg); }
   .siteslider .swiper-container .swiper-wrapper .swiper-slide_right {
     background-image: url(../img/banner_4.jpg); }
   .siteslider .swiper-container .swiper-pagination .swiper-pagination-bullet {
@@ -6694,6 +6749,9 @@ body {
     left: 50%;
     position: absolute;
     transform: translate(-50%, -50%);
-    text-align: center; } }
+    text-align: center; }
+
+  .logo-miny-header {
+    display: block; } }
 
 /*# sourceMappingURL=main.css.map */

@@ -61,7 +61,7 @@ $('.jcarousel')
             .jcarouselPagination();
 
 });
-// -------------------------
+// ---------box height------------
 $(document).ready(function(){
     $('.container').each(function(){
         var highestBox = 0;
