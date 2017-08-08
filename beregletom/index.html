@@ -20,7 +20,7 @@
   <body>
     <header id="header" class="page-header">
       <div class="logo-miny-header online-services">
-        <a  class="online-booking" href="#" >
+        <a  class="dropdown-h collapsed online-booking--headen" href="#headenB" data-toggle="collapse" aria-expanded="false">
           <span class="icon"></span>
             Онлайн бронирование
         </a>
@@ -130,18 +130,296 @@
             </ul>
             <ul class="headen-menu nav navbar-nav navbar-right online-services hidden-xs">
               <li class="headen-menu--main">
-                <a class="call-back" href="#">
+                <a class="call-back" data-target="modal" href="#myModal1">
                   <span class="icon"></span>
                   Заказать обратный звонок
                 </a>
+                <!-- HTML-код модального окна -->
+                <div id="myModal1" class="modal fade">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <!-- Заголовок модального окна -->
+                      <div class="modal-header text-center">
+                        <h4 class="modal-title">Заказать обратный звонок</h4>
+                      </div>
+                      <!-- Основное содержимое модального окна -->
+                      <div class="modal-body">
+                        <form  method="post" action="#" name="akvatika">
+                          <div class="form-group">
+                            <label class="control-label" for="name">
+                              Ваше Имя <i class="fa fa-asterisk"></i>
+                            </label>
+                            <div class="gcore-input">
+                              <input id="name" class="form-control" name="name" value="Ваше имя" placeholder="" title="" style="" data-inputmask="" data-load-state="" data-tooltip="" type="text">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label class="control-label" for="phone">
+                              Ваш телефон <i class="fa fa-asterisk"></i>
+                            </label>
+                            <div class="gcore-input">
+                              <input id="phone" class="form-control" name="phone" value="Ваш телефон" placeholder="" maxlength="20" title="" style="" data-inputmask="'mask' : '+9(999)999-9999'" data-load-state="" data-tooltip="" type="text">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label class="control-label" for="email">
+                              Эл.почта
+                            </label>
+                            <div class="gcore-input">
+                              <input id="email" class="form-control" name="email" value="Эл.почта" placeholder="" title="" style="" data-inputmask="" data-load-state="" data-tooltip="Эл.почта" type="text">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label class="control-label" for="textarea10">Комментарии</label>
+                            <div class="gcore-input">
+                              <textarea id="textarea10" class="form-control" name="textarea10" placeholder="" rows="3" cols="40" title="" style="" data-wysiwyg="0" data-load-state="" data-tooltip="">Комментарии</textarea>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <div class="gcore-subinput-container-wide">
+                              <label class="control-label" for="captcha1">Антиспам</label>
+                            </div>
+                            <div class="gcore-input">
+                              <input id="captcha1" class="form-control" placeholder="" title="" style="" name="captcha" type="text">
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="clearfix"></div>
+                      <!-- Футер модального окна -->
+                      <div class="modal-footer">
+                        <button type="button" class="btn button">Отправить</button>
+                        <button type="button" class="btn button" data-dismiss="modal">Закрыть</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </li>
               <li class="headen-menu--main">
-                <a  class="online-booking" href="#" >
+                <a  class="online-booking" data-target="modal" href="#myModal" >
                   <span class="icon"></span>
                     Онлайн бронирование
                 </a>
+                <!-- HTML-код модального окна -->
+                <div id="myModal" class="modal fade">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <!-- Заголовок модального окна -->
+                      <div class="modal-header text-center">
+                        <h4 class="modal-title">Бронирование номеров</h4>
+                      </div>
+                      <!-- Основное содержимое модального окна -->
+                      <div class="modal-body">
+                        <form  method="post" action="#" name="akvatika">
+                          <div class="form-group">
+                            <label class="control-label" for="name">
+                              Ваше Имя <i class="fa fa-asterisk"></i>
+                            </label>
+                            <div class="gcore-input">
+                              <input id="name" class="form-control" name="name" value="Ваше имя" placeholder="" title="" style="" data-inputmask="" data-load-state="" data-tooltip="" type="text">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label class="control-label" for="phone">
+                              Ваш телефон <i class="fa fa-asterisk"></i>
+                            </label>
+                            <div class="gcore-input">
+                              <input id="phone" class="form-control" name="phone" value="Ваш телефон" placeholder="" maxlength="20" title="" style="" data-inputmask="'mask' : '+9(999)999-9999'" data-load-state="" data-tooltip="" type="text">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label class="control-label" for="email">
+                              Эл.почта
+                              <i class="fa fa-asterisk"></i>
+                            </label>
+                            <div class="gcore-input">
+                              <input id="email" class="form-control" name="email" value="Эл.почта" placeholder="" title="" style="" data-inputmask="" data-load-state="" data-tooltip="Эл.почта" type="text">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label class="control-label" for="datepicker4">
+                              Заезд
+                              <i class="fa fa-asterisk"></i>
+                            </label>
+                            <div class="gcore-input">
+                              <input id="datepicker4" class="form-control" name="datepicker4" value="Заезд" data-gdatetimepicker-format="d-m-Y" placeholder="" title="" style="" data-load-state="" data-tooltip="" data-fieldtype="gdatetimepicker" data-start_view="d" type="text">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label class="control-label required_label" for="datepicker5">
+                              Выезд
+                              <i class="fa fa-asterisk"></i>
+                            </label>
+                            <div class="gcore-input">
+                              <input id="datepicker5" class="form-control" name="datepicker5" value="Выезд" data-gdatetimepicker-format="d-m-Y" placeholder="" title="" style="" data-load-state="" data-tooltip="" data-fieldtype="gdatetimepicker" data-start_view="d" type="text">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label class="control-label" for="dropdown7">
+                              Взрослых
+                                <i class="fa fa-asterisk"></i>
+                            </label>
+                            <div class="gcore-input">
+                              <select id="dropdown7" class="form-control" name="dropdown7" size="" title="" style="" data-load-state="" data-tooltip="">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label class="control-label" for="dropdown8">Детей</label>
+                            <div class="gcore-input">
+                              <select id="dropdown8" class="form-control" name="dropdown8" size="" title="" style="" data-load-state="" data-tooltip="">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label class="control-label" for="textarea10">Комментарии</label>
+                            <div class="gcore-input">
+                              <textarea id="textarea10" class="form-control" name="textarea10" placeholder="" rows="3" cols="40" title="" style="" data-wysiwyg="0" data-load-state="" data-tooltip="">Комментарии</textarea>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <div class="gcore-subinput-container-wide">
+                              <label class="control-label" for="captcha1">Антиспам</label>
+                            </div>
+                            <div class="gcore-input">
+                              <input id="captcha1" class="form-control" placeholder="" title="" style="" name="captcha" type="text">
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="clearfix"></div>
+                      <!-- Футер модального окна -->
+                      <div class="modal-footer">
+                        <button type="button" class="btn button">Отправить</button>
+                        <button type="button" class="btn button" data-dismiss="modal">Закрыть</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </li>
             </ul>
+          </div>
+        </div>
+      </div>
+      <div id="headenB" class="headen-block collapse" aria-expanded="false">
+        <div class="container headen-block__body">
+          <div class="row">
+            <form  method="post" action="#" name="akvatika">
+              <div class="form-group col-xs-6">
+                <label class="control-label" for="name"> Ваше Имя <i class="fa fa-asterisk"></i></label>
+                <div class="gcore-input">
+                  <input id="name" class="form-control" name="name" value="Ваше имя" placeholder="" title="" style="" data-inputmask="" data-load-state="" data-tooltip="" type="text">
+                </div>
+              </div>
+              <div class="form-group col-xs-6">
+                <label class="control-label" for="phone">
+                  Ваш телефон <i class="fa fa-asterisk"></i>
+                </label>
+                <div class="gcore-input">
+                  <input id="phone" class="form-control" name="phone" value="Ваш телефон" placeholder="" maxlength="20" title="" style="" data-inputmask="'mask' : '+9(999)999-9999'" data-load-state="" data-tooltip="" type="text">
+                </div>
+              </div>
+              <div class="clearfix"></div>
+              <div class="form-group col-xs-12">
+                <label class="control-label" for="email">Эл.почта<i class="fa fa-asterisk"></i></label>
+                <div class="gcore-input">
+                  <input id="email" class="form-control" name="email" value="Эл.почта" placeholder="" title="" style="" data-inputmask="" data-load-state="" data-tooltip="Эл.почта" type="text">
+                </div>
+              </div>
+              <div class="clearfix"></div>
+              <div class="form-group col-xs-6">
+                <label class="control-label" for="datepicker4">Заезд<i class="fa fa-asterisk"></i></label>
+                <div class="gcore-input">
+                  <input id="datepicker4" class="form-control" name="datepicker4" value="Заезд" data-gdatetimepicker-format="d-m-Y" placeholder="" title="" style="" data-load-state="" data-tooltip="" data-fieldtype="gdatetimepicker" data-start_view="d" type="text">
+                </div>
+              </div>
+              <div class="form-group col-xs-6">
+                <label class="control-label required_label" for="datepicker5">Выезд<i class="fa fa-asterisk"></i></label>
+                <div class="gcore-input">
+                  <input id="datepicker5" class="form-control" name="datepicker5" value="Выезд" data-gdatetimepicker-format="d-m-Y" placeholder="" title="" style="" data-load-state="" data-tooltip="" data-fieldtype="gdatetimepicker" data-start_view="d" type="text">
+                </div>
+              </div>
+              <div class="clearfix"></div>
+              <div class="form-group col-xs-6">
+                <label class="control-label" for="dropdown7">Взрослых<i class="fa fa-asterisk"></i></label>
+                <div class="gcore-input">
+                  <select id="dropdown7" class="form-control" name="dropdown7" size="" title="" style="" data-load-state="" data-tooltip="">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group col-xs-6">
+                <label class="control-label" for="dropdown8">Детей</label>
+                <div class="gcore-input">
+                  <select id="dropdown8" class="form-control" name="dropdown8" size="" title="" style="" data-load-state="" data-tooltip="">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                  </select>
+                </div>
+              </div>
+              <div class="clearfix"></div>
+              <div class="form-group col-xs-12">
+                <label class="control-label" for="textarea10">Комментарии</label>
+                <div class="gcore-input">
+                  <textarea id="textarea10" class="form-control" name="textarea10" placeholder="" rows="3" cols="40" title="" style="" data-wysiwyg="0" data-load-state="" data-tooltip="">Комментарии</textarea>
+                </div>
+              </div>
+              <div class="clearfix"></div>
+              <div class="form-group col-xs-6">
+                <div class="gcore-subinput-container-wide">
+                  <label class="control-label" for="captcha1">Антиспам</label>
+                </div>
+                <div class="gcore-input">
+                  <input id="captcha1" class="form-control" placeholder="" title="" style="" name="captcha" type="text">
+                </div>
+              </div>
+              <div class="clearfix"></div>
+              <div class="modal-footer col-xs-12 text-center">
+                <button type="button" class="btn button">Отправить</button>
+                <button type="button" class="btn button" data-dismiss="modal">Закрыть</button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
@@ -332,7 +610,7 @@
       <div class="container text-center">
         <h2 class="header-block">Номерной фонд</h2>
         <div class="banners row">
-          <div class="col-sm-4 box-shadow services-box__image-container">
+          <div class="col-xs-12 col-sm-6 col-md-4 box-shadow services-box__image-container">
             <div class="services-box__hover-bg">
               <div class="services-box__v-line">
                 <span class="s-desc">
@@ -355,7 +633,7 @@
               </a>
             </div>
           </div>
-          <div class="col-sm-4 box-shadow services-box__image-container">
+          <div class="col-xs-12 col-sm-6 col-md-4 box-shadow services-box__image-container">
             <div class="services-box__hover-bg">
               <div class="services-box__v-line">
                 <span class="s-desc">
@@ -376,7 +654,7 @@
               </a>
             </div>
           </div>
-          <div class="col-sm-4 box-shadow services-box__image-container">
+          <div class="col-xs-12 col-sm-6 col-md-4 box-shadow services-box__image-container">
             <div class="services-box__hover-bg">
               <div class="services-box__v-line">
                 <span class="s-desc">
@@ -401,7 +679,7 @@
               </a>
             </div>
           </div>
-          <div class="col-sm-4 box-shadow services-box__image-container">
+          <div class="col-xs-12 col-sm-6 col-md-4 box-shadow services-box__image-container">
             <div class="services-box__hover-bg">
               <div class="services-box__v-line">
                 <span class="s-desc">
@@ -427,7 +705,7 @@
               </a>
             </div>
           </div>
-          <div class="col-sm-4 box-shadow services-box__image-container">
+          <div class="col-xs-12 col-sm-6 col-md-4 box-shadow services-box__image-container">
             <div class="services-box__hover-bg">
               <div class="services-box__v-line">
                 <span class="s-desc">
@@ -455,7 +733,7 @@
               </a>
             </div>
           </div>
-          <div class="col-sm-4 box-shadow services-box__image-container">
+          <div class="col-xs-12 col-sm-6 col-md-4 box-shadow services-box__image-container">
             <div class="services-box__hover-bg">
               <div class="services-box__v-line">
                 <span class="s-desc">
@@ -485,33 +763,57 @@
       </div>
     </section>
     <section class="gallery-block section-padding">
-      <div class="container text-center">
+      <div id="container" class="container text-center">
         <h2 class="header-block">Фотогалерея</h2>
-        <div class="grid">
-          <div class="grid-item"><img class="img-responsive" src="img/masonry_img/akvatika-01.jpg" alt=""></div>
-          <div class="grid-item grid-item--width2"><img class="img-responsive" src="img/masonry_img/akvatika-02.jpg" alt=""></div>
-          <div class="grid-item grid-item--height2"><img class="img-responsive" src="img/masonry_img/akvatika-03.jpg" zlt=""></div>
-          <div class="grid-item"><img class="img-responsive" src="img/masonry_img/akvatika-04.jpg" alt=""></div>
-          <div class="grid-item grid-item--width2"><img class="img-responsive" src="img/masonry_img/akvatika-05.jpg" alt=""></div>
-          <div class="grid-item grid-item--height2"><img class="img-responsive" src="img/masonry_img/akvatika-06.jpg" alt=""></div>
-          <div class="grid-item"><img class="img-responsive" src="img/masonry_img/akvatika-01.jpg" alt=""></div>
-          <div class="grid-item grid-item--width2"><img class="img-responsive" src="img/masonry_img/akvatika-07.jpg" alt=""></div>
-          <div class="grid-item grid-item--height2"><img class="img-responsive" src="img/masonry_img/akvatika-08.jpg" alt=""></div>
-          <div class="grid-item"><img class="img-responsive" src="img/masonry_img/akvatika-01.jpg" alt=""></div>
-          <div class="grid-item grid-item--width2"><img class="img-responsive" src="img/masonry_img/akvatika-09.jpg" alt=""></div>
-          <div class="grid-item"><img class="img-responsive" src="img/masonry_img/akvatika-10.jpg" alt=""></div>
-          <div class="grid-item"><img class="img-responsive" src="img/masonry_img/akvatika-11.jpg" alt=""></div>
+        <input type="checkbox" id="pic-1"/>
+        <label for="pic-1" class="lightbox"><img src="img/masonry_img/akvatika-01.jpg"/></label>
+        <input type="checkbox" id="pic-2"/>
+        <label for="pic-2" class="lightbox"><img src="img/masonry_img/akvatika-02.jpg"/></label>
+        <input type="checkbox" id="pic-3"/>
+        <label for="pic-3" class="lightbox"><img src="img/masonry_img/akvatika-03.jpg"/></label>
+        <input type="checkbox" id="pic-4"/>
+        <label for="pic-4" class="lightbox"><img src="img/masonry_img/akvatika-04.jpg"/></label>
+        <input type="checkbox" id="pic-5"/>
+        <label for="pic-5" class="lightbox"><img src="img/masonry_img/akvatika-05.jpg"/></label>
+        <input type="checkbox" id="pic-6"/>
+        <label for="pic-6" class="lightbox"><img src="img/masonry_img/akvatika-06.jpg"/></label>
+        <input type="checkbox" id="pic-7"/>
+        <label for="pic-7" class="lightbox"><img src="img/masonry_img/akvatika-07.jpg"/></label>
+        <input type="checkbox" id="pic-8"/>
+        <label for="pic-8" class="lightbox"><img src="img/masonry_img/akvatika-08.jpg"/></label>
+        <input type="checkbox" id="pic-9"/>
+        <label for="pic-9" class="lightbox"><img src="img/masonry_img/akvatika-09.jpg"/></label>
+        <input type="checkbox" id="pic-10"/>
+        <label for="pic-10" class="lightbox"><img src="img/masonry_img/akvatika-10.jpg"/></label>
+        <input type="checkbox" id="pic-11"/>
+        <label for="pic-11" class="lightbox"><img src="img/masonry_img/akvatika-11.jpg"/></label>
+        <input type="checkbox" id="pic-12"/>
+        <label for="pic-12" class="lightbox"><img src="img/masonry_img/akvatika-12.jpg"/></label>
+        <div class="elements-gride grid">
+          <label for="pic-1" class="element-item persent-size" href=""><img src="img/masonry_img/akvatika-01.jpg" alt=""></label>
+          <label for="pic-2" class="element-item persent-size" href=""><img src="img/masonry_img/akvatika-02.jpg" alt=""></label>
+          <label for="pic-3" class="element-item persent-size" href=""><img src="img/masonry_img/akvatika-03.jpg" zlt=""></label>
+          <label for="pic-4" class="element-item persent-size" href=""><img src="img/masonry_img/akvatika-04.jpg" alt=""></label>
+          <label for="pic-5" class="element-item persent-size" href=""><img src="img/masonry_img/akvatika-05.jpg" alt=""></label>
+          <label for="pic-6" class="element-item persent-size" href=""><img src="img/masonry_img/akvatika-06.jpg" alt=""></label>
+          <label for="pic-7" class="element-item persent-size" href=""><img src="img/masonry_img/akvatika-07.jpg" alt=""></label>
+          <label for="pic-8" class="element-item persent-size_50" href=""><img src="img/masonry_img/akvatika-08.jpg" alt=""></label>
+          <label for="pic-9" class="element-item persent-size" href=""><img src="img/masonry_img/akvatika-09.jpg" alt=""></label>
+          <label for="pic-10" class="element-item persent-size" href=""><img src="img/masonry_img/akvatika-10.jpg" alt=""></label>
+          <label for="pic-11" class="element-item persent-size" href=""><img src="img/masonry_img/akvatika-11.jpg" alt=""></label>
+          <label for="pic-12" class="element-item persent-size" href=""><img src="img/masonry_img/akvatika-12.jpg" alt=""></label>
         </div>
         <a class="button" href="#">Посмотреть все фото</a>
       </div>
     </section>
-    <section class="official-site section-padding">
-      <div class="container-fluid text-center">
-        <div class="row">
-          <div class="col-sm-10 col-sm-offset-1 col-xs-12 col-xs-offset-0 text-center">
-              <h2 class="header-block header-block--orange">Клуб семейного досуга "Акватика" - отель на побережье Азовского моря</h2>
-              <p>Клуб семейного досуга "Акватика" - идеально место для спокойного семейного отдыха! Близость открытого моря,  погрузит вас в в мир покоя и тишины. Наличие собственного пляжа с пологим дном даст возможность хорошо провести отдых с детьми! Это прекрасный отдых от цивилизации и шумных больших курортов!</p>
-          </div>
+    <section class="official-site">
+      <video class="video-background" id="bgvid" autoplay="autoplay" loop="loop" muted="muted">
+        <source src="video/3.mp4" type="video/mp4">
+      </video>
+      <div class="slogan row">
+        <div class="col-sm-10 col-sm-offset-1 col-xs-12 col-xs-offset-0 text-center">
+          <h2 class="header-block header-block--orange">Клуб семейного досуга "Акватика" - отель на побережье Азовского моря</h2>
+          <p>Клуб семейного досуга "Акватика" - идеально место для спокойного семейного отдыха! Близость открытого моря,  погрузит вас в в мир покоя и тишины. Наличие собственного пляжа с пологим дном даст возможность хорошо провести отдых с детьми! Это прекрасный отдых от цивилизации и шумных больших курортов!</p>
         </div>
       </div>
     </section>
@@ -574,16 +876,16 @@
                 (050) 474-15-13,
                 (098) 638-07-13
               </div>
-              <a class="button button--online" href="#"><p> Онлайн бронирование</p></a>
+              <a class="online-booking button button--online hidden-xs" data-target="modal" href="#myModal"><p> Онлайн бронирование</p></a>
             </div>
           </div>
-          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 footer__item">
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 footer__item text-center">
             <div class="footer-box box-height">
               <div class="f-box-title">У Вас остались вопросы?</div>
               <div class="f-box-desc">
                 Оставьте ваш телефон и мы сами перезвоним вам в ближайшее время:
               </div>
-              <a class="button button--footer" href="#"><p> Заказать обратный звонок</p></a>
+              <a class="call-back button button--footer hidden-xs" data-target="modal" href="#myModal1"><p> Заказать обратный звонок</p></a>
             </div>
           </div>
         </div>

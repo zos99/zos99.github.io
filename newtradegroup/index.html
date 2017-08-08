@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS 19-20</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script src="js/jquery.jcarousel-core.min.js"></script>
+    <script src="js/jquery.jcarousel-control.min.js"></script>
+    <script src="js/jquery.jcarousel-pagination.min.js"></script>
+    <script src="js/jquery.jcarousel-autoscroll.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/lodash/4.12.0/lodash.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/script_lodash.js"></script>
+</head>
+<body>
+  <header id="header" class="page-header">
+  <div class="page-header__line">
+    <div class="container">
+      <div class="navbar-header">
+        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="header-row navbar-collapse collapse">
+        <div class="headen-menu sait-control hidden-xs">
+          <span class="line hidden-xs">377905, г.Таганрог, ул.Социалистическая, 7/3</span>
+          <span>График работы: Пн.-Сб. с 8:00 - 19:00</span>
+          <span>
+            <a href="">Карта проезда</a>
+          </span>
+        </div>
+        <ul class="headen-menu nav navbar-nav hidden-md hidden-lg hidden-sm nav-headen">
+          <li class="item-103 current active">
+            <a href="">Главная</a>
+          </li>
+          <li class="item-160 deeper dropdown">
+            <a class=" dropdown__linck " href="">Newtradegroup</a>
+            <ul class="sub-menu" style="display: none;">
+              <li class="item-157">
+                <a href="">Новости</a>
+              </li>
+              <li class="item-189">
+                <a href="">Отзывы</a>
+              </li>
+              <li class="item-194">
+                <a href="">Фотогалерея</a>
+              </li>
+            </ul>
+          </li>
+          <li class="item-159 deeper dropdown">
+            <a class=" dropdown__linck " href="">Menu1</a>
+            <ul class="sub-menu" style="display: none;">
+              <li class="item-183">
+                <a href="">Menu11</a>
+              </li>
+              <li class="item-184">
+                <a href="">Menu12</a>
+              </li>
+              <li class="item-185">
+                <a href="">Menu13</a>
+              </li>
+            </ul>
+          </li>
+          <li class="item-162 deeper dropdown">
+            <a class=" dropdown__linck " href="">Menu2</a>
+            <ul class="sub-menu" style="display: none;">
+              <li class="item-193">
+                <a href="">Menu11</a>
+              </li>
+            </ul>
+          </li>
+          <li class="item-131 deeper dropdown">
+            <a class="dropdown__linck" href="">Menu11</a>
+            <ul class="sub-menu" style="display: none;">
+              <li class="item-190">
+                <a href="">Menu11</a>
+              </li>
+              <li class="item-191">
+                <a href="">Menu11</a>
+              </li>
+              <li class="item-192">
+                <a href="">Menu11</a>
+              </li>
+            </ul>
+          </li>
+          <li class="item-161 deeper dropdown">
+            <a class="dropdown__linck" href="">Menu11</a>
+            <ul class="sub-menu" style="display: none;">
+              <li class="item-195">
+                <a href="">Menu11</a>
+              </li>
+            </ul>
+          </li>
+          <li class="item-158">
+            <a href="">Menu11</a>
+          </li>
+          <li class="item-180">
+            <a href="">Menu11</a>
+          </li>
+          <li class="item-138">
+            <a href="">Menu11</a>
+          </li>
+        </ul>
+        <ul class="headen-menu nav navbar-nav navbar-right online-services hidden-xs">
+          <li class="headen-menu--main">
+            <a class="call-back">Ru</a>
+          </li>
+          <li class="headen-menu--main">
+            <a  class="online-booking">Eng</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="central-block">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-xs-12 nopadding box-height">
+          <a class="logo" href="">
+            <img class="img-responsive" src="img/logo.png" alt="">
+          </a>
+        </div>
+        <div class="col-lg-6 col-xs-12 text-center central-unit nopadding box-height">
+          <div class="search-block">
+            <div class="phone">
+              <span class="companyname">ООО "Новоторггрупп"</span></br>
+              <span>надёжный поставщик для Вашего бизнеса</span>
+            </div>
+            <div id="search" class="input-group input-group__modif">
+              <input class="form-control input-lg form-control_modif" name="search" value="" placeholder="Поиск" minlength="1" livesearch="off" type="text">
+              <span class="input-group-btn">
+                <button class="btn btn-default btn-lg btn-lg_modif" type="button">
+                  <i class="fa fa-search"></i>
+                </button>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-xs-12 nopadding box-height">
+          <div class="left-block">
+            <div class="header-minicart">
+              <span>
+                +38(099) 754-31-30</br>
+                +7 989 507-98-22</br>
+                info@newtradegroup.com
+              </span>
+            </div>
+            <div class="social">
+              <ul class="soc text-center">
+                <li><a class="soc-facebook" href="#"></a></li>
+                <li><a class="soc-twitter" href="#"></a></li>
+                <li><a class="soc-googleplus" href="#"></a></li>
+                <li><a class="soc-instagram soc-icon-last" href="#"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <nav id="menu" class="main-menu default hidden-xs">
+    <div class="container">
+        <ul class="content">
+          <li class="first"><a href="">Главная</a></li>
+          <li class="dropdown">
+            <a class="dropdown__linck" href="#">Каталог продукции</a>
+            <ul class="sub-menu">
+              <li><a href="#">Menu1</a></li>
+              <li><a href="#">Menu1</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a  class="dropdown__linck" href="#">Услуги</a>
+            <ul class="sub-menu">
+              <li><a href="#">Ссылка</a></li>
+              <li><a href="#">Ссылка</a></li>
+              <li><a href="#">Ссылка</a></li>
+            </ul>
+          </li>
+          <li ><a href="#">Сотрудничество</a></li>
+          <li ><a href="#">Ассортимент продукции</a></li>
+          <li ><a href="#">Акции</a></li>
+          <li ><a href="#">Контакты</a></li>
+        </ul>
+
+    </div>
+  </nav>
+</header>
+  <div class="container-fluid nopadding">
+    <div class="jcarousel-block">
+      <div class="jcarousel">
+        <ul>
+          <li><img src="img/1.jpg"></li>
+          <li><img src="img/2.jpg"></li>
+          <li><img src="img/3.jpg"></li>
+        </ul>
+      </div>
+      <div class="box-pagination">
+        <div class="jcarousel-pagination">
+        </div>
+      </div>
+      <div class="slogan">
+        <p>BUILD</p><br>
+        <p>YOUR</p><br>
+        <p>BUSINESS</p>
+      </div>
+   </div>
+  </div>
+  <article class="wrapper">
+    <div class="articles">
+      <div class="articles__item">
+        <p>01</p>
+      </div>
+      <div class="articles__box">
+        <img class="articles__box-icon" src="img/icon_1.png" alt="">
+        <p class="articles__box-title">Power Inside</p>
+        <p class="articles__box-text">Cum sociis natoque penatibus et magnis dis parturient montesmus. Pro vel nibh et elit mollis commodo et nec augueique</p>
+        <a href="#" class="articles__box-link-read-more">Read More</a>
+      </div>
+      <img src="" alt="">
+    </div>
+    <div class="articles">
+      <div class="articles__item">
+        <p>02</p>
+      </div>
+      <div class="articles__box">
+        <img class="articles__box-icon" src="img/icon_2.png" alt="">
+        <p class="articles__box-title">New Technologies</p>
+        <p class="articles__box-text">Cum sociis natoque penatibus et magnis dis parturient montesmus. Pro vel nibh et elit mollis commodo et nec augueique</p>
+        <a href="#" class="articles__box-link-read-more">Read More</a>
+      </div>
+      <img src="" alt="">
+    </div>
+    <div class="articles">
+      <div class="articles__item">
+        <p>03</p>
+      </div>
+      <div class="articles__box">
+        <img class="articles__box-icon" src="img/icon_3.png" alt="">
+        <p class="articles__box-title">Fast Support</p>
+        <p class="articles__box-text">Cum sociis natoque penatibus et magnis dis parturient montesmus. Pro vel nibh et elit mollis commodo et nec augueique</p>
+        <a href="#" class="articles__box-link-read-more">Read More</a>
+      </div>
+      <img src="" alt="">
+    </div>
+  </article>
+  <div class="wrapper-wide">
+    <div class="services-box wrapper">
+        <p class="services-box__title">Our Services</p>
+          <div class="services-box__image-container">
+            <div class="services-box__hover-bg">
+              <div class="services-box__g-line"></div>
+              <div class="services-box__v-line"></div>
+              <a href="#"><img class="services-box__image" src="img/sbox_1.jpg" alt=""></a>
+            </div>
+            <a href="#"><p class="services-box__image-text-link">Schedule Services</p></a>
+          </div>
+          <div class="services-box__image-container">
+            <div class="services-box__hover-bg">
+              <div class="services-box__g-line"></div>
+              <div class="services-box__v-line"></div>
+              <a href="#"><img class="services-box__image" src="img/sbox_2.jpg" alt=""></a>
+            </div>
+            <a href="#"><p class="services-box__image-text-link">Preventive Maintence</p></a>
+          </div>
+          <div class="services-box__image-container">
+            <div class="services-box__hover-bg">
+              <div class="services-box__g-line"></div>
+              <div class="services-box__v-line"></div>
+              <a href="#"><img class="services-box__image" src="img/sbox_3.jpg" alt=""></a>
+            </div>
+            <a href="#"><p class="services-box__image-text-link">Tire & Wheel Services</p></a>
+          </div>
+          <div class="services-box__image-container">
+            <div class="services-box__hover-bg">
+              <div class="services-box__g-line"></div>
+              <div class="services-box__v-line"></div>
+              <a href="#"><img class="services-box__image" src="img/sbox_4.jpg" alt=""></a>
+            </div>
+            <a href="#"><p class="services-box__image-text-link">Repair Services</p></a>
+          </div>
+      </div>
+    </div>
+    <article class="news-and-banners">
+      <div class="wrapper">
+        <div class="latest-news">
+          <p class="latest-news__title">Latest News</p>
+          <div class="latest-news__box">
+            <div class="latest-news__box-image">
+              <img src="img/latest_news_1.jpg" alt="">
+              <img class="latest-news__box-image-inner" src="img/news__box_1.jpg" alt="">
+            </div>
+            <div class="latest-news__box-text">
+              <a href="#" class="latest-news__box-text-header">Advanced Machinery Helps Improve Quality</a>
+              <p class="latest-news__box-text-comment-title"><span>by&nbsp;&nbsp;</span><a href="#">cmsmasters</a><span>&nbsp;&nbsp;&nbsp;Comments</span><span>(</span><a href="#">6</a><span>)</span> </p>
+              <p class="latest-news__box-text-comment-text">Cum sociis natoque penatibus et magnis dis parturient ontesmus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur samomo enim ipsam voluptatem.</p>
+            </div>
+          </div>
+            <div class="latest-news__box">
+              <div class="latest-news__box-image">
+                <img src="img/latest_news_2.jpg" alt="">
+                <img class="latest-news__box-image-inner" src="img/news__box_2.jpg" alt="">
+              </div>
+              <div class="latest-news__box-text">
+                <a href="#" class="latest-news__box-text-header">Powerful Techniques for Advanced Service</a>
+                <p class="latest-news__box-text-comment-title"><span>by&nbsp;&nbsp;</span><a href="#">cmsmasters</a><span>&nbsp;&nbsp;&nbsp;Comments</span><span>(</span><a href="#">3</a><span>)</span> </p>
+                <p class="latest-news__box-text-comment-text">Cum sociis natoque penatibus et magnis dis parturient ontesmus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur samomo enim ipsam voluptatem.</p>
+              </div>
+            </div>
+          </div>
+          <div class="banners-place">
+            <p class="banners-place__title">Banners Place</p>
+            <div class="banners-place__box">
+              <div class="banners-place__box-title">
+                <div class="banners-place__box-title-sign">
+                  <hr class="banners-place__box-g-line"></hr>
+                  <hr class="banners-place__box-v-line"></hr>
+                </div>
+                <div class="banners-place__box-title-text">ACCORDION PANEL 1</div>
+              </div>
+              <div class="banners-place__box-text">
+                <p>Cum sociis natoque penatibus et magnis dis parturient mus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur momo. Cum sociis natoque penatibus et magnis dis parturient ontesmus. Nemo enim ipsam voluptatem quia ptas sit aspernatur samomoPro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur </p>
+              </div>
+            </div>
+            <div class="banners-place__box">
+              <div class="banners-place__box-title">
+                <div class="banners-place__box-title-sign">
+                  <hr class="banners-place__box-g-line"></hr>
+                  <hr class="banners-place__box-v-line"></hr>
+                </div>
+                <div class="banners-place__box-title-text">ACCORDION PANEL 2</div>
+              </div>
+              <div class="banners-place__box-text">
+                <p>Cum sociis natoque penatibus et magnis dis parturient mus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur momo. Cum sociis natoque penatibus et magnis dis parturient ontesmus. Nemo enim ipsam voluptatem quia ptas sit aspernatur samomoPro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur </p>
+              </div>
+            </div>
+            <div class="banners-place__box">
+              <div class="banners-place__box-title">
+                <div class="banners-place__box-title-sign">
+                  <hr class="banners-place__box-g-line"></hr>
+                  <hr class="banners-place__box-v-line"></hr>
+                </div>
+                <div class="banners-place__box-title-text">ACCORDION PANEL 3</div>
+              </div>
+              <div class="banners-place__box-text">
+                <p>Cum sociis natoque penatibus et magnis dis parturient mus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur momo. Cum sociis natoque penatibus et magnis dis parturient ontesmus. Nemo enim ipsam voluptatem quia ptas sit aspernatur samomoPro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur </p>
+              </div>
+            </div>
+            <div class="banners-place__box">
+              <div class="banners-place__box-title">
+                <div class="banners-place__box-title-sign">
+                  <hr class="banners-place__box-g-line"></hr>
+                  <hr class="banners-place__box-v-line"></hr>
+                </div>
+                <div class="banners-place__box-title-text">ACCORDION PANEL 4</div>
+              </div>
+              <div class="banners-place__box-text">
+                <p>Cum sociis natoque penatibus et magnis dis parturient mus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur momo. Cum sociis natoque penatibus et magnis dis parturient ontesmus. Nemo enim ipsam voluptatem quia ptas sit aspernatur samomoPro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur </p>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+    </article>
+    <div class="logos-box">
+      <div class="wrapper">
+        <div class="logos-box__position">
+          <img src="img/logos_box1.jpg" alt="" class="logos-box__image">
+          <img src="img/logos_box2.jpg" alt="" class="logos-box__image">
+          <img src="img/logos_box3.jpg" alt="" class="logos-box__image">
+          <img src="img/logos_box4.jpg" alt="" class="logos-box__image">
+          <img src="img/logos_box5.jpg" alt="" class="logos-box__image">
+          <img src="img/logos_box6.jpg" alt="" class="logos-box__image">
+        </div>
+      </div>
+    </div>
+    <div class="wrapper-wide wrapper-wide--before-footer">
+      <div class="wrapper main-box--before-footer">
+        <div class="before-footer">
+        <div class="before-footer-box">
+          <p class="before-footer-box__title">SOCIALS</p>
+          <a class="before-footer-box__link" href="#">Facebook</a>
+          <a class="before-footer-box__link" href="#">Flickr</a>
+          <a class="before-footer-box__link" href="#">Twitter</a>
+          <a class="before-footer-box__link" href="#">Vimeo</a>
+        </div>
+        <div class="before-footer-box">
+          <p class="before-footer-box__title">LINKS</p>
+          <a class="before-footer-box__link" href="#">How to Write a Blog</a>
+          <a class="before-footer-box__link" href="#">Create a Blog in 4 Steps</a>
+          <a class="before-footer-box__link" href="#">15 Tips to Increase Traffic</a>
+          <a class="before-footer-box__link" href="#">20 Blog Post Ideas</a>
+        </div>
+        <div class="before-footer-box">
+          <p class="before-footer-box__title">BLOGROLL</p>
+          <a class="before-footer-box__link" href="#">Blogs Blog</a>
+          <a class="before-footer-box__link" href="#">Roll Up Roll Up</a>
+          <a class="before-footer-box__link" href="#">Blog Free</a>
+          <a class="before-footer-box__link" href="#">Wordpress Blog</a>
+        </div>
+        <div class="before-footer-box">
+          <p class="before-footer-box__title">ABOUT US</p>
+          <a class="before-footer-box__link" href="#">Agriculture</a>
+          <a class="before-footer-box__link" href="#">Harvest</a>
+          <a class="before-footer-box__link" href="#">Company news</a>
+          <a class="before-footer-box__link" href="#">Investor relations</a>
+        </div>
+        </div>
+      </div>
+      <footer class="outer-wrapper">
+        <div class="wrapper">
+          <p class="footer-text footer-text-adress">BuildHomeLtd.  Street Name 123   23 45 Cityname</p>
+          <p class="footer-text footer-text-phone">+123 900 123 456</p>
+          <p class="footer-text footer-text-email">info@buildhome.web</p>
+          <p class="footer-text">&copy; 2014 Build Home</p>
+        </div>
+      </footer>
+    </div>
+</body>
+</html>

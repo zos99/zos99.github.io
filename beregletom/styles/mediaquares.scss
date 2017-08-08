@@ -24,3 +24,65 @@
     display: block;
   }
 }
+
+/* Large desktops and laptops */
+@media (min-width: 1200px){
+
+}
+/* Portrait tablets and medium desktops */
+@media (max-width: 1199px) and (min-width: 992px) {
+
+}
+/* Portrait tablets and small desktops */
+@media (max-width: 991px) and (min-width: 768px) {
+
+  .official-site {
+
+    .slogan {
+
+      h2 {
+        font-size: 28px;
+      }
+
+      p {
+        font-size: 23px;
+      }
+    }
+  }
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+
+  .official-site {
+
+    .slogan {
+
+      h2 {
+        font-size: 20px;
+      }
+
+      p {
+        display: none;
+      }
+    }
+  }
+
+}
+
+/* Landscape phones and smaller */
+@media (max-width: 480px) {
+  .official-site {
+
+    .slogan {
+
+      h2 {
+        font-size: 20px;
+      }
+
+      p {
+        display: none;
+      }
+    }
+  }
+}

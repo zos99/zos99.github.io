@@ -42,20 +42,13 @@ $(function() {
   servicesBoxHover();
 });
 //--------masonry--------------
-$(document).ready(function() {
-
-  if($("div").is(".grid")) {
-
-   //Галерея masonry
-
-  $('.grid').masonry({
-  	  //options
-      itemSelector: '.grid-item',
-      columnWidth: 200
-  });
-
-  }
-
+jQuery(document).ready(function($) {
+    $('.elements-gride').masonry({
+        // options
+        itemSelector: '.element-item',
+        columnWidth: '.persent-size',
+        percentPosition: true
+    });
 });
 
 //--------------main-menu
@@ -114,4 +107,21 @@ $(function() {
       $(this).removeClass('sub-menu-animated');
     }
   );
+});
+
+//*Скрипт, привязывающий событие click, открывающее модальное окно, к элементам, имеющим класс .btn
+$(document).ready(function(){
+  //при нажатию на любую кнопку, имеющую класс .btn
+  $(".online-booking").click(function() {
+    //открыть модальное окно с id="myModal"
+    $("#myModal").modal('show');
+  });
+});
+//*Скрипт, привязывающий событие click, открывающее модальное окно, к элементам, имеющим класс .btn
+$(document).ready(function(){
+  //при нажатию на любую кнопку, имеющую класс .btn
+  $(".call-back").click(function() {
+    //открыть модальное окно с id="myModal"
+    $("#myModal1").modal('show');
+  });
 });
