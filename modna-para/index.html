@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <!-- Предназначен для управления режимом отображением веб-страницы в браузерах
+    Internet Explorer -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Включает масштабирование на мобильных устройствах -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Текст заголовка веб-страницы -->
+    <title>Акватика</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.2/masonry.pkgd.min.js"></script>
+  </head>
+  <body>
+    <header id="header" class="page-header">
+      <div class="logo-miny-header online-services">
+        <a  class="dropdown-h collapsed online-booking--headen" href="#headenB" data-toggle="collapse" aria-expanded="false">
+          <span class="icon"></span>
+            Онлайн бронирование
+        </a>
+      </div>
+      <div class="page-header__line">
+        <div class="container">
+          <div class="navbar-header">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div class="header-row navbar-collapse collapse">
+            <ul class="headen-menu nav navbar-nav sait-control hidden-xs">
+              <li class="home first home-active">
+                <a class="home__linck " href="/"></a>
+              </li>
+              <li class="mail">
+                <a class="mail__linck" href="/kontakty/"></a>
+              </li>
+              <li class="map">
+                <a class="map__linck" href="/karta-sayta/"></a>
+              </li>
+            </ul>
+            <ul class="headen-menu nav navbar-nav hidden-md hidden-lg hidden-sm nav-headen">
+              <li class="item-103 current active">
+                <a href="/akvatika/365/index.php/ru/">Главная</a>
+              </li>
+              <li class="item-160 deeper dropdown">
+                <a class=" dropdown__linck " href="/akvatika/365/index.php/ru/akvatika">Акватика</a>
+                <ul class="sub-menu" style="display: none;">
+                  <li class="item-157">
+                    <a href="/akvatika/365/index.php/ru/akvatika/news">Новости</a>
+                  </li>
+                  <li class="item-189">
+                    <a href="/akvatika/365/index.php/ru/akvatika/otzyvy">Отзывы</a>
+                  </li>
+                  <li class="item-194">
+                    <a href="/akvatika/365/index.php/ru/foto">Фотогалерея</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="item-159 deeper dropdown">
+                <a class=" dropdown__linck " href="/akvatika/365/index.php/ru/nomera">Номера</a>
+                <ul class="sub-menu" style="display: none;">
+                  <li class="item-183">
+                    <a href="/akvatika/365/index.php/ru/nomera/3-kh-komnatnyj-nomer-lyuks">3-х комнатный номер «Люкс»</a>
+                  </li>
+                  <li class="item-184">
+                    <a href="/akvatika/365/index.php/ru/nomera/2-kh-komnatnyj-lyuks">2-х комнатный «Люкс+»</a>
+                  </li>
+                  <li class="item-185">
+                    <a href="/akvatika/365/index.php/ru/nomera/1-komnatnyj-4-kh-mestnyj-lyuks-studiya">1 комнатный 4-х местный «Люкс-студия+»</a>
+                  </li>
+                  <li class="item-186">
+                    <a href="/akvatika/365/index.php/ru/nomera/1-komnatnyj-3-kh-mestnyj-lyuks">1 комнатный 3-х местный «Люкс+»</a>
+                  </li>
+                  <li class="item-187">
+                    <a href="/akvatika/365/index.php/ru/nomera/1-komnatnyj-2-kh-mestnyj-lyuks-plus">1 комнатный 2-х местный «Люкс+»</a>
+                  </li>
+                  <li class="item-188">
+                  <a href="/akvatika/365/index.php/ru/nomera/1-komnatnyj-2-kh-mestnyj-lyuks">1 комнатный 2-х местный «Люкс»</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="item-162 deeper dropdown">
+                <a class=" dropdown__linck " href="/akvatika/365/index.php/ru/food">Питание</a>
+                <ul class="sub-menu" style="display: none;">
+                  <li class="item-193">
+                    <a href="/akvatika/365/index.php/ru/food/restoran">Ресторан</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="item-131 deeper dropdown">
+                <a class="dropdown__linck" href="/akvatika/365/index.php/ru/services">Инфраструктура</a>
+                <ul class="sub-menu" style="display: none;">
+                  <li class="item-190">
+                    <a href="/akvatika/365/index.php/ru/services/avtoparkovka">Автопарковка</a>
+                  </li>
+                  <li class="item-191">
+                    <a href="/akvatika/365/index.php/ru/services/plyazh">Пляж</a>
+                  </li>
+                  <li class="item-192">
+                    <a href="/akvatika/365/index.php/ru/services/detskaya-ploshchadka-i-bassejn">Детская площадка и бассейн</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="item-161 deeper dropdown">
+                <a class="dropdown__linck" href="/akvatika/365/index.php/ru/price">Цены</a>
+                <ul class="sub-menu" style="display: none;">
+                  <li class="item-195">
+                    <a href="/akvatika/365/index.php/ru/price/bronirovanie">Бронирование </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="item-158">
+                <a href="/akvatika/365/index.php/ru/family-vacation">Отдых</a>
+              </li>
+              <li class="item-180">
+                <a href="/akvatika/365/index.php/ru/foto">Фото</a>
+              </li>
+              <li class="item-138">
+                <a href="/akvatika/365/index.php/ru/feedback">Контакты</a>
+              </li>
+            </ul>
+            <ul class="headen-menu nav navbar-nav navbar-right online-services hidden-xs">
+              <li class="headen-menu--main">
+                <a class="call-back" data-target="modal" href="#myModal1">
+                  <span class="icon"></span>
+                  Заказать обратный звонок
+                </a>
+                <!-- HTML-код модального окна -->
+                <div id="myModal1" class="modal fade">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <!-- Заголовок модального окна -->
+                      <div class="modal-header text-center">
+                        <h4 class="modal-title">Заказать обратный звонок</h4>
+                      </div>
+                      <!-- Основное содержимое модального окна -->
+                      <div class="modal-body">
+                        <form  method="post" action="#" name="akvatika">
+                          <div class="form-group">
+                            <label class="control-label" for="name">
+                              Ваше Имя <i class="fa fa-asterisk"></i>
+                            </label>
+                            <div class="gcore-input">
+                              <input id="name" class="form-control" name="name" value="Ваше имя" placeholder="" title="" style="" data-inputmask="" data-load-state="" data-tooltip="" type="text">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label class="control-label" for="phone">
+                              Ваш телефон <i class="fa fa-asterisk"></i>
+                            </label>
+                            <div class="gcore-input">
+                              <input id="phone" class="form-control" name="phone" value="Ваш телефон" placeholder="" maxlength="20" title="" style="" data-inputmask="'mask' : '+9(999)999-9999'" data-load-state="" data-tooltip="" type="text">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label class="control-label" for="email">
+                              Эл.почта
+                            </label>
+                            <div class="gcore-input">
+                              <input id="email" class="form-control" name="email" value="Эл.почта" placeholder="" title="" style="" data-inputmask="" data-load-state="" data-tooltip="Эл.почта" type="text">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label class="control-label" for="textarea10">Комментарии</label>
+                            <div class="gcore-input">
+                              <textarea id="textarea10" class="form-control" name="textarea10" placeholder="" rows="3" cols="40" title="" style="" data-wysiwyg="0" data-load-state="" data-tooltip="">Комментарии</textarea>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <div class="gcore-subinput-container-wide">
+                              <label class="control-label" for="captcha1">Антиспам</label>
+                            </div>
+                            <div class="gcore-input">
+                              <input id="captcha1" class="form-control" placeholder="" title="" style="" name="captcha" type="text">
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="clearfix"></div>
+                      <!-- Футер модального окна -->
+                      <div class="modal-footer">
+                        <button type="button" class="btn button">Отправить</button>
+                        <button type="button" class="btn button" data-dismiss="modal">Закрыть</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="headen-menu--main">
+                <a  class="online-booking" data-target="modal" href="#myModal" >
+                  <span class="icon"></span>
+                    Онлайн бронирование
+                </a>
+                <!-- HTML-код модального окна -->
+                <div id="myModal" class="modal fade">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <!-- Заголовок модального окна -->
+                      <div class="modal-header text-center">
+                        <h4 class="modal-title">Бронирование номеров</h4>
+                      </div>
+                      <!-- Основное содержимое модального окна -->
+                      <div class="modal-body">
+                        <form  method="post" action="#" name="akvatika">
+                          <div class="form-group">
+                            <label class="control-label" for="name">
+                              Ваше Имя <i class="fa fa-asterisk"></i>
+                            </label>
+                            <div class="gcore-input">
+                              <input id="name" class="form-control" name="name" value="Ваше имя" placeholder="" title="" style="" data-inputmask="" data-load-state="" data-tooltip="" type="text">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label class="control-label" for="phone">
+                              Ваш телефон <i class="fa fa-asterisk"></i>
+                            </label>
+                            <div class="gcore-input">
+                              <input id="phone" class="form-control" name="phone" value="Ваш телефон" placeholder="" maxlength="20" title="" style="" data-inputmask="'mask' : '+9(999)999-9999'" data-load-state="" data-tooltip="" type="text">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label class="control-label" for="email">
+                              Эл.почта
+                              <i class="fa fa-asterisk"></i>
+                            </label>
+                            <div class="gcore-input">
+                              <input id="email" class="form-control" name="email" value="Эл.почта" placeholder="" title="" style="" data-inputmask="" data-load-state="" data-tooltip="Эл.почта" type="text">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label class="control-label" for="datepicker4">
+                              Заезд
+                              <i class="fa fa-asterisk"></i>
+                            </label>
+                            <div class="gcore-input">
+                              <input id="datepicker4" class="form-control" name="datepicker4" value="Заезд" data-gdatetimepicker-format="d-m-Y" placeholder="" title="" style="" data-load-state="" data-tooltip="" data-fieldtype="gdatetimepicker" data-start_view="d" type="text">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label class="control-label required_label" for="datepicker5">
+                              Выезд
+                              <i class="fa fa-asterisk"></i>
+                            </label>
+                            <div class="gcore-input">
+                              <input id="datepicker5" class="form-control" name="datepicker5" value="Выезд" data-gdatetimepicker-format="d-m-Y" placeholder="" title="" style="" data-load-state="" data-tooltip="" data-fieldtype="gdatetimepicker" data-start_view="d" type="text">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label class="control-label" for="dropdown7">
+                              Взрослых
+                                <i class="fa fa-asterisk"></i>
+                            </label>
+                            <div class="gcore-input">
+                              <select id="dropdown7" class="form-control" name="dropdown7" size="" title="" style="" data-load-state="" data-tooltip="">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label class="control-label" for="dropdown8">Детей</label>
+                            <div class="gcore-input">
+                              <select id="dropdown8" class="form-control" name="dropdown8" size="" title="" style="" data-load-state="" data-tooltip="">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label class="control-label" for="textarea10">Комментарии</label>
+                            <div class="gcore-input">
+                              <textarea id="textarea10" class="form-control" name="textarea10" placeholder="" rows="3" cols="40" title="" style="" data-wysiwyg="0" data-load-state="" data-tooltip="">Комментарии</textarea>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <div class="gcore-subinput-container-wide">
+                              <label class="control-label" for="captcha1">Антиспам</label>
+                            </div>
+                            <div class="gcore-input">
+                              <input id="captcha1" class="form-control" placeholder="" title="" style="" name="captcha" type="text">
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="clearfix"></div>
+                      <!-- Футер модального окна -->
+                      <div class="modal-footer">
+                        <button type="button" class="btn button">Отправить</button>
+                        <button type="button" class="btn button" data-dismiss="modal">Закрыть</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="headenB" class="headen-block collapse" aria-expanded="false">
+        <div class="container headen-block__body">
+          <div class="row">
+            <form  method="post" action="#" name="akvatika">
+              <div class="form-group col-xs-6">
+                <label class="control-label" for="name"> Ваше Имя <i class="fa fa-asterisk"></i></label>
+                <div class="gcore-input">
+                  <input id="name" class="form-control" name="name" value="Ваше имя" placeholder="" title="" style="" data-inputmask="" data-load-state="" data-tooltip="" type="text">
+                </div>
+              </div>
+              <div class="form-group col-xs-6">
+                <label class="control-label" for="phone">
+                  Ваш телефон <i class="fa fa-asterisk"></i>
+                </label>
+                <div class="gcore-input">
+                  <input id="phone" class="form-control" name="phone" value="Ваш телефон" placeholder="" maxlength="20" title="" style="" data-inputmask="'mask' : '+9(999)999-9999'" data-load-state="" data-tooltip="" type="text">
+                </div>
+              </div>
+              <div class="clearfix"></div>
+              <div class="form-group col-xs-12">
+                <label class="control-label" for="email">Эл.почта<i class="fa fa-asterisk"></i></label>
+                <div class="gcore-input">
+                  <input id="email" class="form-control" name="email" value="Эл.почта" placeholder="" title="" style="" data-inputmask="" data-load-state="" data-tooltip="Эл.почта" type="text">
+                </div>
+              </div>
+              <div class="clearfix"></div>
+              <div class="form-group col-xs-6">
+                <label class="control-label" for="datepicker4">Заезд<i class="fa fa-asterisk"></i></label>
+                <div class="gcore-input">
+                  <input id="datepicker4" class="form-control" name="datepicker4" value="Заезд" data-gdatetimepicker-format="d-m-Y" placeholder="" title="" style="" data-load-state="" data-tooltip="" data-fieldtype="gdatetimepicker" data-start_view="d" type="text">
+                </div>
+              </div>
+              <div class="form-group col-xs-6">
+                <label class="control-label required_label" for="datepicker5">Выезд<i class="fa fa-asterisk"></i></label>
+                <div class="gcore-input">
+                  <input id="datepicker5" class="form-control" name="datepicker5" value="Выезд" data-gdatetimepicker-format="d-m-Y" placeholder="" title="" style="" data-load-state="" data-tooltip="" data-fieldtype="gdatetimepicker" data-start_view="d" type="text">
+                </div>
+              </div>
+              <div class="clearfix"></div>
+              <div class="form-group col-xs-6">
+                <label class="control-label" for="dropdown7">Взрослых<i class="fa fa-asterisk"></i></label>
+                <div class="gcore-input">
+                  <select id="dropdown7" class="form-control" name="dropdown7" size="" title="" style="" data-load-state="" data-tooltip="">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group col-xs-6">
+                <label class="control-label" for="dropdown8">Детей</label>
+                <div class="gcore-input">
+                  <select id="dropdown8" class="form-control" name="dropdown8" size="" title="" style="" data-load-state="" data-tooltip="">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                  </select>
+                </div>
+              </div>
+              <div class="clearfix"></div>
+              <div class="form-group col-xs-12">
+                <label class="control-label" for="textarea10">Комментарии</label>
+                <div class="gcore-input">
+                  <textarea id="textarea10" class="form-control" name="textarea10" placeholder="" rows="3" cols="40" title="" style="" data-wysiwyg="0" data-load-state="" data-tooltip="">Комментарии</textarea>
+                </div>
+              </div>
+              <div class="clearfix"></div>
+              <div class="form-group col-xs-6">
+                <div class="gcore-subinput-container-wide">
+                  <label class="control-label" for="captcha1">Антиспам</label>
+                </div>
+                <div class="gcore-input">
+                  <input id="captcha1" class="form-control" placeholder="" title="" style="" name="captcha" type="text">
+                </div>
+              </div>
+              <div class="clearfix"></div>
+              <div class="modal-footer col-xs-12 text-center">
+                <button type="button" class="btn button">Отправить</button>
+                <button type="button" class="btn button" data-dismiss="modal">Закрыть</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="central-block">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-xs-12 nopadding box-height">
+              <a class="logo" href="">
+                <img class="img-responsive" src="img/logo.png" alt="">
+              </a>
+            </div>
+            <div class="col-lg-6 col-xs-12 text-center central-unit nopadding box-height">
+              <div class="search-block">
+                <div class="phone">
+                  <div class="listunstyled" data-toggle="dropdown">
+                    <span class="tell_nav">Отдых на берегу Азовского моря в Мелекино!</span></br>
+                    <span class="line hidden-xs">Наш адрес: с. Мелекино, 2-й спуск, ул. 1-я линия, д. 4/1</span>
+                  </div>
+                </div>
+                <div id="search" class="input-group input-group__modif">
+                  <input class="form-control input-lg form-control_modif" name="search" value="" placeholder="Поиск" minlength="1" livesearch="off" type="text">
+                  <span class="input-group-btn">
+                    <button class="btn btn-default btn-lg btn-lg_modif" type="button">
+                      <i class="fa fa-search"></i>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-xs-12 nopadding box-height">
+              <div class="left-block">
+                <div class="header-minicart">
+                  <span>
+                    (050) 422-44-31, (050) 474-15-13</br>
+                    (063) 249-76-64, (098) 638-07-13
+                  </span>
+                </div>
+                <div class="social">
+                  <ul class="soc text-center">
+                    <li><a class="soc-facebook" href="#"></a></li>
+                    <li><a class="soc-twitter" href="#"></a></li>
+                    <li><a class="soc-googleplus" href="#"></a></li>
+                    <li><a class="soc-instagram soc-icon-last" href="#"></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <nav id="menu" class="main-menu default hidden-xs">
+        <div class="logo-miny">
+          <img class="img-responsive" src="img/logo-miny.png" alt="Акватика">
+        </div>
+        <div class="container">
+            <ul class="content">
+              <li><a href="">Акватика</a></li>
+              <li ><a href="#">Номера</a></li>
+              <li class="dropdown">
+                <a class="dropdown__linck" href="#">Цены</a>
+                <ul class="sub-menu">
+                  <li><a href="#">Таблица цен</a></li>
+                  <li><a href="#">Забронировать</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a  class="dropdown__linck" href="#">Инфраструктура</a>
+                <ul class="sub-menu">
+                  <li><a href="#">Ссылка</a></li>
+                  <li><a href="#">Ссылка</a></li>
+                  <li><a href="#">Ссылка</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a class="dropdown__linck" href="#">Питание</a>
+                <ul class="sub-menu">
+                  <li><a href="#">Ссылка</a></li>
+                  <li><a href="#">Ссылка</a></li>
+                  <li><a href="#">Ссылка</a></li>
+                </ul>
+              </li>
+              <li ><a href="#">Галерея</a></li>
+              <li ><a href="#">Контакты</a></li>
+              <li ><a href="#">Отдых</a></li>
+            </ul>
+
+        </div>
+      </nav>
+    </header>
+    <section class="siteslider">
+      <!-- Swiper -->
+      <div class="swiper-container">
+        <div class="parallax-bg"></div>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide swiper-slide_left">
+              <div class="position">
+                <div class="title" data-swiper-parallax="-200">Клуб семейного отдыха «Акватика»</div>
+                <div class="subtitle" data-swiper-parallax="-800">есть всё для уютного и безопасного отдыха с детьми</div>
+                <div class="text" data-swiper-parallax="-1200">
+                  <a class="button" href="#">узнать больше</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide swiper-slide_center">
+              <div class="position">
+                <div class="title" data-swiper-parallax="-200">Ресторан «Акватики»</div>
+                <div class="subtitle" data-swiper-parallax="-800">сочетает в себе превосходное меню и особенную атмосферу</div>
+                <div class="text" data-swiper-parallax="-1200">
+                  <a class="button" href="#">узнать больше</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide swiper-slide_center1">
+              <div class="position">
+                <div class="title" data-swiper-parallax="-200">Ресторан «Акватики» 111</div>
+                <div class="subtitle" data-swiper-parallax="-800">сочетает в себе превосходное меню и особенную атмосферу</div>
+                <div class="text" data-swiper-parallax="-1200">
+                  <a class="button" href="#">узнать больше</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide swiper-slide_right">
+              <div class="position">
+                <div class="title" data-swiper-parallax="-200">Гостиничный комплекс «Акватика</div>
+                <div class="subtitle" data-swiper-parallax="-800">предлагает услуги по организации и проведению мероприятий</div>
+                <div class="text" data-swiper-parallax="-1200">
+                  <a class="button" href="#">узнать больше</a>
+                </div>
+              </div>
+            </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination swiper-pagination-white"></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next swiper-button-white"></div>
+        <div class="swiper-button-prev swiper-button-white"></div>
+      </div>
+    </section>
+    <section class="hotel-info section-padding">
+      <div class="container ">
+        <h2 class="header-block">Добро пожаловать в клуб семейного досуга "Акватика"!</h2>
+        <div class="row hotel-info__block-img">
+          <div class="col-sm-4 col-xs-12 text-center">
+            <a href="/">
+              <div class="picture">
+                <img class="img-responsive" src="img/01.jpg" alt="Размещение">
+                <span>Размещение</span>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm-4 col-xs-12 text-center">
+            <a href="/">
+              <div class="picture">
+                <img class="img-responsive" src="img/02.jpg" alt="Размещение">
+                <span>Питание</span>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm-4 col-xs-12 text-center">
+            <a href="/">
+              <div class="picture">
+                <img class="img-responsive" src="img/03.jpg" alt="Размещение">
+                <span>Услуги</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="hotel-info__description">
+        <div class="container">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="hotel-rooms section-padding">
+      <div class="container text-center">
+        <h2 class="header-block">Номерной фонд</h2>
+        <div class="banners row">
+          <div class="col-xs-12 col-sm-6 col-md-4 box-shadow services-box__image-container">
+            <div class="services-box__hover-bg">
+              <div class="services-box__v-line">
+                <span class="s-desc">
+                  <span>
+                    <h2>1 комнатный 2-х местный «Люкс+»</h2>
+                    Однокомнатный номер включает в себя:
+                  </span>
+                  <ul>
+                    <li>оборудованную спальню,</li>
+                    <li>душевую кабину, фен,</li>
+                    <li>телевизор,</li>
+                    <li>кондиционер,</li>
+                    <li>холодильник,</li>
+                    <li>чайник, набор необходимой посуды</li>
+                  </ul>
+                </span>
+              </div>
+              <a href="#">
+                <img class="img-responsive services-box__image" src="img/nomer1.jpg" alt="">
+              </a>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4 box-shadow services-box__image-container">
+            <div class="services-box__hover-bg">
+              <div class="services-box__v-line">
+                <span class="s-desc">
+                  <h2>1 комнатный 2-х местный «Люкс+»</h2>
+                  Однокомнатный номер включает в себя:
+                  <ul>
+                    <li>оборудованную спальню,</li>
+                    <li>душевую кабину, фен,</li>
+                    <li>телевизор,</li>
+                    <li>кондиционер,</li>
+                    <li>холодильник,</li>
+                    <li>чайник, набор необходимой посуды</li>
+                  </ul>
+                </span>
+              </div>
+              <a href="#">
+                <img class="img-responsive services-box__image" src="img/nomer2.jpg" alt="">
+              </a>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4 box-shadow services-box__image-container">
+            <div class="services-box__hover-bg">
+              <div class="services-box__v-line">
+                <span class="s-desc">
+                  <span>
+                    <h2>1 комнатный 3-х местный «Люкс+»</h2>
+                  </span>
+                  <span>
+                    Однокомнатный номер включает в себя:
+                    <ul>
+                      <li>оборудованную спальню,</li>
+                      <li>душевую кабину, фен,</li>
+                      <li>телевизор,</li>
+                      <li>кондиционер,</li>
+                      <li>холодильник,</li>
+                      <li>чайник, набор необходимой посуды</li>
+                    </ul>
+                  </span>
+                </span>
+              </div>
+              <a href="#">
+                <img class="img-responsive services-box__image" src="img/nomer3.jpg" alt="">
+              </a>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4 box-shadow services-box__image-container">
+            <div class="services-box__hover-bg">
+              <div class="services-box__v-line">
+                <span class="s-desc">
+                  <span>
+                    <h2>1 комнатный 4-х местный «Люкс-студия+»</h2>
+                  </span>
+                  </span>
+                  <span>
+                    Однокомнатный номер включает в себя:
+                    <ul>
+                      <li>оборудованную спальню,</li>
+                      <li>душевую кабину, фен,</li>
+                      <li>телевизор,</li>
+                      <li>кондиционер,</li>
+                      <li>холодильник,</li>
+                      <li>чайник, набор необходимой посуды</li>
+                    </ul>
+                  </span>
+                </span>
+              </div>
+              <a href="#">
+                <img class="img-responsive services-box__image" src="img/nomer4.jpg" alt="">
+              </a>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4 box-shadow services-box__image-container">
+            <div class="services-box__hover-bg">
+              <div class="services-box__v-line">
+                <span class="s-desc">
+                  <span>
+                    <h2>2-х комнатный 4-х местный «Люкс+»</h2>
+                  </span>
+                </span>
+                <span>
+                  Двухкомнатный номер включает в себя:
+                  <ul>
+                    <li>оборудованную спальню,</li>
+                    <li>оборудованную детскую комнату,</li>
+                    <li>душевую кабину, фен,</li>
+                    <li>телевизор, кондиционер,</li>
+                    <li>холодильник, мини-кухню,</li>
+                    <li>чайник, необходимую посуду,</li>
+                    <li>шкаф для одежды, комод для белья</li>
+                    <li>комод для белья.</li>
+                  </ul>
+                </span>
+                </span>
+              </div>
+              <a href="#">
+                <img class="img-responsive services-box__image" src="img/nomer5.jpg" alt="">
+              </a>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4 box-shadow services-box__image-container">
+            <div class="services-box__hover-bg">
+              <div class="services-box__v-line">
+                <span class="s-desc">
+                  <span>
+                    <h2>3-х комнатный номер «Люкс»</h2>
+                  </span>
+                </span>
+                <span>
+                  Трехкомнатный номер включает в себя:
+                  <ul>
+                    <li>2 оборудованных спальни, гостиную, отдельную кухню,</li>
+                    <li>душевую кабину, фен,</li>
+                    <li>телевизор,</li>
+                    <li>кондиционер,</li>
+                    <li>холодильник,</li>
+                    <li>чайник, набор необходимой посуды</li>
+                  </ul>
+                </span>
+                </span>
+              </div>
+              <a href="#">
+                <img class="img-responsive services-box__image" src="img/nomer6.jpg" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="gallery-block section-padding">
+      <div id="container" class="container text-center">
+        <h2 class="header-block">Фотогалерея</h2>
+        <input type="checkbox" id="pic-1"/>
+        <label for="pic-1" class="lightbox"><img src="img/masonry_img/akvatika-01.jpg"/></label>
+        <input type="checkbox" id="pic-2"/>
+        <label for="pic-2" class="lightbox"><img src="img/masonry_img/akvatika-02.jpg"/></label>
+        <input type="checkbox" id="pic-3"/>
+        <label for="pic-3" class="lightbox"><img src="img/masonry_img/akvatika-03.jpg"/></label>
+        <input type="checkbox" id="pic-4"/>
+        <label for="pic-4" class="lightbox"><img src="img/masonry_img/akvatika-04.jpg"/></label>
+        <input type="checkbox" id="pic-5"/>
+        <label for="pic-5" class="lightbox"><img src="img/masonry_img/akvatika-05.jpg"/></label>
+        <input type="checkbox" id="pic-6"/>
+        <label for="pic-6" class="lightbox"><img src="img/masonry_img/akvatika-06.jpg"/></label>
+        <input type="checkbox" id="pic-7"/>
+        <label for="pic-7" class="lightbox"><img src="img/masonry_img/akvatika-07.jpg"/></label>
+        <input type="checkbox" id="pic-8"/>
+        <label for="pic-8" class="lightbox"><img src="img/masonry_img/akvatika-08.jpg"/></label>
+        <input type="checkbox" id="pic-9"/>
+        <label for="pic-9" class="lightbox"><img src="img/masonry_img/akvatika-09.jpg"/></label>
+        <input type="checkbox" id="pic-10"/>
+        <label for="pic-10" class="lightbox"><img src="img/masonry_img/akvatika-10.jpg"/></label>
+        <input type="checkbox" id="pic-11"/>
+        <label for="pic-11" class="lightbox"><img src="img/masonry_img/akvatika-11.jpg"/></label>
+        <input type="checkbox" id="pic-12"/>
+        <label for="pic-12" class="lightbox"><img src="img/masonry_img/akvatika-12.jpg"/></label>
+        <div class="elements-gride grid">
+          <label for="pic-1" class="element-item persent-size" href=""><img src="img/masonry_img/akvatika-01.jpg" alt=""></label>
+          <label for="pic-2" class="element-item persent-size" href=""><img src="img/masonry_img/akvatika-02.jpg" alt=""></label>
+          <label for="pic-3" class="element-item persent-size" href=""><img src="img/masonry_img/akvatika-03.jpg" zlt=""></label>
+          <label for="pic-4" class="element-item persent-size" href=""><img src="img/masonry_img/akvatika-04.jpg" alt=""></label>
+          <label for="pic-5" class="element-item persent-size" href=""><img src="img/masonry_img/akvatika-05.jpg" alt=""></label>
+          <label for="pic-6" class="element-item persent-size" href=""><img src="img/masonry_img/akvatika-06.jpg" alt=""></label>
+          <label for="pic-7" class="element-item persent-size" href=""><img src="img/masonry_img/akvatika-07.jpg" alt=""></label>
+          <label for="pic-8" class="element-item persent-size_50" href=""><img src="img/masonry_img/akvatika-08.jpg" alt=""></label>
+          <label for="pic-9" class="element-item persent-size" href=""><img src="img/masonry_img/akvatika-09.jpg" alt=""></label>
+          <label for="pic-10" class="element-item persent-size" href=""><img src="img/masonry_img/akvatika-10.jpg" alt=""></label>
+          <label for="pic-11" class="element-item persent-size" href=""><img src="img/masonry_img/akvatika-11.jpg" alt=""></label>
+          <label for="pic-12" class="element-item persent-size" href=""><img src="img/masonry_img/akvatika-12.jpg" alt=""></label>
+        </div>
+        <a class="button" href="#">Посмотреть все фото</a>
+      </div>
+    </section>
+    <section class="official-site">
+      <video class="video-background" id="bgvid" autoplay="autoplay" loop="loop" muted="muted">
+        <source src="video/3.mp4" type="video/mp4">
+      </video>
+      <div class="slogan row">
+        <div class="col-sm-10 col-sm-offset-1 col-xs-12 col-xs-offset-0 text-center">
+          <h2 class="header-block header-block--orange">Клуб семейного досуга "Акватика" - отель на побережье Азовского моря</h2>
+          <p>Клуб семейного досуга "Акватика" - идеально место для спокойного семейного отдыха! Близость открытого моря,  погрузит вас в в мир покоя и тишины. Наличие собственного пляжа с пологим дном даст возможность хорошо провести отдых с детьми! Это прекрасный отдых от цивилизации и шумных больших курортов!</p>
+        </div>
+      </div>
+    </section>
+    <section class="faq section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 text-center">
+            <h2 class="header-block">Ответы на популярные вопросы</h2>
+          </div>
+        </div>
+        <div class="row faq-inner">
+          <div class="col-md-4 col-sm-6 col-xs-12 faq-item box-height">
+            <p>Как далеко пляж? Есть ли свой пляж?</p>
+            <a class="button faq--button" href="#">подробнее..</a>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12 faq-item box-height">
+            <p>Когда лучше заказывать путевку?</p>
+            <a class="button faq--button" href="#">подробнее..</a>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12 faq-item box-height">
+            <p>Снами едет ребёнок, сколько стоит путёвка на ребёнка?</p>
+            <a class="button faq--button" href="#">подробнее..</a>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12 faq-item box-height">
+            <p>Есть ли у пансионата стоянка?</p>
+            <a class="button faq--button" href="#">подробнее..</a>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12 faq-item box-height">
+            <p>Есть ли в пансионате бассейн?</p>
+            <a class="button faq--button" href="#">подробнее..</a>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12 faq-item box-height">
+            <p>Что предоставляется для детей?</p>
+            <a class="button faq--button" href="#">подробнее..</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="maps section-padding">
+      <div class="container">
+      </div>
+    </section>
+    <footer class="footer section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 footer__item">
+            <div class="footer-box box-height">
+              <div class="f-box-title">Адрес отеля</div>
+              <div class="f-box-desc">
+                с. Мелекино, 2-й спуск, ул. 1-я линия, д. 4/1, (между пансионатом «Светлана» и Б/О «Донбасс»)
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 footer__item">
+            <div class="footer-box box-height">
+              <div class="f-box-title">Контакты</div>
+              <div class="f-box-desc">
+                (050) 422-44-31,
+                (063) 249-76-64,
+                (050) 474-15-13,
+                (098) 638-07-13
+              </div>
+              <a class="online-booking button button--online hidden-xs" data-target="modal" href="#myModal"><p> Онлайн бронирование</p></a>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 footer__item text-center">
+            <div class="footer-box box-height">
+              <div class="f-box-title">У Вас остались вопросы?</div>
+              <div class="f-box-desc">
+                Оставьте ваш телефон и мы сами перезвоним вам в ближайшее время:
+              </div>
+              <a class="call-back button button--footer hidden-xs" data-target="modal" href="#myModal1"><p> Заказать обратный звонок</p></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer--bottom">
+          <p>© Клуб семейного отдыха «Акватика» - побережье Азовского моря, в Мелекино. 2017 </p>
+          <div class="social">
+            <ul class="soc text-center">
+              <li><a class="soc-facebook" href="#"></a></li>
+              <li><a class="soc-twitter" href="#"></a></li>
+              <li><a class="soc-googleplus" href="#"></a></li>
+              <li><a class="soc-instagram soc-icon-last" href="#"></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script type="text/javascript" src="js/swiper.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
+</html>
