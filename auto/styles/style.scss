@@ -9,7 +9,7 @@ body {
    margin: 0 !important;
 }
 .s-padding {
-  padding-bottom: 50px;
+  padding-bottom: 60px;
 }
 a {
     -webkit-transition: color 400ms, background-color 400ms;
@@ -30,8 +30,8 @@ a:active {
   text-align: center;
   text-transform: uppercase;
   position: relative;
-  margin-top: 70px;
-  margin-bottom: 40px;
+  margin-top: 60px;
+  margin-bottom: 60px;
 
   &::after {
     content: "";
@@ -47,6 +47,9 @@ a:active {
     bottom: -15px;
     width: 334px;
   }
+}
+.header-block--black {
+  color: #fff;
 }
 /*----------------button---------------------------------*/
 
@@ -267,6 +270,7 @@ a:active {
 /*----------------slider-----------------------*/
 .siteslider {
   position: relative;
+
   .swiper-container {
     .swiper-wrapper {
       .swiper-slide {
@@ -366,6 +370,9 @@ a:active {
 }
 /*--------------avtokatalog-------------------*/
 .avtokatalog {
+  background: #000;
+  border-top: 6px solid #15161a;
+  padding-bottom: 20px;
 
   .main{
 	  position: relative;
@@ -622,7 +629,7 @@ a:active {
   color: $White;
   font-size: 14px;
   font-family: $Roboto;
-  padding-top: 50px;
+  padding: 50px;
 
   .verticalmenu {
     border-left: 1px solid #fff;
@@ -640,12 +647,38 @@ a:active {
     padding: 25px 15px;
     text-shadow: 0 1px 0 rgb(17, 17, 17);
   }
-
-  .footer--bottom {
-    padding-top: 30px;
-
-    p {
-      float: left;
-    }
+}
+.footer--bottom {
+  padding: 30px 0;
+  background-color: #000;
+  color: #fff;
+  font-size: 15px;
+  p {
+    float: left;
   }
+}
+/*---------------------*/
+
+#scrollToTop {
+    background: #333 none repeat scroll 0 0;
+    border-radius: 3px;
+    bottom: 20px;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 1.5em;
+    right:  20px;
+    padding: 12px;
+    position: fixed;
+    text-align: center;
+    transition: background-color 0.2s ease-in-out 0s;
+    z-index: 9999;
+    box-shadow: 6px 6px 8px rgba(4, 4, 4, 0.5);
+}
+#scrollToTop:hover {
+    background: #ff5f00 none repeat scroll 0 0;
+    color: #ffffff;
+}
+#scrollToTop > img {
+    display: block;
+    margin: 0 auto;
 }

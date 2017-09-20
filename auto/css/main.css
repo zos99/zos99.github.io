@@ -1,16 +1,6 @@
 @charset "UTF-8";
 /*-------fonts---------*/
 @font-face {
-  font-family: 'montserrat';
-  src: url("../fonts/Montserrat-Bold.ttf");
-  font-weight: bold;
-  font-style: normal; }
-@font-face {
-  font-family: 'montserrat';
-  src: url("../fonts/Montserrat-Regular.ttf");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
   font-family: 'Roboto';
   src: url("../fonts/Roboto-BlackItalic.ttf");
   font-weight: Black;
@@ -6068,7 +6058,7 @@ body {
   margin: 0 !important; }
 
 .s-padding {
-  padding-bottom: 50px; }
+  padding-bottom: 60px; }
 
 a {
   -webkit-transition: color 400ms, background-color 400ms;
@@ -6088,8 +6078,8 @@ a:active {
   text-align: center;
   text-transform: uppercase;
   position: relative;
-  margin-top: 70px;
-  margin-bottom: 40px; }
+  margin-top: 60px;
+  margin-bottom: 60px; }
   .header-block::after {
     content: "";
     left: 50%;
@@ -6102,6 +6092,9 @@ a:active {
     height: 6px;
     bottom: -15px;
     width: 334px; }
+
+.header-block--black {
+  color: #fff; }
 
 /*----------------button---------------------------------*/
 .button {
@@ -6361,181 +6354,185 @@ a:active {
     z-index: 10; }
 
 /*--------------avtokatalog-------------------*/
-.avtokatalog .main {
-  position: relative; }
-.avtokatalog .more {
-  position: relative;
-  clear: both;
-  font-family: 'Arial Narrow', Arial, sans-serif;
-  text-transform: uppercase;
-  font-size: 11px;
-  padding: 5px 0px 10px;
-  width: 100%;
-  margin: 0 auto; }
-.avtokatalog .more ul {
-  display: block;
-  text-align: center;
-  height: 30px; }
-.avtokatalog .more ul li {
-  display: block;
-  padding: 4px 2px;
-  float: left; }
-.avtokatalog .more ul li.selected a,
-.avtokatalog .more ul li.selected a:hover {
+.avtokatalog {
   background: #000;
-  color: #fff;
-  text-shadow: none; }
-.avtokatalog .more ul li a {
-  color: #555;
-  float: left;
-  background: #fff;
-  width: 40px;
-  padding: 2px 5px;
-  -moz-box-shadow: 1px 1px 2px #aaa;
-  -webkit-box-shadow: 1px 1px 2px #aaa;
-  box-shadow: 1px 1px 2px #aaa; }
-.avtokatalog .more ul li a:hover {
-  background: #000;
-  color: #fff; }
-.avtokatalog .view {
-  float: left;
-  border: 10px solid #fff;
-  overflow: hidden;
-  position: relative;
-  text-align: center;
-  -webkit-box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.5);
-  box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.5);
-  cursor: default;
-  margin-bottom: 25px; }
-.avtokatalog .view .mask,
-.avtokatalog .view .content {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  overflow: hidden;
-  top: 0;
-  left: 0; }
-.avtokatalog .view img {
-  display: block;
-  position: relative; }
-.avtokatalog .view h2 {
-  text-transform: uppercase;
-  color: #fff;
-  text-align: center;
-  position: relative;
-  font-size: 17px;
-  padding: 10px;
-  background: rgba(0, 0, 0, 0.8);
-  margin: 20px 0 0 0; }
-.avtokatalog .view p {
-  font-family: Georgia, serif;
-  font-style: italic;
-  font-size: 12px;
-  position: relative;
-  color: #fff;
-  padding: 10px 20px 20px;
-  text-align: center; }
-.avtokatalog .view a.info {
-  display: inline-block;
-  text-decoration: none;
-  padding: 7px 14px;
-  background: #000;
-  color: #fff;
-  text-transform: uppercase;
-  -webkit-box-shadow: 0 0 1px #000;
-  -moz-box-shadow: 0 0 1px #000;
-  box-shadow: 0 0 1px #000; }
-.avtokatalog .view a.info:hover {
-  -webkit-box-shadow: 0 0 5px #000;
-  -moz-box-shadow: 0 0 5px #000;
-  box-shadow: 0 0 5px #000; }
-.avtokatalog .view-first img {
-  -webkit-transition: all 0.2s linear;
-  -moz-transition: all 0.2s linear;
-  -o-transition: all 0.2s linear;
-  -ms-transition: all 0.2s linear;
-  transition: all 0.2s linear; }
-.avtokatalog .view-first .mask {
-  -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
-  filter: alpha(opacity=0);
-  opacity: 0;
-  background-color: rgba(0, 0, 0, 0.7);
-  -webkit-transition: all 0.4s ease-in-out;
-  -moz-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
-  -ms-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out; }
-.avtokatalog .view-first h2 {
-  -webkit-transform: translateY(-100px);
-  -moz-transform: translateY(-100px);
-  -o-transform: translateY(-100px);
-  -ms-transform: translateY(-100px);
-  transform: translateY(-100px);
-  -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
-  filter: alpha(opacity=0);
-  opacity: 0;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  -ms-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out; }
-.avtokatalog .view-first p {
-  -webkit-transform: translateY(100px);
-  -moz-transform: translateY(100px);
-  -o-transform: translateY(100px);
-  -ms-transform: translateY(100px);
-  transform: translateY(100px);
-  -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
-  filter: alpha(opacity=0);
-  opacity: 0;
-  -webkit-transition: all 0.2s linear;
-  -moz-transition: all 0.2s linear;
-  -o-transition: all 0.2s linear;
-  -ms-transition: all 0.2s linear;
-  transition: all 0.2s linear; }
-.avtokatalog .view-first:hover img {
-  -webkit-transform: scale(1.1, 1.1);
-  -moz-transform: scale(1.1, 1.1);
-  -o-transform: scale(1.1, 1.1);
-  -ms-transform: scale(1.1, 1.1);
-  transform: scale(1.1, 1.1); }
-.avtokatalog .view-first a.info {
-  -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
-  filter: alpha(opacity=0);
-  opacity: 0;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  -ms-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out; }
-.avtokatalog .view-first:hover .mask {
-  -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
-  filter: alpha(opacity=100);
-  opacity: 1; }
-.avtokatalog .view-first:hover h2,
-.avtokatalog .view-first:hover p,
-.avtokatalog .view-first:hover a.info {
-  -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
-  filter: alpha(opacity=100);
-  opacity: 1;
-  -webkit-transform: translateY(0px);
-  -moz-transform: translateY(0px);
-  -o-transform: translateY(0px);
-  -ms-transform: translateY(0px);
-  transform: translateY(0px); }
-.avtokatalog .view-first:hover p {
-  -webkit-transition-delay: 0.1s;
-  -moz-transition-delay: 0.1s;
-  -o-transition-delay: 0.1s;
-  -ms-transition-delay: 0.1s;
-  transition-delay: 0.1s; }
-.avtokatalog .view-first:hover a.info {
-  -webkit-transition-delay: 0.2s;
-  -moz-transition-delay: 0.2s;
-  -o-transition-delay: 0.2s;
-  -ms-transition-delay: 0.2s;
-  transition-delay: 0.2s; }
+  border-top: 6px solid #15161a;
+  padding-bottom: 20px; }
+  .avtokatalog .main {
+    position: relative; }
+  .avtokatalog .more {
+    position: relative;
+    clear: both;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 11px;
+    padding: 5px 0px 10px;
+    width: 100%;
+    margin: 0 auto; }
+  .avtokatalog .more ul {
+    display: block;
+    text-align: center;
+    height: 30px; }
+  .avtokatalog .more ul li {
+    display: block;
+    padding: 4px 2px;
+    float: left; }
+  .avtokatalog .more ul li.selected a,
+  .avtokatalog .more ul li.selected a:hover {
+    background: #000;
+    color: #fff;
+    text-shadow: none; }
+  .avtokatalog .more ul li a {
+    color: #555;
+    float: left;
+    background: #fff;
+    width: 40px;
+    padding: 2px 5px;
+    -moz-box-shadow: 1px 1px 2px #aaa;
+    -webkit-box-shadow: 1px 1px 2px #aaa;
+    box-shadow: 1px 1px 2px #aaa; }
+  .avtokatalog .more ul li a:hover {
+    background: #000;
+    color: #fff; }
+  .avtokatalog .view {
+    float: left;
+    border: 10px solid #fff;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    -webkit-box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.5);
+    box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.5);
+    cursor: default;
+    margin-bottom: 25px; }
+  .avtokatalog .view .mask,
+  .avtokatalog .view .content {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0; }
+  .avtokatalog .view img {
+    display: block;
+    position: relative; }
+  .avtokatalog .view h2 {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 17px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    margin: 20px 0 0 0; }
+  .avtokatalog .view p {
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 12px;
+    position: relative;
+    color: #fff;
+    padding: 10px 20px 20px;
+    text-align: center; }
+  .avtokatalog .view a.info {
+    display: inline-block;
+    text-decoration: none;
+    padding: 7px 14px;
+    background: #000;
+    color: #fff;
+    text-transform: uppercase;
+    -webkit-box-shadow: 0 0 1px #000;
+    -moz-box-shadow: 0 0 1px #000;
+    box-shadow: 0 0 1px #000; }
+  .avtokatalog .view a.info:hover {
+    -webkit-box-shadow: 0 0 5px #000;
+    -moz-box-shadow: 0 0 5px #000;
+    box-shadow: 0 0 5px #000; }
+  .avtokatalog .view-first img {
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    -ms-transition: all 0.2s linear;
+    transition: all 0.2s linear; }
+  .avtokatalog .view-first .mask {
+    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out; }
+  .avtokatalog .view-first h2 {
+    -webkit-transform: translateY(-100px);
+    -moz-transform: translateY(-100px);
+    -o-transform: translateY(-100px);
+    -ms-transform: translateY(-100px);
+    transform: translateY(-100px);
+    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out; }
+  .avtokatalog .view-first p {
+    -webkit-transform: translateY(100px);
+    -moz-transform: translateY(100px);
+    -o-transform: translateY(100px);
+    -ms-transform: translateY(100px);
+    transform: translateY(100px);
+    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    -ms-transition: all 0.2s linear;
+    transition: all 0.2s linear; }
+  .avtokatalog .view-first:hover img {
+    -webkit-transform: scale(1.1, 1.1);
+    -moz-transform: scale(1.1, 1.1);
+    -o-transform: scale(1.1, 1.1);
+    -ms-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1); }
+  .avtokatalog .view-first a.info {
+    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out; }
+  .avtokatalog .view-first:hover .mask {
+    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    opacity: 1; }
+  .avtokatalog .view-first:hover h2,
+  .avtokatalog .view-first:hover p,
+  .avtokatalog .view-first:hover a.info {
+    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -o-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    transform: translateY(0px); }
+  .avtokatalog .view-first:hover p {
+    -webkit-transition-delay: 0.1s;
+    -moz-transition-delay: 0.1s;
+    -o-transition-delay: 0.1s;
+    -ms-transition-delay: 0.1s;
+    transition-delay: 0.1s; }
+  .avtokatalog .view-first:hover a.info {
+    -webkit-transition-delay: 0.2s;
+    -moz-transition-delay: 0.2s;
+    -o-transition-delay: 0.2s;
+    -ms-transition-delay: 0.2s;
+    transition-delay: 0.2s; }
 
 /*------------paralaks 1---------------*/
 #lt-services {
@@ -6575,7 +6572,7 @@ a:active {
   color: #fff;
   font-size: 14px;
   font-family: "Roboto", Helvetica, Arial, "Lucida Grande", sans-serif;
-  padding-top: 50px; }
+  padding: 50px; }
   .footer .verticalmenu {
     border-left: 1px solid #fff;
     margin: 15px 0;
@@ -6588,10 +6585,38 @@ a:active {
   .footer .user3, .footer .user4, .footer .user5, .footer .user6 {
     padding: 25px 15px;
     text-shadow: 0 1px 0 #111111; }
-  .footer .footer--bottom {
-    padding-top: 30px; }
-    .footer .footer--bottom p {
-      float: left; }
+
+.footer--bottom {
+  padding: 30px 0;
+  background-color: #000;
+  color: #fff;
+  font-size: 15px; }
+  .footer--bottom p {
+    float: left; }
+
+/*---------------------*/
+#scrollToTop {
+  background: #333 none repeat scroll 0 0;
+  border-radius: 3px;
+  bottom: 20px;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 1.5em;
+  right: 20px;
+  padding: 12px;
+  position: fixed;
+  text-align: center;
+  transition: background-color 0.2s ease-in-out 0s;
+  z-index: 9999;
+  box-shadow: 6px 6px 8px rgba(4, 4, 4, 0.5); }
+
+#scrollToTop:hover {
+  background: #ff5f00 none repeat scroll 0 0;
+  color: #ffffff; }
+
+#scrollToTop > img {
+  display: block;
+  margin: 0 auto; }
 
 @media (max-width: 768px) {
   .siteslider .swiper-container .swiper-wrapper .swiper-slide .position {

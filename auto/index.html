@@ -14,6 +14,8 @@
     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/jquery.scrollUp.js"></script>
+
   </head>
   <body>
     <div class="body-innerwrapper">
@@ -144,7 +146,7 @@
           </div>
         </nav>
       </section>
-      <section class="siteslider">
+      <section id="sp-main-body" class="siteslider">
         <!-- Swiper -->
         <div class="swiper-container">
           <div class="swiper-wrapper">
@@ -195,7 +197,7 @@
       </section>
       <section class="avtokatalog s-padding">
         <div class="container">
-          <h2 class="header-block">Автокаталог</h2>
+          <h2 class="header-block header-block--black">Автокаталог</h2>
           <div class="main row">
             <div class="col-sm-4 col-xs-12">
               <div class="view view-first">
@@ -315,7 +317,7 @@
           </div>
         </div>
       </section>
-      <footer class="footer s-padding">
+      <section class="footer">
         <div class="container">
           <div class="row">
             <div class="col-xs-12 user3 col-md-3 footer__item">
@@ -383,12 +385,15 @@
               </div>
             </div>
           </div>
-          <div class="footer--bottom">
-            <p>© Компания "Росавтотрейд". 2017 </p>
-          </div>
+        </div>
+      </section>
+      <footer class="footer--bottom">
+        <div class="container">
+          <p>© Компания "Росавтотрейд". 2017 </p>
         </div>
       </footer>
     </div>
+    <div id="scrollToTop" class="scrollToTop" title="Back to top!" style="display: block;">⧋</div>
     <script type="text/javascript" src="js/swiper.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
   </body>
