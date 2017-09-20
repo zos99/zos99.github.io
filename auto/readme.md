@@ -1,2 +1,3 @@
-http://zos99.github.io/beregletom/index.html
+http://zos99.github.io/auto/index.html
+
 
