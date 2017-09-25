@@ -2,17 +2,21 @@ $White: #fff;
 $DWhite: #f0f2f6;
 $Golg: #f4b60d;
 $LLBlue: #dcf0f7;
-$Blue: #0099CC;
-$LBlue: #07769a;
-$DBlue: #006485;
-$DDBlue: #004156;
+$Blue: #00ffff;
+$LBlue: #08e8dd;
+$DBlue: #00c6bc;
+$DDBlue: #009db5;
 $DGray: #676767;
-$DGray: #2a2a2a;
+$DGray: #232323;
 $LGrey: #cbc9ca;
 $Orange: #f49156;
 $DOrange: #e35f10;
 $LOrange: #EAAB69;
 $btnSoc:#ff0000;
+$Magento: #b33a7f;
+$dmagento: #cc397b;
+$Cian: #00cccb;
+$dcian: #01c3c3;
 /*-------fonts---------*/
 $fontGothamPro: "GothamProRegular",sans-serif;
 $Arial:   "Arial";
@@ -232,13 +236,15 @@ $Amesome: "FontAwesome";
 
 @font-face {
     font-family: 'material-design';
-
-
-       src:  url('../fonts/materialdesignicons-webfont.ttf');
-
+    src:  url('../fonts/materialdesignicons-webfont.ttf');
     font-weight: 200;
     font-style: normal;
-
+}
+@font-face {
+    font-family: 'Marck Script';
+    src: local('Marck Script'), local('MarckScript-Regular'), url('../fonts/marckscript.woff2') format('woff2'), url('../fonts/marckscript.woff') format('woff'), url('../fonts/marckscript.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
 }
 
 
@@ -316,12 +322,6 @@ body {
 b,
 strong {
     font-weight: bold;
-}
-a,
-a:link,
-a:visited,
-a:focus {
-    color: $DGray;
 }
 p {
   margin: 0;
@@ -524,16 +524,23 @@ body {
       a {
         padding-top: 0;
         padding-bottom: 0;
+        color: #fff;
+        background: transparent;
+
+        &:hover {
+          color: $LGrey;
+        }
+      }
+
+      .top-dropdown {
+        display: none;
       }
     }
   }
 
   .page-header__line {
-    background-color: $DWhite;
-    background: transparent none repeat scroll 0 0;
-    border-bottom: 1px solid $LGrey;
-    min-height: 100%;
-    padding: 10px 0;
+    background: $DGray none repeat scroll 0 0;
+    padding: 5px 0;
 
     .navbar-toggle {
       background-color: $Blue;
@@ -543,15 +550,12 @@ body {
       }
     }
 
-    .nav {
-      padding-left: 5%;
-      padding-right: 5%;
-      color: $DGray;
-    }
+    .sait-control {
 
+    }
     .nav-headen {
       font-size: 16px;
-      background-color: $DBlue;
+      background-color: $DGray;
 
       li {
         padding: 5px;
@@ -562,7 +566,7 @@ body {
           padding: 5px;
 
           &:hover {
-            background-color: $Blue;
+            background-color: $DGray;
           }
         }
 
@@ -575,48 +579,11 @@ body {
         }
       }
     }
-
-    .sait-control {
-
-      .home {
-        background-position: 0 0;
-        width: 23px;
-      }
-
-      .mail {
-        background-position: -23px 0;
-        width: 19px;
-
-        &:hover {
-          background-position: -88px 0;
-        }
-      }
-
-      .map {
-        background-position: -42px 0;
-        width: 23px;
-
-        &:hover {
-          background-position: -107px 0;
-        }
-      }
-
-      .home-active {
-        background-position: -65px 0 !important;
-      }
-
-      li {
-        background: rgba(0, 0, 0, 0) url("../img/sprite.png") no-repeat scroll 0 0;
-        display: inline-block;
-        height: 20px;
-        margin: 0 23px 0 0;
-      }
-    }
   }
 
 
   .central-block {
-    padding: 5px 0 15px;
+    padding: 20px 0 0px 0;
 
     .logo {
       display: block;
@@ -632,15 +599,11 @@ body {
     }
 
     .central-unit {
-      color: $DBlue;
+      color: #555;
       font-family: $MyriadPro;
       position: relative;
 
       .search-block {
-        bottom: 0;
-        left: 50%;
-        position: absolute;
-        transform: translate(-50%, 0px);
         width: 100%;
 
         .input-group__modif {
@@ -661,12 +624,48 @@ body {
         }
 
         .listunstyled {
-          font-size: 22px;
+          font-size: 27px;
           font-weight: bold;
+          font-family: "Marck Script";
 
           .line {
               font-size: 20px;
           }
+        }
+      }
+
+      .searchform {
+          margin: 10px 20% 10px;
+          position: relative;
+
+        .keyword-search {
+            border: 1px solid #bdbdbd;
+            border-radius: 0;
+            width: 100%;
+        }
+
+        .submit-search {
+          background: #bdbdbd none repeat scroll 0 0;
+          border: 0 none;
+          color: #fff;
+          font-size: 17px;
+          height: 34px;
+          position: absolute;
+          right: 0;
+          top: 0;
+          width: 34px;
+        }
+
+        &::before {
+          background: rgba(0, 0, 0, 0) url("..img/search_gc.png") no-repeat scroll left 12px;
+          content: "";
+          display: block;
+          height: 34px;
+          position: absolute;
+          right: 34px;
+          top: 0;
+          width: 5px;
+          z-index: 3;
         }
       }
     }
@@ -719,13 +718,14 @@ body {
   }
 
   .main-menu {
-    background-color: $DBlue;
+    background-color: #fff;
     padding: 10px 0;
+    border-bottom: 3px solid $dcian;
 
       ul {
         list-style-type:none;
         margin:0;
-        padding:0;
+        padding:0 0 0 20px;
 
         li {
           display:inline-block;
@@ -775,14 +775,14 @@ body {
     margin:0 12px;
     text-transform: uppercase;
     font-family: $MyriadPro;
-    color: #fff!important;
+    color: #000!important;
     display:block;
     text-decoration: none;
 
     &:hover,
     &:focus,
     &:active {
-      color: $Golg!important;
+      color: $dcian!important;
     }
 
 
@@ -1343,7 +1343,7 @@ body {
   .footer__item {
     padding-top: 20px;
     padding-bottom: 20px;
-    
+
     .footer-box {
       border: 1px solid $LBlue;
       box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.1);

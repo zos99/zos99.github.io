@@ -160,6 +160,11 @@
   src: url("../fonts/materialdesignicons-webfont.ttf");
   font-weight: 200;
   font-style: normal; }
+@font-face {
+  font-family: 'Marck Script';
+  src: local("Marck Script"), local("MarckScript-Regular"), url("../fonts/marckscript.woff2") format("woff2"), url("../fonts/marckscript.woff") format("woff"), url("../fonts/marckscript.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
 html, body, div, span, applet,
 object, iframe, h1, h2, h3, h4,
 h5, h6, p, blockquote, pre, a,
@@ -227,19 +232,13 @@ pre {
   text-shadow: none; }
 
 body {
-  color: #2a2a2a;
+  color: #232323;
   font-size: 100%;
   font-family: "Roboto", Helvetica, Arial, "Lucida Grande", sans-serif; }
 
 b,
 strong {
   font-weight: bold; }
-
-a,
-a:link,
-a:visited,
-a:focus {
-  color: #2a2a2a; }
 
 p {
   margin: 0; }
@@ -250,7 +249,7 @@ p {
 html, body {
   height: 100%;
   width: 100%;
-  color: #2a2a2a; }
+  color: #232323; }
 
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
@@ -6136,8 +6135,8 @@ body {
 
 /*----------------button---------------------------------*/
 .button {
-  background: #006485 none repeat scroll 0 0;
-  border: 2px solid #006485;
+  background: #00c6bc none repeat scroll 0 0;
+  border: 2px solid #00c6bc;
   border-radius: 2px;
   color: #fff !important;
   cursor: pointer;
@@ -6151,8 +6150,8 @@ body {
   text-transform: uppercase; }
   .button:hover {
     background-color: transparent;
-    border: 2px solid #006485;
-    color: #006485 !important;
+    border: 2px solid #00c6bc;
+    color: #00c6bc !important;
     text-decoration: none; }
 
 /*-----------header--------------*/
@@ -6188,35 +6187,34 @@ body {
         font-family: "material-design"; }
     .page-header .online-services .online-booking,
     .page-header .online-services .online-booking--headen {
-      color: #006485;
+      color: #00c6bc;
       font-weight: bold; }
       .page-header .online-services .online-booking::before,
       .page-header .online-services .online-booking--headen::before {
-        color: #006485;
+        color: #00c6bc;
         font-size: 20px;
         content: "\F678";
         display: inline-block;
         font-family: "material-design"; }
   .page-header .headen-menu li a {
     padding-top: 0;
-    padding-bottom: 0; }
+    padding-bottom: 0;
+    color: #fff;
+    background: transparent; }
+    .page-header .headen-menu li a:hover {
+      color: #cbc9ca; }
+  .page-header .headen-menu li .top-dropdown {
+    display: none; }
   .page-header .page-header__line {
-    background-color: #f0f2f6;
-    background: transparent none repeat scroll 0 0;
-    border-bottom: 1px solid #cbc9ca;
-    min-height: 100%;
-    padding: 10px 0; }
+    background: #232323 none repeat scroll 0 0;
+    padding: 5px 0; }
     .page-header .page-header__line .navbar-toggle {
-      background-color: #0099CC; }
+      background-color: #00ffff; }
       .page-header .page-header__line .navbar-toggle .icon-bar {
-        background-color: #07769a; }
-    .page-header .page-header__line .nav {
-      padding-left: 5%;
-      padding-right: 5%;
-      color: #2a2a2a; }
+        background-color: #08e8dd; }
     .page-header .page-header__line .nav-headen {
       font-size: 16px;
-      background-color: #006485; }
+      background-color: #232323; }
       .page-header .page-header__line .nav-headen li {
         padding: 5px; }
         .page-header .page-header__line .nav-headen li a {
@@ -6224,32 +6222,12 @@ body {
           color: #fff;
           padding: 5px; }
           .page-header .page-header__line .nav-headen li a:hover {
-            background-color: #0099CC; }
+            background-color: #232323; }
         .page-header .page-header__line .nav-headen li ul li {
           text-align: center;
-          border-bottom: 1px solid #0099CC; }
-    .page-header .page-header__line .sait-control .home {
-      background-position: 0 0;
-      width: 23px; }
-    .page-header .page-header__line .sait-control .mail {
-      background-position: -23px 0;
-      width: 19px; }
-      .page-header .page-header__line .sait-control .mail:hover {
-        background-position: -88px 0; }
-    .page-header .page-header__line .sait-control .map {
-      background-position: -42px 0;
-      width: 23px; }
-      .page-header .page-header__line .sait-control .map:hover {
-        background-position: -107px 0; }
-    .page-header .page-header__line .sait-control .home-active {
-      background-position: -65px 0 !important; }
-    .page-header .page-header__line .sait-control li {
-      background: transparent url("../img/sprite.png") no-repeat scroll 0 0;
-      display: inline-block;
-      height: 20px;
-      margin: 0 23px 0 0; }
+          border-bottom: 1px solid #00ffff; }
   .page-header .central-block {
-    padding: 5px 0 15px; }
+    padding: 20px 0 0px 0; }
     .page-header .central-block .logo {
       display: block;
       min-height: 44px;
@@ -6260,14 +6238,10 @@ body {
         transition: all 0s ease 0s, all 0.8s ease 0s, all 0s ease-in-out 0s;
         margin: 0 auto; }
     .page-header .central-block .central-unit {
-      color: #006485;
+      color: #555;
       font-family: "MyriadProRegular", Helvetica, Arial, "Lucida Grande", sans-serif;
       position: relative; }
       .page-header .central-block .central-unit .search-block {
-        bottom: 0;
-        left: 50%;
-        position: absolute;
-        transform: translate(-50%, 0px);
         width: 100%; }
         .page-header .central-block .central-unit .search-block .input-group__modif {
           margin: 15px auto 15px;
@@ -6275,16 +6249,44 @@ body {
           .page-header .central-block .central-unit .search-block .input-group__modif .form-control_modif,
           .page-header .central-block .central-unit .search-block .input-group__modif .btn-lg_modif {
             border-radius: 0px;
-            color: #0099CC; }
+            color: #00ffff; }
           .page-header .central-block .central-unit .search-block .input-group__modif .form-control_modif,
           .page-header .central-block .central-unit .search-block .input-group__modif .btn-lg_modif {
             border-radius: 0px;
-            color: #0099CC; }
+            color: #00ffff; }
         .page-header .central-block .central-unit .search-block .listunstyled {
-          font-size: 22px;
-          font-weight: bold; }
+          font-size: 27px;
+          font-weight: bold;
+          font-family: "Marck Script"; }
           .page-header .central-block .central-unit .search-block .listunstyled .line {
             font-size: 20px; }
+      .page-header .central-block .central-unit .searchform {
+        margin: 10px 20% 10px;
+        position: relative; }
+        .page-header .central-block .central-unit .searchform .keyword-search {
+          border: 1px solid #bdbdbd;
+          border-radius: 0;
+          width: 100%; }
+        .page-header .central-block .central-unit .searchform .submit-search {
+          background: #bdbdbd none repeat scroll 0 0;
+          border: 0 none;
+          color: #fff;
+          font-size: 17px;
+          height: 34px;
+          position: absolute;
+          right: 0;
+          top: 0;
+          width: 34px; }
+        .page-header .central-block .central-unit .searchform::before {
+          background: transparent url("..img/search_gc.png") no-repeat scroll left 12px;
+          content: "";
+          display: block;
+          height: 34px;
+          position: absolute;
+          right: 34px;
+          top: 0;
+          width: 5px;
+          z-index: 3; }
     .page-header .central-block .left-block {
       bottom: 0;
       position: absolute;
@@ -6298,7 +6300,7 @@ body {
         margin: 0 auto;
         width: 100%;
         font-size: 16px;
-        color: #006485; }
+        color: #00c6bc; }
       .page-header .central-block .left-block .social {
         margin: 20px auto 10px; }
   .page-header .headen-block {
@@ -6320,18 +6322,19 @@ body {
     z-index: 9999;
     box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.1); }
   .page-header .main-menu {
-    background-color: #006485;
+    background-color: #fff;
     padding: 10px 0;
+    border-bottom: 3px solid #01c3c3;
     /*------------------------------*/ }
     .page-header .main-menu ul {
       list-style-type: none;
       margin: 0;
-      padding: 0; }
+      padding: 0 0 0 20px; }
       .page-header .main-menu ul li {
         display: inline-block;
         position: relative; }
         .page-header .main-menu ul li ul {
-          background-color: #0099CC;
+          background-color: #00ffff;
           position: absolute;
           left: 0;
           top: 40px;
@@ -6341,34 +6344,34 @@ body {
           margin: 0;
           display: block; }
           .page-header .main-menu ul li li a {
-            border-bottom: solid 1px #07769a;
+            border-bottom: solid 1px #08e8dd;
             margin: 0 10px;
             padding: 0; }
           .page-header .main-menu ul li li:last-child a {
             border-bottom: none; }
     .page-header .main-menu .sub-menu {
-      background-color: #006485;
+      background-color: #00c6bc;
       transition: all 0.7s;
       z-index: 9999;
       display: none; }
     .page-header .main-menu .sub-menu-animated {
-      background-color: #0099CC; }
+      background-color: #00ffff; }
     .page-header .main-menu a {
       line-height: 40px;
       padding: 0 12px;
       margin: 0 12px;
       text-transform: uppercase;
       font-family: "MyriadProRegular", Helvetica, Arial, "Lucida Grande", sans-serif;
-      color: #fff !important;
+      color: #000 !important;
       display: block;
       text-decoration: none; }
       .page-header .main-menu a:hover, .page-header .main-menu a:focus, .page-header .main-menu a:active {
-        color: #f4b60d !important; }
+        color: #01c3c3 !important; }
     .page-header .main-menu .dropdown {
       background-color: inherit;
       transition: all 0.7s; }
     .page-header .main-menu .dropdown-animated {
-      background-color: #0099CC; }
+      background-color: #00ffff; }
     .page-header .main-menu .dropdown__linck {
       background-image: url("../img/arrow-down.png");
       background-position: right 20px;
@@ -6376,7 +6379,7 @@ body {
 
 /*----------------slider-----------------------*/
 .button_descr {
-  color: #2a2a2a;
+  color: #232323;
   font-style: "GothamProRegular", sans-serif;
   font-size: 15px;
   text-transform: uppercase;
@@ -6517,7 +6520,7 @@ body {
   background-color: #f0f2f6;
   font-family: "Roboto", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 18px;
-  color: #2a2a2a; }
+  color: #232323; }
   .hotel-info .hotel-info__block-img {
     padding: 40px 0; }
     .hotel-info .hotel-info__block-img .picture {
@@ -6758,7 +6761,7 @@ body {
 
 /*-------------------------------------------*/
 .footer {
-  background-color: #006485;
+  background-color: #00c6bc;
   color: #fff;
   font-size: 18px;
   font-family: "Roboto", Helvetica, Arial, "Lucida Grande", sans-serif; }
@@ -6766,23 +6769,23 @@ body {
     padding-top: 20px;
     padding-bottom: 20px; }
     .footer .footer__item .footer-box {
-      border: 1px solid #07769a;
+      border: 1px solid #08e8dd;
       box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.1);
       padding: 20px; }
       .footer .footer__item .footer-box .f-box-title {
-        border-bottom: 1px solid #07769a;
+        border-bottom: 1px solid #08e8dd;
         text-transform: uppercase;
         font-size: 20px;
         padding-bottom: 10px; }
       .footer .footer__item .footer-box .f-box-desc {
         padding: 10px 0; }
       .footer .footer__item .footer-box .button--footer {
-        border: 1px solid #07769a;
+        border: 1px solid #08e8dd;
         color: #fff;
         width: 100%;
         text-align: center; }
         .footer .footer__item .footer-box .button--footer:hover {
-          background-color: #07769a;
+          background-color: #08e8dd;
           color: #f0f2f6 !important; }
         .footer .footer__item .footer-box .button--footer p::before {
           font-size: 20px;
@@ -6790,12 +6793,12 @@ body {
           display: inline-block;
           font-family: "material-design"; }
       .footer .footer__item .footer-box .button--online {
-        border: 1px solid #07769a;
+        border: 1px solid #08e8dd;
         color: #fff;
         width: 100%;
         text-align: center; }
         .footer .footer__item .footer-box .button--online:hover {
-          background-color: #07769a;
+          background-color: #08e8dd;
           color: #f0f2f6 !important; }
         .footer .footer__item .footer-box .button--online p::before {
           font-size: 20px;
@@ -6814,9 +6817,9 @@ body {
 
 .modal-content {
   background-color: #dcf0f7;
-  border: 2px solid #006485;
+  border: 2px solid #00c6bc;
   border-radius: 0;
-  color: #006485;
+  color: #00c6bc;
   font-family: "Roboto", Helvetica, Arial, "Lucida Grande", sans-serif; }
   .modal-content .fa {
     color: #ff0000;
@@ -6825,9 +6828,9 @@ body {
   .modal-content .modal-header {
     text-transform: uppercase;
     font-weight: bold;
-    border-bottom: 1px solid #006485; }
+    border-bottom: 1px solid #00c6bc; }
   .modal-content .modal-footer {
-    border-top: 1px solid #006485;
+    border-top: 1px solid #00c6bc;
     text-align: center; }
   .modal-content .form-group {
     float: left;
@@ -6835,7 +6838,7 @@ body {
     margin-right: 15px; }
     .modal-content .form-group .form-control {
       border-radius: 0;
-      border: 1px solid #006485; }
+      border: 1px solid #00c6bc; }
 
 @media (max-width: 768px) {
   .siteslider .swiper-container .swiper-wrapper .swiper-slide .position {

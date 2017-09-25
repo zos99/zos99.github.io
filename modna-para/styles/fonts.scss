@@ -210,11 +210,13 @@
 
 @font-face {
     font-family: 'material-design';
-
-
-       src:  url('../fonts/materialdesignicons-webfont.ttf');
-
+    src:  url('../fonts/materialdesignicons-webfont.ttf');
     font-weight: 200;
     font-style: normal;
-
+}
+@font-face {
+    font-family: 'Marck Script';
+    src: local('Marck Script'), local('MarckScript-Regular'), url('../fonts/marckscript.woff2') format('woff2'), url('../fonts/marckscript.woff') format('woff'), url('../fonts/marckscript.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
 }
