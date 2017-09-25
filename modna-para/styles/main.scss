@@ -671,14 +671,8 @@ body {
     }
 
     .left-block {
-      bottom: 0;
-      position: absolute;
-      left: 50%;
-      transform: translate(-50%, 0px);
-      width: 90%;
 
       .header-minicart {
-        padding: 10px;
         position: relative;
         text-align: center;
         margin: 0 auto;
@@ -687,6 +681,28 @@ body {
         color: $DBlue;;
       }
 
+      .basket {
+          color: $Magento;
+      }
+      .basket:hover, .basket u {
+          text-decoration: none;
+      }
+      .basket b {
+          background: rgba(0, 0, 0, 0) url("../img/basket_ico.png") no-repeat scroll 50px center;
+          display: block;
+          font-size: 18px;
+          font-weight: 300;
+          height: 44px;
+          line-height: 18px;
+          margin-bottom: 7px;
+          padding: 14px 0 0 60px;
+          text-decoration: underline;
+          width: 100%;
+      }
+      .basket span {
+          color: #000;
+          font-size: 13px;
+      }
       .social {
         margin: 20px auto 10px;
       }

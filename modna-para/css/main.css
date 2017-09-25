@@ -6287,22 +6287,33 @@ body {
           top: 0;
           width: 5px;
           z-index: 3; }
-    .page-header .central-block .left-block {
-      bottom: 0;
-      position: absolute;
-      left: 50%;
-      transform: translate(-50%, 0px);
-      width: 90%; }
-      .page-header .central-block .left-block .header-minicart {
-        padding: 10px;
-        position: relative;
-        text-align: center;
-        margin: 0 auto;
-        width: 100%;
-        font-size: 16px;
-        color: #00c6bc; }
-      .page-header .central-block .left-block .social {
-        margin: 20px auto 10px; }
+    .page-header .central-block .left-block .header-minicart {
+      position: relative;
+      text-align: center;
+      margin: 0 auto;
+      width: 100%;
+      font-size: 16px;
+      color: #00c6bc; }
+    .page-header .central-block .left-block .basket {
+      color: #b33a7f; }
+    .page-header .central-block .left-block .basket:hover, .page-header .central-block .left-block .basket u {
+      text-decoration: none; }
+    .page-header .central-block .left-block .basket b {
+      background: transparent url("../img/basket_ico.png") no-repeat scroll 50px center;
+      display: block;
+      font-size: 18px;
+      font-weight: 300;
+      height: 44px;
+      line-height: 18px;
+      margin-bottom: 7px;
+      padding: 14px 0 0 60px;
+      text-decoration: underline;
+      width: 100%; }
+    .page-header .central-block .left-block .basket span {
+      color: #000;
+      font-size: 13px; }
+    .page-header .central-block .left-block .social {
+      margin: 20px auto 10px; }
   .page-header .headen-block {
     background-color: #dcf0f7;
     border-top: 2px solid #006485;
