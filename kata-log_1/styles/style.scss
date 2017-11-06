@@ -181,7 +181,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ec6913', end
   padding-top: 5%;
   padding-bottom: 5%;
 }
-
+#anchor_4,
+#anchor_6,
+#anchor_8 {
+  background-color: rgba(0, 0, 0, 0.6);
+}
 .section {
 	text-align: center;
   color: #fff;
@@ -239,7 +243,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ec6913', end
     box-shadow:none;
     background-color: transparent;
 }
-#anchor_4 {
+#anchor_9 {
   .amenities {
     height: 300px;
     .amenities-block {
@@ -270,7 +274,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ec6913', end
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.58);
     margin: 5% auto;
 }
-#anchor_5 {
+#anchor_10 {
   color: #fff;
   font: 100 18px Roboto,Arial,sans-serif;
   background-color: transparentize($color, $amount);
@@ -390,6 +394,70 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ec6913', end
       }
     }
   }
+}
+.personal {
+  padding-top: 0;
+
+  h2 {
+    color: #ec8200;
+  }
+
+  p {
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+}
+.power {
+  text-align: right;
+  font-size: 18px;
+}
+/*----------------------------------*/
+.articles {
+
+      .articles__item{
+        display: block;
+        float: left;
+        height: 100%;
+        color: #8a8a8a;
+    display: block;
+    float: left;
+    font-family: "Ubuntu Medium";
+    font-size: 90px;
+    height: 100%;
+        p {
+
+          font-family : "Ubuntu Medium"!important;
+          font-size: 90px;
+          color: #8a8a8a;
+        }
+      }
+      .articles__box {
+        float: left;
+        width: 240px;
+      }
+      .articles__box-icon {
+        margin-top: 20px;
+      }
+      .articles__box-title {
+        margin-top: 12px;
+        font-family : "Ubuntu Medium";
+        font-size: 20px;
+        color: #ec8200;
+      }
+      .articles__box-text {
+        margin-top: 27px;
+        font-family: $Arial;
+        font-size: 15px;
+        color: #fff;
+      }
+}
+#anchor_8 {
+  .section-about {
+    font-family: "Ubuntu Medium";
+    font-size: 25px;
+    text-align: left;
+  }
+
 }
 /*----------modal windows-------*/
 .modal-dialog {

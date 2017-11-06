@@ -15,7 +15,7 @@
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
     <script type="text/javascript" src="js/jquery.scrollUp.js"></script>
-
+    <script type="text/javascript" src="js/calc.js"></script>
   </head>
   <body>
     <div class="body-innerwrapper">
@@ -26,13 +26,13 @@
               <div class="sp-column ">
                 <div class="logo">
                   <a href="/joomla/at-autospik/">
-                    <img class="img-responsive" src="img/logo.png" alt="">
+                    <img class="img-responsive" src="img/logo1.png" alt="">
                   </a>
                 </div>
               </div>
             </div>
             <div id="sp-topic" class="col-sm-3 col-md-3">
-              <div class="sp-column">
+
                 <div class="sp-module">
                   <div class="sp-module-content">
                     <div class="custom">
@@ -47,10 +47,10 @@
                     </div>
                   </div>
                 </div>
-              </div>
+
             </div>
             <div id="sp-top-2" class="col-sm-4 col-md-4">
-              <div class="sp-column ">
+
                 <div class="sp-module ">
                   <div class="sp-module-content">
                     <div class="custom">
@@ -65,10 +65,10 @@
                     </div>
                   </div>
                 </div>
-              </div>
+
             </div>
             <div id="sp-social" class="col-sm-3 col-md-3">
-              <div class="sp-column ">
+
                 <div class="sp-module ">
                   <div class="sp-module-content">
                     <div class="custom">
@@ -118,7 +118,6 @@
                       </div>
                     </div>
                   </div>
-                </div>
               </div>
             </div>
           </div>
@@ -127,77 +126,162 @@
       <section id="header" class="page-header">
         <nav id="menu" class="main-menu default hidden-xs">
           <div class="container">
-            <ul class="content">
-              <li><a href="">Главная</a></li>
-              <li ><a href="#">Новости</a></li>
-              <li ><a href="#">О нас</a></li>
-              <li class="dropdown">
-                <a class="dropdown__linck" href="#">Автокаталог</a>
-                <ul class="sub-menu">
-                  <li><a href="#">Легковые автомобили</a></li>
-                  <li><a href="#">Микроавтобусы</a></li>
-                </ul>
-              </li>
-              <li ><a href="#">Оформление</a></li>
-              <li ><a href="#">Автоклуб</a></li>
-              <li ><a href="#">Контакты</a></li>
-              <li ><a href="#">Наши партнёры</a></li>
+            <ul>
+              <li><a href="#">Главная</a></li>
+              <li><a class="dropdown-h collapsed" href="#headenB" data-toggle="collapse" aria-expanded="false">Легковые автомобили</a></li>
+            	<li><a href="#">Грузовые автомобили</a></li>
+            	<li><a href="#">Спецтехника</a></li>
+            	<li><a href="#">Спецпредложения</a></li>
+            	<li><a href="#">Контакты</a></li>
             </ul>
           </div>
+          <div id="headenB" class="headen-block col-lg-12 col-md-12 collapse" aria-expanded="false">
+              <div class="innerWrapper container">
+                <div class="row">
+                  <div class="submenu _active">
+                    <div class="submenu-content">
+                      <ul class="showroom">
+                        <li class="showroom__cat col-xs-12 col-sm-4 col-md-4">
+                          <strong class="showroom__cat-title">Заголовок 1</strong>
+                          <div class="showroom__cat-items">
+                            <a href="#" class="showroom__cat-item" title="НОВЫЙ SOLARIS">
+                              <img src="img/solaris.png" class="showroom__cat-item-image" alt="Новый Solaris">
+                              <span class="showroom__cat-item-name">НОВЫЙ SOLARIS</span>
+                              <span class="showroom__cat-item-price">624 900</span>
+                            </a>
+                            <a href="#" class="showroom__cat-item" title="НОВЫЙ SOLARIS">
+                              <img src="img/solaris1.png" class="showroom__cat-item-image" alt="Новый Solaris">
+                              <span class="showroom__cat-item-name">KIA RIO</span>
+                              <span class="showroom__cat-item-price">624 900</span>
+                            </a>
+                            <a href="#" class="showroom__cat-item" title="НОВЫЙ SOLARIS">
+                              <img src="img/solaris2.png" class="showroom__cat-item-image" alt="Новый Solaris">
+                              <span class="showroom__cat-item-name">HUNDAI CRETA</span>
+                              <span class="showroom__cat-item-price">624 900</span>
+                            </a>
+                          </div>
+                        </li>
+                        <li class="showroom__cat col-xs-12 col-sm-4 col-md-4">
+                          <strong class="showroom__cat-title">Заголовок 2</strong>
+                          <div class="showroom__cat-items">
+                            <a href="#" class="showroom__cat-item" title="НОВЫЙ SOLARIS">
+                              <img src="img/solaris3.png" class="showroom__cat-item-image" alt="Новый Solaris">
+                              <span class="showroom__cat-item-name">LOGAN</span>
+                              <span class="showroom__cat-item-price">624 900</span>
+                            </a>
+                            <a href="#" class="showroom__cat-item" title="НОВЫЙ SOLARIS">
+                              <img src="img/solaris4.png" class="showroom__cat-item-image" alt="Новый Solaris">
+                              <span class="showroom__cat-item-name">GRANTA</span>
+                              <span class="showroom__cat-item-price">624 900</span>
+                            </a>
+                          </div>
+                        </li>
+                        <li class="showroom__cat col-xs-12 col-sm-4 col-md-4">
+                          <strong class="showroom__cat-title">Заголовок 3</strong>
+                          <div class="showroom__cat-items">
+                            <a href="#" class="showroom__cat-item" title="НОВЫЙ SOLARIS">
+                              <img src="img/solaris.png" class="showroom__cat-item-image" alt="Новый Solaris">
+                              <span class="showroom__cat-item-name">POLO</span>
+                              <span class="showroom__cat-item-price">624 900</span>
+                            </a>
+                            <a href="#" class="showroom__cat-item" title="НОВЫЙ SOLARIS">
+                              <img src="img/solaris6.png" class="showroom__cat-item-image" alt="Новый Solaris">
+                              <span class="showroom__cat-item-name">LARGUS</span>
+                              <span class="showroom__cat-item-price">624 900</span>
+                            </a>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
         </nav>
       </section>
       <section id="sp-main-body" class="siteslider">
-        <!-- Swiper -->
-        <div class="swiper-container">
-          <div class="swiper-wrapper">
-            <div class="title" data-swiper-parallax="-200">123</div>
+          <!-- Swiper -->
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="title" data-swiper-parallax="-200">123</div>
               <div class="swiper-slide swiper-slide_left">
                 <div class="position">
-                  <div class="title" data-swiper-parallax="-200">Компания "Росавтотрейд"</div>
-                  <div class="subtitle" data-swiper-parallax="-800">предлагает легковые автомобили</div>
-                  <div class="text" data-swiper-parallax="-1200">
-                    <a class="button" href="#">узнать больше</a>
-                  </div>
+                  <div class="title" data-swiper-parallax="-200">Новый solaris</div>
+                  <div class="subtitle" data-swiper-parallax="-800">свой для каждого</div>
+                </div>
+                <div class="text" data-swiper-parallax="-1200">
+                  от <span>679 900</span>руб
                 </div>
               </div>
               <div class="swiper-slide swiper-slide_center">
                 <div class="position">
-                  <div class="title" data-swiper-parallax="-200">Компания "Росавтотрейд"</div>
-                  <div class="subtitle" data-swiper-parallax="-800">предлагает легковые автобусы</div>
-                  <div class="text" data-swiper-parallax="-1200">
-                    <a class="button" href="#">узнать больше</a>
-                  </div>
+                  <div class="title" data-swiper-parallax="-200">Новый <span>KiA</span>RIA</div>
+                  <div class="subtitle" data-swiper-parallax="-800">машина нового времени</div>
                 </div>
+                <div class="text" data-swiper-parallax="-1200">
+                  от <span>724 900</span>руб
+                </div>
+
               </div>
               <div class="swiper-slide swiper-slide_center1">
                 <div class="position">
-                  <div class="title" data-swiper-parallax="-200">Компания "Росавтотрейд"</div>
-                  <div class="subtitle" data-swiper-parallax="-800">предлагает автобусы</div>
-                  <div class="text" data-swiper-parallax="-1200">
-                    <a class="button" href="#">узнать больше</a>
-                  </div>
+                  <div class="title" data-swiper-parallax="-200">Volkswagen Polo</div>
+                  <div class="subtitle" data-swiper-parallax="-800">обновленный дизайн и интерьера, и экстерьера</div>
                 </div>
+                <div class="text" data-swiper-parallax="-1200">
+                  от <span>649 500</span>руб
+                </div>
+
+              </div>
+              <div class="swiper-slide swiper-slide_center2">
+                <div class="position">
+                  <div class="title" data-swiper-parallax="-200">Renault Logan</div>
+                  <div class="subtitle" data-swiper-parallax="-800">Поддайтесь его очарованию!</div>
+                </div>
+                <div class="text" data-swiper-parallax="-1200">
+                  от <span>545 555</span>руб
+                </div>
+
+              </div>
+              <div class="swiper-slide swiper-slide_center3">
+                <div class="position">
+                  <div class="title" data-swiper-parallax="-200">Hyundai Creta</div>
+                  <div class="subtitle" data-swiper-parallax="-800">лучшие качества внедорожника и седана</div>
+                </div>
+                <div class="text" data-swiper-parallax="-1200">
+                  от <span>849 900</span>руб
+                </div>
+
+              </div>
+              <div class="swiper-slide swiper-slide_center4">
+                <div class="position">
+                  <div class="title" data-swiper-parallax="-200">LADA Ларгус</div>
+                  <div class="subtitle" data-swiper-parallax="-800">это динамичный дизайн и современный интерьер</div>
+                </div>
+                <div class="text" data-swiper-parallax="-1200">
+                  от <span>576 900</span>руб
+                </div>
+
               </div>
               <div class="swiper-slide swiper-slide_right">
                 <div class="position">
-                  <div class="title" data-swiper-parallax="-200">Компания "Росавтотрейд"</div>
-                  <div class="subtitle" data-swiper-parallax="-800">предлагает специализированную дорожную технику</div>
-                  <div class="text" data-swiper-parallax="-1200">
-                    <a class="button" href="#">узнать больше</a>
-                  </div>
+                  <div class="title" data-swiper-parallax="-200">Lada Granta</div>
+                  <div class="subtitle" data-swiper-parallax="-800">новый стандарт народного автомобиля</div>
                 </div>
+                <div class="text" data-swiper-parallax="-1200">
+                  от <span>439 900</span>руб
+                </div>
+
               </div>
-          </div>
-          <!-- Add Pagination -->
-          <div class="swiper-pagination swiper-pagination-white"></div>
-          <!-- Add Arrows -->
-          <div class="swiper-button-next swiper-button-white"></div>
-          <div class="swiper-button-prev swiper-button-white"></div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination swiper-pagination-white"></div>
+
         </div>
       </section>
       <section class="avtokatalog s-padding">
         <div class="container">
-          <h2 class="header-block header-block--black">Автокаталог</h2>
+          <h2 class="header-block">Автокаталог</h2>
           <div class="main row">
             <div class="col-sm-4 col-xs-12">
               <div class="view view-first">
@@ -221,41 +305,10 @@
             </div>
             <div class="col-sm-4 col-xs-12">
               <div class="view view-first">
-                <img class="img-responsive" src="img/t3.jpg" alt="Легковые авто">
-                <div class="mask">
-                  <h2>Автобусы</h2>
-                  <p>Мы предлагаем автобусы отечественного производства.</p>
-                  <a href="#" class="info button">Узнать больше</a>
-                </div>
-              </div>
-            </div>
-            <div class="clearfix"></div>
-            <div class="col-sm-4 col-xs-12">
-              <div class="view view-first">
-                <img class="img-responsive" src="img/t4.jpg" alt="Легковые авто">
-                <div class="mask">
-                  <h2>Микроавтобусы</h2>
-                  <p>автобусы особо малого класса — длиной до 5 метров, предназначенное для перевозки пассажиров и имеющее не более 8-10 пассажирских мест</p>
-                  <a href="#" class="info button">RУзнать больше</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-4 col-xs-12">
-              <div class="view view-first">
                 <img class="img-responsive" src="img/t5.jpg" alt="Легковые авто">
                 <div class="mask">
                   <h2>Спецтехника</h2>
                   <p>широкий выбор специализированной автодорожной техники</p>
-                  <a href="#" class="info button">Узнать больше</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-4 col-xs-12">
-              <div class="view view-first">
-                <img class="img-responsive" src="img/t6.jpg" alt="Легковые авто">
-                <div class="mask">
-                  <h2>Специальные автомобили</h2>
-                  <p>автомобиль, который предназначен для выполнения специальных функций</p>
                   <a href="#" class="info button">Узнать больше</a>
                 </div>
               </div>
@@ -305,14 +358,119 @@
           </div>
         </div>
       </section>
-      <section class="banner s-padding">
+      <section class="calculator s-padding">
+        <h2 class="header-block">Он-лайн калькуляторы</h2>
         <div class="container">
           <div class="row">
-            <div class="col-sm-6">
-
+            <div class="col-sm-6 calc-block">
+              <div class="calc-block__inner calc--customs">
+                <form action="#">
+                         <fieldset class="customs">
+                             <legend>Расчета таможенных платежей</legend>
+                             <div>
+                               <p>Растаможка авто состоит из нескольких этапов и требует тщательного внимания. На сайте вы сможете определить точный расчет стоимости таможенных услуг, действующий в Донецкой и Луганской области.</p>
+                             </div>
+                             <div>*курс евро 29.10.2017г = </div>
+                             <div>67.4308 рос.руб</div>
+                             <dl>
+                                 <dt>Регион</dt>
+                                 <dd>
+                                     <select name="customs__reg">
+                                         <option value="dnr">ДНР</option>
+                                         <option value="lnr">ЛНР</option>
+                                     </select>
+                                 </dd>
+                                 <dt>Объем двигателя, см3</span></dt>
+                                 <dd>
+                                     <input type="text" name="engine-capacity">
+                                 </dd>
+                                 <dt>Тип двигателя</dt>
+                                 <dd>
+                                     <select name="type-engine">
+                                         <option value="benzin">Бензиновый</option>
+                                         <option value="dizel">Дизельный</option>
+                                     </select>
+                                 </dd>
+                                 <dt>Возраст автомобиля</dt>
+                                 <dd>
+                                     <select name="age-car">
+                                         <option value="age-car5">до 5 лет</option>
+                                         <option value="age-car57">от 5 до 7 лет</option>
+                                         <option value="age-car7">старше 7 лет</option>
+                                     </select>
+                                 </dd>
+                             </dl>
+                             <div>Итого:</div><div>0</div>
+                         </fieldset>
+                         <input class="button" type="submit" value="Расчитать">
+                     </form>
+                <div class="calc-block__dock">
+                  <h3>Растаможка авто – список документов</h3>
+                    Растаможка авто в ДНР и ЛНР осуществляется при наличии таких документов:
+                    <ul>
+                      <li>технический паспорт автомобиля, с отметкой о снятии с учета;</li>
+                      <li>документ, подтверждающий право собственности на ТС;</li>
+                      <li>паспорт, идентификационный код, водительское удостоверение и прочие данные, указывающие на личность собственника. Будьте внимательны при пересечении границы можно провозить до 10 000 долларов США или эквивалент без декларирования! </li>
+                    </ul>
+                </div>
+              </div>
             </div>
-            <div class="col-sm-6">
-
+            <div class="col-sm-6 calc-block">
+              <div class="calc-block__inner calc--tax">
+                <table>
+              <tbody>
+                <tr>
+                  <td>
+                    <label for="year">Год оплаты</label></td>
+                  <td>
+                    <input id="year" maxlength="4" type="text" /></td>
+                </tr>
+                <tr>
+                  <td>
+                    <label for="year_made">Год выпуска</label></td>
+                  <td>
+                    <input id="year_made" maxlength="4" type="text" /></td>
+                </tr>
+                <tr>
+                  <td>
+                    Тип транспорта</td>
+                  <td>
+                    <select id="type_avto" style="width: 50mm">
+                      <option value="1">Трактора колесные (кроме гусеничных и только седельных тягачей)</option>
+                      <option value="2">Только седельные тягачи</option>
+                      <option value="3">Автомобили для перевозки не менее как 10 лиц, включая водителя (автобусы), с объемом цилиндров двигателя</option>
+                      <option value="4">Автомобили легковые (кроме автомобилей с электродвигателем)</option>
+                      <option value="5">Транспортные средства, оснащенные электродвигателями</option>
+                      <option value="6">Автомобили грузовые с объемом цилиндров двигателя</option>
+                      <option value="7">Автомобили специального назначения (кроме пожарных и скорой помощи)</option>
+                      <option value="8">Мотоциклы (мопеды), велосипеды с двигателем (кроме тех, которые имеют объем цилиндра двигателя до 50 куб. см, с объемом цилиндров двигателя)</option><option value="91">Яхты и суда парусные со вспомогательным двигателем или без него: морские</option><option value="92">Яхты и суда парусные со вспомогательным двигателем или без него: яхты и суда парусные массой не более как 100 кг</option><option value="93">Яхты и суда парусные со вспомогательным двигателем или без него: яхты и суда парусные массой свыше 100 кг и длиной не более как 7,5 м</option>
+                      <option value="94">Яхты и суда парусные со вспомогательным двигателем или без него: яхты и суда парусные массой свыше 100 кг и длиной свыше 7,5 м</option><option value="101">Лодки проворны и катера, кроме лодок с подвесным двигателем: морские</option><option value="102">Лодки проворны и катера, кроме лодок с подвесным двигателем: лодки проворны и катера длиной не более как 7,5 м</option><option value="103">Лодки проворны и катера, кроме лодок с подвесным двигателем: лодки проворны и катера длиной свыше 7,5 м</option>
+                      <option value="111">Плавучие средства (кроме спортивных): с массой не более как 100 кг</option>
+                      <option value="112">Плавучие средства (кроме спортивных): длиной не более как 7,5 м и массой свыше 100 кг</option>
+                      <option value="113">Плавучие средства (кроме спортивных): длиной свыше 7,5 м и массой свыше 100 кг</option></select>
+                    </td>
+                </tr>
+                <tr>
+                  <td>
+                    Объем двигателя (см куб.)/Длина лодки (см)/<br />
+                    Мощность двигателя (кВт)</td>
+                  <td>
+                    <input id="volume" /></td>
+                </tr>
+                <tr>
+                  <td>
+                    Категория плательщика</td>
+                  <td>
+                    <select id="type_plat"><option value="1">гражданин</option><option value="2">пенсионер</option> </select></td>
+                </tr>
+                <tr>
+                  <td>
+                    Сумма налогового сбора</td>
+                  <td>
+                    <input id="summa" readonly="true" type="text" /></td>
+                </tr>
+              </tbody>
+            </table>
             </div>
           </div>
         </div>
@@ -392,7 +550,7 @@
           <p>© Компания "Росавтотрейд". 2017 </p>
         </div>
       </footer>
-    </div>
+    </>
     <div id="scrollToTop" class="scrollToTop" title="Back to top!" style="display: block;">⧋</div>
     <script type="text/javascript" src="js/swiper.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>

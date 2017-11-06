@@ -6136,6 +6136,11 @@ button.close {
   padding-top: 5%;
   padding-bottom: 5%; }
 
+#anchor_4,
+#anchor_6,
+#anchor_8 {
+  background-color: rgba(0, 0, 0, 0.6); }
+
 .section {
   text-align: center;
   color: #fff;
@@ -6183,14 +6188,14 @@ button.close {
   box-shadow: none;
   background-color: transparent; }
 
-#anchor_4 .amenities {
+#anchor_9 .amenities {
   height: 300px; }
-  #anchor_4 .amenities .amenities-block {
+  #anchor_9 .amenities .amenities-block {
     overflow: hidden; }
-    #anchor_4 .amenities .amenities-block .img-responsive:hover {
+    #anchor_9 .amenities .amenities-block .img-responsive:hover {
       transform: scale(1.2);
       transition-duration: 0.5s; }
-    #anchor_4 .amenities .amenities-block .amenities-item {
+    #anchor_9 .amenities .amenities-block .amenities-item {
       margin: 15px auto; }
 
 .img-responsive-about {
@@ -6206,20 +6211,20 @@ button.close {
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.58);
   margin: 5% auto; }
 
-#anchor_5 {
+#anchor_10 {
   color: #fff;
   font: 100 18px Roboto,Arial,sans-serif;
   background-color: rgba(0, 0, 0, 0.6); }
-  #anchor_5 .kontackt,
-  #anchor_5 .feedbeck {
+  #anchor_10 .kontackt,
+  #anchor_10 .feedbeck {
     padding-left: 5%;
     padding-right: 5%;
     text-align: left !important; }
-    #anchor_5 .kontackt p,
-    #anchor_5 .feedbeck p {
+    #anchor_10 .kontackt p,
+    #anchor_10 .feedbeck p {
       font-size: 17px; }
-    #anchor_5 .kontackt img,
-    #anchor_5 .feedbeck img {
+    #anchor_10 .kontackt img,
+    #anchor_10 .feedbeck img {
       max-height: 30px; }
 
 /*---------------hotel-rooms--------------------*/
@@ -6293,6 +6298,54 @@ button.close {
           font-size: 16px;
           font-weight: 500;
           text-transform: uppercase; }
+
+.personal {
+  padding-top: 0; }
+  .personal h2 {
+    color: #ec8200; }
+  .personal p {
+    text-transform: uppercase;
+    font-weight: bold; }
+
+.power {
+  text-align: right;
+  font-size: 18px; }
+
+/*----------------------------------*/
+.articles .articles__item {
+  display: block;
+  float: left;
+  height: 100%;
+  color: #8a8a8a;
+  display: block;
+  float: left;
+  font-family: "Ubuntu Medium";
+  font-size: 90px;
+  height: 100%; }
+  .articles .articles__item p {
+    font-family: "Ubuntu Medium" !important;
+    font-size: 90px;
+    color: #8a8a8a; }
+.articles .articles__box {
+  float: left;
+  width: 240px; }
+.articles .articles__box-icon {
+  margin-top: 20px; }
+.articles .articles__box-title {
+  margin-top: 12px;
+  font-family: "Ubuntu Medium";
+  font-size: 20px;
+  color: #ec8200; }
+.articles .articles__box-text {
+  margin-top: 27px;
+  font-family: "Arial";
+  font-size: 15px;
+  color: #fff; }
+
+#anchor_8 .section-about {
+  font-family: "Ubuntu Medium";
+  font-size: 25px;
+  text-align: left; }
 
 /*----------modal windows-------*/
 .modal-dialog {
