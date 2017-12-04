@@ -17,6 +17,7 @@
     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
     <script src="js/fixed-menu.js"></script>
+    <script src="js/modernizr.js"></script> <!-- Modernizr -->
   </head>
   <body class="loading">
     <!--[if lt IE 7]>
@@ -32,33 +33,27 @@
                   <img class="img-responsive" src="img/logo.png" alt="">
                 </a>
               </div>
-              <div class="menu-header-menu-container hidden-sm hidden-xs">
-                <ul id="menu-header-menu" class="menu">
-                  <li>
-                    <a href="#">О нас</a>
-                  </li>
-                  <li>
-                    <a href="#">Почему мы?</a>
-                  </li>
-                  <li>
-                    <a href="#">Продукция</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="fusion-flyout-menu-icons">
-                <div class="fusion-flyout-menu-toggle">
-                  <div class="fusion-toggle-icon-line"></div>
-                  <div class="fusion-toggle-icon-line"></div>
-                  <div class="fusion-toggle-icon-line"></div>
-                </div>
-              </div>
-              <div class="fullscreen-menu-button">меню
-                <div id="fullscreen-button-icon">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </div>
+              <div class="menu-header-menu-container">
+                <!---------->
+            		<nav class="cd-main-nav-wrapper">
+            			<ul class="cd-main-nav">
+            				<li><a href="#0">Главная</a></li>
+            				<li><a href="#0">О компании</a></li>
+            				<li><a href="#0">Новости</a></li>
+            				<li>
+            					<a href="#0" class="cd-subnav-trigger"><span>Каталог</span></a>
+            					<ul>
+            						<li class="go-back"><a href="#0">Меню</a></li>
+            						<li><a href="#0">Категория 1</a></li>
+            						<li><a href="#0">Категория 2</a></li>
+            						<li><a href="#0">Категория 3</a></li>
+            						<li><a href="#0">Категория 4</a></li>
+            						<li><a href="#0" class="placeholder">Placeholder</a></li>
+            					</ul>
+            				</li>
+            			</ul> <!-- .cd-main-nav -->
+            		</nav> <!-- .cd-main-nav-wrapper -->
+            		<a href="#0" class="cd-nav-trigger">Menu<span></span></a>
               </div>
               <div class="upper-info hidden-sm hidden-xs">
                 <a href="#">+38(099)000-00-00</a>/
@@ -270,5 +265,6 @@
     </footer>
     <script type="text/javascript" src="js/swiper.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/main-menu.js"></script> <!-- Resource jQuery -->
   </body>
 </html>
