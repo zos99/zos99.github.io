@@ -134,20 +134,7 @@ main {
   margin: 0 auto;
 }
 
-/* Slide 2 */
-#slide-2 {
 
-  .bcg {
-    background: none;
-    background-color: #000914;
-    height: 500px;
-    text-align: center;
-  }
-
-  p {
-    color: #939393;
-  }
-}
 
 /* Slide 3 */
 #slide-3 {
@@ -222,43 +209,6 @@ main {
     color: #fff;
     font-size: 4rem;
     text-transform: uppercase;
-  }
-}
-
-/* Slide 5 */
-#slide-5 {
-  position: relative;
-
-  .bcg {
-    background-image:url('../img/bcg_slide-5.jpg');
-  }
-
-  .bcg2 {
-    background-image:url('../img/bcg_slide-5b.jpg');
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    opacity: 0;
-    z-index: 1;
-  }
-
-  .bcg3 {
-    background: none;
-    background-color: #000002;
-    z-index: 2;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    opacity: 0;
-    z-index: 2;
-  }
-
-  h2 {
-    padding-top: 80px;
-  }
-
-  p {
-    color: #939393;
   }
 }
 

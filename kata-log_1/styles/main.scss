@@ -329,6 +329,7 @@ a:hover, a:focus {
 /*-----------------------------------------------*/
 .navbar-nav {
   float: right;
+
 }
 /*---------header line-----------------------*/
 .header-line {
@@ -560,7 +561,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ec6913', end
   z-index: 1099;
   position: absolute;
   left:50%;
-  top: 75px;
+  top: 80px;
   transform: translateX(-50%);
   width: 100%;
 }
@@ -715,9 +716,9 @@ pre {
   padding-top: 5%;
   padding-bottom: 5%;
 }
-#anchor_4,
-#anchor_6,
-#anchor_8 {
+#slide-2,
+#slide-5,
+#slide-7 {
   background-color: rgba(0, 0, 0, 0.6);
 }
 .section {
@@ -745,9 +746,13 @@ pre {
     text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.4)
   }
 }
+#slide-2 {
+    color: #fff;
+}
 /*About as*/
-.section .section-about {
+.section-about {
   padding-bottom: 50px;
+
 }
 .reason_list {
   *[class^="revealator"] {
@@ -777,7 +782,7 @@ pre {
     box-shadow:none;
     background-color: transparent;
 }
-#anchor_9 {
+#slide-4 {
   .amenities {
     height: 300px;
     .amenities-block {
@@ -808,7 +813,7 @@ pre {
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.58);
     margin: 5% auto;
 }
-#anchor_10 {
+#slide-9 {
   color: #fff;
   font: 100 18px Roboto,Arial,sans-serif;
   background-color: transparentize($color, $amount);
@@ -985,7 +990,7 @@ pre {
         color: #fff;
       }
 }
-#anchor_8 {
+#slide-7 {
   .section-about {
     font-family: "Ubuntu Medium";
     font-size: 25px;
@@ -1172,20 +1177,7 @@ main {
   margin: 0 auto;
 }
 
-/* Slide 2 */
-#slide-2 {
 
-  .bcg {
-    background: none;
-    background-color: #000914;
-    height: 500px;
-    text-align: center;
-  }
-
-  p {
-    color: #939393;
-  }
-}
 
 /* Slide 3 */
 #slide-3 {
@@ -1260,43 +1252,6 @@ main {
     color: #fff;
     font-size: 4rem;
     text-transform: uppercase;
-  }
-}
-
-/* Slide 5 */
-#slide-5 {
-  position: relative;
-
-  .bcg {
-    background-image:url('../img/bcg_slide-5.jpg');
-  }
-
-  .bcg2 {
-    background-image:url('../img/bcg_slide-5b.jpg');
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    opacity: 0;
-    z-index: 1;
-  }
-
-  .bcg3 {
-    background: none;
-    background-color: #000002;
-    z-index: 2;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    opacity: 0;
-    z-index: 2;
-  }
-
-  h2 {
-    padding-top: 80px;
-  }
-
-  p {
-    color: #939393;
   }
 }
 
@@ -1672,6 +1627,7 @@ blockquote {
     .navbar-nav {
         float: none!important;
         margin: 7.5px -15px;
+        background-color: #4f535d;
     }
     .navbar-nav>li {
         float: none;
@@ -1679,6 +1635,7 @@ blockquote {
     .navbar-nav>li>a {
         padding-top: 10px;
         padding-bottom: 10px;
+        font-size: 12px!important;
     }
     .navbar-text {
         float: none;

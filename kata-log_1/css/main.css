@@ -6163,7 +6163,7 @@ a:hover, a:focus {
   z-index: 1099;
   position: absolute;
   left: 50%;
-  top: 75px;
+  top: 80px;
   transform: translateX(-50%);
   width: 100%; }
 
@@ -6295,9 +6295,9 @@ pre {
   padding-top: 5%;
   padding-bottom: 5%; }
 
-#anchor_4,
-#anchor_6,
-#anchor_8 {
+#slide-2,
+#slide-5,
+#slide-7 {
   background-color: rgba(0, 0, 0, 0.6); }
 
 .section {
@@ -6320,8 +6320,11 @@ pre {
     color: #ec8200;
     text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.4); }
 
+#slide-2 {
+  color: #fff; }
+
 /*About as*/
-.section .section-about {
+.section-about {
   padding-bottom: 50px; }
 
 .reason_list *[class^="revealator"] {
@@ -6347,14 +6350,14 @@ pre {
   box-shadow: none;
   background-color: transparent; }
 
-#anchor_9 .amenities {
+#slide-4 .amenities {
   height: 300px; }
-  #anchor_9 .amenities .amenities-block {
+  #slide-4 .amenities .amenities-block {
     overflow: hidden; }
-    #anchor_9 .amenities .amenities-block .img-responsive:hover {
+    #slide-4 .amenities .amenities-block .img-responsive:hover {
       transform: scale(1.2);
       transition-duration: 0.5s; }
-    #anchor_9 .amenities .amenities-block .amenities-item {
+    #slide-4 .amenities .amenities-block .amenities-item {
       margin: 15px auto; }
 
 .img-responsive-about {
@@ -6370,20 +6373,20 @@ pre {
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.58);
   margin: 5% auto; }
 
-#anchor_10 {
+#slide-9 {
   color: #fff;
   font: 100 18px Roboto,Arial,sans-serif;
   background-color: rgba(0, 0, 0, 0.6); }
-  #anchor_10 .kontackt,
-  #anchor_10 .feedbeck {
+  #slide-9 .kontackt,
+  #slide-9 .feedbeck {
     padding-left: 5%;
     padding-right: 5%;
     text-align: left !important; }
-    #anchor_10 .kontackt p,
-    #anchor_10 .feedbeck p {
+    #slide-9 .kontackt p,
+    #slide-9 .feedbeck p {
       font-size: 17px; }
-    #anchor_10 .kontackt img,
-    #anchor_10 .feedbeck img {
+    #slide-9 .kontackt img,
+    #slide-9 .feedbeck img {
       max-height: 30px; }
 
 /*---------------hotel-rooms--------------------*/
@@ -6501,7 +6504,7 @@ pre {
   font-size: 15px;
   color: #fff; }
 
-#anchor_8 .section-about {
+#slide-7 .section-about {
   font-family: "Ubuntu Medium";
   font-size: 25px;
   text-align: left; }
@@ -6657,15 +6660,6 @@ main {
 .main-logo {
   margin: 0 auto; }
 
-/* Slide 2 */
-#slide-2 .bcg {
-  background: none;
-  background-color: #000914;
-  height: 500px;
-  text-align: center; }
-#slide-2 p {
-  color: #939393; }
-
 /* Slide 3 */
 #slide-3 p {
   padding: 30px 0 30px 0; }
@@ -6716,32 +6710,6 @@ main {
     color: #fff;
     font-size: 4rem;
     text-transform: uppercase; }
-
-/* Slide 5 */
-#slide-5 {
-  position: relative; }
-  #slide-5 .bcg {
-    background-image: url("../img/bcg_slide-5.jpg"); }
-  #slide-5 .bcg2 {
-    background-image: url("../img/bcg_slide-5b.jpg");
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    opacity: 0;
-    z-index: 1; }
-  #slide-5 .bcg3 {
-    background: none;
-    background-color: #000002;
-    z-index: 2;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    opacity: 0;
-    z-index: 2; }
-  #slide-5 h2 {
-    padding-top: 80px; }
-  #slide-5 p {
-    color: #939393; }
 
 .footer-contakti {
   background: transparent url("../img/hockey.png") no-repeat scroll 0 bottom; }
@@ -7024,14 +6992,16 @@ blockquote {
 
   .navbar-nav {
     float: none !important;
-    margin: 7.5px -15px; }
+    margin: 7.5px -15px;
+    background-color: #4f535d; }
 
   .navbar-nav > li {
     float: none; }
 
   .navbar-nav > li > a {
     padding-top: 10px;
-    padding-bottom: 10px; }
+    padding-bottom: 10px;
+    font-size: 12px !important; }
 
   .navbar-text {
     float: none;
