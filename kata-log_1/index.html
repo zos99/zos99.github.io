@@ -8,60 +8,127 @@
     Internet Explorer -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- Включает масштабирование на мобильных устройствах -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Текст заголовка веб-страницы -->
     <title>КОМПАНИЯ «КАТА–LOG»</title>
     <link rel="stylesheet" href="css/main.css" />
     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/jcarousel.responsive.css">
-    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
-    <script type="text/javascript" src="js/modal.js"></script>
+    <script src="js/fixed-menu.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
     <script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
     <script type="text/javascript" src="js/jcarousel.responsive.js"></script>
   </head>
-  <!-- Тело веб-страницы -->
-  <body>
-    <section class="video-baner" id="anchor_1">
-      <div id="masthead" class="fixed site-header" role="banner">
-        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-          <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="#"><img class="img-responsive" src="img/katalog.gif" alt="КАТА-ЛОГ"></a>
+  <body class="loading">
+  <!--[if lt IE 7]>
+    <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+  <![endif]-->
+  <header class="header">
+    <div class="header-line">
+      <div class="header-line__inner">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-2 col-sm-2 hidden-xs">
+              <a class="online-booking_1 m-item icon-only" data-target="modal" href="#myModal_1">
+                <i class="fa fa-user"></i>
+                <span class="top-menu-link">Личный кабинет</span>
+              </a>
             </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-ex1-collapse" id="menu">
-              <div id="header-meta">
-                <p>+38(062)333-77-44, <img class="whatsApp" src="img/WhatsApp-Viber.png" alt="WhatsApp,Viber"> +38(095)512-71-65,
-                  <img class="whatsApp" src="img/WhatsApp-Viber.png" alt="WhatsApp,Viber"> +38(095)205-80-08, +38(063)300-00-44  <img src="img/email.png" alt="email"> office@kata-log.com.ua</p>
+            <!-- HTML-код модального окна -->
+            <div id="myModal_1" class="modal fade">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <!-- Заголовок модального окна -->
+                  <div class="modal-header text-center">
+                    <h4 class="modal-title">Авторизация пользователя</h4>
+                  </div>
+                  <!-- Основное содержимое модального окна -->
+                  <div class="modal-body">
+                    <form  method="post" action="#" name="akvatika">
+                      <div class="form-group">
+                        <div class="gcore-input">
+                          <input id="name" class="form-control" name="name" value="Логин" placeholder="" title="" style="" data-inputmask="" data-load-state="" data-tooltip="" type="text">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="gcore-input">
+                          <input id="phone" class="form-control" name="phone" value="Пароль" placeholder="" maxlength="20" title="" style="" data-inputmask="'mask' : '+9(999)999-9999'" data-load-state="" data-tooltip="" type="text">
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="clearfix"></div>
+                  <!-- Футер модального окна -->
+                  <div class="modal-footer">
+                    <button type="button" class="btn button">Вход</button>
+                    <button type="button" class="btn button" data-dismiss="modal">Отмена</button>
+                  </div>
+                </div>
               </div>
-              <ul class="nav navbar-nav">
-                <li><a href="#anchor_1">Главная</a></li>
-                <li><a href="#anchor_2">О компании</a></li>
-                <li><a href="#anchor_5">Персонал</a></li>
-                <li><a href="#anchor_7">Преимущества</a></li>
-                <li><a href="#anchor_8">Партнерство</a></li>
-                <li><a href="#anchor_9">Услуги</a></li>
-                <li><a href="#anchor_10">Контакты</a></li>
-              </ul>
-            </div><!-- /.navbar-collapse -->
+            </div>
+            <div id="header-meta" class="col-md-8 col-sm-8 hidden-xs">
+              <p>+38(062)333-77-44,
+                <img class="whatsApp" src="img/WhatsApp-Viber.png" alt="WhatsApp,Viber"> +38(095)512-71-65,
+                <img class="whatsApp" src="img/WhatsApp-Viber.png" alt="WhatsApp,Viber"> +38(095)205-80-08,
+              </p>
+
+            </div>
+            <div class="col-md-2 col-sm-2">
+              <a href="http://gps.scontrol.com.ua/" class="m-item icon-only">
+                <i class="fa fa-truck"></i>
+                <span class="top-menu-link">GPS трекинг</span>
+              </a>
+            </div>
           </div>
-          <div class="line"></div>
-        </nav>
+        </div>
       </div>
-      <video poster="img/daf_xf_2015.jpg" class="video-background" id="video" autoplay="autoplay" loop="loop" muted="muted">
-        <source src="video/vedeo.mp4" type="video/mp4">
+      <div id="headenB" class="headen-block col-lg-12 col-md-12 collapse" aria-expanded="false"></div>
+    </div>
+    <div class="video-baner">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-3 col-sm-3 col-xs-5">
+            <a href="#">
+              <img class="img-responsive logo-img" src="img/logo.png" alt="">
+            </a>
+          </div>
+          <div class="col-md-9 col-sm-9 col-xs-7">
+            <nav class="header_menu" id="main-menu">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle navbar-toggle--color" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar icon-bar--color"></span>
+                  <span class="icon-bar icon-bar--color"></span>
+                  <span class="icon-bar icon-bar--color"></span>
+                </button>
+              </div>
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse  navbar-ex1-collapse" id="menu">
+                <ul class="nav navbar-nav">
+                  <li><a class="nav-scroll" href="#slide-2">О компании</a></li>
+                  <li><a class="nav-scroll" href="#slide-4">Персонал</a></li>
+                  <li><a class="nav-scroll" href="#slide-5">Преимущества</a></li>
+                  <li><a class="nav-scroll" href="#slide-6">Партнерство</a></li>
+                  <li><a class="nav-scroll" href="#slide-6">Услуги</a></li>
+                  <li><a class="nav-scroll" href="#slide-6">Контакты</a></li>
+                </ul>
+              </div><!-- /.navbar-collapse -->
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+ 	<main>
+  <section id="slide-1" class="homeSlide wrapper" data-section-name="home">
+    <video class="video-background" id="bgvid" autoplay="autoplay" loop="loop" muted="muted">
+      <source src="video/vedeo.mp4" type="video/mp4">
       </video>
-      <div class="slogan row">
-        <div class="container-fluid">
+    <div class="slogan">
+
           <h2 class="hero-large-text hidden-phone">КОМПАНИЯ «КАТА–log»</h2>
           <p class="hero-small-text hidden-phone">лидер в сфере международных грузовых перевозок</p>
           <p class="hero-small-text hidden-phone">доставим груз для Вашего бизнеса</p>
@@ -69,540 +136,549 @@
             <a class="btn btn-theme-primary btn-lg" href="#anchor_5">Свяжитесь с нами</a>
             <a class="btn btn-secondary-outline btn-lg" href="#anchor_2">О нашей компании</a>
           </div>
-        </div>
-      </div>
-    </section>
-    <div class="line"></div>
-    <section class="about-us section" id="anchor_2">
-        <div class="container ">
-          <h2 class="caption-label">О НАС</h2>
-          <div class="section-about">
-            <div class="revealator-slideup revealator-once revealator1">
-              <p><span>Компания «КАТА-ЛОГ»</span> - надежно, стабильная компания, работающая на рынке грузовых перевозок с 2008 года. За это время мы сумели зарекомендовать себя как ответственного партнера , всегда выполняющего взятые на себя обязательства.</p>
-            </div>
-            <br>
-            <div class="revealator-slideup revealator-delay1 revealator-once revealator1">
-                <p>Наш автопарк состоит из 8 автомобилей собственного гаража и более 50 автомобилей  (в том числе и нерезиденты ) различного типа наемного транспорта, что дает возможность перевозить практически все виды товаров разной массы и обьемов.</p>
-            </div>
-            <br>
-            <div class="revealator-slideup revealator-delay2 revealator-once revealator1">
-              <p>Мы предлагаем: перевозку  груза из стран Европы ,России, Белоруссии в Донецк (ДНР); перевозку экспорта из Донецка (ДНР) в Россию; транспортно-экспедиционные услуги; ремонт коммерческой техники; доставка запчастей из РФ для грузового транспорта.</p>
-            </div>
-            <br>
-            <div class="revealator-slideup revealator-delay4 revealator-once revealator1">
-              <p><span>Сотрудничая  с нами, Вы получаете широкий спектр преимуществ</p>
-            </div>
-          </div>
-        </div>
-    </section>
-    <div class="line"></div>
-    <section class="hotel-rooms section" id="anchor_3">
-      <div class="container text-center">
 
-        <div class="banners row">
-          <div class="col-xs-12 col-sm-6 col-md-4 box-shadow services-box__image-container">
-            <div class="services-box__hover-bg">
-              <div class="services-box__v-line">
-                <span class="s-desc">
-                  В наших возможностях реализовать доставку  груза для Вашего бизнеса в кратчайшие сроки и по разумной цене.
-                </span>
-              </div>
-              <a href="#">
-                <img class="img-responsive services-box__image img-responsive-about" src="img/nomer1.png" alt="">
-              </a>
-            </div>
-          </div>
-          <div class="col-xs-12 col-sm-6 col-md-4 box-shadow services-box__image-container">
-            <div class="services-box__hover-bg">
-              <div class="services-box__v-line">
-                <span class="s-desc">
-                  Наш гараж оборудован системой  GPS трекинга, что дает возможность полностью контралировать перемещение груза на всех этапах перевозки
-                </span>
-              </div>
-              <a href="#">
-                <img class="img-responsive services-box__image img-responsive-about" src="img/nomer2.png" alt="">
-              </a>
-            </div>
-          </div>
-          <div class="col-xs-12 col-sm-6 col-md-4 box-shadow services-box__image-container">
-            <div class="services-box__hover-bg">
-              <div class="services-box__v-line">
-                <span class="s-desc">
-                  Честность, надежность, быстрота, высокое качество обслуживания клиентов – вот основной признак делового сотрудничества , на котором базируется деятельность компании «KATA-log»
-                </span>
-              </div>
-              <a href="#">
-                <img class="img-responsive services-box__image img-responsive-about" src="img/nomer3.png" alt="">
-              </a>
-            </div>
-          </div>
-          <div class="col-xs-12 col-sm-6 col-md-4 box-shadow services-box__image-container">
-            <div class="services-box__hover-bg">
-              <div class="services-box__v-line">
-                <span class="s-desc">
-                  Возможность на перевозку опасных грузов стало одной из наших фирменных специализаций и мы сумели завоевать рынок в этом направлении.
-                </span>
-              </div>
-              <a href="#">
-                <img class="img-responsive services-box__image img-responsive-about" src="img/nomer4.png" alt="">
-              </a>
-            </div>
-          </div>
-          <div class="col-xs-12 col-sm-6 col-md-4 box-shadow services-box__image-container">
-            <div class="services-box__hover-bg">
-              <div class="services-box__v-line">
-                <span class="s-desc">
-                <ul>
-                    <li>Удобный способ оплаты</li>
-                    <li>Быстрый возврат документов</li>
-                    <li>100% материальная ответственность за вверенный нам груз</li>
-                    <li>Срочная подача машины</li>
-                    <li>Высший уровень сервиса на грузоперевозки </li>
-                  </ul>
-                </span>
-              </div>
-              <a href="#">
-                <img class="img-responsive services-box__image img-responsive-about" src="img/nomer5.png" alt="">
-              </a>
-            </div>
-          </div>
-          <div class="col-xs-12 col-sm-6 col-md-4 box-shadow services-box__image-container">
-            <div class="services-box__hover-bg">
-              <div class="services-box__v-line">
-                <span class="s-desc">
-                  Позволяют производить загрузку в нескольких странах , тем самым открывают возможность для импорта из Европы и стран бывшего СНГ.
-                </span>
-              </div>
-              <a href="#">
-                <img class="img-responsive services-box__image img-responsive-about" src="img/nomer6.png" alt="">
-              </a>
-            </div>
-          </div>
+        <div class="inner">
+          <a href="#slide-2" class="scroll">Скроллировать, чтобы узнать больше</a>
         </div>
       </div>
-    </section>
-    <div class="line"></div>
-    <section class="sto section" id="anchor_4">
-        <div class="container ">
-          <h2 class="caption-label">СТО</h2>
-          <div class="section-about">
-            <div class="revealator-slideup revealator-once revealator1">
-              <p>Основное направление нашей станции — <span>ремонт грузовых и коммерческих автомобилей, полуприцепов импортного и отечественного  производства.</span></p>
+  </section>
+  <div class="line"></div>
+  <section class="about-us section" id="anchor_2">
+          <div class="container ">
+            <h2 class="caption-label">О НАС</h2>
+            <div class="section-about">
+              <div class="revealator-slideup revealator-once revealator1">
+                <p><span>Компания «КАТА-ЛОГ»</span> - надежно, стабильная компания, работающая на рынке грузовых перевозок с 2008 года. За это время мы сумели зарекомендовать себя как ответственного партнера , всегда выполняющего взятые на себя обязательства.</p>
+              </div>
+              <br>
+              <div class="revealator-slideup revealator-delay1 revealator-once revealator1">
+                  <p>Наш автопарк состоит из 8 автомобилей собственного гаража и более 50 автомобилей  (в том числе и нерезиденты ) различного типа наемного транспорта, что дает возможность перевозить практически все виды товаров разной массы и обьемов.</p>
+              </div>
+              <br>
+              <div class="revealator-slideup revealator-delay2 revealator-once revealator1">
+                <p>Мы предлагаем: перевозку  груза из стран Европы ,России, Белоруссии в Донецк (ДНР); перевозку экспорта из Донецка (ДНР) в Россию; транспортно-экспедиционные услуги; ремонт коммерческой техники; доставка запчастей из РФ для грузового транспорта.</p>
+              </div>
+              <br>
+              <div class="revealator-slideup revealator-delay4 revealator-once revealator1">
+                <p><span>Сотрудничая  с нами, Вы получаете широкий спектр преимуществ</p>
+              </div>
             </div>
-            <br>
-            <div class="revealator-slideup revealator-delay1 revealator-once revealator1">
-                <p>Станция технического обслуживания оснащена смотровыми ямами, необходимым инструментом и оборудованием для качественного и оперативного ремонта.</p>
+          </div>
+      </section>
+      <div class="line"></div>
+      <section class="hotel-rooms section" id="anchor_3">
+        <div class="container text-center">
+
+          <div class="banners row">
+            <div class="col-xs-12 col-sm-6 col-md-4 box-shadow services-box__image-container">
+              <div class="services-box__hover-bg">
+                <div class="services-box__v-line">
+                  <span class="s-desc">
+                    В наших возможностях реализовать доставку  груза для Вашего бизнеса в кратчайшие сроки и по разумной цене.
+                  </span>
+                </div>
+                <a href="#">
+                  <img class="img-responsive services-box__image img-responsive-about" src="img/nomer1.png" alt="">
+                </a>
+              </div>
             </div>
-            <br>
-            <div class="revealator-slideup revealator-delay2 revealator-once revealator1">
-              <p>Наша основная задача качественно и главное в срок выполнить ремонт грузовика, дать рекомендации по дальнейшей эксплуатации Вашей техники.</p>
+            <div class="col-xs-12 col-sm-6 col-md-4 box-shadow services-box__image-container">
+              <div class="services-box__hover-bg">
+                <div class="services-box__v-line">
+                  <span class="s-desc">
+                    Наш гараж оборудован системой  GPS трекинга, что дает возможность полностью контралировать перемещение груза на всех этапах перевозки
+                  </span>
+                </div>
+                <a href="#">
+                  <img class="img-responsive services-box__image img-responsive-about" src="img/nomer2.png" alt="">
+                </a>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 box-shadow services-box__image-container">
+              <div class="services-box__hover-bg">
+                <div class="services-box__v-line">
+                  <span class="s-desc">
+                    Честность, надежность, быстрота, высокое качество обслуживания клиентов – вот основной признак делового сотрудничества , на котором базируется деятельность компании «KATA-log»
+                  </span>
+                </div>
+                <a href="#">
+                  <img class="img-responsive services-box__image img-responsive-about" src="img/nomer3.png" alt="">
+                </a>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 box-shadow services-box__image-container">
+              <div class="services-box__hover-bg">
+                <div class="services-box__v-line">
+                  <span class="s-desc">
+                    Возможность на перевозку опасных грузов стало одной из наших фирменных специализаций и мы сумели завоевать рынок в этом направлении.
+                  </span>
+                </div>
+                <a href="#">
+                  <img class="img-responsive services-box__image img-responsive-about" src="img/nomer4.png" alt="">
+                </a>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 box-shadow services-box__image-container">
+              <div class="services-box__hover-bg">
+                <div class="services-box__v-line">
+                  <span class="s-desc">
+                  <ul>
+                      <li>Удобный способ оплаты</li>
+                      <li>Быстрый возврат документов</li>
+                      <li>100% материальная ответственность за вверенный нам груз</li>
+                      <li>Срочная подача машины</li>
+                      <li>Высший уровень сервиса на грузоперевозки </li>
+                    </ul>
+                  </span>
+                </div>
+                <a href="#">
+                  <img class="img-responsive services-box__image img-responsive-about" src="img/nomer5.png" alt="">
+                </a>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 box-shadow services-box__image-container">
+              <div class="services-box__hover-bg">
+                <div class="services-box__v-line">
+                  <span class="s-desc">
+                    Позволяют производить загрузку в нескольких странах , тем самым открывают возможность для импорта из Европы и стран бывшего СНГ.
+                  </span>
+                </div>
+                <a href="#">
+                  <img class="img-responsive services-box__image img-responsive-about" src="img/nomer6.png" alt="">
+                </a>
+              </div>
             </div>
           </div>
         </div>
-    </section>
-    <div class="line"></div>
-    <section class="personal section" id="anchor_5">
-      <div class="container text-center">
-        <h2 class="caption-label">Персонал</h2>
-        <div class="row">
-          <div class="jcarousel-wrapper">
-           <div class="jcarousel">
-               <ul>
-                   <li>
-                     <img src="img/noimage.jpg" alt="Image 1">
-                     <p>Директор</p>
-                   </li>
-                   <li>
-                     <img src="img/noimage.jpg" alt="Image 2">
-                     <p>Коммерческий директор </p>
-                   </li>
-                   <li>
-                     <img src="img/noimage.jpg" alt="Image 3">
-                     <p>Технический директор </p>
-                   </li>
-                   <li>
-                     <img src="img/noimage.jpg" alt="Image 4">
-                     <p>Главный бухгалтер </p>
-                   </li>
-                   <li>
-                     <img src="img/noimage.jpg" alt="Image 5">
-                     <p>Помошник руководителя </p>
-                   </li>
-                   <li>
-                     <img src="img/noimage.jpg" alt="Image 6">
-                     <p>Механик</p>
-                   </li>
-                   <li>
-                     <img src="img/noimage.jpg" alt="Image 7">
-                     <p>Менеджер по логистике </p>
-                   </li>
-                   <li>
-                     <img src="img/noimage.jpg" alt="Image 8">
-                     <p>Водитель</p>
-                   </li>
-                   <li>
-                     <img src="img/noimage.jpg" alt="Image 9">
-                     <p>Водитель</p>
-                   </li>
-                   <li>
-                     <img src="img/noimage.jpg" alt="Image 10">
-                     <p>Водитель</p>
-                   </li>
-                   <li>
-                     <img src="img/noimage.jpg" alt="Image 11">
-                     <p>Водитель</p>
-                   </li>
-                   <li>
-                     <img src="img/noimage.jpg" alt="Image 12">
-                     <p>Водитель</p>
-                   </li>
-                   <li>
-                     <img src="img/noimage.jpg" alt="Image 13">
-                     <p>Водитель</p>
-                   </li>
-                   <li>
-                     <img src="img/noimage.jpg" alt="Image 14">
-                     <p>Водитель</p>
-                   </li>
-                   <li>
-                     <img src="img/noimage.jpg" alt="Image 15">
-                     <p>Водитель</p>
-                   </li>
-               </ul>
-           </div>
-           <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
-           <a href="#" class="jcarousel-control-next">&rsaquo;</a>
-           <p class="jcarousel-pagination"></p>
-       </div>
-        </div>
-      </div>
-    </section>
-    <div class="line"></div>
-    <section class="obout-as1 section" id="anchor_6">
-        <div class="container ">
-          <div class="section-about">
-            <div class="revealator-slideup revealator-once revealator1">
-              <p>Транспортная компания « KATA-log » работает на рынке автотранспортных перевозок с 2008г. За это время  мы сумели  завоевать себе репутацию надежного партнера. Наши клиенты убедились  в нашей надежности и порядочности.</p>
-            </div>
-            <br>
-            <div class="revealator-slideup revealator-delay1 revealator-once revealator1">
-                <p>Наша компания динамично развивается и нацелена  удерживать лидерские позиции на рынке. Понимая, что будущее в сфере международных перевозок только за большими и сильными компаниями, мы предлагаем нашим коллегам — автоперевозчикам объединиться для увеличения эффективности нашего совместного бизнеса.</p>
-            </div>
-            <br>
-            <div class="revealator-slideup revealator-delay2 revealator-once revealator1">
-              <p>В сегодняшних непростых экономических условиях мы предлагаем Вам взаимовыгодное партнерство, которое укрепит наши позиции, обеспечит развитие и позволит достойно противостоять экономическим проблемам.</p>
+      </section>
+      <div class="line"></div>
+      <section class="sto section" id="anchor_4">
+          <div class="container ">
+            <h2 class="caption-label">СТО</h2>
+            <div class="section-about">
+              <div class="revealator-slideup revealator-once revealator1">
+                <p>Основное направление нашей станции — <span>ремонт грузовых и коммерческих автомобилей, полуприцепов импортного и отечественного  производства.</span></p>
+              </div>
+              <br>
+              <div class="revealator-slideup revealator-delay1 revealator-once revealator1">
+                  <p>Станция технического обслуживания оснащена смотровыми ямами, необходимым инструментом и оборудованием для качественного и оперативного ремонта.</p>
+              </div>
+              <br>
+              <div class="revealator-slideup revealator-delay2 revealator-once revealator1">
+                <p>Наша основная задача качественно и главное в срок выполнить ремонт грузовика, дать рекомендации по дальнейшей эксплуатации Вашей техники.</p>
+              </div>
             </div>
           </div>
-          <div class="power">
-            <span>— Наша сила – в единстве!</span>
-          </div>
-        </div>
-    </section>
-    <div class="line"></div>
-    <section class="section" id="anchor_7">
-        <div class="container ">
-          <h2 class="caption-label">13 преимуществ для партнёров компании «KATA-log»:</h2>
+      </section>
+      <div class="line"></div>
+      <section class="personal section" id="anchor_5">
+        <div class="container text-center">
+          <h2 class="caption-label">Наш транспорт</h2>
           <div class="row">
+            <div class="jcarousel-wrapper">
+             <div class="jcarousel">
+                 <ul>
+                     <li>
+                       <img src="img/noimage.jpg" alt="Image 1">
+
+                     </li>
+                     <li>
+                       <img src="img/noimage.jpg" alt="Image 2">
+
+                     </li>
+                     <li>
+                       <img src="img/noimage.jpg" alt="Image 3">
+
+                     </li>
+                     <li>
+                       <img src="img/noimage.jpg" alt="Image 4">
+
+                     </li>
+                     <li>
+                       <img src="img/noimage.jpg" alt="Image 5">
+
+                     </li>
+                     <li>
+                       <img src="img/noimage.jpg" alt="Image 6">
+
+                     </li>
+                     <li>
+                       <img src="img/noimage.jpg" alt="Image 7">
+
+                     </li>
+                     <li>
+                       <img src="img/noimage.jpg" alt="Image 8">
+
+                     </li>
+                     <li>
+                       <img src="img/noimage.jpg" alt="Image 9">
+
+                     </li>
+                     <li>
+                       <img src="img/noimage.jpg" alt="Image 10">
+
+                     </li>
+                     <li>
+                       <img src="img/noimage.jpg" alt="Image 11">
+
+                     </li>
+                     <li>
+                       <img src="img/noimage.jpg" alt="Image 12">
+
+                     </li>
+                     <li>
+                       <img src="img/noimage.jpg" alt="Image 13">
+
+                     </li>
+                     <li>
+                       <img src="img/noimage.jpg" alt="Image 14">
+
+                     </li>
+                     <li>
+                       <img src="img/noimage.jpg" alt="Image 15">
+
+                     </li>
+                 </ul>
+             </div>
+             <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+             <a href="#" class="jcarousel-control-next">&rsaquo;</a>
+             <p class="jcarousel-pagination"></p>
+         </div>
+          </div>
+        </div>
+      </section>
+      <div class="line"></div>
+      <section class="obout-as1 section" id="anchor_6">
+          <div class="container ">
+            <div class="section-about">
+              <div class="revealator-slideup revealator-once revealator1">
+                <p>Транспортная компания « KATA-log » работает на рынке автотранспортных перевозок с 2008г. За это время  мы сумели  завоевать себе репутацию надежного партнера. Наши клиенты убедились  в нашей надежности и порядочности.</p>
+              </div>
+              <br>
+              <div class="revealator-slideup revealator-delay1 revealator-once revealator1">
+                  <p>Наша компания динамично развивается и нацелена  удерживать лидерские позиции на рынке. Понимая, что будущее в сфере международных перевозок только за большими и сильными компаниями, мы предлагаем нашим коллегам — автоперевозчикам объединиться для увеличения эффективности нашего совместного бизнеса.</p>
+              </div>
+              <br>
+              <div class="revealator-slideup revealator-delay2 revealator-once revealator1">
+                <p>В сегодняшних непростых экономических условиях мы предлагаем Вам взаимовыгодное партнерство, которое укрепит наши позиции, обеспечит развитие и позволит достойно противостоять экономическим проблемам.</p>
+              </div>
+            </div>
+            <div class="power">
+              <span>— Наша сила – в единстве!</span>
+            </div>
+          </div>
+      </section>
+      <div class="line"></div>
+      <section class="section" id="anchor_7">
+          <div class="container ">
+            <h2 class="caption-label">13 преимуществ для партнёров компании «KATA-log»:</h2>
+            <div class="row">
+              <div class="articles col-md-4">
+               <div class="articles__item">
+                 <p>01</p>
+               </div>
+               <div class="articles__box">
+
+                 <p class="articles__box-title">Заказы и работа</p>
+                 <p class="articles__box-text">Наш  транспортный отдел имеет большой опыт в сфере перевозок. Компания «KATA-log» — известна как надежный партнер многим заказчикам.</p>
+               </div>
+               <img src="" alt="">
+             </div>
+             <div class="articles col-md-4">
+               <div class="articles__item">
+                 <p>02</p>
+               </div>
+               <div class="articles__box">
+
+                 <p class="articles__box-title">Скидка на топливо в России</p>
+                 <p class="articles__box-text">Благодаря заключенным соглашениям с топливными компаниями , наша компания имеет специальные цены на дизтопливо на территории Российской Федерации. Вы также можете воспользоваться этой возможностью.</p>
+               </div>
+               <img src="" alt="">
+             </div>
+             <div class="articles col-md-4">
+               <div class="articles__item">
+                 <p>03</p>
+               </div>
+               <div class="articles__box">
+
+                 <p class="articles__box-title">Скидки на все виды страхования</p>
+                 <p class="articles__box-text">Большие объемы полисов  и долгая история сотрудничества со страховыми компаниями позволяет нам иметь существенные скидки на оформление зеленых карт и страховых полисов.</p>
+               </div>
+               <img src="" alt="">
+             </div>
+             <div class="clearfix"></div>
+             <div class="articles col-md-4">
+              <div class="articles__item">
+                <p>04</p>
+              </div>
+              <div class="articles__box">
+
+                <p class="articles__box-title">Закупка  по дилерским  ценам запчастей, шин, аккумуляторов</p>
+                <p class="articles__box-text">Благодаря нашим партнерам  цены на запчасти , шины и аккумуляторы очень выгодны.</p>
+              </div>
+              <img src="" alt="">
+            </div>
+            <div class="articles col-md-4">
+              <div class="articles__item">
+                <p>05</p>
+              </div>
+              <div class="articles__box">
+
+                <p class="articles__box-title">Оплата Платона</p>
+                <p class="articles__box-text">Оплата Платона  осуществляется он-лайн  — это быстро, удобно, выгодно.</p>
+              </div>
+              <img src="" alt="">
+            </div>
+            <div class="articles col-md-4">
+              <div class="articles__item">
+                <p>06</p>
+              </div>
+              <div class="articles__box">
+
+                <p class="articles__box-title">Разрешения на перевозку в страны ЕС</p>
+                <p class="articles__box-text">Компания « KATA-log » является действительным членом АСМАП Украины. Это позволяет Вам получать разрешения на перевозку в страны ЕС , которые распределяются среди членов АСМАП .</p>
+              </div>
+              <img src="" alt="">
+            </div>
+            <div class="clearfix"></div>
             <div class="articles col-md-4">
              <div class="articles__item">
-               <p>01</p>
+               <p>07</p>
              </div>
              <div class="articles__box">
 
-               <p class="articles__box-title">Заказы и работа</p>
-               <p class="articles__box-text">Наш  транспортный отдел имеет большой опыт в сфере перевозок. Компания «KATA-log» — известна как надежный партнер многим заказчикам.</p>
+               <p class="articles__box-title">TIR Carnet</p>
+               <p class="articles__box-text">Перевозка грузов по системе TIR (МДП ) — это увеличение возможностей, увеличение заказов.</p>
              </div>
              <img src="" alt="">
            </div>
            <div class="articles col-md-4">
              <div class="articles__item">
-               <p>02</p>
+               <p>08</p>
              </div>
              <div class="articles__box">
 
-               <p class="articles__box-title">Скидка на топливо в России</p>
-               <p class="articles__box-text">Благодаря заключенным соглашениям с топливными компаниями , наша компания имеет специальные цены на дизтопливо на территории Российской Федерации. Вы также можете воспользоваться этой возможностью.</p>
+               <p class="articles__box-title">ADR</p>
+               <p class="articles__box-text">Возможность  перевозку опасных грузов (ADR ) позволит Вам расширить спектр услуг . Перевозки ADR значительно выгоднее обычных перевозок.</p>
              </div>
              <img src="" alt="">
            </div>
            <div class="articles col-md-4">
              <div class="articles__item">
-               <p>03</p>
+               <p>09</p>
              </div>
              <div class="articles__box">
 
-               <p class="articles__box-title">Скидки на все виды страхования</p>
-               <p class="articles__box-text">Большие объемы полисов  и долгая история сотрудничества со страховыми компаниями позволяет нам иметь существенные скидки на оформление зеленых карт и страховых полисов.</p>
+               <p class="articles__box-title">Финансовая поддержка</p>
+               <p class="articles__box-text">Компания « KATA-log » имеет прочное финансовое положение. Наличие оборотных средств ликвидирует  зависимость от задержек оплат клиентов за транспортные услуги. При необходимости Вы , как наш партнер , сможете получить топливо и наличные средства , необходимые Вам для следующего рейса , не дожидаясь поступления оплаты от клиента.</p>
              </div>
              <img src="" alt="">
            </div>
            <div class="clearfix"></div>
            <div class="articles col-md-4">
             <div class="articles__item">
-              <p>04</p>
+              <p>10</p>
             </div>
             <div class="articles__box">
 
-              <p class="articles__box-title">Закупка  по дилерским  ценам запчастей, шин, аккумуляторов</p>
-              <p class="articles__box-text">Благодаря нашим партнерам  цены на запчасти , шины и аккумуляторы очень выгодны.</p>
+              <p class="articles__box-title">Охраняемая стоянка для Вашего автомобиля</p>
+              <p class="articles__box-text">Если у Вас есть потребность — Вы можете оставлять автотранспорт на территории автопарка компании «KATA-log» под охраной.</p>
             </div>
             <img src="" alt="">
           </div>
           <div class="articles col-md-4">
             <div class="articles__item">
-              <p>05</p>
+              <p>11</p>
             </div>
             <div class="articles__box">
 
-              <p class="articles__box-title">Оплата Платона</p>
-              <p class="articles__box-text">Оплата Платона  осуществляется он-лайн  — это быстро, удобно, выгодно.</p>
+              <p class="articles__box-title">Услуги собственной СТО, ремонт, обслуживание</p>
+              <p class="articles__box-text">Наши  механики помогут Вам осуществить плановое обслуживание и ремонт Вашей техники на территории СТО компании «KATA-log».</p>
             </div>
             <img src="" alt="">
           </div>
           <div class="articles col-md-4">
             <div class="articles__item">
-              <p>06</p>
+              <p>12</p>
             </div>
             <div class="articles__box">
 
-              <p class="articles__box-title">Разрешения на перевозку в страны ЕС</p>
-              <p class="articles__box-text">Компания « KATA-log » является действительным членом АСМАП Украины. Это позволяет Вам получать разрешения на перевозку в страны ЕС , которые распределяются среди членов АСМАП .</p>
+              <p class="articles__box-title">Услуги механика, врача, инженера по безопасности движения</p>
+              <p class="articles__box-text">Перед выездом в рейс, Вы проходите в нашем автопарке все необходимые и обязательные осмотры, согласования и инструктажи.</p>
             </div>
             <img src="" alt="">
           </div>
           <div class="clearfix"></div>
-          <div class="articles col-md-4">
+          <div class="articles col-md-12">
            <div class="articles__item">
-             <p>07</p>
+             <p>13</p>
            </div>
            <div class="articles__box">
 
-             <p class="articles__box-title">TIR Carnet</p>
-             <p class="articles__box-text">Перевозка грузов по системе TIR (МДП ) — это увеличение возможностей, увеличение заказов.</p>
+             <p class="articles__box-title">Оформление и сдача бухгалтерской отчетности . Начисление и уплата налогов и отчислений</p>
+             <p class="articles__box-text">В бухгалтерском учете и требованиям к сдаче отчетности постоянно происходят изменения. Наша бухгалтерия обеспечит своевременность и правильность оформления всех необходимых документов и уплате налогов . Это позволит избежать неприятностей с налоговой инспекцией .</p>
            </div>
            <img src="" alt="">
          </div>
-         <div class="articles col-md-4">
-           <div class="articles__item">
-             <p>08</p>
-           </div>
-           <div class="articles__box">
-
-             <p class="articles__box-title">ADR</p>
-             <p class="articles__box-text">Возможность  перевозку опасных грузов (ADR ) позволит Вам расширить спектр услуг . Перевозки ADR значительно выгоднее обычных перевозок.</p>
-           </div>
-           <img src="" alt="">
-         </div>
-         <div class="articles col-md-4">
-           <div class="articles__item">
-             <p>09</p>
-           </div>
-           <div class="articles__box">
-
-             <p class="articles__box-title">Финансовая поддержка</p>
-             <p class="articles__box-text">Компания « KATA-log » имеет прочное финансовое положение. Наличие оборотных средств ликвидирует  зависимость от задержек оплат клиентов за транспортные услуги. При необходимости Вы , как наш партнер , сможете получить топливо и наличные средства , необходимые Вам для следующего рейса , не дожидаясь поступления оплаты от клиента.</p>
-           </div>
-           <img src="" alt="">
-         </div>
-         <div class="clearfix"></div>
-         <div class="articles col-md-4">
-          <div class="articles__item">
-            <p>10</p>
+            </div>
           </div>
-          <div class="articles__box">
-
-            <p class="articles__box-title">Охраняемая стоянка для Вашего автомобиля</p>
-            <p class="articles__box-text">Если у Вас есть потребность — Вы можете оставлять автотранспорт на территории автопарка компании «KATA-log» под охраной.</p>
+      </section>
+      <div class="line"></div>
+      <section class="section" id="anchor_8">
+          <div class="container ">
+            <h2 class="caption-label">Требования к потенциальным партнёрам:</h2>
+            <div class="section-about">
+              <div class="revealator-slideup revealator-once revealator1">
+                <ul>
+                  <li>1. Автомобили, соответствующие стандарту Евро-2 и больше.</li>
+                  <li>2. Хорошее техническое состояние для перевозок.</li>
+                  <li>3. Год выпуска тягача и полуприцепа — не раньше 2002.</li>
+                  <li>4. Професинальный и исполнительный водитель.</li>
+                  <li>5. Обязательная установка GPS трекера </li>
+                </ul>
+              </div>
+            <div class="power">
+              <span>Обращайтесь — будем рады сотрудничеству!!!</span>
+            </div>
           </div>
-          <img src="" alt="">
+      </section>
+      <div class="line"></div>
+      <section class="section" id="anchor_9">
+        <div class="container">
+          <h2 class="caption-label">Спектр наших услуг включает в себя:</h2>
+          <ul class="reason_list row">
+            <li class="revealator-slideup revealator-once amenities  col-md-4 col-sm-5 col-md-1">
+              <div class="wrapper-block amenities-block">
+                <img class="img-responsive img-resp-1" src="img/mp.jpg" alt="">
+                <p class="reason_item_des amenities-item">международные грузовые перевозки (Россия – ДНР; страны СНГ – ДНР; страны Европы – ДНР)</p>
+              </div>
+            </li>
+            <li class="revealator-slideup revealator-delay1 revealator-once amenities  col-md-4 col-sm-5 col-md-1">
+              <div class="wrapper-block amenities-block">
+                <img class="img-responsive img-resp-1" src="img/og.png" alt="">
+                <p class="reason_item_des amenities-item">перевозка опасных грузов (АДР);</p>
+              </div>
+            </li>
+            <li class="revealator-slideup revealator-delay2 revealator-once amenities  col-md-4 col-sm-5 col-md-1">
+              <div class="wrapper-block amenities-block">
+                <img class="img-responsive img-resp-1" src="img/ng.png" alt="">
+                <p class="reason_item_des amenities-item">перевозка негабаритных грузов</p>
+              </div>
+            </li>
+            <li class="revealator-slideup revealator-delay5 revealator-once amenities  col-md-4 col-sm-5 col-md-1">
+              <div class="wrapper-block amenities-block">
+                <img class="img-responsive img-resp-1" src="img/mt.jpg" alt="">
+                <p class="reason_item_des amenities-item">малотоннажные перевозки грузов</p>
+              </div>
+            </li>
+            <li class="revealator-slideup revealator-delay6 revealator-once amenities  col-md-4 col-sm-5 col-md-1">
+              <div class="wrapper-block amenities-block">
+                <img class="img-responsive img-resp-1" src="img/rf.jpg" alt="">
+                <p class="reason_item_des amenities-item">перевозки скоропортящихся грузов рефрижераторными полуприцепами</p>
+              </div>
+            </li>
+            <li class="revealator-slideup revealator-delay7 revealator-once amenities  col-md-4 col-sm-5 col-md-1">
+              <div class="wrapper-block amenities-block">
+                <img class="img-responsive img-resp-1" src="img/eu.jpg" alt="">
+                <p class="reason_item_des amenities-item">экспедиционные услуги</p>
+              </div>
+            </li>
+          </ul>
         </div>
-        <div class="articles col-md-4">
-          <div class="articles__item">
-            <p>11</p>
-          </div>
-          <div class="articles__box">
+      </section>
+      <div class="line"></div>
+      <section class="section" id="anchor_10">
+        <div class="container">
+          <h2 class="caption-label">КОНТАКТЫ и АДРЕС</h2>
+          <p>Мы всегда рады нашим клиентам, свяжитесь с нами через форму обратной связи или позвоните по одному из указанных телефонов</p>
+          <div class="row">
+            <div class="kontackt col-lg-6 col-md-6 col-sm-12 col-md-12">
+              <h4 class="kontackt-header">Наш адрес:</h4>
+              <p>г.Донецк, ул.Артема 138 "А", БЦ "Акула", офис 1109</p>
+              <h4 class="kontackt-header">Телефоны:</h4>
+              <p>
+                <img class="whatsApp" src="img/tel.png" alt="WhatsApp,Viber"> +38(062)333-77-44,</br>
+                <img class="whatsApp" src="img/WhatsApp-Viber.png" alt="WhatsApp,Viber"> +38(095)512-71-65,</br>
+                <img class="whatsApp" src="img/WhatsApp-Viber.png" alt="WhatsApp,Viber"> +38(095)205-80-08
 
-            <p class="articles__box-title">Услуги собственной СТО, ремонт, обслуживание</p>
-            <p class="articles__box-text">Наши  механики помогут Вам осуществить плановое обслуживание и ремонт Вашей техники на территории СТО компании «KATA-log».</p>
-          </div>
-          <img src="" alt="">
-        </div>
-        <div class="articles col-md-4">
-          <div class="articles__item">
-            <p>12</p>
-          </div>
-          <div class="articles__box">
 
-            <p class="articles__box-title">Услуги механика, врача, инженера по безопасности движения</p>
-            <p class="articles__box-text">Перед выездом в рейс, Вы проходите в нашем автопарке все необходимые и обязательные осмотры, согласования и инструктажи.</p>
-          </div>
-          <img src="" alt="">
-        </div>
-        <div class="clearfix"></div>
-        <div class="articles col-md-12">
-         <div class="articles__item">
-           <p>13</p>
-         </div>
-         <div class="articles__box">
-
-           <p class="articles__box-title">Оформление и сдача бухгалтерской отчетности . Начисление и уплата налогов и отчислений</p>
-           <p class="articles__box-text">В бухгалтерском учете и требованиям к сдаче отчетности постоянно происходят изменения. Наша бухгалтерия обеспечит своевременность и правильность оформления всех необходимых документов и уплате налогов . Это позволит избежать неприятностей с налоговой инспекцией .</p>
-         </div>
-         <img src="" alt="">
-       </div>
-          </div>
-        </div>
-    </section>
-    <div class="line"></div>
-    <section class="section" id="anchor_8">
-        <div class="container ">
-          <h2 class="caption-label">Требования к потенциальным партнёрам:</h2>
-          <div class="section-about">
-            <div class="revealator-slideup revealator-once revealator1">
+            </div>
+            <div class="feedbeck col-lg-6 col-md-6 col-sm-12 col-md-12">
+              <h4 class="kontackt-header">Е-майл:</h4>
+              <p>office@kata-log.com.ua</p>
+              <h4 class="kontackt-header">Мы в соцсетях:</h4>
               <ul>
-                <li>1. Автомобили, соответствующие стандарту Евро-2 и больше.</li>
-                <li>2. Хорошее техническое состояние для перевозок.</li>
-                <li>3. Год выпуска тягача и полуприцепа — не раньше 2002.</li>
-                <li>4. Професинальный и исполнительный водитель.</li>
-                <li>5. Обязательная установка GPS трекера </li>
+                <li><a class="networks__icon networks__icon_facebook" href="#"></a></li>
+                <li><a class="networks__icon networks__icon_twitter" href="#"></a></li>
               </ul>
             </div>
-          <div class="power">
-            <span>Обращайтесь — будем рады сотрудничеству!!!</span>
           </div>
-        </div>
-    </section>
-    <div class="line"></div>
-    <section class="section" id="anchor_9">
-      <div class="container">
-        <h2 class="caption-label">Спектр наших услуг включает в себя:</h2>
-        <ul class="reason_list row">
-          <li class="revealator-slideup revealator-once amenities  col-md-4 col-sm-5 col-md-1">
-            <div class="wrapper-block amenities-block">
-              <img class="img-responsive img-resp-1" src="img/mp.jpg" alt="">
-              <p class="reason_item_des amenities-item">международные грузовые перевозки (Россия – ДНР; страны СНГ – ДНР; страны Европы – ДНР)</p>
-            </div>
-          </li>
-          <li class="revealator-slideup revealator-delay1 revealator-once amenities  col-md-4 col-sm-5 col-md-1">
-            <div class="wrapper-block amenities-block">
-              <img class="img-responsive img-resp-1" src="img/og.png" alt="">
-              <p class="reason_item_des amenities-item">перевозка опасных грузов (АДР);</p>
-            </div>
-          </li>
-          <li class="revealator-slideup revealator-delay2 revealator-once amenities  col-md-4 col-sm-5 col-md-1">
-            <div class="wrapper-block amenities-block">
-              <img class="img-responsive img-resp-1" src="img/ng.png" alt="">
-              <p class="reason_item_des amenities-item">перевозка негабаритных грузов</p>
-            </div>
-          </li>
-          <li class="revealator-slideup revealator-delay5 revealator-once amenities  col-md-4 col-sm-5 col-md-1">
-            <div class="wrapper-block amenities-block">
-              <img class="img-responsive img-resp-1" src="img/mt.jpg" alt="">
-              <p class="reason_item_des amenities-item">малотоннажные перевозки грузов</p>
-            </div>
-          </li>
-          <li class="revealator-slideup revealator-delay6 revealator-once amenities  col-md-4 col-sm-5 col-md-1">
-            <div class="wrapper-block amenities-block">
-              <img class="img-responsive img-resp-1" src="img/rf.jpg" alt="">
-              <p class="reason_item_des amenities-item">перевозки скоропортящихся грузов рефрижераторными полуприцепами</p>
-            </div>
-          </li>
-          <li class="revealator-slideup revealator-delay7 revealator-once amenities  col-md-4 col-sm-5 col-md-1">
-            <div class="wrapper-block amenities-block">
-              <img class="img-responsive img-resp-1" src="img/eu.jpg" alt="">
-              <p class="reason_item_des amenities-item">экспедиционные услуги</p>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <div class="line"></div>
-    <section class="section" id="anchor_10">
-      <div class="container">
-        <h2 class="caption-label">КОНТАКТЫ и АДРЕС</h2>
-        <p>Мы всегда рады нашим клиентам, свяжитесь с нами через форму обратной связи или позвоните по одному из указанных телефонов</p>
-        <div class="row">
-          <div class="kontackt col-lg-6 col-md-6 col-sm-12 col-md-12">
-            <h4 class="kontackt-header">Наш адрес:</h4>
-            <p>г.Донецк, ул.Артема 138 "А", БЦ "Акула", офис 1109</p>
-            <h4 class="kontackt-header">Телефоны:</h4>
-            <p>
-              <img class="whatsApp" src="img/tel.png" alt="WhatsApp,Viber"> +38(062)333-77-44,</br>
-              <img class="whatsApp" src="img/WhatsApp-Viber.png" alt="WhatsApp,Viber"> +38(095)512-71-65,</br>
-              <img class="whatsApp" src="img/WhatsApp-Viber.png" alt="WhatsApp,Viber"> +38(095)205-80-08
-
-
-          </div>
-          <div class="feedbeck col-lg-6 col-md-6 col-sm-12 col-md-12">
-            <h4 class="kontackt-header">Е-майл:</h4>
-            <p>office@kata-log.com.ua</p>
-            <h4 class="kontackt-header">Мы в соцсетях:</h4>
-            <ul>
-              <li><a class="networks__icon networks__icon_facebook" href="#"></a></li>
-              <li><a class="networks__icon networks__icon_twitter" href="#"></a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="headen-menu--main">
-          <a  class="online-booking btn btn-theme-primary btn-lg" data-target="modal" href="#myModal" >
-            <span class="icon"></span>
-              Обратная связь
-          </a>
-          <!-- HTML-код модального окна -->
-          <div id="myModal" class="modal fade">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <!-- Заголовок модального окна -->
-                <div class="modal-header text-center">
-                  <h4 class="modal-title">Форма обратной связи</h4>
-                </div>
-                <!-- Основное содержимое модального окна -->
-                <div class="modal-body">
-                  <form  method="post" action="#" name="akvatika">
-                    <div class="form-group">
-                      <label class="control-label" for="name">
-                        Ваше Имя <i class="fa fa-asterisk"></i>
-                      </label>
-                      <div class="gcore-input">
-                        <input id="name" class="form-control" name="name" value="Ваше имя" placeholder="" title="" style="" data-inputmask="" data-load-state="" data-tooltip="" type="text">
+          <div class="headen-menu--main">
+            <a  class="online-booking btn btn-theme-primary btn-lg" data-target="modal" href="#myModal" >
+              <span class="icon"></span>
+                Обратная связь
+            </a>
+            <!-- HTML-код модального окна -->
+            <div id="myModal" class="modal fade">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <!-- Заголовок модального окна -->
+                  <div class="modal-header text-center">
+                    <h4 class="modal-title">Форма обратной связи</h4>
+                  </div>
+                  <!-- Основное содержимое модального окна -->
+                  <div class="modal-body">
+                    <form  method="post" action="#" name="akvatika">
+                      <div class="form-group">
+                        <label class="control-label" for="name">
+                          Ваше Имя <i class="fa fa-asterisk"></i>
+                        </label>
+                        <div class="gcore-input">
+                          <input id="name" class="form-control" name="name" value="Ваше имя" placeholder="" title="" style="" data-inputmask="" data-load-state="" data-tooltip="" type="text">
+                        </div>
                       </div>
-                    </div>
-                    <div class="form-group">
-                      <label class="control-label" for="phone">
-                        Ваш телефон <i class="fa fa-asterisk"></i>
-                      </label>
-                      <div class="gcore-input">
-                        <input id="phone" class="form-control" name="phone" value="Ваш телефон" placeholder="" maxlength="20" title="" style="" data-inputmask="'mask' : '+9(999)999-9999'" data-load-state="" data-tooltip="" type="text">
+                      <div class="form-group">
+                        <label class="control-label" for="phone">
+                          Ваш телефон <i class="fa fa-asterisk"></i>
+                        </label>
+                        <div class="gcore-input">
+                          <input id="phone" class="form-control" name="phone" value="Ваш телефон" placeholder="" maxlength="20" title="" style="" data-inputmask="'mask' : '+9(999)999-9999'" data-load-state="" data-tooltip="" type="text">
+                        </div>
                       </div>
-                    </div>
-                    <div class="form-group">
-                      <label class="control-label" for="email">
-                        Эл.почта
-                        <i class="fa fa-asterisk"></i>
-                      </label>
-                      <div class="gcore-input">
-                        <input id="email" class="form-control" name="email" value="Эл.почта" placeholder="" title="" style="" data-inputmask="" data-load-state="" data-tooltip="Эл.почта" type="text">
+                      <div class="form-group">
+                        <label class="control-label" for="email">
+                          Эл.почта
+                          <i class="fa fa-asterisk"></i>
+                        </label>
+                        <div class="gcore-input">
+                          <input id="email" class="form-control" name="email" value="Эл.почта" placeholder="" title="" style="" data-inputmask="" data-load-state="" data-tooltip="Эл.почта" type="text">
+                        </div>
                       </div>
-                    </div>
-                    <div class="form-group">
-                      <label class="control-label" for="textarea10">Комментарии</label>
-                      <div class="gcore-input">
-                        <textarea id="textarea10" class="form-control" name="textarea10" placeholder="" rows="3" cols="40" title="" style="" data-wysiwyg="0" data-load-state="" data-tooltip="">Комментарии</textarea>
+                      <div class="form-group">
+                        <label class="control-label" for="textarea10">Комментарии</label>
+                        <div class="gcore-input">
+                          <textarea id="textarea10" class="form-control" name="textarea10" placeholder="" rows="3" cols="40" title="" style="" data-wysiwyg="0" data-load-state="" data-tooltip="">Комментарии</textarea>
+                        </div>
                       </div>
-                    </div>
-                  </form>
-                </div>
-                <div class="clearfix"></div>
-                <!-- Футер модального окна -->
-                <div class="modal-footer">
-                  <button type="button" class="btn button">Отправить</button>
-                  <button type="button" class="btn button" data-dismiss="modal">Закрыть</button>
+                    </form>
+                  </div>
+                  <div class="clearfix"></div>
+                  <!-- Футер модального окна -->
+                  <div class="modal-footer">
+                    <button type="button" class="btn button">Отправить</button>
+                    <button type="button" class="btn button" data-dismiss="modal">Закрыть</button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+  </main>
+    <script src="js/imagesloaded.js"></script>
+    <script src="js/skrollr.js"></script>
+    <script src="js/main-js.js"></script>
+    <script src="js/jquery.scrollify.min.js"></script>
+	  <script src="js/jquery.easing.min.js"></script>
   </body>
 </html>

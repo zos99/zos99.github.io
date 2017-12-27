@@ -41,3 +41,11 @@ $(document).ready(function(){
     $("#myModal").modal('show');
   });
 });
+//*Скрипт, привязывающий событие click, открывающее модальное окно, к элементам, имеющим класс .btn
+$(document).ready(function(){
+  //при нажатию на любую кнопку, имеющую класс .btn
+  $(".online-booking_1").click(function() {
+    //открыть модальное окно с id="myModal"
+    $("#myModal_1").modal('show');
+  });
+});
