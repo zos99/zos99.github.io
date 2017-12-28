@@ -6,6 +6,14 @@ $(document).ready(function(){
         $('body,html').animate({scrollTop: top}, 1500);
     });
 });
+
+  var $ = jQuery.noConflict();
+  $(document).ready(function() {
+  $().UItoTop({ easingType: 'easeOutQuart' });
+  });
+
+
+
 //-----------services-box-----------------
  /* Function for hover on services-box*/
 $(function() {

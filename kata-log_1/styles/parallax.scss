@@ -56,19 +56,6 @@ body, html {
 h2 {
 	margin-top: 0;
 }
-.loading {
-	background: url('../img/ico_loading.gif') no-repeat center center;
-}
-section {
-	opacity: 0;
-}
-.loaded section,
-.no-js section {
-	opacity: 1;
-	-webkit-transition: opacity 300ms ease-out;
-	-moz-transition: opacity 300ms ease-out;
-	transition: opacity 300ms ease-out;
-}
 main {
 	overflow-x: hidden;
 }

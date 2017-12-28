@@ -20,8 +20,9 @@
     <script type="text/javascript" src="js/main.js"></script>
     <script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
     <script type="text/javascript" src="js/jcarousel.responsive.js"></script>
+
   </head>
-  <body class="loading">
+  <body>
   <!--[if lt IE 7]>
     <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
   <![endif]-->
@@ -124,10 +125,10 @@
     </div>
   </header>
  	<main>
-  <section id="slide-1" class="homeSlide wrapper" data-section-name="home">
     <video class="video-background" id="bgvid" autoplay="autoplay" loop="loop" muted="muted">
       <source src="video/vedeo.mp4" type="video/mp4">
       </video>
+  <section id="slide-1" class="homeSlide wrapper">
     <div class="slogan">
 
           <h2 class="hero-large-text hidden-phone">КОМПАНИЯ «КАТА–log»</h2>
@@ -346,42 +347,6 @@
                      </li>
                      <li>
                        <img src="img/noimage.jpg" alt="Image 6">
-
-                     </li>
-                     <li>
-                       <img src="img/noimage.jpg" alt="Image 7">
-
-                     </li>
-                     <li>
-                       <img src="img/noimage.jpg" alt="Image 8">
-
-                     </li>
-                     <li>
-                       <img src="img/noimage.jpg" alt="Image 9">
-
-                     </li>
-                     <li>
-                       <img src="img/noimage.jpg" alt="Image 10">
-
-                     </li>
-                     <li>
-                       <img src="img/noimage.jpg" alt="Image 11">
-
-                     </li>
-                     <li>
-                       <img src="img/noimage.jpg" alt="Image 12">
-
-                     </li>
-                     <li>
-                       <img src="img/noimage.jpg" alt="Image 13">
-
-                     </li>
-                     <li>
-                       <img src="img/noimage.jpg" alt="Image 14">
-
-                     </li>
-                     <li>
-                       <img src="img/noimage.jpg" alt="Image 15">
 
                      </li>
                  </ul>
@@ -648,11 +613,11 @@
           </div>
         </div>
       </section>
+      <a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
   </main>
-    <script src="js/imagesloaded.js"></script>
-    <script src="js/skrollr.js"></script>
-    <script src="js/main-js.js"></script>
-    <script src="js/jquery.scrollify.min.js"></script>
-	  <script src="js/jquery.easing.min.js"></script>
+  <!-- start-smoth-scrolling -->
+  <script src="js/modernizr.custom.js"></script>
+  <script src="js/move-top.js"></script>
+  <script src="js/easing.js"></script>
   </body>
 </html>

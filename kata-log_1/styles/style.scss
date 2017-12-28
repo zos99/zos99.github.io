@@ -413,6 +413,32 @@ pre {
     z-index: -100;
 }
 /*--------------------------------------*/
+/*-- to-top --*/
+#toTop {
+	display: none;
+	text-decoration: none;
+	position: fixed;
+	bottom: 28px;
+	right: 1%;
+	overflow: hidden;
+	z-index: 999;
+	width: 32px;
+	height: 32px;
+	border: none;
+	text-indent: 100%;
+	background: url("../img/arr.png") no-repeat 0px 0px;
+}
+#toTopHover {
+	width: 32px;
+	height: 32px;
+	display: block;
+	overflow: hidden;
+	float: right;
+	opacity: 0;
+	-moz-opacity: 0;
+	filter: alpha(opacity=0);
+}
+/*-- //to-top --*/
 /*--------------------------------------*/
 /*--------------------------------------*/
 .wrapper-block {
@@ -424,6 +450,9 @@ pre {
   background-color: transparentize($color, $amount);
 }
 /*--SECTION ALL---*/
+#slide-1 {
+  height: 100vh;
+}
 #anchor_2 {
   background-color: transparentize($color, $amount);
   padding-top: 5%;
