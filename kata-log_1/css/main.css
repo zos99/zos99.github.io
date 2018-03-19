@@ -5556,7 +5556,28 @@ button.close {
     border-right-width: 0;
     border-left-color: #fff;
     bottom: -10px; }
+    .networks {
+      display: block;
+      float: right; }
 
+    .networks__icon {
+      float: left;
+      padding-left: 20px; }
+
+    .networks__icon:before {
+      color: #ec8200;
+      font-family: "FontAwesome";
+      font-size: 30px; }
+
+    .networks__icon_facebook:before {
+      content: "\f09a"; }
+
+    .networks__icon_twitter:before {
+      content: "\f099"; }
+
+    .networks__icon:hover:before {
+      color: #248cec;
+      cursor: pointer; }
 .carousel {
   position: relative; }
 
@@ -6164,6 +6185,10 @@ a:hover, a:focus {
   position: absolute;
   left: 50%;
   top: 80px;
+  -moz-transform: translateX(-50%); /* Для Firefox */
+   -ms-transform: translateX(-50%); /* Для IE */
+   -webkit-transform: translateX(-50%); /* Для Safari, Chrome, iOS */
+   -o-transform: translateX(-50%); /* Для Opera */
   transform: translateX(-50%);
   width: 100%; }
 
@@ -6187,6 +6212,10 @@ a:hover, a:focus {
   position: absolute;
   top: 50%;
   left: 50%;
+  -moz-transform: translate(-50%, -50%); /* Для Firefox */
+   -ms-transform: translate(-50%, -50%); /* Для IE */
+   -webkit-transform: translate(-50%, -50%); /* Для Safari, Chrome, iOS */
+   -o-transform: translate(-50%, -50%); /* Для Opera */
   transform: translate(-50%, -50%);
   width: 90%;
   height: auto;
@@ -6275,6 +6304,10 @@ pre {
   min-height: 100%;
   width: auto;
   height: auto;
+  -moz-transform: translate(-50%, -50%); /* Для Firefox */
+   -ms-transform: translate(-50%, -50%); /* Для IE */
+   -webkit-transform: translate(-50%, -50%); /* Для Safari, Chrome, iOS */
+   -o-transform: translate(-50%, -50%); /* Для Opera */
   transform: translate(-50%, -50%);
   z-index: -100; }
 
@@ -6384,6 +6417,10 @@ pre {
   #slide-4 .amenities .amenities-block {
     overflow: hidden; }
     #slide-4 .amenities .amenities-block .img-responsive:hover {
+      -moz-transform: scale(1.2); /* Для Firefox */
+       -ms-transform: scale(1.2); /* Для IE */
+       -webkit-transform: scale(1.2); /* Для Safari, Chrome, iOS */
+       -o-transform: scale(1.2); /* Для Opera */
       transform: scale(1.2);
       transition-duration: 0.5s; }
     #slide-4 .amenities .amenities-block .amenities-item {
@@ -6434,6 +6471,10 @@ pre {
     z-index: 15px;
     top: 50%;
     left: 50%;
+    -moz-transform: translate(-50%, -50%); /* Для Firefox */
+     -ms-transform: translate(-50%, -50%); /* Для IE */
+     -webkit-transform: translate(-50%, -50%); /* Для Safari, Chrome, iOS */
+     -o-transform: translate(-50%, -50%); /* Для Opera */
     transform: translate(-50%, -50%);
     width: 70%; }
     .hotel-rooms .services-box__v-line h2 {
@@ -6512,25 +6553,27 @@ pre {
   float: left;
   font-family: "Ubuntu Medium";
   font-size: 90px;
-  height: 100%; }
+  height: 100%;
+font-weight: bold;}
   .articles .articles__item p {
     font-family: "Ubuntu Medium" !important;
     font-size: 90px;
     color: #8a8a8a; }
 .articles .articles__box {
-  float: left;
-  width: 240px; }
+  float: left; }
 .articles .articles__box-icon {
   margin-top: 20px; }
 .articles .articles__box-title {
   margin-top: 12px;
   font-family: "Ubuntu Medium";
   font-size: 20px;
+  font-weight: bold;
   color: #ec8200; }
 .articles .articles__box-text {
   margin-top: 27px;
   font-family: "Arial";
-  font-size: 15px;
+  font-size: 17px;
+  font-weight: bold;
   color: #fff; }
 
 #slide-7 .section-about {
@@ -6658,6 +6701,9 @@ main {
   left: 50%;
   position: absolute;
   top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   z-index: 1000; }
   #info-block h2 {
@@ -6992,7 +7038,7 @@ blockquote {
 
   .networks__icon {
     display: block; } }
-@media (max-width: 992px) {
+@media (max-width: 1149px) {
   .navbar-header {
     float: none; }
 
