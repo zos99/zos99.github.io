@@ -77,7 +77,10 @@ a,
 a:link,
 a:visited,
 a:focus {
-    color: $DGray;
+    color: #666;
+}
+a {
+    text-decoration: none;
 }
 p {
   margin: 0;

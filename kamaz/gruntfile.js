@@ -17,7 +17,8 @@ module.exports = function(grunt) {
         files: {
           'js/dest/bootstrap.min.js': ['js/src/bootstrap.js'],
           'js/dest/jquery.min.js': ['js/src/jquery.js'],
-          'js/dest/script.min.js': ['js/src/script.js'],
+          'js/dest/jquery.min.js': ['js/src/jquery.js'],
+          'js/dest/jcarousel.responsive.min.js': ['js/src/jcarousel.responsive.js']
         }
       }
     },

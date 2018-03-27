@@ -13,16 +13,19 @@
     <title>Камаз</title>
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/swiper.min.css" />
+    <link rel="stylesheet" href="css/jcarousel.responsive.css">
     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
     <script type="text/javascript" src="js/dest/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="js/dest/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/dest/jquery.jcarousel.min.js"></script>
+    <script type="text/javascript" src="js/src/jcarousel.responsive.js"></script>
   </head>
   <body>
     <!--[if lt IE 7]>
       <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
     <![endif]-->
     <header class="header">
-      <div id="header-top">
+      <div class="header-top">
         <div class="header-top__inner">
           <div class="container">
             <div class="row">
@@ -31,10 +34,10 @@
               </div>
               <div class="col-xs-6 col-sm-12 col-md-10">
                  <div class="header-line row">
-                    <div class="col-xs-3 first_column">
+                    <div class="col-xs-2 first_column">
                         <a class="shop_link" href="#">Акции</a>
                     </div>
-                    <div class="col-xs-3 second_column">
+                    <div class="col-xs-4 second_column">
                       <div class="dropdown tel">
                           <div class="dropdown-menu" role="menu">
                               <div class="top_tel">
@@ -57,51 +60,45 @@
                       </div>
                     </div>
                   </div>
-                    <div class="row contakt-info">
-                      <div class="header-content--left col-xs-4 col-sm-4 col-md-4">
+                  <div class="row contakt-info">
+                      <div class="header-content--left col-md-12">
                         Официальный дилер ОАО КАМАЗ в Донецке
                       </div>
-                      <div class="header-content--right col-xs-8 col-sm-8 col-md-8">
-                        <ul class="list-serviser">
-                          <li class="item item--center">
-                            <div class="icon">
-                              <img src="images/s2.png" alt="">
+                  </div>
+                  <div class="row block-menu">
+                    <div class="pull-left col-md-8">
+                      <ul class="accordion-tabs row">
+                        <li class="tab-head-cont col-md-3">
+                          <a href="#" class="is-active">Каталог</a>
+                        </li>
+                        <li class="tab-head-cont col-md-3">
+                          <a href="#">СТО</a>
+                        </li>
+                        <li class="tab-head-cont col-md-3">
+                          <a href="#">Услуги</a>
+                        </li>
+                        <li class="tab-head-cont col-md-3">
+                          <a href="#">Контакты</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="pull-right col-md-4">
+                      <div class="search_x">
+                        <form role="form" action="" method="get">
+                          <div class="form-group">
+                            <div class="input-group">
+                              <input class="form-control" name="keyword" maxlength="20" alt="Search" size="20" value="Поиск" onblur="if(this.value=='') this.value='Поиск';" onfocus="if(this.value=='Поиск') this.value='';" type="text">
+                              <span class="input-group-btn">
+                                <button type="submit" class="btn btn-default" value="Search" onclick="this.form.keyword.focus();">
+                                  <span class="glyphicon glyphicon-search"></span>
+                                </button>
+                              </span>
                             </div>
-                            <div class="content">
-                              +38 (071) 332-20-07 - Шины </br>
-                              +38 (071) 306-53-14 - Запчасти </br>
-                              +38 (071) 817-14-84 - Масла </br>
-                              +38 (071) 332-20-14 - Подшипники </br>
-                              +38 (071) 306-53-12 - СТО </br>
-                              +38 (071) 307-82-21 - Грузоперевозки
-                            </div>
-                          </li>
-                          <li class="item item--right">
-                            <div class="icon">
-                              <img src="images/s3.png" alt="">
-                            </div>
-                            <div class="content">
-                              <span>г.Макеевка пр. Г.Данилова,4</span></br>
-                              +38(071)3-088-088</br>
-                              +38(071)33-22-003</br>
-                              +38(071)33-22-005</br>
-                              <span>г.Торез пр. Гагарина,155/2</span></br>
-                              +38(071)333-0-553
-                            </div>
-                          </li>
-                          <li class="item item--left">
-                            <div class="icon">
-                              <img src="images/s1.png" alt="">
-                            </div>
-                            <div class="content">
-                              г.Донецк
-                              <br>
-                              ул. Горновая 2-а
-                            </div>
-                          </li>
-                        </ul>
+                          </div>
+                        </form>
                       </div>
                     </div>
+                  </div>
               </div>
             </div>
           </div>
@@ -111,52 +108,286 @@
         <nav id="menu" class="main-menu default hidden-xs">
           <div class="container">
             <div class="row">
-              <div class="col-md-8">
                 <ul class="content">
-                  <li><a href="">Главная</a></li>
-                  <li class="dropdown">
-                    <a class="dropdown__linck" href="#">Новости</a>
-                    <ul class="sub-menu" style="display: none;">
-                      <li><a href="#">Меню 1.1</a></li>
-                      <li><a href="#">Меню 1.2</a></li>
-                      <li><a href="#">Меню 1.3</a></li>
-                    </ul>
-                  </li>
-                  <li class="dropdown">
-                    <a class="dropdown__linck" href="#">О компании</a>
-                    <ul class="sub-menu" style="display: none;">
-                      <li><a href="#">Меню 2.1</a></li>
-                      <li><a href="#">Меню 2.2</a></li>
-                      <li><a href="#">Меню 2.3</a></li>
-                    </ul>
-                  </li>
-                  <li class="dropdown">
-                    <a class="dropdown__linck" href="#">Ретро</a>
-                    <ul class="sub-menu" style="display: none;">
-                      <li><a href="#">Меню 3.1</a></li>
-                      <li><a href="#">Меню 3.2</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="">Склад</a></li>
-                  <li><a href="">Контакты</a></li>
-                </ul>
-              </div>
-              <div class="pull-right col-md-4">
-                <div class="search_x">
-                  <form role="form" action="" method="get">
-                    <div class="form-group">
-                      <div class="input-group">
-                        <input class="form-control" name="keyword" maxlength="20" alt="Search" size="20" value="Поиск" onblur="if(this.value=='') this.value='Поиск';" onfocus="if(this.value=='Поиск') this.value='';" type="text">
-                        <span class="input-group-btn">
-                          <button type="submit" class="btn btn-default" value="Search" onclick="this.form.keyword.focus();">
-                            <span class="glyphicon glyphicon-search"></span>
-                          </button>
-                        </span>
+                  <li class="dropdown1">
+                    <a class="dropdown__linck dropdown__linck--1" href="#">Аккумуляторы</a>
+                    <div class="sub-menu" style="display: none;">
+                      <div class="row">
+                        <div class="separator col-md-3">
+                          <p>Товарные категории</p>
+                          <ul>
+                            <li><a href="#">Bravo</a></li>
+                            <li><a href="#">Reactor</a></li>
+                            <li><a href="#">Ultimatum</a></li>
+                          </ul>
+                        </div>
+                        <div class="separator col-md-3">
+                          <p>Бренды, торговые марки</p>
+                          <ul>
+                            <li><a href="#">Bravo</a></li>
+                            <li><a href="#">Reactor</a></li>
+                            <li><a href="#">Ultimatum</a></li>
+                          </ul>
+                        </div>
+                        <div class="col-md-6">
+                          <p>Новые поступления</p>
+                          <div class="jcarousel-wrapper">
+                             <div class="jcarousel">
+                                 <ul>
+                                   <li class=jcarousel__link>
+                                     <div class="link__wrapper">
+                                       <a href="">
+                                         <img  src="images/m1.jpg" alt="Image 1">
+                                         <p>Lorem ipsum</p>
+                                         <div class="main-price">
+                                           <div class="item-price">
+                                             <span class="price">$111.00</span>
+                                             <span class="old-price">$400.00</span>
+                                           </div>
+                                         </div>
+                                       </a>
+                                     </div>
+                                    </li>
+                                    <li class=jcarousel__link>
+                                      <div class="link__wrapper">
+                                        <a href="">
+                                          <img  src="images/m2.jpg" alt="Image 1">
+                                          <p>Lorem ipsum</p>
+                                          <div class="main-price">
+                                            <div class="item-price">
+                                              <span class="price">$111.00</span>
+                                              <span class="old-price">$400.00</span>
+                                            </div>
+                                          </div>
+                                        </a>
+                                      </div>
+                                     </li>
+                                     <li class=jcarousel__link>
+                                       <div class="link__wrapper">
+                                         <a href="">
+                                           <img  src="images/m3.jpg" alt="Image 1">
+                                           <p>Lorem ipsum</p>
+                                           <div class="main-price">
+                                             <div class="item-price">
+                                               <span class="price">$111.00</span>
+                                               <span class="old-price">$400.00</span>
+                                             </div>
+                                           </div>
+                                         </a>
+                                       </div>
+                                      </li>
+                                      <li class=jcarousel__link>
+                                        <div class="link__wrapper">
+                                          <a href="">
+                                            <img  src="images/m4.jpg" alt="Image 1">
+                                            <p>Lorem ipsum</p>
+                                            <div class="main-price">
+                                              <div class="item-price">
+                                                <span class="price">$111.00</span>
+                                                <span class="old-price">$400.00</span>
+                                              </div>
+                                            </div>
+                                          </a>
+                                        </div>
+                                       </li>
+                                       <li class=jcarousel__link>
+                                         <div class="link__wrapper">
+                                           <a href="">
+                                             <img  src="images/m2.jpg" alt="Image 1">
+                                             <p>Lorem ipsum</p>
+                                             <div class="main-price">
+                                               <div class="item-price">
+                                                 <span class="price">$111.00</span>
+                                                 <span class="old-price">$400.00</span>
+                                               </div>
+                                             </div>
+                                           </a>
+                                         </div>
+                                        </li>
+                                        <li class=jcarousel__link>
+                                          <div class="link__wrapper">
+                                            <a href="">
+                                              <img  src="images/m1.jpg" alt="Image 1">
+                                              <p>Lorem ipsum</p>
+                                              <div class="main-price">
+                                                <div class="item-price">
+                                                  <span class="price">$111.00</span>
+                                                  <span class="old-price">$400.00</span>
+                                                </div>
+                                              </div>
+                                            </a>
+                                          </div>
+                                         </li>
+                                 </ul>
+                             </div>
+
+                             <a id="jcp" href="#" class="jcarousel-control-prev">&lsaquo;</a>
+                             <a id="jcn" href="#" class="jcarousel-control-next">&rsaquo;</a>
+
+
+                          </div>
+                        </div>
                       </div>
                     </div>
-                  </form>
-                </div>
-              </div>
+                  </li>
+                  <li class="dropdown1">
+                    <a class="dropdown__linck dropdown__linck--2" href="#">Запчасти</a>
+                    <div class="sub-menu" style="display: none;">
+                      <div class="row">
+                        <div class="separator col-md-3">
+                          <p>Товарные категории</p>
+                          <ul>
+                            <li><a href="#">BRISK свечи зажигания</a></li>
+                            <li><a href="#">TESLA высоковольтные провода</a></li>
+                            <li><a href="#">TESLA катушки зажигания</a></li>
+                            <li><a href="#">TESLA лампы</a></li>
+                            <li><a href="#">Декоративные колпаки</a></li>
+                            <li><a href="#">Запчасти КАМАЗ</a></li>
+                            <li><a href="#">Локеры (подкрылки)</a></li>
+                            <li><a href="#">Подшипники ZVL</a></li>
+                            <li><a href="#">РТИ ремни ЯРТ </a></li>
+                          </ul>
+                        </div>
+                        <div class="separator col-md-3">
+                          <p>Бренды, торговые марки</p>
+                          <ul>
+                            <li><a href="#">Bravo</a></li>
+                            <li><a href="#">Reactor</a></li>
+                            <li><a href="#">Ultimatum</a></li>
+                          </ul>
+                        </div>
+                        <div class="col-md-6">
+                          <p>Новые поступления</p>
+                          <div class="jcarousel-wrapper">
+                             <div class="jcarousel">
+                                 <ul>
+                                   <li class=jcarousel__link>
+                                     <div class="link__wrapper">
+                                       <a href="">
+                                         <img  src="images/1.jpg" alt="Image 1">
+                                         <p>Lorem ipsum</p>
+                                         <div class="main-price">
+                                           <div class="item-price">
+                                             <span class="price">$111.00</span>
+                                             <span class="old-price">$400.00</span>
+                                           </div>
+                                         </div>
+                                       </a>
+                                     </div>
+                                    </li>
+                                    <li class=jcarousel__link>
+                                      <div class="link__wrapper">
+                                        <a href="">
+                                          <img  src="images/2.jpg" alt="Image 1">
+                                          <p>Lorem ipsum</p>
+                                          <div class="main-price">
+                                            <div class="item-price">
+                                              <span class="price">$111.00</span>
+                                              <span class="old-price">$400.00</span>
+                                            </div>
+                                          </div>
+                                        </a>
+                                      </div>
+                                     </li>
+                                     <li class=jcarousel__link>
+                                       <div class="link__wrapper">
+                                         <a href="">
+                                           <img  src="images/3.jpg" alt="Image 1">
+                                           <p>Lorem ipsum</p>
+                                           <div class="main-price">
+                                             <div class="item-price">
+                                               <span class="price">$111.00</span>
+                                               <span class="old-price">$400.00</span>
+                                             </div>
+                                           </div>
+                                         </a>
+                                       </div>
+                                      </li>
+                                      <li class=jcarousel__link>
+                                        <div class="link__wrapper">
+                                          <a href="">
+                                            <img  src="images/4.jpg" alt="Image 1">
+                                            <p>Lorem ipsum</p>
+                                            <div class="main-price">
+                                              <div class="item-price">
+                                                <span class="price">$111.00</span>
+                                                <span class="old-price">$400.00</span>
+                                              </div>
+                                            </div>
+                                          </a>
+                                        </div>
+                                       </li>
+                                       <li class=jcarousel__link>
+                                         <div class="link__wrapper">
+                                           <a href="">
+                                             <img  src="images/2.jpg" alt="Image 1">
+                                             <p>Lorem ipsum</p>
+                                             <div class="main-price">
+                                               <div class="item-price">
+                                                 <span class="price">$111.00</span>
+                                                 <span class="old-price">$400.00</span>
+                                               </div>
+                                             </div>
+                                           </a>
+                                         </div>
+                                        </li>
+                                        <li class=jcarousel__link>
+                                          <div class="link__wrapper">
+                                            <a href="">
+                                              <img  src="images/1.jpg" alt="Image 1">
+                                              <p>Lorem ipsum</p>
+                                              <div class="main-price">
+                                                <div class="item-price">
+                                                  <span class="price">$111.00</span>
+                                                  <span class="old-price">$400.00</span>
+                                                </div>
+                                              </div>
+                                            </a>
+                                          </div>
+                                         </li>
+                                 </ul>
+                             </div>
+
+                             <a id="jcp" href="#" class="jcarousel-control-prev">&lsaquo;</a>
+                             <a id="jcn" href="#" class="jcarousel-control-next">&rsaquo;</a>
+
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="dropdown1">
+                    <a class="dropdown__linck dropdown__linck--3" href="#">Масла АВТОХИМИЯ</a>
+                    <div class="sub-menu" style="display: none;">
+                      <ul>
+                        <li><a href="#">Меню 3.1</a></li>
+                        <li><a href="#">Меню 3.2</a></li>
+                        <li><a href="#">Меню 3.3</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="dropdown1">
+                    <a class="dropdown__linck dropdown__linck--4" href="#">Фильтры</a>
+                    <div class="sub-menu" style="display: none;">
+                      <ul>
+                        <li><a href="#">Меню 4.1</a></li>
+                        <li><a href="#">Меню 4.2</a></li>
+                        <li><a href="#">Меню 4.3</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="dropdown1">
+                    <a class="dropdown__linck dropdown__linck--5" href="#">Шины и диски </a>
+                    <div class="sub-menu" style="display: none;">
+                      <ul>
+                        <li><a href="#">Меню 5.1</a></li>
+                        <li><a href="#">Меню 5.2</a></li>
+                        <li><a href="#">Меню 5.3</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
             </div>
           </div>
         </nav>
@@ -200,10 +431,12 @@
       </div>
     <div id="slideshow-block">
       <div class="container">
-          <div class="siteslider">
-            <!-- Swiper -->
-            <div class="swiper-container">
-              <div class="parallax-bg"></div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="siteslider">
+              <!-- Swiper -->
+              <div class="swiper-container">
+                <div class="parallax-bg"></div>
                 <div class="swiper-wrapper">
                   <div class="swiper-slide swiper-slide_left">
                     <div class="position">
@@ -216,43 +449,44 @@
                   </div>
                   <div class="swiper-slide swiper-slide_center">
                     <div class="position">
-                      <div class="title" data-swiper-parallax="-200">Прицепы и полуприцепы</div>
+                      <div class="title" data-swiper-parallax="-200">Услуги спецтехники</div>
                       <div class="subtitle" data-swiper-parallax="-800">Lorem ipsum dolor sit amet, consectetur adipisicing </div>
                       <div class="text" data-swiper-parallax="-1200">
                         <a class="button" href="#">узнать больше</a>
                       </div>
                     </div>
                   </div>
-                  <div class="swiper-slide swiper-slide_center1">
-                    <div class="position">
-                      <div class="title" data-swiper-parallax="-200">Модельный ряд КАМАЗ</div>
-                      <div class="subtitle" data-swiper-parallax="-800">сочетает в себе надежность и качество</div>
-                      <div class="text" data-swiper-parallax="-1200">
-                        <a class="button" href="#">узнать больше</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide swiper-slide_right">
-                    <div class="position">
-                      <div class="title" data-swiper-parallax="-200">В наличии новый самосвал КАМАЗ-65201</div>
-                      <div class="subtitle" data-swiper-parallax="-800">Lorem ipsum dolor sit amet, consectetur adipisicing </div>
-                      <div class="text" data-swiper-parallax="-1200">
-                        <a class="button" href="#">узнать больше</a>
-                      </div>
-                    </div>
-                  </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination swiper-pagination-white"></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next swiper-button-white"></div>
+                <div class="swiper-button-prev swiper-button-white"></div>
               </div>
-              <!-- Add Pagination -->
-              <div class="swiper-pagination swiper-pagination-white"></div>
-              <!-- Add Arrows -->
-              <div class="swiper-button-next swiper-button-white"></div>
-              <div class="swiper-button-prev swiper-button-white"></div>
             </div>
           </div>
+          <div class="sppb-addon sppb-addon-module ">
+               <div class="sppb-addon-content">
+                 <div class="custom">
+                   <ul class="banner-mod columns-2 padding-0">
+                     <li class="item">
+                       <a title="" href="#"><img src="images/banner3.jpg" alt=""></a>
+                     </li>
+                     <li class="item">
+                       <a title="" href="#"><img src="images/banner4.jpg" alt=""></a>
+                     </li>
+                   </ul>
+                 </div>
+               </div>
+             </div>
+          </div>
+
+        </div>
       </div>
     </div>
     <section id="scoll1" class="sppb-section section-padding">
       <div class="container">
+
         <div class="sppb-addon-container">
           <div class="sppb-addon sppb-addon-module si-extraslider-dev hot">
             <div class="sppb-addon-content">
@@ -273,7 +507,7 @@
                         <div class="item-wrap">
                           <div class="item-image">
                             <a class="img" href="#">
-                              <img src="images/1.jpg" alt="" title="">
+                              <img class="img-responsive" src="images/1.jpg" alt="" title="">
                             </a>
                             <a class="addtocart" href="#"> Подробно </a>
                           </div>
@@ -298,7 +532,7 @@
                         <div class="item-wrap">
                           <div class="item-image">
                             <a class="img" href="#">
-                              <img src="images/2.jpg" alt="" title="">
+                              <img class="img-responsive" src="images/2.jpg" alt="" title="">
                             </a>
                             <a class="addtocart" href="#"> Подробно </a>
                           </div>
@@ -323,7 +557,7 @@
                         <div class="item-wrap">
                           <div class="item-image">
                             <a class="img" href="#">
-                              <img src="images/3.jpg" alt="" title="">
+                              <img class="img-responsive" src="images/3.jpg" alt="" title="">
                             </a>
                             <a class="addtocart" href="#"> Подробно </a>
                           </div>
@@ -348,7 +582,32 @@
                         <div class="item-wrap">
                           <div class="item-image">
                             <a class="img" href="#">
-                              <img src="images/4.jpg" alt="" title="">
+                              <img class="img-responsive" src="images/4.jpg" alt="" title="">
+                            </a>
+                            <a class="addtocart" href="#"> Подробно </a>
+                          </div>
+                          <div class="item-info">
+                            <h3 class="item-title">
+                              <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit</a>
+                            </h3>
+                            <div class="item-content">
+                              <div class="main-price">
+                                <div class="item-price">
+                                  <span class="price">$111.00</span>
+                                  <span class="old-price">$400.00</span>
+                                </div>
+                                <div class="price-sale">
+                                  <span class="num">72%</span>
+                                  <span class="text">Скидка</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="item-wrap">
+                          <div class="item-image">
+                            <a class="img" href="#">
+                              <img class="img-responsive" src="images/1.jpg" alt="" title="">
                             </a>
                             <a class="addtocart" href="#"> Подробно </a>
                           </div>
@@ -405,165 +664,6 @@
         </div>
       </div>
     </section>
-    <section id="scoll2" class="sppb-section ">
-      <div id="container" class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="sppb-addon-container">
-              <div class="clearfix">
-                <div class="sppb-addon sppb-addon-module listing-tab-dev color1">
-                  <div class="sppb-addon-content">
-                    <h3 class="sppb-addon-title">
-                      <span>Автомобили</span>
-                    </h3>
-                    <div class="sj-responsive-listing">
-                      <div class="respl-wrap cf">
-                        <div class="respl-header">
-                          <div class="respl-sort-view">
-                            <div class="respl-sort">
-                              <div class="sort-wrap respl-group">
-                                <ul class="respl-option" data-option-key="sortBy">
-                                  <li class="sel">
-                                    <a href="#" data-rl_value="name">Бортовые автомобили</a>
-                                  </li>
-                                  <li class="">
-                                    <a href="#" data-rl_value="product_price">Седельные тягочи</a>
-                                  </li>
-                                  <li class="">
-                                    <a href="#" data-rl_value="product_date_added">Самосвалы</a>
-                                  </li>
-                                  <li class="">
-                                    <a href="#" data-rl_value="product_date_added">Шасси</a>
-                                  </li>
-                                  <li class="">
-                                    <a href="#" data-rl_value="product_date_added">Автокраны</a>
-                                  </li>
-                                  <li class="">
-                                    <a href="#" data-rl_value="product_date_added">Спецтехника</a>
-                                  </li>
-                                  <li class="">
-                                    <a href="#" data-rl_value="product_date_added">Автобетоносмесители</a>
-                                  </li>
-                                </ul>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="respl-items isotope">
-                          <div class="respl-item  category-2 isotope-item">
-                            <div class="item-inner">
-                              <div class="item-image cf">
-                                <a class="img" href="#" title="">
-                                  <img   src="images/k1.jpg" alt="Burger King" title="КАМАЗ-4308">
-                                </a>
-                                <a class="addtocart" href="#">Подробно</a>
-                              </div>
-                              <div class="item-info">
-                                <h3 class="item-title">
-                                  <a href="#" title="Burger King">КАМАЗ-4308</a>
-                                </h3>
-                                <div class="main-price">
-                                  <div class="item-price">
-                                    <span class="price">$111.00</span>
-      														  <span class="old-price">$400.00</span>
-      													  </div>
-                                  <div class="price-sale">
-                      							<span class="num">72%</span>
-                      							<span class="text">Off</span>
-                      						</div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="respl-item  category-2 isotope-item">
-                            <div class="item-inner">
-                              <div class="item-image cf">
-                                <a class="img" href="#" title="">
-                                  <img   src="images/k2.jpg" alt="Burger King" title="Камаз-5308g">
-                                </a>
-                                <a class="addtocart" href="#">Подробно</a>
-                              </div>
-                              <div class="item-info">
-                                <h3 class="item-title">
-                                  <a href="#" title="Burger King">Камаз-5308</a>
-                                </h3>
-                                <div class="main-price">
-                                  <div class="item-price">
-                                    <span class="price">$111.00</span>
-                                    <span class="old-price">$400.00</span>
-                                  </div>
-                                  <div class="price-sale">
-                                    <span class="num">72%</span>
-                                    <span class="text">Off</span>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="respl-item  category-2 isotope-item">
-                            <div class="item-inner">
-                              <div class="item-image cf">
-                                <a class="img" href="#" title="">
-                                  <img   src="images/k3.jpg" alt="Burger King" title="Камаз-43114">
-                                </a>
-                                <a class="addtocart" href="#">Подробно</a>
-                              </div>
-                              <div class="item-info">
-                                <h3 class="item-title">
-                                  <a href="#" title="Burger King">Камаз-43114</a>
-                                </h3>
-                                <div class="main-price">
-                                  <div class="item-price">
-                                    <span class="price">$111.00</span>
-                                    <span class="old-price">$400.00</span>
-                                  </div>
-                                  <div class="price-sale">
-                                    <span class="num">72%</span>
-                                    <span class="text">Off</span>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="respl-item  category-2 isotope-item">
-                            <div class="item-inner">
-                              <div class="item-image cf">
-                                <a class="img" href="#" title="">
-                                  <img   src="images/k4.jpg" alt="Burger King" title="Камаз-43118">
-                                </a>
-                                <a class="addtocart" href="#">Подробно</a>
-                              </div>
-                              <div class="item-info">
-                                <h3 class="item-title">
-                                  <a href="#" title="Burger King">Камаз-43118</a>
-                                </h3>
-                                <div class="main-price">
-                                  <div class="item-price">
-                                    <span class="price">$111.00</span>
-                                    <span class="old-price">$400.00</span>
-                                  </div>
-                                  <div class="price-sale">
-                                    <span class="num">72%</span>
-                                    <span class="text">Off</span>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="container text-center">
-        <a class="button" href="#">Посмотреть все товары</a>
-      </div>
-    </section>
     <section id="scoll3" class="sppb-section ">
       <div id="container" class="container">
         <div class="row">
@@ -602,102 +702,131 @@
                             </div>
                           </div>
                         </div>
-                        <div class="respl-items isotope">
-                          <div class="respl-item  category-2 isotope-item">
-                            <div class="item-inner">
-                              <div class="item-image cf">
-                                <a class="img" href="#" title="">
-                                  <img   src="images/m1.jpg" alt="Burger King" title="Burger King">
-                                </a>
-                                <a class="addtocart" href="#">Подробно</a>
-                              </div>
-                              <div class="item-info">
-                                <h3 class="item-title">
-                                  <a href="#" title="Burger King">АКОМ EFB 60 </a>
-                                </h3>
-                                <div class="main-price">
-                                  <div class="item-price">
-                                    <span class="price">$111.00</span>
-                                    <span class="old-price">$400.00</span>
-                                  </div>
-                                  <div class="price-sale">
-                                    <span class="num">72%</span>
-                                    <span class="text">Off</span>
+                        <div class="extraslider-inner">
+                          <div class="item active">
+                            <div class="line">
+                              <div class="item-wrap">
+                                <div class="item-image">
+                                  <a class="img" href="#">
+                                    <img class="img-responsive" src="images/m1.jpg" alt="" title="">
+                                  </a>
+                                  <a class="addtocart" href="#"> Подробно </a>
+                                </div>
+                                <div class="item-info">
+                                  <h3 class="item-title">
+                                    <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit</a>
+                                  </h3>
+                                  <div class="item-content">
+                                    <div class="main-price">
+                                      <div class="item-price">
+                                        <span class="price">$111.00</span>
+                                        <span class="old-price">$400.00</span>
+                                      </div>
+                                      <div class="price-sale">
+                                        <span class="num">72%</span>
+                                        <span class="text">Скидка</span>
+                                      </div>
+                                    </div>
                                   </div>
                                 </div>
                               </div>
-                            </div>
-                          </div>
-                          <div class="respl-item  category-2 isotope-item">
-                            <div class="item-inner">
-                              <div class="item-image cf">
-                                <a class="img" href="#" title="">
-                                  <img   src="images/m2.jpg" alt="АКОМ EFB 60 " title="АКОМ EFB 60 ">
-                                </a>
-                                <a class="addtocart" href="#">Подробно</a>
-                              </div>
-                              <div class="item-info">
-                                <h3 class="item-title">
-                                  <a href="#" title="Burger King">Burger King</a>
-                                </h3>
-                                <div class="main-price">
-                                  <div class="item-price">
-                                    <span class="price">$111.00</span>
-                                    <span class="old-price">$400.00</span>
-                                  </div>
-                                  <div class="price-sale">
-                                    <span class="num">72%</span>
-                                    <span class="text">Off</span>
+                              <div class="item-wrap">
+                                <div class="item-image">
+                                  <a class="img" href="#">
+                                    <img class="img-responsive" src="images/m2.jpg" alt="" title="">
+                                  </a>
+                                  <a class="addtocart" href="#"> Подробно </a>
+                                </div>
+                                <div class="item-info">
+                                  <h3 class="item-title">
+                                    <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit</a>
+                                  </h3>
+                                  <div class="item-content">
+                                    <div class="main-price">
+                                      <div class="item-price">
+                                        <span class="price">$111.00</span>
+                                        <span class="old-price">$400.00</span>
+                                      </div>
+                                      <div class="price-sale">
+                                        <span class="num">72%</span>
+                                        <span class="text">Скидка</span>
+                                      </div>
+                                    </div>
                                   </div>
                                 </div>
                               </div>
-                            </div>
-                          </div>
-                          <div class="respl-item  category-2 isotope-item">
-                            <div class="item-inner">
-                              <div class="item-image cf">
-                                <a class="img" href="#" title="">
-                                  <img   src="images/m3.jpg" alt="АКОМ EFB 60" title="АКОМ EFB 60">
-                                </a>
-                                <a class="addtocart" href="#">Подробно</a>
-                              </div>
-                              <div class="item-info">
-                                <h3 class="item-title">
-                                  <a href="#" title="Burger King">АКОМ EFB 60</a>
-                                </h3>
-                                <div class="main-price">
-                                  <div class="item-price">
-                                    <span class="price">$111.00</span>
-                                    <span class="old-price">$400.00</span>
-                                  </div>
-                                  <div class="price-sale">
-                                    <span class="num">72%</span>
-                                    <span class="text">Off</span>
+                              <div class="item-wrap">
+                                <div class="item-image">
+                                  <a class="img" href="#">
+                                    <img class="img-responsive" src="images/m3.jpg" alt="" title="">
+                                  </a>
+                                  <a class="addtocart" href="#"> Подробно </a>
+                                </div>
+                                <div class="item-info">
+                                  <h3 class="item-title">
+                                    <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit</a>
+                                  </h3>
+                                  <div class="item-content">
+                                    <div class="main-price">
+                                      <div class="item-price">
+                                        <span class="price">$111.00</span>
+                                        <span class="old-price">$400.00</span>
+                                      </div>
+                                      <div class="price-sale">
+                                        <span class="num">72%</span>
+                                        <span class="text">Скидка</span>
+                                      </div>
+                                    </div>
                                   </div>
                                 </div>
                               </div>
-                            </div>
-                          </div>
-                          <div class="respl-item  category-2 isotope-item">
-                            <div class="item-inner">
-                              <div class="item-image cf">
-                                <a class="img" href="#" title="">
-                                  <img   src="images/m4.jpg" alt="АКОМ EFB 60" title="АКОМ EFB 60">
-                                </a>
-                                <a class="addtocart" href="#">Подробно</a>
-                              </div>
-                              <div class="item-info">
-                                <h3 class="item-title">
-                                  <a href="#" title="Burger King">АКОМ EFB 60</a>
-                                </h3>
-                                <div class="main-price">
-                                  <div class="item-price">
-                                    <span class="price">$111.00</span>
-                                    <span class="old-price">$400.00</span>
+                              <div class="item-wrap">
+                                <div class="item-image">
+                                  <a class="img" href="#">
+                                    <img class="img-responsive" src="images/m4.jpg" alt="" title="">
+                                  </a>
+                                  <a class="addtocart" href="#"> Подробно </a>
+                                </div>
+                                <div class="item-info">
+                                  <h3 class="item-title">
+                                    <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit</a>
+                                  </h3>
+                                  <div class="item-content">
+                                    <div class="main-price">
+                                      <div class="item-price">
+                                        <span class="price">$111.00</span>
+                                        <span class="old-price">$400.00</span>
+                                      </div>
+                                      <div class="price-sale">
+                                        <span class="num">72%</span>
+                                        <span class="text">Скидка</span>
+                                      </div>
+                                    </div>
                                   </div>
-                                  <div class="price-sale">
-                                    <span class="num">72%</span>
-                                    <span class="text">Off</span>
+                                </div>
+                              </div>
+                              <div class="item-wrap">
+                                <div class="item-image">
+                                  <a class="img" href="#">
+                                    <img class="img-responsive" src="images/m1.jpg" alt="" title="">
+                                  </a>
+                                  <a class="addtocart" href="#"> Подробно </a>
+                                </div>
+                                <div class="item-info">
+                                  <h3 class="item-title">
+                                    <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit</a>
+                                  </h3>
+                                  <div class="item-content">
+                                    <div class="main-price">
+                                      <div class="item-price">
+                                        <span class="price">$111.00</span>
+                                        <span class="old-price">$400.00</span>
+                                      </div>
+                                      <div class="price-sale">
+                                        <span class="num">72%</span>
+                                        <span class="text">Скидка</span>
+                                      </div>
+                                    </div>
                                   </div>
                                 </div>
                               </div>
@@ -870,12 +999,12 @@
       </div>
     </section>
     <section class="sppb-section exp-advice">
-      <div class="container-fluid text-center">
+      <div class="container text-center">
         <div class="sppb-row row">
             <h2 class="header-block">Новости компании</h2>
             <div class="sppb-addon-content col-sm-3">
                <span class="sppb-img-container">
-                 <img class="img-responsive" src="images/111.jpg" alt="RENAULT LOGAN ">
+                 <img class="img-responsive" src="images/sale.jpg" alt="RENAULT LOGAN ">
                </span>
                <h2 class="sppb-addon-title">Lorem ipsum dolor sit amet, consectetur</h2>
                <div class="sppb-addon-text">
@@ -884,7 +1013,7 @@
              </div>
              <div class="sppb-addon-content col-sm-3">
                <span class="sppb-img-container">
-                 <img class="img-responsive" src="images/2222.jpg" alt="FINANCING FOR UP TO 84 MONTHS">
+                 <img class="img-responsive" src="images/sale.jpg" alt="FINANCING FOR UP TO 84 MONTHS">
                </span>
                <h2 class="sppb-addon-title">Lorem ipsum dolor sit amet, consectetur</h2>
                <div class="sppb-addon-text">
@@ -893,7 +1022,7 @@
              </div>
              <div class="sppb-addon-content col-sm-3">
                <span class="sppb-img-container">
-                 <img class="img-responsive" src="images/3333.jpg" alt="FINANCING FOR UP TO 84 MONTHS">
+                 <img class="img-responsive" src="images/sale.jpg" alt="FINANCING FOR UP TO 84 MONTHS">
                </span>
                <h2 class="sppb-addon-title">Lorem ipsum dolor sit amet, consectetur</h2>
                <div class="sppb-addon-text">
@@ -902,7 +1031,7 @@
              </div>
              <div class="sppb-addon-content col-sm-3">
                <span class="sppb-img-container">
-                 <img class="img-responsive" src="images/4444.jpg" alt="FINANCING FOR UP TO 84 MONTHS">
+                 <img class="img-responsive" src="images/sale.jpg" alt="FINANCING FOR UP TO 84 MONTHS">
                </span>
                <h2 class="sppb-addon-title">Lorem ipsum dolor sit amet, consectetur</h2>
                <div class="sppb-addon-text">
