@@ -8,17 +8,17 @@
                     width = carousel.innerWidth();
 
                 if (width >= 900) {
-                    width = 185;
+                    width = width/4;
                 }
                 if (width >= 600) {
-                    width = 185;
+                    width = width/3;
                 }
                 if (width >= 350) {
-                    width = 185;
+                    width = width/2;
                 }
 
                 carousel.jcarousel('items').css('width', Math.ceil(width) + 'px');
-                
+
             })
             .jcarousel({
                 wrap: 'circular'
