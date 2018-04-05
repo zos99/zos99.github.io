@@ -1,0 +1,67 @@
+/* Large desktops and laptops */
+@media (min-width: 1200px){
+
+}
+/* Portrait tablets and medium desktops */
+@media (max-width: 1199px) and (min-width: 992px) {
+
+}
+/* Portrait tablets and small desktops */
+@media (max-width: 991px) and (min-width: 768px) {
+
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+  .page-header {
+
+    .logo {
+      left: 5%;
+    }
+  }
+}
+
+/* Landscape phones and smaller */
+@media (max-width: 480px) {
+  .page-header {
+    background: url("../images_tmpl/mobile-bg.jpg") 0 124px no-repeat;
+    .logo {
+      left: 5%;
+    }
+    .slogan {
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 386px;
+      transform: translate(0,0);
+      background: #000;
+      padding-top: 20px;
+
+      p {
+        margin: 0 5%;
+      }
+      .slogan__first {
+        font-size: 33px;
+      }
+      .slogan__second {
+        font-size: 55px;
+      }
+      .slogan__third {
+        font-size: 21px;
+        line-height: 55px;
+      }
+      .slogan__fourth {
+        font-size: 33px;
+      }
+    }
+    .button--red {
+      padding-left: 30px;
+      margin: 0 5%;
+      font-size: 13px;
+    }
+    #popup__toggle {
+      bottom: 135px;
+      left: 40%;
+    }
+  }
+}
