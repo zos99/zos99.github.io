@@ -4,7 +4,7 @@ module.exports = function(grunt) {
     concat: {
      dist:
       {
-        src: ['styles/mixins.scss','styles/reset.scss', 'styles/style.scss','styles/mediaquares.scss'],
+        src: ['fonts.scss','styles/mixins.scss','styles/reset.scss', 'styles/style.scss','styles/mediaquares.scss'],
         dest: 'styles/main.scss'
       },
     },
