@@ -1,69 +1,4 @@
 @charset "UTF-8";
-@font-face {
-  font-family: 'Roboto';
-  src: url("../fonts/Roboto-BlackItalic.ttf");
-  font-weight: Black;
-  font-style: italic; }
-@font-face {
-  font-family: 'Roboto';
-  src: url("../fonts/Roboto-Black.ttf");
-  font-weight: Black;
-  font-style: normal; }
-@font-face {
-  font-family: 'Roboto';
-  src: url("../fonts/Roboto-Bold.ttf");
-  font-weight: bold;
-  font-style: normal; }
-@font-face {
-  font-family: 'Roboto';
-  src: url("../fonts/Roboto-BoldItalic.ttf");
-  font-weight: bold;
-  font-style: italic; }
-@font-face {
-  font-family: 'Roboto';
-  src: url("../fonts/Roboto-Italic.ttf");
-  font-weight: normal;
-  font-style: italic; }
-@font-face {
-  font-family: 'Roboto';
-  src: url("../fonts/Roboto-Italic.ttf");
-  font-weight: normal;
-  font-style: italic; }
-@font-face {
-  font-family: 'Roboto';
-  src: url("../fonts/Roboto-Light.ttf");
-  font-weight: 100;
-  font-style: normal; }
-@font-face {
-  font-family: 'Roboto';
-  src: url("../fonts/Roboto-LightItalic.ttf");
-  font-weight: 100;
-  font-style: italic; }
-@font-face {
-  font-family: 'Roboto';
-  src: url("../fonts/Roboto-Medium.ttf");
-  font-weight: 500;
-  font-style: normal; }
-@font-face {
-  font-family: 'Roboto';
-  src: url("../fonts/Roboto-MediumItalic.ttf");
-  font-weight: 500;
-  font-style: italic; }
-@font-face {
-  font-family: 'Roboto';
-  src: url("../fonts/Roboto-Regular.ttf");
-  font-weight: 400;
-  font-style: normal; }
-@font-face {
-  font-family: 'Roboto';
-  src: url("../fonts/Roboto-Thin.ttf");
-  font-weight: 200;
-  font-style: normal; }
-@font-face {
-  font-family: 'Roboto';
-  src: url("../fonts/Roboto-ThinItalic.ttf");
-  font-weight: 200;
-  font-style: italic; }
 html, body, div, span, applet,
 object, iframe, h1, h2, h3, h4,
 h5, h6, p, blockquote, pre, a,
@@ -6438,24 +6373,24 @@ a {
       height: 390px;
       transform: translate(0, 0);
       background: #000;
-      padding-top: 20px; }
+      padding-top: 5px; }
       .page-header .slogan p {
         margin: 0 5%; }
       .page-header .slogan .slogan__first {
-        font-size: 33px; }
+        font-size: 31px; }
       .page-header .slogan .slogan__second {
-        font-size: 55px; }
+        font-size: 52px; }
       .page-header .slogan .slogan__third {
         font-size: 21px;
         line-height: 55px; }
       .page-header .slogan .slogan__fourth {
-        font-size: 33px; }
+        font-size: 31px; }
     .page-header .button--red {
       padding-left: 30px;
       margin: 0 5%;
       font-size: 13px; }
     .page-header #popup__toggle {
-      bottom: 135px;
+      bottom: 155px;
       left: 40%; }
     .page-header .inner {
       width: 100px;
