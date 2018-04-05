@@ -137,7 +137,7 @@ a {
     margin: 0;
     a {
       color: #ffff00;
-      font-size: 33px;
+      font-size: 21px;
       text-transform: none;
       text-decoration: underline;
       &:hover {
@@ -168,6 +168,11 @@ a {
     padding-left: 100px;
     line-height: 70px;
   }
+  .slogan__sixth {
+    color: #fff200;
+    line-height: 50px;
+    font-size: 33px;
+  }
 }
 .button--red {
   padding-left: 50px;
@@ -188,16 +193,12 @@ a {
 }
 /*-------анимированная кнопка--------*/
 #popup__toggle {
-  bottom: 39px;
+  bottom: 81px;
   left: 12%;
   position: fixed;
   z-index: 999;
 }
-.img-circle {
 
-  box-sizing:content-box;
-  -webkit-box-sizing:content-box;
-}
 .circlephone{
   box-sizing:content-box;
   -webkit-box-sizing:content-box;
