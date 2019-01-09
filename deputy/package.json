@@ -1,0 +1,25 @@
+{
+  "name": "deputy",
+  "version": "1.0.0",
+  "description": "http://zos99.github.io/deputy/index.html",
+  "main": "gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "zos99.github.io"
+  },
+  "author": "Z.O.S.",
+  "license": "ISC",
+  "devDependencies": {
+    "bootstrap-sass": "3.3.7",
+    "grunt": "^1.0.1",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-imagemin": "^3.1.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-uncss": "0.7.1"
+  }
+}
