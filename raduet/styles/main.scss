@@ -89,6 +89,9 @@ html, body {
   height: 100%;
   width: 100%;
 }
+body {
+  min-width: 360px;
+}
 
 @import 'bootstrap-custom';
 .nopadding {
@@ -125,6 +128,7 @@ a {
   top: 15px;
   left: 10%;
   z-index: 1;
+  padding-top: 15px;
 }
 .page-header {
   background: url("../images_tmpl/bg.jpg") center center no-repeat;
@@ -152,10 +156,6 @@ a {
     background: $gray-base none repeat scroll 0 0;
     height: 125px;
 
-    .logo {
-      padding-top: 15px;
-
-    }
     .logo-miny {
         position: absolute;
         display: none;
@@ -469,6 +469,10 @@ opacity: .1;}}
   	}
   }
 /*-------------------------main-menu-----------------------------*/
+.transbg {
+    background-color: rgba(22, 22, 22, 0.7) !important;
+}
+
 .fixed {
   position:fixed!important;
   top:-2px;
@@ -568,6 +572,32 @@ a {
 
 /*------------------------------*/
 }
+/*--------footer---------------*/
+.footer {
+  background: #d3dbe2;
+  padding: 31px 0 110px 0;
+  .footer__link {
+    font-size: 30px;
+    color: #0042b3;
+  }
+  .left-line {
+    border-right: 2px solid #000;
+  }
+  .footer__section {
+    h3 {
+      text-transform: uppercase;
+      font-size: 20px;
+    }
+    img {
+      margin: auto;
+      padding: 20px;
+    }
+    p {
+      font-weight: bold;
+      font-size: 18px;
+    }
+  }
+}
 
 /* Large desktops and laptops */
 @media (min-width: 1200px){
@@ -579,7 +609,15 @@ a {
 }
 /* Portrait tablets and small desktops */
 @media (max-width: 991px) and (min-width: 768px) {
-
+  .logo {
+    top: 40px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .main-menu {
+    padding-top: 80px;
+    padding-bottom: 0;
+  }
 }
 
 /* Landscape phones and portrait tablets */
@@ -606,7 +644,7 @@ a {
       height: 390px;
       transform: translate(0,0);
       background: #000;
-      padding-top: 5px;
+      //padding-top: 5px;
 
       p {
         margin: 0 5%;

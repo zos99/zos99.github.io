@@ -8,7 +8,15 @@
 }
 /* Portrait tablets and small desktops */
 @media (max-width: 991px) and (min-width: 768px) {
-
+  .logo {
+    top: 40px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .main-menu {
+    padding-top: 80px;
+    padding-bottom: 0;
+  }
 }
 
 /* Landscape phones and portrait tablets */
@@ -35,7 +43,7 @@
       height: 390px;
       transform: translate(0,0);
       background: #000;
-      padding-top: 5px;
+      //padding-top: 5px;
 
       p {
         margin: 0 5%;
