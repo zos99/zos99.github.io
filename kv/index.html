@@ -15,21 +15,776 @@
     <!-- Текст заголовка веб-страницы -->
     <title>Квартирный вопрос</title>
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   </head>
   <body>
     <div id="container" class="container">
-      <header class="header">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </header>
-      <main>
-        <section id="slide-1" class="homeSlide wrapper" data-section-name="home">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </section>
-        <footer id="footer">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </footer>
-        <a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
-      </main>
+      <div class="wrapper">
+        <header class="header">
+          <div class="header-top-panel">
+        		<span class="logo">
+        			<a class="ir" href="/">kv</a>
+        		</span>
+          	<div class="adlabs-tracking-code">
+          			<div class="adlabs-tracking-code-inner">
+          				Ваш ID: <span class="uid">199 661 192</span>
+          			</div>
+          	</div>
+            <ul class="header-top-menu">
+              <li><a href="/text_pages/shops/">Магазины</a></li>
+              <li class="hide_on_small"><a href="/dostavka/">Доставка</a></li>
+              <li>
+                <div class="info-select">
+                  <div class="info-select-inner">
+                    <span class="drop-item">
+                      <span class="drop-item-value">Информация</span>
+                      <span class="drop-down-list">
+                        <a class="drop-down-list-item">Магазины</a>
+                        <a class="drop-down-list-item">Компания</a>
+                        <a class="drop-down-list-item">Доставка</a>
+                        <a class="drop-down-list-item">Сборка</a>
+                        <a class="drop-down-list-item">Оплата</a>
+                        <a class="drop-down-list-item">Возврат и обмен</a>
+                        <a class="drop-down-list-item">Статьи</a>
+                        <a class="drop-down-list-item">Контакты</a>
+                      </span>
+                    </span>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <div class="location-select">
+        			<div class="location-select-inner">
+        				Ваш город
+        				<span class="location-text delivery_city" data-target="#cities_form" data-toggle="modal">
+        					<em id="location_name">Севастополь</em>
+        				</span>
+        			</div>
+            </div>
+          </div>
+          <!--Поиск-->
+          <div class="fast-search-form">
+        		<form action="/search/" method="get">
+        			<span class="typeahead__cancel-button"></span><input type="search" name="q" value="" placeholder="Найдите нужный товар" autocomplete="off">
+        			<button type="submit"><i class="search-icon"></i></button>
+        		</form>
+        	</div>
+          <!--/Поиск-->
+          <div class="header-information-block phones">
+            <div id="_telephone1" class="numbers-block-container">
+              <div class="main-numbers-block _header">
+                <p class="phone_number_msk"><span class="big">+7 978 762 57 86<br> +7 978 829 20 77</span></p>
+              </div>
+            </div>
+          </div>
+          <!--Корзина-->
+          <div class="cart-block">
+            <span class="cart-block-info"></span>
+          </div>
+            <!--Меню-->
+          <div class="top-category-menu-wrap">
+          	<div class="top-category-menu-inner">
+                <ul class="megamenu">
+                  <li class="megamenu--item"><a href="#">Кухня</a></li>
+                  <li class="megamenu--item"><a href="#">Гостиная</a></li>
+                  <li class="megamenu--item"><a href="#">Спальня</a></li>
+                  <li class="megamenu--item"><a href="#">Детская</a></li>
+                  <li class="megamenu--item"><a href="#">Прихожая</a></li>
+                  <li class="megamenu--item"><a href="#">Мебель для гостиниц</a></li>
+                  <li class="megamenu--item"><a href="#">Мебель для детского сада</a></li>
+                  <li class="megamenu--item"><a href="#">Офисная мебель</a></li>
+                </ul>
+            </div>
+          </div>
+        </header>
+        <div class="middle clearfix">
+          <div class="g-6 element-in-grid-6">
+            <div class="g-col-1 g-span-2 col-for-categories">
+              <div class="main-categories">
+                <a href="#">
+                  <div class="category">
+                    <div class="title c1"><span>Мягкая мебель</span></div>
+                  </div>
+                </a>
+                <a href="#">
+                  <div class="category">
+                    <div class="title c2"><span>Мебель из массива дерева</span></div>
+                  </div>
+                </a>
+                <a href="#">
+                  <div class="category">
+                    <div class="title c3"><span>Столы</span></div>
+                  </div>
+                </a>
+                <a href="#">
+                  <div class="category">
+                    <div class="title c4"><span>Шкафы - купе</span></div>
+                  </div>
+                </a>
+                <a href="#">
+                  <div class="category">
+                    <div class="title c5"><span>Матрасы</span></div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="g-col-3 g-span-4">
+              <!-- Swiper -->
+               <div class="swiper-container">
+                   <div class="swiper-wrapper">
+                     <div class="swiper-slide swiper-slide_left">
+                       <div class="position">
+                         <div class="title" data-swiper-parallax="-200">Квартирный вопрос</div>
+                         <div class="subtitle" data-swiper-parallax="-800">интернет - магазин мебели в Крыму<br> и Севастополе</div>
+                       </div>
+                     </div>
+                     <div class="swiper-slide swiper-slide_center">
+                       <div class="position">
+                         <div class="title" data-swiper-parallax="-200">Акция - скидка 10%</div>
+                         <div class="subtitle" data-swiper-parallax="-800">Оплати мебель сразу 100%<br> и получи скидку 10%</div>
+                       </div>
+                     </div>
+                     <div class="swiper-slide swiper-slide_right">
+                       <div class="position">
+                         <div class="title" data-swiper-parallax="-200">Акция - скидка 7%</div>
+                         <div class="subtitle" data-swiper-parallax="-800">Акция - скидка минус 7%<br> на второй товар</div>
+                       </div>
+                     </div>
+                 </div>
+                 <!-- Add Pagination -->
+                 <div class="swiper-pagination swiper-pagination-white"></div>
+                 <!-- Add Arrows -->
+                 <div class="swiper-button-next swiper-button-white"></div>
+                 <div class="swiper-button-prev swiper-button-white"></div>
+               </div>
+            </div>
+          </div>
+        </div>
+        <div class="advantages">
+          <div class="advantage advantage-1">
+            <a href="#">
+              <div class="banner banner-1">
+                <div><span class="fa fa-rocket">&nbsp;</span>
+                  <div class="inner">
+                    <h3>Бесплатная доставка</h3><span>при сумме покупки свыше 16000 рублей</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="advantage advantage-2">
+            <a href="#">
+              <div class="banner banner-2">
+                <div><span class="fa fa-award">&nbsp;</span>
+                  <div class="inner">
+                    <h3>Наличие гарантии</h3><span>на купленную мебель<br> на 1 год</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="advantage advantage-3">
+            <a href="#">
+              <div class="banner banner-3">
+                <div><span class="fa fa-gift">&nbsp;</span>
+                  <div class="inner">
+                    <h3>Наши акции</h3><span>Больше покупок больше бонусов</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="advantage advantage-4">
+            <a href="#">
+              <div class="banner banner-4">
+                <div><span class="fa fa-comment-dollar">&nbsp;</span>
+                  <div class="inner">
+                    <h3>РАССРОЧКА ПЛАТЕЖА</h3><span>на 4 месяца под 0%</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="clear_left"></div>
+        </div>
+        <div class="main-head-category season">
+          <h2>Интернет - магазин мебель "<span>К</span>вартирный <span>В</span>опрос" в Крыму и Севастополе</h2>
+        </div>
+        <ul class="filter-secondary__row filter-secondary__row_index">
+          <li class="filter-secondary__col">
+            <a href="#" class="filter-secondary__lnk">
+              <div class="filter-secondary__icon filter-secondary__icon--1"></div>
+              <div class="filter-secondary__category">Встраиваемая техника</div>
+            </a>
+          </li>
+          <li class="filter-secondary__col">
+            <a href="#" class="filter-secondary__lnk">
+              <div class="filter-secondary__icon filter-secondary__icon--2"></div>
+              <div class="filter-secondary__category">Комоды</div>
+            </a>
+          </li>
+          <li class="filter-secondary__col">
+            <a href="#" class="filter-secondary__lnk">
+              <div class="filter-secondary__icon filter-secondary__icon--3"></div>
+              <div class="filter-secondary__category">Кресла-качалка</div>
+            </a>
+          </li>
+          <li class="filter-secondary__col">
+            <a href="#" class="filter-secondary__lnk">
+              <div class="filter-secondary__icon filter-secondary__icon--4"></div>
+              <div class="filter-secondary__category">Компьютерные столы</div>
+            </a>
+          </li>
+          <li class="filter-secondary__col">
+            <a href="#" class="filter-secondary__lnk">
+              <div class="filter-secondary__icon filter-secondary__icon--5"></div>
+              <div class="filter-secondary__category">Прихожие в коридор</div>
+            </a>
+          </li>
+          <li class="filter-secondary__col">
+            <a href="#" class="filter-secondary__lnk">
+              <div class="filter-secondary__icon filter-secondary__icon--6"></div>
+              <div class="filter-secondary__category">Журнальные столики</div>
+            </a>
+          </li>
+        </ul>
+
+        <div class="top-cat">
+          <div class="top-cat_inner">
+            <div class="top-cat__left-block_inner">
+                <div class="top-cat__left-row_inner">
+                    <a class="top-cat__item_inner" href="#" style="background-image: url('images/5.jpg');">
+                        <div class="top-cat__caption_inner">Мебель для кухни</div>
+                    </a>
+                    <a class="top-cat__item_inner" href="#" style="background-image: url('images/3.jpg');">
+                        <div class="top-cat__caption_inner">Мебель для дачи</div>
+                    </a>
+                </div>
+                <div class="top-cat__left-row_inner">
+                    <a class="top-cat__item_inner" href="#" style="background-image: url('images/4.jpg');">
+                        <div class="top-cat__caption_inner">Мебель для детской</div>
+                    </a>
+                    <a class="top-cat__item_inner" href="#" style="background-image: url('images/2.jpg');">
+                        <div class="top-cat__caption_inner">Мебель для офиса</div>
+                    </a>
+
+                </div>
+            </div>
+            <div class="top-cat__right-block_inner">
+                <div class="top-cat__right-row_inner">
+                    <a class="top-cat__item_inner" href="#" style="background-image: url('images/6.jpg');">
+                        <div class="top-cat__caption_inner">Мебель для гостиниц</div>
+                    </a>
+                    <a class="top-cat__item_inner nomargin" href="#" style="background-image: url('images/7.jpg');">
+                        <div class="top-cat__caption_inner">Мебель для детсада</div>
+                    </a>
+                </div>
+                <div class="top-cat__right-row_inner">
+                    <a class="top-cat__item_inner" href="#" style="background-image: url('images/1.jpg');">
+                        <div class="top-cat__caption_inner">Мебель на заказ</div>
+                    </a>
+                    <a class="top-cat__item_inner nomargin" href="#" style="background-image: url('images/8.jpg');">
+                        <div class="top-cat__caption_inner">Мебель из дерева</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+            <div class="clear_left"></div>
+     </div>
+
+     <section class="sppb-section">
+         <div class="sppb-addon">
+           <h3 class="sppb-addon-title"><span>Горячие предложения</span></h3>
+           <div class="sj-extraslider">
+             <div class="extraslider-control">
+               <a class="button-prev" href="#"><i class="fa fa-caret-left" aria-hidden="true"></i></a>
+               <a class="button-next" href="#"><i class="fa fa-caret-right" aria-hidden="true"></i></a>
+             </div>
+
+              <div class="extraslider-inner owl-carousel owl-theme owl-loaded">
+                <div class="owl-stage-outer">
+                  <div class="owl-stage">
+                    <div class="owl-item active" >
+                      <div class="item">
+                        <div class="item-wrap style2">
+                          <div class="item-wrap-inner">
+                            <div class="item-image">
+                              <div class="item-img-info item-quick-view">
+                                <a href="#" title="Ema dipo laze"><img src="images-all/01.jpg" alt="" title=""></a>
+                                <a title="Quick View" class="sj_quickview_handler visible-lg" href="#"><i class="fa fa-search"></i></a>
+                              </div>
+
+                            </div>
+                            <div class="item-info">
+                              <div class="item-title">
+                                <a href="#" title="Эма дипо лени">Комод</a>
+                              </div>
+                              <div class="inforating">
+                                <div class="ratingbox" title="Еще не оценено"></div>
+                              </div>
+
+                              <div class="item-content">
+                                <div class="item-price">
+                                  <div class="PricesalesPrice vm-display vm-price-value">
+                                    <span class="PricesalesPrice">7000 руб.</span>
+                                  </div>
+
+                                </div>
+                              </div>
+                              <div class="item-addtocart">
+                                <div class="addtocart-area">
+                                  <div class="addtocart-bar">
+                                    <input type="submit" name="addtocart" class="addtocart-button" value="добавить в корзину" title="добавить в корзину">
+                                  </div>
+
+                                </div>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+
+                    </div>
+                    <div class="owl-item active" >
+                      <div class="item">
+                        <div class="item-wrap style2">
+                          <div class="item-wrap-inner">
+                            <div class="item-image">
+                              <div class="item-img-info item-quick-view">
+                                  <a href="#" title="Ema dipo laze"><img src="images-all/02.jpg" alt="" title=""></a>
+                                    <a title="Quick View" class="sj_quickview_handler visible-lg" href="#"><i class="fa fa-search"></i></a>
+                              </div>
+
+                            </div>
+                            <div class="item-info">
+                              <div class="item-title">
+                                <a href="#" title="Эма дипо лени">Комод</a>
+                              </div>
+                              <div class="inforating">
+                                <div class="ratingbox" title="Еще не оценено"></div>
+                              </div>
+                              <div class="item-content">
+                                <div class="item-price">
+                                  <div class="PricesalesPrice vm-display vm-price-value">
+                                    <span class="PricesalesPrice">7000 руб.</span>
+                                  </div>
+                                  <div class="PricediscountAmount vm-display vm-price-value">
+                                    <span class="PricediscountAmount">- 270 руб.</span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="item-addtocart">
+                                <div class="addtocart-area">
+                                  <div class="addtocart-bar">
+                                    <input type="submit" name="addtocart" class="addtocart-button" value="добавить в корзину" title="добавить в корзину">
+                                  </div>
+
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+
+                    </div>
+                    <div class="owl-item active" >
+                      <div class="item">
+                        <div class="item-wrap style2">
+                          <div class="item-wrap-inner">
+                            <div class="item-image">
+                              <div class="item-img-info item-quick-view">
+                                  <a href="#" title="Ema dipo laze"><img src="images-all/03.jpg" alt="" title=""></a>
+                                    <a title="Quick View" class="sj_quickview_handler visible-lg" href="#"><i class="fa fa-search"></i></a>
+                              </div>
+
+                            </div>
+                            <div class="item-info">
+                              <div class="item-title">
+                                <a href="#" title="Эма дипо лени">Пуф</a>
+                              </div>
+                              <div class="inforating">
+                                <div class="ratingbox" title="Еще не оценено"></div>
+                              </div>
+                              <div class="item-content">
+                                <div class="item-price">
+                                  <div class="PricesalesPrice vm-display vm-price-value">
+                                    <span class="PricesalesPrice">7000 руб.</span>
+                                  </div>
+                                  <div class="PricediscountAmount vm-display vm-price-value">
+                                    <span class="PricediscountAmount">- 270 руб.</span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="item-addtocart">
+                                <div class="addtocart-area">
+                                  <div class="addtocart-bar">
+                                    <input type="submit" name="addtocart" class="addtocart-button" value="добавить в корзину" title="добавить в корзину">
+                                  </div>
+
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+
+                    </div>
+                    <div class="owl-item active" >
+                      <div class="item">
+                        <div class="item-wrap style2">
+                          <div class="item-wrap-inner">
+                            <div class="item-image">
+                              <div class="item-img-info item-quick-view">
+                                  <a href="#" title="Ema dipo laze"><img src="images-all/04.jpg" alt="" title=""></a>
+                                    <a title="Quick View" class="sj_quickview_handler visible-lg" href="#"><i class="fa fa-search"></i></a>
+                              </div>
+
+                            </div>
+                            <div class="item-info">
+                              <div class="item-title">
+                                <a href="#" title="Эма дипо лени">Комод</a>
+                              </div>
+                              <div class="inforating">
+                                <div class="ratingbox" title="Еще не оценено"></div>
+                              </div>
+                              <div class="item-content">
+                                <div class="item-price">
+                                  <div class="PricesalesPrice vm-display vm-price-value">
+                                    <span class="PricesalesPrice">7000 руб.</span>
+                                  </div>
+
+                                </div>
+                              </div>
+                              <div class="item-addtocart">
+                                <div class="addtocart-area">
+                                  <div class="addtocart-bar">
+                                    <input type="submit" name="addtocart" class="addtocart-button" value="добавить в корзину" title="добавить в корзину">
+                                  </div>
+
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+
+                    </div>
+                    <div class="owl-item active" >
+                      <div class="item">
+                        <div class="item-wrap style2">
+                          <div class="item-wrap-inner">
+                            <div class="item-image">
+                              <div class="item-img-info item-quick-view">
+                                  <a href="#" title="Ema dipo laze"><img src="images-all/05.jpg" alt="" title=""></a>
+                                    <a title="Quick View" class="sj_quickview_handler visible-lg" href="#"><i class="fa fa-search"></i></a>
+                              </div>
+                            </div>
+                            <div class="item-info">
+                              <div class="item-title">
+                                <a href="#" title="Эма дипо лени">Комбинированное кресло </a>
+                              </div>
+                              <div class="inforating">
+                                <div class="ratingbox" title="Еще не оценено"></div>
+                              </div>
+                              <div class="item-content">
+                                <div class="item-price">
+                                  <div class="PricesalesPrice vm-display vm-price-value">
+                                    <span class="PricesalesPrice">7000 руб.</span>
+                                  </div>
+                                  <div class="PricediscountAmount vm-display vm-price-value">
+                                    <span class="PricediscountAmount">- 270 руб.</span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="item-addtocart">
+                                <div class="addtocart-area">
+                                  <div class="addtocart-bar">
+                                    <input type="submit" name="addtocart" class="addtocart-button" value="добавить в корзину" title="добавить в корзину">
+                                  </div>
+
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+
+
+             <ul class="nav-page">
+               <li class="page"><a class="button-page sel" href="#"> </a></li>
+               <li class="page"><a class="button-page" href="#"> </a></li>
+               <li class="page"><a class="button-page" href="#"> </a></li>
+             </ul>
+           </div>
+         </div>
+             <div class="clear_left"></div>
+   </section>
+    <div class="module  content-latest-news ">
+      <h3 class="sppb-addon-title sppb-addon-title--news"><span>Новости</span></h3>
+      <div class="modcontent clearfix">
+        <div id="sj_basic_news_1552418355241579193" class="sj-basic-news">
+          <div class="bs-items">
+            <div class="bs-item cf  ">
+              <div class="bs-item-main">
+                <div class="bs-image">
+                  <a href="#" title="Aenean auctor wisi et urn porttitor ">
+                    <img src="images-all/111.jpg" alt="" title=""></a>
+                    <div class="bs-readmore">
+                      <a href="#" title="Aenean auctor wisi et urn porttitor ">Read more</a>
+                    </div>
+                  </div>
+                  <div class="bs-content">
+                    <div class="bs-title">
+                      <a href="#" title="Aenean auctor wisi et urn porttitor ">Aenean auctor wisi et urn porttitor</a>
+                    </div>
+                    <div class="bs-cat-date">
+                      <span class="bs-date">Март 10, 2019</span>
+                      <span class="bs-cat-title">
+                        <a href="#" title="Matrix">Matrix</a>
+                      </span>
+                    </div>
+                    <div class="bs-description">
+                      Suspendisse at libero nisi aliquet vulputate vitae at velit. Aliquam eget arcu magna,
+                      vel congue dui. Nunc auctor mauris tempor leo aliquam vel porta ante sodales.
+                      Nulla facilisi. In accumsan mattis ...</div>
+                    </div>
+                  	</div>
+                  </div>
+                  <div class="bs-item cf  ">
+                    <div class="bs-item-main">
+                      <div class="bs-image">
+                        <a href="#" title="Aenean auctor wisi et urn porttitor ">
+                          <img src="images-all/222.jpg" alt="" title=""></a>
+                          <div class="bs-readmore">
+                            <a href="#" title="Aenean auctor wisi et urn porttitor ">Read more</a>
+                          </div>
+                        </div>
+                        <div class="bs-content">
+                          <div class="bs-title">
+                            <a href="#" title="Aenean auctor wisi et urn porttitor ">Aenean auctor wisi et urn porttitor</a>
+                          </div>
+                          <div class="bs-cat-date">
+                            <span class="bs-date">Март 10, 2019</span>
+                            <span class="bs-cat-title">
+                              <a href="#" title="Matrix">Matrix</a>
+                            </span>
+                          </div>
+                          <div class="bs-description">
+                            Suspendisse at libero nisi aliquet vulputate vitae at velit. Aliquam eget arcu magna,
+                            vel congue dui. Nunc auctor mauris tempor leo aliquam vel porta ante sodales.
+                            Nulla facilisi. In accumsan mattis ...</div>
+                          </div>
+                          </div>
+                        </div>
+                        <div class="bs-item cf  ">
+                          <div class="bs-item-main">
+                            <div class="bs-image">
+                              <a href="#" title="Aenean auctor wisi et urn porttitor ">
+                                <img src="images-all/333.jpg" alt="" title=""></a>
+                                <div class="bs-readmore">
+                                  <a href="#" title="Aenean auctor wisi et urn porttitor ">Read more</a>
+                                </div>
+                              </div>
+                              <div class="bs-content">
+                                <div class="bs-title">
+                                  <a href="#" title="Aenean auctor wisi et urn porttitor ">Aenean auctor wisi et urn porttitor</a>
+                                </div>
+                                <div class="bs-cat-date">
+                                  <span class="bs-date">Март 10, 2019</span>
+                                  <span class="bs-cat-title">
+                                    <a href="#" title="Matrix">Matrix</a>
+                                  </span>
+                                </div>
+                                <div class="bs-description">
+                                  Suspendisse at libero nisi aliquet vulputate vitae at velit. Aliquam eget arcu magna,
+                                  vel congue dui. Nunc auctor mauris tempor leo aliquam vel porta ante sodales.
+                                  Nulla facilisi. In accumsan mattis ...</div>
+                                </div>
+                                </div>
+                              </div>
+                </div>
+              </div>
+             </div>
+           </div>
+           <div id="yt_spotlight5">
+             <div id="bottom4" >
+                <div class="module  ">
+                   <div class="modcontent clearfix">
+                     <div class="poscenter">
+                       <div class="yt-socialbt">
+                         <a data-placement="top" target="_blank" class="sb facebook default  min " title="" href="#">
+                           <i class="fab fa-facebook-f"></i>
+
+                         </a>
+                       </div>
+                       <div class="yt-socialbt">
+                         <a data-placement="top" target="_blank" class="sb twitter default  min " title="" href="#">
+                           <i class="fab fa-twitter"></i>
+                         </a>
+                       </div>
+                       <div class="yt-socialbt">
+                         <a data-placement="top" target="_blank" class="sb google-plus default  min " title="" href="#">
+                           <i class="fab fa-google-plus-g"></i>
+                         </a>
+                       </div>
+                       <div class="yt-socialbt">
+                         <a data-placement="top" target="_blank" class="sb pinterest default  min " title="" href="#">
+                           <i class="fab fa-instagram"></i>
+                         </a>
+                       </div>
+                       <div class="yt-socialbt">
+                         <a data-placement="top" target="_blank" class="sb rss default  min " title="" href="#">
+                           <i class="fa fa-rss"></i>
+                         </a>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+               <div id="bottom5">
+                 <div class="module  newsletter ">
+                   <div class="modcontent clearfix">
+                     <div class="acymailing_module newsletter" id="acymailing_module_formAcymailing90011">
+                       <div class="acymailing_fulldiv" id="acymailing_fulldiv_formAcymailing90011">
+                         <form id="formAcymailing90011" action="" onsubmit="" method="post" name="formAcymailing90011">
+                           <div class="acymailing_module_form">
+                             <div class="acymailing_introtext col-sm-6"><span class="fa fa-envelope">&nbsp;</span>
+                               <h3>ПОДПИШИТЕСЬ НА НАШУ РАССЫЛКУ</h3>
+                             </div>
+                               <table class="acymailing_form col-sm-6">
+                                 <tbody><tr>
+                                   <td class="acyfield_email acy_requiredField">
+                                     <input id="user_email_formAcymailing90011" class="inputbox" type="text" name="user[email]" value="Ваш e-mail" title="Ваш адрес электронной почты">
+                                   </td>
+                                   <td class="acysubbuttons">
+                                     <input class="button subbutton btn btn-primary" type="submit" value="Подписывайся" name="Submit">
+                                   </td>
+                                 </tr>
+                               </tbody>
+                             </table>
+
+                           </div>
+                         </form>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+
+           </div>
+
+
+
+      </div>
+
+       <div class="clear_left"></div>
     </div>
+
+    <section id="yt_spotlight6" class="block">
+      <div class="container-footer">
+        <div class="wrapper-footer">
+          <div id="bottom6" class="footer-item">
+            <div class="module  ">
+              <div class="modcontent clearfix">
+                <div class="logo-footer">&nbsp;</div>
+                <p>Подробнее о компании ⇢<br>
+                    Наши друзья ⇢ okno-sev.ru: окна, балконы, ролеты и ворота в Севастополе. </p>
+              </div>
+            </div>
+          </div>
+          <div id="bottom7" class="footer-item">
+            <div class="module  ">
+	    		    <h3 class="modtitle"><span class="modtitle-inner">Наши услуги</span></h3>
+              <div class="modcontent clearfix">
+                <ul class="menu ">
+                  <li class="item-0">
+                    <a href="#">Shipping Policy</a>
+                  </li>
+                  <li class="item-1">
+                    <a href="#">Compensation First</a>
+                  </li>
+                  <li class="item-2">
+                    <a href="/templates/joomla3/sj-maxshop/index.php/en/my-account">Наши услуги</a>
+                  </li>
+                  <li class="item-3">
+                    <a href="#">Return Policy</a>
+                  </li>
+                  <li class="item-4">
+                    <a href="#">Contact Us</a>
+                  </li>
+                </ul>
+	    </div>
+	</div>
+
+          </div>
+          <div id="bottom8" class="footer-item">
+            <div class="module  ">
+            	    		    <h3 class="modtitle"><span class="modtitle-inner">Купить в Севастополе</span></h3>
+            	    	    <div class="modcontent clearfix">
+
+            <ul class="block-content">
+            <li class="address"><span class="fa fa-home">&nbsp;</span>
+            <div class="inner">8901 Marmora Road, Glasgow</div>
+            </li>
+            <li class="phone"><span class="fa fa-mobile">&nbsp;</span>
+            <div class="inner">Telephone : 0123456789</div>
+            </li>
+            <li class="email"><span class="fa fa-envelope">&nbsp;</span>
+            <div class="inner">Email : <a href="mailto:contact@maxshop.com">contact@maxshop.com</a></div>
+            </li>
+            </ul>
+            <div class="block-payment"><a class="fa fa-cc-visa" href="#">&nbsp;</a> <a class="fa fa-cc-paypal" href="#">&nbsp;</a> <a class="fa fa-cc-mastercard" href="#">&nbsp;</a> <a class="fa fa-cc-amex" href="#">&nbsp;</a> <a class="fa fa-cc-discover" href="#">&nbsp;</a></div>
+            	    </div>
+            	</div>
+          </div>
+          <div id="bottom9" class="footer-item">
+            <div class="module  ">
+            	    		    <h3 class="modtitle"><span class="modtitle-inner">Купить в Ялте</span></h3>
+            	    	    <div class="modcontent clearfix">
+
+            <ul class="block-content">
+            <li class="address"><span class="fa fa-home">&nbsp;</span>
+            <div class="inner">8901 Marmora Road, Glasgow</div>
+            </li>
+            <li class="phone"><span class="fa fa-mobile">&nbsp;</span>
+            <div class="inner">Telephone : 0123456789</div>
+            </li>
+            <li class="email"><span class="fa fa-envelope">&nbsp;</span>
+            <div class="inner">Email : <a href="mailto:contact@maxshop.com">contact@maxshop.com</a></div>
+            </li>
+            </ul>
+            <div class="block-payment"><a class="fa fa-cc-visa" href="#">&nbsp;</a> <a class="fa fa-cc-paypal" href="#">&nbsp;</a> <a class="fa fa-cc-mastercard" href="#">&nbsp;</a> <a class="fa fa-cc-amex" href="#">&nbsp;</a> <a class="fa fa-cc-discover" href="#">&nbsp;</a></div>
+            	    </div>
+            	</div>
+          </div>
+
+        </div>
+      </div>
+       <div class="clear_left"></div>
+    </section>
+
+    <footer id="yt_footer" class="block">
+      <div id="yt_copyright" class="col-sm-12">
+        <div class="copyright">Copyright© 2014-2019 [ Мебель ].Все права защищены.</div>
+      </div>
+    </footer>
+    <a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+    <script src="https://code.jquery.com/jquery-3.0.0.js"></script>
+    <script type="text/javascript" src="js/swiper.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
   </body>
 </html>

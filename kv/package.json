@@ -11,9 +11,10 @@
     "url": "zos99.github.io"
   },
   "dependencies": {
-  "grunt-contrib-sass": "^1.0.0",
-  "grunt": "^1.0.1",
-  "bootstrap-sass": "3.3.7"
+    "bootstrap-sass": "3.3.7",
+    "grunt": "^1.0.1",
+    "grunt-contrib-sass": "^1.0.0",
+    "reset-css": "^4.0.1"
   },
   "author": "",
   "license": "ISC",
