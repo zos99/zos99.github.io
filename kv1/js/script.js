@@ -12,4 +12,7 @@ var swiper = new Swiper('.swiper-container', {
      loop: true
  });
 
- 
+ jQuery(document).ready(function(){
+  var $ = jQuery.noConflict();
+ $().UItoTop({ easingType: 'easeOutQuart' });
+ });

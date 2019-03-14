@@ -12,6 +12,30 @@
   text-align: center;
   min-width: 1002px;
 }
+#toTop {
+    display: none;
+    text-decoration: none;
+    position: fixed;
+    bottom: 100px;
+    right: 1%;
+    overflow: hidden;
+    z-index: 999;
+    width: 32px;
+    height: 32px;
+    border: none;
+    text-indent: 100%;
+    background: url("../images/arr1.png") no-repeat 0px 0px;
+}
+#toTopHover {
+    width: 32px;
+    height: 32px;
+    display: block;
+    overflow: hidden;
+    float: right;
+    opacity: 0;
+    -moz-opacity: 0;
+    filter: alpha(opacity=0);
+}
 .wrapper, .wrapper-footer {
   position: relative;
   box-sizing: border-box;
@@ -56,6 +80,14 @@
 .adlabs-tracking-code .adlabs-tracking-code-inner {
     line-height: 20px;
     font-weight: 400;
+    color: #444;
+}
+.adlabs-tracking-code .adlabs-tracking-code-inner a {
+  color: #444;
+  padding-right: 20px;
+}
+.adlabs-tracking-code .adlabs-tracking-code-inner a:hover {
+  color: $mainColor;
 }
 .header-top-menu {
     position: absolute;
@@ -81,7 +113,7 @@
     text-decoration: none;
 }
 .header-top-menu li a {
-    color: #000;
+    color: #444;
 }
 .header-top-menu li {
     display: inline-block;
@@ -117,7 +149,7 @@
     cursor: pointer;
 }
 .info-select-inner .drop-item .drop-item-value, .info-select-inner .drop-item .drop-item-value em {
-    color: #000;
+    color: #444;
     border-bottom-color: #000;
 }
 .drop-down-list {
@@ -160,12 +192,12 @@
 .location-text {
     display: inline-block;
     margin-left: 15px;
-    color: #000;
+    color: #444;
     cursor: pointer;
 }
 .location-text em {
     font-style: normal;
-    border-bottom: #000 dashed 1px;
+    border-bottom: #444 dashed 1px;
 }
 .fast-search-form {
     position: absolute;
@@ -865,7 +897,7 @@ transition: all 0.3s ease-in-out 0s;
           width: 40px;
           border-radius: 10px;
           padding: 0;
-          background: #222;
+          background: #444;
           margin: 0 5px;
         }
         .sel {
@@ -1507,13 +1539,7 @@ div.module {
 #yt_spotlight6 ul.menu li a {
     color: #444;
 }
-#yt_spotlight6 ul.menu li:before {
-    content: "\f101";
-    font-family: "fontAwesome";
-    display: block;
-    position: absolute;
-    left: 0;
-}
+
 #yt_spotlight6 ul.menu li {
     list-style: none;
     position: relative;
@@ -1541,4 +1567,57 @@ div.module {
 }
 .module_menu, div.module {
     margin: 0 0 30px;
+}
+.modcontent a, .modcontent p {
+  color: #444;
+  font-size: 16px;
+  line-height: 26px;
+}
+.modcontent a {
+  position: relative;
+}
+.modcontent a:hover {
+  color: $mainColor;
+}
+.modcontent a:after {
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: $mainColor;
+    height: 1px;
+    transition: all .5s;
+}
+.modcontent a:hover:after  {
+    width: 100%;
+}
+#yt_spotlight6 .module h3.modtitle {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0 0 12px;
+}
+#yt_spotlight6 ul.menu li:hover a {
+    color: $mainColor;
+}
+#yt_spotlight6 ul.block-content li .fa {
+    float: left;
+    line-height: 30px;
+    color: #ea3a3c;
+    font-size: 16px;
+}
+#yt_spotlight6 ul.block-content {
+    padding: 0;
+    margin: 0 0 35px;
+}
+#yt_spotlight6 ul.block-content li {
+    list-style: none;
+    line-height: 30px;
+}
+#yt_spotlight6 ul.block-content li.phone .fa {
+    font-size: 20px;
 }
