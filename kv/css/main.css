@@ -889,7 +889,6 @@ div.banner:hover h3, div.banner:hover span {
   padding-bottom: 10px; }
 
 .sppb-addon-title {
-  background: #f0f2f6 none repeat scroll 0 0;
   border-top: 2px solid #ea3a3c;
   color: #fff;
   font-size: 16px;
@@ -910,7 +909,6 @@ div.banner:hover h3, div.banner:hover span {
       background-position: 2px 2px; }
 
 .sppb-addon-title--news {
-  background: #f0f2f6 none repeat scroll 0 0;
   border-top: 2px solid #687b92;
   color: #fff;
   font-size: 16px;
