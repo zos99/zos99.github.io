@@ -1,0 +1,189 @@
+/*
+ * Skin for jPlayer Plugin (jQuery JavaScript Library)
+ * http://www.jplayer.org
+ *
+ * Skin Name: Blue Monday
+ *
+ * Copyright (c) 2010-2012 Happyworm Ltd
+ * Dual licensed under the MIT and GPL licenses.
+ *  - http://www.opensource.org/licenses/mit-license.php
+ *  - http://www.gnu.org/copyleft/gpl.html
+ *
+ * Author: Silvia Benvenuti
+ * Skin Version: 4.3 (jPlayer 2.2.0)
+ * Date: 19th November 2012
+ */
+
+div.jp-audio {
+	font-size:11px;
+	font-family:Arial;
+	line-height:14px;
+	color: #fff;
+	border:0;
+}
+div.jp-audio {
+	margin-bottom:24px;
+	padding:5px 10px;
+	border:0;
+	background:#2e2e2e;
+	border-bottom:#dfe1e7 solid 3px;
+}
+div.jp-interface {
+	position: relative;
+	background:#2e2e2e;
+	padding:0;
+
+}
+div.jp-audio div.jp-type-single div.jp-interface {height:30px;
+}
+div.jp-audio div.jp-type-playlist div.jp-interface {height:30px;
+}
+/* @group CONTROLS */
+div.jp-interface ul.jp-controls {
+	list-style-type:none;
+	margin:0;
+	padding: 0;
+	overflow:hidden;
+	height:30px;
+}
+div.jp-audio ul.jp-controls {padding:0;
+}
+div.jp-interface ul.jp-controls li {
+	display:inline-block;
+	float: left;
+}
+div.jp-interface ul.jp-controls a {
+	display:block;
+	overflow:hidden;
+	text-indent:-9999px;
+}
+
+a.jp-play,
+a.jp-pause {
+	width:16px;
+	height:16px;
+	margin:7px 0 0 7px;
+}
+
+a.jp-play {background: url(play.png) no-repeat left top;
+}
+a.jp-pause {background: url(pause.png) no-repeat left top;
+	display: none;
+}
+
+/* @end */
+
+/* @group progress bar */
+div.jp-progress {overflow:hidden;
+}
+div.jp-audio div.jp-progress {
+	position: absolute;
+	top:14px;
+	height:3px;
+	z-index:50;
+}
+div.jp-audio div.jp-type-single div.jp-progress {
+	left: 106px;
+    right: 100px;
+}
+div.jp-seek-bar {
+	background:#505050;
+	width:0px;
+	height:100%;
+	cursor: pointer;
+}
+div.jp-play-bar {
+	background:#888;
+	width:0px;
+	height:100%;
+}
+/* The seeking class is added/removed inside jPlayer */
+div.jp-seeking-bg {	/*background: url(progress_active.png) repeat-x left top;*/
+}
+
+/* @group volume controls */
+
+
+a.jp-mute,
+a.jp-unmute {
+	width:20px;
+	height:16px;
+	position:absolute;
+	right:65px;
+	top:7px;
+	z-index:10;
+}
+a.jp-mute {background: url(mute.png) no-repeat left top;
+}
+a.jp-unmute {
+	background: url(unmute.png) no-repeat left top;
+	display: none;
+}
+
+
+div.jp-volume-bar {
+	position: absolute;
+	overflow:hidden;
+	background:#505050;
+	width:52px;
+	height:3px;
+	cursor: pointer;
+}
+div.jp-audio div.jp-volume-bar {
+	top:14px;
+	right:9px;
+}
+div.jp-volume-bar-value {
+	background:#888;
+	width:0px;
+	height:3px;
+}
+
+/* @end */
+
+/* @group current time and duration */
+
+div.jp-audio div.jp-time-holder {
+	position:absolute;
+	top:8px;
+	z-index:20;
+	width:auto !important;
+}
+div.jp-audio div.jp-type-single div.jp-time-holder {
+	left:29px;
+	right:95px;
+}
+
+div.jp-current-time,
+div.jp-duration {
+	font-size:11px;
+	font-style:normal;
+	color:#fff;
+}
+div.jp-current-time {
+	display:inline-block;
+	color:#fff;
+}
+div.jp-duration {
+	display:inline-block;
+}
+
+/* @group NO SOLUTION error feedback */
+
+.jp-no-solution {
+	padding:5px;
+	font-size:12px;
+	background-color:#2e2e2e;
+	color:#fff;
+	display:none;
+}
+
+.jp-no-solution a {color:#fff;
+}
+.jp-no-solution span {
+	font-size:1em;
+	display:block;
+	text-align:center;
+	font-weight:bold;
+}
+/* @end */
