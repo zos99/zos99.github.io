@@ -92,6 +92,8 @@ li {
 .color {color:#6cb598;
 }
 h1,h2,h3,h4,h5.h6 {margin-top:0px;
+  font-weight: 600;
+color: #073a57;
 }
 .text-center {text-align:center;
 }
@@ -260,6 +262,18 @@ img {max-width:100%;
   top: 50px;
   left: 35%;
   z-index: 9999;
+  text-align: center;
+}
+.textareabig {
+  font-size: 35px;
+  font-weight: bold;
+  color: #073a57;
+  line-height: 30px;
+}
+.textareamidle {
+  font-size: 25px;
+  font-weight: 500;
+  color: #073a57;
 }
 #home {
 	color:#fff;
@@ -272,12 +286,14 @@ img {max-width:100%;
 	background: #e0e4e2;
 	background:rgba(224,228,226,0.9);
 	color: #ffffff;
+  border: 5px solid #357FAB;
 }
 #home [class*="brick"]:hover {background: #e0e4e2;
 }
 #home .odd {
 	background: #e0e4e2;
 	background:rgba(224,228,226,0.7);
+  border: 5px solid #2FAF6E;
 }
 #home .logo_container {
 	z-index: 2;
@@ -430,6 +446,9 @@ img {max-width:100%;
 #home .thumb .nav-hover {
   display: none;
 }
+.cube_box {
+    padding-top: 35px;
+}
 .cube_box .container  {
 	padding:0 30px 120px;
 }
@@ -552,13 +571,13 @@ nav.mobile_header {display:none!important;
 #page {overflow:hidden;
 }
 .separator-bg {
-	min-height:400px;
+	min-height:200px;
 }
 .separator-bg.set1 {background-image:url(../images/slide_bg/1.jpg);}
-.separator-bg.set2 {background-image:url(../images/slide_bg/2.jpg);}
-.separator-bg.set3 {background-image:url(../images/slide_bg/3.jpg);}
-.separator-bg.set4 {background-image:url(../images/slide_bg/4.jpg);}
-.separator-bg.set5 {background-image:url(../images/slide_bg/5.jpg);}
+.separator-bg.set2 {background-image:url(../images/slide_bg/1.jpg);}
+.separator-bg.set3 {background-image:url(../images/slide_bg/1.jpg);}
+.separator-bg.set4 {background-image:url(../images/slide_bg/1.jpg);}
+.separator-bg.set5 {background-image:url(../images/slide_bg/1.jpg);}
 
 
 .shortcode_button {
@@ -600,7 +619,7 @@ nav.mobile_header {display:none!important;
 .page_section header {
 	width: 100%;
 	overflow:hidden;
-	padding-bottom:65px;
+	padding-bottom:25px;
 }
 .page_section header div.container {
 	z-index:900;
@@ -615,7 +634,8 @@ nav.mobile_header {display:none!important;
 	padding:0 15px 0;
 	margin:0 0 34px;
 	text-align: center;
-	font-weight:300;
+	font-weight:600;
+  color: #073a57;
 	position:relative;
 }
 .page_section header p {
@@ -628,7 +648,7 @@ nav.mobile_header {display:none!important;
 /************ ABOUT SECTION ***********/
 .service {
 	margin: 0 0 40px;
-    text-align: center;
+  text-align: center;
 }
 .service .icon {
 	margin:0 auto 18px;
