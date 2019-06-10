@@ -494,7 +494,9 @@
     text-decoration: none;
     background-color: #f8f9fa;
 }
-
+#slider {
+	background: url('images-all/_mg_8595.jpg') left 50% top 50%; background-size: cover; height:550px; 
+}
 #copyrights a, .copyright-link {
 	color: #555;
 }
