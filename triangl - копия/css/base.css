@@ -1,3 +1,99 @@
+/*-----------------------------------------------------------------------------------
+
+	Theme Name: Canvas
+	Theme URI: http://themes.semicolonweb.com/html/canvas
+	Description: The Multi-Purpose Template
+	Author: SemiColonWeb
+	Author URI: http://themeforest.net/user/semicolonweb
+	Version: 5.0.3
+
+-----------------------------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+
+	- Basic
+	- Typography
+	- Basic Layout Styles
+	- Helper Classes
+	- Sections
+	- Columns & Grids
+	- Flex Slider
+	- Swiper Slider
+	- Top Bar
+	- Header
+		- Logo
+		- Primary Menu
+		- Mega Menu
+		- Top Search
+		- Top Cart
+		- Sticky Header
+		- Page Menu
+		- Side Header
+	- Side Panel
+	- Slider
+	- Page Title
+	- Content
+	- Portfolio
+	- Blog
+	- Shop
+	- Events
+	- Shortcodes
+		- Countdown
+		- Buttons
+		- Promo Boxes
+		- Featured Boxes
+		- Process Steps
+		- Styled Icons
+		- Toggles
+		- Accordions
+		- Tabs
+		- Side Navigation
+		- FAQ List
+		- Clients
+		- Testimonials
+		- Team
+		- Pricing Boxes
+		- Counter
+		- Animated Rounded Skills
+		- Skills Bar
+		- Dropcaps & Highlights
+		- Quotes & Blockquotes
+		- Text Rotater
+	- Owl Carousel
+	- Overlays
+	- Forms
+	- Google Maps
+	- Heading Styles
+	- Divider
+	- Magazine Specific Classes
+	- Go To Top
+	- Error 404
+	- Landing Pages
+	- Preloaders
+	- Toastr Notifications
+	- Footer
+	- Widgets
+		- Tag Cloud
+		- Links
+		- Testimonial & Twitter
+		- Quick Contact Form
+		- Newsletter
+		- Twitter Feed
+		- Navigation Tree
+	- Wedding
+	- Bootstrap Specific
+	- Cookie Notification
+	- Stretched Layout
+	- Page Transitions
+	- Youtube Video Backgrounds
+
+---------------------------------------------------------------- */
+
+
+/* ----------------------------------------------------------------
+	Bootstrap Adjustments
+-----------------------------------------------------------------*/
+
 @media (min-width: 576px) {
 	.container { max-width: 540px; }
 }
@@ -66,9 +162,9 @@ dl, dt, dd, ol, ul, li {
 
 
 body {
-	line-height: 1.1;
+	line-height: 1.5;
 	color: #555;
-	  font-family: 'Roboto', sans-serif ;
+	font-family: 'Lato', sans-serif;
 }
 
 a {
@@ -11020,7 +11116,7 @@ input[type=checkbox]:not(:checked) + label.error { display: block !important; }
 
 #map-overlay #google-map {
 	position: absolute;
-	height: 200px;
+	height: 100%;
 	top: 0;
 	left: 0;
 }
@@ -13568,11 +13664,4 @@ body:not(.no-transition) #wrapper,
 .rating-container .filled-stars {
 	-webkit-text-stroke: 0px !important;
 	text-shadow: none !important;
-}
-.heading-block h2, .heading-block h2 {
-    text-transform: uppercase;
-    font-size: 50px;
-    font-weight: 900;
-    color: #3f3f3f;
-    text-align: left;
 }
