@@ -2178,7 +2178,7 @@ button.swiper-pagination-bullet {
   left: -30px !important;
   height: 100%;
   width: 100%;
-  background-image: url('../images-all/hero-decor.png');
+  background-image: url('../images/hero-decor.png');
   background-position: center center;
   background-repeat: no-repeat; }
   @media screen and (max-width: 994px) {
