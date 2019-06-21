@@ -1,1 +1,1 @@
-https://zos99.github.io/kv/index.html
+http://zos99.github.io/triangl/
