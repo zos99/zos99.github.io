@@ -163,18 +163,18 @@ a:hover, a {
     display: block;
     width: auto;
     background: rgba(202, 7, 7, 0.9);
-    padding: 15px 25px 15px 20%;
+    padding: 15px 25px 15px 21%;
 }
 .header-btn {
   position: absolute;
-  bottom: 5%;
+  bottom: 6%;
   left: 50%;
   display: block;
   width: auto;
   background: #bebebc;
   color: #ca0707;
   font-family: 'Arimo', sans-serif;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: bold;
   text-transform: uppercase;
   padding: 10px;
@@ -193,19 +193,19 @@ a:hover, a {
     text-shadow: 0 4px 4px rgba(0,0,0,.6);
 }
 .text-big {
-  font-size: 55px;
+  font-size: 50px;
   font-weight: bold;
   padding-bottom: 10px;
 }
 .text-midle {
-  font-size: 45px;
+  font-size: 40px;
   font-weight: bold;
 }
 .header-title {
     width: 40%;
     position: absolute;
     top: 25%;
-    left: 20%;
+    left: 21%;
     color: #fff;
     font-size: 20px;
     font-family: Arial,sans-serif;
@@ -215,10 +215,10 @@ a:hover, a {
   text-transform: uppercase;
   font-family: 'Arimo', sans-serif;
   display: block;
-  text-shadow: 0 4px 4px rgba(255,255,255,.6);
-  font-size: 60px;
+  text-shadow: 0 4px 4px rgba(255, 255, 255, 0.6);
+  font-size: 54px;
   font-weight: bold;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
 }
 .parallax-block {
     background: url(../images/bg-parallax.png) 100% 100% no-repeat;
@@ -308,7 +308,7 @@ a:hover, a {
     margin-left: 0;
 }
 .menu ul li a {
-    font-size: 20px;
+    font-size: 17px;
     transition: .3s all;
     color: #ca0707;
     text-transform: uppercase;
@@ -336,15 +336,16 @@ a:hover, a {
 }
 .phone span {
     line-height: 40px;
-    font-size: 25px;
+    font-size: 23px;
     transition: .3s all;
     color: #ca0707;
     text-transform: uppercase;
     font-family: 'Arimo', sans-serif;
+    font-weight: 600;
 }
 #search {
     box-sizing: border-box;
-    width: 80%;
+    width: 75%;
     height: 100%;
     padding: 3px 95px 3px 17px;
     overflow: hidden;
@@ -359,7 +360,7 @@ a:hover, a {
 .fas.fa-search {
     color: #ca0707;
     position: absolute;
-    left: 170px;
+    left: 160px;
     bottom: 5px;
 }
 
