@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Квартирный вопрос</title>
+
+   <!-- Custom CSS -->
+    <link href="css/main.css" rel="stylesheet">
+    <!-- jQuery -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.parallax-0.2-min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Arimo:400,700&display=swap" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" 
+</head>
+
+<body>
+<section class="parallax-section">
+  <header class="header">
+    <div class="box-inner">
+      <div class="brand">
+        <a href="/?no_bottom=1">
+          <img class="hidden-desktop" src="images/logo.png">
+          <img class="hidden-mobile" src="images/logo.png">
+        </a>
+      </div>
+      <div class="menu primary-menu">
+        <ul>
+          <li class=""><a href="#content">Продукция</a></li>
+          <li><a href="#bydet">компания</a></li>
+          <li><a href="#program">Услуги</a></li>
+          <li><a href="#idmap">Контакты</a></li>
+        </ul>
+      </div>
+      <div class="primary-tel">
+        <a class="phone" href="#" style="text-align: center;">
+          <span>+7-926-333-33-33</span>
+        </a>
+        <input type="text" name="search" id="search" value="" placeholder="Поиск"><i class="fas fa-search"></i>
+      </div>
+    </div>
+      </header>
+  <div class="parallax-section__header">
+    <span class="text-big">Акция!</span>
+    <span class="text-midle">рассрочка на 4 месяца</span>
+  </div>
+  <div class="header-title">
+    <p>окна</p>
+    <p>двери</p>
+    <p>жалюзи</p>
+  </div>
+  <a class="header-btn" href="#">Заказать замер</a>
+  <div class="parallax-block" style="background-position: 49.31% 0px;">
+      <div class="parallax-block__outer hidden-xs" style="background-position: 49.77% 0px;">
+       </div><!-- /.wrapper outer -->
+   </div><!-- /#main -->
+   <script type="text/javascript">
+jQuery(document).ready(function(){
+    var $ = jQuery.noConflict();
+    $('.parallax-section').parallax({
+      'elements': [
+        {
+          'selector': 'div.parallax-block',
+          'properties': {
+            'x': {
+              'background-position-x': {
+                'initial': 50,
+                'multiplier': 0.03,
+                'unit': '%',
+
+              }
+            }
+          }
+        },
+        {
+     'selector': 'div.parallax-block__outer',
+     'properties': {
+       'x': {
+         'background-position-x': {
+           'initial': 50,
+           'multiplier': 0.01,
+           'unit': '%'
+         }
+       }
+     }
+   }
+      ]
+    });
+});
+  </script>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="container text-center">
+        <p>Copyright</p>
+    </div>
+</footer>
+</body>
+</html>

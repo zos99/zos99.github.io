@@ -137,12 +137,18 @@ svg {
     .box-future {
       background-image: url("../images/future-bg-640.png");
       height: 639px;
-      background-size: cover; } }
+      background-size: cover; }
+      .section.nobg.nopadding.box.box-collective {
+    height: 1700px;
+}
+    }
   @media screen and (max-width: 640px) {
     .box-future {
       background-image: url("../images/future-bg-640.png");
       height: 639px;
-      background-size: contain; } }
+      background-size: contain; }
+
+    }
   @media screen and (max-width: 414px) {
     .box-future {
       height: 414px;
