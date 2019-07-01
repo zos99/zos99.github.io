@@ -6,15 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-
     <title>Квартирный вопрос</title>
-
-   <!-- Custom CSS -->
     <link href="css/main.css" rel="stylesheet">
-    <!-- jQuery -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/jquery.parallax-0.2-min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Arimo:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -22,90 +17,288 @@
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" 
 </head>
-
-<body>
-<section class="parallax-section">
-  <header class="header">
-    <div class="box-inner">
-      <div class="brand">
-        <a href="/?no_bottom=1">
-          <img class="hidden-desktop" src="images/logo.png">
-          <img class="hidden-mobile" src="images/logo.png">
-        </a>
-      </div>
-      <div class="menu primary-menu">
-        <ul>
-          <li class=""><a href="#content">Продукция</a></li>
-          <li><a href="#bydet">компания</a></li>
-          <li><a href="#program">Услуги</a></li>
-          <li><a href="#idmap">Контакты</a></li>
-        </ul>
-      </div>
-      <div class="primary-tel">
-        <a class="phone" href="#" style="text-align: center;">
-          <span>+7-926-333-33-33</span>
-        </a>
-        <input type="text" name="search" id="search" value="" placeholder="Поиск"><i class="fas fa-search"></i>
-      </div>
-    </div>
+  <body>
+    <section class="parallax-section">
+      <header class="header">
+        <div class="box-inner">
+          <div class="brand">
+            <a href="/?no_bottom=1">
+              <img class="hidden-desktop" src="images/logo.png">
+              <img class="hidden-mobile" src="images/logo.png">
+            </a>
+          </div>
+          <div class="menu primary-menu">
+            <ul>
+              <li class=""><a href="#content">Продукция</a></li>
+              <li><a href="#bydet">компания</a></li>
+              <li><a href="#program">Услуги</a></li>
+              <li><a href="#idmap">Контакты</a></li>
+            </ul>
+          </div>
+          <div class="primary-tel">
+            <a class="phone" href="#">
+              <span>+7-926-333-33-33</span>
+            </a>
+            <input type="text" name="search" id="search" value="" placeholder="Поиск"><i class="fas fa-search"></i>
+          </div>
+        </div>
       </header>
-  <div class="parallax-section__header">
-    <span class="text-big">Акция!</span>
-    <span class="text-midle">рассрочка на 4 месяца</span>
-  </div>
-  <div class="header-title">
-    <p>окна</p>
-    <p>двери</p>
-    <p>жалюзи</p>
-  </div>
-  <a class="header-btn" href="#">Заказать замер</a>
-  <div class="parallax-block" style="background-position: 49.31% 0px;">
-      <div class="parallax-block__outer hidden-xs" style="background-position: 49.77% 0px;">
-       </div><!-- /.wrapper outer -->
-   </div><!-- /#main -->
-   <script type="text/javascript">
-jQuery(document).ready(function(){
-    var $ = jQuery.noConflict();
-    $('.parallax-section').parallax({
-      'elements': [
-        {
-          'selector': 'div.parallax-block',
-          'properties': {
-            'x': {
-              'background-position-x': {
-                'initial': 50,
-                'multiplier': 0.03,
-                'unit': '%',
+      <div class="parallax-section__header">
+        <span class="text-big">Акция!</span>
+        <span class="text-midle">рассрочка на 4 месяца</span>
+      </div>
+      <div class="header-title">
+        <p>окна</p>
+        <p>двери</p>
+        <p>жалюзи</p>
+      </div>
+      <a class="header-btn" href="#">Заказать замер</a>
+      <div class="parallax-block" style="background-position: 49.31% 0px;">
+        <div class="parallax-block__outer hidden-xs" style="background-position: 49.77% 0px;"></div>
+      </div>
+      <div class="inner" id="js-anchor__wrapper">
+		<a href="#slide-4" class="js-anchor b-scroll-down">
+      <svg class="icon" xmlns="https://www.w3.org/2000/svg" width="284.929" height="284.929" viewBox="0 0 284.929 284.929"><path d="M135.899 167.877c1.902 1.902 4.093 2.851 6.567 2.851s4.661-.948 6.562-2.851L282.082 34.829c1.902-1.903 2.847-4.093 2.847-6.567s-.951-4.665-2.847-6.567L267.808 7.417c-1.902-1.903-4.093-2.853-6.57-2.853-2.471 0-4.661.95-6.563 2.853L142.466 119.622 30.262 7.417c-1.903-1.903-4.093-2.853-6.567-2.853-2.475 0-4.665.95-6.567 2.853L2.856 21.695C.95 23.597 0 25.784 0 28.262c0 2.478.953 4.665 2.856 6.567l133.043 133.048z"></path><path d="M267.808 117.053c-1.902-1.903-4.093-2.853-6.57-2.853-2.471 0-4.661.95-6.563 2.853L142.466 229.257 30.262 117.05c-1.903-1.903-4.093-2.853-6.567-2.853-2.475 0-4.665.95-6.567 2.853L2.856 131.327C.95 133.23 0 135.42 0 137.893c0 2.474.953 4.665 2.856 6.57l133.043 133.046c1.902 1.903 4.093 2.854 6.567 2.854s4.661-.951 6.562-2.854l133.054-133.046c1.902-1.903 2.847-4.093 2.847-6.565 0-2.474-.951-4.661-2.847-6.567l-14.274-14.278z"></path></svg>
+    </a></div>
+    </section>
+    <section class="main__section section__wrapper">
+      <h2>Наши преимущества</h2>
+      <div class="container container-first">
+        <a class="item item-first">
+          <img src="images/preim-1.png" alt="">
+          <h3>Бесплатное<br> обслуживание<br> 3 года</h3>
+        </a>
+        <a class="item item-first">
+          <img src="images/preim-2.png" alt="">
+          <h3>Срок<br> изготовления<br> до 5 дней</h3>
+        </a>
+        <a class="item item-first">
+          <img src="images/preim-3.png" alt="">
+          <h3>Изготовление<br> ламинированных<br> окон</h3>
+        </a>
+        <a class="item item-first">
+          <img src="images/preim-4.png" alt="">
+          <h3>монтаж<br> до 3 дней</h3>
+        </a>
+      </div>
+      <div class="container">
+        <a class="item item--second">
+          <img src="images/preim-5.png" alt="">
+          <h3>ОПЫТНЫЕ<br> СПЕЦИАЛИСТЫ</h3>
+        </a>
+        <a class="item item--second">
+          <img src="images/preim-6.png" alt="">
+          <h3>ПОЛНЫЙ<br> ПАКЕТ<br> ДОКУМЕНТОВ</h3>
+        </a>
+        <a class="item item--second">
+          <img src="images/preim-7.png" alt="">
+          <h3>РАБОТАЕМ<br> С НДС</h3>
+        </a>
+      </div>
+    </section>
+    <section class="section__order section__wrapper">
+      <h2>Цены на пластиковые окна</h2>
+      <div class="container">
+        <div class="item">
+          <h3>Двухстворчатое окно</h3>
+            <img src="images/okno-1.png" alt="">
+            <div>размер 1400х1300мм<br>Цена: <span class="blred">88888</span> руб.</div>
+        </div>
+        <div class="item">
+            <h3>Трехстворчатое окно</h3>
+              <img src="images/okno-2.png" alt="">
+              <div>размер 1400х2100мм<br>Цена: <span class="blred">88888</span> руб.</div>
+        </div>
+        <div class="item">
+            <h3>Балконный окно</h3>
+              <img src="images/okno-3.png" alt="">
+              <div>размер 2200х800мм<br>Цена: <span class="blred">88888</span> руб.</div>
+        </div>
+      </div>
+    </section>
+    <section class="section__production section__wrapper">
+      <h2>Наши предложения</h2>
+      <div class="container grid">
+        <div class="grid__item right-side">
+          <div class="grid__item--bg"></div>
+          <img title="Проектные работы" alt="Проектные работы" src="images/katalog-1.jpg">
+        </div>
+        <div class="grid__item  right-side">
+          <div class="grid__item--text right-side">
+            <h3>Окна и двери</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <a class="red-btn red-btn--right" href="#">Подробнее..</a>
+          </div>
+        </div>
+        <div class="grid__item  left-side">
+          <div class="grid__item--text left-side">
+            <h3>Балконы</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <a class="red-btn" href="#">Подробнее..</a>
+          </div>
+        </div>
+        <div class="grid__item   left-side">
+          <div class="grid__item--bg"></div>
+          <img title="Проектные работы" alt="Проектные работы" src="images/katalog-2.jpg">
+        </div>
+        <div class="grid__item  right-side">
+          <div class="grid__item--bg"></div>
+          <img title="Проектные работы" alt="Проектные работы" src="images/katalog-3.jpg">
+        </div>
+        <div class="grid__item   right-side">
+          <div class="grid__item--text right-side">
+            <h3>МОСКИТНЫЕ СЕТКИ</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <a class="red-btn red-btn--right" href="#">Подробнее..</a>
+          </div>
+        </div>
+        <div class="grid__item  left-side">
+          <div class="grid__item--text left-side">
+            <h3>ОТКОСЫ</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <a class="red-btn" href="#">Подробнее..</a>
+          </div>
+        </div>
+        <div class="grid__item   left-side">
+          <div class="grid__item--bg"></div>
+          <img title="Проектные работы" alt="Проектные работы" src="images/katalog-4.jpg">
+          </div>
+        <div class="grid__item  right-side">
+          <div class="grid__item--bg"></div>
+          <img title="Проектные работы" alt="Проектные работы" src="images/katalog-5.jpg">
+        </div>
+        <div class="grid__item   right-side">
+          <div class="grid__item--text right-side">
+            <h3>МАРКИЗЫ И РАФШТОРЫ</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <a class="red-btn red-btn--right" href="#">Подробнее..</a>
+          </div>
+        </div>
+        <div class="grid__item  left-side">
+          <div class="grid__item--text left-side">
+            <h3>ЖАЛЮЗИ</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <a class="red-btn" href="#">Подробнее..</a>
+          </div>
+        </div>
+        <div class="grid__item   left-side">
+          <div class="grid__item--bg"></div>
+          <img title="Проектные работы" alt="Проектные работы" src="images/katalog-6.jpg">
+        </div>
+        <div class="grid__item  right-side">
+          <div class="grid__item--bg"></div>
+          <img title="Проектные работы" alt="Проектные работы" src="images/katalog-7.jpg">
+          </div>
+        <div class="grid__item   right-side">
+          <div class="grid__item--text right-side">
+            <h3>РОЛЛЕТЫ</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <a class="red-btn red-btn--right" href="#">Подробнее..</a>
+          </div>
+        </div>
+        <div class="grid__item  left-side">
+          <div class="grid__item--text left-side">
+            <h3>ГАРАЖНЫЕ ВОРОТА</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <a class="red-btn" href="#">Подробнее..</a>
+          </div>
+        </div>
+        <div class="grid__item   left-side">
+          <div class="grid__item--bg"></div>
+          <img title="Проектные работы" alt="Проектные работы" src="images/katalog-8.jpg">
+        </div>
+        <div class="grid__item  right-side">
+          <div class="grid__item--bg"></div>
+          <img title="Проектные работы" alt="Проектные работы" src="images/katalog-9.jpg">
+        </div>
+        <div class="grid__item   right-side">
+          <div class="grid__item--text right-side">
+            <h3>СТЕКЛЯННЫЕ ИЗДЕЛИЯ</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <a class="red-btn red-btn--right" href="#">Подробнее..</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="yt_spotlight6" class="block">
+        <div class="container">
+          <div id="bottom6" class="item">
+            <div class="logo-footer">&nbsp;</div>
 
-              }
-            }
-          }
-        },
-        {
-     'selector': 'div.parallax-block__outer',
-     'properties': {
-       'x': {
-         'background-position-x': {
-           'initial': 50,
-           'multiplier': 0.01,
-           'unit': '%'
-         }
-       }
-     }
-   }
-      ]
-    });
-});
-  </script>
-</section>
+          </div>
+          <div id="bottom7" class="item">
+            <h3>Продукция</h3>
+              <ul>
+                <li><a href="">Окна и двери</a></li>
+                <li><a href="">Балконы</a></li>
+                <li><a href="">Москитные сетки</a></li>
+                <li><a href="">Откосы</a></li>
+                <li><a href="">Маркизы и рафшторы</a></li>
+                <li><a href="">Жалюзт</a></li>
+                <li><a href="">Роллеты</a></li>
+                <li><a href="">Гаражные ворота</a></li>
+                <li><a href="">Стеклянные изделия</a></li>
+              </ul>
+          </div>
+          <div id="bottom8" class="item">
+            <h3>Компания</h3>
 
-<!-- Footer -->
-<footer>
-    <div class="container text-center">
-        <p>Copyright</p>
-    </div>
-</footer>
-</body>
+          </div>
+          <div id="bottom9" class="item">
+            <h3>Услуги</h3>
+                 <ul>
+                   <li><a href="">Ремонт и регулировака</a></li>
+                   <li><a href="">Мобильный офис</a></li>
+                 </ul>
+          </div>
+        </div>
+        <footer class="footer">
+          <div class="footer-container">
+              <div class="footer__item">
+                г. Севастополь<br>
+                ул. Генерала Острякова, 189
+              </div>
+              <div class="footer__item">
+                тел. +7978-709-25-44<br>
+                e-mail: ogorodnik.72@mail.ru
+              </div>
+          </div>
+          <div class="footer--social">
+              <ul>
+                <li>
+                  <a href="#">
+                    <img src="images/vk.png" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="images/fb.png" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="images/inst.png" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="images/tv.png" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="images/od.png" alt="">
+                  </a>
+                </li>
+              </ul>
+          </div>
+        </footer>
+        <a class="footer-btn" href="#">ПОДПИСАТЬСЯ НА РАССЫЛКУ</a>
+        <div class="clear_left"></div>
+    </section>
+  </body>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.parallax-0.2-min.js"></script>
+  <script src="js/basicelement.js"></script>
 </html>

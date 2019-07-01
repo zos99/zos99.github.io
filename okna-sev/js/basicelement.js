@@ -1,21 +1,32 @@
-/*!
- * Code Design - Basic Element Bootstrap Theme (http://codedesign.elkind.net/)
- * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
- */
+jQuery(document).ready(function(){
+    var $ = jQuery.noConflict();
+    $('.parallax-section').parallax({
+      'elements': [
+        {
+          'selector': 'div.parallax-block',
+          'properties': {
+            'x': {
+              'background-position-x': {
+                'initial': 50,
+                'multiplier': 0.03,
+                'unit': '%',
 
-// jQuery to collapse the navbar on scroll
-$(window).scroll(function() {
-    if ($(".navbar").offset().top > 50) {
-        $(".navbar-fixed-top").addClass("top-nav-collapse");
-    } else {
-        $(".navbar-fixed-top").removeClass("top-nav-collapse");
-    }
-});
-
-
-
-// Closes the Responsive Menu on Menu Item Click
-$('.navbar-collapse ul li a').click(function() {
-    $('.navbar-toggle:visible').click();
+              }
+            }
+          }
+        },
+        {
+     'selector': 'div.parallax-block__outer',
+     'properties': {
+       'x': {
+         'background-position-x': {
+           'initial': 50,
+           'multiplier': 0.01,
+           'unit': '%'
+         }
+       }
+     }
+   }
+      ]
+    });
 });

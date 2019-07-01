@@ -11911,7 +11911,7 @@ button.toast-close-button {
 
 #copyrights {
 	padding: 40px 0;
-	background-color: #DDD;
+	background-color: #212121;
 	font-size: 14px;
 	line-height: 1.8;
 }
@@ -13575,4 +13575,31 @@ body:not(.no-transition) #wrapper,
     font-weight: 900;
     color: #3f3f3f;
     text-align: left;
+}
+
+::selection {
+    background: #1ABC9C;
+    color: #FFF;
+    text-shadow: none;
+}
+::selection {
+    background: #1ABC9C;
+    color: #FFF;
+    text-shadow: none;
+}
+::selection {
+    background: #212121;
+}
+::selection {
+    background: #212121;
+}
+::selection {
+    background: #1ABC9C;
+    color: #FFF;
+    text-shadow: none;
+}
+::selection {
+    background: #1ABC9C;
+    color: #FFF;
+    text-shadow: none;
 }
