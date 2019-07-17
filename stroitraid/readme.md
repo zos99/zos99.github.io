@@ -1,1 +1,1 @@
-https://zos99.github.io/okna-sev/index.html 
+https://zos99.github.io/stroitraid/result.html
