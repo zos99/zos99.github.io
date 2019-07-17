@@ -31,8 +31,7 @@ body {
 	line-height: 1;
 	font-family: $fontMain;
 	color: #444;
-	font-family: 'Arimo', sans-serif;
-	background: #edebe7;
+	font-size: small;
 }
 ol, ul {
 	list-style: none;
@@ -51,4 +50,7 @@ table {
 }
 a:hover, a {
 	text-decoration: none!important;
+}
+p {
+	text-align: justify;
 }

@@ -1,61 +1,44 @@
 @charset "UTF-8";
-@font-face {
-  font-family: 'Roboto';
-  src: url("../fonts/Roboto-BlackItalic.ttf");
-  font-weight: Black;
-  font-style: italic; }
-@font-face {
-  font-family: 'Roboto';
-  src: url("../fonts/Roboto-Black.ttf");
-  font-weight: Black;
-  font-style: normal; }
-@font-face {
-  font-family: 'Roboto';
-  src: url("../fonts/Roboto-Bold.ttf");
-  font-weight: bold;
-  font-style: normal; }
-@font-face {
-  font-family: 'Roboto';
-  src: url("../fonts/Roboto-BoldItalic.ttf");
-  font-weight: bold;
-  font-style: italic; }
-@font-face {
-  font-family: 'Roboto';
-  src: url("../fonts/Roboto-Italic.ttf");
-  font-weight: normal;
-  font-style: italic; }
-@font-face {
-  font-family: 'Roboto';
-  src: url("../fonts/Roboto-Italic.ttf");
-  font-weight: normal;
-  font-style: italic; }
-@font-face {
-  font-family: 'Roboto';
-  src: url("../fonts/Roboto-Light.ttf");
-  font-weight: 100;
-  font-style: normal; }
-@font-face {
-  font-family: 'Roboto';
-  src: url("../fonts/Roboto-LightItalic.ttf");
-  font-weight: 100;
-  font-style: italic; }
-@font-face {
-  font-family: 'Roboto';
-  src: url("../fonts/Roboto-Medium.ttf");
-  font-weight: 500;
-  font-style: normal; }
-@font-face {
-  font-family: 'Roboto';
-  src: url("../fonts/Roboto-MediumItalic.ttf");
-  font-weight: 500;
-  font-style: italic; }
-@font-face {
-  font-family: 'Roboto';
-  src: url("../fonts/Roboto-Regular.ttf");
-  font-weight: 400;
-  font-style: normal; }
-@font-face {
-  font-family: 'Roboto';
-  src: url("../fonts/Roboto-Thin.ttf");
-  font-weight: 200;
-  font-style: normal; }
+  @font-face {
+  			font-family: "ArimoRegular";
+  			src: url("../fonts/ArimoRegular/ArimoRegular.eot");
+  			src: url("../fonts/ArimoRegular/ArimoRegular.eot?#iefix")format("embedded-opentype"),
+  			url("../fonts/ArimoRegular/ArimoRegular.woff") format("woff"),
+  			url("../fonts/ArimoRegular/ArimoRegular.ttf") format("truetype");
+  			font-style: normal;
+  			font-weight: normal;
+        font-display: swap;
+  	}
+
+  	@font-face {
+  			font-family: "ArimoBold";
+  			src: url("../fonts/ArimoBold/ArimoBold.eot");
+  			src: url("../fonts/ArimoBold/ArimoBold.eot?#iefix")format("embedded-opentype"),
+  			url("../fonts/ArimoBold/ArimoBold.woff") format("woff"),
+  			url("../fonts/ArimoBold/ArimoBold.ttf") format("truetype");
+  			font-style: normal;
+  			font-weight: normal;
+        font-display: swap;
+  	}
+
+  	@font-face {
+  			font-family: "ArimoBoldItalic";
+  			src: url("../fonts/ArimoBoldItalic/ArimoBoldItalic.eot");
+  			src: url("../fonts/ArimoBoldItalic/ArimoBoldItalic.eot?#iefix")format("embedded-opentype"),
+  			url("../fonts/ArimoBoldItalic/ArimoBoldItalic.woff") format("woff"),
+  			url("../fonts/ArimoBoldItalic/ArimoBoldItalic.ttf") format("truetype");
+  			font-style: normal;
+  			font-weight: normal;
+        font-display: swap;
+  	}
+
+  	@font-face {
+  			font-family: "ArimoItalic";
+  			src: url("../fonts/ArimoItalic/ArimoItalic.eot");
+  			src: url("../fonts/ArimoItalic/ArimoItalic.eot?#iefix")format("embedded-opentype"),
+  			url("../fonts/ArimoItalic/ArimoItalic.woff") format("woff"),
+  			url("../fonts/ArimoItalic/ArimoItalic.ttf") format("truetype");
+  			font-style: normal;
+  			font-weight: normal;
+        font-display: swap;
+  	}

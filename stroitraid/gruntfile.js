@@ -38,13 +38,24 @@ module.exports = function(grunt) {
       files: ['styles/*.scss'],
       tasks: ['concat','sass'],
     }
-  }
+  },
+  critical: {
+   dist: {
+     options: {
+       base: './'
+     },
+     // The source file
+     src: 'index.html',
+     // The destination file
+     dest: 'result.html'
+     }
+   }
 });
 
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
-
-  grunt.registerTask('default', ['concat','uglify','sass']);
+  grunt.loadNpmTasks('grunt-critical');
+  grunt.registerTask('default', ['concat','uglify','sass','critical']);
 };
