@@ -349,6 +349,12 @@ h1, h2 {
     background: url(../images-tmpl/tel.png);
     z-index: 9999;
   }
+  a {
+    color: #fff;
+    &:hover {
+      color: #f4931f;
+    }
+  }
 }
 
 .button {
@@ -696,6 +702,7 @@ h1, h2 {
 	background: #072ca4;
 	color:#fff;
 	width:100%;
+  max-width: 90%;
 	z-index: 9999;
 	max-height:95vh;
   max-width:500px;
@@ -908,7 +915,7 @@ input[type="checkbox"]{
       position: absolute;
       top: 30px;
       right: 0;
-      background: #0281be;
+      background: #072ca4;
       border-radius: 5px;
       padding: 20px 20px;
       width: 260px;
@@ -1074,7 +1081,7 @@ input[type="checkbox"]{
 }
 
   .title {
-    font-size: 250%;
+    font-size: 300%;
   }
   .services__item {
     flex-basis: calc(100% / 3);
@@ -1097,6 +1104,12 @@ input[type="checkbox"]{
   .title {
     font-size: 200%;
     padding: 20px 0;
+  }
+  .pageline__title {
+    font-size: 180%
+  }
+  .grid__item--text h3 {
+    font-size: 160%;
   }
   .services__item {
     flex-basis: 100%;

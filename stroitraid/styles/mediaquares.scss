@@ -20,7 +20,7 @@
       position: absolute;
       top: 30px;
       right: 0;
-      background: #0281be;
+      background: #072ca4;
       border-radius: 5px;
       padding: 20px 20px;
       width: 260px;
@@ -186,7 +186,7 @@
 }
 
   .title {
-    font-size: 250%;
+    font-size: 300%;
   }
   .services__item {
     flex-basis: calc(100% / 3);
@@ -209,6 +209,12 @@
   .title {
     font-size: 200%;
     padding: 20px 0;
+  }
+  .pageline__title {
+    font-size: 180%
+  }
+  .grid__item--text h3 {
+    font-size: 160%;
   }
   .services__item {
     flex-basis: 100%;
