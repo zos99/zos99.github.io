@@ -28,3 +28,37 @@ jQuery(function(){
     $('.header__menu--mobile').slideToggle();
   });
 });
+
+
+jQuery(function(){
+    var $ = jQuery.noConflict();
+///modal
+   function modalNative() {
+       $("body").on("click", "[data-modalnative]", function(e){
+           e.preventDefault();
+           $(".overlay").addClass("open");
+           var modal = $(".modal."+$(this).attr("data-modal-name"));
+           modal.find(".error").removeClass("error");
+           modal.find(".form-errors").remove();
+           modal.addClass("open");
+           //$("#"+$(this).attr("data-modal-name")).css("top",$(window).scrollTop()+50+"px").addClass("open");
+       });
+       $("body").on("click", ".overlay", function(e){
+         e.preventDefault();
+           $(this).removeClass("open");
+           $(".modal.open").removeClass("open");
+           /*setTimeout(function() {
+               $(".modal-box").attr("style","");
+           }, 320);*/
+       });
+       $("body").on("click", ".modal .close", function(e){
+         e.preventDefault();
+         $(".overlay").removeClass("open");
+           $(".modal.open").removeClass("open");
+           /*setTimeout(function() {
+               $(".modal").attr("style","");
+           }, 320);*/
+       });
+   }
+   modalNative();
+ });

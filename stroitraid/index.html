@@ -49,7 +49,8 @@
         </ul>
         <div class="header__block">
           <span>071-333-33-33</span>
-          <a class="button header__button" href="">Заказать звонок</a>
+          <a class="button header__button" href="№" data-modalnative="" data-modal-name="modal-callme">Заказать звонок</a>
+
         </div>
     </div>
     </header>
@@ -72,49 +73,49 @@
               <div class="bg-blue"></div>
               <p class="services__title">Разработка проектно-сметной документации</p>
             </a>
-            <a class="services__button" href="">Подробнее</a>
+            <a class="services__button button--orang" href="">Подробнее</a>
           </li>
           <li class="services__item">
             <a class="services__link" href="">
               <div class="bg-blue"></div>
               <p class="services__title">Горизонтальное направленное бурение</p>
             </a>
-            <a class="services__button" href="">Подробнее</a>
+            <a class="services__button button--orang" href="">Подробнее</a>
           </li>
           <li class="services__item">
             <a class="services__link" href="">
               <div class="bg-blue"></div>
               <p class="services__title">Шнековое бурение</p>
             </a>
-            <a class="services__button" href="">Подробнее</a>
+            <a class="services__button button--orang" href="">Подробнее</a>
           </li>
           <li class="services__item">
             <a class="services__link" href="">
               <div class="bg-blue"></div>
               <p class="services__title">Санация</p>
             </a>
-            <a class="services__button" href="">Подробнее</a>
+            <a class="services__button button--orang" href="">Подробнее</a>
           </li>
           <li class="services__item">
             <a class="services__link" href="">
               <div class="bg-blue"></div>
               <p class="services__title">Пневмо- пробойник</p>
             </a>
-            <a class="services__button" href="">Подробнее</a>
+            <a class="services__button button--orang" href="">Подробнее</a>
           </li>
           <li class="services__item">
             <a class="services__link" href="">
               <div class="bg-blue"></div>
               <p class="services__title">Устройство кабельных линий</p>
             </a>
-            <a class="services__button" href="">Подробнее</a>
+            <a class="services__button button--orang" href="">Подробнее</a>
           </li>
           <li class="services__item">
             <a class="services__link" href="">
               <div class="bg-blue"></div>
               <p class="services__title">Открытая прокладка</p>
             </a>
-            <a class="services__button" href="">Подробнее</a>
+            <a class="services__button button--orang" href="">Подробнее</a>
           </li>
         </ul>
       </div>
@@ -204,6 +205,34 @@
     <a href="#" id="toTop" style="display: block;">
       <span id="toTopHover" style="opacity: 1;"></span>
     </a>
+    <div class="overlay"></div>
+    <div class="modal modal-callme ">
+      <a href="#" class="close close-menu"></a>
+      <div class="block-form">
+          <form class="form form-modal" action="#" method="post">
+              <div class="form-title">
+                  ЗАКАЖИТЕ <span>ОБРАТНЫЙ ЗВОНОК</span>
+              </div>
+              <p>Просто оставьте Ваши данные и мы<br> свяжемся с Вами в течение 24 часов</p>
+              <div class="form-row">
+                  <input type="text" placeholder="Ваше имя" class="input-user" name="name">
+              </div>
+              <div class="form-row">
+                  <input type="tel" placeholder="Ваш телефон" class="input-phone" name="phone">
+              </div>
+              <div class="form-row">
+                  <textarea placeholder="Введите информацию" class="input-text" name="msg"></textarea>
+              </div>
+              <div class="form-row">
+                  <input type="submit" value="ОТПРАВИТЬ " class="button button--orang">
+              </div>
+              <div class="checkbox">
+                <input type="checkbox" class="custom-control-input" id="check-1a" checked="checked" name="agree">
+                <label class="custom-control-label" for="check-1a">Я согласен на обработку моих персональных данны</label>
+              </div>
+          </form>
+      </div>
+    </div>
   </body>
   <script src="js/dist/jquery.min.js"></script>
   <script src="https://kit.fontawesome.com/76dd712d5c.js"></script>
