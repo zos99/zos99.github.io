@@ -27,12 +27,16 @@ footer, header, hgroup, main, menu, nav, section {
 *[hidden] {
     display: none;
 }
-body {
-	line-height: 1;
-	font-family: $fontMain;
-	color: #444;
-	font-size: small;
-	min-width: 360px;
+html, body {
+    font-family: Dosis;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 36px;
+    word-spacing: 0px;
+    letter-spacing: 0px;
+    color: #9f9e9e;
+		min-width: 360px;
+		font-family: $fontMain;
 }
 ol, ul {
 	list-style: none;

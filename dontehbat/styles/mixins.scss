@@ -1,0 +1,14 @@
+@mixin transitionL($time) {
+  cursor: pointer;
+  transition: background $time linear, color $time linear, border $time linear, max-height $time linear;
+}
+@mixin gradient($colorFirst, $colorSecond) {
+  background: $colorFirst;
+  background: -moz-linear-gradient(left,$colorFirst 0%, $colorSecond 26%, $colorSecond 53%, $colorSecond 76%,$colorFirst 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%,$colorFirst), color-stop(26%, $colorSecond), color-stop(53%, $colorSecond), color-stop(76%, #5174ff), color-stop(100%, white));
+  background: -webkit-linear-gradient(left,$colorFirst 0%, $colorSecond 26%, $colorSecond 53%, $colorSecond 76%,$colorFirst 100%);
+  background: -o-linear-gradient(left,$colorFirst 0%, $colorSecond 26%, $colorSecond 53%, $colorSecond 76%,$colorFirst 100%);
+  background: -ms-linear-gradient(left,$colorFirst 0%, $colorSecond 26%, $colorSecond 53%, $colorSecond 76%,$colorFirst 100%);
+  background: linear-gradient(to right,$colorFirst 0%, $colorSecond 26%, $colorSecond 53%, $colorSecond 76%,$colorFirst 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$colorFirst', endColorstr='$colorFirst', GradientType=1 );
+}
