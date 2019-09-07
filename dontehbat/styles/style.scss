@@ -663,20 +663,20 @@ a {
 
 		&:hover {
 			#{$p}__circle {
-				width: 30px;
-				height: 30px;
+				width: 20px;
+				height: 20px;
 				background-color: blue;
 				transition: background-color linear 0.2s;
 				transition-property: width, height, border, background-color;
 
 				@media screen and (max-width: 1680px) {
-					width: 27px;
-					height: 27px;
+					width: 18px;
+					height: 18px;
 				}
 
 				@media screen and (max-width: 1440px) {
-					width: 24px;
-					height: 24px;
+					width: 16px;
+					height: 16px;
 				}
 
 				@media screen and (max-width: 1240px) {
