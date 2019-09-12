@@ -34,7 +34,7 @@ html, body {
     line-height: 36px;
     word-spacing: 0px;
     letter-spacing: 0px;
-    color: #9f9e9e;
+    color: #3f3f3f;
 		min-width: 360px;
 		font-family: $fontMain;
 }
@@ -58,4 +58,9 @@ a:hover, a {
 }
 p {
 	text-align: justify;
+}
+a, button, input[type="button"], input[type="submit"] {
+    -webkit-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
