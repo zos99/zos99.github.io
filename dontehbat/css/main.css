@@ -536,9 +536,9 @@ a {
   height: 100vh;
   background-image: url(../images-tmpl/big-map.jpg);
   background-position: center;
-  -moz-background-size: 100% 100%;
+  -moz-background-size: 100% auto;
   -o-background-size: 100% auto;
-  background-size: contain;
+  background-size: 100% auto;
   background-repeat: no-repeat; }
 
 .screen__line {
