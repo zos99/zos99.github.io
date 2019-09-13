@@ -537,7 +537,7 @@ a {
   background-image: url(../images-tmpl/big-map.jpg);
   background-position: center;
   -moz-background-size: 100% 100%;
-  -o-background-size: 100% 100%;
+  -o-background-size: 100% auto;
   background-size: contain;
   background-repeat: no-repeat; }
 
