@@ -57,5 +57,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-critical');
+  grunt.loadNpmTasks('grunt-critical');
   grunt.registerTask('default', ['concat','uglify','sass','critical']);
 };

@@ -62,6 +62,7 @@
   100% { -webkit-transform: rotate(-360deg); }
 }
 
+
 @keyframes object_one {
   25% {
     transform: translate(75px,0) rotate(-90deg) scale(0.5);
@@ -476,7 +477,7 @@ a {
     top: 0;
     bottom: 0;
     z-index: 5;
-    background-color: rgba(0,0,0,.70);
+    background-color: rgba(0,0,0,.0);
 }
 .screen__logo {
     position: absolute;
@@ -899,14 +900,19 @@ a {
 		left: 50%;
     transform: translate(-50%,-40%);
     z-index: 999;
-    max-width: 700px;
+    width: auto;
 		color: #fff;
+		display: none;
 }
 
 .screen--03__content__title {
-    margin-bottom: 11px;
-    font-size: 46px;
-    line-height: 52px;
+	margin-bottom: 11px;
+	font-size: 70px;
+	line-height: 52px;
+	font-family: "Circe",sans-serif;
+	text-transform: uppercase;
+	line-height: 1.2;
+	font-weight: bold;
 }
 .screen--03__content__description {
     max-width: 900px;
