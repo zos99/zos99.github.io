@@ -1,1 +1,1 @@
-http://zos99.github.io/granit/
+http://zos99.github.io/automation/index.html
