@@ -46,6 +46,15 @@
   .box-header .logo>img.smallscreen {
     display: inline;
   }
+  .box-offers .swiper-wrapper {
+    flex-wrap: wrap;
+  }
+  .box-offers .swiper-slide:not(:last-child) {
+    margin-right: 0!important;
+  }
+  .box-offers .swiper-slide {
+    margin-bottom: 10px;
+  }
 }
 
 .form-search__btn i {
