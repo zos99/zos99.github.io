@@ -31,3 +31,17 @@
   	width: 1630px;
   }
 }
+@media (max-width: 1440px) {
+  .swiper-container .swiper-wrapper .swiper-slide .position .title {
+    font-size: 35;
+  }
+  .swiper-container .swiper-wrapper .swiper-slide .position .subtitle {
+    font-size: 25px;
+  }
+  .header__title {
+    width: 60%
+  }
+  .block-menu-top {
+    width: 30%;
+  }
+}

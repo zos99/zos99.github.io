@@ -498,7 +498,7 @@ a {
   text-align: center; }
 
 .header__title {
-  flex-basis: 70%;
+  width: 70%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -657,10 +657,7 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
   background: none; }
 
 .center-block {
-  width: 70px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between; }
+  width: 70px; }
 
 /*---------------------------*/
 .menu__sub {
@@ -753,6 +750,9 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
 .sub-col:last-child {
   margin-bottom: 0; }
 
+.sub-col a {
+  display: block; }
+
 .sub-col > a > h5 {
   display: block;
   width: 100%;
@@ -837,7 +837,8 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
   flex-wrap: wrap;
   flex-direction: column;
   align-content: flex-end;
-  align-self: center; }
+  align-self: center;
+  width: 20%; }
 
 .socials {
   display: -ms-flexbox;
@@ -1472,5 +1473,17 @@ a.mnews-item-category {
 @media (min-width: 1660px) {
   .wrapper {
     width: 1630px; } }
+@media (max-width: 1440px) {
+  .swiper-container .swiper-wrapper .swiper-slide .position .title {
+    font-size: 35; }
+
+  .swiper-container .swiper-wrapper .swiper-slide .position .subtitle {
+    font-size: 25px; }
+
+  .header__title {
+    width: 60%; }
+
+  .block-menu-top {
+    width: 30%; } }
 
 /*# sourceMappingURL=main.css.map */
