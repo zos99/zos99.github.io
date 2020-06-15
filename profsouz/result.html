@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Донтехбат</title>
+    <style>
+      @charset "UTF-8";@font-face{font-family:Circe;src:url(fonts/circe/Circe-Regular.eot);src:local("../fonts/circe/Circe"),local("../fonts/circe/Circe-Regular"),url(fonts/circe/Circe-Regular.eot?#iefix) format("embedded-opentype"),url(fonts/circe/Circe-Regular.woff) format("woff"),url(fonts/circe/Circe-Regular.ttf) format("truetype");font-weight:400;font-style:normal}@font-face{font-family:Circe;src:url(fonts/circe/Circe-ExtraLight.eot);src:local("../fonts/circe/Circe ExtraLight"),local("../fonts/circe/Circe-ExtraLight"),url(fonts/circe/Circe-ExtraLight.eot?#iefix) format("embedded-opentype"),url(fonts/circe/Circe-ExtraLight.woff) format("woff"),url(fonts/circe/Circe-ExtraLight.ttf) format("truetype");font-weight:200;font-style:normal}@font-face{font-family:Circe;src:url(fonts/circe/Circe-Thin.eot);src:local("../fonts/circe/Circe Thin"),local("../fonts/circe/Circe-Thin"),url(fonts/circe/Circe-Thin.eot?#iefix) format("embedded-opentype"),url(fonts/circe/Circe-Thin.woff) format("woff"),url(fonts/circe/Circe-Thin.ttf) format("truetype");font-weight:100;font-style:normal}@font-face{font-family:Circe;src:url(fonts/circe/Circe-Light.eot);src:local("../fonts/circe/Circe Light"),local("../fonts/circe/Circe-Light"),url(fonts/circe/Circe-Light.eot?#iefix) format("embedded-opentype"),url(fonts/circe/Circe-Light.woff) format("woff"),url(fonts/circe/Circe-Light.ttf) format("truetype");font-weight:300;font-style:normal}@font-face{font-family:Circe;src:url(fonts/circe/Circe-Bold.eot);src:local("../fonts/circe/Circe Bold"),local("../fonts/circe/Circe-Bold"),url(fonts/circe/Circe-Bold.eot?#iefix) format("embedded-opentype"),url(fonts/circe/Circe-Bold.woff) format("woff"),url(fonts/circe/Circe-Bold.ttf) format("truetype");font-weight:700;font-style:normal}@font-face{font-family:Circe;src:url(fonts/circe/Circe-ExtraBold.eot);src:local("../fonts/circe/Circe ExtraBold"),local("../fonts/circe/Circe-ExtraBold"),url(fonts/circe/Circe-ExtraBold.eot?#iefix) format("embedded-opentype"),url(fonts/circe/Circe-ExtraBold.woff) format("woff"),url(fonts/circe/Circe-ExtraBold.ttf) format("truetype");font-weight:800;font-style:normal}a,body,div,header,html,i,img,li,section,span,ul{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}header,section{display:block}body{line-height:1;font-family:Arial,sans-serif;color:#444;font-size:small;min-width:360px}ul{list-style:none}a{text-decoration:none!important}#loading{background-color:#fff;height:100%;width:100%;position:fixed;z-index:9999;margin-top:0;top:0}#loading-center{width:100%;height:100%;position:relative}#loading-center-absolute{position:absolute;left:50%;top:50%;height:100px;width:100px;margin-top:-50px;margin-left:-50px}.object{width:25px;height:25px;background-color:#072ca4;margin-right:50px;float:left;margin-bottom:50px}.object:nth-child(2n+0){margin-right:0}#object_one{-webkit-animation:object_one 2s infinite;animation:object_one 2s infinite}#object_two{-webkit-animation:object_two 2s infinite;animation:object_two 2s infinite}#object_three{-webkit-animation:object_three 2s infinite;animation:object_three 2s infinite}#object_four{-webkit-animation:object_four 2s infinite;animation:object_four 2s infinite}@-webkit-keyframes object_one{25%{-webkit-transform:translate(75px,0) rotate(-90deg) scale(.5)}50%{-webkit-transform:translate(75px,75px) rotate(-180deg)}75%{-webkit-transform:translate(0,75px) rotate(-270deg) scale(.5)}100%{-webkit-transform:rotate(-360deg)}}@keyframes object_one{25%{transform:translate(75px,0) rotate(-90deg) scale(.5);-webkit-transform:translate(75px,0) rotate(-90deg) scale(.5)}50%{transform:translate(75px,75px) rotate(-180deg);-webkit-transform:translate(75px,75px) rotate(-180deg)}75%{transform:translate(0,75px) rotate(-270deg) scale(.5);-webkit-transform:translate(0,75px) rotate(-270deg) scale(.5)}100%{transform:rotate(-360deg);-webkit-transform:rotate(-360deg)}}@-webkit-keyframes object_two{25%{-webkit-transform:translate(0,75px) rotate(-90deg) scale(.5)}50%{-webkit-transform:translate(-75px,75px) rotate(-180deg)}75%{-webkit-transform:translate(-75px,0) rotate(-270deg) scale(.5)}100%{-webkit-transform:rotate(-360deg)}}@keyframes object_two{25%{transform:translate(0,75px) rotate(-90deg) scale(.5);-webkit-transform:translate(0,75px) rotate(-90deg) scale(.5)}50%{transform:translate(-75px,75px) rotate(-180deg);-webkit-transform:translate(-75px,75px) rotate(-180deg)}75%{transform:translate(-75px,0) rotate(-270deg) scale(.5);-webkit-transform:translate(-75px,0) rotate(-270deg) scale(.5)}100%{transform:rotate(-360deg);-webkit-transform:rotate(-360deg)}}@-webkit-keyframes object_three{25%{-webkit-transform:translate(0,-75px) rotate(-90deg) scale(.5)}50%{-webkit-transform:translate(75px,-75px) rotate(-180deg)}75%{-webkit-transform:translate(75px,0) rotate(-270deg) scale(.5)}100%{-webkit-transform:rotate(-360deg)}}@keyframes object_three{25%{transform:translate(0,-75px) rotate(-90deg) scale(.5);-webkit-transform:translate(0,-75px) rotate(-90deg) scale(.5)}50%{transform:translate(75px,-75px) rotate(-180deg);-webkit-transform:translate(75px,-75px) rotate(-180deg)}75%{transform:translate(75px,0) rotate(-270deg) scale(.5);-webkit-transform:translate(75px,0) rotate(-270deg) scale(.5)}100%{transform:rotate(-360deg);-webkit-transform:rotate(-360deg)}}@-webkit-keyframes object_four{25%{-webkit-transform:translate(-75px,0) rotate(-90deg) scale(.5)}50%{-webkit-transform:translate(-75px,-75px) rotate(-180deg)}75%{-webkit-transform:translate(0,-75px) rotate(-270deg) scale(.5)}100%{-webkit-transform:rotate(-360deg)}}@keyframes object_four{25%{transform:translate(-75px,0) rotate(-90deg) scale(.5);-webkit-transform:translate(-75px,0) rotate(-90deg) scale(.5)}50%{transform:translate(-75px,-75px) rotate(-180deg);-webkit-transform:translate(-75px,-75px) rotate(-180deg)}75%{transform:translate(0,-75px) rotate(-270deg) scale(.5);-webkit-transform:translate(0,-75px) rotate(-270deg) scale(.5)}100%{transform:rotate(-360deg);-webkit-transform:rotate(-360deg)}}a{color:#fff}.wrapper{margin:0 auto;padding:0 50px;text-align:left;box-sizing:border-box}.header{background:0 0;padding:20px 0;color:#fff;position:fixed;z-index:999;width:100%}.toggle-hamburger{background-color:transparent;color:#ccc;display:none;position:relative;overflow:hidden;margin:0;padding:0;width:50px;height:50px;font-size:0;text-indent:-9999px;-webkit-appearance:none;-moz-appearance:none;appearance:none;box-shadow:none;border:none;border-radius:none}.toggle-hamburger span{display:block;position:absolute;top:23px;left:6px;right:6px;height:4px;background:#28aadc}.toggle-hamburger span::after,.toggle-hamburger span::before{position:absolute;display:block;left:0;width:100%;height:4px;content:"";background-color:#28aadc}.toggle-hamburger span::before{top:-10px}.toggle-hamburger span::after{bottom:-10px}.header__wrapper{position:relative;display:flex;align-items:center;height:inherit;justify-content:space-between}.header__menu{display:flex;justify-content:space-evenly}.menu__item{text-align:center}.menu__item a{color:#fff;font-size:170%;display:block;padding:20px 25px;position:relative}.menu__item a:after{position:absolute;bottom:0;left:0;right:0;margin:auto;width:0%;content:'.';color:transparent;background:#aaa;height:1px}.header__block{font-size:180%}.header__block span{display:block;margin-bottom:20px;position:relative;padding-left:29px}.header__block span::before{content:'';position:absolute;top:-5px;left:0;height:29px;width:28px;background:url(images-tmpl/tel.png);z-index:9999}.header__block span a{color:#fff}.button{display:inline-block;padding:5px 12px;border:2px solid #fff;font-size:69%;color:#fff;text-transform:uppercase}.screen{position:relative;overflow:hidden;width:100vw;height:100vh;background-color:#000}.screen__bg{position:absolute;left:0;top:0;z-index:5;width:100%;height:100vh;background-image:url(images-tmpl/big-map.jpg);background-position:center;-moz-background-size:100% auto;-o-background-size:100% auto;background-size:100% auto;background-repeat:no-repeat}.screen__line{position:absolute;top:0;bottom:0;z-index:7!important}.screen__fade{position:absolute;left:0;right:0;top:0;bottom:0;z-index:5}.logo{-webkit-transform:translateZ(0);-moz-transform:translateZ(0);transform:translateZ(0)}.route{position:absolute;left:-5vw;top:-17.545691906vw;bottom:0;overflow:hidden;width:105vw;height:calc(3434 / 3830 * 105vw);background-position:left top;background-size:100% 100%;background-repeat:no-repeat}.route__item{position:absolute;transform:translateZ(0)}.route__item__circle{position:absolute;left:50%;top:50%;border:4px solid #fff;border-radius:100%;width:24px;height:24px;background-color:#00f;transform:translate(-50%,-50%)}@media screen and (max-width:1680px){.route__item__circle{width:12px;height:12px}}@media screen and (max-width:1440px){.route__item__circle{border:3px solid #fff;width:10px;height:10px}}@media screen and (max-width:1240px){.route__item__circle{width:8px;height:8px}}.route__item__text{position:absolute;left:50%;bottom:-40px;font-size:14px;color:#aaa8a8;transform:translateX(-50%)}.route__item--01{left:79%;top:61%}.route__item--02{left:81%;top:57%}.route__item--03{left:63%;top:54%}.route__item--04{left:56%;top:50.8%}.route__item--05{left:39%;top:50.5%}.route__item--06{left:33%;top:52%}.route__item--07{left:29%;top:58.8%}.route__item--07 .route__item__text{min-width:135px;color:#fff;text-transform:uppercase;font-size:120%}.route__item--08{left:28%;top:51.5%}.route__item--09{left:20%;top:51.5%}.route__item--10{left:24%;top:47%}.route__item--10 .route__item__text{min-width:150px}.route__item--11{left:26%;top:36.85%}@media (max-width:1400px){.route{left:0;top:-15.6657963446vw;width:100vw;height:calc(3434 / 3830 * 100vw)}}@media (max-width:1300px){.route{top:-13.0548302872vw}}@media (max-width:1200px){.route{top:-10.4438642298vw}}.screen__social{position:absolute;left:26px;bottom:26px;z-index:12}.screen__social{right:50px;bottom:20px}.social{display:flex;justify-content:flex-end;overflow:hidden}.social__item{display:flex;align-items:center;flex:0 0 auto;justify-content:center;margin-right:12px;border-radius:100%;width:36px;height:36px;fill:#fff;background-color:#000}.social__item:last-child{margin-right:0}@media screen and (max-width:1440px){.social__item{width:40px;height:40px}}@media screen and (max-width:1440px){.social--desktop{right:50px;bottom:20px}}@media screen and (max-width:1024px){.social--desktop{display:none}}.screen--03__content{position:absolute;top:40%;left:50%;transform:translate(-50%,-40%);z-index:999;width:auto;color:#fff;display:none}.screen--03__content__title{margin-bottom:11px;font-size:70px;line-height:52px;font-family:Circe,sans-serif;text-transform:uppercase;line-height:1.2;font-weight:700}.screen--03__content__description{max-width:900px;font-family:SamsungOne,sans-serif;font-weight:300;font-size:20px;line-height:28px;color:#fff}.screen--03__content__description{font-size:18px;line-height:26px}@-webkit-keyframes vibrate-1{0%{-webkit-transform:translate(0);transform:translate(0)}20%{-webkit-transform:translate(-8px,8px);transform:translate(-8px,8px)}40%{-webkit-transform:translate(-8px,-8px);transform:translate(-8px,-8px)}60%{-webkit-transform:translate(8px,8px);transform:translate(8px,8px)}80%{-webkit-transform:translate(8px,-8px);transform:translate(8px,-8px)}100%{-webkit-transform:translate(0);transform:translate(0)}}@keyframes vibrate-1{0%{-webkit-transform:translate(0);transform:translate(0)}20%{-webkit-transform:translate(-8px,8px);transform:translate(-8px,8px)}40%{-webkit-transform:translate(-8px,-8px);transform:translate(-8px,-8px)}60%{-webkit-transform:translate(8px,8px);transform:translate(8px,8px)}80%{-webkit-transform:translate(8px,-8px);transform:translate(8px,-8px)}100%{-webkit-transform:translate(0);transform:translate(0)}}#box{position:relative;width:100%;height:100%;z-index:6}.layer{position:absolute;display:block}.cloud1{width:729px;height:649px;background-image:url(images-tmpl/cloud.png);-webkit-animation:vibrate-1 15s linear 1s infinite both;animation:vibrate-1 15s linear 1s infinite both}.cloud2{width:660px;height:382px;background-image:url(images-tmpl/cloud2.png);-webkit-animation:vibrate-1 20s linear 1s infinite both;animation:vibrate-1 20s linear 1s infinite both}.cloud4{width:867px;height:295px;background-image:url(images-tmpl/cloud3.png);-webkit-animation:vibrate-1 20s linear 1s infinite both;animation:vibrate-1 20s linear 1s infinite both}#l6{z-index:2;top:0;right:-23%}#l7{z-index:2;bottom:270px;left:0}#l9{z-index:10;bottom:-1%;right:-10%}.route__item__circle--don{width:20px;height:20px}
+    </style>
+    <link href="css/animate.min.css" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link href="css/animate.min.css" rel="stylesheet"></noscript>
+    <link href="css/main.css" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link href="css/main.css" rel="stylesheet"></noscript>
+    <script>!function(n){"use strict";n.loadCSS||(n.loadCSS=function(){});var o=loadCSS.relpreload={};if(o.support=function(){var e;try{e=n.document.createElement("link").relList.supports("preload")}catch(t){e=!1}return function(){return e}}(),o.bindMediaToggle=function(t){var e=t.media||"all";function a(){t.addEventListener?t.removeEventListener("load",a):t.attachEvent&&t.detachEvent("onload",a),t.setAttribute("onload",null),t.media=e}t.addEventListener?t.addEventListener("load",a):t.attachEvent&&t.attachEvent("onload",a),setTimeout(function(){t.rel="stylesheet",t.media="only x"}),setTimeout(a,3e3)},o.poly=function(){if(!o.support())for(var t=n.document.getElementsByTagName("link"),e=0;e<t.length;e++){var a=t[e];"preload"!==a.rel||"style"!==a.getAttribute("as")||a.getAttribute("data-loadcss")||(a.setAttribute("data-loadcss",!0),o.bindMediaToggle(a))}},!o.support()){o.poly();var t=n.setInterval(o.poly,500);n.addEventListener?n.addEventListener("load",function(){o.poly(),n.clearInterval(t)}):n.attachEvent&&n.attachEvent("onload",function(){o.poly(),n.clearInterval(t)})}"undefined"!=typeof exports?exports.loadCSS=loadCSS:n.loadCSS=loadCSS}("undefined"!=typeof global?global:this);</script>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+  <body>
+    <div id="loading">
+      <div id="loading-center">
+        <div id="loading-center-absolute">
+          <div class="object" id="object_one"></div>
+          <div class="object" id="object_two"></div>
+          <div class="object" id="object_three"></div>
+          <div class="object" id="object_four"></div>
+        </div>
+      </div>
+    </div>
+    <header class="header">
+      <button class="toggle-hamburger toggle-hamburger__animx">
+          <span>menu</span>
+      </button>
+      <div class="wrapper header__wrapper">
+        <a class="logo" href="/">
+          <img class="logo__img" src="images/logo.png" alt="Лого">
+        </a>
+        <ul class="menu header__menu">
+          <li class="menu__item"><a href="#">О компании</a></li>
+          <li class="menu__item"><a href="#">Новости</a></li>
+          <li class="menu__item"><a href="#">Ассортимент</a></li>
+          <li class="menu__item"><a href="#">Логистика</a></li>
+          <li class="menu__item"><a href="#">Контакты</a></li>
+        </ul>
+        <ul class="menu header__menu--mobile" style="display: none;">
+          <li class="menu__item"><a href="#">Items 1</a></li>
+          <li class="menu__item"><a href="#">Items 1</a></li>
+          <li class="menu__item"><a href="#">Items 1</a></li>
+          <li class="menu__item"><a href="#">Items 1</a></li>
+        </ul>
+        <div class="header__block">
+          <span><a href="tel: 071-333-33-33">071-333-33-33</a></span>
+
+          <a class="button header__button" href="#" data-modalnative="" data-modal-name="modal-callme">Заказать звонок</a>
+
+        </div>
+    </div>
+    </header>
+    <section class="screen">
+      <div class="screen__bg"></div>
+      <div id="box">
+          <div class="layer" id="l6">
+            <div class="cloud1">&nbsp;</div>
+          </div>
+          <div class="layer" id="l7">
+            <div class="cloud2">&nbsp;</div>
+          </div>
+          <div class="layer" id="l9">
+            <div class="cloud4">&nbsp;</div>
+          </div>
+      </div>
+      <div class="screen__line route">
+
+              <div class="route__item route__item--01" data-item="1" data-name="Владивосток" style="">
+                <div class="route__item__circle"></div>
+                <div class="route__item__text">Миасс</div>
+              </div>
+              <div class="route__item route__item--02" data-item="2" data-name="Хабаровск" style="">
+                <div class="route__item__circle"></div>
+                <div class="route__item__text">Кострома</div>
+              </div>
+              <div class="route__item route__item--03" data-item="3" data-name="Иркутск" style="">
+                <div class="route__item__circle"></div>
+                <div class="route__item__text">Ульяновск</div>
+              </div>
+              <div class="route__item route__item--04" data-item="4" data-name="Красноярск" style="">
+                <div class="route__item__circle"></div>
+                <div class="route__item__text">Кинешма</div>
+              </div>
+              <div class="route__item route__item--05" data-item="5" data-name="Екатеринбург" style="">
+                <div class="route__item__circle"></div>
+                <div class="route__item__text">Нижний Новгород</div>
+              </div>
+              <div class="route__item route__item--06" data-item="6" data-name="Казань" style="">
+                <div class="route__item__circle"></div>
+                <div class="route__item__text">Заволжье</div>
+              </div>
+              <div class="route__item route__item--07" data-item="7" data-name="Ростов-на-Дону" style="">
+                <div class="route__item__circle route__item__circle--don"></div>
+                <div class="route__item__text">Донецк</div>
+              </div>
+              <div class="route__item route__item--08" data-item="11" data-name="Москва" style="">
+                <div class="route__item__circle"></div>
+                <div class="route__item__text">Москва</div>
+              </div>
+              <div class="route__item route__item--09" data-item="8" data-name="Калининград" style="">
+                <div class="route__item__circle"></div>
+                <div class="route__item__text">Серпухов</div>
+              </div>
+              <div class="route__item route__item--10" data-item="9" data-name="Санкт-Петербург" style="">
+                <div class="route__item__circle"></div>
+                <div class="route__item__text">Санкт-Петербург</div>
+              </div>
+              <div class="route__item route__item--11" data-item="10" data-name="Мурманск" style="">
+                <div class="route__item__circle"></div>
+                <div class="route__item__text">Балашиха</div>
+              </div>
+              <div class="route__item route__item--12" data-item="10" data-name="Мурманск" style="">
+                <div class="route__item__circle"></div>
+                <div class="route__item__text">Набережные Челны</div>
+              </div>
+              <div class="route__item route__item--13" data-item="10" data-name="Мурманск" style="">
+                <div class="route__item__circle"></div>
+                <div class="route__item__text">Донецк</div>
+              </div>
+            </div>
+      <div class="screen__fade" style=""></div>
+      <div class="screen--03__social screen__social social social--desktop">
+        <a class="social__item social__item--01" href="#" data-social="facebook" data-share="facebook">
+              <i class="fab fa-facebook-f"></i>
+        </a>
+        <a class="social__item social__item--02" href="#" data-social="vkontakte" data-share="vk">
+          <i class="fab fa-vk"></i>
+        </a>
+        <a class="social__item social__item--03" href="#" data-social="twitter" data-share="twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </div>
+      <div class="screen--03__content">
+        <div class="screen--03__content__title" style="">Ваш надежный бизнес-партнер<br> на рынке автозапчастей
+        </div>
+        <div class="screen--03__content__description" style="">все необходимое для авто от ведущих производителей России
+        </div>
+      </div>
+
+
+
+    </section>
+  </body>
+  <script src="js/dist/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/76dd712d5c.js"></script>
+  <script src="js/dist/script.min.js"></script>
+</html>

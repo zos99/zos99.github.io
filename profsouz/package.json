@@ -1,0 +1,36 @@
+{
+  "name": "profsouz",
+  "version": "1.0.0",
+  "description": "https://zos99.github.io/dontehbat/index.html",
+  "main": "gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "zos99.github.io"
+  },
+  "dependencies": {
+    "bootstrap-sass": "3.3.7",
+    "grunt": "^1.0.1",
+    "jshint-stylish": "^2.2.1",
+    "reset-css": "^4.0.1",
+    "time-grunt": "^2.0.0"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-concurrent": "^3.0.0",
+    "grunt-contrib-clean": "^2.0.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-imagemin": "^3.1.0",
+    "grunt-contrib-jshint": "^2.1.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "^1.0.2",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-critical": "^1.1.2",
+    "grunt-sass": "^3.1.0",
+    "load-grunt-config": "^3.0.1"
+  }
+}
