@@ -33,15 +33,31 @@
 }
 @media (max-width: 1440px) {
   .swiper-container .swiper-wrapper .swiper-slide .position .title {
-    font-size: 35;
+    font-size: 30px;
   }
   .swiper-container .swiper-wrapper .swiper-slide .position .subtitle {
-    font-size: 25px;
+    font-size: 20px;
   }
   .header__title {
-    width: 60%
+    width: 65%
   }
   .block-menu-top {
-    width: 30%;
+    width: 25%;
   }
+  .header__title h4, .header__title p {
+    font-size: 16px;
+  }
+  .menu-top > li > a {
+    padding-left: 10px;
+  }
+  .header__title h4 {
+    padding: 0 0 5px 30px;
+  }
+  .header__title p {
+    padding-left: 30px;
+  }
+  .header-menu > li > a {
+    font-size: 14px;
+  }
+
 }
