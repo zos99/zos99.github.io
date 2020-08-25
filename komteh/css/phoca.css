@@ -276,7 +276,7 @@ transform-origin: 9px 50%;
 }
 .user-menu .nav > li > a {
   padding: 0 !important;
-  color: #667DAC;
+  color: #ccccc1;
   line-height: 24px;
   font-size: 12px;
   font-weight: 700;
@@ -1749,11 +1749,11 @@ span.priceopt1, span.priceopt2, span.priceopt3 {
     margin-top: 0;
 }
 #phItemCartBoxCount, #phItemWishListBoxCount, #phItemCompareBoxCount {
-  color: #293859;
+  color: #000;
 display: block;
 width: 23px;
 height: 23px;
-background: #97b1eb;
+background: #fff;
 border-radius: 50%;
 text-align: center;
 }

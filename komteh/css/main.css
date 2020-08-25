@@ -444,10 +444,18 @@ ol, ul {
 
 /*---------------heade-----------------*/
 .head_header {
-  width: 100%; }
-
-.head-stores-h {
+  width: 100%;
+  background: #293859 url(../images-tmpl/bg_blue.png) no-repeat 230px -20px;
+  background-size: 200px;
   background: #293859;
+}
+.logo__img-2 {
+    height: 80px;
+    margin-left: 20px;
+    padding-bottom: 5px;
+}
+.head-stores-h {
+  background: transparent;
   height: 32px;
 }
 
@@ -703,7 +711,7 @@ ol, ul {
   font-weight: 900;
 }
 .header-top {
-  background-color: #f0f0f0;
+  background-color: transparent;
   height: 48px; }
 
 .header-top > .wrap {
@@ -772,7 +780,7 @@ background: #293859;
   -ms-align-items: center;
   align-items: center;
   transition: opacity 0.2s ease-in-out;
-  background: url("../images-tmpl/logo.jpg");
+  background: url("../images-tmpl/logo.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -844,9 +852,9 @@ background: #293859;
   width: 75px;
   height: 39px;
   border-radius: 0 5px 5px 0;
-  background-color:rgb(107, 211, 28);
+  background-color:#97b1eb;
   cursor: pointer;
-  border: 1px solid rgb(107, 211, 28);
+  border: 1px solid #97b1eb;
   transition: 0.3s all;
 }
 
@@ -868,7 +876,10 @@ background: #293859;
 
 .user-menu {
   width: 50%;
-  display: flex; }
+  display: flex;
+  justify-content: end;
+  padding-right: 25px;
+}
 
 .wrp-accaunt {
   display: flex;
@@ -904,7 +915,7 @@ background: #293859;
 .vmCartModule a,
 .wrp-accaunt,
 .wrp-accaunt a {
-color: #667DAC;
+color: #fff;
  }
 
 .vmCartModule {
@@ -2604,7 +2615,7 @@ transform: rotate(180deg);
     cursor: pointer;
   }
   .menu__item:hover {
-    background: rgb(107, 211, 28);
+    background: #293859;
   }
   .menu__link {
       height: 100%;
@@ -2625,13 +2636,13 @@ transform: rotate(180deg);
     color: #fff;
     font-size: 21px;
     pointer-events: none;
-    text-shadow: rgb(97, 189, 26) 1px 1px 0px, rgb(97, 189, 26) 2px 2px 0px, rgb(97, 189, 26) 3px 3px 0px, rgb(97, 189, 26) 4px 4px 0px, rgb(97, 189, 26) 5px 5px 0px, rgb(97, 189, 26) 6px 6px 0px, rgb(97, 189, 26) 7px 7px 0px, rgb(97, 189, 26) 8px 8px 0px, rgb(97, 189, 26) 9px 9px 0px, rgb(97, 189, 26) 10px 10px 0px, rgb(97, 189, 26) 11px 11px 0px, rgb(97, 189, 26) 12px 12px 0px, rgb(97, 189, 26) 13px 13px 0px, rgb(97, 189, 26) 14px 14px 0px, rgb(97, 189, 26) 15px 15px 0px, rgb(97, 189, 26) 16px 16px 0px, rgb(97, 189, 26) 17px 17px 0px, rgb(97, 189, 26) 18px 18px 0px, rgb(97, 189, 26) 19px 19px 0px, rgb(97, 189, 26) 20px 20px 0px, rgb(97, 189, 26) 21px 21px 0px, rgb(97, 189, 26) 22px 22px 0px, rgb(97, 189, 26) 23px 23px 0px, rgb(97, 189, 26) 24px 24px 0px, rgb(97, 189, 26) 25px 25px 0px, rgb(97, 189, 26) 26px 26px 0px, rgb(97, 189, 26) 27px 27px 0px, rgb(97, 189, 26) 28px 28px 0px, rgb(97, 189, 26) 29px 29px 0px, rgb(97, 189, 26) 30px 30px 0px;
+text-shadow: rgb(41, 56, 89) 1px 1px 0px, rgb(41, 56, 89) 2px 2px 0px, rgb(41, 56, 89) 3px 3px 0px, rgb(41, 56, 89) 4px 4px 0px, rgb(41, 56, 89) 5px 5px 0px, rgb(41, 56, 89) 6px 6px 0px, rgb(41, 56, 89) 7px 7px 0px, rgb(41, 56, 89) 8px 8px 0px, rgb(41, 56, 89) 9px 9px 0px, rgb(41, 56, 89) 10px 10px 0px, rgb(41, 56, 89) 11px 11px 0px, rgb(41, 56, 89) 12px 12px 0px, rgb(41, 56, 89) 13px 13px 0px, rgb(41, 56, 89) 14px 14px 0px, rgb(41, 56, 89) 15px 15px 0px, rgb(41, 56, 89) 16px 16px 0px, rgb(41, 56, 89) 17px 17px 0px, rgb(41, 56, 89) 18px 18px 0px, rgb(41, 56, 89) 19px 19px 0px, rgb(41, 56, 89) 20px 20px 0px, rgb(41, 56, 89) 21px 21px 0px, rgb(41, 56, 89) 22px 22px 0px, rgb(41, 56, 89) 23px 23px 0px, rgb(41, 56, 89) 24px 24px 0px, rgb(41, 56, 89) 25px 25px 0px, rgb(41, 56, 89) 26px 26px 0px, rgb(41, 56, 89) 27px 27px 0px, rgb(41, 56, 89) 28px 28px 0px, rgb(41, 56, 89) 29px 29px 0px, rgb(41, 56, 89) 30px 30px 0px;
     will-change: text-shadow;
 }
 .menu__icon {
     width: 50px;
     height: 100%;
-    background-color: rgb(107, 211, 28);
+    background-color: #293859;
     margin-right: 10px;
 }
 .link__text {
@@ -2691,7 +2702,7 @@ transform: rotate(180deg);
     height: 0;
     border-top: 18px solid transparent;
     border-bottom: 18px solid transparent;
-    border-left: 15px solid #61bd1a;
+    border-left: 15px solid #293859;
     transform: scaleX(0);
     transform-origin: 0 50%;
     z-index: 3;
@@ -2715,7 +2726,7 @@ transform: rotate(180deg);
 
 .menu__item:hover .menu__link::before {
       transform: scaleX(1);
-      border-left: 15px solid rgb(107, 211, 28);
+      border-left: 15px solid #293859;
       opacity: 1;
 }
 
@@ -2794,7 +2805,6 @@ transform: rotate(180deg);
 
   .header-top {
     height: 90px;
-background: #293859;
   }
 
 
@@ -2831,16 +2841,16 @@ background: #293859;
     max-width: 8; }
 
   .item-2 {
-    -ms-flex: 0 0 34%;
-    flex: 0 0 34%;
+    -ms-flex: 0 0 24%;
+    flex: 0 0 24%;
     align-items: center;
-    max-width: 34%;
+    max-width: 24%;
  }
 
   .item-3 {
-    -ms-flex: 0 0 58%;
-    flex: 0 0 58%;
-    max-width: 58%;
+    -ms-flex: 0 0 68%;
+    flex: 0 0 68%;
+    max-width: 68%;
     flex-wrap: wrap;
     align-items: center; } }
 @media only screen and (max-width: 1600.98px) and (min-width: 1281px), only screen and (min-width: 1601px) {
