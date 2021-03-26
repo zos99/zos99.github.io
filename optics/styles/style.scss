@@ -94,7 +94,7 @@ animation: smoothScroll 1s forwards;
     line-height: 35px;
 }
 .navigation > ul > li > a {
-    padding: 20px 10px;
+    padding: 30px 10px;
     display: block;
 }
 .navigation > ul > li > a {
@@ -195,10 +195,10 @@ animation: smoothScroll 1s forwards;
     color: #676153;
 }
 .navigation ul li a:hover {
-    color: #035391;
+    color:#eb4947;
 }
 .navigation > ul > li.active > a, .navigation > ul > li:hover > a, .right_section > ul > li:hover .submenu-wrapper > a {
-    border-bottom-color: #035391;
+    border-bottom-color: #eb4947;
 }
 .item {
   position: relative;
