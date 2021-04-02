@@ -27,7 +27,7 @@ header {
 	-o-transition: position 10s;
 	box-shadow: 0 4px 12px 0 rgba(0,0,0,.05);
 	position: relative;
-	background: #fff;
+	background: #000;
 	width: 100%;
 	padding: 0 3%;
 	z-index: 999;
@@ -54,7 +54,7 @@ animation: smoothScroll 1s forwards;
  }
 }
 .logo {
-    width: 10%;
+    width: 12%;
 		display: flex;
 		justify-content: center;
 }
@@ -62,7 +62,7 @@ animation: smoothScroll 1s forwards;
 	display: none;
 }
 .navigation  {
-  width: 80%;
+  width: 78%;
 }
  .right_section_wrap  {
   width: 10%;
@@ -85,7 +85,7 @@ animation: smoothScroll 1s forwards;
     margin-right: 10px;
 }
 .navigation ul li a {
-    color: #2c2c2c;
+    color: #fff;
     text-transform: uppercase;
     font-size: 14px;
     text-decoration: none;
@@ -98,7 +98,7 @@ animation: smoothScroll 1s forwards;
     display: block;
 }
 .navigation > ul > li > a {
-    border-bottom: 4px solid #fff;
+    border-bottom: 4px solid transparent;
     padding: 17.5px 10px;
 }
 .search_wrap {
@@ -159,7 +159,7 @@ animation: smoothScroll 1s forwards;
     align-content: space-between;
 }
 .cart_empty, .cart_info, .wrp-accaunt a {
-	color: #2c2c2c;
+	color: #fff;
 	font-size: 14px;
 	font-weight: 500;
 	line-height: 1.2;
@@ -226,7 +226,7 @@ animation: smoothScroll 1s forwards;
   width: 40px;
   height: 27px;
   position: relative;
-  background: #000;
+  background: #fff;
   transition: background 0.3s;
 }
 
@@ -237,7 +237,7 @@ animation: smoothScroll 1s forwards;
   width: 100%;
   height: 6px;
   left: 0;
-background: #fff;
+background: #000;
 }
 
 .sideMenu-toggler span:before {
@@ -437,4 +437,8 @@ flex-wrap: nowrap;
     float: left;
     width: 100%;
     font-weight: 600;
+}
+.logo img {
+  display: block;
+  padding: 3px 0;
 }
