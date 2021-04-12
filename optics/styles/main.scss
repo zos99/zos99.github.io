@@ -3411,7 +3411,7 @@ p {
 }
 .site-nav__link a {
   font-size: 24px;
-  	@include fluidFontSize(14px, 24px, 360px, 1900px, 1, 24px);
+	@include fluidFontSize(14px, 19.6px, 480px, 1280px, 1, 16px);
   font-weight: 400;
   color: #fff;
 }
@@ -3589,21 +3589,21 @@ p {
   transform: translatey(-50%);
   width: 50%;
   color: #fff;
-  left: 12%;
+  left: 12.5%;
 }
 .slider-item__title {
   margin-bottom: 15px;
 }
 .slider-item__title, .slider-item__descr {
   font-size: 64px;
-  @include fluidFontSize(20px, 64px, 360px, 1900px, 1, 64px);
+  @include fluidFontSize(18px, 45px, 480px, 1280px, 1, 35px);
 }
 .slider__button {
   margin-top: 135px;
   background: transparent;
   color: #fff;
   font-size: 36px;
-  @include fluidFontSize(20px, 36px, 360px, 1900px, 1, 36px);
+  @include fluidFontSize(15px, 29.5px, 480px, 1280px, 1, 25px);
   text-transform: uppercase;
   height: 90px;
   padding: 0 127px;
