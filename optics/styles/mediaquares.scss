@@ -1,1 +1,16 @@
-
+@media (min-width: 1500px) {
+  .header-top-line a {
+    font-size: 13px; }
+  }
+  @media screen and (min-width: 667px) {
+   .search__bar .icon-search {
+     left: 25px;
+     top: 13px;
+     width: 25px;
+   }
+  }
+  @media (min-width: 480px) {
+    .header-top-line a {
+      font-size: 12px;
+      font-size: calc( 0.0019607843 * 100vw + 11.0588235294px ); }
+    }
