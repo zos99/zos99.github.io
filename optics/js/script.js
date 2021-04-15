@@ -7,13 +7,6 @@ window.jQuery = window.$ = jQuery;
 	});
 
 
-$(window).scroll(function() {
-        $(this).scrollTop() > 100 ? ($("header").addClass("sticky"),
-        $("header").slideDown("1000"),
-        $(".dropdown").css("top", "57px")) : ($("header").removeClass("sticky"),
-        $(".dropdown").css("top", "57px"))
-    });
-
     $('.multiple-items').slick({
     infinite: true,
     dots: true,
@@ -21,4 +14,15 @@ $(window).scroll(function() {
     slidesToShow: 1,
     arrows: false,
     slidesToScroll: 1
+});
+
+$(document).ready(function(){
+  // jQuery to collapse the navbar on scroll
+  $(window).scroll(function() {
+      if ($(".site-header").offset().top > 50) {
+          $(".site-header").addClass("site-header--fixed");
+      } else {
+          $(".site-header").removeClass("site-header--fixed");
+      }
+  });
 });

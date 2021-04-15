@@ -24,28 +24,25 @@
   width: 100%;
   max-width: 1900px;
   margin: 0 auto;
+  height: 100%;
 }
 /*--------------------------------------------------*/
 .site-header {
-	transition: all ease-in .5s;
-	-webkit-transition: all .5s ease;
-	-moz-transition: position 10s;
-	-ms-transition: position 10s;
-	-o-transition: position 10s;
-	width: 100%;
-	z-index: 1;
-  position: relative;
-	display: flex;
-  flex-wrap: wrap;
-	align-items: center;
-  background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
-}
-.site-header.sticky {
   position: fixed;
   top: 0;
   left: 0;
-  max-width: 100%;
-  animation: smoothScroll  1s forwards;
+  width: 100%;
+  height: 111px;
+  z-index: 1;
+  background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+  display: flex;
+  align-items: center;
+  transition: all ease-in .5s;
+}
+.site-header--fixed {
+    background-color: #000;
+    opacity: 0.95;
+    height: 80px;
 }
 /*-----navigateion---------------*/
 .site-nav__main {
@@ -53,7 +50,7 @@
   flex-wrap: nowrap;
   align-items: center;
   justify-content: space-between;
-    height: 111px;
+  width: 100%;
 }
 .site-nav__link a {
   font-size: 24px;
@@ -65,12 +62,23 @@
 .logo {
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 100%;
+
+     img {
+       width: auto;
+       height: 100%;
+      transition: all ease-in .5s;
+      display: block;
+      padding: 10px 0;
+    }
 }
 /*------------------------------*/
-.site-nav--right {
+.site-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 /*------------search------------*/
 .site-nav.site-nav--right li:first-child {
@@ -78,7 +86,7 @@
 }
 .search__bar {
   position: relative;
-  height: 53px;
+  height: 48px;
   border-radius: 40px;
   background: transparent;
 }
@@ -103,14 +111,19 @@
     font-size: 14px;
     color: #000;
 }
+/*------------iconka-------------*/
+.site-nav--right svg {
+  width: 20px;
+  height: auto;
+}
 /*------------- Slider -----------*/
 .main__slider {
   position: relative;
   background: #000;
   display: flex;
   justify-content: center;
-  margin-top: -111px;
 }
+
 .slick-slider {
   position: relative;
   display: block;
@@ -185,6 +198,7 @@
 }
 
 .slick-slide {
+  outline: none;
     display: none;
     float: left;
     height: 100%;
@@ -303,10 +317,7 @@
 .my-dots li button:focus:before {
   opacity: 1;
 }
-.slick-slide,
-button {
-  outline: none;
-}
+/**----------------------------**/
 .eyeglasses_categories ul {
 display: flex;
 flex-wrap: nowrap;
@@ -336,8 +347,4 @@ flex-wrap: nowrap;
     float: left;
     width: 100%;
     font-weight: 600;
-}
-.logo img {
-  display: block;
-  padding: 3px 0;
 }
