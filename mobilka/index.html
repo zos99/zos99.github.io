@@ -11,12 +11,8 @@
 	<link href="css/common.min.css" type="text/css" rel="stylesheet">
 	<link href="css/style-main.min.css" type="text/css" rel="stylesheet">
 	<link href="css/my.min.css" type="text/css" rel="stylesheet">
-	<script src="js/jquery.min.js"></script>
-	<script src="js/libs.min.js"></script>
-	<script src="js/dataLayer.js"></script>
-	<script src="js/critical.min.js"></script>
-	<script src="js/main.min.js"></script>
-	<script src="js/controllers.min.js"></script>
+	<link href="css/all.min.css" type="text/css" rel="stylesheet">
+
 </head>
 
 <body class="page-main">
@@ -25,10 +21,10 @@
 			<div class="head--wrapper">
 				<div class="col p-0 header--item">
 					<ul id="nav-main" class="header--nav">
-						<li ><a href="/oplata">Оплата</a></li>
-						<li ><a href="/dostavka">Доставка</a></li>
-						<li ><a href="/garantiya-i-vozvrat">Гарантия и возврат</a></li>
-						<li ><a href="/ostavit-otzyv">Отзывы</a></li>
+						<li><a href="/oplata">Доставка и оплата</a></li>
+						<li><a href="/garantiya-i-vozvrat">Гарантия и обмен</a></li>
+						<li><a href="/ostavit-otzyv">Отзывы</a></li>
+						<li><a href="#">Акции</a></li>
 					</ul>
 
 				</div>
@@ -36,58 +32,126 @@
 					<a href="#" data-modalnative="" data-modal-name="modal-callme" class="a_icon" id="callback-header"><i class="fas fa-headset"></i> Вам перезвонить?</a>
 				</div>
 				<div class="col col-3 p-0">
-				  <ul class="office">
-						<li><a id="btnk" class="sidebar_filter">Адресс</a></li>
-						<li><a class="sidebar_filter" title="Связь с нами" href="/menedzher-konsultant"><i class="fas fa-phone-alt"></i> Контакты</a></li>
-				  </ul>
+					<ul class="office">
+						<li>
+							<a id="btnk" class="sidebar_filter" href="">
+								<i class="fas fa-map-marker-alt"></i>
+								Адресс
+							</a>
+						</li>
+						<li>
+							<a class="sidebar_filter" title="Связь с нами" href="">
+								<i class="fas fa-phone-alt"></i>
+								Контакты
+							</a>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</nav>
-				<div class="elem-burger__wrapper">
-					<div class="elem-burger" id="openSideMenu">
-						<div class="before"></div>
-						<span></span>
-						<div class="after"></div>
-					</div>
+		<div class="elem-burger__wrapper">
+			<div class="elem-burger" id="openSideMenu">
+				<div class="before"></div>
+				<span></span>
+				<div class="after"></div>
+			</div>
+		</div>
+		<div class="box-header__container">
+			<a href="/" class="logo">
+				<img class="fullscreen" src="images/logo.png" alt="">
+				<img class="smallscreen" src="images/small-logo.png" alt="">
+			</a>
+			<nav class="mainmenu">
+				<ul class="header__menu">
+					<li class="box-header__link item__parent">
+						<a href="#">Смартфоны</a>
+						<div class="menu__sub">
+							<ul class="menu__sub__outer">
+								<li class="menu__sub__link"><a href="#">Xiaomi</a></li>
+								<li class="menu__sub__link"><a href="#">Samsung</a></li>
+								<li class="menu__sub__link"><a href="#">iPhone</a></li>
+								<li class="menu__sub__link"><a href="#">Realme</a></li>
+								<li class="menu__sub__link"><a href="#">FiGi</a></li>
+								<li class="menu__sub__link"><a href="#">Meizu</a></li>
+								<li class="menu__sub__link"><a href="#">Oppo</a></li>
+								<li class="menu__sub__link"><a href="#">Huawei</a></li>
+								<li class="menu__sub__link"><a href="#">Blackview</a></li>
+							</ul>
+							<div class="main__banner">
+								<img src="images/mb-1.jpg" alt="" class="slide-img hidden-xs">
+							</div>
+						</div>
+					</li>
+					<li class="box-header__link item__parent">
+						<a href="#">Аксессуары</a>
+						<div class="menu__sub">
+							<ul class="menu__sub__outer">
+								<li class="menu__sub__link"><a href="#">Наушники</a></li>
+								<li class="menu__sub__link"><a href="#">Портативное аудио</a></li>
+								<li class="menu__sub__link"><a href="#">Внешние аккумуляторы</a></li>
+								<li class="menu__sub__link"><a href="#">Зарядные устройства</a></li>
+								<li class="menu__sub__link"><a href="#">Кабели</a></li>
+								<li class="menu__sub__link"><a href="#">Чехлы</a></li>
+								<li class="menu__sub__link"><a href="#">Стёкла и плёнки</a></li>
+								<li class="menu__sub__link"><a href="#">Карты памяти</a></li>
+							</ul>
+							<div class="main__banner">
+								<img src="images/mb-2.jpg" alt="" class="slide-img hidden-xs">
+							</div>
+						</div>
+					</li>
+					<li class="box-header__link item__parent">
+						<a href="#">Планшеты и электронные книги</a>
+						<div class="menu__sub">
+							<ul class="menu__sub__outer">
+								<li class="menu__sub__link"><a href="#">Все планшеты</a></li>
+								<li class="menu__sub__link"><a href="#">Apple iPad</a></li>
+								<li class="menu__sub__link"><a href="#">Huawei MediaPad</a></li>
+								<li class="menu__sub__link"><a href="#">Galaxy Tab</a></li>
+								<li class="menu__sub__link"><a href="#">Планшеты на Android</a></li>
+								<li class="menu__sub__link"><a href="#">Планшеты на Windows</a></li>
+								<li class="menu__sub__link"><a href="#">Аксессуары для планшетов</a></li>
+								<li class="menu__sub__link"><a href="#">Электронные книги и аксессуары</a></li>
+							</ul>
+							<div class="main__banner">
+								<img src="images/mb-2.jpg" alt="" class="slide-img hidden-xs">
+							</div>
+						</div>
+					</li>
+					<li class="box-header__link item__parent">
+						<a href="#">Гаджеты</a>
+						<div class="menu__sub">
+							<ul class="menu__sub__outer">
+								<li class="menu__sub__link"><a href="#">Смарт-часы</a></li>
+								<li class="menu__sub__link"><a href="#">Фитнес-браслеты</a></li>
+								<li class="menu__sub__link"><a href="#">Спортивные часы</a></li>
+								<li class="menu__sub__link"><a href="#">Детские часы</a></li>
+								<li class="menu__sub__link"><a href="#">Умные колонки и портативная акустика</a></li>
+								<li class="menu__sub__link"><a href="#">Умные устройства</a></li>
+							</ul>
+							<div class="main__banner">
+								<img src="images/mb-2.jpg" alt="" class="slide-img hidden-xs">
+							</div>
+						</div>
+					</li>
+				</ul>
+			</nav>
+			<form action="" class="form-search elem-suggest">
+				<input type="hidden" name="fromSearch" value="direct" id="from-search">
+				<div class="elem-suggest__field" id="autocomplete">
+					<input value="" type="search" name="search" class="form-search__text autocomplete-input" placeholder="Поиск по сайту" maxlength="100">
 				</div>
-				<div class="box-header__container">
-					<a href="/" class="logo">
-						<img class="fullscreen" src="images/logo.png" alt="">
-						<img class="smallscreen" src="images/small-logo.png" alt="">
-					</a>
-					<div class="city-address">
-						<div class="addresses">
-							<a href="#" class="box-header__link">Смартфоны</a>
-							<a href="#" class="box-header__link">Аксессуары</a>
-							<a href="#" class="box-header__link">Часы</a>
-							<a href="#" class="box-header__link">фитнес-браслеты</a>
-									<a href="#" class="box-header__link">Акции и новинки</a>
-						</div>
-					</div>
-					<form action="" class="form-search elem-suggest">
-						<input type="hidden" name="fromSearch" value="direct" id="from-search">
-						<div class="elem-suggest__field" id="autocomplete">
-							<input value="" type="search" name="search" class="form-search__text autocomplete-input" placeholder="Поиск по сайту" maxlength="100">
-						</div>
-						<button type="submit" class="form-search__btn" value="Найти">
-							<i class="fas fa-search"></i>
-						</button>
-					</form>
-					<div class="delivery-tel">
-									
-					</div>
-					<div class="mobile-cabinet-cart">
-						<a href="#" class="elem-favorite">
-							<i class="far fa-heart"></i>
-						</a>
-						<div class="mobile-profile">
-							<i class="far fa-user"></i>
-						</div>
-						<a href="#" class="elem-cart">
-							<i class="fas fa-shopping-cart"></i>
-						</a>
-					</div>
-				</div>
+				<button type="submit" class="form-search__btn" value="Найти">
+					<i class="fas fa-search"></i>
+				</button>
+			</form>
+			<div class="header-icons">
+				<a href="#" class="icon icon-profile"><i class="far fa-user"></i>Профиль</a>
+				<a href="#" class="icon icon-like"><i class="far fa-heart"></i>Избранное</a>
+				<a href="#" class="icon icon-compare"><i class="fa fa-balance-scale"></i>Сравнение</a>
+				<a href="#" class="icon icon-basket"><i class="fas fa-shopping-cart"></i>Корзина</a>
+			</div>
+		</div>
 	</header>
 	<div class="page-wrapper">
 		<div class="content-container">
@@ -198,41 +262,64 @@
 					</div>
 				</div>
 			</div> <!-- /box-offers -->
+			<div class="box-novelty">
+				<div class="container">
+					<h3>Новые товары</h3>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+					Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</div>
+			</div>
 			<div class="box-sales">
-				<h3>Новые товары</h3>
+				<h3>Каталог товаров</h3>
 				<div class="box-sales__wrapper">
 					<div class="box-sales__first">
 						<div class="box-sales__small">
-							<div class="box-sales__elem" style="background-color: #8da4b0">
-								<img src="images/b013651964a9d647484a983fbd97516e.png" alt="Наборы посуды">
-								<a href="#" title="Наборы посуды">Наборы <br>посуды</a>
+							<div class="box-sales__elem">
+								<img src="images/k1.jpg" alt="">
+								<a href="#" title="">Смартфоны, мобильные телефоны</a>
 							</div>
-							<div class="box-sales__elem" style="background-color: #66b0cc">
-								<img src="images/c73c0d614df7a50e772b08579aa8dd1b.png" alt="Товары для дома">
-								<a href="#" title="Товары для дома">Товары <br>для дома</a>
+							<div class="box-sales__elem">
+								<img src="images/k2.jpg" alt="">
+								<a href="#" title="">Samsung</a>
 							</div>
 						</div>
-						<div class="box-sales__big">
-							<img src="images/2cd36ccb3da568e3db7aac6eabfc3811.png" alt="Суперцены на текстиль!">
-							<a href="#" title="Суперцены на текстиль!">Суперцены на текстиль!</a>
+						<div class="box-sales__small">
+							<div class="box-sales__elem">
+								<img src="images/k3.jpg" alt="">
+								<a href="#" title="">Apple</a>
+							</div>
+							<div class="box-sales__elem">
+								<img src="images/k4.jpg" alt="">
+								<a href="#" title="">Huawei</a>
+							</div>
+						</div>
+						<div class="box-sales__small">
+							<div class="box-sales__elem">
+								<img src="images/k5.jpg" alt="">
+								<a href="#" title="">Аксессуары для смартфонов</a>
+							</div>
+							<div class="box-sales__elem">
+								<img src="images/k6.jpg" alt="">
+								<a href="#" title="">Смарт-часы</a>
+							</div>
 						</div>
 					</div> <!-- /box-sales__first -->
 					<div class="box-sales__second">
-						<div class="box-sales__elem" style="background-color: #66cccc">
-							<img src="images/15817d56afdf36ca9c65655ce5463f71.png" alt="Готовые шторы">
-							<a href="#" title="Готовые шторы">Готовые <br>шторы</a>
+						<div class="box-sales__elem">
+							<img src="images/k7.jpg" alt="">
+							<a href="#" title="">Фитнес-браслеты</a>
 						</div>
-						<div class="box-sales__elem" style="background-color: #b2cfbe">
-							<img src="images/c1584a08ebca487fcdaf7de5785ebdef.png" alt="Суперцены на светильники">
-							<a href="#" title="Суперцены на светильники">Суперцены <br>на светильники</a>
+						<div class="box-sales__elem">
+							<img src="images/k8.jpg" alt="">
+							<a href="#" title="">Планшеты</a>
 						</div>
-						<div class="box-sales__elem" style="background-color: #e69ead">
-							<img src="images/b91527ecb7edc4cf88da2c0f78bbb72a.png" alt="Постельное белье">
-							<a href="#" title="Постельное белье">Постельное <br>белье</a>
+						<div class="box-sales__elem">
+							<img src="images/k9.jpg" alt="">
+							<a href="#" title="">Умные колонки и портативная акустика</a>
 						</div>
-						<div class="box-sales__elem" style="background-color: #8da4b0">
-							<img src="images/c4873fab813e4ecf4d7418094da5dff8.png" alt="Бесплатная доставка">
-							<a href="#" title="Бесплатная доставка">Бесплатная <br>доставка</a>
+						<div class="box-sales__elem">
+							<img src="images/k10.jpg" alt="">
+							<a href="#" title="">Электронные книги и аксессуары</a>
 						</div>
 					</div> <!-- /box-sales__second -->
 				</div>
@@ -412,15 +499,18 @@
 							</div>
 						</div>
 						<div id="content-12">
-							2Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+							2Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat.
 							Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 						</div>
 						<div id="content-13">
-							3Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+							3Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat.
 							Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 						</div>
 						<div id="content-14">
-							4Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+							4Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat.
 							Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 						</div>
 					</div>
@@ -524,7 +614,12 @@
 			</footer> <!-- .box-footer -->
 		</div>
 	</div> <!-- .page-wrapper -->
-	<script src="https://kit.fontawesome.com/76dd712d5c.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/libs.min.js"></script>
+	<script src="js/dataLayer.js"></script>
+	<script src="js/critical.min.js"></script>
+	<script src="js/main.min.js"></script>
+	<script src="js/controllers.min.js"></script>
 </body>
 
 </html>

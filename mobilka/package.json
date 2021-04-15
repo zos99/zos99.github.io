@@ -11,6 +11,7 @@
     "url": "zos99.github.io"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3",
     "bootstrap-sass": "3.3.7",
     "grunt": "^1.0.1",
     "grunt-contrib-sass": "^1.0.0",

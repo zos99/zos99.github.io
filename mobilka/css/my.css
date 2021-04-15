@@ -67,7 +67,7 @@
 }
 
 .content-container {
-  padding-top: 140px;
+ padding-top: 5.6117vw;
 }
 
 .box-header {
@@ -239,7 +239,7 @@
 }
 .head-stores-h {
     background: transparent;
-    padding: 10px 0;
+    padding: 0;
     background: #3c2b8b;
 }
 .head--wrapper {
@@ -247,12 +247,12 @@
     height: 100%;
 display: flex;
 margin: 0;
+height: 30px;
 }
 .p-0 {
     padding: 0;
 }
 .head--wrapper > .col {
-    height: 20px;
     display: flex;
     align-items: center;
 }
@@ -291,6 +291,7 @@ margin: 0;
 .office {
   display: flex;
   list-style: none;
+  margin: 0;
 }
 
 .office a {
@@ -298,5 +299,95 @@ margin: 0;
   color: #fff;
 }
 .office a:last-child {
-  padding-left: 15px;
+  padding-left: 20px;
+}
+.sidebar_filter {
+    position: relative;
+    color: #fff;
+    font-size: 13px;
+    font-weight: normal;
+}
+.header-icons a i {
+   color: #3c2b8b;
+   font-size: 23px;
+}
+.icon i, .icon-key i, .icon-marker i {
+   font-size: 2.5rem;
+}
+.menu__sub {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 76px;
+    z-index: 999;
+    width: 100%;
+    max-height: 0;
+    height: auto;
+    background: #fff;
+    box-sizing: content-box;
+    transform: translateX(-50%);
+    padding: 0;
+    pointer-events: auto;
+    overflow: hidden;
+     animation-duration: 300ms;
+
+     display: flex;
+     flex-wrap: wrap;
+}
+
+
+.box-header__link:hover > a, .box-header__link:active  > a {
+   color:  #f67e04;;
+}
+.item__parent > a {position: relative;}
+.item__parent:hover > a::after {
+   content: '';
+    opacity: 1;
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: -5px;
+    left: 45%;
+    transform: scale(.7) translatex(-50%);
+    border-left: 1.25rem solid transparent;
+    border-right: 1.25rem solid transparent;
+    border-bottom: 1.25rem solid #bed3db;
+    transition: opacity .5s ease-in-out;
+}
+.header__menu > li:hover > .menu__sub {
+    cursor: pointer;
+    max-height: 550px;
+    border: 1px solid  #bed3db;
+    transition: background .2s linear,color .2s linear,border .2s linear,max-height .4s ease,padding .4s ease;
+    padding: 10px 20px;
+}
+
+.menu__sub a {
+    color: #000;
+    font-size: 14px;
+    padding: 10px;
+    display: block;
+    padding: .625vw 1.6042vw;
+    font-size: .8333vw;
+    transition: all linear .2s;
+    overflow: hidden;
+}
+
+.menu__sub a:hover {
+   color: #f67e04;
+}
+.menu__sub__outer {
+   padding-left: 0;
+   width: 60%;
+   column-count: 2;
+   list-style: none!important;
+}
+.main__banner {
+   width: 40%;
+   padding: 0 10px;
+}
+/*--------------------------*/
+.box-novelty {
+   margin-top: 50px;
+   margin-bottom: 50px;
 }
