@@ -4,6 +4,108 @@
   font-weight: 400;
   font-style: normal; }
 @font-face {
+  font-family: 'Raleway';
+  src: url("Raleway-ExtraLight.eot");
+  src: local("Raleway ExtraLight"), local("Raleway-ExtraLight"), url("../fonts/Raleway-ExtraLight.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraLight.woff") format("woff"), url("../fonts/Raleway-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal; }
+@font-face {
+  font-family: 'Raleway';
+  src: url("../fonts/Raleway-Medium.eot");
+  src: local("Raleway Medium"), local("Raleway-Medium"), url("../fonts/Raleway-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Medium.woff") format("woff"), url("../fonts/Raleway-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal; }
+@font-face {
+  font-family: 'Raleway';
+  src: url("../fonts/Raleway-LightItalic.eot");
+  src: local("../fonts/Raleway Light Italic"), local("Raleway-LightItalic"), url("../fonts/Raleway-LightItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-LightItalic.woff") format("woff"), url("../fonts/Raleway-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic; }
+@font-face {
+  font-family: 'Raleway';
+  src: url("../fonts/Raleway-Regular.eot");
+  src: local("Raleway"), local("Raleway-Regular"), url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Raleway';
+  src: url("../fonts/Raleway-Light.eot");
+  src: local("Raleway Light"), local("Raleway-Light"), url("../fonts/Raleway-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Light.woff") format("woff"), url("../fonts/Raleway-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+@font-face {
+  font-family: 'Raleway';
+  src: url("../fonts/Raleway-Thin.eot");
+  src: local("Raleway Thin"), local("Raleway-Thin"), url("../fonts/Raleway-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Thin.woff") format("woff"), url("../fonts/Raleway-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal; }
+@font-face {
+  font-family: 'Raleway';
+  src: url("../fonts/Raleway-ExtraBoldItalic.eot");
+  src: local("Raleway ExtraBold Italic"), local("Raleway-ExtraBoldItalic"), url("../fonts/Raleway-ExtraBoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBoldItalic.woff") format("woff"), url("../fonts/Raleway-ExtraBoldItalic.ttf") format("truetype");
+  font-weight: 800;
+  font-style: italic; }
+@font-face {
+  font-family: 'Raleway';
+  src: url("../fonts/Raleway-ExtraLightItalic.eot");
+  src: local("Raleway ExtraLight Italic"), local("Raleway-ExtraLightItalic"), url("../fonts/Raleway-ExtraLightItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraLightItalic.woff") format("woff"), url("../fonts/Raleway-ExtraLightItalic.ttf") format("truetype");
+  font-weight: 200;
+  font-style: italic; }
+@font-face {
+  font-family: 'Raleway';
+  src: url("../fonts/Raleway-MediumItalic.eot");
+  src: local("Raleway Medium Italic"), local("Raleway-MediumItalic"), url("../fonts/Raleway-MediumItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-MediumItalic.woff") format("woff"), url("../fonts/Raleway-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic; }
+@font-face {
+  font-family: 'Raleway';
+  src: url("../fonts/Raleway-BoldItalic.eot");
+  src: local("Raleway Bold Italic"), local("Raleway-BoldItalic"), url("../fonts/Raleway-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-BoldItalic.woff") format("woff"), url("../fonts/Raleway-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic; }
+@font-face {
+  font-family: 'Raleway';
+  src: url("../fonts/Raleway-ThinItalic.eot");
+  src: local("Raleway Thin Italic"), local("Raleway-ThinItalic"), url("../fonts/Raleway-ThinItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ThinItalic.woff") format("woff"), url("../fonts/Raleway-ThinItalic.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic; }
+@font-face {
+  font-family: 'Raleway';
+  src: url("../fonts/Raleway-SemiBoldItalic.eot");
+  src: local("Raleway SemiBold Italic"), local("Raleway-SemiBoldItalic"), url("../fonts/Raleway-SemiBoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-SemiBoldItalic.woff") format("woff"), url("../fonts/Raleway-SemiBoldItalic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic; }
+@font-face {
+  font-family: 'Raleway';
+  src: url("../fonts/Raleway-SemiBold.eot");
+  src: local("Raleway SemiBold"), local("Raleway-SemiBold"), url("../fonts/Raleway-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-SemiBold.woff") format("woff"), url("../fonts/Raleway-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal; }
+@font-face {
+  font-family: 'Raleway';
+  src: url("../fonts/Raleway-Italic.eot");
+  src: local("Raleway Italic"), local("Raleway-Italic"), url("../fonts/Raleway-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Italic.woff") format("woff"), url("../fonts/Raleway-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic; }
+@font-face {
+  font-family: 'Raleway';
+  src: url("../fonts/Raleway-Bold.eot");
+  src: local("Raleway Bold"), local("Raleway-Bold"), url("../fonts/Raleway-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Bold.woff") format("woff"), url("../fonts/Raleway-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+@font-face {
+  font-family: 'Raleway';
+  src: url("../fonts/Raleway-ExtraBold.eot");
+  src: local("Raleway ExtraBold"), local("Raleway-ExtraBold"), url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal; }
+@font-face {
+  font-family: 'Raleway';
+  src: url("../fonts/Raleway-BlackItalic.eot");
+  src: local("Raleway Black Italic"), local("Raleway-BlackItalic"), url("../fonts/Raleway-BlackItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-BlackItalic.woff") format("woff"), url("../fonts/Raleway-BlackItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic; }
+@font-face {
   font-family: 'Font Awesome 5 Brands';
   font-style: normal;
   font-weight: 400;
@@ -122,7 +224,7 @@ a {
   color: #555;
   font-family: "Raleway", Arial, sans-serif; }
   a:hover {
-    color: #eb4947; }
+    color: #A68C0C; }
 
 ol, ul {
   list-style: none; }
@@ -2280,7 +2382,7 @@ button {
   position: absolute;
   left: 50%;
   top: 50%;
-  background-image: url(../images/status.gif);
+  background-image: url("../images/status.gif");
   background-repeat: no-repeat;
   background-position: center center;
   margin: -50px 0 0 -50px; }
@@ -2299,11 +2401,11 @@ button {
   left: 0;
   width: 100%;
   height: 111px;
-  z-index: 1;
+  z-index: 2;
   background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
   display: flex;
   align-items: center;
-  transition: all ease-in .5s; }
+  transition: all ease-in 0.5s; }
 
 .site-header--fixed {
   background-color: #000;
@@ -2341,7 +2443,7 @@ button {
   .logo img {
     width: auto;
     height: 100%;
-    transition: all ease-in .5s;
+    transition: all ease-in 0.5s;
     display: block;
     padding: 10px 0; }
 
@@ -2425,8 +2527,8 @@ button {
   cursor: pointer;
   cursor: hand; }
 
-.slick-slider .slick-track,
-.slick-slider .slick-list {
+.slick-slider .slick-list,
+.slick-slider .slick-track {
   -webkit-transform: translate3d(0, 0, 0);
   -moz-transform: translate3d(0, 0, 0);
   -ms-transform: translate3d(0, 0, 0);
@@ -2441,8 +2543,8 @@ button {
   margin-left: auto;
   margin-right: auto; }
 
-.slick-track:before,
-.slick-track:after {
+.slick-track:after,
+.slick-track:before {
   display: table;
   content: ''; }
 
@@ -2500,17 +2602,20 @@ button {
 .slider-item__title {
   margin-bottom: 15px; }
 
-.slider-item__title, .slider-item__descr {
+.slider-item__descr,
+.slider-item__title {
   font-size: 64px;
   font-size: 18px;
   line-height: 1; }
   @media (min-width: 480px) {
-    .slider-item__title, .slider-item__descr {
+    .slider-item__descr,
+    .slider-item__title {
       font-size: 35px;
-      font-size: calc( 0.03375 * 100vw + 1.8px ); } }
-  @media (min-width: 1280px) {
-    .slider-item__title, .slider-item__descr {
-      font-size: 45px; } }
+      font-size: calc( 0.0295774648 * 100vw + 3.8028169014px ); } }
+  @media (min-width: 1900px) {
+    .slider-item__descr,
+    .slider-item__title {
+      font-size: 60px; } }
 
 .slider__button {
   margin-top: 135px;
@@ -2570,44 +2675,374 @@ button {
   width: 8px;
   height: 6px; }
 
-.my-dots li button:hover,
-.my-dots li button:focus {
+.my-dots li button:focus,
+.my-dots li button:hover {
   outline: none; }
 
-.my-dots li button:hover:before,
-.my-dots li button:focus:before {
+.my-dots li button:focus:before,
+.my-dots li button:hover:before {
   opacity: 1; }
 
-/**----------------------------**/
-.eyeglasses_categories ul {
+/*----------------blocks-------------*/
+.block__title {
+  font-size: 15px;
+  line-height: 1;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 60px; }
+  @media (min-width: 480px) {
+    .block__title {
+      font-size: 25px;
+      font-size: calc( 0.0369978858 * 100vw + -2.7589852008px ); } }
+  @media (min-width: 1426px) {
+    .block__title {
+      font-size: 50px; } }
+
+.block__outers {
+  display: flex; }
+
+.teg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1; }
+  .teg a {
+    display: block;
+    padding: 10px 20px;
+    font-size: 13px;
+    line-height: 1;
+    text-transform: uppercase;
+    font-weight: bold; }
+    @media (min-width: 480px) {
+      .teg a {
+        font-size: 14px;
+        font-size: calc( 0.0031712474 * 100vw + 11.4778012685px ); } }
+    @media (min-width: 1426px) {
+      .teg a {
+        font-size: 16px; } }
+
+.teg--new {
+  background: #FBFF26; }
+
+.teg--hit {
+  background: #BEBB57; }
+
+.teg--akciy {
+  background: #fbc980; }
+
+.btn {
+  margin-top: 75px;
+  background: transparent;
+  color: #000;
+  font-size: 15px;
+  line-height: 1;
+  line-height: 1;
+  text-transform: uppercase;
+  height: 90px;
+  width: 90%;
+  padding: 0 50px;
+  border: 2px solid #000;
+  max-width: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  @media (min-width: 480px) {
+    .btn {
+      font-size: 25px;
+      font-size: calc( 0.018125 * 100vw + 6.3px ); } }
+  @media (min-width: 1280px) {
+    .btn {
+      font-size: 29.5px; } }
+
+/**---------block rims -------------**/
+.block-rims {
+  padding: 80px 0; }
+
+.block-rims__items {
+  width: 100%; }
+  .block-rims__items:not(:last-child) {
+    margin-right: 45px; }
+  .block-rims__items:first-child, .block-rims__items:last-child {
+    margin-top: 100px; }
+  .block-rims__items a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+  .block-rims__items figure {
+    width: 100%;
+    overflow: hidden;
+    border: 1px solid #eee;
+    border-radius: 50%; }
+  .block-rims__items img {
+    max-width: 100%;
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    -webkit-transition: all 1s ease-out; }
+    .block-rims__items img:hover {
+      border-radius: 50%;
+      -webkit-transform: scale(1.1);
+      -moz-transform: scale(1.1);
+      -o-transform: scale(1.1); }
+  .block-rims__items span {
+    font-size: 14px;
+    line-height: 1;
+    padding-top: 20px;
+    display: block;
+    width: 180px;
+    text-align: center; }
+    @media (min-width: 480px) {
+      .block-rims__items span {
+        font-size: 16px;
+        font-size: calc( 0.0105708245 * 100vw + 8.9260042283px ); } }
+    @media (min-width: 1426px) {
+      .block-rims__items span {
+        font-size: 24px; } }
+
+/*-------------block slider product------------*/
+.block-products {
+  padding-top: 0;
+  padding-bottom: 100px; }
+
+.block__title--products {
+  margin-bottom: 40px; }
+
+.product-slider__item {
+  position: relative;
+  overflow: hidden;
+  flex-direction: column;
+  box-shadow: 0 9px 17px 4px rgba(0, 0, 0, 0.18);
+  -webkit-box-shadow: 0 9px 17px 4px rgba(0, 0, 0, 0.18);
+  -moz-box-shadow: 0 9px 17px 4px rgba(0, 0, 0, 0.18);
+  border: 1px solid #eee; }
+  .product-slider__item:not(:last-child) {
+    margin-right: 45px; }
+
+.product-slider__image {
+  position: relative;
+  text-align: center; }
+  .product-slider__image img {
+    width: 100%;
+    display: block; }
+
+.product-slider__title {
+  position: absolute;
+  bottom: 10px;
+  text-align: center;
+  width: 100%;
+  left: 0;
+  font-size: 14px;
+  line-height: 1;
+  text-transform: uppercase; }
+  @media (min-width: 480px) {
+    .product-slider__title {
+      font-size: 14px;
+      font-size: calc( 0.0021141649 * 100vw + 12.9852008457px ); } }
+  @media (min-width: 1426px) {
+    .product-slider__title {
+      font-size: 16px; } }
+
+.quickview_handler {
+  font-size: 25px;
+  z-index: 2;
+  height: 50px;
+  width: 50px;
+  background: #fdd947;
+  position: absolute;
+  top: -50%;
+  margin-top: -40px;
+  left: 50%;
+  opacity: 1;
+  visibility: visible;
+  border: none;
+  border-radius: 50%;
+  line-height: 40px;
+  color: #fff;
+  transition: 0.3s all ease 0s;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.product-slider__item:hover .quickview_handler {
+  top: 50%;
+  transform: translate(-50%, -50%); }
+
+.variant-links {
   display: flex;
   flex-wrap: nowrap;
-  width: 100%;
-  text-align: center;
-  padding: 3%;
-  box-sizing: border-box;
-  justify-content: space-between; }
+  padding: 0.3854vw 1.0954vw;
+  justify-content: space-around;
+  align-items: center; }
 
-.frame {
-  width: 25%; }
-
-.frame a {
+.smallColor {
   display: block;
-  padding: 0 20px; }
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .smallColor img {
+    display: block;
+    width: 15px;
+    height: 15px; }
 
-.frame img {
-  width: 100%;
-  height: auto; }
+.item__rating {
+  display: flex;
+  flex-direction: row;
+  font-size: 12px;
+  line-height: 1.3;
+  justify-content: center;
+  margin-bottom: 10px; }
 
-.eyeglasses_categories li a h2 {
-  color: #2c2c2c;
-  padding-top: 13px;
+.ph-stars-box {
+  text-align: left;
+  margin-top: 0;
+  padding-left: 0; }
+
+span.ph-stars,
+span.ph-stars span {
+  display: block;
+  background: url("../images-tmpl/star-small.png") 0 0 repeat-x;
+  width: 160px;
+  height: 25px;
+  background-position: 0 0; }
+
+.item__articul {
+  padding: 0.3854vw 1.0954vw 0;
   font-size: 14px;
-  text-transform: uppercase;
-  text-decoration: none;
-  float: left;
+  line-height: 1;
+  line-height: 1.5; }
+  @media (min-width: 480px) {
+    .item__articul {
+      font-size: 14px;
+      font-size: calc( 0.0021141649 * 100vw + 12.9852008457px ); } }
+  @media (min-width: 1426px) {
+    .item__articul {
+      font-size: 16px; } }
+
+.item__price {
+  padding: 0 1.0954vw 0.3854vw;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-end; }
+
+.title-price {
+  font-size: 14px;
+  line-height: 1; }
+  @media (min-width: 480px) {
+    .title-price {
+      font-size: 14px;
+      font-size: calc( 0.0021141649 * 100vw + 12.9852008457px ); } }
+  @media (min-width: 1426px) {
+    .title-price {
+      font-size: 16px; } }
+
+.sum-price {
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 700;
+  padding-left: 10px; }
+  @media (min-width: 480px) {
+    .sum-price {
+      font-size: 18px;
+      font-size: calc( 0.0084566596 * 100vw + 11.9408033827px ); } }
+  @media (min-width: 1426px) {
+    .sum-price {
+      font-size: 24px; } }
+
+.price-button {
+  display: flex;
+  padding: 0.3854vw 0.8954vw; }
+
+.btn-compare,
+.btn-price,
+.btn-wishlist {
+  height: 32px;
+  border: 2px solid #000; }
+
+.btn-compare,
+.btn-wishlist {
+  width: 62px; }
+
+.btn-compare a,
+.btn-price a,
+.btn-wishlist a {
+  display: flex;
   width: 100%;
-  font-weight: 600; }
+  height: 100%;
+  align-items: center;
+  justify-content: center; }
+
+.btn-compare a:hover,
+.btn-wishlist a:hover {
+  background: #eee; }
+
+.btn-compare img,
+.btn-wishlist img {
+  height: 18px;
+  width: auto; }
+
+.btn-price {
+  margin: 0 3px;
+  width: calc(100% - 130px); }
+
+.btn-price a {
+  font-size: 14px;
+  line-height: 1;
+  color: #fff;
+  background: #000; }
+  @media (min-width: 480px) {
+    .btn-price a {
+      font-size: 14px;
+      font-size: calc( 0.0021141649 * 100vw + 12.9852008457px ); } }
+  @media (min-width: 1426px) {
+    .btn-price a {
+      font-size: 16px; } }
+  .btn-price a:hover {
+    color: #000;
+    background: #fff; }
+
+/*------------about us----------------------*/
+.block-about-us {
+  background: url("../images-tmpl/bg.jpg") no-repeat 0 bottom;
+  background-size: 60%;
+  min-height: 700px;
+  position: relative;
+  overflow: hidden; }
+
+.block-about-us__content {
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  width: 30%;
+  color: #000;
+  position: absolute;
+  right: 80px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  @media (min-width: 480px) {
+    .block-about-us__content {
+      font-size: 16px;
+      font-size: calc( 0.0042283298 * 100vw + 11.9704016913px ); } }
+  @media (min-width: 1426px) {
+    .block-about-us__content {
+      font-size: 18px; } }
+
+/*-------------advertising---------*/
+.block-advertising {
+  padding-top: 50px;
+  padding-bottom: 50px; }
+
+/*---------footer------------------*/
+.block-footer {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: #000;
+  color: #fff; }
 
 .grid {
   list-style: none;
