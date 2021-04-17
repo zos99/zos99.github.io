@@ -813,7 +813,7 @@ ol.list-custom.no-bullets>li::before {
 }
 
 .form-subs {
-   background-color: #bed3db;
+   background-color: #7692C2;
    background-size: 130px 130px;
    padding-top: 1.1458vw;
    padding-bottom: 1.1458vw;
@@ -984,8 +984,9 @@ ol.list-custom.no-bullets>li::before {
 .box-banner {
    display: flex;
    justify-content: space-between;
-   margin-bottom: 3.125vw;
-   padding-top: 1.0417vw;
+   margin-bottom: 2.525vw;
+   padding-top: 2.525vw;
+   position: relative;
 }
 
 .box-banner__carousel {
@@ -993,7 +994,6 @@ ol.list-custom.no-bullets>li::before {
    margin-right: 0;
    width: 70%;
    border: 1px solid #eee;
-   border-radius: 10px;
 }
 
 .box-banner__carousel .swiper-pagination {
@@ -1221,21 +1221,23 @@ ol.list-custom.no-bullets>li::before {
 }
 
 .box-banner__offers-wrapper {
-   padding-left: 1.0417vw;
-   width: 30%
+   width: 30%;
+   display: flex;
+flex-direction: column;
+justify-content: space-between;
+overflow: hidden;
 }
-
+.box-banner__offers-wrapper img {
+  width: 100%;
+  height: auto;
+}
 .box-banner__offer {
    height: 10.4167vw;
    overflow: hidden;
    position: relative;
    border: 1px solid #eee;
-   border-radius: 10px;
 }
 
-.box-banner__offer:first-child {
-   margin-bottom: 1.0417vw;
-}
 
 .box-banner__offer>img {
    position: absolute;
@@ -1557,6 +1559,7 @@ ol.list-custom.no-bullets>li::before {
    margin-bottom: 1.0417vw;
    min-height: 2.9688vw;
    padding: 0 .7813vw
+   color: #fff;
 }
 
 .box-adv__body .elem-btn {
@@ -1637,11 +1640,10 @@ ol.list-custom.no-bullets>li::before {
 }
 
 .box-offers__elem {
-   background-color: #e6e6e8;
+   background-color: #f5f5f6;
    height: 9.4583vw;
    position: relative;
    isolation: isolate;
-   border-radius: 10px;
 }
 
 .box-offers__elem>img {
@@ -1669,12 +1671,11 @@ ol.list-custom.no-bullets>li::before {
    color: #000;
    font-size: .9375vw;
    padding-right: 1.5625vw;
-   font-weight: 700;
+   font-weight: 500;
    left: 1.0417vw;
    line-height: 1.4;
    margin: 0;
    position: absolute;
-   text-transform: uppercase;
    top: .7292vw;
    z-index: 2
 }
@@ -1838,8 +1839,7 @@ ol.list-custom.no-bullets>li::before {
 }
 
 .box-sales__big>a, .box-sales__elem>a {
-   font-weight: 700;
-   text-transform: uppercase;
+   font-weight: 500;
    color: #000;
    top: 0
 }
@@ -1900,15 +1900,15 @@ ol.list-custom.no-bullets>li::before {
    height: 200px;
    position: relative;
    background: #f5f5f6;
-   border-radius: 10px;
    isolation: isolate;
+   margin-bottom: 30px;
 }
 
 .box-sales__elem>img {
    position: absolute;
    bottom: 0;
    right: 0;
-   max-height: 100%;
+   max-height: 80%;
    mix-blend-mode: multiply;
 }
 
@@ -1952,8 +1952,9 @@ ol.list-custom.no-bullets>li::before {
 
 .box-social {
    background-color: #f2f3f3;
-   padding-top: 3.75vw;
+   padding-top: 1.5vw;
    padding-bottom: 3.75vw
+
 }
 
 .box-social .h1, .box-social h1 {

@@ -781,7 +781,7 @@ legend {
     display: flex;
 }
 
-.icon {
+.header-icons .icon {
    display: flex;
    align-items: center;
    min-width: 70px;
@@ -8084,7 +8084,7 @@ body.safari .elem-social::before {
 .nav-footer {
   padding-top: 2.7083vw;
   padding-bottom: 2.7083vw;
-  background-color: #ebf2f4
+  background-color: #3c2b8b
 }
 
 .nav-footer__wrapper {
@@ -8101,7 +8101,6 @@ body.safari .elem-social::before {
   height: 100%;
   position: absolute;
   top: 0;
-  background-color: #ebf2f4;
   z-index: 1
 }
 
@@ -8122,7 +8121,7 @@ body.safari .elem-social::before {
 .nav-footer ul li::before {
   width: 1px;
   height: 5.4688vw;
-  background-color: #bed3db;
+  background-color: #725FC5	;
   position: absolute;
   top: 0
 }
@@ -8134,7 +8133,7 @@ body.safari .elem-social::before {
 .nav-footer ul a {
   font-size: .8333vw;
   padding-left: .8333vw;
-  color: #000;
+  color: #fff;
   display: inline-block;
   position: relative;
   z-index: 49
@@ -8171,7 +8170,6 @@ body.safari .elem-social::before {
 
 .form-search {
   border: 1px solid #bed3db;
-  border-radius: 10px;
   padding-right: 4.1667vw;
   width: 25.4583vw;
   margin-right: 1.3021vw;
@@ -8279,7 +8277,6 @@ body.safari .elem-social::before {
   height: 2.1042vw;
   right: -1px;
   top: -1px;
-  border-radius: 0 10px 10px 0;
   z-index: 1
 }
 
@@ -8981,7 +8978,7 @@ body.safari .elem-social::before {
 .box-footer .contacts-wrapper {
   display: flex;
   justify-content: space-between;
-  width: 40.625vw
+  width: 100%
 }
 
 .box-footer__phone .phone-title {
@@ -9020,7 +9017,7 @@ body.safari .elem-social::before {
   align-items: center;
   display: flex;
   justify-content: space-between;
-  margin-top: 1.3021vw
+
 }
 
 .box-footer__feedback .feedback-title {
@@ -9079,8 +9076,7 @@ body.safari .elem-social::before {
 
 .box-header {
   background-color: #fff;
-  border-bottom: solid 1px #bed3db;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
+box-shadow: 0 5px 10px -1px rgba(0,0,0,.12);
   height: auto;
   top: 0;
   z-index: 51
@@ -9114,7 +9110,7 @@ body.safari .elem-social::before {
 .box-header__container {
   align-items: center;
   display: flex;
-  height: 78px;
+  height: 85px;
   justify-content: space-between;
 }
 
