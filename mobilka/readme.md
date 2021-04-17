@@ -1,1 +1,1 @@
-https://zos99.github.io/stroitraid/result.html
+http://zos99.github.io/mobilka/
