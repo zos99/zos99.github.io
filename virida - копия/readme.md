@@ -1,1 +1,1 @@
-https://zos99.github.io/kv/index.html
+https://zos99.github.io/virida - копия/index.html
