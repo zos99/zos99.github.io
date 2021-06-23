@@ -1,1 +1,1 @@
-http://zos99.github.io/j/newtradegroup/
+http://zos99.github.io/newtradegroup/
