@@ -1,1 +1,1 @@
-http://zos99.github.io/kamazl/
+http://zos99.github.io/prowallpapering/
