@@ -1,0 +1,133 @@
+$fontMain: #fff;
+$primary-color: #eee;
+$primary-color-text: #333;
+$primary-color-link: blue;
+$primary-color-link-hover: rgb(106, 104, 140);
+
+
+@mixin transitionL($time) {
+  cursor: pointer;
+  transition: background $time linear, color $time linear, border $time linear, max-height $time linear;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+main, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, menu, nav, section {
+	display: block;
+}
+/* HTML5 hidden-attribute fix for newer browsers */
+*[hidden] {
+    display: none;
+}
+*, ::after, ::before {
+	box-sizing: border-box;
+}
+body {
+	font-family: $fontMain;
+	background-color: $primary-color;
+	color: $primary-color-text;
+	line-height: 1.4;
+	letter-spacing: -1px;
+	margin: 0;
+	padding: 0;
+}
+h1, h2 {
+  font-weight: bold;
+  text-align: center;
+}
+a {
+  @include transitionL(200ms);
+	color: $primary-color-link;
+	&:hover {
+		color: $primary-color-link-hover;
+	}
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a:hover, a {
+	text-decoration: none!important;
+}
+p {
+	text-align: justify;
+}
+
+.wrapper {
+  position: relative;
+  margin: 0 auto;
+  width: 800px;
+}
+
+.inner {
+  overflow-x: scroll;
+  overflow-y: visible;
+  margin-left: 100px;
+}
+.table {
+	width: 100%;
+	margin-bottom: 20px;
+	border-collapse: collapse;
+  table-layout:fixed;
+
+  th {
+    font-weight: bold;
+    padding: 5px;
+    border: 1px solid #000;
+    display: table-cell;
+    width: 100px;
+
+    &:nth-child(-n+2),
+    &:nth-last-child(-n+2) {
+      position: sticky;
+      left: 0;
+    }
+  }
+
+  td {
+    border: 1px solid #000;
+    padding: 5px;
+    text-align: center;
+    width: 100px;
+    display: block;
+    display: table-cell;
+    width: 100px;
+
+    &:nth-child(-n+2),
+    &:nth-last-child(-n+2) {
+      position: sticky;
+    }
+  }
+}
+

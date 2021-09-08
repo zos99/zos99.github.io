@@ -1,0 +1,43 @@
+@mixin transitionL($time) {
+  cursor: pointer;
+  transition: background $time linear, color $time linear, border $time linear, max-height $time linear;
+}
+/**
+ * Rem-converter mixin to convert px to rem
+ */
+@mixin px-to-rem($pxValue, $property: "font-size", $standard-size: 16) {
+  #{$property}: $pxValue + px;
+  #{$property}: $pxValue/$standard-size + rem;
+}
+
+// mixins популярных брекпоинтов
+@mixin desktop {
+    @media screen and (max-width: 1680px) {
+         @content;
+    }
+}
+@mixin minDesktop {
+    @media screen and (max-width: 1280px) {
+         @content;
+    }
+}
+@mixin tablet {
+    @media screen and (max-width: 992px) {
+        @content;
+    }
+}
+@mixin minTablet {
+    @media screen and (min-width: 992px) {
+        @content;
+    }
+}
+@mixin mobile {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+@mixin telefon {
+   @media screen and (max-width: 480px) {
+        @content;
+   }
+}

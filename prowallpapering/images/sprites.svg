@@ -1,0 +1,10 @@
+<svg width="0" height="0" class="hidden">
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27 20" id="1">
+    <path fill="none" stroke="#00294d" stroke-miterlimit="50" stroke-width="3" d="M2 2l12 9.46 11.56-9.23m1.5 16.24H1.6V1.54h20.56m0 0h3.4v6.67"></path>
+    <path fill="#00d640" d="M24 14h3v-3h-3z"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 19" id="2">
+    <path fill="#00d640" d="M17 11h3V8h-3z"></path>
+    <path fill="#00294d" d="M0 19h19.85v-3H0zM0 3h19.85V0H0zm0 8h13.2V8H0z"></path>
+  </symbol>
+</svg>

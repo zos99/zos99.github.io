@@ -24,6 +24,7 @@
     "grunt-contrib-sass": "^1.0.0",
     "grunt-contrib-uglify": "^1.0.2",
     "grunt-contrib-watch": "^1.1.0",
+    "grunt-px-to-rem": "^0.4.0",
     "grunt-critical": "^1.1.3"
   }
 }

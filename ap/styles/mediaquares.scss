@@ -16,41 +16,88 @@
 
 @media (max-width: 1680px) {
   .wrapper {
-    padding: 0 2.9167vw;
+    padding-left: 2.9167vw;
+    padding-right: 2.9167vw;
   }
 
 }
 @media (max-width: 1400px) {
-  .wrapper {
-    padding: 0 3.500vw;
-  }
-
-}
-@media (max-width: 1280px) {
   html {
     font-size: 15px;
   }
   .wrapper {
-    padding: 0 3.8281vw;
+    padding-left: 3.500vw;
+    padding-right: 3.500vw;
+  }
+  .card {
+    a {
+      line-height: 1;
+    }
   }
 
 }
-@media (max-width: 1024px) {
+@media (max-width: 1280px) {
   .wrapper {
-    padding: 0 3.906vw;
+    padding-left: 1.5625vw;
+    padding-right:  1.5625vw;
   }
+  .card a {
+    font-size: 1rem;
+  }
+  .box-price , .post_meta, .card span {
+    font-size: 0.9333rem;
+  }
+.box-content__title {
+  top: -1.171875vw;
+}
+}
 
+@media (max-width: 1046px) {
+
+  .wrapper {
+    padding-left: 1.434vw;
+    padding-right: 1.434vw;
+  }
+  .wrp-banner {
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.banneritem {
+    width: 49%;
+    margin-bottom: 1.434vw;
+}
+.banneritem:not(:last-child) {
+    margin-right: 0;
+}
+  .col-22.box-advertising {
+    width: 23%;
+  }
+  .col-88.box-card__wrp {
+    flex-wrap: wrap;
+    width: 77%;
+  }
+.card_item {
+  width: calc(100%/4);
+  &:last-child {
+    display: none;
+  }
+}
+.box-price {
+  bottom: 3.82409vw;
+}
+.box-content__title {
+    top: -1.434vw;
+}
 }
 @media (max-width: 768px) {
   html {
     font-size: 14px;
   }
-  .wrapper {
-    padding: 0 2.6041vw;
-  }
+
 }
 @media (max-width: 480px) {
   .wrapper {
-    padding: 0 3.125vw;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }

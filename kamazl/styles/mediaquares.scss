@@ -1,0 +1,535 @@
+@media (max-width: 1680px) {
+  .primary-menu li a {
+    font-size: 1.125rem;
+  }
+  .box-slider__text {
+    font-size: 3rem;
+  }
+  .process {
+    margin-top: 12.4167vw;
+    padding-bottom: 6.6042vw;
+}
+.process-item h4, .aboutus-item span {
+  font-size: 1.2rem;
+  line-height: 1.3;
+}
+
+}
+@media (max-width: 1400px) {
+  html {
+    font-size: 15px;
+  }
+  .primary-menu li a {
+    font-size: 1rem;
+  }
+  .box-slider__text {
+    font-size: 2.6rem;
+  }
+  .process-item h4, .aboutus-item span {
+    font-size: 1.2rem;
+}
+  .request h2 {
+    font-size: 1.333rem;
+  }
+  .request h2 {
+    font-size: 1.5333rem;
+    letter-spacing: -2px;
+}
+.request input, .request textarea {
+  font-size: 1.6rem;
+}
+.btn {
+  font-size: 1.2rem;
+}
+.box-request {
+    background: url(../images-tmpl/bg-car-m.png) no-repeat left 0 bottom 0;
+    padding-top: 0;
+    height: 67.8571vw;
+    position: relative;
+}
+.box-request__inner {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translatey(-50%);
+    width: 50%;
+}
+.request {
+    width: 100%;
+}
+.brn-wrappe.btn-request {
+    flex-direction: column-reverse;
+    align-items: end;
+}
+.btn-request span {
+    margin-top: 3.5714vw;
+}
+.container {
+    margin-left: 0;
+    margin-right: 0;
+}
+.collective__title {
+  font-size: 1.6rem;
+}
+.collective-inner img {
+  top: -1vw;
+}
+.collective-inner span {
+    font-size: 1.2rem;
+}
+
+}
+@media (max-width: 1280px) {
+  html {
+    font-size: 14px;
+  }
+
+  .box-slider__text {
+    font-size: 2.5rem;
+}
+.box-slider__text span:last-child {
+    font-size: 1.4rem;
+    line-height: 1.5;
+}
+.box-request {
+  background-size: contain;
+}
+.box-request__inner {
+   width: 60%;
+}
+}
+@media (max-width: 1024px) {
+  .box__title {
+    font-size: 4rem;
+}
+  .box-header {
+      height: 70px;
+      box-shadow: inset -10px -10px 20px rgba(0, 0, 0, 0.25), inset 10px 10px 20px rgba(0, 0, 0, 0.25);
+      background: #fff;
+
+      &:hover {
+               background: #fff;
+      }
+  }
+  .primary-menu li {
+     background: #fff;
+ }
+  .primary-menu li a {
+     color: #000;
+ }
+  .box-logo {
+    top: 100px;
+  }
+  .box-slider__text {
+      font-size: 2.1429rem;
+      top: 100px;
+  }
+.nav-mobile {
+  display: block;
+}
+
+.primary-menu {
+  display: none;
+}
+.primary-menu {
+  li {
+    box-shadow: none;
+  }
+}
+.primary-menu li a {
+  justify-content: start;
+  text-align: left;
+  padding-left: 30px;
+}
+.primary-menu li:first-child, .primary-menu li:last-child {
+    border-radius: 0;
+}
+
+  .brands__item {
+    width: calc(100%/6);
+}
+.site-link {
+  height: 15.26041vw;
+}
+.process-item h4, .aboutus-item span {
+    font-size: 1.1rem;
+}
+.box-request   {
+    background-size: 60%;
+  }
+  .acor-container label, .box-faq__btn {
+    font-size: 1.6rem;
+  }
+  .container {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .collective-item {
+    width: calc(100%/2);
+
+    &:nth-child(-n+3),  &:nth-child(2), &:nth-child(5) {
+      border: none;
+    }
+
+    &:nth-child(3), &:nth-child(4) {
+      border-top: 2px solid #1B4A8A;
+      border-bottom: 2px solid #1B4A8A;
+    }
+    &:nth-child(odd) {
+     border-right: 2px solid #1B4A8A;
+    }
+  }
+  .box-request__inner {
+     width: 80%;
+  }
+.box-request--absolute {
+   top: 3.208vw;
+}
+  .f-kontakt {
+      flex-direction: column;
+      align-items: flex-end;
+  }
+  .primary-menu li.active {
+    background: #eee;
+    opacity: 1;
+}
+.box-slider__text span:last-child {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+}
+@media (max-width: 920px) {
+   .box-request {
+      height: 76.08695vw;
+   }
+.box-request--absolute {
+   font-size: 2.6rem;
+}
+.box-slider__text {
+  font-size: 1.8rem;
+}
+}
+@media (max-width: 768px) {
+
+  .box-slider__text {
+    font-size: 1.8rem;
+}
+.site-link {
+  height: 23.4375vw;
+}
+  .box-request {
+    background-size: contain;
+}
+  .brands__item {
+    width: calc(100%/4);
+}
+.bg {
+  display: none;
+}
+.aboutus-item {
+  width: 50%;
+  margin-bottom: 10.11458vw;
+  justify-content: center!important;
+
+  span {
+   top: 27.34375vw;
+   text-align: center !important;
+justify-content: center;
+ }
+}
+.aboutus-item__inner {
+  width: 26.0416vw;
+  height: 26.0416vw;
+}
+  .box__title {
+    font-size: 3.5rem;
+  }
+.partnery-item {
+  height: 10.416vw;
+}
+  .partnery-item--long, .partnery-item--shot {
+    width: calc(50% - 2.0833vw);
+}
+.process {
+  margin-top: 1.0416vw;
+}
+.process-item--long:nth-child(1)::before, .process-item--long:nth-child(3)::before,
+.process-item--long:nth-child(2)::before, .process-item--long:nth-child(4)::before,
+.process-item--long:nth-child(5)::before, .process-item--shot:nth-child(6)::before,
+.process-item--shot:nth-child(7)::before, .process-item--shot:nth-child(8)::before,
+.process-item--last::before {
+  display: none;
+}
+.process-item--long:nth-child(2n+1), .process-item--shot:nth-child(6), .process-item--shot:nth-child(8) {
+  top: auto;
+  justify-content: center;
+}
+.process-item--long:nth-child(2n), .process-item--shot:nth-child(7), .process-item--shot:nth-child(9) {
+  bottom: auto;
+  justify-content: center;
+}
+.process-item--long:nth-child(2n+1) h4, .process-item--shot:nth-child(7) h4, .process-item--last h4 {
+    bottom: -7.8125vw;
+    align-items: flex-start;
+    top: auto;
+    right: auto;
+}
+.process-item {
+  width: 50% !important;
+  margin-bottom: 17.003vw;
+  margin-top: 0;
+}
+.process-item h4, .aboutus-item span {
+  font-size: 1.2rem;
+  line-height: 1.3;
+  width: 100%;
+}
+
+
+.process__inner {
+  width: 22.0416vw;
+  height: 22.0416vw;
+}
+.box-request__inner {
+  width: 90%;
+}
+
+.process-item:first-child {
+    order: 1;
+}
+.process-item:nth-child(2) {
+   order: 2;
+}
+.process-item:nth-child(3) {
+   order: 3;
+}
+.process-item:nth-child(4) {
+   order: 4;
+}
+.process-item:nth-child(5){
+   order: 5;
+}
+.process-item:nth-child(9) {
+   order: 6;
+}
+.process-item:nth-child(8) {
+   order: 7;
+}
+.process-item:nth-child(7) {
+   order: 8;
+}
+.process-item:nth-child(6){
+   order: 9;
+}
+.process-item:nth-child(10) {
+   order: 10;
+}
+.box-request {
+   height: 90.08695vw;
+}
+.box-request--absolute {
+font-size: 2rem;
+}
+
+}
+@media (max-width: 600px) {
+   .box-request {
+      height: 110vw;
+   }
+   .box-request--absolute {
+   font-size: 1.8rem;
+   }
+   .car-brands {
+      padding-bottom: 50px;
+   }
+}
+@media (max-width: 490px) {
+  .box-header {
+    height: 60px;
+  }
+  .box-logo {
+    position: absolute;
+    top: 18.75vw;
+    left: 5%;
+    width: 35%;
+    padding: 10px;
+}
+.box-slider__text {
+  left: 40%;
+  transform: none;
+  width: 55%;
+  padding: 10px;
+  line-height: 1.2;
+  top: 80px;
+}
+  .mobile {
+    display: block;
+  }
+  .descktop {
+    display: none;
+  }
+  .brands__item {
+    width: calc(100%/2);
+
+}
+.site-link {
+    height: 31.25vw;
+}
+.request {
+    width: 91%;
+}
+.partnery-item--shot {
+  width: calc(50% - 2.0833vw);
+}
+  .acor-container label, .box-faq__btn {
+    font-size: 20px;
+  }
+
+  .box__title {
+    font-size: 2.3rem;
+}
+.collective-inner img {
+  height: 6.25vw;
+}
+.collective__title {
+    font-size: 1.2857rem;
+    padding-left: 8.0505vw;
+}
+.collective-inner span {
+    font-size: 1rem;
+}
+  .footer-item {
+    flex-basis: 100%;
+    margin-bottom: 15px;
+  }
+  .social {
+    justify-content: flex-start;
+  }
+  .box-request {
+    background: url(../images-tmpl/bg-car-x.png) no-repeat left 0 bottom 0;
+    height: 564px;
+  }
+  .request h2 {
+    font-size: 14px;
+    letter-spacing: -1px;
+}
+.box-request__inner {
+    width: 95%;
+}
+.request input, .request textarea {
+    font-size: 16px;
+    padding: 10px 20px;
+}
+.aboutus-item {
+    margin-bottom: 70px;
+}
+.process-item h4 , .aboutus-item span{
+  font-size: 14px;
+}
+.reviews-slider__inner {
+  padding: 15px;
+}
+.reviews-slider {
+    padding-bottom: 25px;
+}
+.slick-dotted.slick-slider {
+    margin-bottom: 30px;
+}
+.reviews-slider .slick-arrow {
+  display: none!important;
+}
+
+  .process-item {
+    margin-bottom: 27.003vw;
+  }
+  .f-kontakt {
+      align-items: flex-start;
+      margin-top: 15px;
+  }
+  .modal {
+    width: 90%;
+  }
+  .brn-wrappe.btn-request {
+     justify-content: flex-end;
+ align-items: flex-end;
+ }
+
+.process {
+   padding-bottom: 60px;
+}
+.reviews__title .title__content img {
+    max-width: 100px;
+}
+.title__content h4 {
+    font-size: 18px;
+    color: #000;
+}
+.reviews__content {
+    font-size: 14px;
+    line-height: 1.3;
+}
+.faq-btn-wrapper {
+   padding-top: 20px;
+}
+.btn {
+   padding: 5px 20px;
+}
+.box-request--absolute {
+   font-size: 18px;
+   top: 30px;
+}
+}
+@media (max-width: 380px) {
+  .box-slider__text {
+    font-size: 21px;
+  }
+  .box-request__inner {
+    width: 100%;
+}
+.photo img {
+    width: 80%;
+}
+.box-request {
+    background: url(../images-tmpl/bg-car-x.png) no-repeat left 0 bottom 0;
+        background-size: auto;
+    height: 564px;
+    background-size: 60%;
+}
+.btn-request span {
+  font-size: 14px;
+}
+.box__title {
+  font-size: 30px;
+}
+.partnery-item--long, .partnery-item--shot {
+    width: 100%;
+}
+.partnery-item {
+    height: 60px;
+}
+.box-map {
+  max-width: 360px;
+}
+.acor-container label {
+padding: 15px 15px 15px 25px;
+}
+.acor-container .expand-icon {
+  top: calc(50% - 10px);
+}
+.collective__title {
+    font-size: 14px;
+    padding-left: 8.0505vw;
+}
+.modal input, .modal textarea {
+  padding: 10px 15px;
+}
+.acor-container label, .box-faq__btn {
+    font-size: 1rem;
+}
+.process-item h4, .aboutus-item span {
+    font-size: 1rem;
+}
+.box-slider__text span:last-child {
+    font-size: 14px;
+}
+}

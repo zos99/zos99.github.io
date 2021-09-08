@@ -1,0 +1,137 @@
+// stylelint-disable no-descending-specificity
+
+.header {
+	overflow: hidden;
+	background-color: $slide-background;
+	padding: 30px 6%;
+	box-sizing: border-box; /* Large padding which will shrink on scroll (using JS) */
+  transition: 0.4s; /* Adds a transition effect when the padding is decreased */
+  position: fixed; /* Sticky/fixed navbar */
+  width: 100%;
+  top: 0; /* At the top */
+  z-index: 99;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	&__logo {
+		display: block;
+		transition: 0.4s;
+
+		img {
+			display: block;
+	    height: 100%;
+			transform: translateZ(0) scale(1, 1);
+			transition: fill 0.25s ease;
+
+			@include tablet {
+	        max-width: 200px;
+			}
+		}
+
+		@include tablet {
+			left: 10px;
+			top: 10px;
+		}
+	}
+
+	&__nav {
+		float: right;
+		transform: translateZ(0);
+
+		a {
+			display: inline-block;
+			margin: 0 28px;
+			padding: 5px;
+			font-weight: 700;
+			font-size: 1rem;
+			letter-spacing: 0.93px;
+			text-decoration: none;
+			text-transform: uppercase;
+			color: $nav-font-color;
+
+			&:hover {
+				color: $primary-color-link;
+			}
+
+			&:first-of-type {
+				margin-left: 0;
+			}
+
+			&:last-of-type {
+				margin-right: 0;
+			}
+		}
+
+		@include tablet {
+			display: none;
+		}
+	}
+
+	&__email,
+	&__menu-open {
+		position: fixed;
+		top: 16px;
+		display: none;
+		align-items: center;
+		justify-content: center;
+		outline: none;
+		border: none;
+		width: 40px;
+		height: 40px;
+		box-shadow: none;
+		background-color: transparent;
+
+		svg {
+			flex: none;
+		}
+
+		@include tablet {
+			display: flex;
+		}
+
+		@include mobile {
+			top: 16px;
+		}
+	}
+
+	&__email {
+		right: 75px;
+
+		svg {
+			max-width: 27px;
+			max-height: 20px;
+		}
+
+		@include mobile {
+			right: 55px;
+		}
+	}
+
+	&__menu-open {
+		right: 20px;
+
+		svg {
+			max-width: 20px;
+			max-height: 19px;
+		}
+
+		@include mobile {
+			right: 10px;
+		}
+	}
+
+	@include tablet {
+		border-bottom: 1px solid #f0f0f0;
+		height: 75px;
+		background-color: rgba($color-white, 0.95);
+	}
+
+	@include mobile {
+		background-color: $color-white;
+	}
+
+	@media (min-width: 1280px) and (max-width: 1439px) {
+		padding-left: 27 / 1440 * 100%;
+	}
+}

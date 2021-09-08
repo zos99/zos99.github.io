@@ -1,0 +1,29 @@
+{
+  "name": "ap",
+  "version": "1.0.0",
+  "description": "http://zos99.github.io/ap/",
+  "main": "gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "zos99.github.io"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3",
+    "bootstrap-sass": "3.3.7",
+    "grunt": "^1.0.1",
+    "reset-css": "^4.0.1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "^1.0.2",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-critical": "^1.1.3"
+  }
+}
