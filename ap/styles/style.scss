@@ -50,9 +50,9 @@ h1, h2, h3, h5 {
 	right: 1%;
 	display: none;
 	color: #FFFFFF;
-	width: 1.9792vw;
+	width: 40px;
 	text-align: center;
-	height: 1.9792vw;
+	height:40px;
 	border-radius: 4px;
 	cursor: pointer;
 	-webkit-transition: background-color 200ms ease-out;
@@ -101,6 +101,7 @@ h1, h2, h3, h5 {
 }
 .box-heade__center .col-2 {
     display: flex;
+    justify-content: flex-end;
 }
 .ms-informer-link {
     max-width: 10.4167vw;
@@ -149,7 +150,7 @@ h1, h2, h3, h5 {
   padding: 5px 0 4px;
 }
 .box-heade__center img {
-  max-width: 31.25vw;
+  max-width: 100%;
 }
 .desktop-button {
   width: 40px;
@@ -217,7 +218,7 @@ h1, h2, h3, h5 {
    background: #fff;
    border: 1px solid #f0f0f0;
    box-shadow: 0 2px 4px 0 rgba(205, 205, 205, 0.25);
-   padding: 0.5208vw;
+   padding: 0.5208vw 0.5208vw 3.0208vw;
    position: relative;
 }
 .banneritem:not(:last-child) {
@@ -235,15 +236,14 @@ h1, h2, h3, h5 {
    }
 }
 .item-cont {
-   position: absolute;
-   top: 10%;
-   left: 50%;
-   transform: translateX(-50%);
-   z-index: 1;
-   width: 90%;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
    h3 {
     color: #fff;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: bold;
     display: block;
     width: 100%;
@@ -265,25 +265,40 @@ h1, h2, h3, h5 {
    transform: translateX(-50%);
    display: flex;
    width: 100%;
-   justify-content: center;
-   height: 2.60417vw;
+   justify-content: space-between;
+   height: 2.7083vw;
    align-items: center;
 }
 .btnb {
-   background: linear-gradient(#61CE70, #23A455);
+   background: #fff;
+   box-shadow: inset -10px -10px 20px rgba(0, 0, 0, 0.25), inset 10px 10px 20px rgba(0, 0, 0, 0.25);
    font-size: 0.9375rem;
+   line-height: 1.1;
    padding: 5px;
-   color: #fff;
+   color: #333;
    font-weight: bold;
-   width: 50%;
+   width: 49.5%;
    display: flex;
    justify-content: center;
    align-items: center;
    text-align: center;
    height: 100%;
+   &:hover {
+      background-color: #e1e1e1;
+      color: #000;
+   }
+}
+.btn-grupp-center {
+   justify-content: center;
 }
 .banneritem--tmp {
    background: #F6F5F5;
+}
+.banneritem--firstimg {
+   background: url('../images-tmpl/gazeta.jpg');
+}
+.banneritem--twoimg {
+   background: url('../images-tmpl/reklama.jpg');
 }
 .item-cont--dack {
    h3 {
@@ -293,10 +308,9 @@ h1, h2, h3, h5 {
    span {
       color: #000;
       text-shadow: none;
-      margin-top: 2.60417vw;
-      margin-bottom: 5px;
+      text-align: center;
       justify-content: center;
-      font-size: 1.8rem;
+      font-size: 1.5625rem;
    }
    i {
      color: #29A53A;
@@ -306,12 +320,6 @@ h1, h2, h3, h5 {
    ul li {
       font-size: 1rem;
       line-height: 1.5;
-   }
-   a {
-      color: #61CE70;
-      background: #fff;
-      bottom: auto;
-
    }
 }
 /*--------end banner-----------------------*/
@@ -375,6 +383,7 @@ h1, h2, h3, h5 {
    width: calc(100%/5);
    height: 100%;
    padding: 0.52083vw;
+   overflow: hidden;
 }
 .card {
     position: relative;
@@ -382,6 +391,7 @@ h1, h2, h3, h5 {
     padding: 0.52083vw 0.52083vw 2.0833vw;
     background: #fff;
     height: 100%;
+    overflow: hidden;
     img {
       width: 100%;
     }
@@ -488,7 +498,7 @@ h1, h2, h3, h5 {
     display: flex;
 }
 .social li {
-    padding: 0 5px;
+    padding: 0 10px;
 }
 .footer ul li {
     position: relative;

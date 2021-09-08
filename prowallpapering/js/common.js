@@ -209,6 +209,57 @@ jQuery(function(){
    }
 };
 
+
+// instagram
+$('.slider').on('init', function(slick){
+    $(this).css('display', 'block').animate({
+        // opacity: 1
+    }, 300);
+}).slick({
+    centerMode: true,
+    infinite: true,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    arrows: true,
+    prevArrow: '<div class="slide-arrow_prev slide-arrow button button_slide">' +
+        '<svg width="29" height="46" viewBox="0 0 29 46" fill="none" xmlns="http://www.w3.org/2000/svg">\n' +
+        '<rect width="5.47315" height="33.435" rx="2.73657" transform="matrix(0.878407 0.477914 -0.711612 0.702573 23.7927 0)" fill="#C4C4C4"/>\n' +
+        '<rect width="5.47315" height="33.435" rx="2.73657" transform="matrix(0.878407 -0.477914 -0.711612 -0.702573 23.7927 46)" fill="#C4C4C4"/>\n' +
+        '</svg>' +
+        '</div>',
+    nextArrow: '<div class="slide-arrow_next slide-arrow button button_slide">' +
+        '<svg width="29" height="46" viewBox="0 0 29 46" fill="none" xmlns="http://www.w3.org/2000/svg">\n' +
+        '<rect width="5.47315" height="33.435" rx="2.73657" transform="matrix(-0.878407 0.477914 0.711612 0.702573 4.80762 0)" fill="#C4C4C4"/>\n' +
+        '<rect width="5.47315" height="33.435" rx="2.73657" transform="matrix(-0.878407 -0.477914 0.711612 -0.702573 4.80762 46)" fill="#C4C4C4"/>\n' +
+        '</svg>' +
+        '</div>',
+    dots: false,
+    swipeToSlide: true,
+    responsive: [
+        {
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 5
+            }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 3
+            }
+        },
+        {
+            breakpoint: 620,
+            settings: {
+                slidesToShow: 1,
+                adaptiveHeight: true
+            }
+        }
+    ]
+});
+
+
+
 // Fades in the targets given
 function fadeIn(targets) {
   gsap.to(targets, { autoAlpha: 1, stagger: 0.1 });
